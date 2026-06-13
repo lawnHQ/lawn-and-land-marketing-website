@@ -1,5 +1,5 @@
 {
-  "buildCommand": "",
+  "buildCommand": "python3 build.py || true",
   "outputDirectory": ".",
   "framework": null
 }

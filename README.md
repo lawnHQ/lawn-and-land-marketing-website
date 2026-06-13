@@ -10,6 +10,19 @@ This repo is the source of truth for the public Lawn & Land website.
 
 Important: this website project is separate from any internal Ground Control concept or naming.
 
+## Universal header & footer (single source of truth)
+
+The site **header** (announcement bar + nav) and **footer** are defined once and
+stamped into every page automatically. You never edit them on individual pages.
+
+- Edit the header → `_header.html`  (announcement bar + main nav)
+- Edit the footer → `_footer.html`
+- Apply to all pages → `python3 build.py`
+- Verify everything is in sync → `python3 build.py --check`
+
+`vercel.json` runs `build.py` on every deploy, so editing a partial and pushing
+is enough — every page updates. Change one file, the whole site updates.
+
 ## Current state at a glance
 
 The homepage is still the only intentionally developed public page right now.

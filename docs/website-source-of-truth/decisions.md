@@ -36,6 +36,12 @@
 - For now, keep the simpler `/programs/` prototype live while Matt reviews and prepares detailed feedback.
 - Do not assume the rejected v2 direction should be revived without explicit approval.
 
+## 2026-06-13
+- Header and footer are now truly single-source. `_header.html` (announcement bar + nav) and `_footer.html` are the only files to edit; `build.py` stamps them into every page and runs automatically on Vercel deploy via `vercel.json` buildCommand.
+- The announcement bar was folded into the universal header and unified across all 31 pages (text + `/contact/` link). Previously the homepage used a relative link and `/404.html` had a stray promo.
+- Replaced the old fragile `build-pages.py` (hardcoded `/tmp` path) with `build.py`. Refreshed `_footer.html` to match the current live footer (the partial had gone stale). Brought `/404.html` into the universal header/footer.
+- Decision pending from Matt: begin building out the non-home page bodies ("build it out to the best solution") — establish a reusable page design system from the homepage, then roll out across the sitemap.
+
 ## Open Decisions To Track Later
 - What exact visual direction from the current `/programs/` prototype should become the reusable non-home page system.
 - Whether any retired routes should be redirected intentionally versus simply removed from internal linking.
