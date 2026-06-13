@@ -1,0 +1,53 @@
+# Service Page — Universal Template
+
+Every `/marketing-services/*` detail page uses this exact section order. Only the
+**content** changes per service; the **structure stays identical** for consistency
+and SEO. Reference build: `/marketing-services/website-design/`.
+Styles: `assets/css/service-page.css` (`svc-*` classes). Approved by Matt 2026-06-13.
+
+## Sections, in order
+
+1. **Hero** (`.simple-hero`)
+   Breadcrumb · service eyebrow · keyword-led H1 (benefit + service) · one-line
+   subhead · two CTAs (Schedule Strategy Call / Contact) · background image.
+
+2. **Conviction strip** (`.svc-conviction`)
+   One bold stat + a single punchy sentence + one supporting line. One memorable
+   proof point per service. Not a wall of text.
+
+3. **Showcase A — text + image** (`.svc-showcase`)
+   Left: short paragraph + 3-item checklist ("what we build/do"). Right: a
+   **labeled image placeholder** (`.svc-ph`) describing the screenshot to add.
+
+4. **What's Included** (`.svc-includes`)
+   One featured card + a grid of 7 deliverable cards. Each card = brand **Lucide
+   icon** (stroke only) + short title + one line. Scannable, low text.
+
+5. **Showcase B — text + image, reversed** (`.svc-showcase` + `.is-reversed`)
+   Second angle (e.g. "built to rank/convert"). Same pattern as Showcase A,
+   image on the opposite side, with its own labeled placeholder.
+
+6. **FAQ** (`.svc-faq`)
+   5 collapsible Q&As (`<details>`), targeting long-tail searches. Always pair
+   with `FAQPage` JSON-LD in the head.
+
+7. **CTA** (`.svc-cta`)
+   Booking CTA + "Pairs well with" list linking 3–4 related services.
+
+## Head requirements (per page)
+- Unique `<title>`, meta description, canonical.
+- `link` to `styles.css` **and** `service-page.css`.
+- JSON-LD: `Service` schema + `FAQPage` schema (matching the on-page FAQ).
+
+## Non-negotiables
+- **Icons:** Lucide SVG, **stroke only**, 1.75 weight, round caps, `currentColor`
+  (Limeade for emphasis). **No emoji or unicode glyphs as icons.** Ever.
+- **Removed by decision:** a "How It Works" / process section (page-specific and
+  low-value — people care that it works, not how).
+- Keep copy tight and scannable — alternate text and visuals, never a wall of text.
+- Buttons never wrap to two lines.
+
+## Image placeholders
+Each showcase ships a labeled `.svc-ph` placeholder telling the team exactly what
+image to drop in (e.g. "Screenshot of a Google map-pack result ranking #1").
+Swap the hint text to fit each service.
