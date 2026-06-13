@@ -979,3 +979,59 @@
   }
   .callout-icon { display: none; }
 }
+
+/* ════════════════════════════════════════════════════════
+   SHOWCASE SPLIT (text + image) + IMAGE PLACEHOLDERS
+   ════════════════════════════════════════════════════════ */
+.svc-showcase {
+  padding: var(--section-gap) 0;
+  background: var(--black-mid);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.svc-showcase-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.svc-showcase-inner.is-reversed .svc-showcase-media { order: -1; }
+.svc-showcase-text .svc-eyebrow { display: block; margin-bottom: 14px; }
+.svc-showcase-text h2 {
+  font-family: var(--font-h);
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 800; font-style: italic;
+  color: var(--white); line-height: 1.14; margin-bottom: 16px;
+}
+.svc-showcase-text h2 em { color: var(--lime); font-style: italic; }
+.svc-showcase-text > p {
+  font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 14px; max-width: 520px;
+}
+.svc-showcase-list { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-direction: column; gap: 12px; }
+.svc-showcase-list li {
+  font-size: 14px; color: rgba(255,255,255,0.82); line-height: 1.5;
+  display: flex; gap: 11px; align-items: flex-start;
+}
+.svc-showcase-list li::before { content: '✓'; color: var(--lime); font-weight: 700; flex-shrink: 0; }
+
+/* Labeled image placeholder */
+.svc-ph {
+  position: relative; width: 100%; aspect-ratio: 4 / 3;
+  border-radius: 18px; border: 1.5px dashed rgba(172,231,29,0.35);
+  background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.022) 0 14px, rgba(255,255,255,0.008) 14px 28px);
+  display: flex; align-items: center; justify-content: center;
+}
+.svc-ph--wide { aspect-ratio: 16 / 10; }
+.svc-ph-inner { text-align: center; padding: 24px; max-width: 84%; }
+.svc-ph-icon { color: rgba(172,231,29,0.6); display: inline-flex; margin-bottom: 12px; }
+.svc-ph-label {
+  display: block; font-family: var(--font-l); font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.14em; color: var(--lime); margin-bottom: 7px;
+}
+.svc-ph-hint { display: block; font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.55; }
+
+@media (max-width: 900px) {
+  .svc-showcase-inner { grid-template-columns: 1fr; gap: 32px; }
+  .svc-showcase-inner.is-reversed .svc-showcase-media { order: 0; }
+  .svc-showcase-text > p { max-width: 100%; }
+}
