@@ -23,33 +23,37 @@ stamped into every page automatically. You never edit them on individual pages.
 `vercel.json` runs `build.py` on every deploy, so editing a partial and pushing
 is enough — every page updates. Change one file, the whole site updates.
 
+## Service pages are generated
+
+The 8 `/marketing-services/*` detail pages are **generated**, not hand-edited:
+
+- Copy lives in **`_content.json`** (one object per service).
+- **`python3 gen_service.py`** renders each `marketing-services/<slug>/index.html` from the
+  `website-design` page as the structural template, generating all internal links
+  (breadcrumb, CTAs, "pairs well with", hero image) by construction.
+- Then run `python3 build.py` to stamp the universal header/footer.
+
+Edit copy in `_content.json` and regenerate — don't hand-edit the generated HTML.
+Full spec: `docs/website-source-of-truth/service-page-template.md`.
+
 ## Current state at a glance
 
-The homepage is still the only intentionally developed public page right now.
+> Full orientation for any session lives in **`CLAUDE.md`** (repo root). Quick version:
 
-Exception:
-- `/programs/` now has a lightweight body-layout prototype live for review.
-- That page currently includes a simple structure with placeholder/lorem content blocks for:
-  - program philosophy
-  - quick breakdown
-  - Growth Program
-  - Authority Program
-  - right-stage closing section
-- This simpler version was intentionally kept after a more aggressive redesign pass was rejected.
-- Treat `/programs/` as an in-review layout prototype, not a finished design system.
+**Developed:** the homepage **and all 8 `/marketing-services/*` detail pages**, built on a
+locked, generated template (see `docs/website-source-of-truth/service-page-template.md`):
+website-design, local-seo, google-ads, meta-ads, gbp-management, your-ai-partner,
+reputation-management, automation.
 
-All other public pages are intentionally being held in this temporary structure:
-- header
-- hero banner
-- blank body placeholder
-- CTA
-- footer
+**Still shells** (header + hero + blank body + CTA/footer): `/about/`, `/contact/`, the
+`/marketing-services/` hub, `/industries/*`, `/resources/*`. `/programs/*` holds an older
+lorem prototype, not yet migrated to the template.
 
-The placeholder copy currently used on non-home pages is:
-- [Blank body — we will design this shortly.]
+The 8 service pages await three owner inputs to be final: real FAQ answers, verified
+conviction stats, and real images for the labeled placeholders.
 
-This is still intentional for all non-home pages except the current `/programs/` prototype.
-Do not start re-writing page bodies unless the design phase has been explicitly restarted.
+Don't deepen the remaining shell pages with long copy until their design is approved, and
+don't reintroduce retired routes.
 
 ## Canonical route rules
 
@@ -82,10 +86,10 @@ Structural cleanup already completed in this repo:
 ## Where to restart quickly
 
 Start here, in order:
-1. `docs/website-source-of-truth/README.md`
-2. `docs/website-source-of-truth/build-status.md`
-3. `docs/website-source-of-truth/decisions.md`
-4. `docs/website-source-of-truth/page-registry.md`
+1. `CLAUDE.md` (repo root) — the orientation file (auto-loaded by Claude Code)
+2. `docs/website-source-of-truth/build-status.md` — what's done / not done
+3. `docs/website-source-of-truth/service-page-template.md` — the locked service-page template + generator
+4. `docs/website-source-of-truth/decisions.md` and `routing-rules.md`
 5. `docs/website-source-of-truth/restart-guide.md`
 
 Those docs are the fastest way to recover context.
@@ -93,19 +97,19 @@ Those docs are the fastest way to recover context.
 ## Repo structure
 
 ```text
-├── index.html                          # Homepage (only intentionally developed page right now)
-├── about/
-├── contact/
+├── CLAUDE.md                           # Orientation file — read this first
+├── index.html                          # Homepage (developed benchmark page)
+├── _header.html  _footer.html          # Universal header/footer partials (stamped by build.py)
+├── build.py                            # Stamps header/footer into every page
+├── gen_service.py  _content.json       # Generates the 8 marketing-services pages
+├── about/  contact/  programs/
 ├── get-started/book-strategy-call/
-├── programs/
-├── marketing-services/
-├── industries/
-├── resources/
+├── marketing-services/                 # 8 detail pages (generated) + hub (shell)
+├── industries/  resources/
 ├── assets/
-│   ├── css/styles.css
-│   ├── js/main.js
-│   ├── images/
-│   └── logos/
+│   ├── css/styles.css                  # global (incl. nav)
+│   ├── css/service-page.css            # service-page template (svc-*)
+│   ├── js/main.js   images/   logos/
 ├── docs/website-source-of-truth/
 └── .github/workflows/deploy.yml
 ```
@@ -122,13 +126,12 @@ Those docs are the fastest way to recover context.
 
 ## Recommended next phase
 
-The next phase is still design, not copy.
-
-Best restart path:
-1. review Matt's feedback on the current `/programs/` prototype
-2. decide what to keep / kill from that layout
-3. redesign the Programs page with stronger visual hierarchy before writing final copy
-4. only then use the approved design direction to guide other non-home pages
+1. Finalize the 8 service pages with owner inputs: real FAQ answers (then add FAQ schema),
+   verified conviction stats, real images for the placeholders.
+2. Build the **Program pages** (`/programs/*`) on the same template approach (no pricing).
+3. Design + build the remaining non-home pages (About, Contact, services hub, Industries,
+   Resources).
+4. Eventually: launch cutover to lawnandlandmarketing.com (not yet).
 
 ## Deployment
 
@@ -139,7 +142,11 @@ GitHub Actions workflow:
 ## Maintainer note for future restart
 
 If you come back cold later, assume this:
-- homepage = live developed benchmark page
-- everything else = intentionally held shell, except `/programs/` which now has a simple layout prototype under review
-- route hygiene work is already done
-- the decision that matters most is preserving the blank-body convention on non-home pages while using `/programs/` as the current design exploration page
+- homepage = developed benchmark page
+- all 8 `/marketing-services/*` detail pages = built on the locked, generated template
+  (edit `_content.json` + run `gen_service.py`), pending owner inputs (FAQ answers, stat
+  verification, images)
+- everything else (About, Contact, services hub, Industries, Resources) = intentionally
+  held shell; `/programs/*` = older lorem prototype not yet on the template
+- route hygiene + universal header/footer + service-page tooling are all in place
+- read `CLAUDE.md` first

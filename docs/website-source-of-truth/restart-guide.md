@@ -1,110 +1,46 @@
 # Restart Guide
 
-Use this file when coming back to the Lawn & Land website after time away.
+Use this when coming back to the Lawn & Land website after time away.
 
 ## One-paragraph truth
+The **homepage** and **all 8 `/marketing-services/*` detail pages** are built. The service
+pages run off a locked template + a generator (`gen_service.py` reading `_content.json`).
+The remaining non-home pages (About, Contact, the services hub, Industries, Resources) are
+still intentional shells, and `/programs/*` holds an older lorem prototype not yet migrated
+to the template. Nothing is launched publicly yet — staging is new.lawnlab.dev; the eventual
+home is lawnandlandmarketing.com.
 
-The homepage is still the only intentionally developed page right now. Most other public pages remain in the temporary shell state: header + hero + blank-body placeholder + CTA/footer. The one exception is `/programs/`, which now has a simple live layout prototype with lorem placeholder content. A more aggressive redesign was attempted and rejected, then the simpler version was restored. Route hygiene is already clean, and the next real phase is still design refinement — not final long-form body writing.
+## Fastest restart path
+Read in order:
+1. `CLAUDE.md` (repo root) — the orientation file
+2. `docs/website-source-of-truth/build-status.md` — what's done / not done
+3. `docs/website-source-of-truth/service-page-template.md` — the locked service-page template + how pages are generated
+4. `docs/website-source-of-truth/decisions.md` and `routing-rules.md`
 
-## The fastest possible restart path
+## How to make changes
+- **Header/footer** (all pages): edit `_header.html` / `_footer.html` → `python3 build.py`.
+- **A service page's copy**: edit its object in `_content.json` → `python3 gen_service.py`
+  → `python3 build.py`. (Don't hand-edit the generated `marketing-services/<slug>/index.html`
+  — regeneration overwrites it.)
+- **A new service-template section / styling**: edit `assets/css/service-page.css` and the
+  generator `gen_service.py`, then regenerate. Bump the CSS `?v=` query to cache-bust.
+- Verify links + header/footer sync before pushing (`python3 build.py --check`).
 
-Read these in order:
-1. `README.md`
-2. `docs/website-source-of-truth/build-status.md`
-3. `docs/website-source-of-truth/decisions.md`
-4. `docs/website-source-of-truth/page-registry.md`
-5. `docs/website-source-of-truth/routing-rules.md`
+## Canonical routes (treat as truth)
+`/marketing-services/` · `/contact/` · `/programs/...` · `/industries/...` · `/resources/...`
+· `/get-started/book-strategy-call/`
 
-If that is all you read, you should still be operational quickly.
+Retired / keep out of internal linking: `/services/`, `/pricing/`, `/resources/guides/`,
+`/resources/contact/`, and older orphans (`/team/`, `/results/`, `/good-fit/`, `/book/`).
 
-## Current website convention
+## The next best moves
+1. Finalize the 8 service pages with the owner's inputs (FAQ answers → FAQ schema; verify
+   conviction stats; real images).
+2. Build the Program pages on the same template approach.
+3. Design + build the remaining non-home pages.
 
-Homepage:
-- intentionally developed
-- keep as the current strongest benchmark page in the repo
-
-All other public pages:
-- header
-- hero banner
-- blank body placeholder
-- CTA
-- footer
-
-Current exception:
-- `/programs/` no longer uses the blank-body placeholder
-- it currently has a simple review prototype with these sections:
-  - program philosophy
-  - quick breakdown
-  - Growth Program
-  - Authority Program
-  - right-stage closing section
-- copy inside that body is still placeholder/lorem and should be treated as layout scaffolding, not approved messaging
-
-Current placeholder text:
-- [Blank body — we will design this shortly.]
-
-Do not expand non-home pages with long body copy unless the design phase has restarted.
-Do not assume the current `/programs/` layout is approved; it is only the current review baseline.
-
-## Canonical routes
-
-These are the routes to treat as truth:
-- `/marketing-services/`
-- `/contact/`
-- `/programs/...`
-- `/industries/...`
-- `/resources/...`
-- `/get-started/book-strategy-call/`
-
-## Retired / non-canonical routes
-
-Keep these out of internal linking unless there is an explicit decision to bring them back:
-- `/services/`
-- `/pricing/`
-- `/resources/guides/`
-- `/resources/contact/`
-- older orphan routes such as `/team/`, `/results/`, `/good-fit/`, `/book/`, and legacy article URLs
-
-## What work has already been completed
-
-Structural work already done:
-- nav / footer / 404 / duplicated page HTML cleaned for canonical routing
-- `/services/` family retired from internal linking in favor of `/marketing-services/`
-- `/resources/contact/` retired from internal linking in favor of `/contact/`
-- `/resources/guides/` retired and removed
-- stale orphan internal links cleaned from the repo
-
-Current page-state work already done:
-- non-home pages reset back to shell state intentionally
-- homepage left as the only developed page
-- `/programs/` reopened as the active design exploration page
-- a simple Programs prototype is currently live
-- a stronger v2 redesign was rejected and reverted
-
-## If you need to verify the state quickly
-
-Check these live URLs first:
-- `/`
-- `/about/`
-- `/contact/`
-- `/programs/`
-- `/marketing-services/`
-- `/get-started/book-strategy-call/`
-
-Expected outcome:
-- homepage has real content
-- most non-home pages show hero + blank-body placeholder + CTA/footer
-- `/programs/` shows the simpler prototype with five body sections, not the blank-body placeholder
-
-## The next best move when this project resumes
-
-Recommended order:
-1. review Matt's detailed feedback on the current `/programs/` prototype
-2. redesign `/programs/` from that feedback until the design direction is right
-3. use the approved Programs direction to guide the non-home page system
-4. only then decide what deeper content needs to be written
-
-## Important guardrail
-
-If the project is resumed months later, do not assume previously written redesigns should be restored.
-The last explicit direction from Matt was to keep the simpler `/programs/` prototype live while he reviews it and prepares detailed feedback, and to keep other non-home pages blank-bodied until design is approved.
+## Guardrails
+- **No invented facts** — placeholders for anything unverifiable; conviction stats must be
+  real + sourced.
+- **Brand**: Lucide icons only (no emoji); Twilight purple never blends with green.
+- Don't deploy to lawnandlandmarketing.com — not launching yet.
