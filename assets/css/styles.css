@@ -354,20 +354,33 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .float-card-stat { font-family: var(--font-h); font-size: 24px; font-weight: 800; font-style: italic; color: var(--lime); }
 .float-card-label { font-family: var(--font-l); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-top: 4px; }
 
-/* ── Homepage stats bar (under hero) ───────────────── */
+/* ── Homepage stats bar (under hero) — Twilight spotlight card ── */
 .stats-bar {
   position: relative; z-index: 2;
-  padding: 38px 24px;
-  border-top: 1px solid rgba(255,255,255,0.07);
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-  background: linear-gradient(180deg, rgba(172,231,29,0.028), rgba(255,255,255,0));
+  padding: 56px 24px;
 }
 .stats-bar-inner {
   max-width: 1040px; margin: 0 auto;
   display: flex; align-items: center; justify-content: center;
   gap: clamp(18px, 5vw, 60px);
+  padding: 40px clamp(24px, 5vw, 56px);
+  border-radius: 24px;
+  border: 1px solid rgba(104,55,239,0.26);
+  background-color: #0d0b14;
+  background-image:
+    radial-gradient(125% 140% at 50% -12%, rgba(104,55,239,0.34) 0%, rgba(104,55,239,0.12) 34%, transparent 64%),
+    radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1.5px);
+  background-size: 100% 100%, 22px 22px;
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.4);
+  position: relative; overflow: hidden;
 }
-.stats-bar .stat { text-align: center; }
+.stats-bar-inner::before {
+  content: ''; position: absolute; top: 0; left: 12%; right: 12%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(104,55,239,0.55), transparent);
+}
+.stats-bar .stat { text-align: center; position: relative; }
 .stats-bar .stat-num {
   font-family: var(--font-h); font-weight: 800; font-style: italic;
   font-size: clamp(34px, 5vw, 54px); line-height: 1;
@@ -384,7 +397,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   background: linear-gradient(180deg, transparent, rgba(255,255,255,0.13), transparent);
 }
 @media (max-width: 680px) {
-  .stats-bar-inner { flex-direction: column; gap: 26px; }
+  .stats-bar { padding: 40px 18px; }
+  .stats-bar-inner { flex-direction: column; gap: 26px; padding: 34px 24px; }
   .stats-bar .stat-div { width: 64%; height: 1px; min-height: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.13), transparent); }
 }
 
