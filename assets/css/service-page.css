@@ -276,16 +276,16 @@
   color: var(--twilight-soft);
   margin-bottom: 12px;
 }
-.include-featured-content h3 {
+.include-featured-content .feat-headline {
   font-family: var(--font-h);
   font-size: clamp(24px, 2.4vw, 31px);
   font-weight: 800;
   font-style: italic;
   color: var(--white);
   line-height: 1.12;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
 }
-.include-featured-content h3 em { color: var(--twilight-soft); font-style: italic; }
+.include-featured-content .feat-headline em { color: var(--twilight-soft); font-style: italic; }
 .include-featured-content p {
   font-size: 15px;
   color: rgba(255,255,255,0.72);

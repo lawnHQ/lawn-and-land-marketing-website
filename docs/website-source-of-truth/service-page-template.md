@@ -47,6 +47,13 @@ Styles: `assets/css/service-page.css` (`svc-*` classes). Approved by Matt 2026-0
 - Keep copy tight and scannable — alternate text and visuals, never a wall of text.
 - Buttons never wrap to two lines.
 
+## SEO rules
+- **Keyword variants:** lead with the primary term (e.g. "landscaping website design") but naturally work in 2–3 variants — "lawn care," "landscaper," "lawn care company website" — across subheads/body. No stuffing.
+- **Heading hierarchy:** one H1; section titles are H2; the 7 "What's Included" cards are parallel H3s. The featured card's line is a styled paragraph (`.feat-headline`), NOT an H3, so the feature H3s stay clean siblings.
+- **Schema:** `Service` JSON-LD always; `FAQPage` JSON-LD only once the FAQ answers are real (never fabricated Q&A).
+- **No invented facts:** any unverifiable claim (timelines, specific deliverables, numbers) is a `[NEEDS YOUR INPUT — …]` placeholder, not a stated fact.
+- **Planned (not built yet):** a tightly-scoped "Related articles" feed (max 3, below the FAQ near the final CTA) for internal-link/silo value — add ONLY once that service has matching blog articles; an empty module is bloat.
+
 ## Image placeholders
 Each showcase ships a labeled `.svc-ph` placeholder telling the team exactly what
 image to drop in (e.g. "Screenshot of a Google map-pack result ranking #1").
