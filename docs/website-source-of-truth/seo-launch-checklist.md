@@ -1,5 +1,38 @@
 # SEO & Launch Checklist
 
+## Homepage launch audit (2026-06-14) — verified findings + status
+Five-lens audit (CRO, technical SEO, on-page, performance, a11y), each finding adversarially
+re-checked. Verified scores: CRO 7, Tech SEO 7, On-page 7, Performance 5, Accessibility 4.
+
+**FIXED this pass (index.html / styles.css?v=122 / main.js?v=52 / _header.html):**
+- Credibility: "50+" → "100+" companies (matched the approved stat).
+- FAQ schema parity: rebuilt FAQPage JSON-LD to all 6 visible Q&A w/ full answers (rich-result eligible).
+- Perf: hero YouTube iframe no longer ships a live `src` (data-src, set on click) — removes ~1MB+/​~dozen
+  third-party requests from every load. Poster got `fetchpriority="high"` + width/height + a
+  `lawnandlandmarketing.com` preconnect. Marquee logos lazy-loaded.
+- Meta description trimmed to ~153 chars (CTA no longer truncated). Added og:url + twitter:card.
+- Schema: enriched MarketingAgency (logo, sameAs, address, areaServed, @id, trailing-slash url) + WebSite node.
+- A11y: added `<main id="main">` + skip link; global `:focus-visible`; mega-menu now keyboard-openable
+  (`:focus-within`); fixed 3 sub-AA contrast labels (hero proof bar, separators, marquee label);
+  `prefers-reduced-motion` block + JS gating (word-cycle, cursor-glow rAF-throttled); hero H1 has a
+  stable accessible name (cycling span aria-hidden + sr-only phrase); aria-haspopup on nav triggers;
+  announcement-bar 🎉 → Lucide megaphone. Normalized 3 relative links to root-absolute.
+
+**STILL NEEDS OWNER INPUT (not code-fixable):**
+- **Analytics/conversion tracking** — none installed (no GA4/GTM/pixel). Pick a platform + provide
+  container/measurement IDs; then fire a book_call_click event on every CTA. Gates all optimization & ad attribution.
+- **10.83x ROI stat** — add a real methodology footnote/qualifier near the stat (currently unannotated).
+- **12-month contract objection** — decide risk-reversal framing to pair with the contract disclosure.
+
+**DEFERRED POLISH (optional, low impact — do anytime):**
+- "How It Works / Roadmap to Results" section (the FAQ name-drops it; page never shows it).
+- Work "marketing agency" into the H1 + a keyword into the lead "What We Do" H2 (owner copy call).
+- Demote the 4 pre-H1 mega-menu `<h4>`s to non-headings (outline hygiene).
+- Review schema for the 6 testimonials (entity/E-E-A-T only; Google won't show self-serving stars).
+- Add `<main>`/skip-link to the OTHER pages too (this pass was homepage-only).
+- Industries on-page cards: add the mega-menu microcopy blurbs. Font-weight preload. Tabs ARIA completion.
+
+
 From the 2026-06-14 multi-dimension SEO audit of the marketing-services hub (and the
 broader silo). Scores at audit time: silo/internal-linking 8/10, on-page 6, technical 5,
 schema 5, content-depth 4. The architecture is strong; the gaps below are optimization +

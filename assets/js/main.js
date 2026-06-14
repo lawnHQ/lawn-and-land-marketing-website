@@ -1,11 +1,22 @@
 // Lawn & Land Marketing v38 — Mega Menu + Premium Footer
 
+// ─ REDUCED MOTION ─
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 // ─ CURSOR GLOW ─
 const glow = document.getElementById('cursorGlow');
-if (glow && window.matchMedia('(pointer:fine)').matches) {
+if (glow && !reduceMotion && window.matchMedia('(pointer:fine)').matches) {
+  let gx = 0, gy = 0, gPending = false;
   document.addEventListener('mousemove', e => {
-    glow.style.left = e.clientX + 'px';
-    glow.style.top = e.clientY + 'px';
+    gx = e.clientX; gy = e.clientY;
+    if (!gPending) {
+      gPending = true;
+      requestAnimationFrame(() => {
+        glow.style.left = gx + 'px';
+        glow.style.top = gy + 'px';
+        gPending = false;
+      });
+    }
   });
 } else if (glow) { glow.style.display = 'none'; }
 
@@ -59,7 +70,7 @@ if (cycleEl) {
   // Set initial transition
   cycleEl.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
 
-  setInterval(() => {
+  if (!reduceMotion) setInterval(() => {
     // Slide out current word upward
     cycleEl.style.opacity = '0';
     cycleEl.style.transform = 'translateY(-18px)';
@@ -85,8 +96,11 @@ const videoFacade = document.getElementById('videoFacade');
 const heroIframe  = document.getElementById('heroIframe');
 if (videoFacade && heroIframe) {
   videoFacade.addEventListener('click', () => {
-    heroIframe.src += '&autoplay=1';
+    // Iframe ships with no src (data-src only) so the YouTube player isn't
+    // downloaded on page load — set it on first click to start playback.
+    if (!heroIframe.src) heroIframe.src = heroIframe.dataset.src + '&autoplay=1';
     heroIframe.closest('.hero-video-wrap').classList.add('playing');
+    heroIframe.focus();
   });
 }
 
