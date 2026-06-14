@@ -2335,7 +2335,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   gap: 20px; max-width: 1080px; margin: 0 auto;
 }
 .proof-case {
-  text-align: center; padding: 40px 24px; border-radius: 18px;
+  display: flex; flex-direction: column; text-align: left;
+  padding: 30px 26px; border-radius: 18px;
   border: 1px solid var(--card-bd); background: rgba(255,255,255,0.02);
   transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
@@ -2344,27 +2345,38 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   background: rgba(172,231,29,0.03);
   transform: translateY(-3px);
 }
-.proof-case-logo-wrap { height: 44px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
-.proof-case-logo {
-  max-height: 44px; max-width: 180px; width: auto; object-fit: contain;
-  filter: grayscale(1) brightness(0) invert(1); opacity: 0.9;
-  transition: opacity 0.2s;
+.proof-case-head {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 12px; margin-bottom: 26px;
 }
-.proof-case:hover .proof-case-logo { opacity: 1; }
+.proof-case-name {
+  font-family: var(--font-h); font-style: italic; font-weight: 800;
+  font-size: 18px; line-height: 1.15; color: var(--white);
+}
+.proof-case-loc {
+  font-family: var(--font-l); font-size: 11px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 6px;
+}
+.proof-case-growth {
+  flex-shrink: 0; display: inline-flex; align-items: center;
+  font-family: var(--font-l); font-size: 12px; font-weight: 700;
+  color: var(--lime); background: rgba(172,231,29,0.10);
+  border: 1px solid rgba(172,231,29,0.26); border-radius: 999px;
+  padding: 4px 10px; white-space: nowrap;
+}
 .proof-case-metric {
-  display: flex; align-items: baseline; justify-content: center; gap: 12px;
+  display: flex; align-items: baseline; gap: 10px; margin-top: auto;
   font-family: var(--font-h); font-weight: 800; font-style: italic;
-  font-size: clamp(34px, 4.4vw, 46px); line-height: 1; margin-bottom: 16px;
+  font-size: clamp(30px, 3.5vw, 42px); line-height: 1; margin-bottom: 12px;
 }
 .pc-from { color: rgba(255,255,255,0.34); }
 .pc-arrow { color: var(--lime); font-style: normal; font-weight: 600; font-size: 0.66em; }
 .pc-to { color: var(--lime); }
 .pc-unit { font-size: 0.42em; color: rgba(255,255,255,0.5); font-style: normal; font-weight: 600; margin-left: 2px; }
-.proof-case-label { font-family: var(--font-b); font-size: 15px; color: rgba(255,255,255,0.82); margin-bottom: 10px; }
-.proof-case-co { font-family: var(--font-l); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.46); }
+.proof-case-label { font-family: var(--font-b); font-size: 14px; color: rgba(255,255,255,0.7); }
 @media (max-width: 760px) {
   .proof-cases-grid { grid-template-columns: 1fr; gap: 14px; max-width: 440px; }
-  .proof-case { padding: 30px 20px; }
+  .proof-case { padding: 26px 22px; }
 }
 
 /* ───────────────────────── Accessibility ───────────────────────── */
