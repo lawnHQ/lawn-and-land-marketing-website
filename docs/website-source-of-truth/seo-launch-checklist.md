@@ -53,10 +53,13 @@ launch hygiene.
   a brand share image exists.
 
 ## Industry pages + taxonomy (follow-up)
-- The homepage "Industries We Serve" section (2026-06-14) links 8 industries in this order:
-  Landscaping, Outdoor Living, Lawn Care, Lawn Maintenance, Land Clearing, Irrigation, Outdoor
-  Lighting, Holiday Lighting. **5 are brand-new shell pages** (landscaping, lawn-maintenance,
-  land-clearing, outdoor-lighting, holiday-lighting) — build them out (like the service pages).
+- The homepage "Industries We Serve" section links 8 industries in this order:
+  Landscaping, Outdoor Living, Lawn Care, Lawn Maintenance, Land Clearing, Excavation, Septic
+  Services, Holiday Lighting. **4 are brand-new shell pages** (landscaping, lawn-maintenance,
+  land-clearing, holiday-lighting) — build them out (like the service pages). Excavation,
+  Septic Services, Outdoor Living, and Lawn Care already had pages. (Irrigation + Outdoor
+  Lighting were dropped from the homepage grid; the orphaned outdoor-lighting shell was deleted,
+  the pre-existing irrigation page remains.)
 - **Reconcile the Industries taxonomy**: the nav/footer Industries menu still lists the OLD set
   (landscape-design-build, landscape-maintenance, excavation, septic-services) which doesn't
   match the homepage's 8. Decide the canonical list, align nav + footer + `/industries/` hub,
