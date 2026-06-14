@@ -650,6 +650,27 @@
 .cta-service-arrow { opacity: 0.3; flex-shrink: 0; }
 .cta-service-link:hover .cta-service-arrow { opacity: 0.8; }
 
+/* ── Twilight spotlight CTA (brand) ──────────────────────
+   Scoped to .svc-cta--twilight for single-page review.
+   On approval, fold these into the base .svc-cta-* rules so
+   all service pages inherit it (and drop the modifier class). */
+.svc-cta--twilight .svc-cta-inner {
+  background-color: #0d0b14;
+  background-image:
+    radial-gradient(125% 120% at 50% -18%, rgba(104,55,239,0.36) 0%, rgba(104,55,239,0.12) 32%, transparent 62%),
+    radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1.5px);
+  background-size: 100% 100%, 22px 22px;
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center;
+  border-color: rgba(104,55,239,0.26);
+}
+.svc-cta--twilight .svc-cta-inner::before {
+  background: linear-gradient(90deg, transparent, rgba(104,55,239,0.6), transparent);
+}
+.svc-cta--twilight .svc-cta-glow {
+  background: radial-gradient(circle, rgba(104,55,239,0.13) 0%, transparent 62%);
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 1100px) {
   .svc-hero-inner { grid-template-columns: 1fr; gap: 48px; }
