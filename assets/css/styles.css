@@ -493,17 +493,17 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   padding: 28px 0; overflow: hidden; position: relative;
   background: var(--black-deep);
 }
-.marquee-section::before, .marquee-section::after {
+.marquee-track::before, .marquee-track::after {
   content: ''; position: absolute; top: 0; bottom: 0; width: 160px; z-index: 2; pointer-events: none;
 }
-.marquee-section::before { left: 0; background: linear-gradient(to right, var(--black-deep), transparent); }
-.marquee-section::after { right: 0; background: linear-gradient(to left, var(--black-deep), transparent); }
+.marquee-track::before { left: 0; background: linear-gradient(to right, var(--black-deep), transparent); }
+.marquee-track::after { right: 0; background: linear-gradient(to left, var(--black-deep), transparent); }
 .marquee-label {
   text-align: center; font-family: var(--font-l); font-size: 11px;
   font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
   color: rgba(255,255,255,0.18); margin-bottom: 16px;
 }
-.marquee-track { overflow: hidden; }
+.marquee-track { overflow: hidden; position: relative; }
 .marquee-inner {
   display: flex; align-items: center; gap: 20px;
   white-space: nowrap;
