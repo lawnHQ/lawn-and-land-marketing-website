@@ -18,11 +18,19 @@ re-checked. Verified scores: CRO 7, Tech SEO 7, On-page 7, Performance 5, Access
   stable accessible name (cycling span aria-hidden + sr-only phrase); aria-haspopup on nav triggers;
   announcement-bar 🎉 → Lucide megaphone. Normalized 3 relative links to root-absolute.
 
-**STILL NEEDS OWNER INPUT (not code-fixable):**
-- **Analytics/conversion tracking** — none installed (no GA4/GTM/pixel). Pick a platform + provide
-  container/measurement IDs; then fire a book_call_click event on every CTA. Gates all optimization & ad attribution.
-- **10.83x ROI stat** — add a real methodology footnote/qualifier near the stat (currently unannotated).
-- **12-month contract objection** — decide risk-reversal framing to pair with the contract disclosure.
+**RESOLVED with owner (2026-06-14):**
+- **ROI stat** — reframed from "10.83x Avg. Annual ROI After 2 Years" to **"12–16x · Revenue Returned
+  Per $1 Invested"** (fees-only basis: avg ~$48K in fees → $600K–$800K added revenue over 2 yrs).
+  Deliberately framed as *revenue* (not "ROI", which implies profit) and the $48K is NOT printed —
+  it would expose pricing, which the site keeps off by design.
+- **12-month contract objection** — FAQ answer now pairs the honest disclosure with risk-reversal
+  (97% retention + "zero risk to just have the conversation"); schema kept in parity.
+- **Mini case-study proof row** added high on the page (real client before→after numbers, owner-supplied):
+  Rock Solid $700K→$1.3M, Brothers Outdoor 3→10 leads/day, From The Ground Up $1.8M→$3.2M.
+
+**STILL NEEDS OWNER INPUT:**
+- **Analytics/conversion tracking** — none installed (no GA4/GTM/pixel). DECISION: install at full-site
+  launch (GTM + GA4), not now. When ready: GTM container in <head> + fire book_call_click on every CTA.
 
 **DEFERRED POLISH (optional, low impact — do anytime):**
 - "How It Works / Roadmap to Results" section (the FAQ name-drops it; page never shows it).
