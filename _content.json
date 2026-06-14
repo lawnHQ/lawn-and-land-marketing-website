@@ -410,103 +410,103 @@
   {
     "slug": "your-ai-partner",
     "serviceName": "Your AI Partner",
-    "title": "AI Marketing for Landscapers | Lawn & Land Marketing",
-    "metaDescription": "Get your lawn care or landscaping company recommended by AI search and run marketing faster with AI. Practical AI marketing for landscapers, no hype.",
-    "schemaServiceType": "AI Marketing",
-    "schemaDescription": "AI marketing for lawn care and landscaping companies, covering AI-search visibility through structured data and answer content plus AI-assisted content, follow-up, and optimization.",
+    "title": "Your AI Partner for Lawn Care & Landscaping | Lawn & Land Marketing",
+    "metaDescription": "Your AI partner for lawn care & landscaping. We set you up with AI tools — phone answering, messaging, AI search — and keep you ahead of every trend.",
+    "schemaServiceType": "AI Marketing Services",
+    "schemaDescription": "An ongoing AI partnership for lawn care and landscaping companies — implementing practical AI tools like AI phone answering and automated messaging, integrating profiles into AI systems and AI search, and keeping clients current on the latest AI trends.",
     "heroEyebrow": "Your AI Partner",
-    "h1": "Get your landscaping company recommended when buyers ask AI.",
-    "heroSubhead": "More homeowners now ask ChatGPT, Perplexity, and Google AI Overviews who to hire. We work to get your lawn care company into those answers, and we put AI to work running your marketing faster.",
+    "h1": "The AI partner that keeps your landscaping business ahead of the curve",
+    "heroSubhead": "AI is changing how homeowners find and hire — fast. We set your lawn care or landscaping company up with the right AI tools and keep you current, so you're always a step ahead instead of scrambling to catch up.",
     "conviction": {
-      "stat": "800",
-      "statUnit": "M+",
-      "lead": "Buyers are asking AI who to hire, every single week.",
-      "sub": "ChatGPT alone reaches over 800 million weekly users, and more of them now ask AI to recommend a local landscaper before they ever open a search engine.",
+      "stat": "800M+",
+      "statUnit": "",
+      "lead": "Over 800 million people use ChatGPT every week — and your customers are among them.",
+      "sub": "AI went mainstream faster than anything before it. We make sure your landscaping company is set up to use it, and to show up in it, instead of being left behind by it.",
       "statSource": "OpenAI"
     },
     "showcaseA": {
-      "eyebrow": "What we do",
-      "headline": "We help AI engines ~know your company~ exists.",
-      "paragraph": "AI answer engines pull from structured, well-organized information about your business, your services, and your service areas. We build that foundation so ChatGPT, Perplexity, and Google AI Overviews can recommend your lawn care company when a homeowner asks for one. No tricks, just clean data and clear answers AI can trust.",
+      "eyebrow": "What we set up",
+      "headline": "Practical AI that ~answers, replies, and books~ for you",
+      "paragraph": "Being your AI partner isn't theory — it's tools that do real work. We set your lawn care or landscaping business up with AI that answers the phone when you can't, replies to leads instantly, and handles the back-and-forth so every homeowner gets a fast response, day or night.",
       "checklist": [
-        "Structured data and schema that tell AI exactly who you are and where you work",
-        "Entity and answer content that positions you as the obvious local recommendation",
-        "FAQ and question-led pages written the way buyers actually ask AI"
+        "AI phone answering that picks up when you're out on a job",
+        "AI-powered messaging that replies to new leads in seconds",
+        "Tools chosen and configured around how your business actually runs"
       ],
-      "imageHint": "Screenshot of an AI answer engine (ChatGPT or Perplexity) recommending a local landscaping company by name in response to a 'best lawn care near me' style question"
+      "imageHint": "Screenshot or mockup of an AI phone-answering call or AI text conversation handling a homeowner's request for a landscaping quote"
     },
     "includes": {
-      "featuredKicker": "The shift nobody warned you about",
-      "featuredHeadline": "If AI can't find you, you're ~invisible to your next customer~.",
-      "featuredBody": "You spent years earning a reputation, and now a homeowner types one question into an AI tool and gets handed three names that aren't yours. It isn't that you're not good enough. It's that the AI was never given a clear picture of your company. We fix that, and we hand you AI tools that take the busywork off your plate at the same time.",
-      "featuredTag": "Done-for-you",
+      "featuredKicker": "What 'partner' really means",
+      "featuredHeadline": "AI moves fast. ~We keep you ahead of it~.",
+      "featuredBody": "Most owners don't have time to track every new AI tool, and the ones who ignore it get left behind. That's our job. We're the partner in your corner who tests what's new, sets up what actually helps your landscaping business, and keeps you current — so AI works for you instead of passing you by.",
+      "featuredTag": "Ongoing partner",
       "cards": [
         {
-          "icon": "search",
-          "title": "AI Search Visibility",
-          "body": "We optimize how AI answer engines find, understand, and recommend your business."
-        },
-        {
-          "icon": "file-text",
-          "title": "Structured Data",
-          "body": "Clean schema and markup that tell AI exactly what you do and where you do it."
+          "icon": "phone",
+          "title": "AI Phone Answering",
+          "body": "An AI receptionist that answers calls and captures leads when you can't pick up."
         },
         {
           "icon": "message-circle",
-          "title": "Answer Content",
-          "body": "Question-led pages written the way buyers phrase their requests to AI."
+          "title": "AI Messaging",
+          "body": "Natural, automated replies that respond to homeowners the moment they reach out."
         },
         {
-          "icon": "pen-line",
-          "title": "AI-Assisted Content",
-          "body": "Faster drafting of posts, pages, and emails, edited by a human before it ships."
+          "icon": "search",
+          "title": "AI Search Visibility",
+          "body": "Get recommended when buyers ask ChatGPT and AI search for a landscaper near them."
         },
         {
-          "icon": "bot",
-          "title": "AI Lead Follow-Up",
-          "body": "Rapid replies to new inquiries so leads get answered while they're still warm."
+          "icon": "link",
+          "title": "Profile Integration",
+          "body": "We connect your business info into the AI systems and tools that send you leads."
         },
         {
-          "icon": "target",
-          "title": "Smarter Targeting",
-          "body": "AI-driven insights that point your ad spend at the buyers most likely to book."
+          "icon": "lightbulb",
+          "title": "Trend Updates",
+          "body": "We keep you current on the AI tools and shifts that actually matter for your business."
         },
         {
-          "icon": "trending-up",
-          "title": "Insights & Optimization",
-          "body": "Ongoing tuning as AI search keeps evolving, so you stay in the answers."
+          "icon": "sliders",
+          "title": "Setup & Tuning",
+          "body": "Every tool configured for the way your lawn care or landscaping company runs."
+        },
+        {
+          "icon": "shield-check",
+          "title": "A Real Partner",
+          "body": "Someone to ask 'should we be using this?' — and get a straight answer."
         }
       ]
     },
     "showcaseB": {
-      "eyebrow": "How it pays off",
-      "headline": "AI that ~does the busywork~ so you can sell.",
-      "paragraph": "The other half of an AI partner is speed. We use AI to draft content, answer new leads quickly, and surface which markets and services are worth more of your attention. You stay in control and a human reviews the work, but the grind of follow-up and first drafts stops eating your evenings. That's more booked jobs with less time at the keyboard.",
+      "eyebrow": "Why it matters",
+      "headline": "Stay current without ~becoming the AI expert~",
+      "paragraph": "You shouldn't have to learn a new tool every week to keep up. We handle the watching, testing, and setup, then translate it into plain next steps for your landscaping business — so you get the upside of moving early on AI without the time it usually takes to figure out.",
       "checklist": [
-        "Rapid lead follow-up so estimate requests get answered while they're fresh",
-        "AI-drafted content your team reviews, not robotic copy nobody checks",
-        "Clear insights on where your next jobs are most likely to come from"
+        "No chasing every shiny new tool — we filter the noise for you",
+        "Faster lead response and coverage, even after hours",
+        "A business that looks modern and keeps pace with how people search"
       ],
-      "imageHint": "Screenshot of an AI-powered lead follow-up conversation responding to a new landscaping inquiry quickly, or a simple insights dashboard highlighting top-performing services and service areas"
+      "imageHint": "Image of a landscaping owner working on a job site while AI tools handle calls and messages in the background — or a simple 'missed lead' vs 'AI answered' comparison"
     },
     "faqQuestions": [
-      "How do I get my landscaping company recommended by ChatGPT and other AI tools?",
-      "What is AI search optimization and how is it different from regular SEO for lawn care companies?",
-      "Will AI search and Google AI Overviews actually send my landscaping business more leads?",
-      "Can AI help my lawn care company respond to new leads faster?",
-      "Is AI marketing safe for a small landscaping business, or is it just hype?"
+      "What does an AI partner actually do for a landscaping business?",
+      "How does an AI phone answering service work for a lawn care company?",
+      "Can AI really respond to my leads without sounding like a robot?",
+      "How do you get my company to show up in AI search like ChatGPT?",
+      "Do I need to be tech-savvy to use the AI tools you set up?"
     ],
     "cta": {
       "eyebrow": "Get started",
-      "headline": "Ready to be the name ~AI recommends~?",
-      "paragraph": "Book a free strategy call and we'll show you how buyers are finding landscapers through AI right now, where your company stands today, and the practical steps to get you into those answers.",
-      "note": "Free strategy call. No pressure, no jargon, no obligation."
+      "headline": "Let's put AI to work for ~your business~",
+      "paragraph": "Book a free strategy call and we'll show you where AI can save you time, catch more leads, and keep your landscaping company ahead of the curve.",
+      "note": "No tech overwhelm. Just a partner who keeps you current."
     },
     "relatedSlugs": [
+      "automation",
+      "reputation-management",
       "local-seo",
-      "website-design",
-      "gbp-management",
-      "automation"
+      "website-design"
     ]
   },
   {
