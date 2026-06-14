@@ -2344,6 +2344,13 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   background: rgba(172,231,29,0.03);
   transform: translateY(-3px);
 }
+.proof-case-logo-wrap { height: 44px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.proof-case-logo {
+  max-height: 44px; max-width: 180px; width: auto; object-fit: contain;
+  filter: grayscale(1) brightness(0) invert(1); opacity: 0.9;
+  transition: opacity 0.2s;
+}
+.proof-case:hover .proof-case-logo { opacity: 1; }
 .proof-case-metric {
   display: flex; align-items: baseline; justify-content: center; gap: 12px;
   font-family: var(--font-h); font-weight: 800; font-style: italic;
