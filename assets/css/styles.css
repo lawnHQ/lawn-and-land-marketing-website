@@ -12,6 +12,8 @@
 :root {
   --lime:        #ACE71D;
   --green:       #5DCA49;
+  --twilight:    #6837EF;    /* premium accent — punctuation only */
+  --twilight-soft: #C6B0FA;
   --black:       #07100A;    /* KEY: dark teal-green, not pure black */
   --black-deep:  #040C07;    /* deepest areas */
   --black-mid:   #0C1A0F;    /* slightly lighter sections */
