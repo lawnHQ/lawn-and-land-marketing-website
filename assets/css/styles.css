@@ -328,13 +328,20 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .hero-img-ph { width: 100%; aspect-ratio: 4/3; border-radius: 20px; }
 .float-card {
   position: absolute;
-  background: rgba(7,16,10,0.9);
-  border: 1px solid rgba(172,231,29,0.18);
+  background-color: #0d0b14;
+  background-image:
+    radial-gradient(130% 150% at 50% -15%, rgba(104,55,239,0.40) 0%, rgba(104,55,239,0.14) 34%, transparent 64%),
+    radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1.5px);
+  background-size: 100% 100%, 20px 20px;
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center;
+  border: 1px solid rgba(104,55,239,0.32);
+  overflow: hidden;
   border-radius: var(--radius);
   padding: 16px 20px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 26px rgba(104,55,239,0.22);
   position: absolute;
 }
 /* Glass top edge on float cards */
@@ -342,7 +349,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   content: '';
   position: absolute;
   top: 0; left: 10%; right: 10%; height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(172,231,29,0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(104,55,239,0.5), transparent);
 }
 .float-card--tl { top: -28px; left: -16px; }
 .float-card--br { bottom: -28px; right: -16px; }
