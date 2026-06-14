@@ -681,6 +681,15 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 .why-img { position: relative; }
 .why-img-ph { width: 100%; aspect-ratio: 4/5; border-radius: 20px; }
+.why-img-photo {
+  width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block;
+  border-radius: 22px; border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.45);
+}
+.why-img-shade {
+  position: absolute; inset: 0; border-radius: 22px; pointer-events: none;
+  background: linear-gradient(180deg, transparent 48%, rgba(7,16,10,0.62) 100%);
+}
 .why-img-badge {
   position: absolute; bottom: -20px; right: -20px;
   background: var(--lime); color: #0a1a00;
@@ -698,6 +707,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .pillar-body p { font-size: 15px; color: rgba(255,255,255,0.58); line-height: 1.65; margin-bottom: 8px; }
 .pillar-link { font-size: 13px; font-weight: 600; color: var(--lime); }
 .pillar-link:hover { text-decoration: underline; }
+.why-cta { display: inline-block; margin-top: 32px; font-size: 14px; }
 
 /* ─ TESTIMONIALS ─ */
 .testi-section {
