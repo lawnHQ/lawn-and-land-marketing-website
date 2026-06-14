@@ -1516,6 +1516,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
     position: static;
     transform: none !important;
     opacity: 1 !important;
+    visibility: visible !important;
     pointer-events: auto !important;
     min-width: 100%;
     display: none;

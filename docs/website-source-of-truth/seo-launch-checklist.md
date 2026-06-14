@@ -52,18 +52,21 @@ launch hygiene.
 - **Social/share tags** — add `og:image` + Twitter Card (`summary_large_image`) sitewide once
   a brand share image exists.
 
-## Industry pages + taxonomy (follow-up)
-- The homepage "Industries We Serve" section links 8 industries in this order:
-  Landscaping, Outdoor Living, Lawn Care, Lawn Maintenance, Land Clearing, Excavation, Septic
-  Services, Holiday Lighting. **4 are brand-new shell pages** (landscaping, lawn-maintenance,
-  land-clearing, holiday-lighting) — build them out (like the service pages). Excavation,
-  Septic Services, Outdoor Living, and Lawn Care already had pages. (Irrigation + Outdoor
-  Lighting were dropped from the homepage grid; the orphaned outdoor-lighting shell was deleted,
-  the pre-existing irrigation page remains.)
-- **Reconcile the Industries taxonomy**: the nav/footer Industries menu still lists the OLD set
-  (landscape-design-build, landscape-maintenance, excavation, septic-services) which doesn't
-  match the homepage's 8. Decide the canonical list, align nav + footer + `/industries/` hub,
-  and retire/redirect the dropped slugs.
+## Industry pages + taxonomy
+- **DONE (2026-06-14) — taxonomy reconciled to the canonical 8.** The site now has exactly
+  8 industry pages, in the homepage "Industries We Serve" order: Landscaping, Outdoor Living,
+  Lawn Care, Lawn Maintenance, Land Clearing, Excavation, Septic Services, Holiday Lighting.
+  - Retired pages **deleted**: `/industries/irrigation/`, `/industries/landscape-design-build/`,
+    `/industries/landscape-maintenance/` (the earlier `outdoor-lighting` shell was already gone).
+  - Nav mega-menu + footer rebuilt to the 8 (now in homepage order, with the matching Lucide
+    icons instead of the old generic checkmark), `/industries/` hub copy updated, `sitemap.xml`
+    given an Industries section, and the page-registry / sitemap.md / PAGES_MANIFEST docs aligned.
+    No reference to the 3 retired slugs remains anywhere in the project.
+- **Still TODO — build out the 8 shells.** All 8 are live shells (header + hero + placeholder
+  body + CTA/footer) with correct self-canonical/title/meta. Build real content on the service-
+  page template approach. The `/industries/` hub body is also still a placeholder.
+- Optional: add `301` redirects from the 3 retired slugs at launch (harmless now — they 404 on
+  staging and were never indexed).
 
 ## Post-launch content
 - **"Mow Money, Mow Problems" dedicated page** — the free-resource (book) section was removed

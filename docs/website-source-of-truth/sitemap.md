@@ -27,13 +27,14 @@ Ancillary utility pages like legal pages can exist outside this list.
 
 ## Industries
 - `/industries/` — Industries hub
+- `/industries/landscaping/` — Landscaping
+- `/industries/outdoor-living/` — Outdoor Living
 - `/industries/lawn-care/` — Lawn Care
-- `/industries/landscape-maintenance/` — Landscape Maintenance
-- `/industries/landscape-design-build/` — Landscape Design & Build
-- `/industries/outdoor-living/` — Outdoor Living / Hardscaping
-- `/industries/irrigation/` — Irrigation Services
+- `/industries/lawn-maintenance/` — Lawn Maintenance
+- `/industries/land-clearing/` — Land Clearing
 - `/industries/excavation/` — Excavation
 - `/industries/septic-services/` — Septic Services
+- `/industries/holiday-lighting/` — Holiday Lighting
 
 ## Resources
 - `/resources/` — Resources hub

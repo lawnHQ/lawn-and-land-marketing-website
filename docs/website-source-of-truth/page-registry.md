@@ -27,13 +27,14 @@ Status key
 | Marketing Services | Reputation Management | `/marketing-services/reputation-management/` | yes | scaffolded | Live shell. |
 | Marketing Services | Automation | `/marketing-services/automation/` | yes | scaffolded | Live shell. |
 | Industries | Industries hub | `/industries/` | yes | scaffolded | Live shell. |
+| Industries | Landscaping | `/industries/landscaping/` | yes | scaffolded | Live shell. |
+| Industries | Outdoor Living | `/industries/outdoor-living/` | yes | scaffolded | Live shell. |
 | Industries | Lawn Care | `/industries/lawn-care/` | yes | scaffolded | Live shell. |
-| Industries | Landscape Maintenance | `/industries/landscape-maintenance/` | yes | scaffolded | Live shell. |
-| Industries | Landscape Design & Build | `/industries/landscape-design-build/` | yes | scaffolded | Live shell. |
-| Industries | Outdoor Living / Hardscaping | `/industries/outdoor-living/` | yes | scaffolded | Live shell. |
-| Industries | Irrigation Services | `/industries/irrigation/` | yes | scaffolded | Live shell. |
+| Industries | Lawn Maintenance | `/industries/lawn-maintenance/` | yes | scaffolded | Live shell. |
+| Industries | Land Clearing | `/industries/land-clearing/` | yes | scaffolded | Live shell. |
 | Industries | Excavation | `/industries/excavation/` | yes | scaffolded | Live shell. |
 | Industries | Septic Services | `/industries/septic-services/` | yes | scaffolded | Live shell. |
+| Industries | Holiday Lighting | `/industries/holiday-lighting/` | yes | scaffolded | Live shell. |
 | Resources | Resources hub | `/resources/` | yes | scaffolded | Live shell; legacy guides/contact route drift has been removed. |
 | Resources | Blog | `/resources/blog/` | yes | scaffolded | Live but needs content strategy and index depth. |
 | Resources | Meet The Team | `/resources/meet-the-team/` | yes | scaffolded | Live shell. |

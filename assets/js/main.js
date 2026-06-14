@@ -105,8 +105,11 @@ if (navToggle && navMenu) {
 
 // ─ MEGA MENU — mobile click toggles ─
 document.querySelectorAll('.nav-item.nav-mega > .nav-link').forEach(btn => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
     if (window.innerWidth <= 768) {
+      // On mobile the parent row is an accordion toggle, not a link —
+      // stop it from navigating to the hub so the submenu can expand.
+      e.preventDefault();
       const item = btn.closest('.nav-item');
       // Close others
       document.querySelectorAll('.nav-item.nav-mega').forEach(i => {
@@ -126,8 +129,9 @@ document.addEventListener('click', e => {
 
 // Legacy dropdown toggles (non-mega)
 document.querySelectorAll('.nav-item.nav-dropdown > .nav-link').forEach(btn => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
     if (window.innerWidth <= 768) {
+      e.preventDefault();
       btn.closest('.nav-item').classList.toggle('open');
     }
   });

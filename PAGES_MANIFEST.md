@@ -21,46 +21,47 @@ Build fresh at the mega menu paths.
 11. `/about/meet-the-team/` — NEW (currently at /meet-the-team/ and /team/)
 12. `/about/experiences-reviews/` — NEW (currently at /experiences-reviews/)
 
-### GROUP 3: Industries (EXIST — need nav/footer standardization)
-13. `/industries/` — exists
-14. `/industries/lawn-care/` — exists
-15. `/industries/landscape-maintenance/` — exists
-16. `/industries/landscape-design-build/` — exists
-17. `/industries/outdoor-living/` — exists
-18. `/industries/irrigation/` — exists
+### GROUP 3: Industries (EXIST — the canonical 8, matching the homepage "Industries We Serve" grid)
+13. `/industries/` — exists (hub)
+14. `/industries/landscaping/` — exists
+15. `/industries/outdoor-living/` — exists
+16. `/industries/lawn-care/` — exists
+17. `/industries/lawn-maintenance/` — exists
+18. `/industries/land-clearing/` — exists
 19. `/industries/excavation/` — exists
 20. `/industries/septic-services/` — exists
+21. `/industries/holiday-lighting/` — exists
 
 ### GROUP 4: Programs (EXIST — need nav/footer standardization)
-21. `/programs/` — exists (REFERENCE page — do not change hero)
-22. `/programs/growth/` — exists
-23. `/programs/authority/` — exists
+22. `/programs/` — exists (REFERENCE page — do not change hero)
+23. `/programs/growth/` — exists
+24. `/programs/authority/` — exists
 
 ### GROUP 5: Resources (EXIST — need nav/footer standardization)
-24. `/resources/` — exists
-25. `/resources/contact/` — exists
-26. `/resources/blog/` — exists
-27. `/resources/meet-the-team/` — exists
-28. `/resources/experiences-reviews/` — exists
-29. `/resources/private-facebook-group/` — exists
-30. `/resources/mow-money-mow-problems-podcast/` — exists
-31. `/resources/guides/` — exists
+25. `/resources/` — exists
+26. `/resources/contact/` — exists
+27. `/resources/blog/` — exists
+28. `/resources/meet-the-team/` — exists
+29. `/resources/experiences-reviews/` — exists
+30. `/resources/private-facebook-group/` — exists
+31. `/resources/mow-money-mow-problems-podcast/` — exists
+32. `/resources/guides/` — exists
 
 ### GROUP 6: Footer-only pages (EXIST or NEED CREATION)
-32. `/contact/` — exists
-33. `/good-fit/` — exists
-34. `/results/` — exists
-35. `/case-studies/` — exists (+ 5 individual case studies)
-36. `/book/` — exists
-37. `/podcast/` — exists
-38. `/tools/marketing-audit/` — exists
-39. `/get-started/book-strategy-call/` — exists
-40. `/privacy-policy/` — exists
-41. `/terms/` — exists
-42. `/thank-you/` — exists
-43. `/404.html` — exists
-44. `/pricing/` — NEW (footer links to it)
+33. `/contact/` — exists
+34. `/good-fit/` — exists
+35. `/results/` — exists
+36. `/case-studies/` — exists (+ 5 individual case studies)
+37. `/book/` — exists
+38. `/podcast/` — exists
+39. `/tools/marketing-audit/` — exists
+40. `/get-started/book-strategy-call/` — exists
+41. `/privacy-policy/` — exists
+42. `/terms/` — exists
+43. `/thank-you/` — exists
+44. `/404.html` — exists
+45. `/pricing/` — NEW (footer links to it)
 
-### TOTAL: ~44 pages
+### TOTAL: ~45 pages
 - ~12 brand new pages to create
 - ~32 existing pages to standardize (nav + hero + footer)
