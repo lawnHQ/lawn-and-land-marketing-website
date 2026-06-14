@@ -52,6 +52,16 @@ launch hygiene.
 - **Social/share tags** — add `og:image` + Twitter Card (`summary_large_image`) sitewide once
   a brand share image exists.
 
+## Industry pages + taxonomy (follow-up)
+- The homepage "Industries We Serve" section (2026-06-14) links 8 industries in this order:
+  Landscaping, Outdoor Living, Lawn Care, Lawn Maintenance, Land Clearing, Irrigation, Outdoor
+  Lighting, Holiday Lighting. **5 are brand-new shell pages** (landscaping, lawn-maintenance,
+  land-clearing, outdoor-lighting, holiday-lighting) — build them out (like the service pages).
+- **Reconcile the Industries taxonomy**: the nav/footer Industries menu still lists the OLD set
+  (landscape-design-build, landscape-maintenance, excavation, septic-services) which doesn't
+  match the homepage's 8. Decide the canonical list, align nav + footer + `/industries/` hub,
+  and retire/redirect the dropped slugs.
+
 ## Post-launch content
 - **"Mow Money, Mow Problems" dedicated page** — the free-resource (book) section was removed
   from the homepage 2026-06-14. Build it its own page under the Resources menu and link it
