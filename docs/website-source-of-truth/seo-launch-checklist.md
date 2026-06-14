@@ -52,6 +52,12 @@ launch hygiene.
 - **Social/share tags** — add `og:image` + Twitter Card (`summary_large_image`) sitewide once
   a brand share image exists.
 
+## Post-launch content
+- **"Mow Money, Mow Problems" dedicated page** — the free-resource (book) section was removed
+  from the homepage 2026-06-14. Build it its own page under the Resources menu and link it
+  there. The `book-section` markup/CSS is preserved (CSS in `styles.css`; the old homepage
+  block is in git history) for reuse.
+
 ## Nice-to-have (later)
 - Demote the nav mega-panel card titles from `<h4>` to non-heading elements so the document
   outline starts cleanly at the page H1 (currently 4 `<h4>`s render before the H1 — a
