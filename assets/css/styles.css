@@ -2327,6 +2327,39 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   .section-actions .btn { width: 100%; justify-content: center; }
 }
 
+/* ── Mini case-study proof row ── */
+.proof-cases { padding: var(--section-gap) 0; }
+.proof-cases-head { margin-bottom: 40px; }
+.proof-cases-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 20px; max-width: 1080px; margin: 0 auto;
+}
+.proof-case {
+  text-align: center; padding: 40px 24px; border-radius: 18px;
+  border: 1px solid var(--card-bd); background: rgba(255,255,255,0.02);
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.proof-case:hover {
+  border-color: rgba(172,231,29,0.28);
+  background: rgba(172,231,29,0.03);
+  transform: translateY(-3px);
+}
+.proof-case-metric {
+  display: flex; align-items: baseline; justify-content: center; gap: 12px;
+  font-family: var(--font-h); font-weight: 800; font-style: italic;
+  font-size: clamp(34px, 4.4vw, 46px); line-height: 1; margin-bottom: 16px;
+}
+.pc-from { color: rgba(255,255,255,0.34); }
+.pc-arrow { color: var(--lime); font-style: normal; font-weight: 600; font-size: 0.66em; }
+.pc-to { color: var(--lime); }
+.pc-unit { font-size: 0.42em; color: rgba(255,255,255,0.5); font-style: normal; font-weight: 600; margin-left: 2px; }
+.proof-case-label { font-family: var(--font-b); font-size: 15px; color: rgba(255,255,255,0.82); margin-bottom: 10px; }
+.proof-case-co { font-family: var(--font-l); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.46); }
+@media (max-width: 760px) {
+  .proof-cases-grid { grid-template-columns: 1fr; gap: 14px; max-width: 440px; }
+  .proof-case { padding: 30px 20px; }
+}
+
 /* ───────────────────────── Accessibility ───────────────────────── */
 
 /* Screen-reader-only text (visually hidden, still announced) */
