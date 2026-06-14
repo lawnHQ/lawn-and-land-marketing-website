@@ -69,6 +69,8 @@ Static, multi-page, hand-built HTML/CSS/JS (no framework). It will eventually li
 3. **Other non-home pages**: About, Contact, the marketing-services hub, Industries/*,
    Resources/* — design + build.
 4. **Launch**: eventual cutover to lawnandlandmarketing.com (not yet — don't deploy there).
+   Before launch, work `docs/website-source-of-truth/seo-launch-checklist.md` — esp. flipping
+   all `new.lawnlab.dev` URLs → production, fixing `sitemap.xml`, and adding `robots.txt`.
 
 ## Working with the owner (Matt)
 - Product-minded, not a deep engineer. Explain **outcomes**, not git/Vercel/CLI/deploy
