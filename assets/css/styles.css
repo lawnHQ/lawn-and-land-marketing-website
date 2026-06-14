@@ -354,6 +354,40 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .float-card-stat { font-family: var(--font-h); font-size: 24px; font-weight: 800; font-style: italic; color: var(--lime); }
 .float-card-label { font-family: var(--font-l); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-top: 4px; }
 
+/* ── Homepage stats bar (under hero) ───────────────── */
+.stats-bar {
+  position: relative; z-index: 2;
+  padding: 38px 24px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  background: linear-gradient(180deg, rgba(172,231,29,0.028), rgba(255,255,255,0));
+}
+.stats-bar-inner {
+  max-width: 1040px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  gap: clamp(18px, 5vw, 60px);
+}
+.stats-bar .stat { text-align: center; }
+.stats-bar .stat-num {
+  font-family: var(--font-h); font-weight: 800; font-style: italic;
+  font-size: clamp(34px, 5vw, 54px); line-height: 1;
+  letter-spacing: -0.02em; color: var(--lime);
+}
+.stats-bar .stat-label {
+  margin: 10px auto 0; max-width: 16ch;
+  font-family: var(--font-l); font-size: clamp(11px, 1.25vw, 13px);
+  font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--muted); line-height: 1.35;
+}
+.stats-bar .stat-div {
+  width: 1px; align-self: stretch; min-height: 58px;
+  background: linear-gradient(180deg, transparent, rgba(255,255,255,0.13), transparent);
+}
+@media (max-width: 680px) {
+  .stats-bar-inner { flex-direction: column; gap: 26px; }
+  .stats-bar .stat-div { width: 64%; height: 1px; min-height: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.13), transparent); }
+}
+
 /* Hero video */
 .hero-video-wrap {
   position: relative; padding-bottom: 56.25%; height: 0;

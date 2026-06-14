@@ -24,7 +24,8 @@ revealEls.forEach(el => revealObs.observe(el));
 
 // ─ COUNTER ANIMATION ─
 function animateCount(el) {
-  const target = parseInt(el.dataset.count);
+  const decimals = parseInt(el.dataset.decimals) || 0;
+  const target = parseFloat(el.dataset.count);
   const prefix = el.dataset.prefix || '';
   const suffix = el.dataset.suffix || '';
   const duration = 1800;
@@ -32,7 +33,8 @@ function animateCount(el) {
   const update = (now) => {
     const progress = Math.min((now - start) / duration, 1);
     const ease = 1 - Math.pow(1 - progress, 3);
-    const current = Math.round(ease * target);
+    const raw = ease * target;
+    const current = decimals ? raw.toFixed(decimals) : Math.round(raw);
     el.textContent = prefix + current + suffix;
     if (progress < 1) requestAnimationFrame(update);
   };
