@@ -517,20 +517,26 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 
 /* ─ MARQUEE ─ */
 .marquee-section {
-  border-top: 1px solid rgba(255,255,255,0.04);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-  padding: 28px 0; overflow: hidden; position: relative;
-  background: var(--black-deep);
+  border-top: 1px solid rgba(104,55,239,0.22);
+  border-bottom: 1px solid rgba(104,55,239,0.22);
+  padding: 44px 0; overflow: hidden; position: relative;
+  background-color: #0d0b14;
+  background-image:
+    radial-gradient(120% 200% at 50% -30%, rgba(104,55,239,0.32) 0%, rgba(104,55,239,0.10) 38%, transparent 68%),
+    radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1.5px);
+  background-size: 100% 100%, 22px 22px;
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center;
 }
 .marquee-track::before, .marquee-track::after {
   content: ''; position: absolute; top: 0; bottom: 0; width: 160px; z-index: 2; pointer-events: none;
 }
-.marquee-track::before { left: 0; background: linear-gradient(to right, var(--black-deep), transparent); }
-.marquee-track::after { right: 0; background: linear-gradient(to left, var(--black-deep), transparent); }
+.marquee-track::before { left: 0; background: linear-gradient(to right, #0d0b14, transparent); }
+.marquee-track::after { right: 0; background: linear-gradient(to left, #0d0b14, transparent); }
 .marquee-label {
   text-align: center; font-family: var(--font-l); font-size: 11px;
   font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
-  color: rgba(255,255,255,0.55); margin-bottom: 16px;
+  color: rgba(206,193,245,0.85); margin-bottom: 18px; position: relative; z-index: 1;
 }
 .marquee-track { overflow: hidden; position: relative; }
 .marquee-inner {
@@ -545,11 +551,12 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   height: 38px; width: auto;
   object-fit: contain;
   filter: grayscale(1) brightness(0) invert(1);
-  opacity: 0.35;
+  opacity: 0.5;
   transition: opacity 0.3s, filter 0.3s;
   flex-shrink: 0;
+  position: relative; z-index: 1;
 }
-.marquee-inner:hover .marquee-logo { opacity: 0.6; }
+.marquee-inner:hover .marquee-logo { opacity: 0.8; }
 .proof-nalp-logo { height: 18px; width: auto; opacity: 0.65; filter: brightness(0) invert(1); vertical-align: middle; }
 
 /* ─ SERVICES TABS ─ */
