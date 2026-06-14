@@ -247,11 +247,11 @@
 .include-card--featured {
   grid-area: featured;
   background:
-    radial-gradient(130% 150% at 0% 0%, rgba(172,231,29,0.16) 0%, transparent 52%),
-    radial-gradient(130% 150% at 100% 120%, rgba(93,202,73,0.12) 0%, transparent 52%),
-    linear-gradient(135deg, #20231b 0%, #16180f 100%);
-  border: 1px solid rgba(172,231,29,0.32);
-  box-shadow: 0 24px 60px -34px rgba(0,0,0,0.55);
+    radial-gradient(130% 150% at 0% 0%, rgba(104,55,239,0.28) 0%, transparent 55%),
+    radial-gradient(120% 140% at 100% 115%, rgba(104,55,239,0.15) 0%, transparent 55%),
+    linear-gradient(135deg, #1c1926 0%, #141019 100%);
+  border: 1px solid rgba(104,55,239,0.45);
+  box-shadow: 0 24px 60px -32px rgba(104,55,239,0.42);
   position: relative;
   overflow: hidden;
 }
@@ -260,7 +260,7 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--lime), var(--green));
+  background: linear-gradient(90deg, var(--twilight), var(--twilight-soft));
 }
 .include-featured-inner {
   display: flex;
@@ -273,7 +273,7 @@
   font-family: var(--font-l);
   font-size: 11px; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.14em;
-  color: var(--lime);
+  color: var(--twilight-soft);
   margin-bottom: 12px;
 }
 .include-featured-content h3 {
@@ -285,7 +285,7 @@
   line-height: 1.12;
   margin-bottom: 14px;
 }
-.include-featured-content h3 em { color: var(--lime); font-style: italic; }
+.include-featured-content h3 em { color: var(--twilight-soft); font-style: italic; }
 .include-featured-content p {
   font-size: 15px;
   color: rgba(255,255,255,0.72);
