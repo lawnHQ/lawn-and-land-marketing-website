@@ -58,3 +58,17 @@ Styles: `assets/css/service-page.css` (`svc-*` classes). Approved by Matt 2026-0
 Each showcase ships a labeled `.svc-ph` placeholder telling the team exactly what
 image to drop in (e.g. "Screenshot of a Google map-pack result ranking #1").
 Swap the hint text to fit each service.
+
+## How these pages are built (tooling)
+- `_content.json` is the **editable source of all service-page copy** — one object
+  per service (h1, conviction, showcases, 7 deliverable cards, FAQ questions, CTA,
+  related services). Edit copy here, then regenerate.
+- `python3 gen_service.py` renders each `/marketing-services/<slug>/index.html` from
+  `_content.json`, using the `website-design` page as the structural template. It
+  generates every internal link (breadcrumb, hero CTAs, "Pairs well with", hero
+  image) **by construction**, so links can't drift.
+- `python3 build.py` then stamps the universal header/footer.
+- All 8 service heroes use `programs-hero.jpg` (dark photo) for text contrast.
+- Conviction stats are **real, sourced** industry figures (`statSource` in
+  `_content.json`) — verify before launch. FAQ answers are `[NEEDS YOUR INPUT]`
+  placeholders until finalized; `FAQPage` schema is added per page only then.
