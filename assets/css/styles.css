@@ -274,8 +274,16 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   position: relative; min-height: 90vh;
   display: flex; align-items: center;
   overflow: hidden; padding: 48px 0 60px;
-  background: var(--black-deep);
+  background-color: #0c0a13;
+  background-image:
+    radial-gradient(110% 85% at 50% -8%, rgba(104,55,239,0.32) 0%, rgba(104,55,239,0.10) 34%, transparent 62%),
+    radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1.6px);
+  background-size: 100% 100%, 24px 24px;
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center;
 }
+/* Twilight hero experiment: hide the green ambient glows so the purple stands alone */
+.hero-glow-1, .hero-glow-3 { display: none; }
 .hero-grid {
   max-width: var(--max); margin: 0 auto; padding: 0 24px;
   display: grid; grid-template-columns: 1fr 1fr;
