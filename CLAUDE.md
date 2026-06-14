@@ -21,13 +21,15 @@ Static, multi-page, hand-built HTML/CSS/JS (no framework). It will eventually li
   hero → conviction stat → showcase + labeled image placeholder → "What's included"
   (one purple featured card + 7 Lucide-icon deliverable cards) → second showcase →
   FAQ → Twilight-spotlight CTA. Internal links + Service JSON-LD per page.
+- **Marketing-services HUB** (`/marketing-services/`): built — the SEO silo page
+  (4 featured services in image+text sections + a wrap-up grid; links all 8) with the
+  "one machine" framing, Twilight CTA, and `ItemList` schema. Hand-built (not generated).
 - **Universal header + footer** via `build.py` (edit once, stamps everywhere).
-- **Twilight spotlight CTA** background on all service pages (brand pattern).
+- **Twilight spotlight CTA** background on all service pages + the hub (brand pattern).
 - **Nav submenu hover** fixed (transparent hover-bridge across the gap; all menus).
 
 ## Status — what's NOT done (still shells: header + hero + blank body + CTA/footer)
-- `/about/`, `/contact/`, the `/marketing-services/` **hub** page, `/industries/*`,
-  `/resources/*`.
+- `/about/`, `/contact/`, `/industries/*`, `/resources/*`.
 - `/programs/` + `/programs/*`: an older lorem layout prototype, NOT on the new template yet.
 
 ## How the site is built (tooling)

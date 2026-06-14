@@ -45,9 +45,12 @@ locked, generated template (see `docs/website-source-of-truth/service-page-templ
 website-design, local-seo, google-ads, meta-ads, gbp-management, your-ai-partner,
 reputation-management, automation.
 
-**Still shells** (header + hero + blank body + CTA/footer): `/about/`, `/contact/`, the
-`/marketing-services/` hub, `/industries/*`, `/resources/*`. `/programs/*` holds an older
-lorem prototype, not yet migrated to the template.
+The **marketing-services hub** (`/marketing-services/`) is also built — the SEO silo page
+(4 featured services + a wrap-up grid linking all 8) with the "one machine" framing.
+
+**Still shells** (header + hero + blank body + CTA/footer): `/about/`, `/contact/`,
+`/industries/*`, `/resources/*`. `/programs/*` holds an older lorem prototype, not yet
+migrated to the template.
 
 The 8 service pages await three owner inputs to be final: real FAQ answers, verified
 conviction stats, and real images for the labeled placeholders.
