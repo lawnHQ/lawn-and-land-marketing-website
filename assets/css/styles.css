@@ -2345,10 +2345,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   background: rgba(172,231,29,0.03);
   transform: translateY(-3px);
 }
-.proof-case-head {
-  display: flex; align-items: flex-start; justify-content: space-between;
-  gap: 12px; margin-bottom: 26px;
-}
+.proof-case-head { margin-bottom: 26px; }
 .proof-case-name {
   font-family: var(--font-h); font-style: italic; font-weight: 800;
   font-size: 18px; line-height: 1.15; color: var(--white);
@@ -2356,13 +2353,6 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .proof-case-loc {
   font-family: var(--font-l); font-size: 11px; letter-spacing: 0.08em;
   text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 6px;
-}
-.proof-case-growth {
-  flex-shrink: 0; display: inline-flex; align-items: center;
-  font-family: var(--font-l); font-size: 12px; font-weight: 700;
-  color: var(--lime); background: rgba(172,231,29,0.10);
-  border: 1px solid rgba(172,231,29,0.26); border-radius: 999px;
-  padding: 4px 10px; white-space: nowrap;
 }
 .proof-case-metric {
   display: flex; align-items: baseline; gap: 10px; margin-top: auto;
