@@ -818,10 +818,11 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .program-badge {
   display: inline-block; font-family: var(--font-l); font-size: 11px;
   font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
-  border: 1px solid rgba(255,255,255,0.1); color: var(--muted);
+  border: 1px solid rgba(172,231,29,0.32); color: var(--lime);
   padding: 4px 12px; border-radius: 20px; margin-bottom: 16px;
 }
 .program-badge--featured { border-color: rgba(172,231,29,0.25); color: var(--lime); }
+.program-card--featured .program-badge { border-color: rgba(198,176,250,0.40); color: #C6B0FA; }
 .program-name { font-family: var(--font-h); font-size: 26px; font-weight: 800; font-style: italic; color: var(--white); margin-bottom: 8px; }
 .program-tagline { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
 .program-price-wrap { margin-bottom: 28px; border-bottom: 1px solid var(--card-bd); padding-bottom: 20px; }
