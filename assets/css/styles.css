@@ -234,7 +234,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   border: 1px solid rgba(255,255,255,0.07);
   border-radius: var(--radius); padding: 8px; min-width: 240px;
   opacity: 0; pointer-events: none;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s 0.16s, transform 0.2s 0.16s;
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 /* Glass top edge on dropdown */
@@ -244,9 +244,17 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   top: 0; left: 10%; right: 10%; height: 1px;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
 }
+/* Transparent hover bridge across the gap to the trigger (keeps hover alive) */
+.dropdown-panel::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  top: -16px; height: 16px;
+}
 .nav-item:hover .dropdown-panel {
   opacity: 1; pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+  transition-delay: 0s;
 }
 .dp-item {
   display: flex; align-items: center; gap: 12px;
@@ -1227,7 +1235,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.2s ease 0.16s, visibility 0.2s ease 0.16s;
   box-shadow: 0 24px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(172,231,29,0.04);
   z-index: 200;
 }
@@ -1237,6 +1245,16 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   position: absolute; top: 0; left: 8%; right: 8%; height: 1px;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.09), transparent);
   pointer-events: none;
+}
+/* Transparent hover bridge: spans the gap between the nav row and the panel so
+   moving the cursor from the trigger into the submenu never drops hover. It
+   inherits the panel's pointer-events, so it's only active while the menu is
+   open (no interference with the rest of the nav when closed). */
+.mega-panel::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  top: -12px; height: 12px;
 }
 /* Anchor point for absolute mega panels — nav-inner must be relative */
 .nav-inner { position: relative; }
@@ -1413,6 +1431,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   .mega-col { gap: 8px; }
   .mega-col--featured { display: none; }
   .mega-panel::before { display: none; }
+  .mega-panel::after, .dropdown-panel::after { display: none; }
   
   /* Mobile: Pills inline with titles - left-aligned titles, right-aligned pills */
   .mega-item-header {
