@@ -25,8 +25,14 @@ re-checked. Verified scores: CRO 7, Tech SEO 7, On-page 7, Performance 5, Access
   it would expose pricing, which the site keeps off by design.
 - **12-month contract objection** — FAQ answer now pairs the honest disclosure with risk-reversal
   (97% retention + "zero risk to just have the conversation"); schema kept in parity.
-- **Mini case-study proof row** added high on the page (real client before→after numbers, owner-supplied):
-  Rock Solid $700K→$1.3M, Brothers Outdoor 3→10 leads/day, From The Ground Up $1.8M→$3.2M.
+- **Mini case-study proof row** ("Proof, Not Promises") — name-led cards w/ real client before→after
+  numbers (owner-supplied): Rock Solid $700K→$1.3M, Precision Landscape Mgmt 100→600 calls/mo, From The
+  Ground Up $1.8M→$3.2M. Subline attributes the jump to working with L&L ("same crews, same services…").
+- **Section order reworked** (4-lens analysis, owner-approved): Hero → Stats → Industries → Services →
+  Proof → Programs → Why Us → Testimonials → Logo marquee → FAQ → CTA. Promotes "is this for my trade?"
+  (Industries) early, moves the video Testimonials to the conviction peak before the CTA, demotes the
+  logo marquee, and **removed the unfinished Blog feed from the homepage** (was a dead placeholder right
+  before the CTA; markup preserved in git history — rebuild as its own page when wired).
 
 **STILL NEEDS OWNER INPUT:**
 - **Analytics/conversion tracking** — none installed (no GA4/GTM/pixel). DECISION: install at full-site
