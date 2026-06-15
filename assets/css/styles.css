@@ -775,7 +775,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 
 /* Card body */
 .testi-card-body { padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
-.testi-stars { color: var(--lime); font-size: 14px; letter-spacing: 2px; }
+.testi-stars { color: #FFC83D; font-size: 14px; letter-spacing: 2px; text-shadow: 0 0 9px rgba(255,200,61,0.62), 0 0 20px rgba(255,200,61,0.32); }
 .testi-quote { font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.75; font-style: italic; flex: 1; }
 .testi-info { margin-top: auto; }
 .testi-name { font-size: 14px; font-weight: 700; color: var(--white); }
