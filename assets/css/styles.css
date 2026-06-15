@@ -2450,12 +2450,23 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   [data-reveal] { opacity: 1 !important; transform: none !important; }
 }
 
-/* Twilight highlight — mark an impactful phrase in body copy (sharp-edged purple marker) */
+/* Twilight highlight — skewed marker swipe behind the lower portion of an impactful phrase */
 .hl {
-  background: #6837EF;
+  position: relative;
+  z-index: 0;
   color: #fff;
   font-weight: 700;
-  padding: 0.06em 0.36em;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  padding: 0 0.22em;
+  white-space: nowrap;
+}
+.hl::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0.12em;
+  height: 0.66em;
+  background: #6837EF;
+  transform: skewX(-11deg);
 }
