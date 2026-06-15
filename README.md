@@ -1,155 +1,84 @@
-# Lawn & Land Marketing Website
+# Lawn & Land Marketing — Website
 
-Live site: https://new.lawnlab.dev
-Vercel project: new-lawnlab-deploy
-Auto-deploy: push to `main` -> GitHub Actions -> Vercel production
+The future public website for **Lawn & Land Marketing**, a digital-marketing agency working
+**exclusively with green-industry / lawn care & landscaping companies**. Static, multi-page,
+hand-built HTML/CSS/JS (no framework).
 
-## What this repo is
+- **Live staging:** https://new.lawnlab.dev (also the Vercel project domain
+  https://lawnland-site.vercel.app — same deploy). Both reflect `main`.
+- **Production (not launched yet):** lawnandlandmarketing.com
+- **Deploy:** push to `main` → GitHub Actions (`.github/workflows/deploy.yml`) → Vercel production
+  (~1–2 min). Auth-protected Vercel previews are auto-created per branch.
 
-This repo is the source of truth for the public Lawn & Land website.
+> **Read `CLAUDE.md` (repo root) first** — it's the full, current orientation for any session.
+> The deep source-of-truth docs live in `docs/website-source-of-truth/`.
 
-Important: this website project is separate from any internal Ground Control concept or naming.
+## Universal header & footer (single source)
+The header (announcement bar + nav) and footer are defined once and stamped into every page.
+Never edit them on individual pages.
+- Edit the header → `_header.html` · Edit the footer → `_footer.html`
+- Apply to all pages → `python3 build.py` · Verify sync → `python3 build.py --check`
 
-## Universal header & footer (single source of truth)
-
-The site **header** (announcement bar + nav) and **footer** are defined once and
-stamped into every page automatically. You never edit them on individual pages.
-
-- Edit the header → `_header.html`  (announcement bar + main nav)
-- Edit the footer → `_footer.html`
-- Apply to all pages → `python3 build.py`
-- Verify everything is in sync → `python3 build.py --check`
-
-`vercel.json` runs `build.py` on every deploy, so editing a partial and pushing
-is enough — every page updates. Change one file, the whole site updates.
+`vercel.json` runs `build.py` on every deploy, so editing a partial and pushing updates every page.
 
 ## Service pages are generated
-
 The 8 `/marketing-services/*` detail pages are **generated**, not hand-edited:
-
 - Copy lives in **`_content.json`** (one object per service).
-- **`python3 gen_service.py`** renders each `marketing-services/<slug>/index.html` from the
-  `website-design` page as the structural template, generating all internal links
-  (breadcrumb, CTAs, "pairs well with", hero image) by construction.
-- Then run `python3 build.py` to stamp the universal header/footer.
+- `python3 gen_service.py` renders each `marketing-services/<slug>/index.html` from the
+  `website-design` page as the structural template, generating all internal links by construction.
+- Then `python3 build.py` stamps the header/footer.
 
-Edit copy in `_content.json` and regenerate — don't hand-edit the generated HTML.
+Don't hand-edit generated service HTML — regeneration overwrites it. The homepage, the services hub,
+and the program pages are **hand-built** (reusing the same `svc-*` / `simple-hero` / `svc-cta` classes).
 Full spec: `docs/website-source-of-truth/service-page-template.md`.
 
 ## Current state at a glance
+**Developed:** the homepage · all 8 `/marketing-services/*` detail pages + the `/marketing-services/`
+hub · the **Growth Program page** (`/programs/growth/`).
 
-> Full orientation for any session lives in **`CLAUDE.md`** (repo root). Quick version:
+**Shells / next up:** `/programs/authority/` (next big build — 7-figure+ "dominate" avatar) · the
+**8 `/industries/*`** pages (canonical 8 locked) · `/about/`, `/contact/`, `/resources/*`, and the
+`/programs/` hub. The 8 service pages await owner inputs (real FAQ answers → FAQ schema, verified
+conviction stats, real images).
 
-**Developed:** the homepage **and all 8 `/marketing-services/*` detail pages**, built on a
-locked, generated template (see `docs/website-source-of-truth/service-page-template.md`):
-website-design, local-seo, google-ads, meta-ads, gbp-management, your-ai-partner,
-reputation-management, automation.
+See `docs/website-source-of-truth/page-registry.md` for the full per-page status table.
 
-The **marketing-services hub** (`/marketing-services/`) is also built — the SEO silo page
-(4 featured services + a wrap-up grid linking all 8) with the "one machine" framing.
+## Canonical routes (truth)
+`/` · `/about/` · `/contact/` · `/get-started/book-strategy-call/` · `/programs/...` ·
+`/marketing-services/...` · `/industries/...` (the canonical 8) · `/resources/...`
 
-**Still shells** (header + hero + blank body + CTA/footer): `/about/`, `/contact/`,
-`/industries/*`, `/resources/*`. `/programs/*` holds an older lorem prototype, not yet
-migrated to the template.
+**Retired — keep out of internal linking:** `/services/`, `/pricing/`, `/resources/guides/`,
+`/resources/contact/`, `/case-studies/`, `/results/`, `/team/`, `/good-fit/`, `/book/`, `/podcast/`,
+`/tools/marketing-audit/`, and older orphan/article URLs.
 
-The 8 service pages await three owner inputs to be final: real FAQ answers, verified
-conviction stats, and real images for the labeled placeholders.
-
-Don't deepen the remaining shell pages with long copy until their design is approved, and
-don't reintroduce retired routes.
-
-## Canonical route rules
-
-Use these routes as truth:
-- `/marketing-services/` = canonical services hub
-- `/contact/` = canonical contact route
-- `/programs/...` = canonical program routes
-- `/industries/...` = canonical industry routes
-- `/resources/...` = canonical resource routes
-- `/get-started/book-strategy-call/` = canonical primary CTA destination
-
-Retired / non-canonical routes:
-- `/services/`
-- `/pricing/`
-- `/resources/guides/`
-- `/resources/contact/`
-- older orphan routes like `/team/`, `/results/`, `/good-fit/`, `/book/`, and older article URLs should stay out of internal linking unless intentionally brought back
-
-## What was already cleaned up
-
-Structural cleanup already completed in this repo:
-- `/services/` internal references replaced with `/marketing-services/`
-- `/resources/contact/` internal references replaced with `/contact/`
-- `/resources/guides/` removed from internal structure
-- stale internal orphan links cleaned out of the internal link graph
-- `resources/contact/index.html` deleted
-- `resources/guides/index.html` deleted
-- nav / footer / 404 / duplicated HTML were cleaned for route hygiene
-
-## Where to restart quickly
-
-Start here, in order:
-1. `CLAUDE.md` (repo root) — the orientation file (auto-loaded by Claude Code)
-2. `docs/website-source-of-truth/build-status.md` — what's done / not done
-3. `docs/website-source-of-truth/service-page-template.md` — the locked service-page template + generator
-4. `docs/website-source-of-truth/decisions.md` and `routing-rules.md`
-5. `docs/website-source-of-truth/restart-guide.md`
-
-Those docs are the fastest way to recover context.
+## Non-negotiables
+- **No pricing** anywhere (every CTA → the free strategy call). **No invented facts** (placeholders
+  for anything unverifiable; conviction stats real + sourced).
+- **Brand:** Lucide stroke icons only (no emoji); Twilight `#6837EF` never blends with green; the
+  `.hl` Twilight marker is one impact phrase per surface. City/county names carry a state code.
 
 ## Repo structure
-
 ```text
-├── CLAUDE.md                           # Orientation file — read this first
-├── index.html                          # Homepage (developed benchmark page)
-├── _header.html  _footer.html          # Universal header/footer partials (stamped by build.py)
-├── build.py                            # Stamps header/footer into every page
-├── gen_service.py  _content.json       # Generates the 8 marketing-services pages
-├── about/  contact/  programs/
-├── get-started/book-strategy-call/
-├── marketing-services/                 # 8 detail pages (generated) + hub (shell)
-├── industries/  resources/
-├── assets/
-│   ├── css/styles.css                  # global (incl. nav)
-│   ├── css/service-page.css            # service-page template (svc-*)
-│   ├── js/main.js   images/   logos/
-├── docs/website-source-of-truth/
-└── .github/workflows/deploy.yml
+├── CLAUDE.md                       # Orientation — read first (auto-loaded by Claude Code)
+├── README.md                       # This file
+├── index.html                      # Homepage (developed benchmark)
+├── _header.html  _footer.html      # Universal header/footer partials (stamped by build.py)
+├── build.py                        # Stamps header/footer into every page
+├── gen_service.py  _content.json   # Generates the 8 marketing-services pages
+├── sitemap.xml                     # Real route sitemap (production domain; launch artifact)
+├── about/  contact/  programs/     # programs/growth = developed; authority/hub = shells
+├── get-started/book-strategy-call/ # the booking CTA destination
+├── marketing-services/             # 8 detail pages (generated) + hub (hand-built, developed)
+├── industries/                     # hub + canonical 8 (shells)
+├── resources/                      # hub + 5 (shells)
+├── assets/css/{styles.css, service-page.css}   js/main.js   images/  logos/
+├── docs/website-source-of-truth/   # the durable docs
+└── .github/workflows/deploy.yml    # push main → Vercel production
 ```
 
 ## Working rules
-
-- This repo is the website source of truth.
-- Every change should go through git.
-- Push to `main` deploys production.
-- Do not deploy directly with Vercel CLI as the normal workflow.
-- Do not reintroduce retired routes unless there is an explicit new decision.
-- Do not deepen non-home page bodies until design direction is approved.
-- If restarting later, update the docs in `docs/website-source-of-truth/` in the same workstream as any structural decision.
-
-## Recommended next phase
-
-1. Finalize the 8 service pages with owner inputs: real FAQ answers (then add FAQ schema),
-   verified conviction stats, real images for the placeholders.
-2. Build the **Program pages** (`/programs/*`) on the same template approach (no pricing).
-3. Design + build the remaining non-home pages (About, Contact, services hub, Industries,
-   Resources).
-4. Eventually: launch cutover to lawnandlandmarketing.com (not yet).
-
-## Deployment
-
-GitHub Actions workflow:
-- `.github/workflows/deploy.yml`
-- pushes to `main` trigger Vercel production deploy
-
-## Maintainer note for future restart
-
-If you come back cold later, assume this:
-- homepage = developed benchmark page
-- all 8 `/marketing-services/*` detail pages = built on the locked, generated template
-  (edit `_content.json` + run `gen_service.py`), pending owner inputs (FAQ answers, stat
-  verification, images)
-- everything else (About, Contact, services hub, Industries, Resources) = intentionally
-  held shell; `/programs/*` = older lorem prototype not yet on the template
-- route hygiene + universal header/footer + service-page tooling are all in place
-- read `CLAUDE.md` first
+- This repo is the website source of truth; every change goes through git.
+- Push `main` to deploy; keep `site-foundation` in sync (push both). Don't deploy via Vercel CLI as
+  the normal workflow, and **don't deploy to the production domain** — not launching yet.
+- Don't reintroduce retired routes or deepen shell pages with long copy until their design is approved.
+- Keep `docs/website-source-of-truth/` current in the same workstream as any structural change.

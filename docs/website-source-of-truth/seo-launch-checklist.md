@@ -26,7 +26,7 @@ re-checked. Verified scores: CRO 7, Tech SEO 7, On-page 7, Performance 5, Access
 - **12-month contract objection** — FAQ answer now pairs the honest disclosure with risk-reversal
   (97% retention + "zero risk to just have the conversation"); schema kept in parity.
 - **Mini case-study proof row** ("Proof, Not Promises") — name-led cards w/ real client before→after
-  numbers (owner-supplied): Rock Solid $700K→$1.3M, Precision Landscape Mgmt 100→600 calls/mo, From The
+  numbers (owner-supplied): Rock Solid $700K→$1.3M, Precision Landscape Mgmt 200→600 calls/mo, From The
   Ground Up $1.8M→$3.2M. Subline attributes the jump to working with L&L ("same crews, same services…").
 - **Section order reworked** (4-lens analysis, owner-approved): Hero → Stats → Industries → Services →
   Proof → Programs → Why Us → Testimonials → Logo marquee → FAQ → CTA. Promotes "is this for my trade?"
@@ -72,7 +72,7 @@ launch hygiene.
 - **Verify stats before launch**: the hub's 97% conviction figure (source: BrightLocal-style
   local-search stat — confirm exact figure/wording), the 7 detail-page conviction stats
   (`statSource` in `_content.json`), and the footer trust bar ("50+ companies", "97%+
-  retention", "since 2020").
+  retention", "since 2022").
 
 ## Pending — build work (can do anytime, no owner input)
 - **BreadcrumbList on all 8 detail pages** (Home → Marketing Services → <Service>) — add to
@@ -90,9 +90,10 @@ launch hygiene.
   detail pages' Service `provider.url` (currently the production domain — there's a host
   mismatch with the staging canonicals). Make the domain a single build variable so it can't
   drift again.
-- **Fix `sitemap.xml`** — it currently lists non-existent paths (`/services/*`, `/pricing/`,
-  `/book/`, `/team/`…), is missing `/marketing-services/` and the 8 real detail URLs, and has
-  a malformed multi-`<loc>` record. Regenerate from the real page registry.
+- **`sitemap.xml`** — ✅ rebuilt 2026-06-15 to the real canonical routes (production domain; the
+  old file listed killed paths like `/services/*`, `/pricing/`, `/book/`, `/team/` and had a
+  malformed multi-`<loc>` record). Remaining at launch: confirm shell pages are content-complete
+  (or prune them) before submitting to Search Console, and keep it in sync with `sitemap.md`.
 - **robots.txt** — none exists. Production: allow crawl + point to the sitemap. Staging
   (`new.lawnlab.dev`): block indexing (disallow / `X-Robots-Tag: noindex` / HTTP auth) so the
   staging site isn't indexed as a duplicate. Note: pages currently ship `robots: index,follow`.

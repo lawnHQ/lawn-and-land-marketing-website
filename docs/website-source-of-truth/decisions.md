@@ -42,8 +42,52 @@
 - Replaced the old fragile `build-pages.py` (hardcoded `/tmp` path) with `build.py`. Refreshed `_footer.html` to match the current live footer (the partial had gone stale). Brought `/404.html` into the universal header/footer.
 - Decision pending from Matt: begin building out the non-home page bodies ("build it out to the best solution") — establish a reusable page design system from the homepage, then roll out across the sitemap.
 
+## 2026-06-14 — Industries locked · homepage deepened · Growth built · `.hl` marker
+- **Industries — canonical 8 LOCKED:** lawn-care, lawn-maintenance, landscaping, outdoor-living,
+  land-clearing, excavation, septic-services, holiday-lighting. Non-canonical industries (e.g. snow
+  removal) were deleted; nav submenu, footer, and `sitemap.xml` reconciled. Icons: Landscaping =
+  tree-palm, Lawn Care = sprout (Lucide). Mobile "Industries We Serve" is a compact 2-up grid.
+- **Homepage conversion pass:** reordered to hero → stats → industries → services → proof → programs
+  → Why L&L → testimonials → logo marquee → FAQ → CTA. Removed the unfinished Blog from nav/flow.
+  Added a mini case-study proof row (3 real clients with photos + before→after numbers; no % badges).
+  Moved the "Trusted By" logo marquee above testimonials onto the Twilight dot-grid band. Testimonial
+  stars → gold-glow. "Why L&L" tightened ("5+ Years" badge → "100% Green Industry Focused"). Applied a
+  verified pre-launch audit; softened the ROI claim to a defensible range (kept the dollar figure off
+  the page so it never implies pricing). Unified section backgrounds to kill reorder seams. Fixed the
+  mobile mega-menu (caret submenus expand instead of navigating).
+- **`.hl` Twilight highlight — new reusable brand element:** skewed (−11°) `#6837EF` swipe behind the
+  lower portion of one impact phrase, white text, sharp edges. Defined in `styles.css`; **locked into
+  the brand kit** (brandkit.lawnlab.dev, §09 Typography). One phrase per surface; never on body or greens.
+- **Growth Program page built:** scrapped the old lorem `/programs/` body; built `/programs/growth/`
+  lean (Hormozi-style), hand-built (not the generated service template) reusing the same classes.
+  Pain cards → four-pillar "What you get" on the Twilight textured band → 2-col Why Us → Twilight CTA.
+  **Avatar correction (important):** Growth = $400K–$1M "six-figure" companies that grew OFFLINE and are
+  trying to get FOUND for the first time — NOT vendor-sprawl/agency-scar pains (those are Authority).
+  A lime-inverted "what you get" was tried and rejected ("too bright") → Twilight purple textured band.
+- **Mobile marquee fix:** homepage logo marquee didn't start on iOS until tapped. Cause: 36 lazy, unsized
+  logos collapsed the `max-content` track to ~0 width + no GPU layer promotion. Fix: reserve each logo's
+  intrinsic size (`width=99 height=38`) + eager-load + promote the track (translateZ / will-change /
+  translate3d keyframes). Desktop unchanged.
+
+## 2026-06-15 — Growth SEO pass · footer · docs refresh
+- **Growth SEO (from an external audit):** added `Service` + `BreadcrumbList` JSON-LD, `og:url`, Twitter
+  card. Aligned the meta description to "six-figure lawn care and landscaping companies" (~155 chars) to
+  match the body. Promoted the hero "Growth Program" kicker to the page `<h1>` (keyword in H1), demoting
+  the emotional headline to `<h2>` — pixel-identical on screen. Reworked "Why Us" into two columns (image
+  placeholder left, copy right, left-aligned). `og:image` deferred to launch.
+- **Footer:** "Green industry specialists since **2022**" (corrected from 2020).
+- **Schema/canonical convention:** schema uses the production domain (`lawnandlandmarketing.com`); page
+  canonicals still point to staging (`new.lawnlab.dev`) and flip at launch.
+- **Docs refresh:** brought `CLAUDE.md`, `README.md`, `PAGES_MANIFEST.md`, and the whole
+  `docs/website-source-of-truth/` set current; rebuilt `sitemap.xml` to the real routes (the old one
+  listed killed routes — `/services/...`, `/pricing/`, `/case-studies/`, fake blog posts).
+
 ## Open Decisions To Track Later
-- What exact visual direction from the current `/programs/` prototype should become the reusable non-home page system.
-- Whether any retired routes should be redirected intentionally versus simply removed from internal linking.
-- Exact completion order of service pages after top-level architecture cleanup is done.
-- Whether additional proof-heavy pages like results or case studies should return later in a different form.
+- **Authority Program page direction** — same lean structure as Growth, tuned for the 7-figure+
+  "dominate the market" avatar; awaiting the Authority contract/details.
+- **Industry-page content + template** — how deep the 8 (locked) industry pages go, and whether they
+  share a reusable structure.
+- **About / Contact / Resources** design direction.
+- **Service-page finishing inputs** — real FAQ answers (→ add `FAQPage` schema), verified conviction
+  stats, real images.
+- Whether retired routes get hosting-layer redirects at launch vs. simply staying out of internal linking.

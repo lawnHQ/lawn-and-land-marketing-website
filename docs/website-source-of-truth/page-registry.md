@@ -1,63 +1,66 @@
 # Page Registry
 
+Last updated: 2026-06-15. This table is the authoritative page-by-page inventory + status.
+
 Status key
-- developed = real body content and strategic substance
-- scaffolded = live shell with limited content depth
-- planned = approved but not live
-- killed = intentionally removed from scope
-- legacy = non-canonical route still present or still leaking through links
+- **developed** — real body content and strategic substance; intentionally built
+- **scaffolded** — live shell (header + hero + blank/placeholder body + CTA/footer); needs real content
+- **planned** — approved but not live
+- **killed** — intentionally removed from scope
+- **legacy** — non-canonical route to keep out of internal linking
 
 ## Approved Canonical Pages
-| Section | Page | Route | Live? | Status | Notes |
-|---|---|---:|---|---|---|
-| Core | Home | `/` | yes | developed | Strongest page on the site so far; real strategic content and proof sections are present. |
-| Core | About | `/about/` | yes | scaffolded | Intentionally reset to hero + blank body + CTA/footer until design phase. |
-| Core | Contact | `/contact/` | yes | scaffolded | Intentionally reset to hero + blank body + CTA/footer until design phase. |
-| Core | Get Started | `/get-started/book-strategy-call/` | yes | scaffolded | Intentionally reset to hero + blank body + CTA/footer until design phase. |
-| Programs | Programs hub | `/programs/` | yes | scaffolded | Live simple layout prototype with placeholder/lorem content for philosophy, quick breakdown, Growth, Authority, and right-stage close; current review baseline after v2 redesign was rejected and reverted. |
-| Programs | Growth | `/programs/growth/` | yes | scaffolded | Intentionally reset to hero + blank body + CTA/footer until design phase. |
-| Programs | Authority | `/programs/authority/` | yes | scaffolded | Intentionally reset to hero + blank body + CTA/footer until design phase. |
-| Marketing Services | Services hub | `/marketing-services/` | yes | scaffolded | Intentionally reset to hero + blank body + CTA/footer until design phase. |
-| Marketing Services | Website Design | `/marketing-services/website-design/` | yes | scaffolded | Correct route and H1; needs substantive body content. |
-| Marketing Services | Local SEO | `/marketing-services/local-seo/` | yes | scaffolded | Live shell. |
-| Marketing Services | GBP Management | `/marketing-services/gbp-management/` | yes | scaffolded | Live shell. |
-| Marketing Services | Google Ads | `/marketing-services/google-ads/` | yes | scaffolded | Live shell. |
-| Marketing Services | Meta Ads | `/marketing-services/meta-ads/` | yes | scaffolded | Live shell. |
-| Marketing Services | Your AI Partner | `/marketing-services/your-ai-partner/` | yes | scaffolded | Live shell. |
-| Marketing Services | Reputation Management | `/marketing-services/reputation-management/` | yes | scaffolded | Live shell. |
-| Marketing Services | Automation | `/marketing-services/automation/` | yes | scaffolded | Live shell. |
-| Industries | Industries hub | `/industries/` | yes | scaffolded | Live shell. |
-| Industries | Landscaping | `/industries/landscaping/` | yes | scaffolded | Live shell. |
-| Industries | Outdoor Living | `/industries/outdoor-living/` | yes | scaffolded | Live shell. |
-| Industries | Lawn Care | `/industries/lawn-care/` | yes | scaffolded | Live shell. |
-| Industries | Lawn Maintenance | `/industries/lawn-maintenance/` | yes | scaffolded | Live shell. |
-| Industries | Land Clearing | `/industries/land-clearing/` | yes | scaffolded | Live shell. |
-| Industries | Excavation | `/industries/excavation/` | yes | scaffolded | Live shell. |
-| Industries | Septic Services | `/industries/septic-services/` | yes | scaffolded | Live shell. |
-| Industries | Holiday Lighting | `/industries/holiday-lighting/` | yes | scaffolded | Live shell. |
-| Resources | Resources hub | `/resources/` | yes | scaffolded | Live shell; legacy guides/contact route drift has been removed. |
-| Resources | Blog | `/resources/blog/` | yes | scaffolded | Live but needs content strategy and index depth. |
-| Resources | Meet The Team | `/resources/meet-the-team/` | yes | scaffolded | Live shell. |
-| Resources | Experiences / Reviews | `/resources/experiences-reviews/` | yes | scaffolded | Live shell. |
-| Resources | Private Facebook Group | `/resources/private-facebook-group/` | yes | scaffolded | Live shell. |
-| Resources | Mow Money, Mow Problems Podcast | `/resources/mow-money-mow-problems-podcast/` | yes | scaffolded | Live shell. |
+| Section | Page | Route | Status | Notes |
+|---|---|---|---|---|
+| Core | Home | `/` | **developed** | Benchmark page. Hero → stats → industries → services → proof row → programs → Why L&L → testimonials → logo marquee (Twilight band) → FAQ → CTA. Org + WebSite + FAQPage schema. |
+| Core | About | `/about/` | scaffolded | Shell until design phase. |
+| Core | Contact | `/contact/` | scaffolded | Shell until design phase. |
+| Core | Get Started | `/get-started/book-strategy-call/` | scaffolded | The booking destination; every CTA on the site routes here. |
+| Programs | Programs hub | `/programs/` | scaffolded | Clean placeholder (old lorem prototype scrapped). Real hub pending both program pages. |
+| Programs | Growth | `/programs/growth/` | **developed** | Built lean from the real contract. Pain cards → four-pillar Twilight section → 2-col Why Us → CTA. Service + BreadcrumbList schema, OG/Twitter. No pricing. |
+| Programs | Authority | `/programs/authority/` | scaffolded | **Next big build.** Same structure as Growth, tuned for the 7-figure+ "dominate" avatar. Awaiting contract. |
+| Marketing Services | Services hub | `/marketing-services/` | **developed** | Hand-built SEO silo; "one machine" framing, 4 featured + wrap-up grid, ItemList schema. |
+| Marketing Services | Website Design | `/marketing-services/website-design/` | **developed** | Generated template; reference build for the generator. |
+| Marketing Services | Local SEO | `/marketing-services/local-seo/` | **developed** | Generated template. |
+| Marketing Services | GBP Management | `/marketing-services/gbp-management/` | **developed** | Generated template. |
+| Marketing Services | Google Ads | `/marketing-services/google-ads/` | **developed** | Generated template. |
+| Marketing Services | Meta Ads | `/marketing-services/meta-ads/` | **developed** | Generated template. |
+| Marketing Services | Your AI Partner | `/marketing-services/your-ai-partner/` | **developed** | Generated template. |
+| Marketing Services | Reputation Management | `/marketing-services/reputation-management/` | **developed** | Generated template. |
+| Marketing Services | Automation | `/marketing-services/automation/` | **developed** | Generated template. |
+| Industries | Industries hub | `/industries/` | scaffolded | Shell. |
+| Industries | Lawn Care | `/industries/lawn-care/` | scaffolded | Canonical 8 (locked). Shell — content outlined, not written. |
+| Industries | Lawn Maintenance | `/industries/lawn-maintenance/` | scaffolded | Canonical 8. Shell. |
+| Industries | Landscaping | `/industries/landscaping/` | scaffolded | Canonical 8. Shell. |
+| Industries | Outdoor Living | `/industries/outdoor-living/` | scaffolded | Canonical 8. Shell. |
+| Industries | Land Clearing | `/industries/land-clearing/` | scaffolded | Canonical 8. Shell. |
+| Industries | Excavation | `/industries/excavation/` | scaffolded | Canonical 8. Shell. |
+| Industries | Septic Services | `/industries/septic-services/` | scaffolded | Canonical 8. Shell. |
+| Industries | Holiday Lighting | `/industries/holiday-lighting/` | scaffolded | Canonical 8. Shell. |
+| Resources | Resources hub | `/resources/` | scaffolded | Shell. |
+| Resources | Blog | `/resources/blog/` | scaffolded | Exists but pulled from homepage nav/flow as unfinished; needs content strategy. |
+| Resources | Meet The Team | `/resources/meet-the-team/` | scaffolded | Shell. |
+| Resources | Experiences / Reviews | `/resources/experiences-reviews/` | scaffolded | Shell. |
+| Resources | Private Facebook Group | `/resources/private-facebook-group/` | scaffolded | Shell. |
+| Resources | Mow Money, Mow Problems Podcast | `/resources/mow-money-mow-problems-podcast/` | scaffolded | Shell. |
 
-## Killed / Non-Canonical / Legacy
-| Type | Route | Current State | Action |
-|---|---|---|---|
-| killed | `/services/` | Returns 404 / intentionally retired | Keep removed from internal linking and do not reintroduce as canonical |
-| killed | `/pricing/` | Returns 404 / retired | Remove lingering references and do not reintroduce as canonical page |
-| killed | `/resources/guides/` | Page file deleted and removed from internal structure | Keep retired unless explicitly brought back with a new decision |
-| legacy | `/resources/contact/` | Page file deleted; internal uses replaced | Continue using `/contact/` only |
-| legacy | `/services/...` child routes | Internal uses replaced with `/marketing-services/...` equivalents | Keep retired and redirect later only if needed |
-| legacy | older orphan routes like `/team/`, `/results/`, `/good-fit/`, `/book/`, old article URLs | Internal uses removed or replaced in the route-hygiene pass | Keep out of the internal link graph unless intentionally reintroduced |
+## Service-area note
+Industry pages are exactly the **canonical 8** above — locked this build. Earlier non-canonical
+industries (e.g. snow removal) were deleted, and the nav submenu, footer, and `sitemap.xml` were
+reconciled to these 8.
 
-## Highest-Leverage Work Next
-1. get Matt's detailed feedback on the current `/programs/` review baseline
-2. iterate on the Programs page until the visual system feels right
-3. only then apply the approved direction to other non-home pages
+## Killed / Non-Canonical / Legacy (keep OUT of nav, footer, CTAs, sitemap, internal links)
+| Type | Route | Action |
+|---|---|---|
+| killed | `/services/` (+ `/services/...` child routes) | Retired; use `/marketing-services/...`. Do not reintroduce. |
+| killed | `/pricing/` | Retired; **no pricing on the site**. Do not reintroduce. |
+| killed | `/resources/guides/` | File deleted; keep retired. |
+| killed | `/case-studies/` (+ children), `/results/`, `/tools/marketing-audit/` | Not part of the approved site. |
+| legacy | `/resources/contact/` | Use `/contact/` only. |
+| legacy | `/team/`, `/good-fit/`, `/book/`, `/podcast/`, old article URLs | Keep out of the internal link graph unless intentionally reintroduced via a new decision. |
 
-## Audit Notes
-- The live homepage is ahead of the rest of the site.
-- Secondary pages are often present structurally but not yet persuasive enough to be considered finished.
-- Architecture cleanup should happen before large new page expansion so the internal link graph stops drifting.
+## Highest-leverage work next
+1. Build the **Authority Program page** (Growth structure, 7-figure+ avatar).
+2. Write the **8 industry pages** (canonical 8 locked).
+3. Finish the 8 service pages with owner inputs (FAQ answers → FAQ schema; verify stats; real images).
+4. Then About / Contact / Resources / Programs hub.

@@ -72,3 +72,13 @@ Swap the hint text to fit each service.
 - Conviction stats are **real, sourced** industry figures (`statSource` in
   `_content.json`) — verify before launch. FAQ answers are `[NEEDS YOUR INPUT]`
   placeholders until finalized; `FAQPage` schema is added per page only then.
+
+## Reuse on hand-built pages (programs, industries)
+The generator is only for `/marketing-services/*`. The **program pages** (and the upcoming
+**industry pages**) are **hand-built** — but they reuse the same building blocks for consistency:
+`simple-hero` (hero + breadcrumb), the `svc-*` section classes, and the `svc-cta` Twilight CTA.
+`/programs/growth/` is the reference for a hand-built page (lean, Hormozi-style; pain cards →
+four-pillar Twilight band → 2-column feature → CTA). When you build `/programs/authority/`, mirror
+Growth's structure but use the 7-figure+ "dominate" avatar (see `CLAUDE.md`). The `.hl` Twilight
+emphasis marker (defined in `styles.css`, documented in the brand kit) is available for one impact
+phrase per surface. No pricing, ever.

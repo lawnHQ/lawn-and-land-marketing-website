@@ -1,83 +1,122 @@
 # Lawn & Land Marketing — Website
 
 Orientation for a fresh session. Read this first, then `docs/website-source-of-truth/`.
-Last updated: 2026-06-13.
+Last updated: 2026-06-15.
 
 ## What this is
-The future public website for **Lawn & Land Marketing** — a digital-marketing agency
-working **exclusively with green-industry / lawn care & landscaping companies**.
-Static, multi-page, hand-built HTML/CSS/JS (no framework). It will eventually live at
-**lawnandlandmarketing.com** — **NOT launched yet**; we build and review on staging.
+The future public website for **Lawn & Land Marketing** — a digital-marketing agency working
+**exclusively with green-industry / lawn care & landscaping companies**. Static, multi-page,
+hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** —
+**NOT launched yet**; we build and review on staging.
 
-- Staging (push to `main`): https://new.lawnlab.dev  (GitHub Actions → Vercel)
-- Per-branch previews: Vercel auto-creates a preview deploy for every branch (auth-protected)
-- All progress lives on **`main`** (the working branch `site-foundation` is kept in sync with it)
+- **Live staging:** https://new.lawnlab.dev — and the Vercel project domain
+  https://lawnland-site.vercel.app (same deploy). Both always reflect `main`.
+- **Deploy:** push to `main` → GitHub Actions (`.github/workflows/deploy.yml`) → Vercel
+  production. Takes ~1–2 min. (Vercel also auto-creates auth-protected previews per branch.)
+- **Branches:** all progress lives on `main`; the working branch `site-foundation` is kept
+  in sync with it — push to **both** (`origin site-foundation` then `origin site-foundation:main`).
+- **Cache-bust versions in use:** `styles.css?v=135`, `main.js?v=53`, `service-page.css?v=3`.
 
-## Status — what's DONE
-- **Homepage** (`/index.html`): the developed benchmark page.
-- **All 8 marketing-services detail pages are BUILT** on a locked, consistent template:
-  `website-design`, `local-seo`, `google-ads`, `meta-ads`, `gbp-management`,
-  `your-ai-partner`, `reputation-management`, `automation`. Each page has:
-  hero → conviction stat → showcase + labeled image placeholder → "What's included"
-  (one purple featured card + 7 Lucide-icon deliverable cards) → second showcase →
-  FAQ → Twilight-spotlight CTA. Internal links + Service JSON-LD per page.
-- **Marketing-services HUB** (`/marketing-services/`): built — the SEO silo page
-  (4 featured services in image+text sections + a wrap-up grid; links all 8) with the
-  "one machine" framing, Twilight CTA, and `ItemList` schema. Hand-built (not generated).
-- **Universal header + footer** via `build.py` (edit once, stamps everywhere).
-- **Twilight spotlight CTA** background on all service pages + the hub (brand pattern).
-- **Nav submenu hover** fixed (transparent hover-bridge across the gap; all menus).
+## Status — what's DONE (developed)
+- **Homepage** (`/`) — the benchmark page. Flow (reordered for conversion): hero (YouTube
+  click-to-play facade) → stats → "Industries We Serve" grid → services → **mini case-study
+  proof row** (3 real clients with photos + before→after numbers) → programs → "Why L&L" →
+  testimonials (gold-glow 5-star) → **"Trusted By" logo marquee on the Twilight dot-grid band**
+  → FAQ (+ `FAQPage` schema) → Twilight CTA. The unfinished Blog was pulled from nav + flow.
+- **All 8 `/marketing-services/*` detail pages** — built on a locked, **generated** template:
+  `website-design`, `local-seo`, `google-ads`, `meta-ads`, `gbp-management`, `your-ai-partner`,
+  `reputation-management`, `automation`. Per page: hero → conviction stat → showcase + labeled
+  image placeholder → "What's included" (purple featured card + 7 Lucide cards) → reversed
+  showcase → FAQ → Twilight CTA. `Service` JSON-LD each.
+- **Marketing-services HUB** (`/marketing-services/`) — built, hand-built SEO silo ("one machine"
+  framing, 4 featured services + a wrap-up grid linking all 8, `ItemList` schema).
+- **Growth Program page** (`/programs/growth/`) — **built**; the first finished program page.
+  Lean, Hormozi-style, built entirely from the real contract (no pricing, no invented facts):
+  `simple-hero` + breadcrumb → "Sound familiar?" 3 red pain cards → **"What you get" four-pillar
+  section on the Twilight textured band** (World-Class Website / Local SEO / Google-LSA / CRM &
+  Lead Mgmt) → "Why us" two-column (image placeholder left, copy right) → Twilight CTA.
+  `Service` + `BreadcrumbList` JSON-LD, OG + Twitter card.
+- **Universal header + footer** via `build.py` (edit `_header.html` / `_footer.html`; stamps everywhere).
+- **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`
+  swipe behind the lower portion of a phrase, white text, sharp edges). Defined in `styles.css`;
+  also locked into the brand kit (see Related assets). Use sparingly — one phrase per surface.
 
-## Status — what's NOT done (still shells: header + hero + blank body + CTA/footer)
-- `/about/`, `/contact/`, `/industries/*`, `/resources/*`.
-- `/programs/` + `/programs/*`: an older lorem layout prototype, NOT on the new template yet.
+## Status — what's NOT done (shells / next up)
+- **Authority Program page** (`/programs/authority/`) — shell. **The next big build**: same lean
+  structure as Growth, dialed up for established **7-figure+** companies ("dominate your market").
+  Awaiting the Authority contract/details. Use the Authority avatar (below) — do NOT reuse Growth's pains.
+- **8 industry pages** (`/industries/*`) — the **canonical 8 are LOCKED** but are **shells**
+  (header + hero + CTA only): `lawn-care`, `lawn-maintenance`, `landscaping`, `outdoor-living`,
+  `land-clearing`, `excavation`, `septic-services`, `holiday-lighting`. Content outlined, not
+  written. Earlier non-canonical industries were deleted this build.
+- **Programs hub** (`/programs/`) — clean placeholder (old lorem body scrapped); needs a real hub
+  once both program pages exist.
+- **About, Contact, Resources/\*** — shells.
+- The 8 service pages still need three owner inputs to be final: real FAQ answers (→ then add
+  `FAQPage` schema), verified conviction stats, and real images for the labeled placeholders.
 
 ## How the site is built (tooling)
-- **Header / footer** — edit `_header.html` (announcement bar + nav) or `_footer.html`,
-  then `python3 build.py` stamps them into every page. `python3 build.py --check` verifies
-  sync. Vercel runs `build.py` on every deploy (see `vercel.json`).
-- **Service pages are GENERATED** — edit copy in **`_content.json`** (one object per
-  service), run **`python3 gen_service.py`** (renders each
-  `/marketing-services/<slug>/index.html` from the `website-design` page as the structural
-  template; breadcrumb / CTAs / "pairs well with" / hero image are generated by
-  construction, so links can't drift), then `python3 build.py`. Full spec:
-  `docs/website-source-of-truth/service-page-template.md`.
-- **Styles** — `assets/css/styles.css` (global, incl. nav) + `assets/css/service-page.css`
-  (`svc-*` service template). When you change a CSS file, bump its `?v=` query in the
-  pages so browsers load it fresh (e.g. `styles.css?v=110`).
+- **Header/footer:** edit `_header.html` / `_footer.html`, then `python3 build.py` (verify with
+  `python3 build.py --check`). Vercel runs `build.py` on every deploy (see `vercel.json`).
+- **Service pages are GENERATED:** edit copy in **`_content.json`** (one object per service) →
+  `python3 gen_service.py` (renders each `/marketing-services/<slug>/index.html` from the
+  `website-design` page as the structural template; all internal links generated by construction
+  so they can't drift) → `python3 build.py`. **Don't hand-edit generated service HTML.** Full
+  spec: `docs/website-source-of-truth/service-page-template.md`.
+- **Program / industry / other pages are HAND-BUILT** (not generated). They reuse the same
+  `styles.css` + `service-page.css` (`svc-*`, `simple-hero`, `svc-cta`) classes for consistency.
+- **Styles:** `assets/css/styles.css` (global, nav, `.hl`) + `assets/css/service-page.css` (`svc-*`).
+  Bump the `?v=` query **sitewide** when a CSS file changes. One-liner:
+  `find . -name "*.html" -not -path "./.git/*" -print0 | xargs -0 sed -i '' -E 's/styles\.css\?v=[0-9]+/styles.css?v=NN/g'`
 
 ## Brand & content rules (non-negotiable — owner reviews for these)
-- **Icons**: Lucide stroke SVGs only (width 1.75, round caps, `currentColor`). NEVER emoji
-  or unicode glyphs. Brand kit: brandkit.lawnlab.dev (JS-rendered; open it for design work).
-- **Twilight `#6837EF` (purple) NEVER blends with green** in gradients/glows. It's the
-  premium standalone "dash" — used alone (the purple featured card, the CTA spotlight +
-  dot-grid). Greens: Limeade `#ACE71D`, Gator `#5DCA49`. Dark base `#07100A`.
-- **No invented facts.** Anything unverifiable (timelines, prices, %s, guarantees) is a
-  clearly-marked placeholder, not a claim. Conviction stats must be REAL + sourced
-  (`statSource` in `_content.json`). FAQ answers are `[NEEDS YOUR INPUT]` until the owner
-  supplies them; `FAQPage` JSON-LD is added per page only once answers are real.
-- **Keyword variants**: lead with the page's primary term, weave 2–3 natural variants
-  (lawn care, landscaper). No stuffing.
-- City/county names always carry a 2-letter state code ("Tampa, FL").
+- **Icons:** Lucide stroke SVGs only (1.75 weight, round caps, `currentColor`). NEVER emoji or
+  unicode glyphs as icons.
+- **Twilight `#6837EF` (purple) NEVER blends with green.** Premium standalone accent only: the
+  purple featured card, the CTA spotlight + dot-grid band, the `.hl` highlight. Greens: Limeade
+  `#ACE71D`, Gator `#5DCA49`. Dark base `#07100A`.
+- **No pricing anywhere** on the site — every CTA routes to the free strategy call
+  (`/get-started/book-strategy-call/`).
+- **No invented facts.** Anything unverifiable is a clearly-marked placeholder. Conviction stats
+  must be REAL + sourced (`statSource` in `_content.json`). FAQ answers stay `[NEEDS YOUR INPUT]`
+  until the owner supplies them; `FAQPage` schema is added only once answers are real.
+- **Keyword variants:** lead with the page's primary term, weave 2–3 natural variants. No stuffing.
+- **City/county names** always carry a 2-letter state code ("Tampa, FL"), Title Case.
+- **The two program avatars are DIFFERENT — don't conflate them:**
+  - **Growth** ($400K–$1M, "six-figure"): grew offline on referrals/repeat work, hit the ceiling,
+    nearly invisible online, trying to get FOUND for the first time → foundation / get-found story.
+  - **Authority** (7-figure+): already doing some online marketing → omnipresent / dominate-the-market
+    story. The vendor-sprawl + agency-scar-tissue + "optimize what exists" pains belong HERE, not Growth.
 
-## Next steps (roughly in priority order)
-1. **Owner inputs to finalize the 8 service pages**: real FAQ answers (5 each → then add
-   FAQPage schema), verify the 7 conviction stats, drop real images into the labeled
-   placeholders.
-2. **Program pages** (`/programs/` + `/programs/growth/`, `/programs/authority/`): rebuild
-   on the same template approach (no pricing on the site).
-3. **Other non-home pages**: About, Contact, the marketing-services hub, Industries/*,
-   Resources/* — design + build.
-4. **Launch**: eventual cutover to lawnandlandmarketing.com (not yet — don't deploy there).
-   Before launch, work `docs/website-source-of-truth/seo-launch-checklist.md` — esp. flipping
-   all `new.lawnlab.dev` URLs → production, fixing `sitemap.xml`, and adding `robots.txt`.
+## SEO conventions
+- Per page: unique `<title>`, meta description (~155 chars), `canonical`, Open Graph + Twitter card.
+  (`og:image` / share graphics are a launch task — not added yet.)
+- Schema: `Service` on service pages + Growth; `BreadcrumbList` where there's a visible breadcrumb;
+  `FAQPage` only when the answers are real. Homepage carries `MarketingAgency`/Organization +
+  `WebSite` + `FAQPage`.
+- **Schema uses the production domain** (`lawnandlandmarketing.com`) even though page **canonicals
+  still point to staging** (`new.lawnlab.dev`). The canonical flip is a single launch-time find/replace.
+
+## Launch checklist (later — `docs/website-source-of-truth/seo-launch-checklist.md`)
+Flip all `new.lawnlab.dev` → `lawnandlandmarketing.com` (canonicals + `og:url`); add `og:image`
+share graphics; keep the real **`sitemap.xml`** current (rebuilt 2026-06-15 to the real routes —
+no killed routes); add `robots.txt`; verify the service-page conviction stats; land real FAQ
+answers + `FAQPage` schema; drop real images into placeholders. **Don't deploy to the production
+domain until launch.**
 
 ## Working with the owner (Matt)
-- Product-minded, not a deep engineer. Explain **outcomes**, not git/Vercel/CLI/deploy
-  mechanics — just handle those quietly.
-- He reviews visible changes in-browser on a preview before they go wide.
+Product-minded, not a deep engineer — explain **outcomes**, not git/Vercel/CLI/deploy mechanics
+(handle those quietly). He reviews visible changes on the **live URL** (hard-refresh after a push;
+deploys take ~1–2 min). In-tool screenshots don't render well for him.
 
-## Docs
-`docs/website-source-of-truth/` — `service-page-template.md` (the locked template + tooling),
-`decisions.md`, `page-registry.md`, `sitemap.md`, `routing-rules.md`, `build-status.md`,
-`restart-guide.md`. Keep these updated in the same workstream as any structural change.
+## Related assets
+- **Brand kit** — separate repo `LawnAndLandMarketing/brandkit` → https://brandkit.lawnlab.dev
+  (Next.js; guide content in `public/brandkit-*.html|css`; AI-readable brief at `/brand`). The
+  `.hl` Twilight emphasis marker is documented there in §09 Typography.
+
+## Docs (`docs/website-source-of-truth/`)
+`restart-guide.md` (fastest re-entry) · `build-status.md` (done / not-done) · `page-registry.md`
+(page-by-page status table) · `sitemap.md` (approved routes) · `routing-rules.md` (canonical /
+killed routes) · `service-page-template.md` (the locked template + generator) · `decisions.md`
+(durable decisions log) · `seo-launch-checklist.md` · `benchmark-lawnline.md`.
+**Keep these current in the same workstream as any structural change.**

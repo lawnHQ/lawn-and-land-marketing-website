@@ -36,7 +36,10 @@ Operating rules
 4. When a page meaningfully changes, update `page-registry.md` and `build-status.md` in the same workstream.
 5. Keep this website folder focused on the public site only; do not mix in internal ops naming.
 
-Current restart-critical convention
-- Homepage is currently the only intentionally developed public page.
-- Non-home public pages are intentionally held as header + hero + blank-body placeholder + CTA/footer until the design phase is approved.
-- If you restart the project later, treat that convention as truth unless Matt explicitly changes it.
+Current restart-critical convention (updated 2026-06-15)
+- Developed pages: the **homepage**, all **8 `/marketing-services/*` pages + the hub**, and the
+  **Growth Program page** (`/programs/growth/`). See `page-registry.md` for the full status table.
+- Still shells: `/programs/authority/` (next big build), the **8 `/industries/*`** pages (canonical 8
+  locked), `/about/`, `/contact/`, `/resources/*`, and the `/programs/` hub. Don't deepen shells with
+  long copy until their design is approved or they're scheduled.
+- Fastest re-entry: read `restart-guide.md`. The single most useful file overall is the repo-root `CLAUDE.md`.

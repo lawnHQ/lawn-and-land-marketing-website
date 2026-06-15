@@ -38,6 +38,15 @@ These are legacy or non-canonical and should be removed from internal linking or
 - Decide whether any retired routes should eventually receive redirects at the hosting layer.
 - If a route is intentionally reintroduced later, record that decision before adding it back into internal linking.
 
-## Current Non-Home Page Convention
-- Homepage is the only intentionally developed public page right now.
-- Non-home pages should keep header + hero + blank-body placeholder + CTA/footer until the design phase is approved.
+## Killed routes — fuller list (keep out of nav, footer, CTAs, copy, breadcrumbs, sitemap, links)
+`/services/` (+ children) · `/pricing/` · `/resources/guides/` · `/resources/contact/` ·
+`/case-studies/` (+ children) · `/results/` · `/team/` · `/good-fit/` · `/book/` · `/podcast/` ·
+`/tools/marketing-audit/` · older orphan/article URLs. Use the canonical equivalents instead
+(`/marketing-services/...`, `/contact/`, `/resources/...`, `/get-started/book-strategy-call/`).
+
+## Current build convention (updated 2026-06-15)
+- Developed: the homepage, the 8 `/marketing-services/*` pages + hub, and `/programs/growth/`.
+- Still shells (don't deepen with long copy until their design is approved or they're scheduled):
+  `/programs/authority/`, the 8 `/industries/*` pages, `/about/`, `/contact/`, `/resources/*`,
+  and the `/programs/` hub. (Authority + the industry pages are the next scheduled builds.)
+- See `page-registry.md` for per-page status and `build-status.md` for priorities.
