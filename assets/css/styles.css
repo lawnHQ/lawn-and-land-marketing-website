@@ -538,15 +538,24 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
   color: rgba(206,193,245,0.85); margin-bottom: 18px; position: relative; z-index: 1;
 }
-.marquee-track { overflow: hidden; position: relative; }
+.marquee-track {
+  overflow: hidden; position: relative;
+  -webkit-transform: translateZ(0); transform: translateZ(0); /* composite up front so iOS starts the loop without a tap */
+  -webkit-backface-visibility: hidden; backface-visibility: hidden;
+}
 .marquee-inner {
   display: flex; align-items: center; gap: 20px;
   white-space: nowrap;
   animation: marquee 45s linear infinite;
   width: max-content;
+  will-change: transform; /* keep the scroll on the GPU path on iOS Safari */
+  -webkit-backface-visibility: hidden; backface-visibility: hidden;
 }
 .marquee-inner:hover { animation-play-state: paused; }
-@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes marquee {
+  from { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+  to   { -webkit-transform: translate3d(-50%,0,0); transform: translate3d(-50%,0,0); }
+}
 .marquee-logo {
   height: 38px; width: auto;
   object-fit: contain;
@@ -557,6 +566,11 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   position: relative; z-index: 1;
 }
 .marquee-inner:hover .marquee-logo { opacity: 0.8; }
+/* Touch devices latch :hover after a tap — never let that strand the loop paused. */
+@media (hover: none) {
+  .marquee-inner:hover { animation-play-state: running; }
+  .marquee-inner:hover .marquee-logo { opacity: 0.5; }
+}
 .proof-nalp-logo { height: 18px; width: auto; opacity: 0.65; filter: brightness(0) invert(1); vertical-align: middle; }
 
 /* ─ SERVICES TABS ─ */
