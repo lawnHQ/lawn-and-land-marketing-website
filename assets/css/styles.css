@@ -2449,3 +2449,13 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   .marquee-inner { animation: none !important; }
   [data-reveal] { opacity: 1 !important; transform: none !important; }
 }
+
+/* Twilight highlight — mark an impactful phrase in body copy (sharp-edged purple marker) */
+.hl {
+  background: #6837EF;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.06em 0.36em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
