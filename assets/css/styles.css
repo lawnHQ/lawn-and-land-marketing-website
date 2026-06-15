@@ -2353,7 +2353,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 }
 .proof-case {
   display: flex; flex-direction: column; text-align: left;
-  padding: 30px 26px; border-radius: 18px;
+  border-radius: 18px; overflow: hidden;
   border: 1px solid var(--card-bd); background: rgba(255,255,255,0.02);
   transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
@@ -2362,7 +2362,21 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   background: rgba(172,231,29,0.03);
   transform: translateY(-3px);
 }
-.proof-case-head { margin-bottom: 26px; }
+.proof-case-photo { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; }
+.proof-case-photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.4s ease;
+}
+.proof-case:hover .proof-case-photo img { transform: scale(1.045); }
+.proof-case-photo::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 60%, rgba(7,16,10,0.65) 100%);
+}
+.proof-case-body {
+  display: flex; flex-direction: column; flex: 1;
+  padding: 24px 26px 28px;
+}
+.proof-case-head { margin-bottom: 22px; }
 .proof-case-name {
   font-family: var(--font-h); font-style: italic; font-weight: 800;
   font-size: 18px; line-height: 1.15; color: var(--white);
@@ -2383,7 +2397,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .proof-case-label { font-family: var(--font-b); font-size: 14px; color: rgba(255,255,255,0.7); }
 @media (max-width: 760px) {
   .proof-cases-grid { grid-template-columns: 1fr; gap: 14px; max-width: 440px; }
-  .proof-case { padding: 26px 22px; }
+  .proof-case-body { padding: 22px 22px 26px; }
 }
 
 /* ───────────────────────── Accessibility ───────────────────────── */
