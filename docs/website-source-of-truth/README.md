@@ -37,9 +37,9 @@ Operating rules
 5. Keep this website folder focused on the public site only; do not mix in internal ops naming.
 
 Current restart-critical convention (updated 2026-06-15)
-- Developed pages: the **homepage**, all **8 `/marketing-services/*` pages + the hub**, and the
-  **Growth Program page** (`/programs/growth/`). See `page-registry.md` for the full status table.
-- Still shells: `/programs/authority/` (next big build), the **8 `/industries/*`** pages (canonical 8
-  locked), `/about/`, `/contact/`, `/resources/*`, and the `/programs/` hub. Don't deepen shells with
-  long copy until their design is approved or they're scheduled.
+- Developed pages: the **homepage**, all **8 `/marketing-services/*` pages + the hub**, and both
+  **program pages** (Growth + the flagship Authority). See `page-registry.md` for the full status table.
+- Still shells: the **8 `/industries/*`** pages (canonical 8 locked — next big build), `/about/`,
+  `/contact/`, `/resources/*`, and the `/programs/` hub. Don't deepen shells with long copy until
+  their design is approved or they're scheduled.
 - Fastest re-entry: read `restart-guide.md`. The single most useful file overall is the repo-root `CLAUDE.md`.

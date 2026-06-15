@@ -45,8 +45,9 @@ These are legacy or non-canonical and should be removed from internal linking or
 (`/marketing-services/...`, `/contact/`, `/resources/...`, `/get-started/book-strategy-call/`).
 
 ## Current build convention (updated 2026-06-15)
-- Developed: the homepage, the 8 `/marketing-services/*` pages + hub, and `/programs/growth/`.
+- Developed: the homepage, the 8 `/marketing-services/*` pages + hub, and both program pages
+  (`/programs/growth/`, `/programs/authority/`).
 - Still shells (don't deepen with long copy until their design is approved or they're scheduled):
-  `/programs/authority/`, the 8 `/industries/*` pages, `/about/`, `/contact/`, `/resources/*`,
-  and the `/programs/` hub. (Authority + the industry pages are the next scheduled builds.)
+  the 8 `/industries/*` pages, `/about/`, `/contact/`, `/resources/*`, and the `/programs/` hub.
+  (The 8 industry pages are the next scheduled build.)
 - See `page-registry.md` for per-page status and `build-status.md` for priorities.

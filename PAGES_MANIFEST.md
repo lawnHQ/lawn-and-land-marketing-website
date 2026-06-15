@@ -9,11 +9,11 @@ Last updated: 2026-06-15.
 
 ## Current inventory at a glance (36 HTML pages)
 
-**Developed (10):** `/` · `/marketing-services/` + its 8 detail pages (website-design, local-seo,
+**Developed (11):** `/` · `/marketing-services/` + its 8 detail pages (website-design, local-seo,
 gbp-management, google-ads, meta-ads, your-ai-partner, reputation-management, automation) ·
-`/programs/growth/`.
+`/programs/growth/` · `/programs/authority/` (flagship).
 
-**Shells — scheduled next:** `/programs/authority/` · the canonical 8 industries
+**Shells — scheduled next:** the canonical 8 industries
 (`/industries/{lawn-care,lawn-maintenance,landscaping,outdoor-living,land-clearing,excavation,septic-services,holiday-lighting}/`)
 + `/industries/` hub.
 

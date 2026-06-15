@@ -25,14 +25,17 @@ the eventual home is lawnandlandmarketing.com.
   `simple-hero` + breadcrumb → "Sound familiar?" 3 red pain cards → four-pillar "What you get" on
   the Twilight textured band → "Why us" two-column (image placeholder left, copy right) → Twilight
   CTA. `Service` + `BreadcrumbList` JSON-LD, OG + Twitter card. No pricing.
+- **Authority Program page** (`/programs/authority/`) — the flagship, built. Elevated from Growth:
+  hero → 3 pain cards → Twilight four-pillar "domination" band → full "everything included"
+  deliverables grid → value play (a whole team for less than one hire) → "Roadmap to Domination"
+  timeline → partnership + credibility (50+ clients, $300K–$14M+, 97% retention, NALP) two-column →
+  Twilight CTA. Built from the contract + pitch deck. `Service` + `BreadcrumbList` schema, OG/Twitter. No pricing.
 - **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`).
 - **Brand system** — Twilight spotlight + dot-grid CTA pattern; the `.hl` Twilight emphasis marker;
   Lucide-only icons. The `.hl` marker is also documented in the brand kit (brandkit.lawnlab.dev).
 
 ## What is NOT done
-- **Authority Program page** (`/programs/authority/`) — shell. Next big build (7-figure+ "dominate"
-  avatar; awaiting contract). Do NOT reuse Growth's get-found pains — see the avatar split in `CLAUDE.md`.
-- **8 industry pages** (`/industries/*`) — the canonical 8 are locked (lawn-care, lawn-maintenance,
+- **8 industry pages** (`/industries/*`) — **the next big build.** The canonical 8 are locked (lawn-care, lawn-maintenance,
   landscaping, outdoor-living, land-clearing, excavation, septic-services, holiday-lighting) but are
   **shells**. Content outlined, not written.
 - **Programs hub** (`/programs/`) — clean placeholder (lorem scrapped); real hub pending both programs.
@@ -45,8 +48,8 @@ the eventual home is lawnandlandmarketing.com.
 3. **Images** — replace the labeled placeholders (each says exactly what to drop in).
 
 ## Highest-priority work next
-1. **Build the Authority Program page** on the Growth structure, tuned for the 7-figure+ avatar.
-2. **Write the 8 industry pages** (canonical 8 locked) — give the shells real, persuasive content.
+1. **Write the 8 industry pages** (canonical 8 locked) — give the shells real, persuasive content.
+2. **Build the `/programs/` hub** now that both Growth and Authority programs exist.
 3. Land the service-page owner inputs above → mark those pages "finished" + add `FAQPage` schema.
 4. Design + build the remaining non-home pages (About, Contact, Resources, Programs hub).
 5. **Launch cutover** to lawnandlandmarketing.com (later) — work `seo-launch-checklist.md`.

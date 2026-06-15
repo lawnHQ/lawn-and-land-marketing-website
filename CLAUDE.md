@@ -36,16 +36,19 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   section on the Twilight textured band** (World-Class Website / Local SEO / Google-LSA / CRM &
   Lead Mgmt) → "Why us" two-column (image placeholder left, copy right) → Twilight CTA.
   `Service` + `BreadcrumbList` JSON-LD, OG + Twitter card.
+- **Authority Program page** (`/programs/authority/`) — **built**; the flagship. Same lean DNA as
+  Growth, elevated for established **7-figure+** companies ("own your market"): hero → 3 pain cards →
+  Twilight four-pillar "domination" band → full "everything included" deliverables grid → value play
+  ("a whole team for less than one hire") → **Roadmap to Domination** timeline → partnership +
+  credibility two-column (50+ clients, $300K–$14M+, 97% retention, NALP) → Twilight CTA. Built from
+  the contract + pitch deck. `Service` + `BreadcrumbList` JSON-LD, OG + Twitter. No pricing.
 - **Universal header + footer** via `build.py` (edit `_header.html` / `_footer.html`; stamps everywhere).
 - **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`
   swipe behind the lower portion of a phrase, white text, sharp edges). Defined in `styles.css`;
   also locked into the brand kit (see Related assets). Use sparingly — one phrase per surface.
 
 ## Status — what's NOT done (shells / next up)
-- **Authority Program page** (`/programs/authority/`) — shell. **The next big build**: same lean
-  structure as Growth, dialed up for established **7-figure+** companies ("dominate your market").
-  Awaiting the Authority contract/details. Use the Authority avatar (below) — do NOT reuse Growth's pains.
-- **8 industry pages** (`/industries/*`) — the **canonical 8 are LOCKED** but are **shells**
+- **8 industry pages** (`/industries/*`) — **the next big build.** The **canonical 8 are LOCKED** but are **shells**
   (header + hero + CTA only): `lawn-care`, `lawn-maintenance`, `landscaping`, `outdoor-living`,
   `land-clearing`, `excavation`, `septic-services`, `holiday-lighting`. Content outlined, not
   written. Earlier non-canonical industries were deleted this build.

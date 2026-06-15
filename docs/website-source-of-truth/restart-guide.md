@@ -3,12 +3,12 @@
 Use this when coming back to the Lawn & Land website after time away. Updated 2026-06-15.
 
 ## One-paragraph truth
-The **homepage**, **all 8 `/marketing-services/*` detail pages + the services hub**, and the
-**Growth Program page** (`/programs/growth/`) are built. Service pages run off a locked template +
-a generator (`gen_service.py` reading `_content.json`); the homepage, hub, and program pages are
-hand-built using the same `svc-*` / `simple-hero` / `svc-cta` classes. Still to build: the
-**Authority Program page**, the **8 industry pages** (canonical 8 locked, currently shells), and
-About / Contact / Resources (shells). The Programs hub is a clean placeholder. Nothing is launched
+The **homepage**, **all 8 `/marketing-services/*` detail pages + the services hub**, and **both
+program pages** — **Growth** and the flagship **Authority** (`/programs/growth/`, `/programs/authority/`)
+— are built. Service pages run off a locked template + a generator (`gen_service.py` reading
+`_content.json`); the homepage, hub, and program pages are hand-built using the same `svc-*` /
+`simple-hero` / `svc-cta` classes. Still to build: the **8 industry pages** (canonical 8 locked,
+currently shells), and About / Contact / Resources (shells). The Programs hub is a clean placeholder. Nothing is launched
 publicly — staging is new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is
 lawnandlandmarketing.com.
 
@@ -40,12 +40,10 @@ Retired / keep OUT of internal linking: `/services/`, `/pricing/`, `/resources/g
 `/podcast/`, `/tools/marketing-audit/`, and older orphan/article URLs.
 
 ## The next best moves
-1. **Build the Authority Program page** (`/programs/authority/`) on the Growth structure, tuned for
-   the **7-figure+** "dominate the market" avatar — NOT Growth's get-found pains (see `CLAUDE.md`).
-2. **Write the 8 industry pages** (canonical 8 locked; currently shells).
-3. Finalize the 8 service pages with owner inputs (FAQ answers → FAQ schema; verify conviction
+1. **Write the 8 industry pages** (`/industries/*`, canonical 8 locked; currently shells) — the next big build.
+2. Finalize the 8 service pages with owner inputs (FAQ answers → FAQ schema; verify conviction
    stats; real images).
-4. Design + build About / Contact / Resources / Programs hub.
+3. Build the `/programs/` hub now that both program pages exist; then About / Contact / Resources.
 
 ## Guardrails
 - **No pricing** anywhere — every CTA → the free strategy call.

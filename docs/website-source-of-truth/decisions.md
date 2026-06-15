@@ -82,9 +82,21 @@
   `docs/website-source-of-truth/` set current; rebuilt `sitemap.xml` to the real routes (the old one
   listed killed routes — `/services/...`, `/pricing/`, `/case-studies/`, fake blog posts).
 
+## 2026-06-15 — Authority Program (flagship) built
+- Built `/programs/authority/` as the flagship, cloned from the Growth structure and elevated for the
+  **7-figure+** avatar (established, doing real revenue, wants to *dominate* — NOT Growth's get-found
+  pains). Sections: hero ("be the most known") → 3 red pain cards (outranked by inferior competitors /
+  patchwork vendors / plateaued) → Twilight four-pillar "domination" band (Total Search Domination /
+  Everywhere They Look / A Reputation That Closes / Your Whole Marketing Team) → full "everything
+  included" deliverables grid (~18 items) → **value play** ("a whole team for less than one hire" — uses
+  the ~$60–80K employee-cost anchor, never our fee) → **Roadmap to Domination** timeline (Foundation →
+  Climb → Market Dominance → Total Control) → partnership + credibility two-column (50+ clients,
+  $300K–$14M+, 97% retention, NALP, Google Partner) → Twilight CTA. Built from the real contract + the
+  New Horizon pitch deck. `Service` + `BreadcrumbList` schema, OG/Twitter. **No pricing.** Deliberately
+  excluded the deck's "Seven Figure Agency" mention (third-party brand) and specific client P&L numbers;
+  used L&L's own agency credentials as proof instead. Both program pages now cross-link.
+
 ## Open Decisions To Track Later
-- **Authority Program page direction** — same lean structure as Growth, tuned for the 7-figure+
-  "dominate the market" avatar; awaiting the Authority contract/details.
 - **Industry-page content + template** — how deep the 8 (locked) industry pages go, and whether they
   share a reusable structure.
 - **About / Contact / Resources** design direction.
