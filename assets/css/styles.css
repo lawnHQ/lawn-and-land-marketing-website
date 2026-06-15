@@ -562,7 +562,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 /* ─ SERVICES TABS ─ */
 .services-section {
   padding: var(--section-gap) 0;
-  background: var(--black-mid);
+  background: var(--black);
   position: relative;
   overflow: hidden;
 }
@@ -712,7 +712,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 /* ─ TESTIMONIALS ─ */
 .testi-section {
   padding: var(--section-gap) 0;
-  background: var(--black-mid);
+  background: var(--black);
   position: relative;
   overflow: hidden;
 }
@@ -800,7 +800,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .programs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; max-width: 1100px; margin: 0 auto; }
 
 /* ── Industries We Serve ───────────────────────────── */
-.industries-section { padding: var(--section-gap) 0; background: var(--black-mid); position: relative; overflow: hidden; }
+.industries-section { padding: var(--section-gap) 0; background: var(--black); position: relative; overflow: hidden; }
 .industries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1080px; margin: 44px auto 0; }
 .industry-card {
   display: flex; flex-direction: column; align-items: center; gap: 15px;
@@ -887,7 +887,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 /* ─ FAQ ─ */
 .faq-section {
   padding: var(--section-gap) 0;
-  background: var(--black-mid);
+  background: var(--black);
 }
 .faq-layout { display: grid; grid-template-columns: 340px 1fr; gap: 80px; align-items: start; }
 .faq-left h2 { font-family: var(--font-h); font-size: clamp(26px,3vw,36px); font-weight: 800; font-style: italic; color: var(--white); line-height: 1.2; margin-bottom: 14px; }
