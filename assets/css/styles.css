@@ -321,7 +321,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   transition: opacity 0.45s ease, transform 0.45s ease;
   will-change: opacity, transform;
 }
-.hero-sub { font-size: clamp(16px,1.5vw,19px); color: var(--body); max-width: 500px; margin-bottom: 36px; }
+.hero-sub { font-size: clamp(16px,1.5vw,19px); color: #fff; max-width: 500px; margin-bottom: 36px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
 .hero-proof {
   display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
@@ -1758,7 +1758,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   font-weight: 800; font-style: italic; color: var(--white);
   line-height: 1.05; margin-bottom: 18px;
 }
-.contact-hero p { font-size: 18px; color: var(--body); max-width: 520px; margin: 0 auto; }
+.contact-hero p { font-size: 18px; color: #fff; max-width: 520px; margin: 0 auto; }
 
 /* Contact layout */
 .contact-section {
