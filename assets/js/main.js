@@ -190,7 +190,7 @@ document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
     const videoId = wrap.dataset.videoid;
     if (!videoId || wrap.classList.contains('playing')) return;
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
     iframe.allow = 'autoplay; encrypted-media';
     iframe.allowFullscreen = true;
     wrap.appendChild(iframe);
