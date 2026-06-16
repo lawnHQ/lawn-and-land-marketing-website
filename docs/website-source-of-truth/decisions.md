@@ -132,6 +132,32 @@
   spelled form wrapping in the narrow nav pills.
 - **Only remaining program to-do:** drop real images into the hero/Why-Us placeholders on the program pages.
 
+## 2026-06-15 — Nav submenu overhaul (tightened all four dropdowns)
+- **About:** removed the founder/right-rail card; the dropdown is now a compact single-column
+  `.mega-panel--narrow` (380px) — About / Meet The Team / **Experiences & Testimonials**. The
+  Experiences item is themed in the Twilight textured purple (`.mega-item--twilight`) with a
+  glowing gold star icon, and links to `/resources/experiences-reviews/`.
+- **Marketing Services & Industries:** the styled promo headline ("Most Companies Don't Need
+  Another Vendor." / "We Only Work In The Green Industry.") is no longer an `<h4>` — moved to a
+  `<div class="mega-fc-title">` that inherits the exact former `h4` look (Rethink Sans italic 800).
+  This was an **SEO fix** — nav promo copy was polluting the page heading hierarchy. The Marketing
+  Services body copy was rewritten to the "one connected system… run by a single team that owns the
+  result" framing.
+- **Resources — full rebuild:** the featured card is now a Twilight-textured, clickable testimonials
+  card (glowing gold 5-star row, "Client Experiences" label, links to `/resources/experiences-reviews/`
+  — same target as the About item, anticipating a page full of testimonial videos/screenshots). The
+  six items are reorganized into two columns: **Mow Money, Mow Problems** (the Podcast → on-site page
+  that will show off the show + let people apply as a guest · YouTube channel ↗ · the Book → Amazon ↗)
+  and **Learn & Connect** (Green Industry Insights/Blog · Private Facebook Group ↗ "Service Area
+  Experts" · Contact Us). External links open in a new tab (`target="_blank" rel="noopener"`).
+- **Decision (flag for Matt):** the "Mow Money, Mow Problems" **Book** links straight to the **Amazon**
+  product page (new tab) rather than a dedicated on-site page — simplest path, and Amazon already
+  converts. Trivial to swap to a dedicated page later if we want on-site reviews/long-form.
+- New nav CSS added to `styles.css`: `.mega-panel--narrow`, `.mega-grid--single`, `.mega-item--twilight`,
+  `.mega-featured-card--twilight`, `.mega-fc-stars`, and `.mega-fc-title` (extends the former
+  `.mega-featured-card h4` rule so the de-headinged titles keep the identical look). `styles.css?v=137 → 138`.
+  Header re-stamped sitewide via `build.py`. Programs / hub / program pages untouched.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — how deep the 8 (locked) industry pages go, and whether they
   share a reusable structure.

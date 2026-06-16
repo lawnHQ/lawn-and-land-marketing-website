@@ -15,7 +15,7 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   production. Takes ~1–2 min. (Vercel also auto-creates auth-protected previews per branch.)
 - **Branches:** all progress lives on `main`; the working branch `site-foundation` is kept
   in sync with it — push to **both** (`origin site-foundation` then `origin site-foundation:main`).
-- **Cache-bust versions in use:** `styles.css?v=135`, `main.js?v=53`, `service-page.css?v=3`.
+- **Cache-bust versions in use:** `styles.css?v=138`, `main.js?v=53`, `service-page.css?v=3`.
 
 ## Status — what's DONE (developed)
 - **Homepage** (`/`) — the benchmark page. Flow (reordered for conversion): hero (YouTube

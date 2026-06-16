@@ -1454,7 +1454,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   font-family: var(--font-l); font-size: 10px; font-weight: 700;
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--lime);
 }
-.mega-featured-card h4 {
+.mega-featured-card h4,
+.mega-featured-card .mega-fc-title {
   font-family: var(--font-h); font-size: 16px; font-weight: 800; font-style: italic;
   color: var(--white); line-height: 1.2;
 }
@@ -1467,6 +1468,62 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   color: var(--lime); text-decoration: none; transition: gap 0.2s;
 }
 .mega-featured-btn:hover { text-decoration: underline; }
+
+/* ── Nav submenu refinements (2026-06-15) ─────────────────────────── */
+/* Narrow single-column panel (About dropdown) */
+.mega-panel--narrow { min-width: 380px; }
+.mega-grid--single { grid-template-columns: 1fr; }
+
+/* Twilight textured item (About → Experiences & Testimonials). Re-declares the
+   full background on :hover because .mega-item:hover is a shorthand that would
+   otherwise wipe the textured background-image. */
+.mega-item.mega-item--twilight,
+.mega-item.mega-item--twilight:hover {
+  background-color: #0d0b14;
+  background-image:
+    radial-gradient(130% 200% at 50% -40%, rgba(104,55,239,0.42), transparent 60%),
+    radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1.5px);
+  background-size: 100% 100%, 15px 15px;
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center;
+  border: 1px solid rgba(104,55,239,0.45);
+}
+.mega-item.mega-item--twilight:hover { border-color: rgba(104,55,239,0.7); }
+.mega-item--twilight .mega-icon svg {
+  stroke: #FFC83D; fill: #FFC83D;
+  filter: drop-shadow(0 0 5px rgba(255,200,61,0.55));
+}
+
+/* Twilight testimonials featured card (Resources) — rendered as a clickable <a> */
+.mega-featured-card--twilight {
+  background-color: #0d0b14;
+  background-image:
+    radial-gradient(130% 150% at 50% -30%, rgba(104,55,239,0.45), transparent 62%),
+    radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1.5px);
+  background-size: 100% 100%, 18px 18px;
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center;
+  border: 1px solid rgba(104,55,239,0.45);
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.mega-featured-card--twilight:hover {
+  border-color: rgba(104,55,239,0.75);
+  transform: translateY(-2px);
+}
+.mega-featured-card--twilight::before {
+  background: linear-gradient(90deg, transparent, rgba(104,55,239,0.55), transparent);
+}
+.mega-featured-card--twilight .mega-featured-label,
+.mega-featured-card--twilight .mega-featured-btn { color: #C6B0FA; }
+
+/* Gold star row on the twilight testimonials card */
+.mega-fc-stars { display: flex; gap: 3px; margin-bottom: 2px; }
+.mega-fc-stars svg {
+  width: 15px; height: 15px;
+  fill: #FFC83D; stroke: none;
+  filter: drop-shadow(0 0 4px rgba(255,200,61,0.55));
+}
 
 /* Founder card (About dropdown) */
 .mega-founder-card {
