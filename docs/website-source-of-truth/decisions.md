@@ -118,6 +118,20 @@
   purple** (`.mega-grid--programs` + `.mega-item--growth/--authority` in styles.css; the Authority target
   pill changed green → twilight). About/Marketing-Services dropdowns untouched.
 
+## 2026-06-15 — Programs section LOCKED (sans images)
+- Both program pages (**Growth**, **Authority**), the **`/programs/` hub**, and the **nav submenu**
+  are locked pending real images — treat the build/wireframe/content as final unless the owner reopens it.
+- Ran a sitewide consistency pass on every program mention (homepage "Two Paths" section, hub cards,
+  nav mega, footer, homepage FAQ + schema, service-page footer link lists). All consistent: naming
+  ("Growth Program" / "Authority Program"), order (Growth → Authority), tier framing (Growth =
+  6-figure / under $1M / foundation-and-get-found; Authority = 7-figure / over $1M / dominate), and
+  no-pricing.
+- **Label convention (locked):** compact pill/badge labels use the **digit** form ("For 6-Figure
+  Companies"); running prose uses the **spelled** form ("six-figure"). Standardized the hub badge (the
+  lone "Six-Figure" outlier) to digit so it matches the homepage badges + nav pills — also avoids the
+  spelled form wrapping in the narrow nav pills.
+- **Only remaining program to-do:** drop real images into the hero/Why-Us placeholders on the program pages.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — how deep the 8 (locked) industry pages go, and whether they
   share a reusable structure.
