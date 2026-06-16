@@ -95,6 +95,17 @@
   New Horizon pitch deck. `Service` + `BreadcrumbList` schema, OG/Twitter. **No pricing.** Deliberately
   excluded the deck's "Seven Figure Agency" mention (third-party brand) and specific client P&L numbers;
   used L&L's own agency credentials as proof instead. Both program pages now cross-link.
+- **Refined same-day per owner feedback:** dropped "Flagship" from the hero pill; `.hl` Twilight
+  highlight applied to "THE company" (problem) and "For less than one hire." (value headline);
+  removed the "$60–80K math" reframe line under the value cards and tightened the value→roadmap
+  spacing; re-weighted the value cards to **40/60** with the Authority-team box emphasized (bigger
+  header, brighter copy, stronger border + purple glow) as the obvious choice; **replaced the
+  credibility stat row with the homepage "Proof, Not Promises" section** (real client results —
+  Rock Solid, Precision, From The Ground Up). The agency credentials (50+ / $300K–$14M+ / 97% /
+  NALP) still live in the Why-L&L partnership paragraph.
+- **Universal (same session):** every hero/banner subhead is now **full white `#fff`** (was
+  `rgba(255,255,255,0.78)` / `var(--body)` grey) — `.hero-copy p` on all `.simple-hero` pages +
+  `.hero-sub` on the homepage. `styles.css?v=135 → 136`.
 
 ## Open Decisions To Track Later
 - **Industry-page content + template** — how deep the 8 (locked) industry pages go, and whether they

@@ -273,16 +273,16 @@
     .auth-stat { text-align: center; padding: 20px 14px; border: 1px solid rgba(198,176,250,0.16); border-radius: 14px; background: rgba(255,255,255,0.025); }
     .auth-stat b { display: block; font-family: var(--font-h); font-style: italic; font-weight: 800; font-size: clamp(22px, 2.6vw, 30px); color: var(--lime); line-height: 1; margin-bottom: 7px; }
     .auth-stat span { font-family: var(--font-l); font-size: 12.5px; color: rgba(255,255,255,0.62); line-height: 1.35; }
-    .auth-2col { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(18px, 2.6vw, 26px); max-width: 940px; margin: 0 auto; align-items: stretch; }
+    .auth-2col { display: grid; grid-template-columns: 4fr 6fr; gap: clamp(18px, 2.6vw, 26px); max-width: 980px; margin: 0 auto; align-items: stretch; }
     .auth-card { border-radius: 18px; padding: 30px 28px; }
     .auth-card-label { font-family: var(--font-l); font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; }
     .auth-card p { margin: 0; font-size: 15px; line-height: 1.6; }
     .auth-card--cost { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); }
     .auth-card--cost .auth-card-label { color: rgba(255,255,255,0.5); }
     .auth-card--cost p { color: rgba(255,255,255,0.6); }
-    .auth-card--team { background: rgba(104,55,239,0.1); border: 1px solid rgba(104,55,239,0.42); }
-    .auth-card--team .auth-card-label { color: var(--lime); }
-    .auth-card--team p { color: rgba(255,255,255,0.92); }
+    .auth-card--team { background: rgba(104,55,239,0.16); border: 1px solid rgba(104,55,239,0.6); box-shadow: 0 18px 50px rgba(104,55,239,0.22); padding: 34px 32px; }
+    .auth-card--team .auth-card-label { color: var(--lime); font-size: 16px; letter-spacing: 0.08em; margin-bottom: 14px; }
+    .auth-card--team p { color: #fff; font-size: 16.5px; line-height: 1.62; }
     .auth-deliverables { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 13px 30px; max-width: 1060px; margin: 0 auto; }
     .auth-deliv { display: flex; gap: 11px; align-items: flex-start; font-size: 14.5px; color: rgba(255,255,255,0.82); line-height: 1.45; }
     .auth-deliv svg { flex-shrink: 0; margin-top: 2px; }
@@ -555,7 +555,7 @@
     <div class="hero-inner">
       <div class="hero-copy" data-reveal="fade-up">
         <div class="crumbs"><a href="/">Home</a><span>/</span><a href="/programs/">Programs</a><span>/</span><span>Authority</span></div>
-        <h1 class="hero-kicker">Authority Program &middot; Flagship</h1>
+        <h1 class="hero-kicker">Authority Program</h1>
         <h2>You're the best in your market.<br>Now be the most known.</h2>
         <p>You've built a real <strong style="color:var(--white);">seven-figure</strong> company and proven you can deliver &mdash; but online, a lesser competitor still shows up first, and your marketing is a patchwork of vendors that don't talk to each other. The Authority Program makes you <em>omnipresent</em>: everywhere your next customer looks, you're already there &mdash; the obvious, trusted choice.</p>
         <div class="hero-actions">
@@ -574,7 +574,7 @@
       <div style="max-width:720px;margin:0 auto 44px;text-align:center;" data-reveal="fade-up">
         <span class="svc-eyebrow">Sound familiar?</span>
         <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.08;color:var(--white);margin:0 0 14px;">A great company. Just not the obvious choice &mdash; yet.</h2>
-        <p style="font-size:18px;color:rgba(255,255,255,0.72);line-height:1.6;margin:0;">You've outgrown word-of-mouth and you're doing real revenue. But you're not <em>dominating</em> &mdash; and the gap between "a great company" and "<strong style="color:var(--white);">THE</strong> company" is what wins the biggest jobs in your market.</p>
+        <p style="font-size:18px;color:rgba(255,255,255,0.72);line-height:1.6;margin:0;">You've outgrown word-of-mouth and you're doing real revenue. But you're not <em>dominating</em> &mdash; and the gap between "a great company" and <span class="hl">THE company</span> is what wins the biggest jobs in your market.</p>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;max-width:1040px;margin:0 auto;" data-reveal="fade-up">
         <div style="border:1px solid rgba(255,95,95,0.34);border-radius:16px;padding:26px 24px;background:rgba(214,55,55,0.09);">
@@ -642,7 +642,7 @@
         <p style="font-size:18px;color:rgba(255,255,255,0.72);line-height:1.6;margin:0;">No &agrave;-la-carte, no upsells, no "that's an add-on." The Authority Program is the entire system, running for you from day one.</p>
       </div>
       <div class="auth-deliverables" data-reveal="fade-up">
-        <div class="auth-deliv"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>A custom 30+ page website, launched in 60 days</span></div>
+        <div class="auth-deliv"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>A custom green-industry-leading website</span></div>
         <div class="auth-deliv"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Ongoing website management, hosting &amp; security</span></div>
         <div class="auth-deliv"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>The "Authority" SEO strategy</span></div>
         <div class="auth-deliv"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Expert-written monthly blog content</span></div>
@@ -665,11 +665,11 @@
   </section>
 
   <!-- VALUE PLAY -->
-  <section style="padding:clamp(64px,8vw,100px) 0;">
+  <section style="padding:clamp(64px,8vw,100px) 0 clamp(40px,5vw,56px);">
     <div class="container">
       <div style="max-width:780px;margin:0 auto 44px;text-align:center;" data-reveal="fade-up">
         <span class="svc-eyebrow">The value</span>
-        <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.08;color:var(--white);margin:0 0 14px;">Your entire marketing department.<br>For less than one hire.</h2>
+        <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.08;color:var(--white);margin:0 0 14px;">Your entire marketing department.<br><span class="hl">For less than one hire.</span></h2>
         <p style="font-size:18px;color:rgba(255,255,255,0.72);line-height:1.6;margin:0;">The smartest growth move in the green industry isn't another truck or another salesperson. It's a team that makes the phone ring &mdash; without the salary, benefits, training, or turnover.</p>
       </div>
       <div class="auth-2col" data-reveal="fade-up">
@@ -682,14 +682,11 @@
           <p>A full bench of green-industry specialists &mdash; strategy, SEO, ads, content, reviews, and automation, led by a dedicated account manager &mdash; for less than that single salary. Fully trained, always on, and built for your growth.</p>
         </div>
       </div>
-      <div style="max-width:760px;margin:40px auto 0;text-align:center;" data-reveal="fade-up">
-        <p style="font-family:var(--font-h);font-style:italic;font-weight:700;font-size:clamp(20px,2.4vw,27px);line-height:1.3;color:var(--white);margin:0;">The real question isn't what it costs. It's <span class="hl">how few extra jobs it takes to pay for itself</span>.</p>
-      </div>
     </div>
   </section>
 
   <!-- ROADMAP -->
-  <section style="padding:clamp(64px,8vw,100px) 0;">
+  <section style="padding:clamp(40px,5vw,56px) 0 clamp(64px,8vw,100px);">
     <div class="container">
       <div style="max-width:760px;margin:0 auto 44px;text-align:center;" data-reveal="fade-up">
         <span class="svc-eyebrow">The roadmap</span>
@@ -705,15 +702,55 @@
     </div>
   </section>
 
+  <!-- PROOF (ported from homepage) -->
+  <section class="proof-cases" data-reveal="fade-up">
+    <div class="container">
+      <div class="section-header proof-cases-head">
+        <span class="eyebrow-label">Real Numbers, Real Companies</span>
+        <h2>Proof, Not Promises</h2>
+        <p>Real green industry companies, growing right now — same crews, same services, same markets. The one thing they changed? <span class="hl">They started working with us.</span></p>
+      </div>
+      <div class="proof-cases-grid">
+        <div class="proof-case">
+          <div class="proof-case-photo"><img src="/assets/images/proof-rock-solid.jpg" alt="Rock Solid Landscape truck hauling a tractor" loading="lazy" decoding="async" width="820" height="615"></div>
+          <div class="proof-case-body">
+            <div class="proof-case-head">
+              <div class="proof-case-name">Rock Solid Landscape</div>
+              <div class="proof-case-loc">Ohio</div>
+            </div>
+            <div class="proof-case-metric"><span class="pc-from">$700K</span><span class="pc-arrow" aria-hidden="true">→</span><span class="pc-to">$1.3M</span></div>
+            <div class="proof-case-label">Annual revenue, first year with us</div>
+          </div>
+        </div>
+        <div class="proof-case">
+          <div class="proof-case-photo"><img src="/assets/images/proof-precision.jpg" alt="Precision Turf Care service truck and technician" loading="lazy" decoding="async" width="820" height="615"></div>
+          <div class="proof-case-body">
+            <div class="proof-case-head">
+              <div class="proof-case-name">Precision Landscape Management</div>
+              <div class="proof-case-loc">South Carolina</div>
+            </div>
+            <div class="proof-case-metric"><span class="pc-from">200</span><span class="pc-arrow" aria-hidden="true">→</span><span class="pc-to">600<span class="pc-unit">/mo</span></span></div>
+            <div class="proof-case-label">Calls in the same month, one year later</div>
+          </div>
+        </div>
+        <div class="proof-case">
+          <div class="proof-case-photo"><img src="/assets/images/proof-from-the-ground-up.jpg" alt="From The Ground Up Landscaping crew planting palm trees" loading="lazy" decoding="async" width="820" height="615"></div>
+          <div class="proof-case-body">
+            <div class="proof-case-head">
+              <div class="proof-case-name">From The Ground Up Landscaping</div>
+              <div class="proof-case-loc">Florida</div>
+            </div>
+            <div class="proof-case-metric"><span class="pc-from">$1.8M</span><span class="pc-arrow" aria-hidden="true">→</span><span class="pc-to">$3.2M</span></div>
+            <div class="proof-case-label">Annual revenue, after two years</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- WHY US -->
   <section style="padding:clamp(64px,8vw,100px) 0;">
     <div class="container">
-      <div class="auth-stats" data-reveal="fade-up">
-        <div class="auth-stat"><b>50+</b><span>Green-industry companies served</span></div>
-        <div class="auth-stat"><b>$300K&ndash;$14M+</b><span>Client revenue range</span></div>
-        <div class="auth-stat"><b>97%</b><span>Still with us after a year</span></div>
-        <div class="auth-stat"><b>NALP</b><span>Member &amp; Google Partner</span></div>
-      </div>
       <div class="why-grid">
         <figure class="why-figure" data-reveal="fade-up">
           <!-- Supporting image — PLACEHOLDER (swap .why-ph contents for <img style="width:100%;height:100%;object-fit:cover">) -->
