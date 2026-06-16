@@ -31,7 +31,7 @@ Status key
 | Industries | Industries hub | `/industries/` | scaffolded | Shell. |
 | Industries | Lawn Care | `/industries/lawn-care/` | scaffolded | Canonical 8 (locked). Shell — content outlined, not written. |
 | Industries | Lawn Maintenance | `/industries/lawn-maintenance/` | scaffolded | Canonical 8. Shell. |
-| Industries | Landscaping | `/industries/landscaping/` | scaffolded | Canonical 8. Shell. |
+| Industries | Landscaping | `/industries/landscaping/` | **developed** | First industry page + the **locked template** (`industry-page-template.md`). Hero+trust strip → definition → specialist-vs-generalist table → seasonality module → service grid → 5-step process → real proof row → credential strip → Growth/Authority fit → FAQ accordion → CTA. `@graph` schema (Org+Service+WebPage+Breadcrumb+FAQPage). No pricing. |
 | Industries | Outdoor Living | `/industries/outdoor-living/` | scaffolded | Canonical 8. Shell. |
 | Industries | Land Clearing | `/industries/land-clearing/` | scaffolded | Canonical 8. Shell. |
 | Industries | Excavation | `/industries/excavation/` | scaffolded | Canonical 8. Shell. |
@@ -60,7 +60,6 @@ reconciled to these 8.
 | legacy | `/team/`, `/good-fit/`, `/book/`, `/podcast/`, old article URLs | Keep out of the internal link graph unless intentionally reintroduced via a new decision. |
 
 ## Highest-leverage work next
-1. Build the **Authority Program page** (Growth structure, 7-figure+ avatar).
-2. Write the **8 industry pages** (canonical 8 locked).
-3. Finish the 8 service pages with owner inputs (FAQ answers → FAQ schema; verify stats; real images).
-4. Then About / Contact / Resources.
+1. **Roll the industry-page framework to the remaining 7** (`industry-page-template.md`) — Landscaping is built and is the template.
+2. Finish the 8 service pages with owner inputs (FAQ answers → FAQ schema; verify stats; real images).
+3. Then About / Contact / Resources.

@@ -49,3 +49,17 @@ For Lawn & Land to win, each major page should feel more:
 - useful
 - authoritative
 than the competitor equivalent.
+
+## Industry-page teardown (2026-06-15) — where we beat them
+Studied Lawnline's four industry pages (lawn-care, lawn-maintenance, landscape-design,
+hardscape-outdoor-living) while building our Landscaping page. Their reusable skeleton: hero → "why
+[industry] needs a specialized approach" → channel pitch → website-as-asset → the 4-tier program ladder
+(Kickstart/Accelerate/Elite/Titan) → lead form → "explore other industries." Real strengths: sharp
+operational empathy in the owner's own vocabulary, ICP self-selection, clean one-page-per-vertical
+keyword targeting, and a tight internal-link mesh between industries.
+
+**Their gaps = our edge** (all built into our `industry-page-template.md`):
+- **No FAQ on ANY of the four pages.** We add a visible answer-first FAQ + `FAQPage` schema — free SEO + GEO surface they leave wide open.
+- **Real seasonality on only one page.** We make a per-industry **seasonality module the centerpiece** ("market one season ahead").
+- **Thin, generic proof** ("★★★★★ Top-Rated"; one page of first-name testimonials). We use real, attributed client numbers.
+- **Prose-only, weak heroes, no GEO structuring.** We use a keyword H1, answer-first sections, a comparison table, a numbered process, and a full `@graph` schema.

@@ -18,6 +18,9 @@ Core files
 - `routing-rules.md` — canonical URL and linking rules
 - `page-registry.md` — page-by-page inventory with status and notes
 - `build-status.md` — current progress and highest-priority next work
+- `service-page-template.md` — the locked `/marketing-services/*` template + generator
+- `industry-page-template.md` — the locked `/industries/*` framework + SEO/GEO/EEAT strategy
+- `navigation.md` — the universal header / nav / submenus + footer (single-source via build.py)
 - `decisions.md` — durable website decisions log
 - `benchmark-lawnline.md` — benchmark notes on Lawnline
 - `restart-guide.md` — shortest path to regain context and resume work quickly
@@ -37,9 +40,10 @@ Operating rules
 5. Keep this website folder focused on the public site only; do not mix in internal ops naming.
 
 Current restart-critical convention (updated 2026-06-15)
-- Developed pages: the **homepage**, all **8 `/marketing-services/*` pages + the hub**, and both
-  **program pages** (Growth + the flagship Authority). See `page-registry.md` for the full status table.
-- Still shells: the **8 `/industries/*`** pages (canonical 8 locked — next big build), `/about/`,
-  `/contact/`, and `/resources/*`. Don't deepen shells with long copy until
-  their design is approved or they're scheduled.
+- Developed pages: the **homepage**, all **8 `/marketing-services/*` pages + the hub**, both **program
+  pages** (Growth + the flagship Authority) + the **Programs hub**, and the first **industry page**
+  (`/industries/landscaping/` — the locked template). See `page-registry.md` for the full status table.
+- Current build: the **other 7 `/industries/*`** pages — roll the Landscaping framework to each
+  (`industry-page-template.md`), one at a time. Still shells: `/about/`, `/contact/`, `/resources/*` —
+  don't deepen shells with long copy until their design is approved or they're scheduled.
 - Fastest re-entry: read `restart-guide.md`. The single most useful file overall is the repo-root `CLAUDE.md`.

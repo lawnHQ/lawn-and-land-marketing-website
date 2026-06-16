@@ -3,12 +3,13 @@
 Last updated: 2026-06-15.
 
 ## Overall read
-The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**,
-and the **Growth Program page** are developed. The Authority Program page and the 8 industry
-pages are the next builds; About / Contact / Resources remain intentional shells. Build tooling
-(universal header/footer + service-page generator), route hygiene, and the brand system are all
-in place. Nothing is launched publicly — staging is new.lawnlab.dev (also lawnland-site.vercel.app);
-the eventual home is lawnandlandmarketing.com.
+The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**, **both
+program pages** (Growth + the flagship Authority), the **Programs hub**, and the first **industry page**
+(`/industries/landscaping/` — the locked template) are developed. The **other 7 industry pages** are the
+current build; About / Contact / Resources remain intentional shells. Build tooling (universal
+header/footer + service-page generator), the **2026-06-15 nav-submenu overhaul** (see `navigation.md`),
+route hygiene, and the brand system are all in place. Nothing is launched publicly — staging is
+new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlandmarketing.com.
 
 ## What is DONE (developed)
 - **Homepage** (`/`) — strongest page. Reordered for conversion: hero → stats → Industries grid →
@@ -31,14 +32,23 @@ the eventual home is lawnandlandmarketing.com.
   timeline → partnership + credibility (50+ clients, $300K–$14M+, 97% retention, NALP) two-column →
   Twilight CTA. Built from the contract + pitch deck. `Service` + `BreadcrumbList` schema, OG/Twitter. No pricing.
 - **Programs hub** (`/programs/`) — simple two-program window (hero + Growth/Authority cards linking into each).
-- **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`).
+- **Landscaping industry page** (`/industries/landscaping/`) — built; the first of 8 and the **locked
+  reusable template** (`industry-page-template.md`). Hero + trust strip → answer-first definition →
+  specialist-vs-generalist table → seasonality module ("market one season ahead", Twilight band) →
+  service grid (links each service) → 5-step process → real proof row → credential strip → Growth/Authority
+  fit → FAQ accordion → Twilight CTA. Built for SEO + GEO + EEAT; `@graph` schema (Org + Service + WebPage +
+  Breadcrumb + FAQPage). No pricing, no invented facts.
+- **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`). The
+  nav submenus were overhauled 2026-06-15 (About trimmed, promo titles de-headinged for SEO, Resources
+  rebuilt, Twilight/gold-star theming). Full reference: `navigation.md`.
 - **Brand system** — Twilight spotlight + dot-grid CTA pattern; the `.hl` Twilight emphasis marker;
   Lucide-only icons. The `.hl` marker is also documented in the brand kit (brandkit.lawnlab.dev).
 
 ## What is NOT done
-- **8 industry pages** (`/industries/*`) — **the next big build.** The canonical 8 are locked (lawn-care, lawn-maintenance,
-  landscaping, outdoor-living, land-clearing, excavation, septic-services, holiday-lighting) but are
-  **shells**. Content outlined, not written.
+- **7 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping` is built (the
+  locked template; see DONE + `industry-page-template.md`). Still shells: lawn-care, lawn-maintenance,
+  outdoor-living, land-clearing, excavation, septic-services, holiday-lighting. Roll the framework to each,
+  one at a time. The canonical 8 are locked.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages need three **owner inputs** to be truly finished (below).
 
@@ -48,7 +58,8 @@ the eventual home is lawnandlandmarketing.com.
 3. **Images** — replace the labeled placeholders (each says exactly what to drop in).
 
 ## Highest-priority work next
-1. **Write the 8 industry pages** (canonical 8 locked) — give the shells real, persuasive content.
+1. **Roll the industry-page framework to the remaining 7** (`industry-page-template.md`) — one at a time,
+   each with its own researched seasonality, comparison, services emphasis, and FAQ. Landscaping is the template.
 2. Land the service-page owner inputs above → mark those pages "finished" + add `FAQPage` schema.
 3. Design + build the remaining non-home pages (About, Contact, Resources).
 4. **Launch cutover** to lawnandlandmarketing.com (later) — work `seo-launch-checklist.md`.

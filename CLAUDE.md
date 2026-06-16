@@ -130,6 +130,8 @@ deploys take ~1–2 min). In-tool screenshots don't render well for him.
 ## Docs (`docs/website-source-of-truth/`)
 `restart-guide.md` (fastest re-entry) · `build-status.md` (done / not-done) · `page-registry.md`
 (page-by-page status table) · `sitemap.md` (approved routes) · `routing-rules.md` (canonical /
-killed routes) · `service-page-template.md` (the locked template + generator) · `decisions.md`
-(durable decisions log) · `seo-launch-checklist.md` · `benchmark-lawnline.md`.
+killed routes) · `service-page-template.md` (the locked service-page template + generator) ·
+`industry-page-template.md` (the locked industry-page framework + SEO/GEO/EEAT strategy) ·
+`navigation.md` (universal header / nav / submenus + footer) · `decisions.md` (durable decisions log) ·
+`seo-launch-checklist.md` · `benchmark-lawnline.md`.
 **Keep these current in the same workstream as any structural change.**

@@ -20,6 +20,7 @@ Never edit them on individual pages.
 - Apply to all pages → `python3 build.py` · Verify sync → `python3 build.py --check`
 
 `vercel.json` runs `build.py` on every deploy, so editing a partial and pushing updates every page.
+Full nav / submenu + footer reference: `docs/website-source-of-truth/navigation.md`.
 
 ## Service pages are generated
 The 8 `/marketing-services/*` detail pages are **generated**, not hand-edited:
@@ -29,16 +30,19 @@ The 8 `/marketing-services/*` detail pages are **generated**, not hand-edited:
 - Then `python3 build.py` stamps the header/footer.
 
 Don't hand-edit generated service HTML — regeneration overwrites it. The homepage, the services hub,
-and the program pages are **hand-built** (reusing the same `svc-*` / `simple-hero` / `svc-cta` classes).
-Full spec: `docs/website-source-of-truth/service-page-template.md`.
+the program pages, and the **industry pages** are **hand-built** (reusing the same `svc-*` / `simple-hero` /
+`svc-cta` classes). Specs: `docs/website-source-of-truth/service-page-template.md` (services) and
+`industry-page-template.md` (industries).
 
 ## Current state at a glance
 **Developed:** the homepage · all 8 `/marketing-services/*` detail pages + the `/marketing-services/`
-hub · both program pages — **Growth** (`/programs/growth/`) and the flagship **Authority** (`/programs/authority/`).
+hub · both program pages — **Growth** (`/programs/growth/`) and the flagship **Authority**
+(`/programs/authority/`) — and the **Programs hub** (`/programs/`) · the first **industry page**
+(`/industries/landscaping/` — the locked template; see `industry-page-template.md`).
 
-**Shells / next up:** the **8 `/industries/*`** pages (canonical 8 locked — next big build) ·
-`/about/`, `/contact/`, and `/resources/*`. The 8 service pages await owner inputs (real FAQ answers → FAQ schema, verified
-conviction stats, real images).
+**Current build / next up:** the **other 7 `/industries/*`** pages (canonical 8 locked) — roll the
+Landscaping framework to each, one at a time · `/about/`, `/contact/`, and `/resources/*` (shells).
+The 8 service pages await owner inputs (real FAQ answers → FAQ schema, verified conviction stats, real images).
 
 See `docs/website-source-of-truth/page-registry.md` for the full per-page status table.
 
@@ -68,7 +72,7 @@ See `docs/website-source-of-truth/page-registry.md` for the full per-page status
 ├── about/  contact/  programs/     # growth + authority + hub = developed
 ├── get-started/book-strategy-call/ # the booking CTA destination
 ├── marketing-services/             # 8 detail pages (generated) + hub (hand-built, developed)
-├── industries/                     # hub + canonical 8 (shells)
+├── industries/                     # hub + canonical 8 (landscaping developed; other 7 shells)
 ├── resources/                      # hub + 5 (shells)
 ├── assets/css/{styles.css, service-page.css}   js/main.js   images/  logos/
 ├── docs/website-source-of-truth/   # the durable docs

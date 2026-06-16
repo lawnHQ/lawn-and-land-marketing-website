@@ -3,21 +3,24 @@
 Use this when coming back to the Lawn & Land website after time away. Updated 2026-06-15.
 
 ## One-paragraph truth
-The **homepage**, **all 8 `/marketing-services/*` detail pages + the services hub**, and **both
-program pages** — **Growth** and the flagship **Authority** (`/programs/growth/`, `/programs/authority/`)
-— are built. Service pages run off a locked template + a generator (`gen_service.py` reading
-`_content.json`); the homepage, hub, and program pages are hand-built using the same `svc-*` /
-`simple-hero` / `svc-cta` classes. Still to build: the **8 industry pages** (canonical 8 locked,
-currently shells), and About / Contact / Resources (shells). The Programs hub is built — a simple two-program window. Nothing is launched
-publicly — staging is new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is
-lawnandlandmarketing.com.
+The **homepage**, **all 8 `/marketing-services/*` detail pages + the services hub**, **both program
+pages** (**Growth** + the flagship **Authority**), the **Programs hub**, and the first **industry page**
+(`/industries/landscaping/` — the locked template) are built. Service pages run off a locked template +
+a generator (`gen_service.py` reading `_content.json`); the homepage, hub, program pages, and industry
+pages are hand-built using the same `simple-hero` / `svc-*` / `svc-cta` classes (industry pages add a
+reusable `.ind-*` block — see `industry-page-template.md`). Still to build: the **other 7 industry
+pages** (canonical 8 locked; currently shells), and About / Contact / Resources (shells). The 2026-06-15
+nav-submenu overhaul is done (see `navigation.md`). Nothing is launched publicly — staging is
+new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlandmarketing.com.
 
 ## Fastest restart path — read in order
 1. `CLAUDE.md` (repo root) — the master orientation file
 2. `docs/website-source-of-truth/build-status.md` — what's done / not done + next priorities
 3. `docs/website-source-of-truth/page-registry.md` — page-by-page status
 4. `docs/website-source-of-truth/service-page-template.md` — the locked service-page template + generator
-5. `docs/website-source-of-truth/decisions.md` and `routing-rules.md`
+5. `docs/website-source-of-truth/industry-page-template.md` — the locked industry-page framework + SEO/GEO/EEAT strategy
+6. `docs/website-source-of-truth/navigation.md` — the universal header / nav / submenus + footer
+7. `docs/website-source-of-truth/decisions.md` and `routing-rules.md`
 
 ## How to make changes
 - **Header/footer (all pages):** edit `_header.html` / `_footer.html` → `python3 build.py`
@@ -27,7 +30,7 @@ lawnandlandmarketing.com.
 - **A program / industry / other page:** hand-edit its `index.html` (these are not generated).
   Reuse the existing `svc-*` / `simple-hero` / `svc-cta` classes for consistency.
 - **CSS / template changes:** edit `assets/css/styles.css` or `service-page.css`, then **bump the
-  `?v=` query sitewide** so browsers fetch fresh (current: `styles.css?v=135`, `service-page.css?v=3`).
+  `?v=` query sitewide** so browsers fetch fresh (current: `styles.css?v=138`, `service-page.css?v=3`).
 - **Deploy:** commit + push `main` (also keep `site-foundation` in sync). GitHub Actions → Vercel,
   ~1–2 min. Verify on the live URL with a hard refresh.
 
@@ -40,7 +43,8 @@ Retired / keep OUT of internal linking: `/services/`, `/pricing/`, `/resources/g
 `/podcast/`, `/tools/marketing-audit/`, and older orphan/article URLs.
 
 ## The next best moves
-1. **Write the 8 industry pages** (`/industries/*`, canonical 8 locked; currently shells) — the next big build.
+1. **Roll the industry-page framework to the remaining 7** (`industry-page-template.md`; Landscaping is
+   built and is the template) — one at a time, each with its own researched seasonality + FAQ.
 2. Finalize the 8 service pages with owner inputs (FAQ answers → FAQ schema; verify conviction
    stats; real images).
 3. Design + build About / Contact / Resources.
