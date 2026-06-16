@@ -8,7 +8,7 @@ program pages** — **Growth** and the flagship **Authority** (`/programs/growth
 — are built. Service pages run off a locked template + a generator (`gen_service.py` reading
 `_content.json`); the homepage, hub, and program pages are hand-built using the same `svc-*` /
 `simple-hero` / `svc-cta` classes. Still to build: the **8 industry pages** (canonical 8 locked,
-currently shells), and About / Contact / Resources (shells). The Programs hub is a clean placeholder. Nothing is launched
+currently shells), and About / Contact / Resources (shells). The Programs hub is built — a simple two-program window. Nothing is launched
 publicly — staging is new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is
 lawnandlandmarketing.com.
 
@@ -43,7 +43,7 @@ Retired / keep OUT of internal linking: `/services/`, `/pricing/`, `/resources/g
 1. **Write the 8 industry pages** (`/industries/*`, canonical 8 locked; currently shells) — the next big build.
 2. Finalize the 8 service pages with owner inputs (FAQ answers → FAQ schema; verify conviction
    stats; real images).
-3. Build the `/programs/` hub now that both program pages exist; then About / Contact / Resources.
+3. Design + build About / Contact / Resources.
 
 ## Guardrails
 - **No pricing** anywhere — every CTA → the free strategy call.

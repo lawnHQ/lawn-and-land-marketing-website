@@ -107,6 +107,13 @@
   `rgba(255,255,255,0.78)` / `var(--body)` grey) — `.hero-copy p` on all `.simple-hero` pages +
   `.hero-sub` on the homepage. `styles.css?v=135 → 136`.
 
+## 2026-06-15 — Programs hub + submenu icons
+- Built the **`/programs/` hub** as a simple two-program window (owner: "a quick window into both
+  programs"): hero → "Two Programs / Find the one built for your stage" → two cards (Growth = six-figure,
+  Authority = seven-figure; reuses the homepage `.program-card` pattern, Authority featured) each linking
+  into its program page → a "not sure which?" book-a-call line. Inspiration: lawnline.marketing/programs/.
+- Nav Programs submenu icons: **sprout** for Growth, **trophy** for Authority (Lucide; stamped sitewide).
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — how deep the 8 (locked) industry pages go, and whether they
   share a reusable structure.

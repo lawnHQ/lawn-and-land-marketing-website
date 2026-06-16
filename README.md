@@ -37,7 +37,7 @@ Full spec: `docs/website-source-of-truth/service-page-template.md`.
 hub · both program pages — **Growth** (`/programs/growth/`) and the flagship **Authority** (`/programs/authority/`).
 
 **Shells / next up:** the **8 `/industries/*`** pages (canonical 8 locked — next big build) ·
-`/about/`, `/contact/`, `/resources/*`, and the `/programs/` hub. The 8 service pages await owner inputs (real FAQ answers → FAQ schema, verified
+`/about/`, `/contact/`, and `/resources/*`. The 8 service pages await owner inputs (real FAQ answers → FAQ schema, verified
 conviction stats, real images).
 
 See `docs/website-source-of-truth/page-registry.md` for the full per-page status table.
@@ -65,7 +65,7 @@ See `docs/website-source-of-truth/page-registry.md` for the full per-page status
 ├── build.py                        # Stamps header/footer into every page
 ├── gen_service.py  _content.json   # Generates the 8 marketing-services pages
 ├── sitemap.xml                     # Real route sitemap (production domain; launch artifact)
-├── about/  contact/  programs/     # growth + authority = developed; programs hub = shell
+├── about/  contact/  programs/     # growth + authority + hub = developed
 ├── get-started/book-strategy-call/ # the booking CTA destination
 ├── marketing-services/             # 8 detail pages (generated) + hub (hand-built, developed)
 ├── industries/                     # hub + canonical 8 (shells)

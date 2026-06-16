@@ -40,6 +40,6 @@ Current restart-critical convention (updated 2026-06-15)
 - Developed pages: the **homepage**, all **8 `/marketing-services/*` pages + the hub**, and both
   **program pages** (Growth + the flagship Authority). See `page-registry.md` for the full status table.
 - Still shells: the **8 `/industries/*`** pages (canonical 8 locked — next big build), `/about/`,
-  `/contact/`, `/resources/*`, and the `/programs/` hub. Don't deepen shells with long copy until
+  `/contact/`, and `/resources/*`. Don't deepen shells with long copy until
   their design is approved or they're scheduled.
 - Fastest re-entry: read `restart-guide.md`. The single most useful file overall is the repo-root `CLAUDE.md`.

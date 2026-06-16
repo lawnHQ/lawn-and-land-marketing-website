@@ -16,7 +16,7 @@ Status key
 | Core | About | `/about/` | scaffolded | Shell until design phase. |
 | Core | Contact | `/contact/` | scaffolded | Shell until design phase. |
 | Core | Get Started | `/get-started/book-strategy-call/` | scaffolded | The booking destination; every CTA on the site routes here. |
-| Programs | Programs hub | `/programs/` | scaffolded | Clean placeholder (old lorem prototype scrapped). Real hub pending both program pages. |
+| Programs | Programs hub | `/programs/` | **developed** | Simple two-program window — hero + Growth (six-figure) and Authority (seven-figure) cards linking into each program, plus a "not sure?" CTA. |
 | Programs | Growth | `/programs/growth/` | **developed** | Built lean from the real contract. Pain cards → four-pillar Twilight section → 2-col Why Us → CTA. Service + BreadcrumbList schema, OG/Twitter. No pricing. |
 | Programs | Authority | `/programs/authority/` | **developed** | The flagship. Built from the contract + pitch deck: pain cards → Twilight "domination" pillars → everything-included grid → value play → Roadmap to Domination → partnership/credibility two-column → CTA. Service + BreadcrumbList schema, OG/Twitter. No pricing. |
 | Marketing Services | Services hub | `/marketing-services/` | **developed** | Hand-built SEO silo; "one machine" framing, 4 featured + wrap-up grid, ItemList schema. |
@@ -63,4 +63,4 @@ reconciled to these 8.
 1. Build the **Authority Program page** (Growth structure, 7-figure+ avatar).
 2. Write the **8 industry pages** (canonical 8 locked).
 3. Finish the 8 service pages with owner inputs (FAQ answers → FAQ schema; verify stats; real images).
-4. Then About / Contact / Resources / Programs hub.
+4. Then About / Contact / Resources.

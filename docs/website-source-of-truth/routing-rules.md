@@ -48,6 +48,6 @@ These are legacy or non-canonical and should be removed from internal linking or
 - Developed: the homepage, the 8 `/marketing-services/*` pages + hub, and both program pages
   (`/programs/growth/`, `/programs/authority/`).
 - Still shells (don't deepen with long copy until their design is approved or they're scheduled):
-  the 8 `/industries/*` pages, `/about/`, `/contact/`, `/resources/*`, and the `/programs/` hub.
+  the 8 `/industries/*` pages, `/about/`, `/contact/`, and `/resources/*`.
   (The 8 industry pages are the next scheduled build.)
 - See `page-registry.md` for per-page status and `build-status.md` for priorities.

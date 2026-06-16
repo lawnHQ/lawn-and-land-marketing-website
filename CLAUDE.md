@@ -42,7 +42,10 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   ("a whole team for less than one hire") → **Roadmap to Domination** timeline → partnership +
   credibility two-column (50+ clients, $300K–$14M+, 97% retention, NALP) → Twilight CTA. Built from
   the contract + pitch deck. `Service` + `BreadcrumbList` JSON-LD, OG + Twitter. No pricing.
+- **Programs hub** (`/programs/`) — a simple two-program window: hero + Growth (six-figure) and
+  Authority (seven-figure) cards that link into each program, plus a "not sure which?" CTA.
 - **Universal header + footer** via `build.py` (edit `_header.html` / `_footer.html`; stamps everywhere).
+  Nav Programs submenu icons: sprout (Growth), trophy (Authority).
 - **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`
   swipe behind the lower portion of a phrase, white text, sharp edges). Defined in `styles.css`;
   also locked into the brand kit (see Related assets). Use sparingly — one phrase per surface.
@@ -52,8 +55,6 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   (header + hero + CTA only): `lawn-care`, `lawn-maintenance`, `landscaping`, `outdoor-living`,
   `land-clearing`, `excavation`, `septic-services`, `holiday-lighting`. Content outlined, not
   written. Earlier non-canonical industries were deleted this build.
-- **Programs hub** (`/programs/`) — clean placeholder (old lorem body scrapped); needs a real hub
-  once both program pages exist.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages still need three owner inputs to be final: real FAQ answers (→ then add
   `FAQPage` schema), verified conviction stats, and real images for the labeled placeholders.
