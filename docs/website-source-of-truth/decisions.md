@@ -113,6 +113,10 @@
   Authority = seven-figure; reuses the homepage `.program-card` pattern, Authority featured) each linking
   into its program page → a "not sure which?" book-a-call line. Inspiration: lawnline.marketing/programs/.
 - Nav Programs submenu icons: **sprout** for Growth, **trophy** for Authority (Lucide; stamped sitewide).
+- Programs submenu refined (desktop + mobile): dropped the "Recommended Path" featured card; the two
+  programs now show as side-by-side themed cards — **Growth in lime, Authority in the Twilight textured
+  purple** (`.mega-grid--programs` + `.mega-item--growth/--authority` in styles.css; the Authority target
+  pill changed green → twilight). About/Marketing-Services dropdowns untouched.
 
 ## Open Decisions To Track Later
 - **Industry-page content + template** — how deep the 8 (locked) industry pages go, and whether they

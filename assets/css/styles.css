@@ -1523,8 +1523,9 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 }
 
 .mega-target-pill--authority {
-  color: #5DCA49;
-  border-color: rgba(93,202,73,0.25);
+  color: #C6B0FA;
+  border-color: rgba(198,176,250,0.4);
+  background: rgba(13,11,20,0.55);
 }
 
 .mega-item-text strong {
@@ -1541,6 +1542,26 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   line-height: 1.4;
   margin: 0;
 }
+
+/* Programs mega — two themed program cards side by side (Recommended Path removed) */
+.mega-grid--programs { grid-template-columns: 1fr 1fr; gap: 10px; }
+.mega-grid--programs .mega-item { align-items: flex-start; padding: 14px 16px; border-radius: 12px; border: 1px solid transparent; }
+.mega-grid--programs .mega-item--growth,
+.mega-grid--programs .mega-item--growth:hover { background: rgba(172,231,29,0.07); border-color: rgba(172,231,29,0.28); }
+.mega-grid--programs .mega-item--growth:hover { background: rgba(172,231,29,0.13); border-color: rgba(172,231,29,0.5); }
+.mega-grid--programs .mega-item--authority,
+.mega-grid--programs .mega-item--authority:hover {
+  background-color: #0d0b14;
+  background-image:
+    radial-gradient(130% 200% at 50% -40%, rgba(104,55,239,0.42), rgba(104,55,239,0.12) 42%, transparent 70%),
+    radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1.5px);
+  background-size: 100% 100%, 15px 15px;
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center;
+  border-color: rgba(104,55,239,0.45);
+}
+.mega-grid--programs .mega-item--authority:hover { border-color: rgba(104,55,239,0.78); }
+.mega-grid--programs .mega-item--authority .mega-icon svg { stroke: #C6B0FA; }
 
 /* Mobile mega menu */
 @media (max-width: 768px) {
@@ -1561,6 +1582,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   }
   .nav-mega.open > .mega-panel { display: block; animation: mobileMenuReveal 0.28s var(--ease); }
   .mega-grid { grid-template-columns: 1fr; gap: 0; }
+  .mega-grid--programs { grid-template-columns: 1fr; gap: 8px; }
   .mega-col { gap: 8px; }
   .mega-col--featured { display: none; }
   .mega-panel::before { display: none; }
