@@ -39,8 +39,9 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
    (Winter / Spring / Summer / Fall), each split **"On the ground"** vs **"What we market."** Close with a
    warm-climate note. *The information-gain play competitors can't write. GEO + EEAT gold.*
 5. **What we build** (`.ind-services`) — answer-first intro + a grid of service cards, **each linking to
-   its `/marketing-services/*` page**, with industry-specific copy. *SEO: hub-and-spoke internal links.
-   GEO: extractable list.*
+   its `/marketing-services/*` page**, using the **canonical service icons** (see `navigation.md`), with
+   industry-specific copy. Include all 8 services; make the **Your AI Partner** card the Twilight-textured
+   standout (`.ind-svc--ai`). *SEO: hub-and-spoke internal links. GEO: extractable list.*
 6. **How we work** (`.ind-steps`) — a numbered 1→5 process. *GEO: numbered steps cite well. EEAT:
    transparency stands in for the price transparency we deliberately omit.*
 7. **Proof, Not Promises** (`.proof-cases`, reused from the homepage) — the **three real client cases**

@@ -52,18 +52,22 @@ ICONS = {
   'map': '<path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/>',
   'file-text': '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/>',
   'check-circle': '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/>',
+  'monitor-smartphone': '<path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/>',
+  'book-user': '<path d="M15 13a3 3 0 1 0-6 0"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><circle cx="12" cy="8" r="2"/>',
+  'badge-check': '<path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/>',
+  'refresh-ccw': '<path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/>',
 }
 
 # slug -> (label, icon) for the "pairs well with" links (consistent sitewide)
 SERVICE_MAP = {
-  'website-design': ('Website Design', 'monitor'),
+  'website-design': ('Website Design', 'monitor-smartphone'),
   'local-seo': ('Local SEO', 'search'),
   'gbp-management': ('GBP Management', 'map-pin'),
-  'google-ads': ('Google Ads', 'target'),
-  'meta-ads': ('Meta Ads', 'megaphone'),
+  'google-ads': ('Google Ads', 'badge-check'),
+  'meta-ads': ('Meta Ads', 'book-user'),
   'your-ai-partner': ('Your AI Partner', 'bot'),
   'reputation-management': ('Reputation Management', 'star'),
-  'automation': ('Automation', 'repeat'),
+  'automation': ('CRM & Automation', 'refresh-ccw'),
 }
 
 # Use the proven dark hero photo across all service pages (matches the locked

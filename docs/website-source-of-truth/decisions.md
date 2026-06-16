@@ -206,6 +206,22 @@
 - Trimmed the hero trust strip to 3 badges (removed "97%+ client retention"; it still lives in the
   credential strip below).
 
+## 2026-06-16 — Sitewide service icons + "CRM & Automation" rename + landscaping tweaks
+- **Canonical service icons (Lucide), consistent everywhere** — the submenu, service-page CTAs, homepage,
+  hub, and industry grids now share one icon per service. New icons per owner: Website Design →
+  `monitor-smartphone`, Google Ads → `badge-check`, Meta Ads → `book-user`, CRM & Automation →
+  `refresh-ccw`; the rest standardized (Local SEO `search`, GBP `map-pin`, AI Partner `bot`, Reputation
+  `star`). Machine source of truth: **`SERVICE_MAP` in `gen_service.py`**; registry in `navigation.md`.
+  New Lucide paths pulled verbatim from source.
+- **"Automation" → "CRM & Automation"** everywhere (display name only; slug stays
+  `/marketing-services/automation/`). Updated `_content.json` (regenerated the page — now leans into CRM
+  capture/track + automation follow-up), the submenu, footer, homepage tab, and hub.
+- **Landscaping page:** seasonality headline + all "one season ahead" copy → **"ahead of the seasons"**
+  (not limiting to a single season; still seasonal). Added an **8th service card — Your AI Partner — as
+  the Twilight standout** (`.ind-svc--ai`, bot icon) emphasizing AI search ranking, AI implementation,
+  and staying ahead of trends. (The intro two-column / Google-G / trust-strip tweaks from the prior round
+  are also live.)
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

@@ -613,14 +613,14 @@
   },
   {
     "slug": "automation",
-    "serviceName": "Automation",
-    "title": "Marketing Automation for Landscapers | Lawn & Land Marketing",
-    "metaDescription": "Speed-to-lead and follow-up automation for landscapers. Instant lead response, missed-call text-back, reminders, and review requests wired into your CRM.",
-    "schemaServiceType": "Marketing Automation",
-    "schemaDescription": "Marketing automation for lawn care and landscaping companies, including instant lead response, follow-up sequences, missed-call text-back, appointment reminders, review requests, and CRM pipeline setup.",
-    "heroEyebrow": "Automation",
-    "h1": "Stop losing jobs to slow follow-up and cold leads",
-    "heroSubhead": "Marketing automation for landscapers and lawn care companies that answers every new lead in seconds and keeps following up until they book. No more leads slipping through the cracks while you're out on a job.",
+    "serviceName": "CRM & Automation",
+    "title": "CRM & Marketing Automation for Landscapers | Lawn & Land Marketing",
+    "metaDescription": "CRM and marketing automation for landscapers. One pipeline that captures every lead, answers in seconds, and follows up automatically — instant response, missed-call text-back, reminders, and review requests.",
+    "schemaServiceType": "CRM & Marketing Automation",
+    "schemaDescription": "CRM and marketing automation for lawn care and landscaping companies — one pipeline with instant lead response, follow-up sequences, missed-call text-back, appointment reminders, review requests, and full contact and pipeline management.",
+    "heroEyebrow": "CRM & Automation",
+    "h1": "Every lead captured, tracked, and followed up — automatically",
+    "heroSubhead": "A CRM and automation system for landscapers and lawn care companies that organizes every lead in one place, answers each one in seconds, and keeps following up until they book. No more leads slipping through the cracks while you're out on a job.",
     "conviction": {
       "stat": "5",
       "statUnit": "min",
@@ -630,7 +630,7 @@
     },
     "showcaseA": {
       "eyebrow": "What we build",
-      "headline": "A follow-up system that ~never sleeps on a lead~",
+      "headline": "A CRM that ~never sleeps on a lead~",
       "paragraph": "Every form fill, call, and message gets an instant, personal response, then a steady sequence of texts and emails until the homeowner books or opts out. We wire it all into one pipeline so nothing falls through, whether you're on a mower or off the clock.",
       "checklist": [
         "Instant text and email reply the moment a lead comes in",

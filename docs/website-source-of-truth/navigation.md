@@ -26,7 +26,7 @@ opens an accordion; caret items expand instead of navigating.
 
 **Marketing Services** — wide two columns + featured card (`.mega-grid--wide`):
 - *Acquire Demand*: Website Design · Local SEO · GBP Management · Google Ads
-- *Convert & Retain*: Meta Ads · Your AI Partner · Reputation Management · Automation
+- *Convert & Retain*: Meta Ads · Your AI Partner · Reputation Management · CRM & Automation
 - Featured: **"Most Companies Don't Need Another Vendor."** (`.mega-fc-title`, **not** an `<h4>`) →
   `/get-started/book-strategy-call/`.
 
@@ -41,6 +41,26 @@ opens an accordion; caret items expand instead of navigating.
 - Featured: **Client Experiences** — a clickable `<a class="mega-featured-card mega-featured-card--twilight">`
   with a **gold 5-star row** (`.mega-fc-stars`) → `/resources/experiences-reviews/`.
 - External links open in a new tab (`target="_blank" rel="noopener"`).
+
+## Canonical service icons (consistent sitewide — Lucide)
+Every place a marketing service is shown with an icon uses the **same** icon. The machine source of
+truth is **`SERVICE_MAP` in `gen_service.py`** (it drives the service-page "pairs well with" CTAs); the
+submenu, homepage, hub, and industry-page service grids must match it.
+
+| Service | Lucide icon |
+|---|---|
+| Website Design | `monitor-smartphone` |
+| Local SEO | `search` |
+| GBP Management | `map-pin` |
+| Google Ads | `badge-check` |
+| Meta Ads | `book-user` |
+| Your AI Partner | `bot` |
+| Reputation Management | `star` |
+| CRM & Automation | `refresh-ccw` |
+
+The service formerly called **"Automation"** is now **"CRM & Automation"** everywhere (display name only;
+the URL slug stays `/marketing-services/automation/`). When adding the new Lucide icons, pull the path
+data verbatim from the Lucide source so it renders correctly.
 
 ## Mega-menu CSS system (in `assets/css/styles.css`)
 - `.mega-panel` (+ `.mega-panel--narrow`, 380px) — the dropdown shell; hover or `.show` reveals it.
