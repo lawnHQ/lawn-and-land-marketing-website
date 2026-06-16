@@ -44,6 +44,14 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   the contract + pitch deck. `Service` + `BreadcrumbList` JSON-LD, OG + Twitter. No pricing.
 - **Programs hub** (`/programs/`) — a simple two-program window: hero + Growth (six-figure) and
   Authority (seven-figure) cards that link into each program, plus a "not sure which?" CTA.
+- **Landscaping industry page** (`/industries/landscaping/`) — **built**; the first of 8 and the
+  **reusable industry-page template**. Hero + trust strip → answer-first definition (+ "Updated" date) →
+  specialist-vs-generalist comparison table → **seasonality module** ("market one season ahead", four
+  season cards on the Twilight band — the signature insight) → service grid (links to each
+  `/marketing-services/*`) → 5-step process → real proof cases → credential strip → Growth/Authority
+  fit cards → **visible FAQ accordion + FAQPage schema** → Twilight CTA. Engineered for SEO + GEO +
+  EEAT (one keyword H1, question H2s, answer-first openers, `@graph` JSON-LD, real proof only). The
+  reusable `.ind-*` CSS is scoped in the page's `<style>`; copy it per page for industries 2–8.
 - **Universal header + footer** via `build.py` (edit `_header.html` / `_footer.html`; stamps everywhere).
   Nav Programs submenu icons: sprout (Growth), trophy (Authority).
 - **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`
@@ -51,10 +59,11 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   also locked into the brand kit (see Related assets). Use sparingly — one phrase per surface.
 
 ## Status — what's NOT done (shells / next up)
-- **8 industry pages** (`/industries/*`) — **the next big build.** The **canonical 8 are LOCKED** but are **shells**
-  (header + hero + CTA only): `lawn-care`, `lawn-maintenance`, `landscaping`, `outdoor-living`,
-  `land-clearing`, `excavation`, `septic-services`, `holiday-lighting`. Content outlined, not
-  written. Earlier non-canonical industries were deleted this build.
+- **7 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping` is **built**
+  and is the locked template (see DONE above). Still **shells** (header + hero + CTA only): `lawn-care`,
+  `lawn-maintenance`, `outdoor-living`, `land-clearing`, `excavation`, `septic-services`,
+  `holiday-lighting`. Roll the Landscaping framework to each — one at a time (owner's preference) — with
+  its own seasonality, services emphasis, comparison rows, proof framing, and FAQ. The canonical 8 are LOCKED.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages still need three owner inputs to be final: real FAQ answers (→ then add
   `FAQPage` schema), verified conviction stats, and real images for the labeled placeholders.

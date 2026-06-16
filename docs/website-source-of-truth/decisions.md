@@ -158,9 +158,41 @@
   `.mega-featured-card h4` rule so the de-headinged titles keep the identical look). `styles.css?v=137 → 138`.
   Header re-stamped sitewide via `build.py`. Programs / hub / program pages untouched.
 
+## 2026-06-15 — Industry-page framework locked + Landscaping built (1 of 8)
+- **Reusable industry-page framework** (built on Landscaping; applies to all 8). Section order:
+  hero + above-fold trust strip → answer-first definition + "Updated {Month YYYY}" → "why generic
+  marketing fails" + **specialist-vs-generalist comparison table** → **seasonality module** ("we
+  market your company one season ahead" — four season cards on the Twilight band; the centerpiece and
+  biggest information-gain play) → "what we build" service grid (each card links to its
+  `/marketing-services/*` page) → numbered 5-step process → **Proof, Not Promises** (the real homepage
+  case row, reused) → "why us" + real credential strip → program-fit cards (Growth / Authority) →
+  **visible FAQ accordion (answer-first) + FAQPage schema** → Twilight `svc-cta`.
+- **Built for SEO + GEO + EEAT** (from fresh 2026 research + a Lawnline industry-page teardown): one
+  keyword-bearing H1, question/claim H2s, answer-first ~40–75-word section openers, a comparison table
+  + numbered list (high AI-citation formats), "information gain" only a specialist could write (the
+  seasonality math + the three-businesses model: design qualifies → installs earn → maintenance sustains),
+  a `@graph` JSON-LD block (Organization + Service + WebPage + BreadcrumbList + FAQPage), a visible
+  freshness date, and internal links to every service page + both programs + a sibling industry.
+  **Lawnline's industry pages carry NO FAQ and almost no seasonality depth — that gap is our edge.**
+- **No invented facts:** proof = the three real homepage clients (all landscaping — Rock Solid,
+  Precision, From The Ground Up); credentials = the real homepage/footer signals (NALP, Google Partner,
+  100+ companies, 97%+ retention, since 2022). No pricing; the "cost" FAQ answers intent and routes to
+  the free call.
+- **CSS:** the framework lives in the Landscaping page's scoped `<style>` as reusable `.ind-*` classes
+  (`.ind-sec`, `.ind-band`, `.ind-compare`, `.ind-seasons`, `.ind-svc`, `.ind-steps`, `.ind-cred`,
+  `.ind-fit`, `.ind-faq`). For pages 2–8, copy that block per page; extract to a shared `industry.css`
+  only if we later want to dedupe. **No global CSS change → no cache-bump** (still `styles.css?v=138`,
+  `service-page.css?v=3`). Hand-built pages link both stylesheets and wrap content in `<main id="main">`.
+- **Next:** roll the framework to the remaining 7 industry pages (lawn-care, lawn-maintenance,
+  outdoor-living, land-clearing, excavation, septic-services, holiday-lighting) — each with its own
+  seasonality, service emphasis, comparison rows, proof framing, and FAQ. Owner wants them crushed one
+  at a time, not batch-generated.
+
 ## Open Decisions To Track Later
-- **Industry-page content + template** — how deep the 8 (locked) industry pages go, and whether they
-  share a reusable structure.
+- **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
+  proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the
+  other 7 industries, one at a time. Open sub-question: extract the `.ind-*` CSS to a shared
+  `industry.css` once 2–3 pages exist, or keep it scoped per page.
 - **About / Contact / Resources** design direction.
 - **Service-page finishing inputs** — real FAQ answers (→ add `FAQPage` schema), verified conviction
   stats, real images.
