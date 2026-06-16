@@ -188,6 +188,15 @@
   seasonality, service emphasis, comparison rows, proof framing, and FAQ. Owner wants them crushed one
   at a time, not batch-generated.
 
+## 2026-06-16 — Industry-page freshness: honest schema date only
+- Removed the visible "Updated {Month}" chip (`.ind-updated`) from industry pages. The freshness signal
+  now lives **only** in the page schema's `dateModified`, bumped **only on a real update**.
+- **Rejected** auto-stamping the current month via script: that's "fake freshness" Google distrusts (it
+  cross-checks the date against actual content change → can be discounted or hurt trust) and it violates
+  our **no-invented-facts** rule — a bad look for a marketing agency. Earn freshness by genuinely
+  refreshing the page (natural hook: a seasonal content refresh), and bump the schema date then.
+- Applied to `/industries/landscaping/` and baked into `industry-page-template.md` (Non-negotiables → Freshness).
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

@@ -27,9 +27,9 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
    trust strip** (`.hero-trust`: NALP · Google Partner · green-industry focused · 97%+ retention).
    *SEO: H1 keyword. EEAT: badges up top. GEO: a crisp definition follows immediately.*
 2. **Answer-first definition + owner's reality** (`.ind-sec` / `.ind-lede`) — a **bolded one-sentence
-   definition** of "[industry] marketing" + 3–4 sentences naming the owner's real pain. Carries a visible
-   **"Updated {Month YYYY}"** (`.ind-updated`). *GEO: the bolded sentence is the quotable definition.
-   SEO: freshness. EEAT: empathy = Experience.*
+   definition** of "[industry] marketing" + 3–4 sentences naming the owner's real pain. *GEO: the bolded
+   sentence is the quotable definition. EEAT: empathy = Experience.* (No visible "updated" date — see
+   **Freshness** under Non-negotiables.)
 3. **Why generic marketing fails + comparison table** (`.ind-compare`) — answer-first paragraph, then a
    **specialist-vs-generalist table** (rows tuned to the trade: knows your season / speaks your language /
    builds the right site / filters your leads / proof that closes). *GEO: tables cite well. EEAT: expertise.*
@@ -63,7 +63,7 @@ the visible text.
 2. **Answer-first**: the first ~40–75 words under every H2 stand alone and answer the heading — that's what AI lifts.
 3. **High-citation formats**: at least one comparison **table** + one **numbered** process + bulleted lists.
 4. **Information gain**: 2–3 things only a true specialist could write (the seasonality math, the trade's economics). The moat.
-5. **Real signals only** (EEAT): real proof cases, real credentials, native vocabulary, a freshness date. **Never fabricate.**
+5. **Real signals only** (EEAT): real proof cases, real credentials, native vocabulary. **Never fabricate** — including dates (see Freshness).
 6. **Internal links**: every service mentioned links out; link both programs and ≥1 sibling industry; breadcrumb up.
 
 ## Per-industry "what to swap" (the structure stays identical)
@@ -101,6 +101,12 @@ the way the landscaping build did.
 - **Lucide icons only** (stroke, 1.75, round, `currentColor`) — never emoji / unicode glyphs.
 - **`.hl` Twilight highlight**: one impact phrase per surface (use it on the seasonality H2).
 - **Twilight `#6837EF` never blends with green.**
+- **Freshness — honest only.** Keep `dateModified` in the page's `@graph` schema, bumped **only on real
+  updates**. **No visible "updated" chip, and never auto-stamp the current month** — that's "fake
+  freshness" Google distrusts (it cross-checks the date against real content change) and it violates
+  "no invented facts." Earn freshness by genuinely refreshing the page — the natural hook is a seasonal
+  content refresh — and bump the schema date then. (Decided 2026-06-16; the visible `.ind-updated` chip
+  was removed.)
 
 ## CSS / build notes
 - The `.ind-*` framework is **scoped in the page `<style>`** (copy the block per page). Once 2–3 pages
@@ -113,7 +119,7 @@ the way the landscaping build did.
 
 ## Build checklist (per industry page)
 - [ ] Hero: keyword eyebrow + ONE keyword H1 + full-white subhead + dual CTA + trust strip
-- [ ] Answer-first definition + "Updated {Month YYYY}"
+- [ ] Answer-first definition (quotable bolded first sentence; no visible "updated" date)
 - [ ] Comparison table (5 trade-tuned rows)
 - [ ] Seasonality module (researched; 4 cards; `.hl` headline; warm-climate note)
 - [ ] Service grid (7 cards, each links its service page, trade-specific copy)
