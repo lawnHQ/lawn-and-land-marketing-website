@@ -303,10 +303,17 @@
     .ind-lede { font-size:18px; color:rgba(255,255,255,0.74); line-height:1.65; margin:0; }
     .ind-lede strong { color:var(--white); }
 
+    /* two-column intro (image left + right-aligned text) */
+    .ind-split { display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,60px); align-items:center; }
+    .ind-split-text { text-align:right; }
+    .ind-ph { position:relative; margin:0; aspect-ratio:4/3; border-radius:18px; overflow:hidden; border:1px solid rgba(255,255,255,0.1); background:radial-gradient(120% 150% at 50% 0%, rgba(172,231,29,0.10), transparent 62%), linear-gradient(180deg,#0c130c,#0a0f0a); display:flex; align-items:center; justify-content:center; text-align:center; }
+    .ind-ph-label { display:flex; flex-direction:column; align-items:center; gap:12px; color:rgba(255,255,255,0.42); font-family:var(--font-l); }
+
     /* hero trust strip */
     .hero-trust { display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; margin-top:24px; font-family:var(--font-l); font-size:13px; color:rgba(255,255,255,0.72); }
     .hero-trust .ht-item { display:inline-flex; align-items:center; gap:7px; }
     .hero-trust .ht-item svg { stroke:var(--lime); flex-shrink:0; }
+    .hero-trust .ht-item svg.ht-logo { stroke:none; }
     .hero-trust .ht-nalp { height:17px; width:auto; opacity:0.9; }
     .hero-trust .ht-sep { width:4px; height:4px; border-radius:50%; background:rgba(255,255,255,0.28); }
 
@@ -384,6 +391,7 @@
     .ind-faq .faq-a { padding:0 22px 20px; color:rgba(255,255,255,0.72); font-size:15px; line-height:1.62; margin:0; }
 
     @media (max-width:900px) { .ind-seasons { grid-template-columns:1fr 1fr; } }
+    @media (max-width:860px) { .ind-split { grid-template-columns:1fr; gap:28px; } .ind-split-text { text-align:left; } .ind-ph { aspect-ratio:16/9; } }
     @media (max-width:720px) { .ind-fit { grid-template-columns:1fr; } }
     @media (max-width:560px) { .ind-seasons { grid-template-columns:1fr; } }
   </style>
@@ -645,21 +653,30 @@
         <div class="hero-trust">
           <span class="ht-item"><img src="https://lawnandlandmarketing.com/wp-content/uploads/2022/12/white-nalp-logo.png" alt="NALP member" class="ht-nalp"></span>
           <span class="ht-sep"></span>
-          <span class="ht-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.7-4.7"/></svg>Google Partner</span>
+          <span class="ht-item"><svg class="ht-logo" width="15" height="15" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google Partner</span>
           <span class="ht-sep"></span>
           <span class="ht-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>100% green-industry focused</span>
-          <span class="ht-sep"></span>
-          <span class="ht-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>97%+ client retention</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INTRO: definition + owner reality -->
+  <!-- INTRO: definition + owner reality (two-column: image left, text right) -->
   <section class="ind-sec">
     <div class="container">
-      <div class="ind-head" data-reveal="fade-up" style="max-width:830px;">
-        <p class="ind-lede"><strong>Landscaping marketing is how a design-build company turns local search, ads, and reputation into booked installs &mdash; timed around a season that swings hard.</strong> Most landscapers are slammed in June and silent in January. You've grown on referrals and great work, but referrals are finite, the phone goes quiet in the off-season, and the high-ticket installs you actually want are going to whoever shows up first online. We build the system that fixes all three.</p>
+      <div class="ind-split" data-reveal="fade-up">
+        <figure class="ind-ph">
+          <div class="ind-ph-label">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            <span style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;">Image placeholder</span>
+            <span style="font-size:12px;color:rgba(255,255,255,0.3);">Drop the final image here</span>
+          </div>
+        </figure>
+        <div class="ind-split-text">
+          <span class="ind-eyebrow">The real problem</span>
+          <h2 class="ind-h2">You're not hard to hire.<br>You're hard to find.</h2>
+          <p class="ind-lede"><strong>Landscaping marketing is how a design-build company turns local search, ads, and reputation into booked installs &mdash; timed around a season that swings hard.</strong> Most landscapers are slammed in June and silent in January. You've grown on referrals and great work, but referrals are finite, the phone goes quiet in the off-season, and the high-ticket installs you actually want are going to whoever shows up first online. We build the system that fixes all three.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -865,7 +882,7 @@
       <div class="ind-cred" data-reveal="fade-up">
         <span class="ic-item"><img src="https://lawnandlandmarketing.com/wp-content/uploads/2022/12/white-nalp-logo.png" alt="NALP member" class="ic-nalp"></span>
         <span class="ic-sep"></span>
-        <span class="ic-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.3 2.3 4.7-4.7"/></svg>Google Partner</span>
+        <span class="ic-item"><svg width="17" height="17" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google Partner</span>
         <span class="ic-sep"></span>
         <span class="ic-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>100+ green-industry companies served</span>
         <span class="ic-sep"></span>

@@ -197,6 +197,15 @@
   refreshing the page (natural hook: a seasonal content refresh), and bump the schema date then.
 - Applied to `/industries/landscaping/` and baked into `industry-page-template.md` (Non-negotiables → Freshness).
 
+## 2026-06-16 — Landscaping page feedback (round 1)
+- **Intro section** redesigned as a two-column block (`.ind-split`): image placeholder left; eyebrow +
+  H2 ("You're not hard to hire. You're hard to find.") + the answer-first definition right-aligned on the
+  right. Replaces the centered single-column intro (and fills the gap left by removing the "updated" chip).
+- **Google Partner badge** now uses the real **multicolor Google "G" logo** everywhere on the page (hero
+  trust strip + credential strip) — made a non-negotiable in `industry-page-template.md`.
+- Trimmed the hero trust strip to 3 badges (removed "97%+ client retention"; it still lives in the
+  credential strip below).
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

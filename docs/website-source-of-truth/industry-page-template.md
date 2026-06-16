@@ -24,12 +24,13 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
 
 1. **Hero** (`.simple-hero`) — breadcrumb · `[Industry] Marketing` eyebrow (the keyword) · ONE
    keyword-bearing `<h1>` · full-white subhead with native vocabulary · two CTAs · an **above-fold
-   trust strip** (`.hero-trust`: NALP · Google Partner · green-industry focused · 97%+ retention).
+   trust strip** (`.hero-trust`: NALP · Google Partner · green-industry focused — keep it to ~3 badges).
    *SEO: H1 keyword. EEAT: badges up top. GEO: a crisp definition follows immediately.*
-2. **Answer-first definition + owner's reality** (`.ind-sec` / `.ind-lede`) — a **bolded one-sentence
-   definition** of "[industry] marketing" + 3–4 sentences naming the owner's real pain. *GEO: the bolded
-   sentence is the quotable definition. EEAT: empathy = Experience.* (No visible "updated" date — see
-   **Freshness** under Non-negotiables.)
+2. **Answer-first definition + owner's reality** — a **two-column block** (`.ind-split`): an image
+   placeholder on the **left** (`.ind-ph`), and on the **right** (right-aligned, `.ind-split-text`) an
+   eyebrow + a punchy H2 + a **bolded one-sentence definition** of "[industry] marketing" followed by
+   3–4 sentences naming the owner's real pain. *GEO: the bolded sentence is the quotable definition.
+   EEAT: empathy = Experience.* (No visible "updated" date — see **Freshness** under Non-negotiables.)
 3. **Why generic marketing fails + comparison table** (`.ind-compare`) — answer-first paragraph, then a
    **specialist-vs-generalist table** (rows tuned to the trade: knows your season / speaks your language /
    builds the right site / filters your leads / proof that closes). *GEO: tables cite well. EEAT: expertise.*
@@ -99,6 +100,9 @@ the way the landscaping build did.
 - **No pricing.** The "cost" FAQ answers intent and routes to the free call.
 - **No invented facts.** Real proof + real credentials only; anything unverifiable is a clearly-marked placeholder.
 - **Lucide icons only** (stroke, 1.75, round, `currentColor`) — never emoji / unicode glyphs.
+- **Google Partner badge = the real multicolor Google "G" logo** (the homepage one), everywhere it
+  appears (hero strip + credential strip). Never a generic check/circle icon. The hero strip needs
+  `.ht-logo` on that `<svg>` so the lime-stroke rule doesn't recolor it.
 - **`.hl` Twilight highlight**: one impact phrase per surface (use it on the seasonality H2).
 - **Twilight `#6837EF` never blends with green.**
 - **Freshness — honest only.** Keep `dateModified` in the page's `@graph` schema, bumped **only on real
