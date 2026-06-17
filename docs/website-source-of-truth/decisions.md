@@ -305,6 +305,27 @@
   **footer tagline** was narrowing to "landscaping companies" on every page — broadened to "your business."
 - **Reminder for the lawn-maintenance build:** route/density is ITS headline; do not reuse Lawn Care's spine.
 
+## 2026-06-17 — Built Lawn Maintenance + Outdoor Living (industry pages 3 & 4)
+- Built both off the locked template after a real research pass per page (parallel research agents +
+  Lawnline re-verify, per the playbook). Both verified on preview (valid `@graph`, one H1, no console errors)
+  and pushed; staging deploys automatically.
+- **Lawn Maintenance** (`/industries/lawn-maintenance/`) — the property's upkeep business (mowing, cleanups,
+  bed maintenance). **Route density is the headline** — the "windshield time" margin spine lawn-care ceded,
+  so the two pages don't compete. 4-season cycle: winter lock routes/prepay → spring sign-up rush → summer
+  tighten + pre-sell fall → fall cleanups/leaf + snow upsell + re-sign. FAQ explicitly disambiguates
+  lawn-care vs lawn-maintenance and links the sibling, so Google reads them as distinct.
+- **Outdoor Living** (`/industries/outdoor-living/`) — high-ticket design-build/hardscape. Spine = the
+  **portfolio (the product) + the long, financed sale**. Demand cycle is **inverted** vs. the recurring
+  trades: winter is prime SELL/design season (fill the spring build calendar); summer is for building +
+  harvesting reviews; fall re-opens selling + pitches financing. Keyword-differentiated from Landscaping
+  (hardscape/structures/financing here; softscape/green/install + maintenance there).
+- **Lawnline re-verify findings:** they now have BOTH a lawn-maintenance page (already mentions route
+  density/retention) and a hardscape/outdoor-living page — but **neither has an FAQ or a real demand cycle**,
+  and the hardscape page never mentions financing. So our edge on both is depth: visible FAQ + quarter-by-
+  quarter demand cycle (+ financing on outdoor living). Benchmark snapshot updated.
+- **Remaining: 4** — holiday-lighting (last seasonal/layout-A), then the demand-mode trio
+  septic-services / land-clearing / excavation (layout-B, each needs a fuller research pass).
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

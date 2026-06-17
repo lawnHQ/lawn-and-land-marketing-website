@@ -151,11 +151,11 @@ the way the landscaping build did.
 - **Septic Services** — split urgent/emergency intent (speed, reviews, GBP) vs. routine pumping/inspection reminders; recession-resistant.
 - **Holiday Lighting** — hyper-seasonal: the year is won by booking Sept–Nov, installing Oct–Dec; pre-sell last year's list in late summer.
 
-**Recommended build order for the remaining 6** (landscaping + lawn-care done): do the **seasonal (layout-A)
-pages first** while the 4-season pattern is fresh and reusable — **lawn-maintenance** (after settling the
-keyword split above) → **outdoor-living** → **holiday-lighting** — then the **demand-mode (layout-B) pages**,
-which each need a fuller research pass — **septic-services → land-clearing → excavation**. Order isn't binding;
-owner's call. One page at a time (owner's preference).
+**Build order — 4 done, 4 to go.** Built so far (all layout-A, 4-season): **landscaping** (template) →
+**lawn-care** → **lawn-maintenance** → **outdoor-living**. Remaining: finish the seasonal set with
+**holiday-lighting** (layout-A, hyper-seasonal — the year is won booking Sept–Nov), then the **demand-mode
+(layout-B) trio**, which each need a fuller research pass and a non-seasonal demand-cycle — **septic-services →
+land-clearing → excavation**. Order isn't binding; owner's call. One page at a time (owner's preference).
 
 ## Non-negotiables
 - **No pricing.** The "cost" FAQ answers intent and routes to the free call.

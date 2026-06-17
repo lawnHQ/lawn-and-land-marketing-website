@@ -4,9 +4,10 @@ Last updated: 2026-06-15.
 
 ## Overall read
 The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**, **both
-program pages** (Growth + the flagship Authority), the **Programs hub**, and the first **industry page**
-(`/industries/landscaping/` — the locked template) are developed. The **other 7 industry pages** are the
-current build; About / Contact / Resources remain intentional shells. Build tooling (universal
+program pages** (Growth + the flagship Authority), the **Programs hub**, and **four industry pages**
+(`landscaping` — the locked template — plus `lawn-care`, `lawn-maintenance`, and `outdoor-living`) are
+developed. The **other 4 industry pages** are the current build; About / Contact / Resources remain
+intentional shells. Build tooling (universal
 header/footer + service-page generator), the **2026-06-15 nav-submenu overhaul** (see `navigation.md`),
 route hygiene, and the brand system are all in place. Nothing is launched publicly — staging is
 new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlandmarketing.com.
@@ -45,6 +46,20 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   4-season demand cycle (winter prepay/renewals → spring rush → summer fulfill + book fall → fall
   aerate/overseed/re-sign), lawn-care comparison rows + FAQ (incl. retention + route-density Qs), real
   proof + testimonials framed "lawn and landscape." `@graph` schema. No pricing.
+- **Lawn Maintenance industry page** (`/industries/lawn-maintenance/`) — built 2026-06-17; the 3rd off the
+  template. The property's **upkeep/appearance** business (mowing, cleanups, bed maintenance); **route
+  density is the headline** — the margin/"windshield time" spine lawn-care deliberately ceded. 4-season
+  demand cycle (winter lock routes/prepay → spring sign-up rush → summer tighten + pre-sell fall → fall
+  cleanups/leaf + snow upsell + re-sign), route-targeting comparison rows + 8-Q FAQ (lawn-care vs
+  maintenance distinction, route-tightness, commercial/HOA), real lawn/landscape proof + testimonials.
+  `@graph` schema. No pricing. Researched + Lawnline re-verified (their maintenance page has no FAQ/seasonality).
+- **Outdoor Living industry page** (`/industries/outdoor-living/`) — built 2026-06-17; the 4th off the
+  template. High-ticket **design-build/hardscape** — the portfolio is the product, a long visual sale,
+  **financing** as a close lever. Demand cycle **inverted** for design-build (winter sell/design the
+  pipeline → spring already-booked + photograph → summer build + harvest reviews → fall re-open selling +
+  lock pipeline + financing), high-ticket/portfolio/financing comparison rows + 8-Q FAQ, portfolio-first
+  service grid, real landscape/outdoor-living proof + testimonials. `@graph` schema. Keyword-differentiated
+  from Landscaping (hardscape/structures/financing vs softscape). No pricing.
 - **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`). The
   nav submenus were overhauled 2026-06-15 (About trimmed, promo titles de-headinged for SEO, Resources
   rebuilt, Twilight/gold-star theming). Full reference: `navigation.md`.
@@ -52,10 +67,12 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   Lucide-only icons. The `.hl` marker is also documented in the brand kit (brandkit.lawnlab.dev).
 
 ## What is NOT done
-- **6 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping` and
-  `lawn-care` are built off the locked template (see DONE + `industry-page-template.md`). Still shells:
-  lawn-maintenance, outdoor-living, land-clearing, excavation, septic-services, holiday-lighting. Roll the
-  framework to each, one at a time. The canonical 8 are locked.
+- **4 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping`, `lawn-care`,
+  `lawn-maintenance`, and `outdoor-living` are built off the locked template (see DONE +
+  `industry-page-template.md`). Still shells: **holiday-lighting** (last seasonal/layout-A page), then the
+  **demand-mode/layout-B trio** — `septic-services`, `land-clearing`, `excavation` (each needs a fuller
+  research pass; see the build order in `industry-page-template.md`). Roll the framework to each, one at a
+  time. The canonical 8 are locked.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages need three **owner inputs** to be truly finished (below).
 

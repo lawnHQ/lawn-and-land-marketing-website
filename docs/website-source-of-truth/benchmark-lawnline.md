@@ -63,3 +63,11 @@ keyword targeting, and a tight internal-link mesh between industries.
 - **Real seasonality on only one page.** We make a per-industry **seasonality module the centerpiece** ("market one season ahead").
 - **Thin, generic proof** ("★★★★★ Top-Rated"; one page of first-name testimonials). We use real, attributed client numbers.
 - **Prose-only, weak heroes, no GEO structuring.** We use a keyword H1, answer-first sections, a comparison table, a numbered process, and a full `@graph` schema.
+
+### Re-verify (2026-06-17) — building Lawn Maintenance + Outdoor Living
+Re-checked their **lawn-maintenance** and **hardscape/outdoor-living** pages before cloning ours (per the
+"re-verify Lawnline per page" rule). Both gaps still hold: **neither page has an FAQ, and neither has a real
+quarter-by-quarter demand cycle.** Their lawn-maintenance page *does* already talk route density + retention
+(so that's not unique to us — we win on depth + the FAQ + the demand calendar). Their hardscape page also has
+**no financing** content, despite financing being central to closing high-ticket outdoor-living jobs — a third
+gap we own on that page. Net: same edge as before — visible FAQ + real demand cycle (+ financing on outdoor living).

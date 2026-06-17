@@ -55,6 +55,12 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   JSON-LD, real proof only). The reusable `.ind-*` framework now lives in a **shared `/assets/css/industry.css`**
   (extracted after page 2); new industry pages link it rather than re-inlining. Full spec:
   `docs/website-source-of-truth/industry-page-template.md`.
+- **Three more industry pages built off that template** (one keyword each, distinct spine — no cannibalization):
+  **Lawn Care** (`/industries/lawn-care/`) = the lawn's HEALTH / recurring treatment program (spine: recurring
+  revenue); **Lawn Maintenance** (`/industries/lawn-maintenance/`) = the property's UPKEEP / mowing (spine:
+  route density — the angle lawn-care cedes); **Outdoor Living** (`/industries/outdoor-living/`) = high-ticket
+  design-build/hardscape (spine: portfolio + the long, financed sale; sell in fall/winter, build in spring).
+  Each: full `@graph` schema, no pricing, real proof. See `build-status.md` / `decisions.md` for the splits.
 - **Universal header + footer** via `build.py` (edit `_header.html` / `_footer.html`; stamps everywhere).
   Nav Programs submenu icons: sprout (Growth), trophy (Authority).
 - **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`
@@ -62,9 +68,10 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   also locked into the brand kit (see Related assets). Use sparingly — one phrase per surface.
 
 ## Status — what's NOT done (shells / next up)
-- **6 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping` and `lawn-care`
-  are **built** off the locked template (see DONE above). Still **shells** (header + hero + CTA only):
-  `lawn-maintenance`, `outdoor-living`, `land-clearing`, `excavation`, `septic-services`, `holiday-lighting`.
+- **4 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping`, `lawn-care`,
+  `lawn-maintenance`, and `outdoor-living` are **built** off the locked template (see DONE above). Still
+  **shells** (header + hero + CTA only): `holiday-lighting` (the last seasonal/layout-A page), then the
+  demand-mode/layout-B trio `septic-services`, `land-clearing`, `excavation`.
   Roll the framework to each — one at a time (owner's preference) — with its own seasonality/demand-cycle,
   services emphasis, comparison rows, proof framing, and FAQ. The canonical 8 are LOCKED.
 - **About, Contact, Resources/\*** — shells.
