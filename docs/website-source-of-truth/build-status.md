@@ -38,6 +38,11 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   Twilight band) → service grid (8, incl. the Twilight AI standout) → 5-step process → real proof cases +
   video testimonials → Growth/Authority program-fit → FAQ accordion → Twilight CTA. Built for SEO + GEO +
   EEAT; `@graph` schema (Org + Service + WebPage + Breadcrumb + FAQPage). No pricing, no invented facts.
+- **Lawn Care industry page** (`/industries/lawn-care/`) — built; the 2nd off the template. Same structure,
+  reframed for the **recurring treatment-program** business (route density + retention, not high-ticket
+  installs): 4-season demand cycle (winter prepay/renewals → spring rush → summer fulfill + book fall →
+  fall aerate/overseed/re-sign), lawn-care comparison rows + FAQ (incl. retention + route-density Qs), real
+  proof + testimonials framed "lawn and landscape." `@graph` schema. No pricing.
 - **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`). The
   nav submenus were overhauled 2026-06-15 (About trimmed, promo titles de-headinged for SEO, Resources
   rebuilt, Twilight/gold-star theming). Full reference: `navigation.md`.
@@ -45,10 +50,10 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   Lucide-only icons. The `.hl` marker is also documented in the brand kit (brandkit.lawnlab.dev).
 
 ## What is NOT done
-- **7 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping` is built (the
-  locked template; see DONE + `industry-page-template.md`). Still shells: lawn-care, lawn-maintenance,
-  outdoor-living, land-clearing, excavation, septic-services, holiday-lighting. Roll the framework to each,
-  one at a time. The canonical 8 are locked.
+- **6 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping` and
+  `lawn-care` are built off the locked template (see DONE + `industry-page-template.md`). Still shells:
+  lawn-maintenance, outdoor-living, land-clearing, excavation, septic-services, holiday-lighting. Roll the
+  framework to each, one at a time. The canonical 8 are locked.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages need three **owner inputs** to be truly finished (below).
 

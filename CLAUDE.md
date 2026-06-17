@@ -60,11 +60,11 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   also locked into the brand kit (see Related assets). Use sparingly — one phrase per surface.
 
 ## Status — what's NOT done (shells / next up)
-- **7 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping` is **built**
-  and is the locked template (see DONE above). Still **shells** (header + hero + CTA only): `lawn-care`,
-  `lawn-maintenance`, `outdoor-living`, `land-clearing`, `excavation`, `septic-services`,
-  `holiday-lighting`. Roll the Landscaping framework to each — one at a time (owner's preference) — with
-  its own seasonality, services emphasis, comparison rows, proof framing, and FAQ. The canonical 8 are LOCKED.
+- **6 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping` and `lawn-care`
+  are **built** off the locked template (see DONE above). Still **shells** (header + hero + CTA only):
+  `lawn-maintenance`, `outdoor-living`, `land-clearing`, `excavation`, `septic-services`, `holiday-lighting`.
+  Roll the framework to each — one at a time (owner's preference) — with its own seasonality/demand-cycle,
+  services emphasis, comparison rows, proof framing, and FAQ. The canonical 8 are LOCKED.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages still need three owner inputs to be final: real FAQ answers (→ then add
   `FAQPage` schema), verified conviction stats, and real images for the labeled placeholders.
