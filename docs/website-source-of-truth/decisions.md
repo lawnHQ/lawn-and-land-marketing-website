@@ -326,6 +326,31 @@
 - **Remaining: 4** — holiday-lighting (last seasonal/layout-A), then the demand-mode trio
   septic-services / land-clearing / excavation (layout-B, each needs a fuller research pass).
 
+## 2026-06-17 — Built the final 4 industry pages; all 8 complete; demand-mode pattern proven
+- Built **Holiday Lighting, Land Clearing, Excavation, Septic Services** off the locked template (researched
+  per page; Lawnline re-verified). All 8 canonical industry pages are now developed. Each verified on preview
+  (valid `@graph`, one H1, no console errors), pushed; staging deploys automatically.
+- **The big one for this batch: NO four-season calendar on these trades.** Three are project/demand-driven,
+  one is hyper-seasonal-but-compressed. So the demand-cycle module flexes (the `.ind-seasons` grid takes any
+  4 cards): **holiday-lighting** = phase cycle (pre-sell → booking → install → takedown/re-book; "ahead of
+  the season" still fits); **land-clearing** = pipeline / ground-access / burn windows / fire-mitigation;
+  **excavation** = pipeline / residential-vs-commercial two-buyer split / dig conditions / 811+permits;
+  **septic** = emergency / routine / real-estate / compliance. Each `.hl` headline reflects the REAL cycle
+  ("how septic demand actually shows up", "how clearing work actually comes in", etc.), not "ahead of the seasons".
+- **Cannibalization discipline held:** clearing↔excavation carry mirrored disambiguation FAQs (clearing =
+  remove what's on the land; excavation = shape the earth; clearing first) and cross-link; excavation↔septic
+  cross-link so septic install/compliance stays on the septic page.
+- **Off-trade proof reuse:** all four use real lawn/landscape proof genericized to "green industry" + a
+  per-trade bridge. Septic is the hardest stretch, so it bridges on the **transferable local-demand mechanism**
+  (found-first + reviews + follow-up), not client similarity, per the §7 septic note.
+- **NEW BRAND RULE applied: no em dashes in customer-facing copy.** Came in via the owner's build prompt; all
+  four new pages were authored em-dash-free (commas/periods/restructure). The earlier four pages (landscaping,
+  lawn-care, lawn-maintenance, outdoor-living) and the shared nav/footer still contain em dashes. **Open
+  question for the owner:** do a careful sitewide em-dash pass for consistency, or leave the earlier pages as
+  is? (A blind find/replace is unsafe; em dashes sometimes need a period vs comma vs restructure.)
+- Added the no-em-dash rule to `industry-page-template.md` non-negotiables; updated the build-order note (all
+  8 done), `page-registry.md`, `build-status.md`, `CLAUDE.md`.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

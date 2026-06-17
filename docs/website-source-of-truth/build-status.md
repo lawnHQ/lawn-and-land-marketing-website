@@ -4,10 +4,10 @@ Last updated: 2026-06-15.
 
 ## Overall read
 The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**, **both
-program pages** (Growth + the flagship Authority), the **Programs hub**, and **four industry pages**
-(`landscaping` — the locked template — plus `lawn-care`, `lawn-maintenance`, and `outdoor-living`) are
-developed. The **other 4 industry pages** are the current build; About / Contact / Resources remain
-intentional shells. Build tooling (universal
+program pages** (Growth + the flagship Authority), the **Programs hub**, and **all 8 industry pages**
+(`landscaping` — the locked template — plus `lawn-care`, `lawn-maintenance`, `outdoor-living`,
+`holiday-lighting`, `land-clearing`, `excavation`, and `septic-services`) are developed. About / Contact /
+Resources remain intentional shells. Build tooling (universal
 header/footer + service-page generator), the **2026-06-15 nav-submenu overhaul** (see `navigation.md`),
 route hygiene, and the brand system are all in place. Nothing is launched publicly — staging is
 new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlandmarketing.com.
@@ -60,6 +60,20 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   lock pipeline + financing), high-ticket/portfolio/financing comparison rows + 8-Q FAQ, portfolio-first
   service grid, real landscape/outdoor-living proof + testimonials. `@graph` schema. Keyword-differentiated
   from Landscaping (hardscape/structures/financing vs softscape). No pricing.
+- **Holiday Lighting, Land Clearing, Excavation, Septic Services** (`/industries/*`) — built 2026-06-17;
+  industry pages 5–8, completing all 8. These are the **demand-mode / phase-based** trades (no four-season
+  calendar): **holiday-lighting** uses a phase cycle (pre-sell → booking → install → takedown/re-book, the
+  one page where "ahead of the season" still fits); **land-clearing** (pipeline / ground-access / burn /
+  fire-mitigation), **excavation** (pipeline / residential-vs-commercial split / dig conditions / 811 +
+  permits), and **septic-services** (emergency / routine / real-estate / compliance) each use demand-mode
+  cards with a trade-true `.hl` headline ("how septic demand actually shows up", etc.). Clearing↔excavation
+  carry mirrored disambiguation FAQs; excavation↔septic cross-link on installs. All four are **off-trade**
+  for proof (real lawn/landscape clients), so framing is genericized to "green industry" + a per-trade bridge
+  line (septic bridges on the transferable local-demand mechanism, the hardest case). **All four authored
+  em-dash-free** per the new brand rule (the earlier four pages + the shared nav/footer still contain em
+  dashes — a sitewide consistency pass is pending an owner decision). Full `@graph` schema each, honest
+  `dateModified`. No pricing, no invented facts. Researched per page + Lawnline re-verified (no competitor
+  page for clearing/excavation/septic; holiday maps to their thin "outdoor lighting" page).
 - **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`). The
   nav submenus were overhauled 2026-06-15 (About trimmed, promo titles de-headinged for SEO, Resources
   rebuilt, Twilight/gold-star theming). Full reference: `navigation.md`.
@@ -67,12 +81,10 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   Lucide-only icons. The `.hl` marker is also documented in the brand kit (brandkit.lawnlab.dev).
 
 ## What is NOT done
-- **4 remaining industry pages** (`/industries/*`) — **the current big build.** `landscaping`, `lawn-care`,
-  `lawn-maintenance`, and `outdoor-living` are built off the locked template (see DONE +
-  `industry-page-template.md`). Still shells: **holiday-lighting** (last seasonal/layout-A page), then the
-  **demand-mode/layout-B trio** — `septic-services`, `land-clearing`, `excavation` (each needs a fuller
-  research pass; see the build order in `industry-page-template.md`). Roll the framework to each, one at a
-  time. The canonical 8 are locked.
+- **Industry pages — ALL 8 DONE** (`/industries/*`): landscaping, lawn-care, lawn-maintenance, outdoor-living,
+  holiday-lighting, land-clearing, excavation, septic-services. The canonical 8 are complete (see DONE above).
+  Remaining polish, not blockers: real images for the placeholders, and (optional) a sitewide em-dash pass so
+  the earlier four pages + nav/footer match the new no-em-dash rule.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages need three **owner inputs** to be truly finished (below).
 
@@ -82,10 +94,10 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 3. **Images** — replace the labeled placeholders (each says exactly what to drop in).
 
 ## Highest-priority work next
-1. **Roll the industry-page framework to the remaining 7** (`industry-page-template.md`) — one at a time,
-   each with its own researched seasonality, comparison, services emphasis, and FAQ. Landscaping is the template.
-2. Land the service-page owner inputs above → mark those pages "finished" + add `FAQPage` schema.
-3. Design + build the remaining non-home pages (About, Contact, Resources).
+1. **Industry pages: all 8 built.** Remaining is polish, not new builds: drop real images into the
+   placeholders, and decide on the optional sitewide em-dash pass (earlier four pages + nav/footer).
+2. Design + build the remaining non-home pages (About, Contact, Resources).
+3. Land the service-page owner inputs (FAQ answers, conviction stats, images) → add `FAQPage` schema there.
 4. **Launch cutover** to lawnandlandmarketing.com (later) — work `seo-launch-checklist.md`.
 
 ## Success criteria for a "finished" page

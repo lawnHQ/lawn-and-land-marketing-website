@@ -151,11 +151,13 @@ the way the landscaping build did.
 - **Septic Services** — split urgent/emergency intent (speed, reviews, GBP) vs. routine pumping/inspection reminders; recession-resistant.
 - **Holiday Lighting** — hyper-seasonal: the year is won by booking Sept–Nov, installing Oct–Dec; pre-sell last year's list in late summer.
 
-**Build order — 4 done, 4 to go.** Built so far (all layout-A, 4-season): **landscaping** (template) →
-**lawn-care** → **lawn-maintenance** → **outdoor-living**. Remaining: finish the seasonal set with
-**holiday-lighting** (layout-A, hyper-seasonal — the year is won booking Sept–Nov), then the **demand-mode
-(layout-B) trio**, which each need a fuller research pass and a non-seasonal demand-cycle — **septic-services →
-land-clearing → excavation**. Order isn't binding; owner's call. One page at a time (owner's preference).
+**Build order — ALL 8 DONE (2026-06-17).** Built in this order: **landscaping** (template) → **lawn-care** →
+**lawn-maintenance** → **outdoor-living** (the recurring/seasonal four, layout-A 4-season) → **holiday-lighting**
+(phase-based) → **land-clearing** → **excavation** → **septic-services** (the demand-mode four, layout-B).
+Proven across the set: the `.ind-seasons` grid takes any 4 cards, so the demand-cycle module flexes between a
+4-season calendar (layout-A), a phase cycle (holiday lighting), and demand-mode cards (clearing/excavation/septic)
+with no CSS change — it's a copy + card-label decision. The `.hl` headline must name the REAL cycle, not
+"ahead of the seasons", except where that genuinely fits (holiday lighting; partially the dig/clear windows).
 
 ## Non-negotiables
 - **No pricing.** The "cost" FAQ answers intent and routes to the free call.
@@ -166,6 +168,10 @@ land-clearing → excavation**. Order isn't binding; owner's call. One page at a
   icon. The hero strip needs `.ht-logo` on that `<svg>` so the lime-stroke rule doesn't recolor it.
 - **`.hl` Twilight highlight**: one impact phrase per surface (use it on the demand-cycle H2).
 - **Twilight `#6837EF` never blends with green.**
+- **No em dashes in customer-facing copy** (brand rule, adopted 2026-06-17). Use commas, periods, or restructure;
+  en dashes in ranges (Sept–Nov, 3–5 years) are fine. Applies to visible copy, meta, and the `@graph` text.
+  The four demand-mode pages (holiday-lighting, land-clearing, excavation, septic) were built clean; the first
+  four pages and the shared nav/footer still contain em dashes (a sitewide pass is an open owner decision).
 - **Freshness — honest only.** Keep `dateModified` in the page's `@graph` schema, bumped **only on real
   updates**. **No visible "updated" chip, and never auto-stamp the current month** — that's "fake
   freshness" Google distrusts (it cross-checks the date against real content change) and it violates
