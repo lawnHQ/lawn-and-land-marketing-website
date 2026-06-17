@@ -253,6 +253,14 @@
   FAQ on the "we only do green industry" message — option to evolve its copy to add team/years instead of
   restating focus; (2) confirm the demand-mode seasonality approach for septic / excavation / land-clearing.
 
+## 2026-06-16 — Removed the standalone "Why Lawn & Land" section
+- Eliminated the two-column "Why Lawn & Land" section from the landscaping page (and the framework). Its
+  whole message ("we only work in the green industry") was already made — better — by the hero trust badge,
+  the FAQ ("Do you only work with landscaping companies?"), and especially the **comparison table, which IS
+  the "why us"** (specialist vs. generalist, with information gain). Cutting it removes a redundant beat with
+  zero loss of argument and tightens the flow to proof → testimonials → program-fit → FAQ → CTA. The page is
+  now 10 sections. Updated `industry-page-template.md`.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

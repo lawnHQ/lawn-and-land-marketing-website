@@ -33,7 +33,8 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
    EEAT: empathy = Experience.* (No visible "updated" date — see **Freshness** under Non-negotiables.)
 3. **Why generic marketing fails + comparison table** (`.ind-compare`) — answer-first paragraph, then a
    **specialist-vs-generalist table** (rows tuned to the trade: knows your season / speaks your language /
-   builds the right site / filters your leads / proof that closes). *GEO: tables cite well. EEAT: expertise.*
+   builds the right site / filters your leads / proof that closes). *GEO: tables cite well. EEAT: expertise.
+   This table **is the "why us"** — there is no separate credentials/why-us section (removed as redundant).*
 4. **The demand-cycle module — THE centerpiece** (`.ind-band` + `.ind-seasons`/`.ind-season` cards) — H2
    with a `.hl` highlight, cards split **"On the ground"** vs **"What we market,"** closed with a regional
    note. **Pick the layout that fits the trade — do NOT blindly clone four seasons:**
@@ -64,15 +65,14 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
    industry"** and add a **bridge line** — "the same system and team we'd put behind your [trade] business."
    Honest (no fake same-trade testimonials), and it tells a different-trade owner why to care. Don't hard-code
    the page's own trade into these framing lines when cloning (the landscaping page carries an HTML comment to this effect).
-8. **Why Lawn & Land** (`.ind-split.ind-split--flip`) — a two-column block: niche-only positioning copy
-   on the **left** (left-aligned), an image placeholder on the **right**. (Credentials live in the hero
-   trust strip + the footer, so there's no separate credential box.) *EEAT Authoritativeness.*
-9. **Program fit** (`.ind-fit`) — two cards linking **Growth** (6-figure, lime) and **Authority**
-   (7-figure, Twilight). *SEO: internal links to programs; qualifies the visitor.*
-10. **FAQ** (`.ind-faq`, visible `<details>` accordion, 6–8 Q&As, **answer-first 40–60 words**) +
+8. **Program fit** (`.ind-fit`) — two cards linking **Growth** (6-figure, lime) and **Authority**
+   (7-figure, Twilight). *SEO: internal links to programs; qualifies the visitor.* (There is **no
+   standalone "Why Lawn & Land" section** — removed 2026-06-16 as redundant with the hero badge, the
+   comparison table, and the FAQ. Credentials live in the hero trust strip + footer.)
+9. **FAQ** (`.ind-faq`, visible `<details>` accordion, 6–8 Q&As, **answer-first 40–60 words**) +
     **`FAQPage` schema**. Cover the objection + **"cost" intent** (answer the intent, **never a price**) +
     the seasonality question. *GEO: top AI-extraction zone — the gap Lawnline leaves wide open.*
-11. **Final CTA** (`.svc-cta` Twilight band) — book the free call + "Explore" links (a sibling industry + Programs).
+10. **Final CTA** (`.svc-cta` Twilight band) — book the free call + "Explore" links (a sibling industry + Programs).
 
 **Head schema:** one `<script type="application/ld+json">` with an `@graph`:
 **Organization + Service + WebPage (`dateModified`) + BreadcrumbList + FAQPage.** Schema text must match
@@ -152,7 +152,6 @@ the way the landscaping build did.
 - [ ] Service grid (7 cards, each links its service page, trade-specific copy)
 - [ ] 5-step process
 - [ ] Proof row (real cases) + testimonials section (real video testimonials, attributed)
-- [ ] Why Lawn & Land two-column (copy left, image right) — credentials live in the hero strip + footer
 - [ ] Program-fit cards (Growth + Authority)
 - [ ] FAQ (6–8, answer-first; cost + seasonality + objection; no price) + `FAQPage` schema
 - [ ] Twilight CTA + sibling-industry / programs links
