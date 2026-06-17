@@ -12,9 +12,10 @@ demand rhythm** — and convert that trust into a booked strategy call.
   "ahead of the seasons" framing, honest schema date (no visible chip), and answer-first openers. The
   `decisions.md` log has the full trail.
 - **HAND-BUILT** (not generated like service pages). Each reuses `simple-hero`, `.svc-cta`, and the
-  homepage `.proof-cases` row, plus a reusable `.ind-*` framework scoped in the page's own `<style>`.
-- **Stylesheets:** link `styles.css` **and** `service-page.css`; the `.ind-*` classes live in the page
-  `<style>` block (copy per page — see CSS notes below). Wrap content in `<main id="main">`.
+  homepage `.proof-cases` row, plus the reusable `.ind-*` framework now in a **shared `industry.css`**.
+- **Stylesheets:** link `styles.css`, `service-page.css`, **and `/assets/css/industry.css`** (the `.ind-*`
+  framework — shared across all `/industries/*` pages, so one edit propagates everywhere; bump its `?v=`
+  when you touch it). Wrap content in `<main id="main">`.
 
 ## The thesis (why this structure wins)
 Generic "home-services marketing" pages lose to specialists. We win by **demonstrating first-hand
@@ -22,6 +23,8 @@ expertise** (EEAT "Experience") and structuring every section so both Google and
 (GEO) can lift it cleanly. The single sharpest weapon is the **demand-cycle module** — proof we know the
 owner's calendar (or demand pattern) better than they expect. Our #1 benchmark, Lawnline, has **no FAQ on any industry page
 and real seasonality on only one** — those two are our biggest openings, so we lean into both hard.
+*(Competitor sites change — **re-verify the Lawnline teardown when you build each new page** rather than
+trusting this snapshot; the FAQ + demand-cycle edge only holds while the gap is real.)*
 
 ## Sections, in order
 Each section lists its job and why it's there for SEO / GEO / EEAT.
@@ -69,6 +72,11 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
    industry"** and add a **bridge line** — "the same system and team we'd put behind your [trade] business."
    Honest (no fake same-trade testimonials), and it tells a different-trade owner why to care. Don't hard-code
    the page's own trade into these framing lines when cloning (the landscaping page carries an HTML comment to this effect).
+   **Septic is the hardest bridge** — it's the furthest trade from lawn/landscape, so "the same system and team"
+   reads thin on its own. There, bridge on the **transferable mechanism**, not similarity: the engine being sold
+   is local-service lead capture — GBP + reviews + emergency-intent + recurring reminders — which is *exactly*
+   what wins septic regardless of the client's trade. Make the bridge line say that, e.g. "the same local-demand
+   engine — found-first on Google, reviews that close, follow-up that re-books — behind your septic business."
 8. **Program fit** (`.ind-fit`) — two cards linking **Growth** (6-figure, lime) and **Authority**
    (7-figure, Twilight). *SEO: internal links to programs; qualifies the visitor.* (There is **no
    standalone "Why Lawn & Land" section** — removed 2026-06-16 as redundant with the hero badge, the
@@ -119,6 +127,17 @@ gatekeeper. Use parallel research agents (Lawnline teardown + domain brief + cur
 the way the landscaping build did.
 
 ## Per-industry seed angles (starting points — research + sharpen per page; NOT yet facts)
+> These are **hunches to test, not copy to ship.** Two hard rules learned from the first two builds:
+> - **Demand-mode (non-seasonal) trades — septic, land-clearing, excavation — CANNOT be written from the seed.**
+>   The seed only tells you *that* it's demand-mode, not the actual demand triggers, permit/season windows, or
+>   buyer segments. The demand-cycle module is the page's centerpiece; an un-researched one *undercuts* the
+>   "we know your business" promise. Run the real research pass (see Research method) before writing §4 for these.
+> - **Decide the lawn-care vs. lawn-maintenance keyword split BEFORE building lawn-maintenance.** These two
+>   overlap hard and will **cannibalize** each other if both chase "lawn care." Lawn Care = the **recurring
+>   chemical/agronomy program** (fert, weed, grub, aeration/overseed — sells on results + route density + LTV);
+>   Lawn Maintenance = the **physical mow/blow/edge service** (sells on reliability, tight routes, filling
+>   open capacity, contracts). Different H1 keyword, different comparison rows, different FAQ. Lawn-care is
+>   already built — read it first and write lawn-maintenance to clearly *not* compete for the same query.
 - **Lawn Care** — recurring / route density; seasonal treatment programs (fert / weed / aeration); LTV > one-offs; winter = pre-sell annual programs.
 - **Lawn Maintenance** — volume + tight routes + thin margins; retention + filling open capacity fast; lock contracts late winter / early spring.
 - **Outdoor Living** — highest-ticket; long research cycle; portfolio + financing; sell in fall/winter, build next season.
@@ -126,6 +145,12 @@ the way the landscaping build did.
 - **Excavation** — project-based, residential + commercial/bid; insurance + trust; dig-season + frost windows.
 - **Septic Services** — split urgent/emergency intent (speed, reviews, GBP) vs. routine pumping/inspection reminders; recession-resistant.
 - **Holiday Lighting** — hyper-seasonal: the year is won by booking Sept–Nov, installing Oct–Dec; pre-sell last year's list in late summer.
+
+**Recommended build order for the remaining 6** (landscaping + lawn-care done): do the **seasonal (layout-A)
+pages first** while the 4-season pattern is fresh and reusable — **lawn-maintenance** (after settling the
+keyword split above) → **outdoor-living** → **holiday-lighting** — then the **demand-mode (layout-B) pages**,
+which each need a fuller research pass — **septic-services → land-clearing → excavation**. Order isn't binding;
+owner's call. One page at a time (owner's preference).
 
 ## Non-negotiables
 - **No pricing.** The "cost" FAQ answers intent and routes to the free call.
@@ -144,9 +169,10 @@ the way the landscaping build did.
   was removed.)
 
 ## CSS / build notes
-- The `.ind-*` framework is **scoped in the page `<style>`** (copy the block per page). Once 2–3 pages
-  exist, consider extracting it to a shared `industry.css` (then bump its `?v=`). Landscaping changed **no
-  global CSS** → no cache-bump (`styles.css?v=138`, `service-page.css?v=3`).
+- The `.ind-*` framework now lives in **`/assets/css/industry.css`** (shared; `industry.css?v=1`),
+  extracted from the page `<style>` after page 2 (lawn-care). New industry pages just **link it** — do
+  **not** re-inline the block. Edit the framework in one place and bump `industry.css?v=` sitewide on the
+  `/industries/*` pages. Page-specific one-offs can still go in that page's small `<style>`.
 - Industry pages are **not generated** — hand-edit the page `index.html`. Reuse `simple-hero`,
   `.container`, `.svc-cta`, `.proof-cases`.
 - After any header/footer edit, run `python3 build.py`. Schema uses the production domain; the page
@@ -164,5 +190,8 @@ the way the landscaping build did.
 - [ ] FAQ (6–8, answer-first; cost + seasonality + objection; no price) + `FAQPage` schema
 - [ ] Twilight CTA + sibling-industry / programs links
 - [ ] `@graph` schema (Org + Service + WebPage + Breadcrumb + FAQPage), matching the visible text
+- [ ] **Answer-first pass:** read ONLY the first sentence under each H2, top to bottom — each must stand
+      alone and answer its own heading (no "It depends…" / "There are a few…" openers). That string of
+      first sentences is what an AI answer engine lifts; if it reads as a coherent summary, the page is GEO-ready.
 - [ ] One H1; verify on preview (desktop + mobile); commit + push both branches; update
       `page-registry.md` + `build-status.md`

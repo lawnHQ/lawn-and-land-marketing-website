@@ -15,7 +15,8 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   production. Takes ~1–2 min. (Vercel also auto-creates auth-protected previews per branch.)
 - **Branches:** all progress lives on `main`; the working branch `site-foundation` is kept
   in sync with it — push to **both** (`origin site-foundation` then `origin site-foundation:main`).
-- **Cache-bust versions in use:** `styles.css?v=138`, `main.js?v=53`, `service-page.css?v=3`.
+- **Cache-bust versions in use:** `styles.css?v=138`, `main.js?v=53`, `service-page.css?v=3`,
+  `industry.css?v=1` (shared `.ind-*` framework on `/industries/*`).
 
 ## Status — what's DONE (developed)
 - **Homepage** (`/`) — the benchmark page. Flow (reordered for conversion): hero (YouTube
@@ -51,8 +52,9 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   service grid (8, incl. the Twilight AI standout) → 5-step process → real proof cases + **video
   testimonials** → Growth/Authority program-fit → **visible FAQ accordion + FAQPage schema** → Twilight
   CTA. Engineered for SEO + GEO + EEAT (one keyword H1, question H2s, answer-first openers, `@graph`
-  JSON-LD, real proof only). The reusable `.ind-*` CSS is scoped in the page's `<style>`; copy it per page
-  for industries 2–8. Full spec: `docs/website-source-of-truth/industry-page-template.md`.
+  JSON-LD, real proof only). The reusable `.ind-*` framework now lives in a **shared `/assets/css/industry.css`**
+  (extracted after page 2); new industry pages link it rather than re-inlining. Full spec:
+  `docs/website-source-of-truth/industry-page-template.md`.
 - **Universal header + footer** via `build.py` (edit `_header.html` / `_footer.html`; stamps everywhere).
   Nav Programs submenu icons: sprout (Growth), trophy (Authority).
 - **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`

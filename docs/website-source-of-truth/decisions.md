@@ -271,11 +271,29 @@
 - **Note for when About / Meet-the-Team are built:** industry pages should link to a **named human/agency
   authority** (Google "Authoritativeness"), not a generic shell — that's where deep EEAT lives, off the money page.
 
+## 2026-06-16 — Built Lawn Care (page 2); extracted shared `industry.css`; acted on a 2nd template audit
+- **Lawn Care page built** (`/industries/lawn-care/`) off the locked template — reframed for the recurring
+  treatment-program business (route density + retention, not high-ticket installs): 4-season demand cycle
+  (winter prepay/renewals → spring rush → summer fulfill + book fall → fall aerate/overseed/re-sign),
+  lawn-care comparison rows + FAQ (retention + route-density Qs), proof/testimonials framed "lawn and landscape."
+- **CSS extracted to a shared file** — RESOLVES the open sub-question below. The `.ind-*` framework was
+  duplicated verbatim across landscaping + lawn-care; pulled it into **`/assets/css/industry.css`** (`?v=1`)
+  and replaced each page's inline block with a one-line pointer comment + a `<link>`. Did this now (after
+  page 2, before page 3) so the duplication never reaches three pages. No global CSS changed.
+- **Second third-party audit of the template** (shared FYI, "change only if it changes things for you"):
+  graded the structure A−, flagged process gaps, not content. Acted on the substantive ones in
+  `industry-page-template.md`: (1) demand-mode trades CANNOT be written from the seed — research is mandatory;
+  (2) lawn-care vs. lawn-maintenance keyword split must be decided BEFORE building lawn-maintenance (anti-
+  cannibalization); (3) added an **answer-first verification step** to the build checklist (read only first
+  sentences top-to-bottom); (4) the CSS extraction above; (5) a recommended build order (seasonal layout-A
+  pages first, demand-mode layout-B last); plus a Lawnline re-verify caveat and a stronger septic bridge
+  (bridge on the transferable local-demand mechanism, not client similarity).
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the
-  other 7 industries, one at a time. Open sub-question: extract the `.ind-*` CSS to a shared
-  `industry.css` once 2–3 pages exist, or keep it scoped per page.
+  other 6 industries, one at a time. Sub-question RESOLVED 2026-06-16: the `.ind-*` CSS was extracted to a
+  shared `/assets/css/industry.css` after page 2 (see the dated entry above).
 - **About / Contact / Resources** design direction.
 - **Service-page finishing inputs** — real FAQ answers (→ add `FAQPage` schema), verified conviction
   stats, real images.
