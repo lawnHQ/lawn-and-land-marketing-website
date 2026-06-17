@@ -45,13 +45,14 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
 - **Programs hub** (`/programs/`) — a simple two-program window: hero + Growth (six-figure) and
   Authority (seven-figure) cards that link into each program, plus a "not sure which?" CTA.
 - **Landscaping industry page** (`/industries/landscaping/`) — **built**; the first of 8 and the
-  **reusable industry-page template**. Hero + trust strip → answer-first definition (+ "Updated" date) →
-  specialist-vs-generalist comparison table → **seasonality module** ("market one season ahead", four
-  season cards on the Twilight band — the signature insight) → service grid (links to each
-  `/marketing-services/*`) → 5-step process → real proof cases → credential strip → Growth/Authority
-  fit cards → **visible FAQ accordion + FAQPage schema** → Twilight CTA. Engineered for SEO + GEO +
-  EEAT (one keyword H1, question H2s, answer-first openers, `@graph` JSON-LD, real proof only). The
-  reusable `.ind-*` CSS is scoped in the page's `<style>`; copy it per page for industries 2–8.
+  **reusable industry-page template**. Hero + trust strip → answer-first definition (two-column) →
+  specialist-vs-generalist comparison table → **demand-cycle module** ("ahead of the seasons", four
+  season cards on the Twilight band — the signature insight; non-seasonal trades use a demand-mode layout) →
+  service grid (8, incl. the Twilight AI standout) → 5-step process → real proof cases + **video
+  testimonials** → Growth/Authority program-fit → **visible FAQ accordion + FAQPage schema** → Twilight
+  CTA. Engineered for SEO + GEO + EEAT (one keyword H1, question H2s, answer-first openers, `@graph`
+  JSON-LD, real proof only). The reusable `.ind-*` CSS is scoped in the page's `<style>`; copy it per page
+  for industries 2–8. Full spec: `docs/website-source-of-truth/industry-page-template.md`.
 - **Universal header + footer** via `build.py` (edit `_header.html` / `_footer.html`; stamps everywhere).
   Nav Programs submenu icons: sprout (Growth), trophy (Authority).
 - **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`

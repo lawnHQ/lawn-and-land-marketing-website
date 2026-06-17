@@ -31,7 +31,7 @@ Status key
 | Industries | Industries hub | `/industries/` | scaffolded | Shell. |
 | Industries | Lawn Care | `/industries/lawn-care/` | scaffolded | Canonical 8 (locked). Shell — content outlined, not written. |
 | Industries | Lawn Maintenance | `/industries/lawn-maintenance/` | scaffolded | Canonical 8. Shell. |
-| Industries | Landscaping | `/industries/landscaping/` | **developed** | First industry page + the **locked template** (`industry-page-template.md`). Hero+trust strip → definition → specialist-vs-generalist table → seasonality module → service grid → 5-step process → real proof row → credential strip → Growth/Authority fit → FAQ accordion → CTA. `@graph` schema (Org+Service+WebPage+Breadcrumb+FAQPage). No pricing. |
+| Industries | Landscaping | `/industries/landscaping/` | **developed** | First industry page + the **locked template** (`industry-page-template.md`). Hero+trust strip → answer-first definition (2-col) → specialist-vs-generalist table → demand-cycle module → service grid (8, incl. AI standout) → 5-step process → real proof + video testimonials → Growth/Authority fit → FAQ accordion → CTA. `@graph` schema (Org+Service+WebPage+Breadcrumb+FAQPage). No pricing. |
 | Industries | Outdoor Living | `/industries/outdoor-living/` | scaffolded | Canonical 8. Shell. |
 | Industries | Land Clearing | `/industries/land-clearing/` | scaffolded | Canonical 8. Shell. |
 | Industries | Excavation | `/industries/excavation/` | scaffolded | Canonical 8. Shell. |

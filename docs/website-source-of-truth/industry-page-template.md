@@ -2,11 +2,15 @@
 
 The eight `/industries/*` pages are our **heavy keyword + GEO play**: the page a business owner lands
 on when they search "[their trade] marketing" or "marketing for [their trade] companies." Each one
-must prove we deeply understand *their* business — services, customers, and especially **seasonality** —
-and convert that trust into a booked strategy call.
+must prove we deeply understand *their* business — services, customers, and especially their **seasonal or
+demand rhythm** — and convert that trust into a booked strategy call.
 
-- **Reference build:** `/industries/landscaping/` — the first page and the **locked template**.
-- **Built / approved:** 2026-06-15 (Matt: "nailed the design, keywords, strategy, differentiator, pain points").
+- **Reference build:** `/industries/landscaping/` — the first page and the **locked template**. Match its
+  *current* structure exactly when cloning (it has evolved since first build).
+- **Built 2026-06-15; refined through 2026-06-16** per owner feedback + a third-party SEO audit: two-column
+  intro, real testimonials, the standalone "Why Lawn & Land" section removed, canonical service icons,
+  "ahead of the seasons" framing, honest schema date (no visible chip), and answer-first openers. The
+  `decisions.md` log has the full trail.
 - **HAND-BUILT** (not generated like service pages). Each reuses `simple-hero`, `.svc-cta`, and the
   homepage `.proof-cases` row, plus a reusable `.ind-*` framework scoped in the page's own `<style>`.
 - **Stylesheets:** link `styles.css` **and** `service-page.css`; the `.ind-*` classes live in the page
@@ -15,8 +19,8 @@ and convert that trust into a booked strategy call.
 ## The thesis (why this structure wins)
 Generic "home-services marketing" pages lose to specialists. We win by **demonstrating first-hand
 expertise** (EEAT "Experience") and structuring every section so both Google and AI answer engines
-(GEO) can lift it cleanly. The single sharpest weapon is the **seasonality module** — proof we know the
-owner's calendar better than they expect. Our #1 benchmark, Lawnline, has **no FAQ on any industry page
+(GEO) can lift it cleanly. The single sharpest weapon is the **demand-cycle module** — proof we know the
+owner's calendar (or demand pattern) better than they expect. Our #1 benchmark, Lawnline, has **no FAQ on any industry page
 and real seasonality on only one** — those two are our biggest openings, so we lean into both hard.
 
 ## Sections, in order
@@ -97,16 +101,17 @@ results and it risks a self-serving flag; the visible testimonials already carry
 - Hero eyebrow / H1 / subhead + `<title>` / meta / OG / Twitter (keyword = "[industry] marketing")
 - The answer-first **definition** sentence
 - The 5 **comparison-table** rows (tuned to the trade's economics)
-- The **seasonality module** — *research this per industry; it's the centerpiece*
-- The **service-grid** emphasis + copy (same 7 services, trade-specific framing)
+- The **demand-cycle module** — *research this per industry; it's the centerpiece (4-season vs demand-mode — see §4)*
+- The **service-grid** emphasis + copy (all 8 services, trade-specific framing)
 - **Proof-row** intro line (the three cases stay the real ones)
 - The **FAQ** (trade-specific questions; keep the cost + seasonality ones)
 - Schema `serviceType`, `name`, `breadcrumb`, FAQ entities
 
 ## Research method (do this per page BEFORE building)
 Brief up, per industry: (1) the **business model / service mix** and where the money is; (2) **customer
-segments** and how they buy; (3) the **seasonality / demand cycle** quarter-by-quarter, framed as *market
-one season ahead*; (4) the biggest **business + marketing pains**; (5) **native vocabulary**. Landscaping's
+segments** and how they buy; (3) the **demand cycle** — quarter-by-quarter for seasonal trades, or by
+demand-mode for the rest — framed as marketing *ahead of demand*, not in sync with it; (4) the biggest
+**business + marketing pains**; (5) **native vocabulary**. Landscaping's
 brief is the depth bar to hit — its core insight: a landscaper is *three businesses* (**design** qualifies →
 **installs** earn the money → **maintenance** sustains and feeds the next install), the cardinal sin is
 marketing *in sync* with demand instead of *ahead* of it, the portfolio is the product, and reviews are the
@@ -126,10 +131,10 @@ the way the landscaping build did.
 - **No pricing.** The "cost" FAQ answers intent and routes to the free call.
 - **No invented facts.** Real proof + real credentials only; anything unverifiable is a clearly-marked placeholder.
 - **Lucide icons only** (stroke, 1.75, round, `currentColor`) — never emoji / unicode glyphs.
-- **Google Partner badge = the real multicolor Google "G" logo** (the homepage one), everywhere it
-  appears (hero strip + credential strip). Never a generic check/circle icon. The hero strip needs
-  `.ht-logo` on that `<svg>` so the lime-stroke rule doesn't recolor it.
-- **`.hl` Twilight highlight**: one impact phrase per surface (use it on the seasonality H2).
+- **Google Partner badge = the real multicolor Google "G" logo** (the homepage one), wherever it appears
+  (currently the hero trust strip — the on-page credential strip was removed). Never a generic check/circle
+  icon. The hero strip needs `.ht-logo` on that `<svg>` so the lime-stroke rule doesn't recolor it.
+- **`.hl` Twilight highlight**: one impact phrase per surface (use it on the demand-cycle H2).
 - **Twilight `#6837EF` never blends with green.**
 - **Freshness — honest only.** Keep `dateModified` in the page's `@graph` schema, bumped **only on real
   updates**. **No visible "updated" chip, and never auto-stamp the current month** — that's "fake
@@ -152,7 +157,7 @@ the way the landscaping build did.
 - [ ] Answer-first definition (quotable bolded first sentence; no visible "updated" date)
 - [ ] Comparison table (5 trade-tuned rows)
 - [ ] Demand-cycle module (researched; **4-season cards OR demand-mode cards** per the trade; `.hl` headline; regional note)
-- [ ] Service grid (7 cards, each links its service page, trade-specific copy)
+- [ ] Service grid (8 cards incl. the Twilight AI standout, each links its service page, trade-specific copy)
 - [ ] 5-step process
 - [ ] Proof row (real cases) + testimonials section (real video testimonials, attributed)
 - [ ] Program-fit cards (Growth + Authority)

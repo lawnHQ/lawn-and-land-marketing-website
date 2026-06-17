@@ -33,11 +33,11 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   Twilight CTA. Built from the contract + pitch deck. `Service` + `BreadcrumbList` schema, OG/Twitter. No pricing.
 - **Programs hub** (`/programs/`) — simple two-program window (hero + Growth/Authority cards linking into each).
 - **Landscaping industry page** (`/industries/landscaping/`) — built; the first of 8 and the **locked
-  reusable template** (`industry-page-template.md`). Hero + trust strip → answer-first definition →
-  specialist-vs-generalist table → seasonality module ("market one season ahead", Twilight band) →
-  service grid (links each service) → 5-step process → real proof row → credential strip → Growth/Authority
-  fit → FAQ accordion → Twilight CTA. Built for SEO + GEO + EEAT; `@graph` schema (Org + Service + WebPage +
-  Breadcrumb + FAQPage). No pricing, no invented facts.
+  reusable template** (`industry-page-template.md`). Hero + trust strip → answer-first definition
+  (two-column) → specialist-vs-generalist comparison table → demand-cycle module ("ahead of the seasons",
+  Twilight band) → service grid (8, incl. the Twilight AI standout) → 5-step process → real proof cases +
+  video testimonials → Growth/Authority program-fit → FAQ accordion → Twilight CTA. Built for SEO + GEO +
+  EEAT; `@graph` schema (Org + Service + WebPage + Breadcrumb + FAQPage). No pricing, no invented facts.
 - **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`). The
   nav submenus were overhauled 2026-06-15 (About trimmed, promo titles de-headinged for SEO, Resources
   rebuilt, Twilight/gold-star theming). Full reference: `navigation.md`.
