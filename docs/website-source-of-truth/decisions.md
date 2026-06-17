@@ -261,6 +261,16 @@
   zero loss of argument and tightens the flow to proof → testimonials → program-fit → FAQ → CTA. The page is
   now 10 sections. Updated `industry-page-template.md`.
 
+## 2026-06-16 — Third-party SEO audit: adopted the one held point (answer-first opener)
+- The external auditor conceded our pushbacks (homeowner vocabulary was overcalled; the brand H2s and the
+  "design-build" title scope stand; **no Review/AggregateRating on first-party testimonials** — self-serving,
+  no rich result + manual-action risk). Its one fair remaining point: more **answer-first openers** for GEO.
+- **Adopted:** rewrote the Process section opener to name the five steps up front (an extractable answer to
+  "How we grow a landscaping company") while keeping the "no 50-item checklist, no guesswork" voice. The
+  other section openers are already extractable, so no further changes.
+- **Note for when About / Meet-the-Team are built:** industry pages should link to a **named human/agency
+  authority** (Google "Authoritativeness"), not a generic shell — that's where deep EEAT lives, off the money page.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the
