@@ -289,6 +289,22 @@
   pages first, demand-mode layout-B last); plus a Lawnline re-verify caveat and a stronger septic bridge
   (bridge on the transferable local-demand mechanism, not client similarity).
 
+## 2026-06-17 — Resolved the lawn-care/lawn-maintenance axis; re-pointed Lawn Care to recurring revenue
+- A second review of the live Lawn Care page (third-party agent) confirmed the keyword-collision risk both
+  template audits flagged: the page led on **"fill the route" / route density**, which is really the
+  *maintenance* (mowing) page's mental model. Two pages leading on "the route" would cannibalize each other.
+- **Owner decision:** Lawn Care's spine = **recurring revenue / program** (renewals, retention, LTV);
+  Lawn Maintenance's spine = **route / mowing operations**. Locked in `industry-page-template.md`.
+- **Re-pointed the Lawn Care page accordingly:** H1 "…fill the route" → "…**grow recurring revenue**"; hero,
+  intro definition, why-generic + seasons ledes, services H2, program-fit, Growth card, and CTA all moved to
+  the recurring-program story. Route density kept as a *supporting* beat (one comparison row, the Meta Ads
+  geo-targeting tactic, its dedicated FAQ). Also tightened the two hook-first openers to **answer-first** (the
+  new build-checklist step in action) and bumped `dateModified` to 2026-06-17 (honest — real content edit).
+- The review's other points: schema verified clean from source (entities swapped, honest date — no action);
+  "homeowner" vocabulary left as-is (owner-focused ratio is fine, same call as landscaping); the universal
+  **footer tagline** was narrowing to "landscaping companies" on every page — broadened to "your business."
+- **Reminder for the lawn-maintenance build:** route/density is ITS headline; do not reuse Lawn Care's spine.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

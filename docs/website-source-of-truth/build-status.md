@@ -39,9 +39,11 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   video testimonials → Growth/Authority program-fit → FAQ accordion → Twilight CTA. Built for SEO + GEO +
   EEAT; `@graph` schema (Org + Service + WebPage + Breadcrumb + FAQPage). No pricing, no invented facts.
 - **Lawn Care industry page** (`/industries/lawn-care/`) — built; the 2nd off the template. Same structure,
-  reframed for the **recurring treatment-program** business (route density + retention, not high-ticket
-  installs): 4-season demand cycle (winter prepay/renewals → spring rush → summer fulfill + book fall →
-  fall aerate/overseed/re-sign), lawn-care comparison rows + FAQ (incl. retention + route-density Qs), real
+  reframed for the **recurring treatment-program** business. Spine re-pointed 2026-06-17 to **recurring
+  revenue** (renewals, retention, LTV) — route density is a *supporting* beat only, so it won't cannibalize
+  the upcoming lawn-maintenance page (which gets the route/mowing spine; see `industry-page-template.md`).
+  4-season demand cycle (winter prepay/renewals → spring rush → summer fulfill + book fall → fall
+  aerate/overseed/re-sign), lawn-care comparison rows + FAQ (incl. retention + route-density Qs), real
   proof + testimonials framed "lawn and landscape." `@graph` schema. No pricing.
 - **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`). The
   nav submenus were overhauled 2026-06-15 (About trimmed, promo titles de-headinged for SEO, Resources

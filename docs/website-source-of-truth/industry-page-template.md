@@ -132,12 +132,14 @@ the way the landscaping build did.
 >   The seed only tells you *that* it's demand-mode, not the actual demand triggers, permit/season windows, or
 >   buyer segments. The demand-cycle module is the page's centerpiece; an un-researched one *undercuts* the
 >   "we know your business" promise. Run the real research pass (see Research method) before writing §4 for these.
-> - **Decide the lawn-care vs. lawn-maintenance keyword split BEFORE building lawn-maintenance.** These two
->   overlap hard and will **cannibalize** each other if both chase "lawn care." Lawn Care = the **recurring
->   chemical/agronomy program** (fert, weed, grub, aeration/overseed — sells on results + route density + LTV);
->   Lawn Maintenance = the **physical mow/blow/edge service** (sells on reliability, tight routes, filling
->   open capacity, contracts). Different H1 keyword, different comparison rows, different FAQ. Lawn-care is
->   already built — read it first and write lawn-maintenance to clearly *not* compete for the same query.
+> - **Lawn-care vs. lawn-maintenance axis — DECIDED 2026-06-17 (owner).** These two overlap hard and would
+>   **cannibalize** each other if both led on "the route." The locked split: **Lawn Care = the recurring
+>   program / revenue spine** (fert, weed, grub, aeration/overseed; sells on renewals, retention, LTV — route
+>   density is a *supporting* point only). **Lawn Maintenance = the route / mowing-operations spine**
+>   (mow/blow/edge; sells on reliability, tight routes, filling open capacity, contracts). The Lawn Care page
+>   was **re-pointed to recurring-revenue on 2026-06-17** — its H1 had been "…fill the route," which belonged
+>   to maintenance. So when you build lawn-maintenance, **route/density is ITS headline**, with a different H1
+>   keyword, comparison rows, and FAQ — the two must never compete for the same query.
 - **Lawn Care** — recurring / route density; seasonal treatment programs (fert / weed / aeration); LTV > one-offs; winter = pre-sell annual programs.
 - **Lawn Maintenance** — volume + tight routes + thin margins; retention + filling open capacity fast; lock contracts late winter / early spring.
 - **Outdoor Living** — highest-ticket; long research cycle; portfolio + financing; sell in fall/winter, build next season.
