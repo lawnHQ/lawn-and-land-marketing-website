@@ -44,11 +44,13 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
    standout (`.ind-svc--ai`). *SEO: hub-and-spoke internal links. GEO: extractable list.*
 6. **How we work** (`.ind-steps`) — a numbered 1→5 process. *GEO: numbered steps cite well. EEAT:
    transparency stands in for the price transparency we deliberately omit.*
-7. **Proof, Not Promises** (`.proof-cases`, reused from the homepage) — the **three real client cases**
-   (Rock Solid Landscape, Precision Landscape Management, From The Ground Up Landscaping). *EEAT
-   Experience + Trust. Real numbers only.*
-8. **Why Lawn & Land + credential strip** (`.ind-cred`) — niche-only positioning + the real credential
-   row (NALP · Google Partner · 100+ companies served · 97%+ retention · since 2022). *EEAT Authoritativeness.*
+7. **Proof + testimonials** — **Proof, Not Promises** (`.proof-cases`, reused from the homepage) with the
+   three real client cases (the numbers), immediately followed by a **testimonials section**
+   (`.testi-section` — the homepage's real video testimonials, filtered to that industry: faces + voices).
+   Numbers *and* voices. *EEAT Experience + Trust. Real, attributed content only — never invented.*
+8. **Why Lawn & Land** (`.ind-split.ind-split--flip`) — a two-column block: niche-only positioning copy
+   on the **left** (left-aligned), an image placeholder on the **right**. (Credentials live in the hero
+   trust strip + the footer, so there's no separate credential box.) *EEAT Authoritativeness.*
 9. **Program fit** (`.ind-fit`) — two cards linking **Growth** (6-figure, lime) and **Authority**
    (7-figure, Twilight). *SEO: internal links to programs; qualifies the visitor.*
 10. **FAQ** (`.ind-faq`, visible `<details>` accordion, 6–8 Q&As, **answer-first 40–60 words**) +
@@ -129,8 +131,8 @@ the way the landscaping build did.
 - [ ] Seasonality module (researched; 4 cards; `.hl` headline; warm-climate note)
 - [ ] Service grid (7 cards, each links its service page, trade-specific copy)
 - [ ] 5-step process
-- [ ] Proof row (the real three cases)
-- [ ] Credential strip (real signals only)
+- [ ] Proof row (real cases) + testimonials section (real video testimonials, attributed)
+- [ ] Why Lawn & Land two-column (copy left, image right) — credentials live in the hero strip + footer
 - [ ] Program-fit cards (Growth + Authority)
 - [ ] FAQ (6–8, answer-first; cost + seasonality + objection; no price) + `FAQPage` schema
 - [ ] Twilight CTA + sibling-industry / programs links

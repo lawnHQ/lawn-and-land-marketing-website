@@ -222,6 +222,16 @@
   and staying ahead of trends. (The intro two-column / Google-G / trust-strip tweaks from the prior round
   are also live.)
 
+## 2026-06-16 — Landscaping: testimonials added + Why-Us restructured
+- **Added a testimonials section** (`.testi-section`) right after "Proof, Not Promises" — three REAL video
+  testimonials (Logan's Landscaping, Brothers Outdoor Services, VASH Landscaping; faces + quotes + gold
+  stars), reused from the homepage, with a "See more client experiences" link to
+  `/resources/experiences-reviews/`. Rationale: the proof row shows numbers; testimonials add the
+  voices/faces. Real, attributed — never invented. (Now part of the framework: proof = numbers + voices.)
+- **"Why Lawn & Land" restructured** to a two-column block (`.ind-split--flip`): copy left (left-aligned),
+  image placeholder right. Removed the credential box (NALP / Google Partner / 100+ / 97% / since 2022) —
+  those signals still live in the hero trust strip and the footer.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the
