@@ -132,16 +132,19 @@ the way the landscaping build did.
 >   The seed only tells you *that* it's demand-mode, not the actual demand triggers, permit/season windows, or
 >   buyer segments. The demand-cycle module is the page's centerpiece; an un-researched one *undercuts* the
 >   "we know your business" promise. Run the real research pass (see Research method) before writing §4 for these.
-> - **Lawn-care vs. lawn-maintenance axis — DECIDED 2026-06-17 (owner).** These two overlap hard and would
->   **cannibalize** each other if both led on "the route." The locked split: **Lawn Care = the recurring
->   program / revenue spine** (fert, weed, grub, aeration/overseed; sells on renewals, retention, LTV — route
->   density is a *supporting* point only). **Lawn Maintenance = the route / mowing-operations spine**
->   (mow/blow/edge; sells on reliability, tight routes, filling open capacity, contracts). The Lawn Care page
->   was **re-pointed to recurring-revenue on 2026-06-17** — its H1 had been "…fill the route," which belonged
->   to maintenance. So when you build lawn-maintenance, **route/density is ITS headline**, with a different H1
->   keyword, comparison rows, and FAQ — the two must never compete for the same query.
-- **Lawn Care** — recurring / route density; seasonal treatment programs (fert / weed / aeration); LTV > one-offs; winter = pre-sell annual programs.
-- **Lawn Maintenance** — volume + tight routes + thin margins; retention + filling open capacity fast; lock contracts late winter / early spring.
+> - **Lawn-care vs. lawn-maintenance axis — DECIDED 2026-06-17 (owner).** They overlap hard and would
+>   **cannibalize** each other if both led on "the route." The locked split, in the owner's own terms:
+>   **Lawn Care = the lawn's HEALTH** — a recurring treatment program (fertilization, weed control, aeration,
+>   overseeding, **insect & disease treatment**). Its spine is **recurring revenue — renewals, retention, LTV**;
+>   route density is a *supporting* point only. **Lawn Maintenance = the property's UPKEEP & appearance** —
+>   mowing, landscape-bed maintenance, spring & fall cleanups, keeping it tidy, nice, and tight (broader than
+>   mow/blow/edge). Its angle is **reliable recurring upkeep + route density** (where the mowing margins live),
+>   distinct from lawn-care's treatment program. The Lawn Care page was **re-pointed to recurring-revenue on
+>   2026-06-17** (its H1 had been "…fill the route," which belonged to maintenance). When you build
+>   lawn-maintenance, the route/density + reliability story is **ITS** territory — different H1 keyword,
+>   comparison rows, and FAQ — so the two never compete for the same query.
+- **Lawn Care** *(= lawn HEALTH)* — recurring treatment program: fertilization, weed control, aeration, overseeding, insect & disease treatment. Spine = recurring revenue (renewals / retention / LTV); winter = pre-sell annual programs. Route density is support, not the headline.
+- **Lawn Maintenance** *(= property UPKEEP & appearance)* — mowing, landscape-bed maintenance, spring & fall cleanups; keeping the property tidy, nice, and tight. Reliability + tight routes + thin margins; retention + filling open capacity; route/density is the margin game here (the angle lawn-care gives up).
 - **Outdoor Living** — highest-ticket; long research cycle; portfolio + financing; sell in fall/winter, build next season.
 - **Land Clearing** — project-based; acreage + equipment; permits; weather / ground-condition windows.
 - **Excavation** — project-based, residential + commercial/bid; insurance + trust; dig-season + frost windows.
