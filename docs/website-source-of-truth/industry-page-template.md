@@ -34,20 +34,36 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
 3. **Why generic marketing fails + comparison table** (`.ind-compare`) — answer-first paragraph, then a
    **specialist-vs-generalist table** (rows tuned to the trade: knows your season / speaks your language /
    builds the right site / filters your leads / proof that closes). *GEO: tables cite well. EEAT: expertise.*
-4. **Seasonality module — THE centerpiece** (`.ind-band` Twilight band + `.ind-seasons`) — H2 with a
-   `.hl` highlight (e.g. "we market your company **one season ahead**"), then **four season cards**
-   (Winter / Spring / Summer / Fall), each split **"On the ground"** vs **"What we market."** Close with a
-   warm-climate note. *The information-gain play competitors can't write. GEO + EEAT gold.*
+4. **The demand-cycle module — THE centerpiece** (`.ind-band` + `.ind-seasons`/`.ind-season` cards) — H2
+   with a `.hl` highlight, cards split **"On the ground"** vs **"What we market,"** closed with a regional
+   note. **Pick the layout that fits the trade — do NOT blindly clone four seasons:**
+   - **(A) 4-season calendar** for the *seasonal* trades — landscaping, lawn-care, lawn-maintenance,
+     outdoor-living, holiday-lighting: Winter / Spring / Summer / Fall, headline "…**ahead of the seasons**."
+   - **(B) demand-mode cards** for the *less-seasonal* trades, where a 4-season frame is forced filler and
+     *undercuts* the "we know your business" promise. Use 3–4 cards keyed to how demand actually shows up:
+     - **Septic-services:** Emergency (backups/alarms — speed + GBP + reviews) · Routine (pumping/inspection
+       reminders, recurring) · Real-estate (point-of-sale inspections) · Compliance/permit (new installs).
+       Headline e.g. "We market for **how septic demand actually shows up**."
+     - **Excavation / land-clearing:** project pipeline + **frost/dig-season + permit/ground-condition
+       windows**, not a consumer-season rush.
+   - Same CSS (`.ind-seasons` grid handles any card count) — a **copy + card-count decision, not a rebuild.**
+   *The information-gain play competitors can't write — but only if it's the RIGHT cycle for the trade.*
 5. **What we build** (`.ind-services`) — answer-first intro + a grid of service cards, **each linking to
    its `/marketing-services/*` page**, using the **canonical service icons** (see `navigation.md`), with
    industry-specific copy. Include all 8 services; make the **Your AI Partner** card the Twilight-textured
    standout (`.ind-svc--ai`). *SEO: hub-and-spoke internal links. GEO: extractable list.*
 6. **How we work** (`.ind-steps`) — a numbered 1→5 process. *GEO: numbered steps cite well. EEAT:
    transparency stands in for the price transparency we deliberately omit.*
-7. **Proof + testimonials** — **Proof, Not Promises** (`.proof-cases`, reused from the homepage) with the
-   three real client cases (the numbers), immediately followed by a **testimonials section**
-   (`.testi-section` — the homepage's real video testimonials, filtered to that industry: faces + voices).
-   Numbers *and* voices. *EEAT Experience + Trust. Real, attributed content only — never invented.*
+7. **Proof + testimonials** — **Proof, Not Promises** (`.proof-cases`) with the three real client cases
+   (numbers), then a **testimonials section** (`.testi-section`, the homepage's real video testimonials).
+   Numbers *and* voices. *EEAT Experience + Trust. Real, attributed only — never invented.*
+   **Reuse rule (important):** every real testimonial/case number is a **lawn/landscape client.** Keep the
+   real content on every page, but change the **framing copy** (proof eyebrow + lede, testimonial header +
+   subhead) per trade: use the industry name where the clients match the page (lawn-care, lawn-maintenance,
+   outdoor-living); on **septic, land-clearing, excavation, holiday-lighting** genericize to **"green
+   industry"** and add a **bridge line** — "the same system and team we'd put behind your [trade] business."
+   Honest (no fake same-trade testimonials), and it tells a different-trade owner why to care. Don't hard-code
+   the page's own trade into these framing lines when cloning (the landscaping page carries an HTML comment to this effect).
 8. **Why Lawn & Land** (`.ind-split.ind-split--flip`) — a two-column block: niche-only positioning copy
    on the **left** (left-aligned), an image placeholder on the **right**. (Credentials live in the hero
    trust strip + the footer, so there's no separate credential box.) *EEAT Authoritativeness.*
@@ -63,7 +79,11 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
 the visible text.
 
 ## SEO / GEO / EEAT principles baked in
-1. **One keyword H1**; H2s are real questions or specific claims with keyword *variants* (never repeat the exact phrase).
+1. **One keyword H1** containing the literal "[industry] marketing" phrase (not just the two words split
+   across a sentence); H2s are real questions or specific claims with keyword *variants*. Keep clever hook
+   lines (e.g. "You're not hard to hire, you're hard to find") as **kickers/eyebrows**, not as the H1 or a
+   money-section H2 — let the heading carry the term. Avoid pure clichés as money-section H2s ("Don't take
+   our word for it").
 2. **Answer-first**: the first ~40–75 words under every H2 stand alone and answer the heading — that's what AI lifts.
 3. **High-citation formats**: at least one comparison **table** + one **numbered** process + bulleted lists.
 4. **Information gain**: 2–3 things only a true specialist could write (the seasonality math, the trade's economics). The moat.
@@ -128,7 +148,7 @@ the way the landscaping build did.
 - [ ] Hero: keyword eyebrow + ONE keyword H1 + full-white subhead + dual CTA + trust strip
 - [ ] Answer-first definition (quotable bolded first sentence; no visible "updated" date)
 - [ ] Comparison table (5 trade-tuned rows)
-- [ ] Seasonality module (researched; 4 cards; `.hl` headline; warm-climate note)
+- [ ] Demand-cycle module (researched; **4-season cards OR demand-mode cards** per the trade; `.hl` headline; regional note)
 - [ ] Service grid (7 cards, each links its service page, trade-specific copy)
 - [ ] 5-step process
 - [ ] Proof row (real cases) + testimonials section (real video testimonials, attributed)

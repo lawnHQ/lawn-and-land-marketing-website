@@ -232,6 +232,27 @@
   image placeholder right. Removed the credential box (NALP / Google Partner / 100+ / 97% / since 2022) —
   those signals still live in the hero trust strip and the footer.
 
+## 2026-06-16 — Template review pass (SEO tightening + reuse rules)
+- Reviewed the landscaping page as the locked template (independent audit + own pass). Verdict: strong
+  (~1,700 words, clean structure, full schema, real information-gain). Tightened + future-proofed:
+- **On the page:** H1 now leads with the literal keyword ("Landscaping marketing for companies…");
+  de-clichéd the testimonials H2 ("Don't Take Our Word For It" → "What landscaping owners say about
+  working with us"); added an HTML TEMPLATE/REUSE comment on the proof+testimonials block.
+- **Template rules added to `industry-page-template.md`:**
+  - **The demand-cycle module is two layouts**, not a locked 4-season grid: (A) 4-season calendar for the
+    seasonal trades; (B) demand-mode cards for the less-seasonal trades (septic =
+    emergency/routine/real-estate/compliance; excavation + land-clearing = frost/dig-season + permit
+    windows). Forcing four seasons on septic would be fluff that undercuts the "we know your business" promise.
+  - **Proof/testimonial reuse rule:** every real testimonial/case number is a lawn/landscape client — keep
+    the content on every page, but genericize the FRAMING to "green industry" + a bridge line ("the same
+    system and team we'd put behind your [trade] business") on septic/land-clearing/excavation/holiday-lighting.
+    Honest; never invent same-trade testimonials.
+  - H1 must contain the literal "[industry] marketing" phrase; clever hooks stay as kickers, not the H1/money H2s.
+- **Launch checklist:** flagged localizing the hero NALP badge (loads from the legacy WordPress domain) into `/assets/`.
+- **Open for Matt:** (1) the "Why Lawn & Land" two-col slightly overlaps the hero strip + comparison table +
+  FAQ on the "we only do green industry" message — option to evolve its copy to add team/years instead of
+  restating focus; (2) confirm the demand-mode seasonality approach for septic / excavation / land-clearing.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

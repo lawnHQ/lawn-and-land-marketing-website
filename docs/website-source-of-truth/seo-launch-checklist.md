@@ -99,6 +99,11 @@ launch hygiene.
   staging site isn't indexed as a duplicate. Note: pages currently ship `robots: index,follow`.
 - **Social/share tags** — add `og:image` + Twitter Card (`summary_large_image`) sitewide once
   a brand share image exists.
+- **Localize external legacy assets** — the hero **NALP badge** currently loads from the old WordPress
+  domain (`lawnandlandmarketing.com/wp-content/uploads/.../white-nalp-logo.png`). It works on staging, but
+  it's an external hard-dependency on the legacy site — if that WP install goes away at launch the badge
+  404s. Move it (and any other `wp-content` assets) into `/assets/` before launch. It replicates across
+  every cloned industry-page hero, so fix the source once.
 
 ## Industry pages + taxonomy
 - **DONE (2026-06-14) — taxonomy reconciled to the canonical 8.** The site now has exactly
