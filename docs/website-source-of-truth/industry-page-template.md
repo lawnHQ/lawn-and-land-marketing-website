@@ -76,7 +76,10 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
 
 **Head schema:** one `<script type="application/ld+json">` with an `@graph`:
 **Organization + Service + WebPage (`dateModified`) + BreadcrumbList + FAQPage.** Schema text must match
-the visible text.
+the visible text. Keep `dateModified` accurate — bump it on a real content edit (see Freshness). **Don't add
+`Review`/`AggregateRating` for first-party testimonials** — Google doesn't surface self-serving review rich
+results and it risks a self-serving flag; the visible testimonials already carry the EEAT for humans and AI.
+(Only consider review schema for genuine aggregated third-party reviews, e.g. a real Google rating.)
 
 ## SEO / GEO / EEAT principles baked in
 1. **One keyword H1** containing the literal "[industry] marketing" phrase (not just the two words split

@@ -104,6 +104,10 @@ launch hygiene.
   it's an external hard-dependency on the legacy site — if that WP install goes away at launch the badge
   404s. Move it (and any other `wp-content` assets) into `/assets/` before launch. It replicates across
   every cloned industry-page hero, so fix the source once.
+- **Image alt text (when real photos land)** — describe what's in the image; don't keyword-stuff.
+  Proof/case-study photos name the company + context ("Rock Solid Landscape crew and equipment, Ohio");
+  hero reinforces the topic naturally ("landscaping design-build project"); service images name the
+  service; decorative images get `alt=""`. Applies to all 8 industry pages.
 
 ## Industry pages + taxonomy
 - **DONE (2026-06-14) — taxonomy reconciled to the canonical 8.** The site now has exactly
