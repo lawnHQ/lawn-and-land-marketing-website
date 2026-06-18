@@ -72,7 +72,7 @@ SERVICE_MAP = {
 
 # Use the proven dark hero photo across all service pages (matches the locked
 # website-design exemplar) for consistent text contrast + on-brand look. The
-# per-service 0X-*.jpg files are light UI screenshots — better as showcase
+# per-service 0X-*.jpg files are light UI screenshots, better as showcase
 # content than hero backgrounds.
 HERO_IMG = {s: 'programs-hero.jpg' for s in (
   'website-design', 'local-seo', 'gbp-management', 'google-ads',
@@ -197,7 +197,7 @@ def build_main(c):
     <div class="container">
       <span class="svc-eyebrow">What's included</span>
       <h2>{esc(name)}, <em>fully handled</em>.</h2>
-      <p class="section-sub">No guesswork, no surprises &mdash; the standard pieces that make this work for a lawn care or landscaping company, built and managed for you.</p>
+      <p class="section-sub">No guesswork, no surprises: the standard pieces that make this work for a lawn care or landscaping company, built and managed for you.</p>
       <div class="includes-grid">
         {feat}
         {cards}
@@ -207,7 +207,7 @@ def build_main(c):
 
     faq_items = '\n          '.join(
         f'<details class="faq-item"><summary>{esc(q)}</summary>'
-        f'<p>[NEEDS YOUR INPUT &mdash; add your answer]</p></details>'
+        f'<p>[NEEDS YOUR INPUT: add your answer]</p></details>'
         for q in c['faqQuestions'])
     faq = f'''  <!-- FAQ -->
   <section class="svc-faq">
