@@ -104,6 +104,12 @@ launch hygiene.
   it's an external hard-dependency on the legacy site — if that WP install goes away at launch the badge
   404s. Move it (and any other `wp-content` assets) into `/assets/` before launch. It replicates across
   every cloned industry-page hero, so fix the source once.
+- **Re-verify the septic LSA-category claim** — the septic page states septic qualifies for Google
+  **Local Service Ads** under the **"Sewage system"** category (Google-Guaranteed, pay-per-lead). This was
+  source-verified at build (2026-06-17, Google LSA categories support page; official category name is
+  "Sewage system", not "septic"). LSA eligibility shifts by region and over time, so re-confirm it's still
+  an eligible category in the client's target metros before launch. It's the one confidently-stated
+  platform-fact on the industry pages, so if it ever changes, update that service card.
 - **Image alt text (when real photos land)** — describe what's in the image; don't keyword-stuff.
   Proof/case-study photos name the company + context ("Rock Solid Landscape crew and equipment, Ohio");
   hero reinforces the topic naturally ("landscaping design-build project"); service images name the
