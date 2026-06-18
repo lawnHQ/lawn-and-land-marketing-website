@@ -13,7 +13,7 @@ Status key
 | Section | Page | Route | Status | Notes |
 |---|---|---|---|---|
 | Core | Home | `/` | **developed** | Benchmark page. Hero → stats → industries → services → proof row → programs → Why L&L → testimonials → logo marquee (Twilight band) → FAQ → CTA. Org + WebSite + FAQPage schema. |
-| Core | About | `/about/` | **developed** | Built 2026-06-17 from the owner's REAL legacy content (no invented facts). Hero (team-hero bg, keyword H1/H2) → mission ("personal team", preserved) → Meet the Owner (Matt Foreman bio + real family photo `assets/images/matt-foreman.jpg`, emoji-free) → why-specialization (Twilight band) → values/transparency → condensed good-fit / not-a-fit framework (from "Is Marketing Right For Us") → stat band → CTA. `@graph` schema: Organization + Person (founder) + AboutPage + BreadcrumbList. Owner-led; **recommend consolidating the planned `/resources/meet-the-team/` into this page** (pending owner OK). |
+| Core | About | `/about/` | **developed** | Built 2026-06-17 from the owner's REAL legacy content (no invented facts). Hero (team-hero bg, keyword H1/H2) → mission ("personal team", preserved) → Meet the Owner (Matt Foreman bio + real family photo `assets/images/matt-foreman.jpg`, emoji-free) → why-specialization (Twilight band) → values/transparency → condensed good-fit / not-a-fit framework (from "Is Marketing Right For Us") → stat band → CTA. `@graph` schema: Organization + Person (founder) + AboutPage + BreadcrumbList. Includes a **Meet the Team** grid (`#team`, 10 real members from the legacy `/our-team/`, Leadership + Specialists). Retention stat = **97%+**. Standalone `/resources/meet-the-team/` **retired 2026-06-17**; nav + footer repoint to `/about/#team`. |
 | Core | Contact | `/contact/` | scaffolded | Shell until design phase. |
 | Core | Get Started | `/get-started/book-strategy-call/` | scaffolded | The booking destination; every CTA on the site routes here. |
 | Programs | Programs hub | `/programs/` | **developed** | Simple two-program window — hero + Growth (six-figure) and Authority (seven-figure) cards linking into each program, plus a "not sure?" CTA. |
@@ -39,7 +39,7 @@ Status key
 | Industries | Holiday Lighting | `/industries/holiday-lighting/` | **developed** | 5th industry page; first non-four-season cycle. **Phase-based** (pre-sell → booking → install → takedown/re-book). Hero "book the season before the rush"; permanent-lighting year-round angle; off-trade proof + bridge. Em-dash-free. `@graph` schema. No pricing. |
 | Resources | Resources hub | `/resources/` | scaffolded | Shell. |
 | Resources | Blog | `/resources/blog/` | scaffolded | Exists but pulled from homepage nav/flow as unfinished; needs content strategy. |
-| Resources | Meet The Team | `/resources/meet-the-team/` | scaffolded | Shell. |
+| Resources | Meet The Team | `/resources/meet-the-team/` | **killed** | Consolidated into the About page 2026-06-17 (`/about/#team`). Shell deleted, removed from sitemap, nav + footer repointed. Add a launch 301 → `/about/#team`. |
 | Resources | Experiences / Reviews | `/resources/experiences-reviews/` | scaffolded | Shell. |
 | Resources | Private Facebook Group | `/resources/private-facebook-group/` | scaffolded | Shell. |
 | Resources | Mow Money, Mow Problems Podcast | `/resources/mow-money-mow-problems-podcast/` | scaffolded | Shell. |

@@ -471,6 +471,25 @@
   sections stack on mobile, family photo well-framed, 0 em dashes, 0 emoji, widow-guard handles the
   hero `<br>`, `build.py --check` in sync.
 
+## 2026-06-17 — Meet the Team consolidated into About; About polish
+- **Team consolidation EXECUTED** (owner delegated the call, then supplied the source). Extracted the
+  real team from the legacy `/our-team/` page (raw-HTML parse: each photo's `<img>` immediately precedes
+  that person's name heading, so the mapping is structural, not guessed). 10 members (Matt Foreman is
+  the separate Meet-the-Owner section, so excluded from the grid): Leadership (Sandi Jaramillo, Juan
+  Calderon, Honey Zamora, Damien Friedenthal) + Green Marketing Specialists (Anne Venus, Daisy Llorico,
+  Jez Pangan, Matt Jones, Nadia Louw, Patricia Caretiro). Headshots downloaded + optimized to
+  `assets/images/team/<slug>.jpg` (520x520, ~50-75KB each).
+- Added a **Meet the Team** grid to About (`#team`, square cards, Leadership 4-col / Specialists 3-col,
+  2-col on mobile). Standalone `/resources/meet-the-team/` shell **deleted**, removed from `sitemap.xml`,
+  and nav + footer **repointed to `/about/#team`** (kept the label as a deep-link rather than removing,
+  since there is now real team content worth surfacing). Launch 301 `/resources/meet-the-team/` →
+  `/about/#team` noted on the checklist.
+- **Retention stat → `97%+`** (owner confirmed: actually upper-97 to low-98, comfortable saying over 97).
+- **Owner family photo mobile reframe:** was `aspect 4/3 @ object-position 26%` (too much sky above his
+  head); now `4/5 @ 42%` so the family fills the frame. Desktop unchanged (`4/5 @ 30%`, owner liked it).
+- **CSS gotcha fixed:** `.team-card img` needed `height:auto` — the `height="520"` HTML attribute was
+  overriding `aspect-ratio:1/1` and rendering tall cards. (The owner photo already had `height:auto`.)
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

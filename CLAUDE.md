@@ -55,8 +55,10 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   photo, emoji-free) → why-specialization (Twilight band) → values/transparency (incl. the "we publish
   our worst review" ethos) → condensed **good-fit / not-a-fit** framework (from the old "Is Marketing
   Right For Us" page) → stat band → CTA. `@graph` schema (Organization + Person founder + AboutPage +
-  BreadcrumbList). Owner-led; **open recommendation: consolidate the planned `/resources/meet-the-team/`
-  into About** (one strong E-E-A-T page beats a thin team page) — pending owner OK, nav not changed yet.
+  BreadcrumbList). Includes a **Meet the Team** grid (`#team`) with 10 real members (names/roles/photos
+  extracted from the legacy `/our-team/`). The standalone `/resources/meet-the-team/` was **retired**
+  and nav + footer **repointed to `/about/#team`** (consolidated 2026-06-17). Retention stat reads
+  **97%+** (owner: actually upper-97 to low-98).
 - **Landscaping industry page** (`/industries/landscaping/`) — **built**; the first of 8 and the
   **reusable industry-page template**. Hero + trust strip → answer-first definition (two-column) →
   specialist-vs-generalist comparison table → **demand-cycle module** ("ahead of the seasons", four
