@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Lawn & Land Marketing | Lawn &amp; Land Marketing</title>
-  <meta name="description" content="The only digital marketing agency built exclusively for lawn care and landscaping companies. Our story, mission, and why specialization wins.">
+  <title>About Lawn &amp; Land Marketing | Built Only for the Green Industry</title>
+  <meta name="description" content="Meet Lawn & Land Marketing, a digital marketing team built exclusively for lawn care and landscaping companies. Our story, our mission, and why we specialize.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://new.lawnlab.dev/about/">
-  <meta property="og:title" content="About Lawn & Land Marketing | Lawn &amp; Land Marketing">
-  <meta property="og:description" content="The only digital marketing agency built exclusively for lawn care and landscaping companies. Our story, mission, and why specialization wins.">
+  <meta property="og:title" content="About Lawn &amp; Land Marketing | Built Only for the Green Industry">
+  <meta property="og:description" content="A digital marketing team built exclusively for lawn care and landscaping companies. Meet the owner, our mission, and why specialization wins.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://new.lawnlab.dev/about/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Lawn &amp; Land Marketing | Built Only for the Green Industry">
+  <meta name="twitter:description" content="A digital marketing team built exclusively for lawn care and landscaping companies. Meet the owner, our mission, and why specialization wins.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://lawnandlandmarketing.com/#organization","name":"Lawn & Land Marketing","url":"https://lawnandlandmarketing.com","logo":"https://lawnandlandmarketing.com/assets/logos/logo-horizontal.svg","description":"A digital marketing agency working exclusively with lawn care and landscaping companies in the green industry.","foundingDate":"2022","founder":{"@id":"https://lawnandlandmarketing.com/#matt-foreman"},"areaServed":"United States","address":{"@type":"PostalAddress","addressLocality":"St. Petersburg","addressRegion":"FL","addressCountry":"US"},"sameAs":["https://www.facebook.com/lawnandlandmarketing","https://www.instagram.com/lawnandlandmarketing","https://www.linkedin.com/company/lawn-and-land-marketing","https://www.youtube.com/@lawnandlandmarketing"]},{"@type":"Person","@id":"https://lawnandlandmarketing.com/#matt-foreman","name":"Matt Foreman","jobTitle":"Founder & Owner","worksFor":{"@id":"https://lawnandlandmarketing.com/#organization"},"description":"Founder and owner of Lawn & Land Marketing. Matt founded the agency Shoot To Thrill Media in 2016 before choosing to focus exclusively on the green industry.","image":"https://lawnandlandmarketing.com/assets/images/matt-foreman.jpg"},{"@type":"AboutPage","@id":"https://lawnandlandmarketing.com/about/#webpage","url":"https://lawnandlandmarketing.com/about/","name":"About Lawn & Land Marketing","description":"The story, mission, and team behind Lawn & Land Marketing, a digital marketing agency built exclusively for the green industry.","about":{"@id":"https://lawnandlandmarketing.com/#organization"},"isPartOf":{"@id":"https://lawnandlandmarketing.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://lawnandlandmarketing.com/"},{"@type":"ListItem","position":2,"name":"About","item":"https://lawnandlandmarketing.com/about/"}]}]}</script>
   <link rel="icon" type="image/svg+xml" href="/assets/logos/logo-badge.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,600;1,700;1,800&family=Mulish:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css?v=139">
+  <link rel="stylesheet" href="/assets/css/service-page.css?v=3">
   <style>
   
     .mega-icon {
@@ -176,7 +182,7 @@
       padding: 0 24px;
     }
     .hero-copy { max-width: 760px; }
-    .hero-copy h1 {
+    .hero-copy h2 {
       font-family: var(--font-h);
       font-size: clamp(36px, 5vw, 58px);
       line-height: 0.96;
@@ -200,7 +206,9 @@
       align-items: center;
       gap: 10px;
       padding: 8px 14px;
-      margin-bottom: 18px;
+      margin: 0 0 18px;
+      font-weight: 400;
+      line-height: 1.65;
       border-radius: 999px;
       background: rgba(255,255,255,0.06);
       border: 1px solid rgba(255,255,255,0.10);
@@ -224,6 +232,73 @@
       .hero-actions { flex-direction: column; align-items: stretch; }
       .btn { width: 100%; }
     }
+
+    /* WHY US, two-column: image left, text right */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(32px, 5vw, 60px);
+      align-items: center;
+    }
+    .why-text { text-align: left; }
+    .why-figure { margin: 0; }
+    .why-ph {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(104,55,239,0.28);
+      background: radial-gradient(120% 160% at 50% 0%, rgba(104,55,239,0.18), transparent 60%), linear-gradient(180deg, #0c1118, #0a0f15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .why-ph-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,0.42);
+      font-family: var(--font-l);
+    }
+    @media (max-width: 860px) {
+      .why-grid { grid-template-columns: 1fr; gap: 28px; }
+      .why-ph { aspect-ratio: 16 / 9; }
+    }
+  
+    /* ABOUT: meet the owner */
+    .owner-grid { display:grid; grid-template-columns:0.9fr 1.1fr; gap:clamp(32px,5vw,60px); align-items:center; }
+    .owner-photo { margin:0; }
+    .owner-photo img { width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; object-position:center 30%; border-radius:20px; border:1px solid rgba(255,255,255,0.12); display:block; box-shadow:0 30px 70px rgba(0,0,0,0.42); }
+    .owner-sig { display:flex; align-items:baseline; gap:11px; margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.1); }
+    .owner-sig strong { font-family:var(--font-h); font-style:italic; font-weight:800; font-size:20px; color:var(--white); }
+    .owner-sig span { font-family:var(--font-l); font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.5); }
+    @media (max-width:860px){ .owner-grid{ grid-template-columns:1fr; gap:30px; } .owner-photo img{ aspect-ratio:4/3; object-position:center 26%; } }
+
+    /* ABOUT: honest fit */
+    .fit-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; max-width:1000px; margin:0 auto; }
+    .fit-card { border-radius:18px; padding:32px 30px; border:1px solid rgba(255,255,255,0.1); background:rgba(255,255,255,0.025); }
+    .fit-card--yes { border-color:rgba(172,231,29,0.34); background:rgba(172,231,29,0.05); }
+    .fit-head { font-family:var(--font-h); font-style:italic; font-weight:800; font-size:21px; color:var(--white); margin:0 0 20px; display:flex; align-items:center; gap:11px; }
+    .fit-head svg { width:25px; height:25px; flex-shrink:0; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .fit-card--yes .fit-head svg { stroke:var(--lime); }
+    .fit-card--no .fit-head svg { stroke:rgba(255,150,150,0.95); }
+    .fit-list { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:15px; }
+    .fit-list li { display:flex; gap:12px; font-size:15px; line-height:1.55; color:rgba(255,255,255,0.78); }
+    .fit-list li svg { flex-shrink:0; width:19px; height:19px; margin-top:2px; fill:none; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+    .fit-card--yes .fit-list li svg { stroke:var(--lime); }
+    .fit-card--no .fit-list li { color:rgba(255,255,255,0.6); }
+    .fit-card--no .fit-list li svg { stroke:rgba(255,255,255,0.34); }
+    .fit-list li b { color:var(--white); font-weight:700; }
+    @media (max-width:760px){ .fit-grid{ grid-template-columns:1fr; } }
+
+    /* ABOUT: stat band */
+    .about-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; max-width:980px; margin:0 auto; }
+    .about-stat { text-align:center; padding:6px; }
+    .about-stat .as-num { font-family:var(--font-h); font-style:italic; font-weight:800; font-size:clamp(34px,4.4vw,50px); color:var(--lime); line-height:1; margin-bottom:9px; }
+    .about-stat .as-label { font-family:var(--font-l); font-size:13px; line-height:1.45; color:rgba(255,255,255,0.62); }
+    @media (max-width:680px){ .about-stats{ grid-template-columns:1fr 1fr; gap:30px 18px; } }
   </style>
 </head>
 <body>
@@ -460,43 +535,185 @@
     </div>
   </nav>
 
-  <!-- HERO BANNER -->
-  <section class="simple-hero" style="--hero-image: url('/assets/images/programs-hero.jpg');">
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="simple-hero" style="--hero-image: url('/assets/images/team-hero.jpg');">
     <div class="hero-inner">
       <div class="hero-copy" data-reveal="fade-up">
         <div class="crumbs"><a href="/">Home</a><span>/</span><span>About</span></div>
-        <div class="hero-kicker">About Us</div>
-        <h1>Built for landscaping companies. Nothing else.</h1>
-        <p>We're not a generalist agency that took on a few lawn care clients. We built this entire company around one industry, and that's what makes it work.</p>
+        <h1 class="hero-kicker">About Lawn &amp; Land Marketing</h1>
+        <h2>We only do one thing:<br>grow green-industry companies.</h2>
+        <p>Lawn &amp; Land Marketing is a digital marketing team built exclusively for lawn care and landscaping companies. No other industries, no divided focus, just everything it takes to help you get found, get hired, and grow.</p>
         <div class="hero-actions">
           <a href="/get-started/book-strategy-call/" class="btn btn--lime">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-              <line x1="16" y1="2" x2="16" y2="6"/>
-              <line x1="8" y1="2" x2="8" y2="6"/>
-              <line x1="3" y1="10" x2="21" y2="10"/>
-            </svg>
-            Book a Strategy Call
-          </a>
-          <a href="/contact/" class="btn btn--ghost">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-            Contact Us
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book a Free Strategy Call
           </a>
         </div>
       </div>
     </div>
   </section>
-  <section style="padding: 80px 0;">
-    <div style="max-width: var(--max, 1320px); margin: 0 auto; padding: 0 24px;">
-      <div style="border: 1px dashed rgba(172,231,29,0.28); border-radius: 24px; padding: 48px 28px; background: rgba(255,255,255,0.02); text-align: center;">
-        <span style="display: inline-block; margin-bottom: 14px; font-family: var(--font-l); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lime);">Body Section</span>
-        <h2 style="font-family: var(--font-h); font-size: clamp(28px, 4vw, 42px); line-height: 1.05; font-style: italic; font-weight: 800; color: var(--white); margin: 0 0 14px;">[Blank body, we will design this shortly.]</h2>
-        <p style="max-width: 700px; margin: 0 auto; color: var(--body);">This page intentionally keeps only the header, hero, placeholder body, CTA, and footer until the final page design is ready.</p>
+
+  <!-- MISSION -->
+  <section style="padding:clamp(64px,8vw,100px) 0;">
+    <div class="container">
+      <div style="max-width:760px;margin:0 auto;text-align:center;" data-reveal="fade-up">
+        <span class="svc-eyebrow">Our mission</span>
+        <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.08;color:var(--white);margin:0;">Think of us as your company's personal marketing team.</h2>
+      </div>
+      <div style="max-width:740px;margin:30px auto 0;" data-reveal="fade-up">
+        <p style="font-size:18px;color:rgba(255,255,255,0.8);line-height:1.75;margin:0 0 22px;">Our mission is for you to see us as your company's personal, dedicated team. Not just one you pay to get results, but a team you know genuinely cares about your business and your success. Our dedication shows in the results we achieve, and we want it to show just as much in the transparent, personal relationship we keep with every company we work with.</p>
+        <p style="font-size:18px;color:rgba(255,255,255,0.8);line-height:1.75;margin:0 0 22px;">You and your business are <span class="hl">not just another statistic</span> to us. You hire us because you trust we will deliver. We work with you because we believe in you to deliver for your own customers. Working with us should feel as natural as hiring your next in-house employee, without the training and overhead that come with it.</p>
+        <p style="font-size:18px;color:rgba(255,255,255,0.8);line-height:1.75;margin:0;">We back that up through our experience, our self-sufficiency, and our genuine dedication to you, your team, and your business.</p>
       </div>
     </div>
   </section>
+
+  <!-- MEET THE OWNER -->
+  <section style="padding:clamp(64px,8vw,100px) 0;background:rgba(255,255,255,0.018);border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);">
+    <div class="container">
+      <div class="owner-grid">
+        <figure class="owner-photo" data-reveal="fade-up">
+          <img src="/assets/images/matt-foreman.jpg" alt="Matt Foreman, founder and owner of Lawn &amp; Land Marketing, with his family" width="1200" height="1800" loading="lazy">
+        </figure>
+        <div data-reveal="fade-up">
+          <span class="svc-eyebrow">Meet the owner</span>
+          <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.08;color:var(--white);margin:0 0 20px;">Hey, I'm Matt Foreman.</h2>
+          <p style="font-size:17px;color:rgba(255,255,255,0.78);line-height:1.7;margin:0 0 18px;">I'm a business owner, husband, father, Christ-follower, digital marketer, and lover of all things Tampa Bay sports.</p>
+          <p style="font-size:17px;color:rgba(255,255,255,0.78);line-height:1.7;margin:0 0 18px;">I built my first agency, <strong style="color:#fff;">Shoot To Thrill Media</strong>, back in 2016, helping service businesses around the world grow their web presence. We worked with clients of every size and industry, from day-one startups to multi-million-dollar resorts. It started as a passion project and turned into a genuinely rewarding career.</p>
+          <p style="font-size:17px;color:rgba(255,255,255,0.78);line-height:1.7;margin:0 0 18px;">But the more we grew, the clearer it became where I did my best work and made my biggest impact: the lawn care and landscaping industry. So I made the call to step back from serving every industry and focus entirely on the green industry. That is how <strong style="color:#fff;">Lawn &amp; Land Marketing</strong> was born.</p>
+          <p style="font-size:17px;color:rgba(255,255,255,0.78);line-height:1.7;margin:0;">My goal now is simple: to keep meeting, working with, and building long-term relationships with passionate green-industry owners, and to grow our businesses together.</p>
+          <div class="owner-sig"><strong>Matt Foreman</strong><span>Founder &amp; Owner</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SPECIALIZATION -->
+  <section style="padding:clamp(70px,9vw,112px) 0;background-color:#0d0b14;background-image:radial-gradient(120% 200% at 50% -30%, rgba(104,55,239,0.34) 0%, rgba(104,55,239,0.1) 38%, transparent 68%),radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1.5px);background-size:100% 100%,22px 22px;background-repeat:no-repeat,repeat;background-position:center top,center;border-top:1px solid rgba(104,55,239,0.22);border-bottom:1px solid rgba(104,55,239,0.22);position:relative;overflow:hidden;">
+    <div class="container">
+      <div style="max-width:780px;margin:0 auto 48px;text-align:center;" data-reveal="fade-up">
+        <span style="display:block;font-family:var(--font-l);font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--lime);margin-bottom:14px;">Why specialization wins</span>
+        <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(30px,4.2vw,48px);line-height:1.04;color:var(--white);margin:0 0 16px;">A specialist beats a generalist. Every time.</h2>
+        <p style="font-size:18px;color:rgba(255,255,255,0.74);line-height:1.55;margin:0;">When your marketing team works in one industry and one industry only, you skip the expensive learning curve. We already know your seasons, your buyers, your margins, and how homeowners actually choose who to hire. That focus turns into sharper strategy and better results for you.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:16px;max-width:1080px;margin:0 auto;" data-reveal="fade-up">
+        <div style="background:rgba(255,255,255,0.035);border:1px solid rgba(198,176,250,0.16);border-radius:18px;padding:30px 26px;">
+          <span style="display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;border-radius:12px;background:rgba(172,231,29,0.12);margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
+          <h3 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:20px;color:var(--white);margin:0 0 9px;line-height:1.1;">We speak your language</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.68);font-size:14px;line-height:1.55;">Seasons, route density, estimates, crews, and close rates. You never have to stop and explain your business to us.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.035);border:1px solid rgba(198,176,250,0.16);border-radius:18px;padding:30px 26px;">
+          <span style="display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;border-radius:12px;background:rgba(172,231,29,0.12);margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+          <h3 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:20px;color:var(--white);margin:0 0 9px;line-height:1.1;">Strategy that's already dialed in</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.68);font-size:14px;line-height:1.55;">We have run this playbook for lawn and landscape companies many times over, so we skip the experiments and go straight to what works.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.035);border:1px solid rgba(198,176,250,0.16);border-radius:18px;padding:30px 26px;">
+          <span style="display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;border-radius:12px;background:rgba(172,231,29,0.12);margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <h3 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:20px;color:var(--white);margin:0 0 9px;line-height:1.1;">Built for how you get hired</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.68);font-size:14px;line-height:1.55;">Every website, ad, and follow-up is tuned for how homeowners search for and choose a green-industry pro in their area.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section style="padding:clamp(64px,8vw,100px) 0;">
+    <div class="container">
+      <div style="max-width:740px;margin:0 auto 44px;text-align:center;" data-reveal="fade-up">
+        <span class="svc-eyebrow">What you can expect</span>
+        <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.08;color:var(--white);margin:0;">The way we work with you.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:1080px;margin:0 auto;" data-reveal="fade-up">
+        <div style="background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.09);border-radius:18px;padding:30px 26px;">
+          <span style="display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;border-radius:12px;background:rgba(172,231,29,0.12);margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h3 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:20px;color:var(--white);margin:0 0 9px;line-height:1.1;">Radical transparency</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.68);font-size:14px;line-height:1.55;">We are so committed to honesty that we publish our worst-ever review and explain exactly what went wrong. Trust is built in the uncomfortable moments, not just the wins.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.09);border-radius:18px;padding:30px 26px;">
+          <span style="display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;border-radius:12px;background:rgba(172,231,29,0.12);margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <h3 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:20px;color:var(--white);margin:0 0 9px;line-height:1.1;">A real partnership</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.68);font-size:14px;line-height:1.55;">You are not a number on a dashboard. We operate like an in-house team that is genuinely invested in your growth and easy to reach when you need us.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.09);border-radius:18px;padding:30px 26px;">
+          <span style="display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;border-radius:12px;background:rgba(172,231,29,0.12);margin-bottom:18px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+          <h3 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:20px;color:var(--white);margin:0 0 9px;line-height:1.1;">Proof, not promises</h3>
+          <p style="margin:0;color:rgba(255,255,255,0.68);font-size:14px;line-height:1.55;">We will never sell you overnight magic. We build the foundation first, then the results compound, usually felt within 60 to 90 days and accelerating from there.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HONEST FIT -->
+  <section style="padding:clamp(64px,8vw,100px) 0;background:rgba(255,255,255,0.018);border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);">
+    <div class="container">
+      <div style="max-width:760px;margin:0 auto 44px;text-align:center;" data-reveal="fade-up">
+        <span class="svc-eyebrow">Honest fit</span>
+        <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.08;color:var(--white);margin:0 0 14px;">We're not the right fit for everyone. On purpose.</h2>
+        <p style="font-size:18px;color:rgba(255,255,255,0.72);line-height:1.6;margin:0;">We would rather be upfront than oversell. Here is who we do our best work with, and who we are probably not the right partner for.</p>
+      </div>
+      <div class="fit-grid" data-reveal="fade-up">
+        <div class="fit-card fit-card--yes">
+          <h3 class="fit-head"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>We're a great fit if...</h3>
+          <ul class="fit-list">
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You are <b>hungry to grow</b> and want to dominate your local market, not just stay the size you are.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You are <b>ready to handle more work</b>, with the systems and crews to take on new leads and customers.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You <b>trust experts</b> and value a real partnership over micromanaging every decision.</span></li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>You are <b>prepared to invest</b> in sustained growth that compounds over months, not days.</span></li>
+          </ul>
+        </div>
+        <div class="fit-card fit-card--no">
+          <h3 class="fit-head"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg>We're probably not a fit if...</h3>
+          <ul class="fit-list">
+            <li><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/></svg><span>You need leads <b>this week</b> with no runway for strategy to take hold.</span></li>
+            <li><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/></svg><span>You want to keep <b>tight control</b> over every marketing decision and channel.</span></li>
+            <li><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Your budget <b>cannot support</b> a sustained marketing investment right now.</span></li>
+            <li><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/></svg><span>You are shopping for a <b>one-off project</b>, like just a website or just ads.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BY THE NUMBERS -->
+  <section style="padding:clamp(64px,8vw,100px) 0;">
+    <div class="container">
+      <div style="max-width:680px;margin:0 auto 44px;text-align:center;" data-reveal="fade-up">
+        <span class="svc-eyebrow">By the numbers</span>
+        <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(28px,3.8vw,42px);line-height:1.08;color:var(--white);margin:0;">Trusted across the green industry.</h2>
+      </div>
+      <div class="about-stats" data-reveal="fade-up">
+        <div class="about-stat"><div class="as-num">100+</div><div class="as-label">Green-industry companies served</div></div>
+        <div class="about-stat"><div class="as-num">97%</div><div class="as-label">Client retention rate</div></div>
+        <div class="about-stat"><div class="as-num">2022</div><div class="as-label">Specializing in the green industry since</div></div>
+        <div class="about-stat"><div class="as-num">NALP</div><div class="as-label">Proud industry association member</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="svc-cta">
+    <div class="container">
+      <div class="svc-cta-inner">
+        <div class="svc-cta-glow"></div>
+        <div class="svc-cta-text">
+          <span class="svc-eyebrow">Get started</span>
+          <h2>Let's grow your <em>green-industry business.</em></h2>
+          <p>One free strategy call. We will learn your goals, show you where you are leaving jobs on the table, and lay out exactly what it would look like to fix it. No pitch deck. No pressure.</p>
+          <a href="/get-started/book-strategy-call/" class="btn btn--lime btn--lg">Book a Free Strategy Call</a>
+          <p class="cta-note">Free, no obligation. Every path here leads to a real plan for your business.</p>
+        </div>
+        <div class="svc-cta-services">
+          <div class="cta-services-label">Explore</div>
+          <a href="/programs/" class="cta-service-link"><span class="cta-service-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><span>Our Programs</span><span class="cta-service-arrow">&rarr;</span></a>
+          <a href="/marketing-services/" class="cta-service-link"><span class="cta-service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><span>All Marketing Services</span><span class="cta-service-arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
 
 <footer class="footer-v2">
     <div class="fv2-glow"></div>

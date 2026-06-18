@@ -444,6 +444,33 @@
   horizontal scroll, cards render with correct labels and the green keyword highlights intact; and at
   1280px the original table is untouched.
 
+## 2026-06-17 — Built the About page (real content, owner-led, SEO/E-E-A-T)
+- **Built from the owner's REAL content, no invented facts.** Pulled the live legacy pages
+  (`/about/`, `/is-marketing-right-for-us/`, `/reviews/`) via raw-HTML extraction (WebFetch truncated
+  on the heavy Avada markup; curl + a tag-stripper got the real copy). Preserved the real mission
+  ("your personal team", "not just another statistic") and the real owner bio (Matt Foreman; prior
+  agency Shoot To Thrill Media, 2016; deliberate pivot to the green industry) nearly verbatim,
+  emoji-free per brand.
+- **Structure** (existing components, modeled on the Growth page): hero (team-hero bg, keyword H1/H2)
+  → mission → Meet the Owner (real family photo `assets/images/matt-foreman.jpg`, 1200x1800, portrait)
+  → why-specialization (Twilight band, 3 cards) → values/transparency (3 cards, incl. the "we publish
+  our worst review" ethos borrowed from Reviews) → condensed good-fit / not-a-fit framework → stat band
+  → Twilight CTA.
+- **Schema:** `@graph` = Organization + Person (Matt, founder) + AboutPage + BreadcrumbList (production
+  domain, staging canonical). Strong E-E-A-T.
+- **Bonus-page verdict (owner asked):** the good-fit/not-a-fit framework → folded into About (high trust
+  + SEO). The Reviews testimonials + "Lyle / worst review" story → stay a dedicated Reviews page; About
+  only borrows the transparency ethos.
+- **Team decision (owner delegated):** consolidate, don't split. One strong owner-led About page beats a
+  thin standalone "Meet the Team" page for SEO/E-E-A-T; the owner section is structured to add real team
+  members later. **PENDING OWNER OK:** retire `/resources/meet-the-team/` from nav submenu + footer
+  (fold into About) + launch redirect. Not changed yet.
+- **Stats reused (VERIFY before launch):** 100+ companies, 97% retention (owner chose 97% over the
+  legacy 95-96%), since 2022, NALP membership. All already published elsewhere on the new site.
+- **Verified** on preview at 1280 + 390: clean H1->H2->H3 outline, no horizontal scroll, fit + owner
+  sections stack on mobile, family photo well-framed, 0 em dashes, 0 emoji, widow-guard handles the
+  hero `<br>`, `build.py --check` in sync.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

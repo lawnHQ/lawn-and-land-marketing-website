@@ -13,7 +13,7 @@ Status key
 | Section | Page | Route | Status | Notes |
 |---|---|---|---|---|
 | Core | Home | `/` | **developed** | Benchmark page. Hero → stats → industries → services → proof row → programs → Why L&L → testimonials → logo marquee (Twilight band) → FAQ → CTA. Org + WebSite + FAQPage schema. |
-| Core | About | `/about/` | scaffolded | Shell until design phase. |
+| Core | About | `/about/` | **developed** | Built 2026-06-17 from the owner's REAL legacy content (no invented facts). Hero (team-hero bg, keyword H1/H2) → mission ("personal team", preserved) → Meet the Owner (Matt Foreman bio + real family photo `assets/images/matt-foreman.jpg`, emoji-free) → why-specialization (Twilight band) → values/transparency → condensed good-fit / not-a-fit framework (from "Is Marketing Right For Us") → stat band → CTA. `@graph` schema: Organization + Person (founder) + AboutPage + BreadcrumbList. Owner-led; **recommend consolidating the planned `/resources/meet-the-team/` into this page** (pending owner OK). |
 | Core | Contact | `/contact/` | scaffolded | Shell until design phase. |
 | Core | Get Started | `/get-started/book-strategy-call/` | scaffolded | The booking destination; every CTA on the site routes here. |
 | Programs | Programs hub | `/programs/` | **developed** | Simple two-program window — hero + Growth (six-figure) and Authority (seven-figure) cards linking into each program, plus a "not sure?" CTA. |

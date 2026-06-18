@@ -50,6 +50,13 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   the contract + pitch deck. `Service` + `BreadcrumbList` JSON-LD, OG + Twitter. No pricing.
 - **Programs hub** (`/programs/`) — a simple two-program window: hero + Growth (six-figure) and
   Authority (seven-figure) cards that link into each program, plus a "not sure which?" CTA.
+- **About page** (`/about/`) — **built** 2026-06-17 from the owner's REAL legacy content (no invented
+  facts): mission ("your personal team", preserved) → **Meet the Owner** (Matt Foreman, real family
+  photo, emoji-free) → why-specialization (Twilight band) → values/transparency (incl. the "we publish
+  our worst review" ethos) → condensed **good-fit / not-a-fit** framework (from the old "Is Marketing
+  Right For Us" page) → stat band → CTA. `@graph` schema (Organization + Person founder + AboutPage +
+  BreadcrumbList). Owner-led; **open recommendation: consolidate the planned `/resources/meet-the-team/`
+  into About** (one strong E-E-A-T page beats a thin team page) — pending owner OK, nav not changed yet.
 - **Landscaping industry page** (`/industries/landscaping/`) — **built**; the first of 8 and the
   **reusable industry-page template**. Hero + trust strip → answer-first definition (two-column) →
   specialist-vs-generalist comparison table → **demand-cycle module** ("ahead of the seasons", four
@@ -81,7 +88,7 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
 - **Industry pages: all 8 built** (see DONE above) — no remaining industry builds. Polish only: real images
   for the placeholders, and the sitewide em-dash pass is complete (2026-06-17), so the
   whole site is now em-dash-free.
-- **About, Contact, Resources/\*** — shells.
+- **Contact, Resources/\*** — shells. (About is now **developed** — see DONE above.)
 - The 8 service pages still need three owner inputs to be final: real FAQ answers (→ then add
   `FAQPage` schema), verified conviction stats, and real images for the labeled placeholders.
 
