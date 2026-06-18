@@ -15,9 +15,13 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   production. Takes ~1–2 min. (Vercel also auto-creates auth-protected previews per branch.)
 - **Branches:** all progress lives on `main`; the working branch `site-foundation` is kept
   in sync with it — push to **both** (`origin site-foundation` then `origin site-foundation:main`).
-- **Cache-bust versions in use:** `styles.css?v=139`, `main.js?v=53`, `service-page.css?v=3`,
+- **Cache-bust versions in use:** `styles.css?v=139`, `main.js?v=54`, `service-page.css?v=3`,
   `industry.css?v=1` (shared `.ind-*` framework on `/industries/*`). `styles.css` carries the global
-  `text-wrap: balance` (headings) / `text-wrap: pretty` (body) orphan-prevention rules.
+  `text-wrap: balance` (headings) / `text-wrap: pretty` (body) line-break hints; the **actual
+  no-lone-word guarantee** is a widow-guard in `main.js` that glues the last two words of every
+  heading (each `<br>` segment) with a non-breaking space, at any viewport width. `balance` only
+  evens line *widths*, not word counts, so it can't promise this on its own. The 8 industry
+  intro-hook H2s are *also* hard-glued in the HTML (JS-off safety on the most visible headings).
 
 ## Status — what's DONE (developed)
 - **Homepage** (`/`) — the benchmark page. Flow (reordered for conversion): hero (YouTube

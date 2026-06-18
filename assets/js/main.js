@@ -197,3 +197,50 @@ document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
     wrap.classList.add('playing');
   });
 });
+
+// ─ WIDOW GUARD ─
+// text-wrap:balance evens line WIDTHS, not word counts, so a heading can still
+// strand a single word on its last line (hard <br> hooks, long compound words,
+// or just certain viewport widths). This glues the final inter-word space of
+// each <br>-delimited segment with a non-breaking space, so every heading's
+// last line always carries 2+ words at any width. Skips nav/footer chrome, the
+// animated hero H1, and any heading already hand-glued (contains a nbsp).
+(function widowGuard() {
+  function glueSegment(nodes) {
+    let full = '';
+    const map = [];
+    const collect = (n) => {
+      if (n.nodeType === 3) {
+        for (let k = 0; k < n.nodeValue.length; k++) map.push([n, k]);
+        full += n.nodeValue;
+      } else if (n.nodeType === 1) {
+        const tw = document.createTreeWalker(n, NodeFilter.SHOW_TEXT);
+        let x;
+        while (x = tw.nextNode()) {
+          for (let k = 0; k < x.nodeValue.length; k++) map.push([x, k]);
+          full += x.nodeValue;
+        }
+      }
+    };
+    nodes.forEach(collect);
+    let idx = -1;
+    for (let i = 1; i < full.length - 1; i++) {
+      if (full[i] === ' ' && /\S/.test(full[i - 1]) && /\S/.test(full[i + 1])) idx = i;
+    }
+    if (idx < 0) return;
+    const [node, off] = map[idx];
+    node.nodeValue = node.nodeValue.slice(0, off) + '\u00A0' + node.nodeValue.slice(off + 1);
+  }
+  [].forEach.call(document.querySelectorAll('h1,h2,h3,h4'), (h) => {
+    if (h.closest('header,footer,nav')) return;        // chrome
+    if (h.querySelector('.hero-cycle')) return;         // animated hero H1
+    if (h.textContent.indexOf('\u00A0') !== -1) return; // already hand-glued
+    let seg = [];
+    const segs = [seg];
+    [].forEach.call(h.childNodes, (c) => {
+      if (c.nodeType === 1 && c.tagName === 'BR') segs.push(seg = []);
+      else seg.push(c);
+    });
+    segs.forEach(glueSegment);
+  });
+})();

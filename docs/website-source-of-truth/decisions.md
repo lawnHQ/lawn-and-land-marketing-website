@@ -402,6 +402,29 @@
   valid; homepage + a regenerated service page render with no console errors. (Docs/`.md`/code-comments are not
   customer-facing and were left as-is, except where edited.)
 
+## 2026-06-17 — Killed heading "widows" (a lone word on a heading's last line) sitewide
+- **Problem (owner-reported):** the two-line intro hooks on the industry pages (e.g. "Filling the
+  pipeline is the hard / part.") were stranding a single word on the last line — "a bad look." Seen on
+  desktop *and* sometimes mobile.
+- **Root cause:** `text-wrap: balance` (already global on headings) evens line *widths*, not word
+  *counts*. With a hard `<br>` or a long compound word it can legitimately leave one word alone. So
+  `balance` can never *guarantee* against it — wrong tool for the guarantee. Confirmed by measuring real
+  render boxes in the browser, not eyeballing.
+- **Fix — two layers:**
+  1. **Widow-guard in `main.js`** (`?v=54`): on load, for every heading (`h1–h4`) outside nav/footer,
+     it glues the last two words of each `<br>`-delimited segment with a non-breaking space, so the last
+     line always carries 2+ words **at any viewport width and on future copy**. Skips the animated hero
+     H1 and any heading already hand-glued. Inserts only ` ` (never reorders/removes), so it cannot
+     break layout — worst case it does nothing. Handles words inside `.hl` / gradient spans correctly.
+  2. **Hard-glued the 8 industry intro-hook H2s in the HTML** too (belt-and-suspenders — those stay
+     fixed even with JS disabled, since they're the most visible headings).
+- **Verified** by measuring rendered line boxes (Range API) across 5 structurally-distinct page types
+  (industry, homepage, Growth, Authority, service template) at **1280 and 375** — **zero** single-word
+  last lines anywhere, including the multi-segment `<br>` headers and span-wrapped phrases.
+- **Why JS, not pure CSS or hand-gluing every heading:** CSS can't guarantee it; hand-gluing every
+  heading is unmaintainable and breaks on new copy. The guard is automatic, future-proof, and degrades
+  gracefully.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the
