@@ -35,7 +35,7 @@ pages can exist outside this list.
 - `/industries/lawn-maintenance/` — Lawn Maintenance
 - `/industries/land-clearing/` — Land Clearing
 - `/industries/excavation/` — Excavation
-- `/industries/septic-services/` — Septic Services
+- `/industries/septic-installation/` — Septic Installation
 - `/industries/holiday-lighting/` — Holiday Lighting
 
 ## Resources

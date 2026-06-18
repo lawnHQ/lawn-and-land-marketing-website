@@ -351,6 +351,26 @@
 - Added the no-em-dash rule to `industry-page-template.md` non-negotiables; updated the build-order note (all
   8 done), `page-registry.md`, `build-status.md`, `CLAUDE.md`.
 
+## 2026-06-17 — Repositioned the septic page from "services" to "installers" (owner's real prospect)
+- **Decision (owner):** the real prospect in this vertical is the **septic installer**, not the pump-and-service
+  company. Pure installers (install + drainfield replacement, no pumping/emergency), even mix of replacement +
+  new construction. So the page was **repositioned**, not tweaked.
+- **Key insight:** a septic *installer* is a high-ticket, project-based, permit-gated business — structurally
+  much closer to **Excavation** than to a pumping company. It's won on licensing, permit-fluency, system-design
+  capability, and proof, not on emergency speed-to-answer.
+- **What changed:** the whole spine. H1 "get found first when an emergency hits" → **"win more install and
+  drainfield jobs."** Demand modes flipped from service (emergency / routine / realtor / compliance) to install
+  (**failed-system replacement / new construction / real-estate upgrade / compliance & permits**). `.hl` headline
+  "how septic demand actually shows up" → **"how install work actually comes in."** Comparison rows, services,
+  FAQ, and the proof bridge all re-pointed to the high-ticket, two-buyer (failed-system homeowner + builder/GC)
+  install business. Softened the LSA claim (LSA leans service/repair; install eligibility is a launch-verify item).
+- **Slug renamed** `/industries/septic-services/` → **`/industries/septic-installation/`** (pre-launch, so clean;
+  no redirect needed). Nav label "Septic Services" → **"Septic Installation"**, mega-menu microcopy updated, and
+  every reference re-pointed: `_header.html`, `_footer.html`, homepage industry card, `sitemap.xml`, the
+  excavation cross-link, and all docs. `build.py` restamped; verified zero orphan `septic-services` links.
+- **The other 7 pages and the canonical-8 list are unchanged** — this is a refinement of one industry, not a
+  re-scope. Excavation↔septic cross-links still hold (excavation defers septic installs to this page).
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

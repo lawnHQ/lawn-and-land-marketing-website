@@ -6,7 +6,7 @@ Last updated: 2026-06-15.
 The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**, **both
 program pages** (Growth + the flagship Authority), the **Programs hub**, and **all 8 industry pages**
 (`landscaping` — the locked template — plus `lawn-care`, `lawn-maintenance`, `outdoor-living`,
-`holiday-lighting`, `land-clearing`, `excavation`, and `septic-services`) are developed. About / Contact /
+`holiday-lighting`, `land-clearing`, `excavation`, and `septic-installation`) are developed. About / Contact /
 Resources remain intentional shells. Build tooling (universal
 header/footer + service-page generator), the **2026-06-15 nav-submenu overhaul** (see `navigation.md`),
 route hygiene, and the brand system are all in place. Nothing is launched publicly — staging is
@@ -60,20 +60,20 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   lock pipeline + financing), high-ticket/portfolio/financing comparison rows + 8-Q FAQ, portfolio-first
   service grid, real landscape/outdoor-living proof + testimonials. `@graph` schema. Keyword-differentiated
   from Landscaping (hardscape/structures/financing vs softscape). No pricing.
-- **Holiday Lighting, Land Clearing, Excavation, Septic Services** (`/industries/*`) — built 2026-06-17;
+- **Holiday Lighting, Land Clearing, Excavation, Septic Installation** (`/industries/*`) — built 2026-06-17;
   industry pages 5–8, completing all 8. These are the **demand-mode / phase-based** trades (no four-season
   calendar): **holiday-lighting** uses a phase cycle (pre-sell → booking → install → takedown/re-book, the
   one page where "ahead of the season" still fits); **land-clearing** (pipeline / ground-access / burn /
   fire-mitigation), **excavation** (pipeline / residential-vs-commercial split / dig conditions / 811 +
-  permits), and **septic-services** (emergency / routine / real-estate / compliance) each use demand-mode
-  cards with a trade-true `.hl` headline ("how septic demand actually shows up", etc.). Clearing↔excavation
+  permits), and **septic-installation** (failed-system replacement / new construction / real-estate upgrade / compliance) each use demand-mode
+  cards with a trade-true `.hl` headline ("how install work actually comes in", "how clearing work comes in", etc.). Clearing↔excavation
   carry mirrored disambiguation FAQs; excavation↔septic cross-link on installs. All four are **off-trade**
   for proof (real lawn/landscape clients), so framing is genericized to "green industry" + a per-trade bridge
   line (septic bridges on the transferable local-demand mechanism, the hardest case). **All four authored
   em-dash-free** per the new brand rule (the earlier four pages + the shared nav/footer still contain em
   dashes — a sitewide consistency pass is pending an owner decision). Full `@graph` schema each, honest
   `dateModified`. No pricing, no invented facts. Researched per page + Lawnline re-verified (no competitor
-  page for clearing/excavation/septic; holiday maps to their thin "outdoor lighting" page).
+  page for clearing/excavation/septic; holiday maps to their thin "outdoor lighting" page). **Septic repositioned 2026-06-17** from septic *services* to septic *installers* (owner's real prospect): the page now leads on the high-ticket, permit-gated install business (failed-system + new-construction two-buyer split), slug `/industries/septic-installation/`, much closer to Excavation than to a pumping company.
 - **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`). The
   nav submenus were overhauled 2026-06-15 (About trimmed, promo titles de-headinged for SEO, Resources
   rebuilt, Twilight/gold-star theming). Full reference: `navigation.md`.
@@ -82,7 +82,7 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 
 ## What is NOT done
 - **Industry pages — ALL 8 DONE** (`/industries/*`): landscaping, lawn-care, lawn-maintenance, outdoor-living,
-  holiday-lighting, land-clearing, excavation, septic-services. The canonical 8 are complete (see DONE above).
+  holiday-lighting, land-clearing, excavation, septic-installation. The canonical 8 are complete (see DONE above).
   Remaining polish, not blockers: real images for the placeholders, and (optional) a sitewide em-dash pass so
   the earlier four pages + nav/footer match the new no-em-dash rule.
 - **About, Contact, Resources/\*** — shells.

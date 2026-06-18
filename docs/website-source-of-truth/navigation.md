@@ -32,7 +32,7 @@ opens an accordion; caret items expand instead of navigating.
 
 **Industries** — wide two columns + featured card:
 - *Lawn & Landscape*: Landscaping · Outdoor Living · Lawn Care · Lawn Maintenance
-- *Land & Specialty*: Land Clearing · Excavation · Septic Services · Holiday Lighting
+- *Land & Specialty*: Land Clearing · Excavation · Septic Installation · Holiday Lighting
 - Featured: **"We Only Work In The Green Industry."** (`.mega-fc-title`) → `/about/`.
 
 **Resources** — wide two columns + **Twilight testimonials** featured card:

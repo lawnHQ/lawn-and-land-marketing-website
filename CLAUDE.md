@@ -62,7 +62,7 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   The **demand-mode / phase-based** four (built 2026-06-17, NO four-season calendar): **Holiday Lighting**
   (phase cycle: pre-sell → booking → install → re-book); **Land Clearing** (pipeline / ground-access / burn /
   fire-mitigation); **Excavation** (pipeline / residential-vs-commercial split / dig conditions / 811);
-  **Septic Services** (emergency / routine / real-estate / compliance). The last four were authored
+  **Septic Installation** (failed-system replacement / new construction / real-estate upgrade / compliance — repositioned 2026-06-17 from septic *services* to *installers*, the owner's real prospect). The last four were authored
   **em-dash-free** (new brand rule); the earlier four + the shared nav/footer still have em dashes (sitewide
   pass pending). Each page: full `@graph` schema, no pricing, real proof. See `build-status.md` /
   `decisions.md` / `industry-page-template.md` for the per-trade splits.

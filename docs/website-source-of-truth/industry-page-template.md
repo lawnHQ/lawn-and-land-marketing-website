@@ -49,9 +49,9 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
      outdoor-living, holiday-lighting: Winter / Spring / Summer / Fall, headline "…**ahead of the seasons**."
    - **(B) demand-mode cards** for the *less-seasonal* trades, where a 4-season frame is forced filler and
      *undercuts* the "we know your business" promise. Use 3–4 cards keyed to how demand actually shows up:
-     - **Septic-services:** Emergency (backups/alarms — speed + GBP + reviews) · Routine (pumping/inspection
-       reminders, recurring) · Real-estate (point-of-sale inspections) · Compliance/permit (new installs).
-       Headline e.g. "We market for **how septic demand actually shows up**."
+     - **Septic installation** (repositioned to installers, NOT pump-service): Replacement (failed systems,
+       high-intent homeowner search) · New construction (builder/GC, permit pipeline) · Real-estate (point-of-sale
+       upgrade) · Compliance (county mandates, advanced systems). Headline "We market for **how install work actually comes in**."
      - **Excavation / land-clearing:** project pipeline + **frost/dig-season + permit/ground-condition
        windows**, not a consumer-season rush.
    - Same CSS (`.ind-seasons` grid handles any card count) — a **copy + card-count decision, not a rebuild.**
@@ -74,9 +74,10 @@ Each section lists its job and why it's there for SEO / GEO / EEAT.
    the page's own trade into these framing lines when cloning (the landscaping page carries an HTML comment to this effect).
    **Septic is the hardest bridge** — it's the furthest trade from lawn/landscape, so "the same system and team"
    reads thin on its own. There, bridge on the **transferable mechanism**, not similarity: the engine being sold
-   is local-service lead capture — GBP + reviews + emergency-intent + recurring reminders — which is *exactly*
-   what wins septic regardless of the client's trade. Make the bridge line say that, e.g. "the same local-demand
-   engine — found-first on Google, reviews that close, follow-up that re-books — behind your septic business."
+   is getting found first for high-ticket local work, the proof and reviews that win a permit-gated job, and
+   follow-up across a long sale — *exactly* what wins a septic installer regardless of the client's trade. Make
+   the bridge line say that, e.g. "the same engine — found-first, proof that wins trust, follow-up that closes
+   the job — behind your install business." (The live septic-installation page uses this mechanism-bridge.)
 8. **Program fit** (`.ind-fit`) — two cards linking **Growth** (6-figure, lime) and **Authority**
    (7-figure, Twilight). *SEO: internal links to programs; qualifies the visitor.* (There is **no
    standalone "Why Lawn & Land" section** — removed 2026-06-16 as redundant with the hero badge, the
@@ -148,12 +149,12 @@ the way the landscaping build did.
 - **Outdoor Living** — highest-ticket; long research cycle; portfolio + financing; sell in fall/winter, build next season.
 - **Land Clearing** — project-based; acreage + equipment; permits; weather / ground-condition windows.
 - **Excavation** — project-based, residential + commercial/bid; insurance + trust; dig-season + frost windows.
-- **Septic Services** — split urgent/emergency intent (speed, reviews, GBP) vs. routine pumping/inspection reminders; recession-resistant.
+- **Septic Installation** — the owner's real prospect is **installers, not pumpers**: high-ticket, permit-gated install business. Failed-system replacement (homeowner search) + new construction (builder/GC) + real-estate upgrades + county-mandate compliance. Two-buyer split; closer to Excavation than to a pumping company.
 - **Holiday Lighting** — hyper-seasonal: the year is won by booking Sept–Nov, installing Oct–Dec; pre-sell last year's list in late summer.
 
 **Build order — ALL 8 DONE (2026-06-17).** Built in this order: **landscaping** (template) → **lawn-care** →
 **lawn-maintenance** → **outdoor-living** (the recurring/seasonal four, layout-A 4-season) → **holiday-lighting**
-(phase-based) → **land-clearing** → **excavation** → **septic-services** (the demand-mode four, layout-B).
+(phase-based) → **land-clearing** → **excavation** → **septic-installation** (the demand-mode four, layout-B).
 Proven across the set: the `.ind-seasons` grid takes any 4 cards, so the demand-cycle module flexes between a
 4-season calendar (layout-A), a phase cycle (holiday lighting), and demand-mode cards (clearing/excavation/septic)
 with no CSS change — it's a copy + card-label decision. The `.hl` headline must name the REAL cycle, not
