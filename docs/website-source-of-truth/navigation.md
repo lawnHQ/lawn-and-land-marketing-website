@@ -15,10 +15,11 @@ opens an accordion; caret items expand instead of navigating.
 
 **About** — narrow single column (`.mega-panel--narrow` + `.mega-grid--single`):
 - About → `/about/`
-- Meet The Team → `/resources/meet-the-team/`
 - **Experiences & Testimonials** → `/resources/experiences-reviews/` — Twilight-textured
   (`.mega-item--twilight`) with a **gold star** icon.
 - *(The former founder/right-rail card was removed in the overhaul.)*
+- *("Meet The Team" was sunset 2026-06-17 — the team now lives as a section on the About page
+  (`/about/#team`); the standalone nav item, footer link, and page were all removed per the owner.)*
 
 **Programs** — two themed cards (`.mega-grid--programs`):
 - **Growth** → `/programs/growth/` — lime theme (`.mega-item--growth`), **sprout** icon, pill "For 6-Figure Companies".

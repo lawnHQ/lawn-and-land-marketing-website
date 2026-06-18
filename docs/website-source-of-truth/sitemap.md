@@ -41,7 +41,7 @@ pages can exist outside this list.
 ## Resources
 - `/resources/` — Resources hub
 - `/resources/blog/` — Blog
-- `/resources/meet-the-team/` — Meet The Team
+- ~~`/resources/meet-the-team/`~~ — **removed 2026-06-17**; team consolidated into the About page (`/about/#team`). Launch 301 → `/about/#team`.
 - `/resources/experiences-reviews/` — Experiences / Reviews
 - `/resources/private-facebook-group/` — Private Facebook Group
 - `/resources/mow-money-mow-problems-podcast/` — Mow Money, Mow Problems Podcast

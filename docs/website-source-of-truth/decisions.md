@@ -481,9 +481,11 @@
   `assets/images/team/<slug>.jpg` (520x520, ~50-75KB each).
 - Added a **Meet the Team** grid to About (`#team`, square cards, Leadership 4-col / Specialists 3-col,
   2-col on mobile). Standalone `/resources/meet-the-team/` shell **deleted**, removed from `sitemap.xml`,
-  and nav + footer **repointed to `/about/#team`** (kept the label as a deep-link rather than removing,
-  since there is now real team content worth surfacing). Launch 301 `/resources/meet-the-team/` →
-  `/about/#team` noted on the checklist.
+  and nav + footer links updated. **Final state (owner decision, same day): the "Meet The Team" nav
+  submenu item and footer link were SUNSET entirely** — not repointed. The team lives on only as the
+  About `#team` section (reachable via the About nav item); there is no standalone team label anywhere
+  in the chrome. Verified 0 `/about/#team` links and 0 "Meet the Team" nav/footer text sitewide. Launch
+  301 `/resources/meet-the-team/` → `/about/#team` noted on the checklist.
 - **Retention stat → `97%+`** (owner confirmed: actually upper-97 to low-98, comfortable saying over 97).
 - **Owner family photo mobile reframe:** was `aspect 4/3 @ object-position 26%` (too much sky above his
   head); now `4/5 @ 42%` so the family fills the frame. Desktop unchanged (`4/5 @ 30%`, owner liked it).
