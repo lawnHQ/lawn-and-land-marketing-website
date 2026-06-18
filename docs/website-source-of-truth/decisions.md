@@ -370,6 +370,21 @@
   excavation cross-link, and all docs. `build.py` restamped; verified zero orphan `septic-services` links.
 - **The other 7 pages and the canonical-8 list are unchanged** — this is a refinement of one industry, not a
   re-scope. Excavation↔septic cross-links still hold (excavation defers septic installs to this page).
+- **Audit follow-up (same day):** a third-party review flagged the predicted risk — repositioning to "installer"
+  made septic structurally close to **Excavation** (shared two-buyer split, near-identical "Runs two engines" +
+  high-ticket comparison rows, a duplicate process step). Core keywords don't collide, but the *section content*
+  did, dampening both pages' topical distinctiveness. **Fix:** re-pointed septic's spine to **the licensed
+  septic-system specialty** (license, permits/perc tests, conventional/mound/ATU/engineered systems, passing
+  inspection — the moat an excavator cannot claim); rewrote the comparison table so it shares **zero** row labels
+  with Excavation; de-duped process step 4; demoted the two-buyer split to a supporting beat (kept in the demand
+  cards, removed as a comparison row). Verified zero shared comparison-row labels between the two pages.
+- **Full-site septic sweep (per owner):** swept the whole site for septic references and aligned them to the
+  installer framing — the Industries-hub list + meta/OG ("septic" → "septic installation"), the four reuse-rule
+  HTML comments (old slug → new), the mega-menu microcopy. Confirmed point-of-sale septic is claimed only here.
+- **Explicit decision: installer-only.** We have **consciously vacated the septic-pumping/service keyword space**
+  (real volume, but not the owner's prospect). A separate service page remains a future option and would NOT
+  cannibalize the installer page (different spine) — ironic, since the old pump-service page was *further* from
+  Excavation than the installer page is. 301 redirect from the old slug added to the launch checklist.
 
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and

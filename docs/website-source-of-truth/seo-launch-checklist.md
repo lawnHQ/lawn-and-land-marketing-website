@@ -104,6 +104,12 @@ launch hygiene.
   it's an external hard-dependency on the legacy site — if that WP install goes away at launch the badge
   404s. Move it (and any other `wp-content` assets) into `/assets/` before launch. It replicates across
   every cloned industry-page hero, so fix the source once.
+- **301 redirect `/industries/septic-services/` → `/industries/septic-installation/`** — the septic page
+  was renamed 2026-06-17 (services → installers). The old slug never went live/indexed (pre-launch), so this
+  is low-stakes insurance, but add the redirect at cutover in case anything ever referenced the old URL.
+  Decision recorded: we have **consciously vacated the "septic pumping / emergency septic service" keyword
+  space** — the owner's prospect is installers, not pump-service companies. (If that ever changes, a separate
+  service page is the move; it would NOT cannibalize the installer page, since its spine differs.)
 - **Verify septic-install LSA eligibility** — the septic-installation page's Google Ads card references a
   "verified, insured badge" (Google Local Service Ads / Google Guaranteed). LSA leans service/repair, and a
   high-ticket *install* job may or may not fit an LSA category in a given metro (Google's septic category is
