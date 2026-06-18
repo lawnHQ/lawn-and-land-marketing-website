@@ -425,6 +425,25 @@
   heading is unmaintainable and breaks on new copy. The guard is automatic, future-proof, and degrades
   gracefully.
 
+## 2026-06-17 — Comparison table goes to stacked cards on phones (no sideways scroll)
+- **Problem (owner-reported):** the "green-industry specialist vs. generalist agency" table
+  (`.ind-compare`, shared on all 8 industry pages) looked great on desktop but on mobile it was a
+  horizontally-scrolling table — the row labels (left) and the whole "generalist" column (right) sat
+  off-screen, and nothing signals there's more to swipe to. With most traffic on mobile, half the
+  section was effectively invisible.
+- **Fix (CSS only, `industry.css?v=2`, `@media max-width:680px`):** the `<table>` reflows into
+  **stacked cards**, one per comparison row. Each card = the criterion as an italic heading, then the
+  **Lawn & Land** answer (green eyebrow + green left-accent + faint green tint = the "winner") and the
+  **A generalist agency** answer (muted) below it. Column headers (`<thead>`) hide on mobile; each
+  cell gets its own label via CSS `::before` so the side is always clear. No markup change — pure CSS,
+  so it covers all 8 pages at once and is keyed only on the existing `.row-label` / `.col-us` /
+  `.col-them` classes.
+- **Desktop is byte-for-byte unchanged** (everything is inside the mobile media query; verified the
+  table still renders as `display:table` with visible `<thead>`, 560px min-width, no pseudo-labels).
+- **Verified** on the preview at 390px (land-clearing + septic-installation): zero page-level
+  horizontal scroll, cards render with correct labels and the green keyword highlights intact; and at
+  1280px the original table is untouched.
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the
