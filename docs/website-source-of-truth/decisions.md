@@ -386,6 +386,22 @@
   cannibalize the installer page (different spine) — ironic, since the old pump-service page was *further* from
   Excavation than the installer page is. 301 redirect from the old slug added to the launch checklist.
 
+## 2026-06-17 — Completed the sitewide em-dash pass (RESOLVES the open question above)
+- **Decision (owner): yes, full sitewide pass.** Done. Removed every em dash from customer-facing copy across
+  the whole site, **672 → 0**. The rationale that won it: for a *marketing agency's own* site, em-dash overuse
+  is the single most recognizable "AI-written" tell, so it's a real credibility issue; and the half-done state
+  (4 clean pages, rest not) was the worst version.
+- **Done by hand, judged per instance** (not a blind find/replace, which would create comma splices and run-ons):
+  parentheticals with internal commas → parentheses; list lead-ins → colons; tag-ons / causal "so" / expansions →
+  commas; strong contrasts and punchlines → periods. **En dashes in ranges preserved** (Sept–Nov, 3–5 yrs, $60K–$80K).
+- **Fixed at the SOURCE so it stays clean going forward:** `_header.html` + `_footer.html` (8 em dashes stamped
+  into all 32 pages — the biggest single win, ~38% of the total), `_content.json` (regenerated the 7 service
+  pages), the `gen_service.py` template (the "what's included" subhead + the FAQ placeholder), and
+  `PAGE_TEMPLATE.html`. So future regenerated/stamped pages are born em-dash-free.
+- **Verified:** 0 em dashes across all HTML and all build sources; `build.py --check` passes; `_content.json`
+  valid; homepage + a regenerated service page render with no console errors. (Docs/`.md`/code-comments are not
+  customer-facing and were left as-is, except where edited.)
+
 ## Open Decisions To Track Later
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the

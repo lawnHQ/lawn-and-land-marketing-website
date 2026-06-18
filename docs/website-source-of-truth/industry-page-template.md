@@ -172,7 +172,7 @@ with no CSS change — it's a copy + card-label decision. The `.hl` headline mus
 - **No em dashes in customer-facing copy** (brand rule, adopted 2026-06-17). Use commas, periods, or restructure;
   en dashes in ranges (Sept–Nov, 3–5 years) are fine. Applies to visible copy, meta, and the `@graph` text.
   The four demand-mode pages (holiday-lighting, land-clearing, excavation, septic) were built clean; the first
-  four pages and the shared nav/footer still contain em dashes (a sitewide pass is an open owner decision).
+  four pages and the shared nav/footer were brought em-dash-free too (a sitewide pass completed 2026-06-17; the whole site and the build sources are clean).
 - **Freshness — honest only.** Keep `dateModified` in the page's `@graph` schema, bumped **only on real
   updates**. **No visible "updated" chip, and never auto-stamp the current month** — that's "fake
   freshness" Google distrusts (it cross-checks the date against real content change) and it violates

@@ -83,8 +83,8 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 ## What is NOT done
 - **Industry pages — ALL 8 DONE** (`/industries/*`): landscaping, lawn-care, lawn-maintenance, outdoor-living,
   holiday-lighting, land-clearing, excavation, septic-installation. The canonical 8 are complete (see DONE above).
-  Remaining polish, not blockers: real images for the placeholders, and (optional) a sitewide em-dash pass so
-  the earlier four pages + nav/footer match the new no-em-dash rule.
+  Remaining polish, not blockers: real images for the placeholders, and the sitewide em-dash pass is complete (2026-06-17), so
+  the whole site is now em-dash-free.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages need three **owner inputs** to be truly finished (below).
 
@@ -95,7 +95,7 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 
 ## Highest-priority work next
 1. **Industry pages: all 8 built.** Remaining is polish, not new builds: drop real images into the
-   placeholders, and decide on the optional sitewide em-dash pass (earlier four pages + nav/footer).
+   placeholders, the sitewide em-dash pass is complete (2026-06-17).
 2. Design + build the remaining non-home pages (About, Contact, Resources).
 3. Land the service-page owner inputs (FAQ answers, conviction stats, images) → add `FAQPage` schema there.
 4. **Launch cutover** to lawnandlandmarketing.com (later) — work `seo-launch-checklist.md`.

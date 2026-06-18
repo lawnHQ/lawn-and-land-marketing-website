@@ -63,8 +63,8 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   (phase cycle: pre-sell → booking → install → re-book); **Land Clearing** (pipeline / ground-access / burn /
   fire-mitigation); **Excavation** (pipeline / residential-vs-commercial split / dig conditions / 811);
   **Septic Installation** (failed-system replacement / new construction / real-estate upgrade / compliance — repositioned 2026-06-17 from septic *services* to *installers*, the owner's real prospect). The last four were authored
-  **em-dash-free** (new brand rule); the earlier four + the shared nav/footer still have em dashes (sitewide
-  pass pending). Each page: full `@graph` schema, no pricing, real proof. See `build-status.md` /
+  **em-dash-free** (new brand rule); the earlier four + the shared nav/footer were brought em-dash-free too (sitewide
+  pass completed 2026-06-17). Each page: full `@graph` schema, no pricing, real proof. See `build-status.md` /
   `decisions.md` / `industry-page-template.md` for the per-trade splits.
 - **Universal header + footer** via `build.py` (edit `_header.html` / `_footer.html`; stamps everywhere).
   Nav Programs submenu icons: sprout (Growth), trophy (Authority).
@@ -74,8 +74,8 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
 
 ## Status — what's NOT done (shells / next up)
 - **Industry pages: all 8 built** (see DONE above) — no remaining industry builds. Polish only: real images
-  for the placeholders, and an optional sitewide em-dash pass (earlier four pages + nav/footer) to match the
-  new no-em-dash rule the last four were built under.
+  for the placeholders, and the sitewide em-dash pass is complete (2026-06-17), so the
+  whole site is now em-dash-free.
 - **About, Contact, Resources/\*** — shells.
 - The 8 service pages still need three owner inputs to be final: real FAQ answers (→ then add
   `FAQPage` schema), verified conviction stats, and real images for the labeled placeholders.
