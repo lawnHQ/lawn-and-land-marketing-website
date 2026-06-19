@@ -516,7 +516,10 @@
   line for the more traditional buyer.
 
 ## Open Decisions To Track Later
-- **PENDING OWNER:** real headshot for **Jez Pangan** (currently a "JP" placeholder on About).
+- **PENDING OWNER:** real headshots for **all 10 team members** (About `#team`). All cards are now
+  **initials placeholders** (`.team-ph`) by owner request — the scraped `/our-team/` photos were
+  unreliable (the Jez slot alone served a fired employee's photo, then a third person), so we cleared
+  them all; owner is sending fresh photos. Names + titles are confirmed accurate (and in the schema).
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the
   other 6 industries, one at a time. Sub-question RESOLVED 2026-06-16: the `.ind-*` CSS was extracted to a
