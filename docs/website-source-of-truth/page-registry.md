@@ -40,7 +40,7 @@ Status key
 | Resources | Resources hub | `/resources/` | scaffolded | Shell. |
 | Resources | Blog | `/resources/blog/` | scaffolded | Exists but pulled from homepage nav/flow as unfinished; needs content strategy. |
 | Resources | Meet The Team | `/resources/meet-the-team/` | **killed** | Consolidated into the About page 2026-06-17 (`/about/#team`). Shell deleted, removed from sitemap, nav + footer repointed. Add a launch 301 → `/about/#team`. |
-| Resources | Experiences / Reviews | `/resources/experiences-reviews/` | scaffolded | Shell. |
+| Resources | Experiences / Reviews | `/resources/experiences-reviews/` | **developed** | Built 2026-06-19. Reviews/testimonials gallery (EEAT anchor for social proof). Hero → "they stay" retention intro + Google-reviews link → **video testimonials grid** (6 real, reuses homepage `.testi-card` + `.testi-video-wrap` click-to-play, so it's add-a-card-to-grow) → **case studies** (3 real, `.proof-cases-grid`) → radical-transparency "we publish our worst review" Twilight band → **cross-link band to `lawnandlandmarketingreviews.com`** (the reviews-microsite strategy) + Google → CTA. `CollectionPage` + `BreadcrumbList` schema; **no Review/AggregateRating** (first-party rule). Screenshot wall + more videos to be added as the owner sends Drive content. |
 | Resources | Private Facebook Group | `/resources/private-facebook-group/` | scaffolded | Shell. |
 | Resources | Mow Money, Mow Problems Podcast | `/resources/mow-money-mow-problems-podcast/` | scaffolded | Shell. |
 

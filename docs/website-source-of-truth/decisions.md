@@ -515,7 +515,32 @@
 - **Parked (post-launch):** per-person team bios / deeper team entities; A/B-watch the "we lean on AI"
   line for the more traditional buyer.
 
+## 2026-06-19 — Built the Experiences & Reviews page (social-proof EEAT anchor)
+- **Purpose:** the trust/social-proof hub, built to rank + feed AI/crawlers + convert. Owner wants it to
+  grow into a big "wall" of testimonial videos + review screenshots ("wow, look at all these").
+- **Populated now with REAL existing content** (pulled from the homepage, no inventing): 6 video
+  testimonials (Peter Logan/Logan's, Phillip Sirmon/P&C, Zach Franz/Rock Solid, Rick McCarty/Brothers,
+  Prentiss Holt/VASH, Nate Moses/Precision) + 3 case studies (Rock Solid $700K→$1.3M, Precision 200→600
+  calls/mo, From The Ground Up $1.8M→$3.2M) + the "they stay" retention line + the worst-review
+  transparency play.
+- **Built to grow:** reuses the homepage `.testi-card` / `.testi-video-wrap` components (so the
+  click-to-play already works via existing `main.js`) and the `.proof-cases-grid`. The video grid
+  auto-flows, with an HTML comment template for adding a card. Screenshot wall + more videos get added
+  as the owner sends the Google Drive content.
+- **Reviews-microsite cross-link strategy (owner):** owner bought `lawnandlandmarketingreviews.com` (an
+  exact-match "[company] reviews" domain) to rank for "[company] reviews" queries. This page links OUT
+  to it (dofollow, `See all our reviews`) + to the Google Business reviews; the microsite should link
+  BACK to the main site (owner's side). Cross-link confirmed live (microsite returns 200).
+- **Schema:** `CollectionPage` + `BreadcrumbList`. **Deliberately NO `Review` / `AggregateRating`** on
+  first-party testimonials (established rule; Google won't show self-serving stars and it risks a
+  penalty). VideoObject held until real per-video metadata (upload dates) exists.
+- Verified on preview: click-to-play spawns the right YouTube iframe, 6/6 thumbnails load, mobile +
+  desktop clean, no orphans/scroll, em-dash + emoji free, `build.py --check` in sync.
+
 ## Open Decisions To Track Later
+- **PENDING OWNER:** testimonial **videos + review screenshots** (Google Drive) to expand the
+  Experiences page into the full "wall"; and confirm `lawnandlandmarketingreviews.com` links back to the
+  main site.
 - **PENDING OWNER:** real headshots for **all 10 team members** (About `#team`). All cards are now
   **initials placeholders** (`.team-ph`) by owner request — the scraped `/our-team/` photos were
   unreliable (the Jez slot alone served a fired employee's photo, then a third person), so we cleared
