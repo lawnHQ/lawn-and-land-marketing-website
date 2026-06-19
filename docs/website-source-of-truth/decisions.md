@@ -537,10 +537,25 @@
 - Verified on preview: click-to-play spawns the right YouTube iframe, 6/6 thumbnails load, mobile +
   desktop clean, no orphans/scroll, em-dash + emoji free, `build.py --check` in sync.
 
+## 2026-06-19 — Experiences page revisions (owner feedback)
+- **Removed the "worst review" transparency section** — owner reversed course, does not want that route.
+  (Was a strong EEAT signal per the auditor, but owner's call; gone from the page.)
+- **Removed the TOP Google-reviews link** (intro). Owner: videos are the highest-value proof, Google is
+  the lowest, and he doesn't want to funnel people to Google from the top. **One** Google link remains,
+  in the bottom cross-link band (owner approved keeping that one).
+- **Added a 5-star signal** at the top of the "Our clients say it best" section (gold stars + "Five-star
+  rated by green-industry owners across the country" — qualitative, no fabricated numeric average).
+- **Added an 11-screenshot wall** (masonry `.shot-wall`, real screenshots pulled from the legacy
+  `/reviews/`: Google reviews, client texts, social posts) in `assets/images/reviews/`. Scales as more
+  are added (HTML comment template included).
+- **VIDEO HOSTING — open decision (owner):** owner's Drive folder has 16 raw .mp4 testimonials (24-84MB
+  each, growing). Raw video can't live in the static repo, and Drive embeds get throttled on a public
+  page. Recommended **YouTube** (matches the existing 6, free, scales, no quota, best for SEO). Awaiting
+  owner's choice before wiring more videos in.
+
 ## Open Decisions To Track Later
-- **PENDING OWNER:** testimonial **videos + review screenshots** (Google Drive) to expand the
-  Experiences page into the full "wall"; and confirm `lawnandlandmarketingreviews.com` links back to the
-  main site.
+- **PENDING OWNER:** **video hosting decision** (above) to expand the testimonial wall; and confirm
+  `lawnandlandmarketingreviews.com` links back to the main site.
 - **PENDING OWNER:** real headshots for **all 10 team members** (About `#team`). All cards are now
   **initials placeholders** (`.team-ph`) by owner request — the scraped `/our-team/` photos were
   unreliable (the Jez slot alone served a fired employee's photo, then a third person), so we cleared
