@@ -553,9 +553,28 @@
   page. Recommended **YouTube** (matches the existing 6, free, scales, no quota, best for SEO). Awaiting
   owner's choice before wiring more videos in.
 
+## 2026-06-19 — Built the vertical video testimonial wall (22 Shorts)
+- **Video hosting RESOLVED:** owner chose YouTube. Team uploaded 22 short-form (9:16) testimonial
+  **Shorts** across 8 clients (Zach/Rock Solid, Tami/Artistic Landscape Features, Rick/Brothers Outdoor,
+  Phillip/P&C, Peter/Logan's, Nate/Precision, David/Creative Edge, Tim/Hill) as Public, and dropped the
+  embed links in a Google Sheet. Built a dense **vertical wall** (`.vt-grid` / `.vtcard`, 5-up desktop /
+  2-up mobile), **interleaving clients** so the top rows show variety. Reused the existing
+  `.testi-video-wrap` click-to-play JS (just overrode the aspect to 9/16 via `.short-vid`).
+- **Replaced the 6 older landscape testimonial cards** on this page (went all-vertical for consistency +
+  density; the landscape 6 still live on the homepage). Can re-add them as a "featured" row if the owner
+  wants.
+- **Thumbnails:** YouTube serves a clean 9:16 vertical poster at `i.ytimg.com/vi/<id>/oardefault.jpg`
+  (confirmed for all 22). Hotlinked, no hosting needed.
+- **VideoObject schema** for all 22 (name = the YouTube title, description = per-clip summary,
+  thumbnailUrl, embedUrl, contentUrl, uploadDate=2026-06-19 approx). This is the video-rich-result /
+  AI-crawl signal.
+- **Flag for owner:** Tami's YouTube *descriptions* say "Building Growth Landscaping" but her business
+  (and the video titles) say "Artistic Landscape Features" — the descriptions on those 3 videos should
+  be corrected on YouTube. The page uses the correct "Artistic Landscape Features."
+
 ## Open Decisions To Track Later
-- **PENDING OWNER:** **video hosting decision** (above) to expand the testimonial wall; and confirm
-  `lawnandlandmarketingreviews.com` links back to the main site.
+- **PENDING OWNER:** confirm `lawnandlandmarketingreviews.com` links back to the main site (reviews
+  cross-link strategy); review screenshots still welcome to grow the screenshot wall.
 - **PENDING OWNER:** real headshots for **all 10 team members** (About `#team`). All cards are now
   **initials placeholders** (`.team-ph`) by owner request — the scraped `/our-team/` photos were
   unreliable (the Jez slot alone served a fired employee's photo, then a third person), so we cleared
