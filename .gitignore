@@ -1,5 +1,8 @@
-.vercel
-node_modules/
 .DS_Store
+*.tmp
 *.log
-.env*
+# heavy source/raw images — only the optimized versions ship
+*-raw.jpg
+*-raw.jpeg
+*-raw.png
+assets/images/raw/
