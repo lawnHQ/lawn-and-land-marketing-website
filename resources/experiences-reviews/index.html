@@ -182,7 +182,7 @@
       padding: 0 24px;
     }
     .hero-copy { max-width: 760px; }
-    .hero-copy h2 {
+    .hero-copy h1.hero-bighead, .hero-copy h2 {
       font-family: var(--font-h);
       font-size: clamp(36px, 5vw, 58px);
       line-height: 0.96;
@@ -276,7 +276,7 @@
     .xlink-row { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:30px; }
   
     /* 5-star signal + screenshot wall */
-    .hero-rating { display:inline-flex; align-items:center; gap:13px; flex-wrap:wrap; margin:0 0 22px; }
+    .hero-rating { display:inline-flex; align-items:center; gap:13px; flex-wrap:wrap; margin:0 0 16px; }
     .hero-rating-stars { color:#FFC83D; font-size:21px; letter-spacing:3px; line-height:1; text-shadow:0 0 16px rgba(255,200,61,0.55); }
     .hero-rating-text { font-family:var(--font-l); font-size:13px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; color:rgba(255,255,255,0.74); }
     .shot-wall { columns:3; column-gap:16px; max-width:1080px; margin:46px auto 0; }
@@ -523,9 +523,8 @@
     <div class="hero-inner">
       <div class="hero-copy" data-reveal="fade-up">
         <div class="crumbs"><a href="/">Home</a><span>/</span><a href="/resources/">Resources</a><span>/</span><span>Experiences &amp; Reviews</span></div>
-        <h1 class="hero-kicker">Experiences &amp; Reviews</h1>
-        <h2>Don't take our word for it.</h2>
         <div class="hero-rating"><span class="hero-rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="hero-rating-text">Five-star rated by green-industry owners across the country</span></div>
+        <h1 class="hero-bighead">Don't take our word for it.</h1>
         <p>We could tell you all day how good working with us is. Instead, hear it straight from the green-industry owners who trust us with their growth, in their own words and with their own numbers.</p>
         <div class="hero-actions">
           <a href="/get-started/book-strategy-call/" class="btn btn--lime">
