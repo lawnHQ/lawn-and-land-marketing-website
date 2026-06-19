@@ -492,7 +492,31 @@
 - **CSS gotcha fixed:** `.team-card img` needed `height:auto` — the `height="520"` HTML attribute was
   overriding `aspect-ratio:1/1` and rendering tall cards. (The owner photo already had `height:auto`.)
 
+## 2026-06-17 — About page: external SEO audit response (EEAT anchor)
+- Auditor graded the page on EEAT + conversion (correct lens for an About page) and compared it to
+  Lawnline. Net: we win on trust/team-depth/human-founder; close gaps were technical + scope.
+- **Schema was already present** (auditor couldn't see it on a rendered fetch and assumed it might be
+  missing). Confirmed Organization + Person + AboutPage + BreadcrumbList. **Added** `memberOf` (NALP) and
+  `employee` (the 10 team members as Person entities) to the Organization node.
+- **Scope language widened** — it said "built exclusively for lawn care and landscaping companies" in
+  meta/OG/schema/hero, too narrow for an 8-trade site. Now leads with "green-industry marketing agency"
+  and names the breadth (lawn & landscape -> land clearing, excavation, septic). Earns the head term
+  "green-industry marketing agency" once, visibly (hero).
+- **Third-party reviews:** added an outbound "Read our reviews on Google" link (owner-supplied
+  share.google link) in the stat band — stronger EEAT than on-page testimonials.
+- **Roster / the Jez photo bug:** owner confirmed all names + titles accurate. BUT the legacy
+  `/our-team/` page has a FIRED employee's old photo (Ali Mustafa, "Facebook Ads Specialist") sitting in
+  **Jez Pangan's** card — proven by the image's `alt` text. My position-based scrape inherited it.
+  Replaced with a clean **"JP" initials placeholder** (`.team-ph`); **need Jez's real headshot from the
+  owner.** (The owner's live WP site still shows Ali's face under Jez's name — flagged to fix there too.)
+- **Declined (owner):** a scale dollar figure (they don't have Lawnline-size numbers and won't fabricate)
+  and a hard tenure reframe (the bio already honestly carries "Shoot To Thrill, 2016" + "green industry
+  since 2022"; being the smaller, more-honest option is the brand edge, so no "10+ years" inflation).
+- **Parked (post-launch):** per-person team bios / deeper team entities; A/B-watch the "we lean on AI"
+  line for the more traditional buyer.
+
 ## Open Decisions To Track Later
+- **PENDING OWNER:** real headshot for **Jez Pangan** (currently a "JP" placeholder on About).
 - **Industry-page content + template** — RESOLVED 2026-06-15: the reusable framework is built and
   proven on `/industries/landscaping/` (see the dated entry above). Remaining work is rolling it to the
   other 6 industries, one at a time. Sub-question RESOLVED 2026-06-16: the `.ind-*` CSS was extracted to a
