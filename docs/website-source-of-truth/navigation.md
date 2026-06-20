@@ -97,6 +97,9 @@ Single-source, stamped by `build.py`. Rows: (1) brand + **click-to-call phone (7
 `/privacy-policy/` · hello@lawnandlandmarketing.com). Tagline: "Green
 industry specialists since 2022."
 
+## Per-page exception: the booking page
+`/get-started/book-strategy-call/` intentionally runs **stripped minimal chrome** (logo-only header + slim footer) for conversion — fewer exits at the bottom of the funnel (2026-06-20 build brief). It uses **non-`.announcement-bar` / non-`.footer-v2`** markup, so `build.py` skips it by design (regex no-match) and `--check` stays green. **Edit that page's header/footer by hand** — the partials do NOT stamp it. This is the only page exempt from the universal chrome.
+
 ## How to change the nav or footer
 1. Edit `_header.html` (announcement + nav) or `_footer.html`.
 2. If you touched the mega CSS, edit `styles.css` and **bump `styles.css?v=` sitewide**

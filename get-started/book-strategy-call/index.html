@@ -254,259 +254,97 @@
     .cal-fallback { text-align:center; margin:16px auto 0; max-width:48ch; font-family:var(--font-l); font-size:13px; line-height:1.5; color:rgba(255,255,255,0.45); }
     .cal-fallback a { color:rgba(255,255,255,0.7); text-decoration:underline; text-underline-offset:2px; }
     .cal-fallback a:hover { color:var(--lime); }
+    /* ---- BOOKING REBUILD: minimal chrome + calendar-first + proof + VSL ---- */
+    .book-mini-header { border-bottom:1px solid rgba(255,255,255,0.08); background:rgba(7,16,10,0.65); }
+    .book-mini-inner { max-width:1180px; margin:0 auto; padding:17px 24px; }
+    .book-mini-logo img { display:block; height:42px; width:auto; }
+    .book-sched { max-width:1180px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:minmax(0,1.55fr) minmax(0,1fr); gap:clamp(24px,3vw,44px); align-items:start; }
+    .book-cal { scroll-margin-top:80px; }
+    .book-aside { display:flex; flex-direction:column; gap:16px; }
+    .aside-stat { display:flex; gap:11px; align-items:flex-start; padding:18px 20px; border:1px solid rgba(172,231,29,0.22); border-radius:14px; background:rgba(172,231,29,0.05); font-family:var(--font-l); font-size:14.5px; line-height:1.5; color:rgba(255,255,255,0.8); }
+    .aside-stat svg { flex-shrink:0; width:20px; height:20px; stroke:var(--lime); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; margin-top:1px; }
+    .aside-stat strong { color:var(--lime); font-weight:800; }
+    .aside-quote { margin:0; padding:22px; border:1px solid rgba(255,255,255,0.1); border-radius:14px; background:rgba(255,255,255,0.025); }
+    .aside-quote .aq-stars { color:#FFC83D; font-size:14px; letter-spacing:3px; line-height:1; text-shadow:0 0 12px rgba(255,200,61,0.4); margin-bottom:12px; }
+    .aside-quote blockquote { margin:0 0 12px; font-family:var(--font-h); font-style:italic; font-weight:800; font-size:21px; line-height:1.25; color:var(--white); }
+    .aside-quote figcaption { font-family:var(--font-l); font-size:13.5px; color:rgba(255,255,255,0.6); }
+    .book-vsl { padding:clamp(48px,6vw,82px) 0 0; }
+    .vsl-head { max-width:640px; margin:0 auto 28px; text-align:center; }
+    .vsl-frame { max-width:760px; margin:0 auto; }
+    .vsl-frame .testi-video-wrap { border-radius:18px; box-shadow:0 30px 70px rgba(0,0,0,0.4); }
+    .book-prep { display:flex; gap:12px; align-items:flex-start; max-width:660px; margin:34px auto 0; padding:16px 20px; border:1px dashed rgba(172,231,29,0.3); border-radius:14px; background:rgba(172,231,29,0.04); font-family:var(--font-l); font-size:14.5px; line-height:1.55; color:rgba(255,255,255,0.74); }
+    .book-prep svg { flex-shrink:0; width:20px; height:20px; stroke:var(--lime); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; margin-top:1px; }
+    .book-prep strong { color:rgba(255,255,255,0.92); font-weight:700; }
+    .book-more { text-align:center; margin:30px 0 0; font-family:var(--font-l); font-size:15px; }
+    .book-more a { color:var(--lime); text-decoration:none; font-weight:600; }
+    .book-more a:hover { text-decoration:underline; }
+    .book-slim-footer { border-top:1px solid rgba(255,255,255,0.08); margin-top:clamp(48px,7vw,90px); padding:36px 24px; }
+    .book-slim-inner { max-width:1180px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:18px 30px; }
+    .book-slim-logo img { display:block; height:36px; width:auto; }
+    .book-slim-contact { display:flex; flex-wrap:wrap; gap:6px 22px; font-family:var(--font-l); font-size:14.5px; }
+    .book-slim-contact a { color:rgba(255,255,255,0.74); text-decoration:none; }
+    .book-slim-contact a:hover { color:var(--lime); }
+    .book-slim-footer .fv2-social { margin-top:0; }
+    .book-slim-legal { width:100%; display:flex; flex-wrap:wrap; gap:7px 18px; padding-top:18px; border-top:1px solid rgba(255,255,255,0.07); font-family:var(--font-l); font-size:12.5px; color:rgba(255,255,255,0.45); }
+    .book-slim-legal a { color:rgba(255,255,255,0.55); text-decoration:none; }
+    .book-slim-legal a:hover { color:var(--lime); }
+    @media (max-width:860px){ .book-sched { grid-template-columns:1fr; gap:26px; } }
   </style>
 </head>
 <body>
 
-  <!-- ANNOUNCEMENT BAR -->
-  <div class="announcement-bar">
-    <a href="/get-started/book-strategy-call/" class="announcement-inner announcement-inner--link">
-      <span class="announcement-text"><svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:7px;"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>Free strategy call available. Book now to discuss your growth &nbsp;→</span>
-    </a>
-  </div>
-
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo">
-        <img src="/assets/logos/logo-horizontal.svg" alt="Lawn & Land Marketing" width="190" height="49">
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-menu" id="navMenu">
-        <a href="/" class="nav-link">Home</a>
-
-        <div class="nav-item nav-mega">
-          <button class="nav-link" type="button" aria-haspopup="true">About <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
-          <div class="mega-panel mega-panel--narrow">
-            <div class="mega-grid mega-grid--single">
-              <div class="mega-col">
-                <div class="mega-col-label">Who We Are</div>
-                <a href="/about/" class="mega-item mega-item--active">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 19c1.8-3.2 4.2-4.8 7-4.8s5.2 1.6 7 4.8"></path></svg></span>
-                  <span class="mega-item-text"><strong>About</strong><em>Our story, mission, and why this industry matters to us.</em></span>
-                </a>
-                <a href="/resources/experiences-reviews/" class="mega-item mega-item--twilight">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.5 6.7 20l1-5.8L3.5 10l5.9-.9L12 4l2.6 5.1 5.9.9-4.2 4.2 1 5.8Z"></path></svg></span>
-                  <span class="mega-item-text"><strong>Experiences &amp; Testimonials</strong><em>See and hear what it's really like to work with us.</em></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="nav-item nav-mega">
-          <a href="/programs/" class="nav-link" aria-haspopup="true">Programs <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></a>
-          <div class="mega-panel">
-            <div class="mega-grid mega-grid--programs">
-              <a href="/programs/growth/" class="mega-item mega-item--growth">
-                <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"></path><path d="M10 20c5.5-2.5.8-6.4 3-10"></path><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"></path><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"></path></svg></span>
-                <span class="mega-item-text">
-                  <div class="mega-item-header">
-                    <span class="mega-target-pill mega-target-pill--growth">For 6-Figure Companies</span>
-                    <strong>Growth</strong>
-                  </div>
-                  <em>Traffic, lead flow, and demand generation for the next stage.</em>
-                </span>
-              </a>
-              <a href="/programs/authority/" class="mega-item mega-item--authority">
-                <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></span>
-                <span class="mega-item-text">
-                  <div class="mega-item-header">
-                    <span class="mega-target-pill mega-target-pill--authority">For 7-Figure Companies</span>
-                    <strong>Authority</strong>
-                  </div>
-                  <em>Build the category-leading brand in your market.</em>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="nav-item nav-mega">
-          <a href="/marketing-services/" class="nav-link" aria-haspopup="true">Marketing Services <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></a>
-          <div class="mega-panel">
-            <div class="mega-grid mega-grid--wide">
-              <div class="mega-col">
-                <div class="mega-col-label">Acquire Demand</div>
-                <a href="/marketing-services/website-design/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"></path><path d="M10 19v-3.96 3.15"></path><path d="M7 19h5"></path><rect width="6" height="10" x="16" y="12" rx="2"></rect></svg></span>
-                  <span class="mega-item-text"><strong>Website Design</strong><em>Turn the first click into the next booked estimate.</em></span>
-                </a>
-                <a href="/marketing-services/local-seo/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></span>
-                  <span class="mega-item-text"><strong>Local SEO</strong><em>Own the organic search results in the markets that matter.</em></span>
-                </a>
-                <a href="/marketing-services/gbp-management/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
-                  <span class="mega-item-text"><strong>GBP Management</strong><em>Win more map-pack calls without guessing what Google wants.</em></span>
-                </a>
-                <a href="/marketing-services/google-ads/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
-                  <span class="mega-item-text"><strong>Google Ads</strong><em>Capture intent from homeowners ready to hire now.</em></span>
-                </a>
-              </div>
-              <div class="mega-col">
-                <div class="mega-col-label">Convert & Retain</div>
-                <a href="/marketing-services/meta-ads/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 13a3 3 0 1 0-6 0"></path><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><circle cx="12" cy="8" r="2"></circle></svg></span>
-                  <span class="mega-item-text"><strong>Meta Ads</strong><em>Stay in front of local homeowners before they search.</em></span>
-                </a>
-                <a href="/marketing-services/your-ai-partner/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><path d="M8 16h.01M16 16h.01"></path></svg></span>
-                  <span class="mega-item-text"><strong>Your AI Partner</strong><em>Operational leverage, smarter follow-up, and faster execution.</em></span>
-                </a>
-                <a href="/marketing-services/reputation-management/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 14.8 8.7 21 9.6l-4.5 4.4 1.1 6.1L12 17.2 6.4 20.1l1.1-6.1L3 9.6l6.2-.9Z"></path></svg></span>
-                  <span class="mega-item-text"><strong>Reputation Management</strong><em>Turn happy clients into proof that compounds.</em></span>
-                </a>
-                <a href="/marketing-services/automation/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path><path d="M16 16h5v5"></path></svg></span>
-                  <span class="mega-item-text"><strong>CRM &amp; Automation</strong><em>Capture every lead in one CRM and follow up automatically.</em></span>
-                </a>
-              </div>
-              <div class="mega-col mega-col--featured">
-                <div class="mega-featured-card">
-                  <span class="mega-featured-label">Built As One Machine</span>
-                  <div class="mega-fc-title">Most Companies Don’t Need Another Vendor.</div>
-                  <p>You need one connected system (website, SEO, ads, reviews, and follow-up) built to work together and run by a single team that owns the result.</p>
-                  <a href="/get-started/book-strategy-call/" class="mega-featured-btn">See What We’d Build →</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="nav-item nav-mega">
-          <a href="/industries/" class="nav-link" aria-haspopup="true">Industries <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></a>
-          <div class="mega-panel">
-            <div class="mega-grid mega-grid--wide">
-              <div class="mega-col">
-                <div class="mega-col-label">Lawn &amp; Landscape</div>
-                <a href="/industries/landscaping/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"/><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-4"/><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"/><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"/></svg></span>
-                  <span class="mega-item-text"><strong>Landscaping</strong><em>Win higher-ticket design and install work with stronger proof.</em></span>
-                </a>
-                <a href="/industries/outdoor-living/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 9h18M3 15h18"/><path d="M9 3v6M15 3v6"/><path d="M12 9v6"/><path d="M9 15v6M15 15v6"/></svg></span>
-                  <span class="mega-item-text"><strong>Outdoor Living</strong><em>Showcase premium installs and justify premium pricing.</em></span>
-                </a>
-                <a href="/industries/lawn-care/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8Z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2Z"/></svg></span>
-                  <span class="mega-item-text"><strong>Lawn Care</strong><em>Recurring route density, retention, and seasonal demand.</em></span>
-                </a>
-                <a href="/industries/lawn-maintenance/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
-                  <span class="mega-item-text"><strong>Lawn Maintenance</strong><em>Lock in contracts, upsells, and year-round route value.</em></span>
-                </a>
-              </div>
-              <div class="mega-col">
-                <div class="mega-col-label">Land &amp; Specialty</div>
-                <a href="/industries/land-clearing/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 12-8.5 8.5a2.12 2.12 0 1 1-3-3L11 9"/><path d="M15 13 9 7l4-4 6 6h3a8 8 0 0 1-7 7z"/></svg></span>
-                  <span class="mega-item-text"><strong>Land Clearing</strong><em>Capture project-based demand with local authority and speed.</em></span>
-                </a>
-                <a href="/industries/excavation/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22v-5l5-5 5 5-5 5z"/><path d="M9.5 14.5 16 8"/><path d="m17 2 5 5-.5.5a3.53 3.53 0 0 1-5 0 3.53 3.53 0 0 1 0-5L17 2"/></svg></span>
-                  <span class="mega-item-text"><strong>Excavation</strong><em>Project-based search demand with local trust as the wedge.</em></span>
-                </a>
-                <a href="/industries/septic-installation/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/></svg></span>
-                  <span class="mega-item-text"><strong>Septic Installation</strong><em>High-ticket installs and drainfield work, won on trust and proof.</em></span>
-                </a>
-                <a href="/industries/holiday-lighting/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/><path d="M5 3v4M19 17v4M3 5h4M17 19h4"/></svg></span>
-                  <span class="mega-item-text"><strong>Holiday Lighting</strong><em>Book a full season fast with urgency-driven local marketing.</em></span>
-                </a>
-              </div>
-              <div class="mega-col mega-col--featured">
-                <div class="mega-featured-card">
-                  <span class="mega-featured-label">Industry Focus</span>
-                  <div class="mega-fc-title">We Only Work In The Green Industry.</div>
-                  <p>That means faster messaging, smarter strategy, and fewer expensive learning curves on your dime.</p>
-                  <a href="/about/" class="mega-featured-btn">Why Specialization Wins →</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="nav-item nav-mega">
-          <a href="/resources/" class="nav-link" aria-haspopup="true">Resources <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></a>
-          <div class="mega-panel">
-            <div class="mega-grid mega-grid--wide">
-              <div class="mega-col">
-                <div class="mega-col-label">Mow Money, Mow Problems</div>
-                <a href="/resources/mow-money-mow-problems-podcast/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="4" width="6" height="10" rx="3"></rect><path d="M6 11c0 3.3 2.7 6 6 6s6-2.7 6-6"></path><path d="M12 17v3"></path><path d="M9 20h6"></path></svg></span>
-                  <span class="mega-item-text"><strong>The Podcast</strong><em>Field-tested growth, ops &amp; marketing. Apply to guest.</em></span>
-                </a>
-                <a href="https://www.youtube.com/@MowMoneyMowProblemsPodcast" target="_blank" rel="noopener" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></span>
-                  <span class="mega-item-text"><strong>YouTube Channel</strong><em>Watch full episodes, clips, and how-tos.</em></span>
-                </a>
-                <a href="https://www.amazon.com/Mow-Money-Problems-Marketing-Landscape/dp/B0DRZ2XZXL" target="_blank" rel="noopener" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg></span>
-                  <span class="mega-item-text"><strong>The Book</strong><em>Our marketing playbook for lawn &amp; landscape companies.</em></span>
-                </a>
-              </div>
-              <div class="mega-col">
-                <div class="mega-col-label">Learn &amp; Connect</div>
-                <a href="/resources/blog/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6.5h10"></path><path d="M7 11.5h10"></path><path d="M7 16.5h6"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg></span>
-                  <span class="mega-item-text"><strong>Green Industry Insights</strong><em>Sharp, practical growth advice on our blog.</em></span>
-                </a>
-                <a href="https://www.facebook.com/groups/serviceareaexperts" target="_blank" rel="noopener" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-                  <span class="mega-item-text"><strong>Private Facebook Group</strong><em>Service Area Experts: training, insight &amp; community.</em></span>
-                </a>
-                <a href="/contact/" class="mega-item">
-                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5 12 13l8-5.5"></path><rect x="4" y="6" width="16" height="12" rx="2"></rect></svg></span>
-                  <span class="mega-item-text"><strong>Contact Us</strong><em>Start the conversation or ask your next question.</em></span>
-                </a>
-              </div>
-              <div class="mega-col mega-col--featured">
-                <a href="/resources/experiences-reviews/" class="mega-featured-card mega-featured-card--twilight">
-                  <div class="mega-fc-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
-                  <span class="mega-featured-label">Client Experiences</span>
-                  <div class="mega-fc-title">See what it's like to work with us.</div>
-                  <p>Real owners, real numbers: the testimonial videos and screenshots behind our results.</p>
-                  <span class="mega-featured-btn">See client experiences →</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a href="/get-started/book-strategy-call/" class="nav-cta nav-cta--primary magnetic">
-          <span class="nav-cta__label">Get Started</span>
-          <span class="nav-cta__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span>
-        </a>
-      </div>
+    <header class="book-mini-header">
+    <div class="book-mini-inner">
+      <a href="/" class="book-mini-logo" aria-label="Lawn &amp; Land Marketing home"><img src="/assets/logos/logo-horizontal.svg" alt="Lawn &amp; Land Marketing" width="190" height="49"></a>
     </div>
-  </nav>
+  </header>
 
   <main id="main">
 
-  <!-- BOOKING: compact intro + calendar front-and-center -->
+  <!-- HERO + SCHEDULER (the calendar always wins the top) -->
   <section class="book-top">
     <div class="book-intro-inner" data-reveal="fade-up">
       <div class="crumbs"><a href="/">Home</a><span>/</span><span>Book Strategy Call</span></div>
       <div class="hero-kicker">Free Strategy Call</div>
       <h1>Book your free strategy call.</h1>
       <p>20 minutes, one-on-one. No pitch and no pressure, just a clear read on what it takes to grow your green-industry company.</p>
-      <div class="book-proof"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg> Trusted by <strong>100+</strong> green-industry companies, with <strong>97%+</strong> client retention.</div>
-    </div>
-    <div class="cal-wrap" id="book" data-reveal="fade-up">
-      <div class="cal-card">
-        <iframe src="https://api.leadconnectorhq.com/widget/booking/u7agGU9Xwo0kjAsLlKif" scrolling="no" id="u7agGU9Xwo0kjAsLlKif_1781974474075" title="Book a free strategy call"></iframe>
-      </div>
       <div class="cal-reassure">
         <span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Free 20-minute call</span>
         <span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> No contracts discussed</span>
         <span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> 100% no-pressure</span>
       </div>
-      <p class="cal-fallback">Calendar not loading? <a href="tel:+17274967098">Call or text (727) 496-7098</a> or <a href="mailto:hello@lawnandlandmarketing.com">email us</a> and we'll get you booked.</p>
+    </div>
+    <div class="book-sched">
+      <div class="book-cal" id="book" data-reveal="fade-up">
+        <div class="cal-card">
+          <iframe src="https://api.leadconnectorhq.com/widget/booking/u7agGU9Xwo0kjAsLlKif" scrolling="no" id="u7agGU9Xwo0kjAsLlKif_1781974474075" title="Book a free strategy call"></iframe>
+        </div>
+        <p class="cal-fallback">Calendar not loading? <a href="tel:+17274967098">Call or text (727) 496-7098</a> or <a href="mailto:hello@lawnandlandmarketing.com">email us</a> and we'll get you booked.</p>
+      </div>
+      <aside class="book-aside" data-reveal="fade-up">
+        <div class="aside-stat"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><span>Trusted by <strong>100+</strong> green-industry companies, with <strong>97%+</strong> client retention.</span></div>
+        <figure class="aside-quote">
+          <div class="aq-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"From 200 to 600 calls a month."</blockquote>
+          <figcaption>Nate, Precision Landscape Management (SC)</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOUNDER VSL -->
+  <section class="book-vsl">
+    <div class="book-wrap">
+      <div class="vsl-head" data-reveal="fade-up">
+        <span class="book-eyebrow">Hear from an owner</span>
+        <h2 class="book-h2">Not sure a call is worth your time? Hear from an owner who was skeptical too.</h2>
+      </div>
+      <div class="vsl-frame" data-reveal="fade-up">
+        <div class="testi-video-wrap" data-videoid="5LGPhGWPJBk">
+          <img class="testi-thumb" src="https://i.ytimg.com/vi/5LGPhGWPJBk/maxresdefault.jpg" alt="Rick of Brothers Outdoor Services on working with Lawn &amp; Land Marketing" loading="lazy">
+          <button class="testi-play" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -540,29 +378,20 @@
           <p>No pressure. If we are not the right team for you, we will say so.</p>
         </div>
       </div>
-      <p style="text-align:center;margin:38px 0 0;font-family:var(--font-l);font-size:15px;color:rgba(255,255,255,0.62);">Prefer to talk it through first? <a href="/contact/" style="color:var(--lime);text-decoration:underline;text-underline-offset:2px;">Contact us</a>.</p>
+      <p class="book-prep"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg> <span><strong>You will be ready.</strong> Once you book, we will send a confirmation plus a couple of reminders so you know exactly what to expect before the call.</span></p>
+      <p class="book-more"><a href="/resources/experiences-reviews/">See more owners and their numbers &rarr;</a></p>
+      <p style="text-align:center;margin:14px 0 0;font-family:var(--font-l);font-size:14.5px;color:rgba(255,255,255,0.55);">Prefer to talk it through first? <a href="/contact/" style="color:rgba(255,255,255,0.8);text-decoration:underline;text-underline-offset:2px;">Contact us</a>.</p>
     </div>
   </section>
   <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
 
   </main>
 
-<footer class="footer-v2">
-    <div class="fv2-glow"></div>
-    <div class="fv2-inner">
-
-      <!-- Row 1: Brand + CTA -->
-      <div class="fv2-brand-row">
-        <div class="fv2-brand-left">
-          <a href="/" class="fv2-logo-link">
-            <img src="/assets/logos/logo-horizontal.svg" alt="Lawn &amp; Land Marketing" width="180" height="46" loading="lazy">
-          </a>
-          <p class="fv2-tagline">Digital marketing built exclusively for the green industry. Websites, SEO, ads, and automation, all working as one complete system designed to help your business grow.</p>
-          <a href="tel:+17274967098" class="fv2-phone" aria-label="Call or text Lawn and Land Marketing">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            (727) 496-7098
-          </a>
-          <div class="fv2-social">
+<footer class="book-slim-footer">
+    <div class="book-slim-inner">
+      <a href="/" class="book-slim-logo" aria-label="Lawn &amp; Land Marketing home"><img src="/assets/logos/logo-horizontal.svg" alt="Lawn &amp; Land Marketing" width="160" height="41" loading="lazy"></a>
+      <div class="book-slim-contact"><a href="tel:+17274967098">(727) 496-7098</a><a href="mailto:hello@lawnandlandmarketing.com">hello@lawnandlandmarketing.com</a></div>
+      <div class="fv2-social">
             <a href="https://www.facebook.com/lawnandlandmarketing" target="_blank" rel="noopener" aria-label="Facebook">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
@@ -576,98 +405,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
           </div>
-        </div>
-        <div class="fv2-cta-card">
-          <div class="fv2-cta-card-inner">
-            <div class="fv2-cta-label">Ready to grow?</div>
-            <p class="fv2-cta-desc">Book a free 20-minute strategy call. No pitch, no pressure, just clarity on what it takes to dominate your market.</p>
-            <a href="/get-started/book-strategy-call/" class="btn btn--lime fv2-cta-btn">Book a Free Strategy Call</a>
-            <span class="fv2-cta-note">Free strategy call &middot; No contracts discussed &middot; 100% no-pressure</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row 2: Link columns -->
-      <div class="fv2-cols-row">
-        <!-- Marketing Services -->
-        <div class="fv2-col">
-          <div class="fv2-col-head">Marketing Services</div>
-          <ul>
-            <li><a href="/marketing-services/website-design/">Website Design</a></li>
-            <li><a href="/marketing-services/local-seo/">Local SEO</a></li>
-            <li><a href="/marketing-services/gbp-management/">GBP Management</a></li>
-            <li><a href="/marketing-services/google-ads/">Google Ads</a></li>
-            <li><a href="/marketing-services/meta-ads/">Meta Ads</a></li>
-            <li><a href="/marketing-services/your-ai-partner/">Your AI Partner</a></li>
-            <li><a href="/marketing-services/reputation-management/">Reputation Management</a></li>
-            <li><a href="/marketing-services/automation/">CRM &amp; Automation</a></li>
-          </ul>
-        </div>
-        <!-- Industries -->
-        <div class="fv2-col">
-          <div class="fv2-col-head">Industries</div>
-          <ul>
-            <li><a href="/industries/landscaping/">Landscaping</a></li>
-            <li><a href="/industries/outdoor-living/">Outdoor Living</a></li>
-            <li><a href="/industries/lawn-care/">Lawn Care</a></li>
-            <li><a href="/industries/lawn-maintenance/">Lawn Maintenance</a></li>
-            <li><a href="/industries/land-clearing/">Land Clearing</a></li>
-            <li><a href="/industries/excavation/">Excavation</a></li>
-            <li><a href="/industries/septic-installation/">Septic Installation</a></li>
-            <li><a href="/industries/holiday-lighting/">Holiday Lighting</a></li>
-          </ul>
-        </div>
-        <!-- Company -->
-        <div class="fv2-col">
-          <div class="fv2-col-head">Company</div>
-          <ul>
-            <li><a href="/about/">About Us</a></li>
-            <li><a href="/programs/">Programs</a></li>
-            <li><a href="/programs/growth/">Growth Program</a></li>
-            <li><a href="/programs/authority/">Authority Program</a></li>
-            <li><a href="/resources/experiences-reviews/">Experiences &amp; Reviews</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Resources -->
-        <div class="fv2-col">
-          <div class="fv2-col-head">Resources</div>
-          <ul>
-            <li><a href="/resources/blog/">Blog</a></li>
-            <li><a href="/resources/private-facebook-group/">Private Facebook Group</a></li>
-            <li><a href="/resources/mow-money-mow-problems-podcast/">Mow Money Podcast</a></li>
-            <li><a href="/get-started/book-strategy-call/">Book a Strategy Call</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Row 3: Trust bar -->
-      <div class="fv2-trust-row">
-        <span class="fv2-trust-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Trusted by 100+ green industry companies
-        </span>
-        <span class="fv2-trust-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          97%+ client retention rate
-        </span>
-        <span class="fv2-trust-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          Green industry specialists since 2022
-        </span>
-      </div>
-
-      <!-- Row 4: Legal bar -->
-      <div class="fv2-legal-row">
-        <span>&copy; 2026 Lawn &amp; Land Marketing. All rights reserved.</span>
-        <span class="fv2-specialty">Green industry marketing specialists &nbsp;&middot;&nbsp; St. Petersburg, FL</span>
-        <div class="fv2-legal-links">
-          <a href="/terms/">Terms of Use</a>
-          <a href="/privacy-policy/">Privacy Policy</a>
-          <a href="mailto:hello@lawnandlandmarketing.com">hello@lawnandlandmarketing.com</a>
-        </div>
-      </div>
-
+      <div class="book-slim-legal"><span>&copy; 2026 Lawn &amp; Land Marketing. All rights reserved.</span><a href="/terms/">Terms of Use</a><a href="/privacy-policy/">Privacy Policy</a></div>
     </div>
   </footer>
 
