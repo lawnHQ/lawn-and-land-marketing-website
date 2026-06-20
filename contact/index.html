@@ -619,7 +619,8 @@
 
   <script>
   (function(){
-    var WEBHOOK = ""; /* PASTE the GoHighLevel inbound-webhook URL here */
+    var WEBHOOK = "https://services.leadconnectorhq.com/hooks/x5MOOAaH49HyBUXG1NNt/webhook-trigger/9fa056a3-e2f9-4888-95c1-f52772fbe961";
+    var CONSENT_TEXT = "I agree to OPT IN to be contacted by Lawn & Land Marketing by call, SMS text, or email related to my submission and marketing. I agree to the terms of use and privacy policy.";
     var f = document.getElementById('contactForm');
     if(!f) return;
     f.addEventListener('submit', function(e){
@@ -628,9 +629,17 @@
       var btn = f.querySelector('.cform-submit');
       btn.disabled = true; btn.textContent = 'Sending...';
       var data = {}; new FormData(f).forEach(function(v,k){ data[k]=v; });
+      var full = (data.name || '').trim().replace(/\s+/g, ' ');
+      var sp = full.indexOf(' ');
+      data.first_name = sp < 0 ? full : full.slice(0, sp);
+      data.last_name  = sp < 0 ? '' : full.slice(sp + 1);
+      data.consent = (f.consent && f.consent.checked) ? 'yes' : 'no';
+      data.consent_text = CONSENT_TEXT;
+      data.source = 'Website contact form (lawnandlandmarketing.com)';
+      data.page_url = window.location.href;
+      data.submitted_at = new Date().toISOString();
       var done = function(){ window.location.href = '/confirmation/'; };
-      if(!WEBHOOK){ done(); return; }
-      fetch(WEBHOOK, {method:'POST', mode:'no-cors', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)}).then(done, done);
+      fetch(WEBHOOK, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)}).then(done, done);
     });
   })();
   </script>
