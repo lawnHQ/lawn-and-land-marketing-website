@@ -265,6 +265,9 @@
     /* CONFIRMATION */
     .booking-slot { border:1px solid rgba(255,255,255,0.1); border-radius:22px; padding:16px; background:rgba(255,255,255,0.02); max-width:940px; margin:0 auto; }
     .booking-slot iframe { width:100%; min-height:420px; border:none; border-radius:12px; display:block; background:transparent; }
+    .cal-fallback { text-align:center; margin:16px auto 0; max-width:48ch; font-family:var(--font-l); font-size:13px; line-height:1.5; color:rgba(255,255,255,0.45); }
+    .cal-fallback a { color:rgba(255,255,255,0.7); text-decoration:underline; text-underline-offset:2px; }
+    .cal-fallback a:hover { color:var(--lime); }
     .conf-check { width:64px; height:64px; border-radius:50%; background:rgba(172,231,29,0.14); border:1px solid rgba(172,231,29,0.4); display:inline-flex; align-items:center; justify-content:center; margin-bottom:22px; }
     .conf-check svg { width:32px; height:32px; stroke:var(--lime); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
   </style>
@@ -524,6 +527,7 @@
       <div class="booking-slot" id="booking-calendar" data-reveal="fade-up">
         <iframe src="https://api.leadconnectorhq.com/widget/booking/u7agGU9Xwo0kjAsLlKif" scrolling="no" id="u7agGU9Xwo0kjAsLlKif_conf" title="Book a free strategy call"></iframe>
       </div>
+      <p class="cal-fallback">Calendar not loading? <a href="tel:+17274967098">Call or text (727) 496-7098</a> or <a href="mailto:hello@lawnandlandmarketing.com">email us</a> and we'll get you booked.</p>
     </div>
   </section>
   <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
