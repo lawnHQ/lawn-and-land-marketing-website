@@ -87,9 +87,10 @@ data verbatim from the Lucide source so it renders correctly.
 - **Lucide icons only** (no emoji). Programs pills use the **digit** form ("6-Figure"); running prose uses
   the **spelled** form ("six-figure").
 - **Get Started** CTA lives in the nav (`.nav-cta--primary`) and routes to the free strategy call.
+- **Phone (727-496-7098) lives in the trust/NAP layer only** — footer (every page, `.fv2-phone`), the contact page, the about page, and schema (`telephone`, matching across all). Intentionally **NOT** in the header/nav or page heroes, so the **Book a Strategy Call** CTA stays the uncontested primary action (2026-06-20 auditor guidance). Display format `(727) 496-7098`; `tel:+17274967098`; schema `+1-727-496-7098`.
 
 ## Footer (`_footer.html`, `.footer-v2`)
-Single-source, stamped by `build.py`. Rows: (1) brand + social + a "Ready to grow?" CTA card;
+Single-source, stamped by `build.py`. Rows: (1) brand + **click-to-call phone (727-496-7098, NAP)** + social + a "Ready to grow?" CTA card;
 (2) four link columns — **Marketing Services** (8), **Industries** (the canonical 8), **Company**,
 **Resources**; (3) a trust bar (100+ companies · 97%+ retention · since 2022); (4) a legal bar
 (© Lawn & Land Marketing · St. Petersburg, FL · Terms of Use → `/terms/` · Privacy Policy →

@@ -2322,6 +2322,28 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
   background: var(--lime);
   color: #07100A;
 }
+.fv2-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 18px;
+  font-family: var(--font-l);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.fv2-phone svg {
+  width: 17px;
+  height: 17px;
+  stroke: var(--lime);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.fv2-phone:hover { color: var(--lime); }
 
 @media (max-width: 720px) {
   .fv2-trust-row {
