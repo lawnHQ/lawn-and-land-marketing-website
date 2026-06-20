@@ -46,6 +46,10 @@ pages can exist outside this list.
 - `/resources/private-facebook-group/` — Private Facebook Group
 - `/resources/mow-money-mow-problems-podcast/` — Mow Money, Mow Problems Podcast
 
+## Legal
+- `/terms/` — Terms of Use
+- `/privacy-policy/` — Privacy Policy
+
 ## Explicitly Killed
 These routes/sections are intentionally not part of the approved public website direction.
 - `/services/`

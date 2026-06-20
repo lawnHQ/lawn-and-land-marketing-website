@@ -92,7 +92,8 @@ data verbatim from the Lucide source so it renders correctly.
 Single-source, stamped by `build.py`. Rows: (1) brand + social + a "Ready to grow?" CTA card;
 (2) four link columns — **Marketing Services** (8), **Industries** (the canonical 8), **Company**,
 **Resources**; (3) a trust bar (100+ companies · 97%+ retention · since 2022); (4) a legal bar
-(© Lawn & Land Marketing · St. Petersburg, FL · hello@lawnandlandmarketing.com). Tagline: "Green
+(© Lawn & Land Marketing · St. Petersburg, FL · Terms of Use → `/terms/` · Privacy Policy →
+`/privacy-policy/` · hello@lawnandlandmarketing.com). Tagline: "Green
 industry specialists since 2022."
 
 ## How to change the nav or footer

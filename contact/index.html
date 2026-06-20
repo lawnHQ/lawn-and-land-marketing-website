@@ -273,7 +273,9 @@
     .contact-form-slot .cfs-title { font-family:var(--font-h); font-style:italic; font-weight:800; font-size:19px; color:rgba(255,255,255,0.85); }
     .contact-form-slot .cfs-note { font-family:var(--font-l); font-size:13.5px; color:rgba(255,255,255,0.5); max-width:34ch; line-height:1.5; }
     .contact-detail { display:flex; gap:14px; align-items:flex-start; margin-bottom:24px; }
-    .contact-detail svg { width:21px; height:21px; stroke:var(--lime); fill:none; stroke-width:1.85; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; margin-top:3px; }
+    .contact-detail > svg { width:21px; height:21px; stroke:var(--lime); fill:none; stroke-width:1.85; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; margin-top:3px; }
+    /* social glyphs are nested inside the detail; keep them footer-style (filled, gray) */
+    .contact-detail .fv2-social a svg { fill:currentColor; stroke:none; }
     .contact-detail .cd-label { font-family:var(--font-l); font-size:11.5px; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:rgba(255,255,255,0.48); margin-bottom:4px; }
     .contact-detail .cd-value { color:var(--white); font-size:16px; line-height:1.5; }
     .contact-detail .cd-value a { color:var(--white); text-decoration:none; }
@@ -286,6 +288,12 @@
     .cform-field textarea { resize:vertical; min-height:108px; }
     .cform-2col { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
     .cform-submit { width:100%; justify-content:center; margin-top:4px; }
+    .cform-field input::placeholder, .cform-field textarea::placeholder { color:rgba(255,255,255,0.36); }
+    .cform-consent { display:flex; gap:11px; align-items:flex-start; margin:2px 0 22px; cursor:pointer; }
+    .cform-consent input { flex-shrink:0; width:18px; height:18px; margin-top:2px; accent-color:var(--lime); cursor:pointer; }
+    .cform-consent span { font-family:var(--font-l); font-size:12.5px; line-height:1.55; color:rgba(255,255,255,0.58); }
+    .cform-consent a { color:var(--lime); text-decoration:underline; text-underline-offset:2px; }
+    .cform-consent a:hover { color:#c9f24f; }
     @media (max-width:520px){ .cform-2col{ grid-template-columns:1fr; gap:0; } }
     @media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; } }
   </style>
@@ -550,13 +558,17 @@
           <h2 style="font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(26px,3.6vw,38px);line-height:1.1;color:var(--white);margin:0 0 14px;">Drop us a line.</h2>
           <p style="font-size:17px;color:rgba(255,255,255,0.74);line-height:1.65;margin:0 0 26px;">Have a question, want a second opinion on your marketing, or wondering if we are the right fit? Fill out the form and we will get back to you. If you would rather just talk it through, book a free strategy call instead.</p>
           <form id="contactForm" class="cform" novalidate>
-            <label class="cform-field">Company name<input type="text" name="company" autocomplete="organization" required></label>
-            <label class="cform-field">Full name<input type="text" name="name" autocomplete="name" required></label>
+            <label class="cform-field">Company name<input type="text" name="company" autocomplete="organization" placeholder="Your company name" required></label>
+            <label class="cform-field">Full name<input type="text" name="name" autocomplete="name" placeholder="Your full name" required></label>
             <div class="cform-2col">
-              <label class="cform-field">Email<input type="email" name="email" autocomplete="email" required></label>
-              <label class="cform-field">Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+              <label class="cform-field">Email<input type="email" name="email" autocomplete="email" placeholder="you@yourcompany.com" required></label>
+              <label class="cform-field">Phone<input type="tel" name="phone" autocomplete="tel" placeholder="(555) 123-4567" required></label>
             </div>
-            <label class="cform-field">How can we help your business?<textarea name="message" rows="4" required></textarea></label>
+            <label class="cform-field">How can we help your business?<textarea name="message" rows="4" placeholder="Tell us about your business, your goals, and what's getting in the way." required></textarea></label>
+            <label class="cform-consent">
+              <input type="checkbox" name="consent" required>
+              <span>I agree to OPT IN to be contacted by Lawn &amp; Land Marketing by call, SMS text, or email related to my submission and marketing. I agree to the <a href="/terms/" target="_blank" rel="noopener">terms of use</a> and <a href="/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span>
+            </label>
             <button type="submit" class="btn btn--lime btn--lg cform-submit">Send Message</button>
           </form>
         </div>
@@ -735,6 +747,8 @@
         <span>&copy; 2026 Lawn &amp; Land Marketing. All rights reserved.</span>
         <span class="fv2-specialty">Green industry marketing specialists &nbsp;&middot;&nbsp; St. Petersburg, FL</span>
         <div class="fv2-legal-links">
+          <a href="/terms/">Terms of Use</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
           <a href="mailto:hello@lawnandlandmarketing.com">hello@lawnandlandmarketing.com</a>
         </div>
       </div>
