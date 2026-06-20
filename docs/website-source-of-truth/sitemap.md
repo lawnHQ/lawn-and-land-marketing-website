@@ -10,6 +10,7 @@ pages can exist outside this list.
 - `/about/` — About
 - `/contact/` — Contact
 - `/get-started/book-strategy-call/` — Get Started / Book Strategy Call
+- `/confirmation/` — post-form thank-you page (**noindex** — intentionally omitted from `sitemap.xml`; search engines shouldn't index a thank-you page, but it's tracked here + in GitHub)
 
 ## Programs
 - `/programs/` — Programs hub
