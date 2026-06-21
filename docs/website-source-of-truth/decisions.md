@@ -613,3 +613,12 @@
 - **ROI updated 10x to 23x** everywhere on the page (stat band, At-a-Glance ROI line, secondary stat, OG description, conclusion); 23x is owner-provided.
 - **"The short version" block** now sits on the Twilight textured + dot-grid band (matches the homepage stats bar / `.ind-band`).
 - **GBP then-to-now comparison** (4.5 stars / 43 reviews to 4.8 stars / 320+ reviews); the current-state GBP screenshot is still pending (it was shared inline, not as a hostable file).
+
+
+## 2026-06-21 (update) — Rock Solid Landscape case study built
+- **Built `/case-studies/rock-solid/`** into the case-study framework (cloned from the Precision reference). Rock Solid Landscape, Wauseon, OH, owner Zach Franz. An **organic/SEO-led** story (no paid ads), distinct from Precision's paid-led one.
+- **Fixed the framework-flagged issues:** the old page's generic title ("Digital Marketing Blueprint for 7-Figure Businesses") + Precision's meta description -> client-specific; verified the math (+378% impressions, +466% clicks are correct); removed WordPress cruft, the FREE-Google promo bar, and the banned Gemini-generated image.
+- **Revenue framing reconciled** to Zach's on-record "about $700K to over $1M" (matches the embedded video, titled "$700K to Over $1M"), with the mandatory attribution-honesty note. **Flagged for owner:** the existing site proof cards say "$1.3M" for Rock Solid; the canonical figure needs an owner decision. We used the conservative, video-matching "over $1M" and did NOT change the proof cards.
+- **AI-search claim reframed** for defensibility: kept the real, Rock-Solid-specific proof (a ChatGPT screenshot naming them the top recommendation for Wauseon, OH) but dropped the "we dominate AI search" overclaim and the unprovable "thanks to our AI-EO" causation, and added a point-in-time caveat (AI answers change).
+- **New reusable element:** a **month-by-month results table** (`.cs-table`) showing the GBP ramp (Months 1/3/6). Real screenshots (#1 Google ranking, ChatGPT, GBP) re-hosted under `assets/images/rock-solid/`; the two source matplotlib charts rendered natively instead.
+- Cross-linked from the experiences hub + 4 industry proof cards; sitemap + 301 added. No ROI multiple (none available; the revenue trajectory is the return).

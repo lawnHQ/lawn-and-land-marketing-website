@@ -49,6 +49,7 @@ pages can exist outside this list.
 
 ## Case Studies
 - `/case-studies/precision/` — Precision Landscape Management (migrated 2026-06-21 from the legacy WordPress `/precision-case-study/`). Launch 301: old URL to this one. No index page at `/case-studies/` itself yet; the breadcrumb crumb is a non-link label.
+- `/case-studies/rock-solid/` — Rock Solid Landscape (Wauseon, OH; built 2026-06-21 into the framework from the legacy WordPress `/rock-solid-case-study/`). Launch 301: old URL to this one.
 
 ## Legal
 - `/terms/` — Terms of Use

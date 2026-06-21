@@ -60,3 +60,18 @@ skimmer, with the **full long-form breakdown** preserved below for the deep read
 - **Distribution:** cross-link the case study from the experiences hub and the relevant industry
   proof cards ("Read the full case study →"). Plan a launch 301 from any old URL.
 - **Owner sign-off before indexing:** named results, ROI multiple + spend, client approval to publish.
+
+## Credibility rules (non-negotiable — what keeps the library trustworthy)
+- **ROI is a standalone, defensible claim.** Calculate it on MARKETING-ATTRIBUTED revenue (spend vs. the revenue the marketing can be traced to), NOT company-wide revenue. Frame it explicitly as a marketing return ("for every $1 in marketing, more than $Nx came back"), distinct from any company-wide revenue figure shown nearby. No defensible multiple for a client? Do not invent one — omit it (the revenue trajectory can be the "return").
+- **Attribution-honesty statement is MANDATORY when company-wide revenue is shown.** Pattern: "These are company-wide results, and [Client] is a strong operator in its own right. Their growth reflects their own team and execution as much as the marketing. Our role was to be one of its core drivers, and the right marketing partner to grow alongside."
+- **Defensibility-check every claim.** Keep a claim only if there is real, client-specific proof. An "AI search" claim ships only with a real screenshot of THAT client surfacing in the AI answer, framed point-in-time (AI answers change) — never a generic "we dominate AI search" with no proof, and never an unprovable causation claim.
+- **Verify every percentage and multiplier against the raw numbers** before publishing (the old "475%" was 377%). Reconcile conflicting source figures to ONE consistent story; when the conflict is an owner-revenue figure, prefer the owner's on-record words and flag for confirmation.
+- **Real proof only:** no stock, no mockups, no invented data, and **no generated/Gemini placeholder images** in production. Strip WordPress cruft (generic or borrowed titles + meta, promo bars, lead-magnets, duplicate heading dumps, tracking pixels).
+
+## Reusable elements (mix and match per client)
+`.cs-tldr` At-a-Glance on the Twilight dot-grid band · `.cs-ba` before→after cards · `.cs-stat` secondary stats · `.cs-rev` ascending revenue bar chart (2+ bars, peak in lime) · `.cs-table` **month-by-month results table** (highlight the final row with `.is-peak`) · `.cs-gbp` then→now comparison · `.cs-shot` framed screenshots · `.cs-callout` pull-quote · `.cs-list` checklist.
+
+## Library status
+- **Precision** (`/case-studies/precision/`) — reference build, paid-led (PPC + LSA). 23x ROI (~$150K/yr spend, marketing-attributed); $4.4M→$11.2M revenue trajectory.
+- **Rock Solid** (`/case-studies/rock-solid/`) — built 2026-06-21, organic/SEO-led (no ads). $700K→$1M+ revenue (owner's on-record figure; reconcile vs. the "$1.3M" proof cards). Introduced the `.cs-table` element + the point-in-time AI-search treatment. No ROI multiple (none available).
+- **From The Ground Up** ($1.8M→$3.2M, referenced sitewide) — build into the framework once the figure + approval are confirmed.

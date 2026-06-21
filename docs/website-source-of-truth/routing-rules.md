@@ -37,6 +37,7 @@ These are legacy or non-canonical and should be removed from internal linking or
 
 ## Launch redirects (301)
 - **`/precision-case-study/` → `/case-studies/precision/`** — the old WordPress case study is indexed and has history; preserve it with a 301 at launch. (Set alongside the canonical flip from `new.lawnlab.dev` to `lawnandlandmarketing.com`.)
+- **`/rock-solid-case-study/` → `/case-studies/rock-solid/`** — same: the old indexed WordPress case study gets a 301 to the new URL at launch.
 
 ## Remaining Link QA To Handle Later
 - Decide whether any retired routes should eventually receive redirects at the hosting layer.
