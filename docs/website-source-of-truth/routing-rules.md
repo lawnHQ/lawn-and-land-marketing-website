@@ -7,6 +7,7 @@
 - Programs live under `/programs/...`.
 - Industry pages live under `/industries/...`.
 - Resource pages live under `/resources/...` except contact, which is top-level at `/contact/`.
+- Case studies live under `/case-studies/...` (reintroduced 2026-06-21 per builder directive; previously killed). No index page exists at `/case-studies/` itself yet, so its breadcrumb crumb is a non-link label. First page: `/case-studies/precision/`.
 
 ## Killed Routes
 These should not appear in nav, footer, CTAs, page copy, breadcrumbs, sitemap planning docs, or internal links.
@@ -34,14 +35,18 @@ These are legacy or non-canonical and should be removed from internal linking or
 - `/resources/guides/` has been removed from internal structure and the page file was deleted.
 - 404 page has been cleaned so it no longer promotes the retired service/contact/guides routes.
 
+## Launch redirects (301)
+- **`/precision-case-study/` → `/case-studies/precision/`** — the old WordPress case study is indexed and has history; preserve it with a 301 at launch. (Set alongside the canonical flip from `new.lawnlab.dev` to `lawnandlandmarketing.com`.)
+
 ## Remaining Link QA To Handle Later
 - Decide whether any retired routes should eventually receive redirects at the hosting layer.
 - If a route is intentionally reintroduced later, record that decision before adding it back into internal linking.
 
 ## Killed routes — fuller list (keep out of nav, footer, CTAs, copy, breadcrumbs, sitemap, links)
 `/services/` (+ children) · `/pricing/` · `/resources/guides/` · `/resources/contact/` ·
-`/case-studies/` (+ children) · `/results/` · `/team/` · `/good-fit/` · `/book/` · `/podcast/` ·
+`/results/` · `/team/` · `/good-fit/` · `/book/` · `/podcast/` ·
 `/tools/marketing-audit/` · older orphan/article URLs. Use the canonical equivalents instead
+(`/case-studies/` was reintroduced 2026-06-21 as an approved silo and is no longer killed)
 (`/marketing-services/...`, `/contact/`, `/resources/...`, `/get-started/book-strategy-call/`).
 
 ## Current build convention (updated 2026-06-15)

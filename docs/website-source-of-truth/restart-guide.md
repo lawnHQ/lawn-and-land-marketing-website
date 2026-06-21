@@ -36,10 +36,11 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 
 ## Canonical routes (treat as truth)
 `/` · `/about/` · `/contact/` · `/get-started/book-strategy-call/` · `/programs/...` ·
-`/marketing-services/...` · `/industries/...` (the canonical 8) · `/resources/...`
+`/marketing-services/...` · `/industries/...` (the canonical 8) · `/resources/...` ·
+`/case-studies/...` (page 1: `/case-studies/precision/`)
 
 Retired / keep OUT of internal linking: `/services/`, `/pricing/`, `/resources/guides/`,
-`/resources/contact/`, `/case-studies/`, `/results/`, `/team/`, `/good-fit/`, `/book/`,
+`/resources/contact/`, `/results/`, `/team/`, `/good-fit/`, `/book/`,
 `/podcast/`, `/tools/marketing-audit/`, and older orphan/article URLs.
 
 ## The next best moves

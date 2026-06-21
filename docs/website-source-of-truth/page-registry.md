@@ -47,6 +47,11 @@ Status key
 | Resources | Private Facebook Group | `/resources/private-facebook-group/` | **killed** | Shell deleted 2026-06-21. Never a real page — the group is external. Nav dropdown + footer now link straight to `https://www.facebook.com/groups/serviceareaexperts`. |
 | Resources | Mow Money, Mow Problems Podcast | `/resources/mow-money-mow-problems-podcast/` | scaffolded | Shell. |
 
+## Case Studies
+| Type | Page | Route | Status | Notes |
+|---|---|---|---|---|
+| Case Study | Precision Landscape Management | `/case-studies/precision/` | **developed** | Built 2026-06-21 by migrating the legacy WordPress `/precision-case-study/` onto the new design system (preserve the substance, rebuild the shell). Answer-first hero (calls 135 to 536, +297%, `.hl` on "297%") → 4-stat strip → sticky Table of Contents with scrollspy → native before/after data viz (calls, first-time callers, impressions, team 2 to 6; plus 15%+ conversion and 10x+ ROI) → Nate video (vertical Short `q--6TsFlnLI`, click-to-play) → full copyedited story (background, owner mindset, what we did, website, ads, Google Guaranteed, local SEO, lead management, recruitment, reputation, conclusion) → Twilight CTA. **Math fix:** the old "475%" impressions stat is corrected to +377% / nearly 4.8x (295 to 1,407). **Modernized:** AdWords to Google Ads; removed the FREE-Google-Verified bar, Ultimate Checklist, Service Area Expert program framing, and the "lead acceleration session" CTA. **Em-dash-free.** `@graph`: Organization + Article + VideoObject (Nate) + BreadcrumbList (the "Case Studies" crumb is name-only, no hub page exists yet). Cross-linked from the experiences hub and the lawn-care / lawn-maintenance / landscaping / outdoor-living proof cards. Dashboard screenshots are clearly-labeled placeholders pending real captures (the headline numbers are rendered natively). **Owner actions before launch:** confirm the 10x ROI claim and Nate's sign-off; update or keep the 2023 LSA figures ($250/week, 9 leads, framed "at the time of this writing"); note the Google-Guaranteed "quote" was reframed as plain copy, not attributed to Google. Page 1 of a planned case-studies library. |
+
 ## Service-area note
 Industry pages are exactly the **canonical 8** above — locked this build. Earlier non-canonical
 industries (e.g. snow removal) were deleted, and the nav submenu, footer, and `sitemap.xml` were
@@ -58,7 +63,8 @@ reconciled to these 8.
 | killed | `/services/` (+ `/services/...` child routes) | Retired; use `/marketing-services/...`. Do not reintroduce. |
 | killed | `/pricing/` | Retired; **no pricing on the site**. Do not reintroduce. |
 | killed | `/resources/guides/` | File deleted; keep retired. |
-| killed | `/case-studies/` (+ children), `/results/`, `/tools/marketing-audit/` | Not part of the approved site. |
+| killed | `/results/`, `/tools/marketing-audit/` | Not part of the approved site. |
+| reintroduced | `/case-studies/` (+ children) | **Reintroduced 2026-06-21** as an approved silo (page 1 = Precision; see the Case Studies section above). No index page lives at `/case-studies/` yet, so its breadcrumb crumb is a non-link label. |
 | legacy | `/resources/contact/` | Use `/contact/` only. |
 | legacy | `/team/`, `/good-fit/`, `/book/`, `/podcast/`, old article URLs | Keep out of the internal link graph unless intentionally reintroduced via a new decision. |
 

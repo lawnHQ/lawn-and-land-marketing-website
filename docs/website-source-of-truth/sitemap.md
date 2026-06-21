@@ -47,6 +47,9 @@ pages can exist outside this list.
 - ~~`/resources/private-facebook-group/`~~ — **removed 2026-06-21**; never a real page. Nav + footer link to the external FB group (`facebook.com/groups/serviceareaexperts`).
 - `/resources/mow-money-mow-problems-podcast/` — Mow Money, Mow Problems Podcast
 
+## Case Studies
+- `/case-studies/precision/` — Precision Landscape Management (migrated 2026-06-21 from the legacy WordPress `/precision-case-study/`). Launch 301: old URL to this one. No index page at `/case-studies/` itself yet; the breadcrumb crumb is a non-link label.
+
 ## Legal
 - `/terms/` — Terms of Use
 - `/privacy-policy/` — Privacy Policy

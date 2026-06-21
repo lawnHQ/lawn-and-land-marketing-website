@@ -587,3 +587,14 @@
 - **Service-page finishing inputs** — real FAQ answers (→ add `FAQPage` schema), verified conviction
   stats, real images.
 - Whether retired routes get hosting-layer redirects at launch vs. simply staying out of internal linking.
+
+
+## 2026-06-21
+- **Reintroduced the `/case-studies/` silo** (previously killed) to host migrated case studies, recorded here per the routing rule that intentional reintroductions need a decision. Page 1: `/case-studies/precision/`. No index page at `/case-studies/` itself yet, so its breadcrumb crumb is a non-link label.
+- **Migrated the Precision Landscape Management case study** from the legacy WordPress `/precision-case-study/` onto the new design system: preserved the substance (135 to 536 calls / +297%, 98 to 360 first-time callers, 295 to 1,407 impressions, 2 to 6 sales team, 15%+ conversion, 10x+ ROI, the seven service sections, Nate's video, the sticky table of contents, the narrative arc) and rebuilt the shell.
+- **Corrected a published math error:** the old page claimed impressions "grown over 475%"; 295 to 1,407 is +377% (nearly 4.8x). Standardized on +297% for calls.
+- **Modernized:** AdWords to Google Ads; removed the FREE-Google-Verified-Management bar, the Ultimate Checklist lead magnet, the Service Area Expert program framing, and the "lead acceleration session" CTA. Every CTA routes to `/get-started/book-strategy-call/`.
+- **Reframed the Google-Guaranteed "quote"** as plain explanatory copy rather than a statement attributed to Google (it was not a verifiable Google quote). Flagged for owner confirmation.
+- **Media:** Nate's testimonial uses the YouTube click-to-play pattern (vertical Short `q--6TsFlnLI`). Headline numbers are native data viz; dashboard screenshots are clearly-labeled placeholders pending real captures (we did not embed the dated low-res WordPress screenshots).
+- **Cross-linked** from the experiences hub and the lawn-care / lawn-maintenance / landscaping / outdoor-living proof cards. **Launch 301:** `/precision-case-study/` to `/case-studies/precision/`.
+- (Same day, earlier) Removed the `/resources/` hub page and `/resources/private-facebook-group/` shell; the Resources nav top-level is now a non-link label and the footer Private Facebook Group link points to the external group.

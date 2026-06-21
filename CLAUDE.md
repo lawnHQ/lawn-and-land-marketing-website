@@ -85,6 +85,16 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
 - **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`
   swipe behind the lower portion of a phrase, white text, sharp edges). Defined in `styles.css`;
   also locked into the brand kit (see Related assets). Use sparingly — one phrase per surface.
+- **Precision case study** (`/case-studies/precision/`) — **built** 2026-06-21; the first page of a new
+  **`/case-studies/` silo** (reintroduced from the killed list per a builder directive). Migrated and
+  modernized from the legacy WordPress `/precision-case-study/`: answer-first hero (calls 135→536 / +297%),
+  4-stat strip, **sticky Table of Contents + scrollspy**, **native before/after data viz** (no old WP
+  screenshots), Nate **click-to-play** video (vertical Short `q--6TsFlnLI`), full **copyedited, em-dash-free**
+  story, Twilight CTA. `@graph` = Organization + Article + VideoObject + BreadcrumbList. **Math fix**
+  (impressions +377%, not the old "475%"); AdWords→Google Ads; promo/lead-magnet language removed; dashboard
+  shots are labeled placeholders pending real captures. Cross-linked from the experiences hub + the 4
+  lawn/landscape industry proof cards. **Launch 301** from the old URL. Page CSS is inline (`.cs-*`); not an
+  industry page, so it does not load `industry.css`.
 
 ## Status — what's NOT done (shells / next up)
 - **Industry pages: all 8 built** (see DONE above) — no remaining industry builds. Polish only: real images
