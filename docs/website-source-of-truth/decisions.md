@@ -629,3 +629,9 @@
 - **Distinctness held:** Client Results = results/roster + case-study depth; Experiences = the video-and-screenshot wall. They cross-link, not duplicate.
 - **Hub-and-spoke interlinking wired:** Client Results Tier 1 → case studies; experiences hub → "See all client results"; each case study's Explore → "All Client Results"; existing industry/experiences proof cards already link the case studies.
 - Schema: CollectionPage + ItemList (the 2 case studies) + BreadcrumbList. Inline `.cr-*` CSS. Sitemap + nav updated. **Future trigger:** once ~4-5 full case studies exist, evaluate a dedicated `/case-studies/` index in addition to the roster.
+
+
+## 2026-06-21 (update) — Rock Solid revenue figure resolved to $1.4M
+- **Owner confirmed Rock Solid hit $1.4M in their first full year** (from about $700K, a clean 2x). Standardized the figure across the whole site: the Rock Solid case study (At a Glance, stat band, return line, secondary stat, the revenue bar chart now an exact 2x, conclusion, meta/OG/Article schema), the Client Results roster Tier 1 card, the 11 proof cards that previously said "$1.3M" (homepage, 8 industry pages, experiences hub, Authority program), and the landscaping/lawn-care FAQ answers (also bumped "tripled" to "more than tripled" calls to match the ~4x). Reframed "crossed seven figures" to "doubled, to $1.4M" / "first full year" where it described revenue.
+- **Kept (consistent with $1.4M, not contradictory):** Zach's VideoObject keeps its real YouTube title ("...from $700K to Over $1M...") and his verbatim quote "north of a million" ($1.4M satisfies both). Program-tier copy ("companies over/under $1M") is unrelated and untouched.
+- Resolves the standing "$1M+ vs $1.3M" flag. No before/after GBP review count for Rock Solid (owner has no historical number; the current 49 stays as the single point).

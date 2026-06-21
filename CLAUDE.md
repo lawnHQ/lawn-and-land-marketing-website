@@ -107,8 +107,7 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   New reusable **month-by-month table** (`.cs-table`); real #1-ranking / ChatGPT / GBP screenshots under
   `assets/images/rock-solid/`. **AI-search claim reframed** (kept the real ChatGPT-top-pick screenshot,
   dropped "we dominate AI search" + the causation overclaim, added a point-in-time caveat). Fixed the
-  generic title + Precision meta. **Flag:** revenue reads "over $1M" (Zach's on-record figure / the video)
-  but the proof cards say $1.3M — needs an owner decision on the canonical number.
+  generic title + Precision meta. Revenue **$700K → $1.4M** (owner-confirmed 2026-06-21, their first full year, a clean 2x), standardized everywhere (case study, roster, proof cards, FAQs); the video keeps its real "Over $1M" title.
 - **Client Results roster** (`/client-results/`) — **built** 2026-06-21. The tiered ROSTER (Lawnline-style),
   nested under About (breadcrumb Home / About / Client Results; an About-dropdown nav item; no top-level nav).
   **Tier 1** = featured case-study cards (Precision + Rock Solid, exact stats + "Read the full case study →");
