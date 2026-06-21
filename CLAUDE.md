@@ -109,6 +109,13 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   dropped "we dominate AI search" + the causation overclaim, added a point-in-time caveat). Fixed the
   generic title + Precision meta. **Flag:** revenue reads "over $1M" (Zach's on-record figure / the video)
   but the proof cards say $1.3M — needs an owner decision on the canonical number.
+- **Client Results roster** (`/client-results/`) — **built** 2026-06-21. The tiered ROSTER (Lawnline-style),
+  nested under About (breadcrumb Home / About / Client Results; an About-dropdown nav item; no top-level nav).
+  **Tier 1** = featured case-study cards (Precision + Rock Solid, exact stats + "Read the full case study →");
+  **Tier 2** = lighter roster cards for the other testimonial owners (qualitative, no fabricated numbers, link
+  to the experiences hub). DISTINCT from the experiences video wall. Hub-and-spoke interlinking: it links into
+  the case studies; the experiences hub + each case study's Explore link to it. `CollectionPage` + `ItemList`
+  + `BreadcrumbList`. Inline `.cr-*` CSS.
 
 ## Status — what's NOT done (shells / next up)
 - **Industry pages: all 8 built** (see DONE above) — no remaining industry builds. Polish only: real images

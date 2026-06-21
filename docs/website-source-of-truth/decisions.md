@@ -622,3 +622,10 @@
 - **AI-search claim reframed** for defensibility: kept the real, Rock-Solid-specific proof (a ChatGPT screenshot naming them the top recommendation for Wauseon, OH) but dropped the "we dominate AI search" overclaim and the unprovable "thanks to our AI-EO" causation, and added a point-in-time caveat (AI answers change).
 - **New reusable element:** a **month-by-month results table** (`.cs-table`) showing the GBP ramp (Months 1/3/6). Real screenshots (#1 Google ranking, ChatGPT, GBP) re-hosted under `assets/images/rock-solid/`; the two source matplotlib charts rendered natively instead.
 - Cross-linked from the experiences hub + 4 industry proof cards; sitemap + 301 added. No ROI multiple (none available; the revenue trajectory is the return).
+
+
+## 2026-06-21 (update) — Client Results roster page + case-study interlinking
+- **Built `/client-results/`** (builder directive): a tiered "Client Results" ROSTER, nested under About (breadcrumb Home / About / Client Results; an About-dropdown nav item; NO new top-level nav, NO anchored sub-links). **Tier 1** = deep featured case studies (Precision + Rock Solid cards, exact case-study stats, "Read the full case study →"). **Tier 2** = lighter roster cards for the other named testimonial owners (Tami, Rick, Phillip, Peter, David, Tim, Greg) with qualitative blurbs (NO fabricated numbers) linking to the experiences hub.
+- **Distinctness held:** Client Results = results/roster + case-study depth; Experiences = the video-and-screenshot wall. They cross-link, not duplicate.
+- **Hub-and-spoke interlinking wired:** Client Results Tier 1 → case studies; experiences hub → "See all client results"; each case study's Explore → "All Client Results"; existing industry/experiences proof cards already link the case studies.
+- Schema: CollectionPage + ItemList (the 2 case studies) + BreadcrumbList. Inline `.cr-*` CSS. Sitemap + nav updated. **Future trigger:** once ~4-5 full case studies exist, evaluate a dedicated `/case-studies/` index in addition to the roster.

@@ -15,6 +15,7 @@ opens an accordion; caret items expand instead of navigating.
 
 **About** — narrow single column (`.mega-panel--narrow` + `.mega-grid--single`):
 - About → `/about/`
+- **Client Results** → `/client-results/` — the tiered client roster + featured case studies (added 2026-06-21; nested under About, no top-level nav item).
 - **Experiences & Testimonials** → `/resources/experiences-reviews/` — Twilight-textured
   (`.mega-item--twilight`) with a **gold star** icon.
 - *(The former founder/right-rail card was removed in the overhaul.)*

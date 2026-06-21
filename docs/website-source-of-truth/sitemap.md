@@ -8,6 +8,7 @@ pages can exist outside this list.
 ## Core
 - `/` — Home
 - `/about/` — About
+- `/client-results/` — Client Results (tiered roster + featured case studies; nested under About; added 2026-06-21)
 - `/contact/` — Contact
 - `/get-started/book-strategy-call/` — Get Started / Book Strategy Call
 - `/confirmation/` — post-form thank-you page (**noindex** — intentionally omitted from `sitemap.xml`; search engines shouldn't index a thank-you page, but it's tracked here + in GitHub)
