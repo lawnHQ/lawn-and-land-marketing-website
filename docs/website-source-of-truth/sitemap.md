@@ -40,11 +40,11 @@ pages can exist outside this list.
 - `/industries/holiday-lighting/` — Holiday Lighting
 
 ## Resources
-- `/resources/` — Resources hub
+- ~~`/resources/`~~ — **no page** (2026-06-21); silo path segment only (no index page). Nav "Resources" is a non-link trigger; not in `sitemap.xml`.
 - `/resources/blog/` — Blog
 - ~~`/resources/meet-the-team/`~~ — **removed 2026-06-17**; team consolidated into the About page (`/about/#team`). Launch 301 → `/about/#team`.
 - `/resources/experiences-reviews/` — Experiences / Reviews
-- `/resources/private-facebook-group/` — Private Facebook Group
+- ~~`/resources/private-facebook-group/`~~ — **removed 2026-06-21**; never a real page. Nav + footer link to the external FB group (`facebook.com/groups/serviceareaexperts`).
 - `/resources/mow-money-mow-problems-podcast/` — Mow Money, Mow Problems Podcast
 
 ## Legal

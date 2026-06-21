@@ -36,7 +36,10 @@ opens an accordion; caret items expand instead of navigating.
 - *Land & Specialty*: Land Clearing · Excavation · Septic Installation · Holiday Lighting
 - Featured: **"We Only Work In The Green Industry."** (`.mega-fc-title`) → `/about/`.
 
-**Resources** — wide two columns + **Twilight testimonials** featured card:
+**Resources** — wide two columns + **Twilight testimonials** featured card. The top-level
+**"Resources" trigger is a non-link `<button>`** (like About) — there is **no `/resources/` page**;
+the path is a silo segment that only organizes the content URLs below (decision 2026-06-21, builder
+directive). The visible breadcrumb "Resources" crumb on these pages is likewise non-link text.
 - *Mow Money, Mow Problems*: The Podcast → `/resources/mow-money-mow-problems-podcast/` · YouTube Channel ↗ (external) · The Book ↗ (Amazon)
 - *Learn & Connect*: Green Industry Insights / Blog → `/resources/blog/` · Private Facebook Group ↗ (Service Area Experts) · Contact Us → `/contact/`
 - Featured: **Client Experiences** — a clickable `<a class="mega-featured-card mega-featured-card--twilight">`
