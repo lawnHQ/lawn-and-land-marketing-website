@@ -15,8 +15,8 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   production. Takes ~1–2 min. (Vercel also auto-creates auth-protected previews per branch.)
 - **Branches:** all progress lives on `main`; the working branch `site-foundation` is kept
   in sync with it — push to **both** (`origin site-foundation` then `origin site-foundation:main`).
-- **Cache-bust versions in use:** `styles.css?v=139`, `main.js?v=54`, `service-page.css?v=3`,
-  `industry.css?v=1` (shared `.ind-*` framework on `/industries/*`). `styles.css` carries the global
+- **Cache-bust versions in use:** `styles.css?v=141`, `main.js?v=54`, `service-page.css?v=3`,
+  `industry.css?v=2` (shared `.ind-*` framework on `/industries/*`). `styles.css` carries the global
   `text-wrap: balance` (headings) / `text-wrap: pretty` (body) line-break hints; the **actual
   no-lone-word guarantee** is a widow-guard in `main.js` that glues the last two words of every
   heading (each `<br>` segment) with a non-breaking space, at any viewport width. `balance` only
@@ -85,6 +85,9 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
 - **The `.hl` Twilight highlight** — the signature one-impact-phrase marker (skewed −11° `#6837EF`
   swipe behind the lower portion of a phrase, white text, sharp edges). Defined in `styles.css`;
   also locked into the brand kit (see Related assets). Use sparingly — one phrase per surface.
+  **Weight rule (owner, 2026-06-21):** `.hl` uses `font-weight: inherit` so the highlighted phrase
+  ALWAYS matches the surrounding heading weight (e.g. 800) — never a fixed or lighter weight. Applies
+  to every `.hl` instance, here and on any other L&L surface (incl. the brand kit).
 - **Precision case study** (`/case-studies/precision/`) — **built** 2026-06-21; the first page of a new
   **`/case-studies/` silo** (reintroduced from the killed list per a builder directive). Migrated and
   modernized from the legacy WordPress `/precision-case-study/`: answer-first hero (calls 135→536 / +297%),

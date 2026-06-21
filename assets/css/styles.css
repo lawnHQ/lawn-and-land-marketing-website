@@ -2576,7 +2576,7 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
   position: relative;
   z-index: 0;
   color: #fff;
-  font-weight: 700;
+  font-weight: inherit; /* always match the surrounding heading weight (e.g. 800), never force a lighter weight */
   padding: 0 0.22em;
   white-space: nowrap;
 }
