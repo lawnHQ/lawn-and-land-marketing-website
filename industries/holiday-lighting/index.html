@@ -40,7 +40,7 @@
       "provider": { "@id": "https://lawnandlandmarketing.com/#org" },
       "areaServed": "United States",
       "audience": { "@type": "Audience", "audienceType": "Holiday and Christmas lighting company owners" },
-      "description": "Websites, local SEO, Google and Meta ads, reputation, and CRM follow-up built for holiday and Christmas lighting installers and timed around a short, capacity-capped season: pre-sell, booking, install, and re-book."
+      "description": "Demand-generation Meta ads, plus websites, local SEO, Google ads, reputation, and CRM follow-up, built for holiday and Christmas lighting installers and timed around a short, capacity-capped season: pre-sell, booking, install, and re-book."
     },
     {
       "@type": "WebPage",
@@ -65,6 +65,7 @@
       "@id": "https://lawnandlandmarketing.com/industries/holiday-lighting/#faq",
       "mainEntity": [
         { "@type": "Question", "name": "When should a holiday lighting company start marketing?", "acceptedAnswer": { "@type": "Answer", "text": "Earlier than feels natural. The season is won in late summer, when smart installers reactivate last year's customers and lock deposits before the public is thinking about Christmas. By the time search spikes in November the best companies are already booking out, so we get you live and pre-selling by late summer." } },
+        { "@type": "Question", "name": "What kind of marketing works best for holiday lighting?", "acceptedAnswer": { "@type": "Answer", "text": "Meta ads, by a wide margin. Holiday lighting is a visual, impulse purchase and demand you create: most homeowners never search for an installer, but a scroll-stopping photo of a beautifully lit home makes them want it on the spot. Paid social on Facebook and Instagram puts your work in front of the whole neighborhood and fills your calendar before the rush. Search and Google Ads still matter for the homeowner already looking, but Meta is the engine that creates the demand." } },
         { "@type": "Question", "name": "The booking window is so short. How do you keep us from scrambling in November?", "acceptedAnswer": { "@type": "Answer", "text": "By pre-selling and being live before the rush. We reactivate your past customers in late summer and have your site, profile, and ads ranking by September, so you enter the surge already filling the calendar instead of starting from a standstill." } },
         { "@type": "Question", "name": "Our calendar fills and then we turn people away. What happens to that demand?", "acceptedAnswer": { "@type": "Answer", "text": "We capture it instead of losing it. A waitlist and overflow system banks late, high-intent leads so they become early bookings for next season instead of jobs that walked. Turning people away should still grow next year's list." } },
         { "@type": "Question", "name": "How do you get last year's customers to re-book?", "acceptedAnswer": { "@type": "Answer", "text": "With an automated re-book motion built into the off-season. Takedown service keeps you in contact, then deposits and early-bird offers lock next year while satisfaction is high. A re-booked customer skips the selling and the design, so retention is where the real margin is." } },
@@ -296,6 +297,13 @@
     /* Industry-page framework (.ind-*, .hero-trust, demand-cycle, services,
        program-fit, FAQ) now lives in /assets/css/industry.css, shared across
        all /industries/* pages so one edit propagates everywhere. */
+    .ind-meta-inner { max-width: 800px; margin: 0 auto; text-align: center; }
+    .ind-meta-stakes { display: flex; gap: 14px; align-items: flex-start; text-align: left; max-width: 700px; margin: 30px auto 0; padding: 22px 26px; border: 1px solid rgba(172,231,29,0.32); border-radius: 16px; background: rgba(172,231,29,0.05); }
+    .ind-meta-stakes svg { flex-shrink: 0; width: 26px; height: 26px; stroke: var(--lime); fill: none; stroke-width: 1.85; stroke-linecap: round; stroke-linejoin: round; margin-top: 2px; }
+    .ind-meta-stakes p { margin: 0; font-family: var(--font-l); font-size: 16px; line-height: 1.6; color: rgba(255,255,255,0.84); }
+    .ind-meta-stakes strong { color: var(--white); font-weight: 700; }
+    .ind-svc.ind-svc--meta { border-color: rgba(172,231,29,0.5); background: rgba(172,231,29,0.05); }
+    .ind-svc--meta .is-tag { display: inline-block; margin-bottom: 12px; padding: 4px 11px; border-radius: 999px; background: var(--lime); color: #07100a; font-family: var(--font-l); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
   </style>
 </head>
 <body>
@@ -650,15 +658,38 @@
     </div>
   </section>
 
+  <!-- META ADS: THE DEMAND ENGINE -->
+  <section class="ind-sec">
+    <div class="container">
+      <div class="ind-meta-inner" data-reveal="fade-up">
+        <span class="ind-eyebrow">The growth engine</span>
+        <h2 class="ind-h2">For holiday lighting, Meta ads are the engine.</h2>
+        <p class="ind-lede">Here is the part most agencies miss: almost nobody searches "Christmas light installer" until the calendar is already filling, and that pool is small. Holiday lighting isn't demand you capture, it's demand you create. One scroll-stopping photo of a perfectly lit home, put in front of the right local homeowners, turns "I never thought about it" into "I want that on my house" and reaches the huge majority who would never have searched. Visual product, visual platform, short and emotional season: nothing fills a calendar faster.</p>
+        <p class="ind-lede">Search and Google Ads still earn their place, they catch the homeowner already looking. But Meta is the multiplier that creates the demand in the first place, and in this space it performs unlike anything else we run.</p>
+        <div class="ind-meta-stakes">
+          <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          <p><strong>The season is short and the jobs are high-ticket, so the math moves fast.</strong> For our holiday lighting clients, a well-run Meta program can turn a three-month peak into six figures of new installs, and for some, into the hundreds of thousands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- WHAT WE BUILD -->
   <section class="ind-sec">
     <div class="container">
       <div class="ind-head" data-reveal="fade-up">
         <span class="ind-eyebrow">What we build</span>
         <h2 class="ind-h2">Everything a holiday lighting company needs to book the season</h2>
-        <p class="ind-lede">It all works as one system, the site, the search presence, the ads, the reviews, and the follow-up, so a homeowner searching in October books with you before your calendar fills. Every piece is built around a short, high-stakes season.</p>
+        <p class="ind-lede">It all works as one system: Meta ads generate the demand, and the site, search presence, reviews, and follow-up convert and keep it, so even the homeowner who never thought to search sees your work, wants it, and books before your calendar fills. Every piece is built around a short, high-stakes season.</p>
       </div>
       <div class="ind-services" data-reveal="fade-up">
+        <a href="/marketing-services/meta-ads/" class="ind-svc ind-svc--meta">
+          <span class="is-tag">The growth engine</span>
+          <span class="is-icon"><svg viewBox="0 0 24 24"><path d="M15 13a3 3 0 1 0-6 0"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><circle cx="12" cy="8" r="2"/></svg></span>
+          <h3>Meta Ads</h3>
+          <p>The demand engine for holiday lighting. Scroll-stopping before-and-after roofline ads put your work in front of local homeowners and create the want before anyone searches, filling your calendar early and remarketing every neighborhood you install in.</p>
+          <span class="is-link">Meta Ads &rarr;</span>
+        </a>
         <a href="/marketing-services/website-design/" class="ind-svc">
           <span class="is-icon"><svg viewBox="0 0 24 24"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg></span>
           <h3>A website built to book the season</h3>
@@ -682,12 +713,6 @@
           <h3>Google &amp; Local Service Ads</h3>
           <p>Be the first result and the first call in the high-intent September-to-November window, with speed-to-lead that beats slower companies to the quote.</p>
           <span class="is-link">Google Ads &rarr;</span>
-        </a>
-        <a href="/marketing-services/meta-ads/" class="ind-svc">
-          <span class="is-icon"><svg viewBox="0 0 24 24"><path d="M15 13a3 3 0 1 0-6 0"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><circle cx="12" cy="8" r="2"/></svg></span>
-          <h3>Meta Ads</h3>
-          <p>Before-and-after roofline ads that build desire early and remarket your neighborhoods, then quietly pre-sell and reactivate as the season nears.</p>
-          <span class="is-link">Meta Ads &rarr;</span>
         </a>
         <a href="/marketing-services/reputation-management/" class="ind-svc">
           <span class="is-icon"><svg viewBox="0 0 24 24"><path d="M12 3 14.8 8.7 21 9.6l-4.5 4.4 1.1 6.1L12 17.2 6.4 20.1l1.1-6.1L3 9.6l6.2-.9Z"/></svg></span>
@@ -871,6 +896,7 @@
       </div>
       <div class="ind-faq" data-reveal="fade-up">
         <details><summary>When should a holiday lighting company start marketing?</summary><p class="faq-a">Earlier than feels natural. The season is won in late summer, when smart installers reactivate last year's customers and lock deposits before the public is thinking about Christmas. By the time search spikes in November the best companies are already booking out, so we get you live and pre-selling by late summer.</p></details>
+        <details><summary>What kind of marketing works best for holiday lighting?</summary><p class="faq-a">Meta ads, by a wide margin. Holiday lighting is a visual, impulse purchase and demand you create: most homeowners never search for an installer, but a scroll-stopping photo of a beautifully lit home makes them want it on the spot. Paid social on Facebook and Instagram puts your work in front of the whole neighborhood and fills your calendar before the rush. Search and Google Ads still matter for the homeowner already looking, but Meta is the engine that creates the demand.</p></details>
         <details><summary>The booking window is so short. How do you keep us from scrambling in November?</summary><p class="faq-a">By pre-selling and being live before the rush. We reactivate your past customers in late summer and have your site, profile, and ads ranking by September, so you enter the surge already filling the calendar instead of starting from a standstill.</p></details>
         <details><summary>Our calendar fills and then we turn people away. What happens to that demand?</summary><p class="faq-a">We capture it instead of losing it. A waitlist and overflow system banks late, high-intent leads so they become early bookings for next season instead of jobs that walked. Turning people away should still grow next year's list.</p></details>
         <details><summary>How do you get last year's customers to re-book?</summary><p class="faq-a">With an automated re-book motion built into the off-season. Takedown service keeps you in contact, then deposits and early-bird offers lock next year while satisfaction is high. A re-booked customer skips the selling and the design, so retention is where the real margin is.</p></details>
