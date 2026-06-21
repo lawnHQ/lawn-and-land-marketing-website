@@ -1,13 +1,12 @@
 # Build Status
 
-Last updated: 2026-06-15.
+Last updated: 2026-06-21.
 
 ## Overall read
 The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**, **both
 program pages** (Growth + the flagship Authority), the **Programs hub**, and **all 8 industry pages**
 (`landscaping` — the locked template — plus `lawn-care`, `lawn-maintenance`, `outdoor-living`,
-`holiday-lighting`, `land-clearing`, `excavation`, and `septic-installation`) are developed. About / Contact /
-Resources remain intentional shells. Build tooling (universal
+`holiday-lighting`, `land-clearing`, `excavation`, and `septic-installation`) are developed. So are **About** (+ `#team`), **Contact** (live GHL form), **Confirmation**, **Get Started / booking**, the **Terms + Privacy** legal pages, the **3 Resources content pages** (blog, experiences-reviews, podcast - silo only, no hub), the **2 case studies** (Precision, Rock Solid), and the **Client Results** roster. The site is **content-complete and in pre-launch review.** Build tooling (universal
 header/footer + service-page generator), the **2026-06-15 nav-submenu overhaul** (see `navigation.md`),
 route hygiene, and the brand system are all in place. Nothing is launched publicly — staging is
 new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlandmarketing.com.
@@ -77,16 +76,31 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 - **Universal header + footer** — single source via `build.py` (`_header.html` / `_footer.html`). The
   nav submenus were overhauled 2026-06-15 (About trimmed, promo titles de-headinged for SEO, Resources
   rebuilt, Twilight/gold-star theming). Full reference: `navigation.md`.
-- **Brand system** — Twilight spotlight + dot-grid CTA pattern; the `.hl` Twilight emphasis marker;
-  Lucide-only icons. The `.hl` marker is also documented in the brand kit (brandkit.lawnlab.dev).
+- **Brand system** — Twilight spotlight + dot-grid CTA pattern; the `.hl` Twilight emphasis marker
+  (`font-weight: inherit`, matches the heading weight); Lucide-only icons. The `.hl` marker is also
+  documented in the brand kit (brandkit.lawnlab.dev).
+- **About / Contact / Confirmation / Booking / Legal** (2026-06-17→20) — About (+ `#team`, owner bio,
+  good-fit framework); Contact (live GoHighLevel form → `/confirmation/`, click-to-call NAP 727-496-7098);
+  Get Started / Book a Call (calendar-first, minimal chrome, founder VSL + proof aside); Terms + Privacy
+  (real legacy content). See `page-registry.md` for per-page detail.
+- **Resources content pages** — Blog, Experiences & Reviews (22-VideoObject EEAT asset + screenshot
+  lightbox, videos-first), Mow Money Podcast. The `/resources/` **hub page was removed 2026-06-21**
+  (silo path only; nav "Resources" is a non-link trigger); `/resources/private-facebook-group/` removed.
+- **Case Studies** (`/case-studies/`, reintroduced from killed 2026-06-21) — **Precision** (paid-led:
+  +297% calls, $4.4M→$11.2M, 23x ROI) and **Rock Solid** (organic/SEO-led: ~4x calls, +378% impressions,
+  $700K→$1.4M). Built on the locked `case-study-template.md` (hero → "At a Glance" Twilight band →
+  sticky-ToC deep dive); real screenshots, click-to-play video, Article+VideoObject+BreadcrumbList schema,
+  honest attribution on company-wide revenue.
+- **Client Results roster** (`/client-results/`, under About) — Tier 1 featured case studies + Tier 2
+  lighter client cards; hub-and-spoke interlinked with the case studies + experiences hub.
 
-## What is NOT done
-- **Industry pages — ALL 8 DONE** (`/industries/*`): landscaping, lawn-care, lawn-maintenance, outdoor-living,
-  holiday-lighting, land-clearing, excavation, septic-installation. The canonical 8 are complete (see DONE above).
-  Remaining polish, not blockers: real images for the placeholders, and the sitewide em-dash pass is complete (2026-06-17), so
-  the whole site is now em-dash-free.
-- **About, Contact, Resources/\*** — shells.
-- The 8 service pages need three **owner inputs** to be truly finished (below).
+## What is NOT done (launch prep + owner inputs, not new builds)
+Every planned page is built. What remains:
+- **Service-page owner inputs** (the 8 `/marketing-services/*`): real FAQ answers (→ `FAQPage` schema),
+  verified conviction stats, real images (below).
+- **Real images** for the remaining labeled placeholders (service / program / industry / case-study pages).
+- **Owner sign-offs** before the case studies index: client approval of names / numbers / video /
+  screenshots; confirm the GHL calendar's actual length matches the site's "20-minute" copy.
 
 ## Owner inputs needed to finalize the 8 service pages
 1. **FAQ answers** — 5 per page, currently `[NEEDS YOUR INPUT]`. Once real, add `FAQPage` JSON-LD.
@@ -94,11 +108,11 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 3. **Images** — replace the labeled placeholders (each says exactly what to drop in).
 
 ## Highest-priority work next
-1. **Industry pages: all 8 built.** Remaining is polish, not new builds: drop real images into the
-   placeholders, the sitewide em-dash pass is complete (2026-06-17).
-2. Design + build the remaining non-home pages (About, Contact, Resources).
-3. Land the service-page owner inputs (FAQ answers, conviction stats, images) → add `FAQPage` schema there.
-4. **Launch cutover** to lawnandlandmarketing.com (later) — work `seo-launch-checklist.md`.
+1. Land the **service-page owner inputs** (FAQ answers → `FAQPage` schema; conviction stats; real images).
+2. Drop **real images** into the labeled placeholders sitewide.
+3. Get **client sign-offs** on the case studies; add **more case studies** to the framework as approved.
+4. **Launch cutover** to lawnandlandmarketing.com (later) — `seo-launch-checklist.md` (canonical flip,
+   `og:image`, `robots.txt`).
 
 ## Success criteria for a "finished" page
 Live ≠ finished. A finished page has: a clear strategic purpose, a strong H1/promise, enough body

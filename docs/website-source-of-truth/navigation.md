@@ -3,7 +3,7 @@
 The header (announcement bar + nav) and the footer are **single-source**. Edit only `_header.html` and
 `_footer.html`; `python3 build.py` stamps them into every page (verify with `python3 build.py --check`).
 **Never hand-edit the nav or footer inside a page** — `build.py` overwrites those regions. Vercel runs
-`build.py` on deploy. Last overhaul: 2026-06-15.
+`build.py` on deploy. Last overhaul: 2026-06-15 (kept current; Resources hub removed + Client Results added 2026-06-21).
 
 ## Top-level nav (in order)
 `Home` · **About** ▾ · **Programs** ▾ · **Marketing Services** ▾ · **Industries** ▾ · **Resources** ▾ ·

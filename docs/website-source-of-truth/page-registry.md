@@ -1,6 +1,6 @@
 # Page Registry
 
-Last updated: 2026-06-15. This table is the authoritative page-by-page inventory + status.
+Last updated: 2026-06-21. This table is the authoritative page-by-page inventory + status.
 
 Status key
 - **developed** — real body content and strategic substance; intentionally built

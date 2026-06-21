@@ -1,7 +1,7 @@
 # Lawn & Land Marketing — Website
 
 Orientation for a fresh session. Read this first, then `docs/website-source-of-truth/`.
-Last updated: 2026-06-15.
+Last updated: 2026-06-21. The site is content-complete and in pre-launch review.
 
 ## What this is
 The future public website for **Lawn & Land Marketing** — a digital-marketing agency working
@@ -116,13 +116,18 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   the case studies; the experiences hub + each case study's Explore link to it. `CollectionPage` + `ItemList`
   + `BreadcrumbList`. Inline `.cr-*` CSS.
 
-## Status — what's NOT done (shells / next up)
-- **Industry pages: all 8 built** (see DONE above) — no remaining industry builds. Polish only: real images
-  for the placeholders, and the sitewide em-dash pass is complete (2026-06-17), so the
-  whole site is now em-dash-free.
-- **Contact, Resources/\*** — shells. (About is now **developed** — see DONE above.)
-- The 8 service pages still need three owner inputs to be final: real FAQ answers (→ then add
+## Status — what's NOT done (launch prep, not new builds)
+Every planned page is built (homepage, 8 services + hub, 2 programs + hub, 8 industries + hub, about,
+contact, confirmation, booking, legal, the 3 resources content pages, 2 case studies, client-results).
+What remains is launch prep + owner inputs:
+- **Service-page owner inputs** (the 8 `/marketing-services/*`): real FAQ answers (→ then add
   `FAQPage` schema), verified conviction stats, and real images for the labeled placeholders.
+- **Real images** for the remaining labeled placeholders on program / industry / case-study pages.
+- **Launch cutover** (`seo-launch-checklist.md`): flip canonicals + `og:url` staging→production,
+  add `og:image` share graphics + `robots.txt`, keep `sitemap.xml` current.
+- **Owner sign-offs before the case studies index**: client approval of names / numbers / video /
+  screenshots; confirm the GHL calendar's actual length matches the site's "20-minute" copy.
+- **More case studies** (e.g. From The Ground Up) slot into `case-study-template.md` as approved.
 
 ## How the site is built (tooling)
 - **Header/footer:** edit `_header.html` / `_footer.html`, then `python3 build.py` (verify with

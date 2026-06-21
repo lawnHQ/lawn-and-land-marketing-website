@@ -1,6 +1,6 @@
 # Approved Website Sitemap
 
-Last updated: 2026-06-15. This is the **approved route list**. For per-page build status
+Last updated: 2026-06-21. This is the **approved route list**. For per-page build status
 (developed / shell), see `page-registry.md`. For the generated XML, see repo-root `sitemap.xml`.
 The Industries section below is the **canonical 8 (locked)**. Ancillary utility pages like legal
 pages can exist outside this list.

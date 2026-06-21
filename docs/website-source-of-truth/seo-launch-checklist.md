@@ -133,7 +133,7 @@ launch hygiene.
     `/industries/landscape-maintenance/` (the earlier `outdoor-lighting` shell was already gone).
   - Nav mega-menu + footer rebuilt to the 8 (now in homepage order, with the matching Lucide
     icons instead of the old generic checkmark), `/industries/` hub copy updated, `sitemap.xml`
-    given an Industries section, and the page-registry / sitemap.md / PAGES_MANIFEST docs aligned.
+    given an Industries section, and the page-registry / sitemap.md docs aligned.
     No reference to the 3 retired slugs remains anywhere in the project.
 - **Still TODO — build out the 8 shells.** All 8 are live shells (header + hero + placeholder
   body + CTA/footer) with correct self-canonical/title/meta. Build real content on the service-
