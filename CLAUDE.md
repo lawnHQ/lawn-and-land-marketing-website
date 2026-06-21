@@ -89,15 +89,19 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   ALWAYS matches the surrounding heading weight (e.g. 800) — never a fixed or lighter weight. Applies
   to every `.hl` instance, here and on any other L&L surface (incl. the brand kit).
 - **Precision case study** (`/case-studies/precision/`) — **built** 2026-06-21; the first page of a new
-  **`/case-studies/` silo** (reintroduced from the killed list per a builder directive). Migrated and
-  modernized from the legacy WordPress `/precision-case-study/`: answer-first hero (calls 135→536 / +297%),
-  4-stat strip, **sticky Table of Contents + scrollspy**, **native before/after data viz** (no old WP
-  screenshots), Nate **click-to-play** video (vertical Short `q--6TsFlnLI`), full **copyedited, em-dash-free**
-  story, Twilight CTA. `@graph` = Organization + Article + VideoObject + BreadcrumbList. **Math fix**
-  (impressions +377%, not the old "475%"); AdWords→Google Ads; promo/lead-magnet language removed; dashboard
-  shots are labeled placeholders pending real captures. Cross-linked from the experiences hub + the 4
-  lawn/landscape industry proof cards. **Launch 301** from the old URL. Page CSS is inline (`.cs-*`); not an
-  industry page, so it does not load `industry.css`.
+  **`/case-studies/` silo** (reintroduced from the killed list per a builder directive) and the **reusable
+  case-study template** (`case-study-template.md`). Migrated + modernized from the legacy WordPress
+  `/precision-case-study/`. **Hybrid structure:** answer-first hero (calls 135→536 / +297%, one `.hl`) →
+  **"At a Glance" conversion unit** (`.cs-tldr`: situation→outcome narrative + the single stat band +
+  spend-anchored ROI line + CTA + "full breakdown ↓" hand-off — serves the skimmer) → **sticky ToC +
+  scrollspy deep dive** (serves the deep reader): **native before/after data viz** (no chart screenshots),
+  full-length **click-to-play** Nate Moses video (16:9 `ajusL5iAs0Q`, "Hear from the owner"), real proof
+  **screenshots** re-hosted under `assets/images/precision/` (website, LSA, GBP, Featured Snippet, CRM,
+  missed-call, reviews), copyedited **em-dash-free** story, Twilight CTA. `@graph` = Organization + Article
+  + VideoObject + BreadcrumbList. **Math fix** (impressions +377%, not the old "475%"); AdWords→Google Ads.
+  Cross-linked from the experiences hub + 4 industry proof cards. **Launch 301** from the old URL. Inline
+  CSS (`.cs-*`); no `industry.css`. Owner actions before indexing: confirm the 10x ROI + spend figure +
+  Nate's sign-off.
 
 ## Status — what's NOT done (shells / next up)
 - **Industry pages: all 8 built** (see DONE above) — no remaining industry builds. Polish only: real images
@@ -171,6 +175,7 @@ deploys take ~1–2 min). In-tool screenshots don't render well for him.
 (page-by-page status table) · `sitemap.md` (approved routes) · `routing-rules.md` (canonical /
 killed routes) · `service-page-template.md` (the locked service-page template + generator) ·
 `industry-page-template.md` (the locked industry-page framework + SEO/GEO/EEAT strategy) ·
+`case-study-template.md` (the `/case-studies/*` hybrid template: hero → "At a Glance" → deep dive) ·
 `navigation.md` (universal header / nav / submenus + footer) · `decisions.md` (durable decisions log) ·
 `seo-launch-checklist.md` · `benchmark-lawnline.md`.
 **Keep these current in the same workstream as any structural change.**
