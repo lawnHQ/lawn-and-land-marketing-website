@@ -288,7 +288,7 @@
     /* ===== Precision case study (.cs-*) ===== */
     .cs-answer { font-size: 19px; line-height: 1.6; color: #fff; max-width: 64ch; }
 
-    .cs-tldr { border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); background: linear-gradient(180deg, rgba(172,231,29,0.035), rgba(172,231,29,0)); }
+    .cs-tldr { position: relative; overflow: hidden; border-top: 1px solid rgba(104,55,239,0.22); border-bottom: 1px solid rgba(104,55,239,0.22); background-color: #0d0b14; background-image: radial-gradient(125% 150% at 50% -20%, rgba(104,55,239,0.34) 0%, rgba(104,55,239,0.12) 36%, transparent 66%), radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1.5px); background-size: 100% 100%, 22px 22px; background-repeat: no-repeat, repeat; background-position: center top, center; }
     .cs-tldr-inner { max-width: 940px; margin: 0 auto; padding: 34px 24px 38px; }
     .cs-tldr-narrative { font-size: 18px; line-height: 1.62; color: rgba(255,255,255,0.88); max-width: 74ch; margin: 10px 0 22px; }
     .cs-tldr-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); }
@@ -357,6 +357,17 @@
     .cs-shot { border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: #0d0d0d; }
     .cs-shot img { width: 100%; height: auto; display: block; }
     .cs-shot--narrow { max-width: 460px; margin-left: auto; margin-right: auto; }
+    .cs-gbp { display: flex; align-items: stretch; gap: 14px; margin: 6px 0 18px; flex-wrap: wrap; }
+    .cs-gbp-card { flex: 1 1 180px; background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.09); border-radius: 16px; padding: 18px 20px; text-align: center; }
+    .cs-gbp-card.is-now { border-color: rgba(172,231,29,0.4); background: rgba(172,231,29,0.05); }
+    .cs-gbp-when { font-family: var(--font-l); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 10px; }
+    .cs-gbp-card.is-now .cs-gbp-when { color: var(--lime); }
+    .cs-gbp-rating { font-family: var(--font-h); font-style: italic; font-weight: 800; font-size: 30px; line-height: 1; color: #fff; }
+    .cs-gbp-card.is-now .cs-gbp-rating { color: var(--lime); }
+    .cs-gbp-star { color: #FBBF24; font-style: normal; }
+    .cs-gbp-rev { margin-top: 8px; font-size: 14px; color: rgba(255,255,255,0.72); }
+    .cs-gbp-arrow { display: flex; align-items: center; justify-content: center; color: var(--lime); font-size: 20px; flex: 0 0 auto; }
+    @media (max-width: 520px) { .cs-gbp { flex-direction: column; } .cs-gbp-arrow { transform: rotate(90deg); } }
 
     .cs-video { max-width: 760px; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 30px 80px rgba(0,0,0,0.4); }
     .cs-video .testi-video-wrap { border-radius: 18px; }
@@ -820,8 +831,21 @@
           <div class="cs-figcap">Precision earned the Featured Snippet, the number-zero spot, for core service searches in Greenville, SC.</div>
         </div>
         <div class="cs-figure">
-          <div class="cs-shot cs-shot--narrow"><img src="/assets/images/precision/precision-gbp.png" alt="Precision Landscape Management's optimized Google Business Profile: 4.5 stars, 43 Google reviews, photos, hours, and contact details" loading="lazy" decoding="async"></div>
-          <div class="cs-figcap">Their Google Business Profile, fully optimized: 4.5 stars and 43 reviews, complete and active.</div>
+          <div class="cs-gbp">
+            <div class="cs-gbp-card">
+              <div class="cs-gbp-when">When we started</div>
+              <div class="cs-gbp-rating">4.5 <span class="cs-gbp-star">&#9733;</span></div>
+              <div class="cs-gbp-rev">43 Google reviews</div>
+            </div>
+            <div class="cs-gbp-arrow" aria-hidden="true">&rarr;</div>
+            <div class="cs-gbp-card is-now">
+              <div class="cs-gbp-when">Today</div>
+              <div class="cs-gbp-rating">4.8 <span class="cs-gbp-star">&#9733;</span></div>
+              <div class="cs-gbp-rev">320+ Google reviews</div>
+            </div>
+          </div>
+          <div class="cs-shot cs-shot--narrow"><img src="/assets/images/precision/precision-gbp.png" alt="Precision Landscape Management's Google Business Profile early in the engagement: 4.5 stars and 43 Google reviews" loading="lazy" decoding="async"></div>
+          <div class="cs-figcap">Where they started: 43 reviews at 4.5 stars. Today, after staying on the system, Precision is over 320 reviews at a 4.8-star rating, a higher rating on more than seven times the reviews.</div>
         </div>
       </section>
 

@@ -19,7 +19,10 @@ skimmer, with the **full long-form breakdown** preserved below for the deep read
    non-link crumb, no hub page exists) + kicker (`Case Study · <City, ST>`) + H1 with ONE `.hl`
    highlight on the headline number + **answer-first opener** (one quotable sentence: who, where,
    the headline outcome, the timeframe) + primary CTA + a "See the results" jump.
-2. **"At a Glance" / "The short version"** (`.cs-tldr`) — the self-contained conversion unit:
+2. **"At a Glance" / "The short version"** (`.cs-tldr`) — the self-contained conversion unit, set on
+   the **Twilight textured + dot-grid band** (the brand "spotlight" treatment: `#0d0b14` + a purple
+   radial glow + the 22px white dot-grid + purple hairline borders; same recipe as the homepage stats
+   bar and `.ind-band`). Lime stat numbers on the twilight band is the established pattern, not a clash.
    - eyebrow "The short version"
    - 2–3 sentence **situation → outcome** narrative (distill it LAST; do not copy the intro)
    - the **single** stat band (`.cs-tldr-stats` of `.cs-ss`) — 4 headline metrics. This is the
@@ -38,7 +41,10 @@ skimmer, with the **full long-form breakdown** preserved below for the deep read
    generic), the caption names the person. Prefer the full-length video over a short clip.
 6. **The deep dive**: one `.cs-section` per service area, each opening with an extractable sentence,
    real proof screenshots (`.cs-shot`, `.cs-shot--narrow` for portrait/square shots), pull-quotes
-   (`.cs-callout`), and check-list mechanics (`.cs-list`).
+   (`.cs-callout`), and check-list mechanics (`.cs-list`). For a metric that grew over time (reviews,
+   rating, revenue), use a native **then → now** comparison (`.cs-gbp`-style cards: a neutral "when we
+   started" card + an arrow + a lime-accented "today" card) rather than two mismatched screenshots —
+   it sidesteps screenshot-dimension problems and reads cleaner. Keep one real screenshot as the anchor.
 7. **Conclusion** + **Twilight CTA** (`.svc-cta`) with 3–4 "Explore" links to the trades the study
    demonstrates + Client Experiences.
 
