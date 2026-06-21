@@ -100,8 +100,7 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   missed-call, reviews), copyedited **em-dash-free** story, Twilight CTA. `@graph` = Organization + Article
   + VideoObject + BreadcrumbList. **Math fix** (impressions +377%, not the old "475%"); AdWords→Google Ads.
   Cross-linked from the experiences hub + 4 industry proof cards. **Launch 301** from the old URL. Inline
-  CSS (`.cs-*`); no `industry.css`. Owner actions before indexing: confirm the 10x ROI + spend figure +
-  Nate's sign-off.
+  CSS (`.cs-*`); no `industry.css`. Owner actions before indexing: Nate's sign-off (ROI is owner-set at 23x; revenue $4.4M to $11.2M owner-provided).
 
 ## Status — what's NOT done (shells / next up)
 - **Industry pages: all 8 built** (see DONE above) — no remaining industry builds. Polish only: real images

@@ -606,3 +606,10 @@
 - **Swapped the testimonial to the full-length 16:9 Nate Moses video** (`ajusL5iAs0Q`, "Our Phone Doesn't Stop Ringing", from the homepage) via click-to-play, replacing the vertical short. Caption uses his real approved quote plus the precise 135 to 536 figure. ToC + heading now read "the owner" (template-generic); the caption names the person.
 - **Dropped in the real proof screenshots**, pulled from the legacy WordPress case study and re-hosted under `assets/images/precision/` (website, LSA dashboard, GBP, Featured Snippet, CRM lead, Missed Call Text Back, Google reviews) with descriptive alt text. The LSA screenshot corroborates the "$250/week, 9 leads" copy. Per owner instruction: re-host on our site, do not hotlink WordPress; leave a slot blank if an image is unavailable (none were).
 - **ROI line carries no dollar figure** pending an owner-confirmed spend (per directive: drop the placeholder rather than guess). The 10x ROI multiple + Nate's approval to republish remain owner actions before this indexes. VideoObject `uploadDate` set to 2026-06-19 to match the testimonial set (owner can correct to the true date).
+
+
+## 2026-06-21 (update) — Precision revenue trajectory + 23x ROI + visual polish
+- **Revenue trajectory added** (Results section): native ascending bar chart, $4.4M (joined) to $7.8M (year 1) to $11.2M (year 2), with an explicit **honest-attribution note** - these are company-wide results, Precision is a strong operator in its own right, and our marketing was one of the **core drivers** and the marketing partner, not the sole cause (owner's framing: make the role known without over-claiming the revenue).
+- **ROI updated 10x to 23x** everywhere on the page (stat band, At-a-Glance ROI line, secondary stat, OG description, conclusion); 23x is owner-provided.
+- **"The short version" block** now sits on the Twilight textured + dot-grid band (matches the homepage stats bar / `.ind-band`).
+- **GBP then-to-now comparison** (4.5 stars / 43 reviews to 4.8 stars / 320+ reviews); the current-state GBP screenshot is still pending (it was shared inline, not as a hostable file).
