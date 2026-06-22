@@ -1,6 +1,6 @@
 # Approved Website Sitemap
 
-Last updated: 2026-06-22. This is the **approved route list**. For per-page build status
+Last updated: 2026-06-21. This is the **approved route list**. For per-page build status
 (developed / shell), see `page-registry.md`. For the generated XML, see repo-root `sitemap.xml`.
 The Industries section below is the **canonical 8 (locked)**. Ancillary utility pages like legal
 pages can exist outside this list.
@@ -42,7 +42,7 @@ pages can exist outside this list.
 
 ## Resources
 - ~~`/resources/`~~ — **no page** (2026-06-21); silo path segment only (no index page). Nav "Resources" is a non-link trigger; not in `sitemap.xml`.
-- `/resources/blog/` — Blog index. Built 2026-06-22 from the legacy blog migration audit with 61 retained article pages in `sitemap.xml`.
+- `/resources/blog/` — Blog
 - ~~`/resources/meet-the-team/`~~ — **removed 2026-06-17**; team consolidated into the About page (`/about/#team`). Launch 301 → `/about/#team`.
 - `/resources/experiences-reviews/` — Experiences / Reviews
 - ~~`/resources/private-facebook-group/`~~ — **removed 2026-06-21**; never a real page. Nav + footer link to the external FB group (`facebook.com/groups/serviceareaexperts`).
@@ -65,7 +65,6 @@ These routes/sections are intentionally not part of the approved public website 
 ## Legacy or Non-Canonical Routes To Remove Or Redirect
 - `/resources/contact/` — non-canonical, use `/contact/`
 - legacy service child routes under `/services/...`
-- legacy `/blog/` and `/blog/<slug>/` URLs — redirect at launch to `/resources/blog/` or the matching retained article/pillar. Do not use `/blog/` in new internal links.
 
 ## Notes
 - Section hub pages for Programs, Marketing Services, Industries, and Resources are approved.
