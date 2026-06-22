@@ -1,5 +1,827 @@
 {
   "buildCommand": "python3 build.py || true",
   "outputDirectory": ".",
-  "framework": null
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lawn-landscaping-local-seo",
+      "destination": "/resources/blog/lawn-landscaping-local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lawn-landscaping-local-seo/",
+      "destination": "/resources/blog/lawn-landscaping-local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-online-crms-for-lawn-care-businesses-reviewed",
+      "destination": "/resources/blog/top-online-crms-for-lawn-care-businesses-reviewed/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-online-crms-for-lawn-care-businesses-reviewed/",
+      "destination": "/resources/blog/top-online-crms-for-lawn-care-businesses-reviewed/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/elevate-your-lawn-care-leads-through-ppc-strategies",
+      "destination": "/resources/blog/elevate-your-lawn-care-leads-through-ppc-strategies/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/elevate-your-lawn-care-leads-through-ppc-strategies/",
+      "destination": "/resources/blog/elevate-your-lawn-care-leads-through-ppc-strategies/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-guide-to-online-landscape-marketing",
+      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/your-2025-digital-marketing-plan",
+      "destination": "/resources/blog/your-2025-digital-marketing-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/your-2025-digital-marketing-plan/",
+      "destination": "/resources/blog/your-2025-digital-marketing-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/4-essential-digital-marketing-strategies-for-landscapers",
+      "destination": "/resources/blog/4-essential-digital-marketing-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/4-essential-digital-marketing-strategies-for-landscapers/",
+      "destination": "/resources/blog/4-essential-digital-marketing-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creative-email-newsletter-strategies-for-landscapers",
+      "destination": "/resources/blog/creative-email-newsletter-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creative-email-newsletter-strategies-for-landscapers/",
+      "destination": "/resources/blog/creative-email-newsletter-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/social-media-strategies-for-landscapers",
+      "destination": "/resources/blog/social-media-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/social-media-strategies-for-landscapers/",
+      "destination": "/resources/blog/social-media-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cutting-costs-on-ppc-for-landscapers",
+      "destination": "/resources/blog/cutting-costs-on-ppc-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cutting-costs-on-ppc-for-landscapers/",
+      "destination": "/resources/blog/cutting-costs-on-ppc-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-works-for-gardeners-email-newsletters",
+      "destination": "/resources/blog/what-works-for-gardeners-email-newsletters/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-works-for-gardeners-email-newsletters/",
+      "destination": "/resources/blog/what-works-for-gardeners-email-newsletters/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lawn-care-blogging-and-guest-posting",
+      "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lawn-care-blogging-and-guest-posting/",
+      "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-for-lawn-care-services",
+      "destination": "/resources/blog/seo-for-lawn-care-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-for-lawn-care-services/",
+      "destination": "/resources/blog/seo-for-lawn-care-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-does-your-lawn-care-business-need-targeted-marketing",
+      "destination": "/resources/blog/why-does-your-lawn-care-business-need-targeted-marketing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-does-your-lawn-care-business-need-targeted-marketing/",
+      "destination": "/resources/blog/why-does-your-lawn-care-business-need-targeted-marketing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/video-marketing-for-lawn-and-garden-services",
+      "destination": "/resources/blog/video-marketing-for-lawn-and-garden-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/video-marketing-for-lawn-and-garden-services/",
+      "destination": "/resources/blog/video-marketing-for-lawn-and-garden-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/custom-web-design-guide-for-landscaping-professionals",
+      "destination": "/resources/blog/custom-web-design-guide-for-landscaping-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/custom-web-design-guide-for-landscaping-professionals/",
+      "destination": "/resources/blog/custom-web-design-guide-for-landscaping-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses",
+      "destination": "/resources/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/",
+      "destination": "/resources/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/4-best-local-seo-tactics-for-lawn-care",
+      "destination": "/resources/blog/4-best-local-seo-tactics-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/4-best-local-seo-tactics-for-lawn-care/",
+      "destination": "/resources/blog/4-best-local-seo-tactics-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/website-design-for-landscaping-businesses",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/website-design-for-landscaping-businesses/",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-landscaping-business",
+      "destination": "/resources/blog/ai-for-landscaping-business/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-landscaping-business/",
+      "destination": "/resources/blog/ai-for-landscaping-business/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/critical-digital-marketing-mistakes-killing-your-landscaping-business-growth",
+      "destination": "/resources/blog/critical-digital-marketing-mistakes-killing-your-landscaping-business-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/critical-digital-marketing-mistakes-killing-your-landscaping-business-growth/",
+      "destination": "/resources/blog/critical-digital-marketing-mistakes-killing-your-landscaping-business-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/three-moves-that-separate-professional-landscapers",
+      "destination": "/resources/blog/three-moves-that-separate-professional-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/three-moves-that-separate-professional-landscapers/",
+      "destination": "/resources/blog/three-moves-that-separate-professional-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/email-marketing-campaigns-for-lawn-maintenance",
+      "destination": "/resources/blog/email-marketing-campaigns-for-lawn-maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/email-marketing-campaigns-for-lawn-maintenance/",
+      "destination": "/resources/blog/email-marketing-campaigns-for-lawn-maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-landscape-business-isnt-growing",
+      "destination": "/resources/blog/why-your-landscape-business-isnt-growing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-landscape-business-isnt-growing/",
+      "destination": "/resources/blog/why-your-landscape-business-isnt-growing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-landscaping-digital-marketing-isnt-working-3-critical-issues-killing-your-results",
+      "destination": "/resources/blog/why-your-landscaping-digital-marketing-isnt-working-3-critical-issues-killing-your-results/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-landscaping-digital-marketing-isnt-working-3-critical-issues-killing-your-results/",
+      "destination": "/resources/blog/why-your-landscaping-digital-marketing-isnt-working-3-critical-issues-killing-your-results/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/7-proven-strategies-to-generate-lawn-care-leads-like-a-pro-in-2024",
+      "destination": "/resources/blog/7-proven-strategies-to-generate-lawn-care-leads-like-a-pro-in-2024/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/7-proven-strategies-to-generate-lawn-care-leads-like-a-pro-in-2024/",
+      "destination": "/resources/blog/7-proven-strategies-to-generate-lawn-care-leads-like-a-pro-in-2024/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/breaking-through-growth-plateaus-the-real-cost-of-avoiding-digital-marketing",
+      "destination": "/resources/blog/breaking-through-growth-plateaus-the-real-cost-of-avoiding-digital-marketing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/breaking-through-growth-plateaus-the-real-cost-of-avoiding-digital-marketing/",
+      "destination": "/resources/blog/breaking-through-growth-plateaus-the-real-cost-of-avoiding-digital-marketing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/14-creative-content-ideas-for-lawn-care-blogs",
+      "destination": "/resources/blog/14-creative-content-ideas-for-lawn-care-blogs/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/14-creative-content-ideas-for-lawn-care-blogs/",
+      "destination": "/resources/blog/14-creative-content-ideas-for-lawn-care-blogs/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/beyond-seo-the-missing-link-in-your-digital-marketing-arsenal",
+      "destination": "/resources/blog/beyond-seo-the-missing-link-in-your-digital-marketing-arsenal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/beyond-seo-the-missing-link-in-your-digital-marketing-arsenal/",
+      "destination": "/resources/blog/beyond-seo-the-missing-link-in-your-digital-marketing-arsenal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/marketing-tool-that-outperforms",
+      "destination": "/resources/blog/marketing-tool-that-outperforms/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/marketing-tool-that-outperforms/",
+      "destination": "/resources/blog/marketing-tool-that-outperforms/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-hidden-revenue-driver-every-lawn-care-business-is-missing",
+      "destination": "/resources/blog/the-hidden-revenue-driver-every-lawn-care-business-is-missing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-hidden-revenue-driver-every-lawn-care-business-is-missing/",
+      "destination": "/resources/blog/the-hidden-revenue-driver-every-lawn-care-business-is-missing/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-landscaping-seo-gets-traffic-not-qualified-leads",
+      "destination": "/resources/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/",
+      "destination": "/resources/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/trevor-maack-new-horizon-landscaping-design-outdoor-living-growth",
+      "destination": "/resources/blog/trevor-maack-new-horizon-landscaping-design-outdoor-living-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/trevor-maack-new-horizon-landscaping-design-outdoor-living-growth/",
+      "destination": "/resources/blog/trevor-maack-new-horizon-landscaping-design-outdoor-living-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-500-leads-in-10-days-digital-marketing-promises-are-destroying-landscaping-businesses",
+      "destination": "/resources/blog/why-500-leads-in-10-days-digital-marketing-promises-are-destroying-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-500-leads-in-10-days-digital-marketing-promises-are-destroying-landscaping-businesses/",
+      "destination": "/resources/blog/why-500-leads-in-10-days-digital-marketing-promises-are-destroying-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-is-local-seo-crucial-for-lawn-care",
+      "destination": "/resources/blog/why-is-local-seo-crucial-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-is-local-seo-crucial-for-lawn-care/",
+      "destination": "/resources/blog/why-is-local-seo-crucial-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/luke-bunting-harpwell-gardens-landscape-craft-led-growth",
+      "destination": "/resources/blog/luke-bunting-harpwell-gardens-landscape-craft-led-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/luke-bunting-harpwell-gardens-landscape-craft-led-growth/",
+      "destination": "/resources/blog/luke-bunting-harpwell-gardens-landscape-craft-led-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/couri-leuschner-botanical-solutions-plant-health-care-growth",
+      "destination": "/resources/blog/couri-leuschner-botanical-solutions-plant-health-care-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/couri-leuschner-botanical-solutions-plant-health-care-growth/",
+      "destination": "/resources/blog/couri-leuschner-botanical-solutions-plant-health-care-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pat-condon-3c-land-agricultural-services-specialized-growth",
+      "destination": "/resources/blog/pat-condon-3c-land-agricultural-services-specialized-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pat-condon-3c-land-agricultural-services-specialized-growth/",
+      "destination": "/resources/blog/pat-condon-3c-land-agricultural-services-specialized-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/johnny-kunen-native-ny-gardens-native-plant-growth",
+      "destination": "/resources/blog/johnny-kunen-native-ny-gardens-native-plant-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/johnny-kunen-native-ny-gardens-native-plant-growth/",
+      "destination": "/resources/blog/johnny-kunen-native-ny-gardens-native-plant-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chad-sutter-sutter-lawns-route-based-growth",
+      "destination": "/resources/blog/chad-sutter-sutter-lawns-route-based-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chad-sutter-sutter-lawns-route-based-growth/",
+      "destination": "/resources/blog/chad-sutter-sutter-lawns-route-based-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mark-gilliland-greenz-outdoor-services-full-service-growth",
+      "destination": "/resources/blog/mark-gilliland-greenz-outdoor-services-full-service-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mark-gilliland-greenz-outdoor-services-full-service-growth/",
+      "destination": "/resources/blog/mark-gilliland-greenz-outdoor-services-full-service-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dustin-walker-landscape-st-louis-acquisition-led-growth",
+      "destination": "/resources/blog/dustin-walker-landscape-st-louis-acquisition-led-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dustin-walker-landscape-st-louis-acquisition-led-growth/",
+      "destination": "/resources/blog/dustin-walker-landscape-st-louis-acquisition-led-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-branding-for-lawn-care-professionals",
+      "destination": "/resources/blog/digital-branding-for-lawn-care-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-branding-for-lawn-care-professionals/",
+      "destination": "/resources/blog/digital-branding-for-lawn-care-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/alex-barth-troys-tropics-premium-outdoor-living-growth",
+      "destination": "/resources/blog/alex-barth-troys-tropics-premium-outdoor-living-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/alex-barth-troys-tropics-premium-outdoor-living-growth/",
+      "destination": "/resources/blog/alex-barth-troys-tropics-premium-outdoor-living-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth",
+      "destination": "/resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/",
+      "destination": "/resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/brandon-olson-olson-outdoors-diversified-growth",
+      "destination": "/resources/blog/brandon-olson-olson-outdoors-diversified-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/brandon-olson-olson-outdoors-diversified-growth/",
+      "destination": "/resources/blog/brandon-olson-olson-outdoors-diversified-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/brian-taylor-countryside-lawn-care-durable-growth",
+      "destination": "/resources/blog/brian-taylor-countryside-lawn-care-durable-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/brian-taylor-countryside-lawn-care-durable-growth/",
+      "destination": "/resources/blog/brian-taylor-countryside-lawn-care-durable-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-should-lawn-care-companies-use-web-analytics",
+      "destination": "/resources/blog/why-should-lawn-care-companies-use-web-analytics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-should-lawn-care-companies-use-web-analytics/",
+      "destination": "/resources/blog/why-should-lawn-care-companies-use-web-analytics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-should-landscaping-firms-prioritize-web-design",
+      "destination": "/resources/blog/why-should-landscaping-firms-prioritize-web-design/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-should-landscaping-firms-prioritize-web-design/",
+      "destination": "/resources/blog/why-should-landscaping-firms-prioritize-web-design/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/managing-lawn-service-reviews-online-reputation-tips",
+      "destination": "/resources/blog/managing-lawn-service-reviews-online-reputation-tips/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/managing-lawn-service-reviews-online-reputation-tips/",
+      "destination": "/resources/blog/managing-lawn-service-reviews-online-reputation-tips/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/grant-greenedge-greentech-focused-growth",
+      "destination": "/resources/blog/grant-greenedge-greentech-focused-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/grant-greenedge-greentech-focused-growth/",
+      "destination": "/resources/blog/grant-greenedge-greentech-focused-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/15-local-seo-tips-to-boost-lawn-care-visibility",
+      "destination": "/resources/blog/15-local-seo-tips-to-boost-lawn-care-visibility/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/15-local-seo-tips-to-boost-lawn-care-visibility/",
+      "destination": "/resources/blog/15-local-seo-tips-to-boost-lawn-care-visibility/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/online-reputation-management-for-lawn-services",
+      "destination": "/resources/blog/online-reputation-management-for-lawn-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/online-reputation-management-for-lawn-services/",
+      "destination": "/resources/blog/online-reputation-management-for-lawn-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pay-per-click-advertising-for-landscaping-companies",
+      "destination": "/resources/blog/pay-per-click-advertising-for-landscaping-companies/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pay-per-click-advertising-for-landscaping-companies/",
+      "destination": "/resources/blog/pay-per-click-advertising-for-landscaping-companies/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/online-customer-relationship-management-for-lawn-care",
+      "destination": "/resources/blog/online-customer-relationship-management-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/online-customer-relationship-management-for-lawn-care/",
+      "destination": "/resources/blog/online-customer-relationship-management-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/local-search-marketing-for-lawn-care",
+      "destination": "/resources/blog/local-search-marketing-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/local-search-marketing-for-lawn-care/",
+      "destination": "/resources/blog/local-search-marketing-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/content-marketing-for-lawn-care-businesses",
+      "destination": "/resources/blog/content-marketing-for-lawn-care-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/content-marketing-for-lawn-care-businesses/",
+      "destination": "/resources/blog/content-marketing-for-lawn-care-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scott-greener-grass-trust-led-growth",
+      "destination": "/resources/blog/scott-greener-grass-trust-led-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/scott-greener-grass-trust-led-growth/",
+      "destination": "/resources/blog/scott-greener-grass-trust-led-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-analytics-for-landscaping-services-analytics-for-landscaping-success",
+      "destination": "/resources/blog/digital-analytics-for-landscaping-services-analytics-for-landscaping-success/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-analytics-for-landscaping-services-analytics-for-landscaping-success/",
+      "destination": "/resources/blog/digital-analytics-for-landscaping-services-analytics-for-landscaping-success/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/nate-precision-landscape-management-scalable-growth",
+      "destination": "/resources/blog/nate-precision-landscape-management-scalable-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/nate-precision-landscape-management-scalable-growth/",
+      "destination": "/resources/blog/nate-precision-landscape-management-scalable-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-cameron-gaskin-auketts-story-teaches-landscaping-companies-about-growth",
+      "destination": "/resources/blog/what-cameron-gaskin-auketts-story-teaches-landscaping-companies-about-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-cameron-gaskin-auketts-story-teaches-landscaping-companies-about-growth/",
+      "destination": "/resources/blog/what-cameron-gaskin-auketts-story-teaches-landscaping-companies-about-growth/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/landscaper-marketing-101-how-to-attract-more-clients-and-grow-your-business",
+      "destination": "/resources/blog/landscaper-marketing-101-how-to-attract-more-clients-and-grow-your-business/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/landscaper-marketing-101-how-to-attract-more-clients-and-grow-your-business/",
+      "destination": "/resources/blog/landscaper-marketing-101-how-to-attract-more-clients-and-grow-your-business/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/4-essential-lawn-care-tips-for-guest-bloggers",
+      "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/4-essential-lawn-care-tips-for-guest-bloggers/",
+      "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-are-seo-tactics-vital-for-lawn-care-blogs",
+      "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-are-seo-tactics-vital-for-lawn-care-blogs/",
+      "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-drives-success-in-garden-care-video-ads",
+      "destination": "/resources/blog/video-marketing-for-lawn-and-garden-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-drives-success-in-garden-care-video-ads/",
+      "destination": "/resources/blog/video-marketing-for-lawn-and-garden-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-are-top-mobile-marketing-tactics-for-landscapers",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-are-top-mobile-marketing-tactics-for-landscapers/",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/guide-to-crm-adoption-for-lawn-care-companies",
+      "destination": "/resources/blog/online-customer-relationship-management-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/guide-to-crm-adoption-for-lawn-care-companies/",
+      "destination": "/resources/blog/online-customer-relationship-management-for-lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creating-engaging-seo-content-for-gardeners",
+      "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creating-engaging-seo-content-for-gardeners/",
+      "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/6-key-mobile-responsive-design-tips-for-landscapers",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/6-key-mobile-responsive-design-tips-for-landscapers/",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/5-best-social-networks-for-landscapers-success",
+      "destination": "/resources/blog/social-media-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/5-best-social-networks-for-landscapers-success/",
+      "destination": "/resources/blog/social-media-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-should-landscapers-prioritize-online-reputation",
+      "destination": "/resources/blog/managing-lawn-service-reviews-online-reputation-tips/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-should-landscapers-prioritize-online-reputation/",
+      "destination": "/resources/blog/managing-lawn-service-reviews-online-reputation-tips/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-should-landscapers-invest-in-digital-analytics",
+      "destination": "/resources/blog/digital-analytics-for-landscaping-services-analytics-for-landscaping-success/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-should-landscapers-invest-in-digital-analytics/",
+      "destination": "/resources/blog/digital-analytics-for-landscaping-services-analytics-for-landscaping-success/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-choose-video-marketing-for-landscaping-success",
+      "destination": "/resources/blog/video-marketing-for-lawn-and-garden-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-choose-video-marketing-for-landscaping-success/",
+      "destination": "/resources/blog/video-marketing-for-lawn-and-garden-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/whats-your-email-edge-for-lawn-care-success",
+      "destination": "/resources/blog/creative-email-newsletter-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/whats-your-email-edge-for-lawn-care-success/",
+      "destination": "/resources/blog/creative-email-newsletter-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-are-top-social-media-strategies-for-landscapers",
+      "destination": "/resources/blog/social-media-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-are-top-social-media-strategies-for-landscapers/",
+      "destination": "/resources/blog/social-media-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-are-top-content-strategies-for-landscapers",
+      "destination": "/resources/blog/content-marketing-for-lawn-care-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-are-top-content-strategies-for-landscapers/",
+      "destination": "/resources/blog/content-marketing-for-lawn-care-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-mobile-marketing-tips-for-landscapers",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-mobile-marketing-tips-for-landscapers/",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-digital-branding-tips-for-landscapers",
+      "destination": "/resources/blog/digital-branding-for-lawn-care-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-digital-branding-tips-for-landscapers/",
+      "destination": "/resources/blog/digital-branding-for-lawn-care-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/11-budget-friendly-lawn-care-seo-tips",
+      "destination": "/resources/blog/lawn-landscaping-local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/11-budget-friendly-lawn-care-seo-tips/",
+      "destination": "/resources/blog/lawn-landscaping-local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mobile-marketing-for-landscape-services",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mobile-marketing-for-landscape-services/",
+      "destination": "/resources/blog/website-design-for-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/7-easy-steps-to-dominate-local-seo-for-your-landscaping-business",
+      "destination": "/resources/blog/lawn-landscaping-local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/7-easy-steps-to-dominate-local-seo-for-your-landscaping-business/",
+      "destination": "/resources/blog/lawn-landscaping-local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-importance-of-seo-for-your-lawn-care-and-landscape-business",
+      "destination": "/resources/blog/lawn-landscaping-local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-importance-of-seo-for-your-lawn-care-and-landscape-business/",
+      "destination": "/resources/blog/lawn-landscaping-local-seo/",
+      "permanent": true
+    }
+  ]
 }

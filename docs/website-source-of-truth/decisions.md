@@ -82,6 +82,15 @@
   `docs/website-source-of-truth/` set current; rebuilt `sitemap.xml` to the real routes (the old one
   listed killed routes — `/services/...`, `/pricing/`, `/case-studies/`, fake blog posts).
 
+## 2026-06-22 — Blog migration foundation
+- Juan approved migrating and optimizing the audited legacy WordPress blog archive into the new site.
+- Blog canonical remains `/resources/blog/`; old `/blog/` paths are launch redirects, not internal-link targets.
+- Migration audit source: `Lawn & Land Blog Migration Audit - 2026-06-22` Google Sheet (`1VOrHBNz3rfQSKeSHz3TVywOO-uxVyL1pbrPzStBeo44`), created from live WordPress + GSC data.
+- Migration counts: 81 published legacy posts audited; 61 retained on the new site, 20 scrapped/consolidated via redirects.
+- Preserve rule: `/resources/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/` stays as the approved page from main.
+- Update rule: retained Update posts get the static migration quality layer: cleaned body HTML, answer-first summary, author/EEAT block, CTA, FAQ block + FAQPage schema, BlogPosting schema, related articles, and canonical internal links.
+- Scrap rule: scrapped legacy `/blog/<slug>/` URLs redirect into the closest retained topical pillar; do not recreate those posts as standalone pages.
+
 ## 2026-06-15 — Authority Program (flagship) built
 - Built `/programs/authority/` as the flagship, cloned from the Growth structure and elevated for the
   **7-figure+** avatar (established, doing real revenue, wants to *dominate* — NOT Growth's get-found
