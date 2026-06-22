@@ -122,13 +122,16 @@ contact, confirmation, booking, legal, the 3 resources content pages, 2 case stu
 What remains is launch prep + owner inputs:
 - **Service-page owner inputs** (the 8 `/marketing-services/*`): real FAQ answers + `FAQPage`
   schema are DONE (2026-06-21: all 40 owner answers wired in, schema live on all 8 pages).
-  Remaining: verified conviction stats, and real images for the labeled placeholders.
+  Remaining: real images for the labeled placeholders. (Conviction stats verified 2026-06-21:
+  6 confirmed accurate; Google Ads swapped to L&L's own 8-12% conversion rate vs ~3-6% industry.)
 - **Real images** for the remaining labeled placeholders on program / industry / case-study pages.
 - **Launch cutover** (`seo-launch-checklist.md`): flip canonicals + `og:url` staging→production,
   add `og:image` share graphics + `robots.txt`, keep `sitemap.xml` current.
-- **Owner sign-offs before the case studies index**: client approval of names / numbers / video /
-  screenshots; confirm the GHL calendar's actual length matches the site's "20-minute" copy.
-- **More case studies** (e.g. From The Ground Up) slot into `case-study-template.md` as approved.
+- **Owner sign-offs (RECEIVED 2026-06-21):** Precision + Rock Solid both approved their names,
+  numbers, video, and screenshots (cleared for launch indexing). GHL calendar confirmed at 20 minutes;
+  Precision LSA figures ($250/wk, 9 leads) confirmed correct.
+- **More case studies**: From The Ground Up numbers ($1.8M to $3.2M) confirmed by owner 2026-06-21;
+  case study not yet built (build on owner go-ahead, into `case-study-template.md`).
 
 ## How the site is built (tooling)
 - **Header/footer:** edit `_header.html` / `_footer.html`, then `python3 build.py` (verify with

@@ -646,3 +646,13 @@
 - 5 technical answers authored by Claude (owner-flagged): local SEO vs map pack, GBP vs local SEO,
   Google Ads vs LSA, avoiding wasted ad spend, boosting vs real campaign.
 - `FAQPage` schema is now satisfied for service pages (was gated on real answers). Still pending elsewhere.
+
+## 2026-06-21 — Conviction-stat update + case-study sign-offs/confirmations (sheet rows 6-12)
+- **Google Ads conviction stat** swapped from "$2 profit per $1 (Google Economic Impact)" to L&L's own
+  result: "8-12%" typical campaign conversion rate vs a ~3-6% industry average (owner direction). Lead/sub
+  updated; statSource note = "Lawn & Land client averages" (internal only, not rendered). Other 6 service
+  conviction stats confirmed accurate by owner.
+- **Case-study sign-offs RECEIVED:** Precision + Rock Solid owners approved names/numbers/video/screenshots
+  (cleared to index at launch). Precision LSA figures ($250/wk, 9 leads) confirmed correct.
+- **From The Ground Up** ($1.8M to $3.2M) numbers confirmed; case study NOT yet built (awaiting owner go-ahead).
+- **GHL calendar** confirmed at 20 minutes (matches site copy; no change needed).
