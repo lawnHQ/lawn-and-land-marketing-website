@@ -272,6 +272,19 @@
     .pod-guest-points span { font-family:var(--font-l); font-size:14px; color:rgba(255,255,255,0.84); display:inline-flex; align-items:center; gap:8px; }
     .pod-guest-points svg { width:17px; height:17px; stroke:var(--lime); fill:none; }
     @media (max-width:860px){ .pod-ep-grid{ grid-template-columns:1fr; } .pod-points{ grid-template-columns:1fr; } .pod-follow{ flex-direction:column; align-items:flex-start; } }
+
+    /* Be-a-guest pop-up calendar */
+    .guest-modal { position:fixed; inset:0; z-index:3000; display:none; }
+    .guest-modal.is-open { display:block; }
+    .guest-modal-overlay { position:absolute; inset:0; background:rgba(4,8,5,0.80); backdrop-filter:blur(4px); }
+    .guest-modal-panel { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:min(580px,93vw); max-height:90vh; overflow:auto; background:#0c1a0f; border:1px solid rgba(104,55,239,0.28); border-radius:20px; padding:30px; box-shadow:0 30px 80px rgba(0,0,0,0.6); }
+    .guest-modal-close { position:absolute; top:15px; right:15px; width:36px; height:36px; border:0; border-radius:50%; background:rgba(255,255,255,0.06); color:#fff; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background .2s; }
+    .guest-modal-close:hover { background:rgba(255,255,255,0.13); }
+    .guest-modal-close svg { width:18px; height:18px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; }
+    .guest-modal-head h3 { font-family:var(--font-h); font-style:italic; font-weight:800; font-size:24px; color:#fff; margin:6px 0 16px; }
+    .guest-modal-cal iframe { width:100%; min-height:600px; border:0; border-radius:12px; display:block; }
+    .guest-cal-placeholder { padding:44px 20px; text-align:center; border:1px dashed rgba(172,231,29,0.3); border-radius:14px; font-family:var(--font-l); color:var(--muted); font-size:14px; }
+    body.guest-open { overflow:hidden; }
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"PodcastSeries","name":"Mow Money, Mow Problems","description":"A weekly podcast for lawn and landscape business owners. Host Matt Foreman talks with green-industry owners about growing, running, and surviving the business.","url":"https://lawnandlandmarketing.com/resources/mow-money-mow-problems-podcast/","image":"https://lawnandlandmarketing.com/assets/images/og-share.jpg","webFeed":"https://www.youtube.com/feeds/videos.xml?channel_id=UCDquVUlNKHjfFSA8C239qIw","sameAs":["https://www.youtube.com/@MowMoneyMowProblemsPodcast"],"author":{"@id":"https://lawnandlandmarketing.com/#matt-foreman"},"publisher":{"@id":"https://lawnandlandmarketing.com/#organization"}}</script>
 </head>
@@ -522,7 +535,7 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
             Watch on YouTube
           </a>
-          <a href="/be-a-guest/" class="btn btn--ghost">
+          <a href="/be-a-guest/" data-guest-modal class="btn btn--ghost">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="4" width="6" height="10" rx="3"/><path d="M6 11c0 3.3 2.7 6 6 6s6-2.7 6-6"/><path d="M12 17v3"/><path d="M9 20h6"/></svg>
             Be a Guest
           </a>
@@ -645,7 +658,7 @@
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Every green-industry trade</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Recorded remotely, on your schedule</span>
       </div>
-      <a href="/be-a-guest/" class="btn btn--lime btn--lg"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="4" width="6" height="10" rx="3"/><path d="M6 11c0 3.3 2.7 6 6 6s6-2.7 6-6"/><path d="M12 17v3"/><path d="M9 20h6"/></svg>Apply to be a guest</a>
+      <a href="/be-a-guest/" data-guest-modal class="btn btn--lime btn--lg"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="4" width="6" height="10" rx="3"/><path d="M6 11c0 3.3 2.7 6 6 6s6-2.7 6-6"/><path d="M12 17v3"/><path d="M9 20h6"/></svg>Apply to be a guest</a>
     </div>
   </section>
 
@@ -782,5 +795,29 @@
   });
   </script>
   <script src="/assets/js/main.js?v=55"></script>
+  <div class="guest-modal" id="guestModal" aria-hidden="true">
+    <div class="guest-modal-overlay" data-guest-close></div>
+    <div class="guest-modal-panel" role="dialog" aria-modal="true" aria-label="Be a guest on the podcast">
+      <button class="guest-modal-close" data-guest-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <div class="guest-modal-head">
+        <span class="pod-eyebrow">Be a guest</span>
+        <h3>Grab a time to come on the show.</h3>
+      </div>
+      <div class="guest-modal-cal" id="guestCal">
+        <!-- GHL_CALENDAR_EMBED -->
+        <div class="guest-cal-placeholder">Your guest booking calendar will load here.</div>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var modal=document.getElementById('guestModal'); if(!modal) return;
+    function open(e){ if(e) e.preventDefault(); modal.classList.add('is-open'); modal.setAttribute('aria-hidden','false'); document.body.classList.add('guest-open'); }
+    function close(){ modal.classList.remove('is-open'); modal.setAttribute('aria-hidden','true'); document.body.classList.remove('guest-open'); }
+    document.querySelectorAll('[data-guest-modal]').forEach(function(b){ b.addEventListener('click', open); });
+    modal.querySelectorAll('[data-guest-close]').forEach(function(b){ b.addEventListener('click', close); });
+    document.addEventListener('keydown', function(e){ if(e.key==='Escape' && modal.classList.contains('is-open')) close(); });
+  })();
+  </script>
 </body>
 </html>
