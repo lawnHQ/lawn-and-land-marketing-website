@@ -680,3 +680,18 @@
   program, about, contact, case study, client-results, experiences) at mobile 375 / tablet 768 /
   desktop 1440. Zero collisions or horizontal overflow found anywhere besides the now-fixed FAQ.
 - Versions: main.js v54->55, service-page.css v3->4 (bumped sitewide).
+
+## 2026-06-22 — Repo cleanup / optimization pass
+- Image optimization: the 3 hero backgrounds (team-hero, reviews-hero, programs-hero — the last is the
+  default hero on ~30 pages) were 2816px / ~1.9MB each; resized to 1760px + recompressed (q70, dark-
+  overlaid so imperceptible) -> ~684KB each. matt-foreman.jpg 1200x1800/524KB -> 933x1400/380KB. Total
+  ~3.9MB trimmed off the deploy. Logos (logo-badge.svg 1MB, logo-horizontal.svg 632KB) are base64
+  rasters in an SVG wrapper — left untouched (on every page; re-exporting risks breaking branding;
+  flagged to owner). Case-study screenshots left as-is.
+- Docs brought current: README + build-status + service-page-template now reflect that FAQ answers +
+  FAQPage schema, conviction stats, og:image, team headshots, and case-study sign-offs all landed
+  2026-06-21; only placeholder images + robots.txt + the staging->production flip remain.
+- Removed stray .DS_Store; build --check green, generator regenerate-clean, 0 broken links, 0
+  [NEEDS YOUR INPUT] / em-dashes / emoji.
+- NOTE: .git history is ~102MB (large image blobs committed before .gitignore existed). Not rewritten
+  (force-push would disrupt the Vercel/GitHub integration); optional future cleanup via BFG if desired.

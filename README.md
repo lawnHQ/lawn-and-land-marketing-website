@@ -55,10 +55,13 @@ Specs: `service-page-template.md`, `industry-page-template.md`, `case-study-temp
   `case-study-template.md`).
 - **Client Results** roster (`/client-results/`) — tiered case-studies + client roster, under About.
 
-**Launch prep (next, see `seo-launch-checklist.md`):** real FAQ answers for the 8 service pages
-(→ `FAQPage` schema), verified conviction stats, real images for labeled placeholders, `og:image`
-share graphics, `robots.txt`, the staging→production canonical flip, and client sign-offs on the
-case studies. More case studies (e.g. From The Ground Up) slot into the framework as they're approved.
+**Landed (2026-06-21):** real FAQ answers + `FAQPage` schema on all 8 service pages, verified
+conviction stats (Google Ads now L&L's own 8-12% conversion rate), the `og:image` share graphic
+sitewide, About team headshots, and Precision + Rock Solid case-study sign-offs.
+
+**Launch prep still pending (see `seo-launch-checklist.md`):** real images for the labeled
+placeholders, `robots.txt`, and the staging→production canonical/`og` flip. More case studies (e.g.
+From The Ground Up) slot into the framework as they're approved.
 
 See `docs/website-source-of-truth/page-registry.md` for the full per-page status table.
 

@@ -70,8 +70,7 @@ Swap the hint text to fit each service.
 - `python3 build.py` then stamps the universal header/footer.
 - All 8 service heroes use `programs-hero.jpg` (dark photo) for text contrast.
 - Conviction stats are **real, sourced** industry figures (`statSource` in
-  `_content.json`) — verify before launch. FAQ answers are `[NEEDS YOUR INPUT]`
-  placeholders until finalized; `FAQPage` schema is added per page only then.
+  `_content.json`) — verify before launch. FAQ answers were wired in 2026-06-21 (all 40); `FAQPage` schema is now live on every service page.
 
 ## Reuse on hand-built pages (programs, industries)
 The generator is only for `/marketing-services/*`. The **program pages** (and the upcoming

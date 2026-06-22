@@ -19,7 +19,7 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 - **All 8 `/marketing-services/*` detail pages** — built on the locked, **generated** template
   (`service-page-template.md`). Each: hero, conviction stat (real + sourced), showcase + labeled
   image placeholder, "What's included" (purple featured card + 7 Lucide cards), reversed showcase,
-  FAQ (placeholder answers for now), Twilight CTA. `Service` JSON-LD; all internal links resolve.
+  FAQ (real answers + `FAQPage` schema, 2026-06-21), Twilight CTA. `Service` JSON-LD; links resolve.
 - **Marketing-services HUB** (`/marketing-services/`) — hand-built SEO silo: "one machine" framing,
   4 featured services (image+text) + wrap-up grid linking the other 4, Twilight CTA, `ItemList` schema.
 - **Growth Program page** (`/programs/growth/`) — built lean (Hormozi-style) from the real contract.
@@ -95,21 +95,20 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
   lighter client cards; hub-and-spoke interlinked with the case studies + experiences hub.
 
 ## What is NOT done (launch prep + owner inputs, not new builds)
-Every planned page is built. What remains:
-- **Service-page owner inputs** (the 8 `/marketing-services/*`): real FAQ answers (→ `FAQPage` schema),
-  verified conviction stats, real images (below).
-- **Real images** for the remaining labeled placeholders (service / program / industry / case-study pages).
-- **Owner sign-offs** before the case studies index: client approval of names / numbers / video /
-  screenshots; confirm the GHL calendar's actual length matches the site's "20-minute" copy.
+Every planned page is built. Landed 2026-06-21: FAQ answers + `FAQPage` schema (all 8), conviction
+stats verified (Google Ads now L&L's own 8-12% conversion rate), `og:image` share graphic sitewide,
+About team headshots, and Precision + Rock Solid sign-offs. What remains:
+- **Real images** for the remaining labeled placeholders (homepage CTA, program, industry, service screenshots).
+- **Launch cutover:** `robots.txt` + the staging→production canonical / `og:url` / `og:image` flip.
 
-## Owner inputs needed to finalize the 8 service pages
-1. **FAQ answers** — 5 per page, currently `[NEEDS YOUR INPUT]`. Once real, add `FAQPage` JSON-LD.
-2. **Conviction stats** — verify the 7 industry stats (each has a `statSource` in `_content.json`).
-3. **Images** — replace the labeled placeholders (each says exactly what to drop in).
+## Owner inputs — status
+1. **FAQ answers** — DONE 2026-06-21: all 40 wired in; `FAQPage` schema live on all 8.
+2. **Conviction stats** — DONE 2026-06-21: 6 confirmed; Google Ads swapped to L&L's own 8-12% conversion rate.
+3. **Images** — STILL PENDING: replace the labeled placeholders (each says exactly what to drop in).
 
 ## Highest-priority work next
-1. Land the **service-page owner inputs** (FAQ answers → `FAQPage` schema; conviction stats; real images).
-2. Drop **real images** into the labeled placeholders sitewide.
+1. Drop **real images** into the labeled placeholders sitewide (the last owner input outstanding).
+2. Launch cutover: add `robots.txt` and flip canonicals / `og` from staging to production.
 3. Get **client sign-offs** on the case studies; add **more case studies** to the framework as approved.
 4. **Launch cutover** to lawnandlandmarketing.com (later) — `seo-launch-checklist.md` (canonical flip,
    `og:image`, `robots.txt`).
