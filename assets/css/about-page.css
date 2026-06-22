@@ -56,7 +56,7 @@
 }
 
 .about-subhead {
-  font-family: var(--font-l);
+  font-family: var(--font-b);
   font-size: 1.1rem;
   line-height: 1.7;
   color: rgba(255,255,255,0.7);
@@ -167,7 +167,7 @@
 }
 
 .about-story-content p {
-  font-family: var(--font-l);
+  font-family: var(--font-b);
   font-size: 1rem;
   line-height: 1.75;
   color: rgba(255,255,255,0.7);
@@ -203,7 +203,7 @@
 }
 
 .about-story-quote p {
-  font-family: var(--font-l);
+  font-family: var(--font-b);
   font-size: 1rem;
   line-height: 1.65;
   color: rgba(255,255,255,0.8);
@@ -275,7 +275,7 @@
 }
 
 .value-card p {
-  font-family: var(--font-l);
+  font-family: var(--font-b);
   font-size: 0.92rem;
   line-height: 1.7;
   color: rgba(255,255,255,0.6);
@@ -380,7 +380,7 @@
 }
 
 .diff-cta-note p {
-  font-family: var(--font-l);
+  font-family: var(--font-b);
   font-size: 0.95rem;
   line-height: 1.65;
   color: rgba(255,255,255,0.65);
@@ -461,7 +461,7 @@
 }
 
 .about-founder-content p {
-  font-family: var(--font-l);
+  font-family: var(--font-b);
   font-size: 1rem;
   line-height: 1.75;
   color: rgba(255,255,255,0.7);
@@ -592,7 +592,7 @@
 }
 
 .about-proof-left p {
-  font-family: var(--font-l);
+  font-family: var(--font-b);
   font-size: 1rem;
   line-height: 1.75;
   color: rgba(255,255,255,0.65);
@@ -624,7 +624,7 @@
 }
 
 .proof-quote {
-  font-family: var(--font-l);
+  font-family: var(--font-b);
   font-size: 0.95rem;
   line-height: 1.7;
   color: rgba(255,255,255,0.8);
