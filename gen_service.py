@@ -207,8 +207,8 @@ def build_main(c):
 
     faq_items = '\n          '.join(
         f'<details class="faq-item"><summary>{esc(q)}</summary>'
-        f'<p>[NEEDS YOUR INPUT: add your answer]</p></details>'
-        for q in c['faqQuestions'])
+        f'<p>{esc(a)}</p></details>'
+        for q, a in zip(c['faqQuestions'], c['faqAnswers']))
     faq = f'''  <!-- FAQ -->
   <section class="svc-faq">
     <div class="container">
@@ -289,6 +289,13 @@ def build_page(template, c):
     schema_tag = '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False, separators=(',', ':')) + '</script>'
     html = re.sub(r'<script type="application/ld\+json">\{"@context":"https://schema\.org","@type":"Service".*?</script>',
                   lambda m: schema_tag, html, count=1, flags=re.S)
+    faq_schema = {"@context": "https://schema.org", "@type": "FAQPage",
+                  "mainEntity": [{"@type": "Question", "name": q,
+                                  "acceptedAnswer": {"@type": "Answer", "text": a}}
+                                 for q, a in zip(c['faqQuestions'], c['faqAnswers'])]}
+    faq_tag = '<script type="application/ld+json">' + json.dumps(faq_schema, ensure_ascii=False, separators=(',', ':')) + '</script>'
+    html = re.sub(r'<script type="application/ld\+json">\{"@context":"https://schema\.org","@type":"FAQPage".*?</script>',
+                  lambda m: faq_tag, html, count=1, flags=re.S)
     html = re.sub(r'<main>.*?</main>', lambda m: build_main(c), html, count=1, flags=re.S)
     return html
 
