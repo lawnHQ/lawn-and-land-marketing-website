@@ -580,6 +580,11 @@
 .blog-card:hover .blog-card-title { color:var(--lime); }
 .blog-card-excerpt { font-family:var(--font-l); font-size:14px; color:rgba(255,255,255,0.6); line-height:1.6; margin:0; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
 .blog-card-date { font-family:var(--font-l); font-size:12px; color:rgba(255,255,255,0.4); margin-top:auto; padding-top:4px; }
+.blog-card-meta { margin-top:auto; padding-top:6px; display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.blog-card-meta .blog-card-date { margin-top:0; padding-top:0; }
+.blog-card-author { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-l); font-size:12.5px; color:rgba(255,255,255,0.62); }
+.blog-card-avatar { width:22px; height:22px; border-radius:50%; object-fit:cover; flex-shrink:0; }
+.blog-card-cta { font-family:var(--font-l); font-size:12.5px; font-weight:700; color:var(--lime); }
 
 @media (max-width: 900px) { .blog-grid { grid-template-columns:1fr 1fr; } }
 @media (max-width: 1024px) { .aside-card--sticky { position:static; } }
