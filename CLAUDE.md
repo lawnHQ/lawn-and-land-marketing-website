@@ -126,7 +126,8 @@ What remains is launch prep + owner inputs:
   6 confirmed accurate; Google Ads swapped to L&L's own 8-12% conversion rate vs ~3-6% industry.)
 - **Real images** for the remaining labeled placeholders on program / industry / case-study pages.
 - **Launch cutover** (`seo-launch-checklist.md`): flip canonicals + `og:url` staging→production,
-  add `og:image` share graphics + `robots.txt`, keep `sitemap.xml` current.
+  add `robots.txt`, keep `sitemap.xml` current (og:image share graphic added 2026-06-21; its absolute
+  URL flips staging->production at launch with the canonicals).
 - **Owner sign-offs (RECEIVED 2026-06-21):** Precision + Rock Solid both approved their names,
   numbers, video, and screenshots (cleared for launch indexing). GHL calendar confirmed at 20 minutes;
   Precision LSA figures ($250/wk, 9 leads) confirmed correct.
@@ -169,7 +170,8 @@ What remains is launch prep + owner inputs:
 
 ## SEO conventions
 - Per page: unique `<title>`, meta description (~155 chars), `canonical`, Open Graph + Twitter card.
-  (`og:image` / share graphics are a launch task — not added yet.)
+  (`og:image` share graphic added 2026-06-21: 1200x630 brand card at /assets/images/og-share.jpg,
+  absolute URL on staging; flips to production at launch.)
 - Schema: `Service` on service pages + Growth; `BreadcrumbList` where there's a visible breadcrumb;
   `FAQPage` only when the answers are real. Homepage carries `MarketingAgency`/Organization +
   `WebSite` + `FAQPage`.

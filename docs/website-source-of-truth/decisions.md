@@ -656,3 +656,11 @@
   (cleared to index at launch). Precision LSA figures ($250/wk, 9 leads) confirmed correct.
 - **From The Ground Up** ($1.8M to $3.2M) numbers confirmed; case study NOT yet built (awaiting owner go-ahead).
 - **GHL calendar** confirmed at 20 minutes (matches site copy; no change needed).
+
+## 2026-06-21 — og:image share graphic added sitewide
+- Owner-provided 1200x630 brand card ("digital marketing built for the green industry" + logo),
+  optimized to a 164KB JPEG at `assets/images/og-share.jpg`. Wired `og:image` (+ width/height/alt)
+  and `twitter:image` into all 33 indexable pages (website-design template -> 7 generated; sitewide
+  insert for the rest). Absolute URL is staging (`new.lawnlab.dev`); flips to production at launch
+  alongside the canonicals/og:url. Same graphic on every page (one brand card). Remaining launch SEO
+  task: `robots.txt` + the staging->production domain flip.
