@@ -326,7 +326,7 @@
   gap: 0;
 }
 .faq-item {
-  padding: 24px 0;
+  padding: 24px 28px;
   border-bottom: 1px solid rgba(255,255,255,0.07);
 }
 .faq-item:last-child { border-bottom: none; }
