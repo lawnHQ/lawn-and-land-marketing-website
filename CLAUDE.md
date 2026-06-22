@@ -130,8 +130,9 @@ What remains is launch prep + owner inputs:
 - **Owner sign-offs (RECEIVED 2026-06-21):** Precision + Rock Solid both approved their names,
   numbers, video, and screenshots (cleared for launch indexing). GHL calendar confirmed at 20 minutes;
   Precision LSA figures ($250/wk, 9 leads) confirmed correct.
-- **More case studies**: From The Ground Up numbers ($1.8M to $3.2M) confirmed by owner 2026-06-21;
-  case study not yet built (build on owner go-ahead, into `case-study-template.md`).
+- **More case studies**: From The Ground Up numbers ($1.8M to $3.2M) confirmed by owner 2026-06-21,
+  but the owner is HOLDING the case study for now (not enough full context yet). Do NOT build it
+  until the owner explicitly asks; the `case-study-template.md` framework is ready when they do.
 
 ## How the site is built (tooling)
 - **Header/footer:** edit `_header.html` / `_footer.html`, then `python3 build.py` (verify with
