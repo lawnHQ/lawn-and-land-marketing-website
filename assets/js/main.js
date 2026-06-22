@@ -206,6 +206,8 @@ document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
 // last line always carries 2+ words at any width. Skips nav/footer chrome, the
 // animated hero H1, and any heading already hand-glued (contains a nbsp).
 (function widowGuard() {
+  const orig = new WeakMap();   // heading -> clean original innerHTML (pre-glue)
+  const skip = new WeakSet();   // headings we never touch
   function glueSegment(nodes) {
     let full = '';
     const map = [];
@@ -231,10 +233,7 @@ document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
     const [node, off] = map[idx];
     node.nodeValue = node.nodeValue.slice(0, off) + '\u00A0' + node.nodeValue.slice(off + 1);
   }
-  [].forEach.call(document.querySelectorAll('h1,h2,h3,h4'), (h) => {
-    if (h.closest('header,footer,nav')) return;        // chrome
-    if (h.querySelector('.hero-cycle')) return;         // animated hero H1
-    if (h.textContent.indexOf('\u00A0') !== -1) return; // already hand-glued
+  function glue(h) {
     let seg = [];
     const segs = [seg];
     [].forEach.call(h.childNodes, (c) => {
@@ -242,5 +241,27 @@ document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
       else seg.push(c);
     });
     segs.forEach(glueSegment);
-  });
+  }
+  function process(h) {
+    if (skip.has(h)) return;
+    if (orig.has(h)) {
+      h.innerHTML = orig.get(h);                          // reset before re-gluing (resize re-runs)
+    } else {
+      if (h.closest('header,footer,nav') ||               // chrome
+          h.querySelector('.hero-cycle') ||               // animated hero H1
+          h.textContent.indexOf('\u00A0') !== -1) {       // already hand-glued
+        skip.add(h); return;
+      }
+      orig.set(h, h.innerHTML);
+    }
+    glue(h);
+    // SAFETY: if gluing pushed the heading's content past its box (an unbreakable
+    // two-word unit wider than a narrow column), revert so it wraps naturally
+    // instead of overflowing into neighbouring content.
+    if (h.scrollWidth > h.clientWidth + 1) h.innerHTML = orig.get(h);
+  }
+  function run() { [].forEach.call(document.querySelectorAll('h1,h2,h3,h4'), process); }
+  run();
+  let rt;
+  window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(run, 150); });
 })();

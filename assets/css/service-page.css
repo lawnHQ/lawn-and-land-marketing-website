@@ -505,8 +505,8 @@
 }
 .svc-faq-inner {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 64px;
+  grid-template-columns: 350px 1fr;
+  gap: 56px;
   align-items: start;
 }
 .svc-faq-head h2 {
