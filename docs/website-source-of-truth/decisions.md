@@ -695,3 +695,15 @@
   [NEEDS YOUR INPUT] / em-dashes / emoji.
 - NOTE: .git history is ~102MB (large image blobs committed before .gitignore existed). Not rewritten
   (force-push would disrupt the Vercel/GitHub integration); optional future cleanup via BFG if desired.
+
+## 2026-06-22 — Blog built (index + post template) + first real post migrated
+- The shelved article.css was re-oriented (was sidebar-left/TOC -> now content-left/sidebar-right) and
+  is now the blog stylesheet. Two page types: blog INDEX (/resources/blog/, card grid + category filter,
+  .blog-* classes) and individual POST (.article-* classes: hero, two-column, sticky right sidebar with
+  About-the-Author + the contact .cform [GHL webhook] + related; pull-quote, lime callout, FAQ, CTA).
+- Author = Matt Foreman; avatar at assets/images/matt-author.jpg (face-cropped from matt-stage-speaker.jpg).
+- First real post migrated as the populated demo: "Why Landscaping SEO Gets Traffic But Not Qualified
+  Leads" at its REAL slug, pulled via the WordPress REST API (/wp-json/wp/v2/posts?slug=...&_fields=...).
+  That REST pipeline is the clean path for the eventual 81-post import. Em-dashes converted to brand style.
+- OPEN: blog currently lives at /resources/blog/; may move to /blog/ at import to preserve the 81 existing
+  /blog/<slug>/ URLs exactly. The other 80 posts are NOT yet imported (deferred by owner).

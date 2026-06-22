@@ -235,6 +235,19 @@
 }
 .article-content a:hover { border-color: var(--lime); }
 
+/* PULL QUOTE */
+.article-content blockquote {
+  margin: 36px 0;
+  padding: 6px 0 6px 26px;
+  border-left: 3px solid var(--lime);
+  font-family: var(--font-h);
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(18px, 2.3vw, 23px);
+  line-height: 1.5;
+  color: var(--white);
+}
+
 /* CALLOUT BOXES */
 .article-callout {
   display: flex;
