@@ -707,3 +707,13 @@
   That REST pipeline is the clean path for the eventual 81-post import. Em-dashes converted to brand style.
 - OPEN: blog currently lives at /resources/blog/; may move to /blog/ at import to preserve the 81 existing
   /blog/<slug>/ URLs exactly. The other 80 posts are NOT yet imported (deferred by owner).
+
+- Author/EEAT system (2026-06-22): built from the owner's directive. /author/matt-foreman/ hub
+  (indexable; photo + long bio + podcast/book/LinkedIn/L&L profile pills + "Articles by Matt Foreman"
+  archive grid; Person + Book + ProfilePage @graph). Every article: byline name links to the author
+  page, a reusable "About the author" end block (short bio), sidebar trimmed to a teaser. Each article's
+  BlogPosting sets author -> #matt-foreman (by @id, not a string) + publisher -> #organization; the Person
+  @id is the SAME #matt-foreman as the About page (one unified entity). The eventual 81-post import MUST
+  stamp the byline link + end block + BlogPosting schema into every post. Author CSS in article.css (v=3);
+  em-dash-free. OWNER TO CONFIRM (general copy is live now, do not block): named award(s)+year, named
+  conferences, Matt's PERSONAL LinkedIn (sameAs currently uses the L&L company LinkedIn as a stand-in).
