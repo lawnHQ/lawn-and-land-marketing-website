@@ -319,14 +319,9 @@
     .pod-host-link:hover { text-decoration:underline; }
 
     /* ===== Episodes: feature the latest, grid the rest ===== */
-    .pod-ep:first-child { grid-column:1 / -1; display:grid; grid-template-columns:1.5fr 1fr; align-items:stretch; }
-    .pod-ep:first-child .pod-video { height:100%; min-height:300px; aspect-ratio:auto; }
-    .pod-ep:first-child .pod-ep-body { justify-content:center; padding:34px 36px; gap:8px; }
-    .pod-ep:first-child .pod-ep-title { font-size:clamp(22px,2.6vw,30px); }
-    .pod-ep:first-child .pod-ep-co { font-size:15px; }
+    .pod-ep:first-child { border-color:rgba(172,231,29,0.6); box-shadow:0 0 26px rgba(172,231,29,0.10); }
     .pod-ep:first-child .pod-ep-badge::after { content:' \00B7 Latest'; color:var(--lime); }
 
-    @media (max-width:760px){ .pod-ep:first-child { grid-template-columns:1fr; } .pod-ep:first-child .pod-video { min-height:0; } }
     @media (max-width:640px){ .pod-host { flex-direction:column; text-align:center; } .pod-host-bio { margin-left:auto; margin-right:auto; } }
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"PodcastSeries","name":"Mow Money, Mow Problems","description":"A weekly podcast for lawn and landscape business owners. Host Matt Foreman talks with green-industry owners about growing, running, and surviving the business.","url":"https://lawnandlandmarketing.com/resources/mow-money-mow-problems-podcast/","image":"https://lawnandlandmarketing.com/assets/images/og-share.jpg","webFeed":"https://www.youtube.com/feeds/videos.xml?channel_id=UCDquVUlNKHjfFSA8C239qIw","sameAs":["https://www.youtube.com/@MowMoneyMowProblemsPodcast"],"author":{"@id":"https://lawnandlandmarketing.com/#matt-foreman"},"publisher":{"@id":"https://lawnandlandmarketing.com/#organization"}}</script>
