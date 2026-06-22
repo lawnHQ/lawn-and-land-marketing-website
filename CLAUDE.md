@@ -120,8 +120,9 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
 Every planned page is built (homepage, 8 services + hub, 2 programs + hub, 8 industries + hub, about,
 contact, confirmation, booking, legal, the 3 resources content pages, 2 case studies, client-results).
 What remains is launch prep + owner inputs:
-- **Service-page owner inputs** (the 8 `/marketing-services/*`): real FAQ answers (→ then add
-  `FAQPage` schema), verified conviction stats, and real images for the labeled placeholders.
+- **Service-page owner inputs** (the 8 `/marketing-services/*`): real FAQ answers + `FAQPage`
+  schema are DONE (2026-06-21: all 40 owner answers wired in, schema live on all 8 pages).
+  Remaining: verified conviction stats, and real images for the labeled placeholders.
 - **Real images** for the remaining labeled placeholders on program / industry / case-study pages.
 - **Launch cutover** (`seo-launch-checklist.md`): flip canonicals + `og:url` staging→production,
   add `og:image` share graphics + `robots.txt`, keep `sitemap.xml` current.

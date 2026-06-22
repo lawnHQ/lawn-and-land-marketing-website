@@ -635,3 +635,14 @@
 - **Owner confirmed Rock Solid hit $1.4M in their first full year** (from about $700K, a clean 2x). Standardized the figure across the whole site: the Rock Solid case study (At a Glance, stat band, return line, secondary stat, the revenue bar chart now an exact 2x, conclusion, meta/OG/Article schema), the Client Results roster Tier 1 card, the 11 proof cards that previously said "$1.3M" (homepage, 8 industry pages, experiences hub, Authority program), and the landscaping/lawn-care FAQ answers (also bumped "tripled" to "more than tripled" calls to match the ~4x). Reframed "crossed seven figures" to "doubled, to $1.4M" / "first full year" where it described revenue.
 - **Kept (consistent with $1.4M, not contradictory):** Zach's VideoObject keeps its real YouTube title ("...from $700K to Over $1M...") and his verbatim quote "north of a million" ($1.4M satisfies both). Program-tier copy ("companies over/under $1M") is unrelated and untouched.
 - Resolves the standing "$1M+ vs $1.3M" flag. No before/after GBP review count for Rock Solid (owner has no historical number; the current 49 stays as the single point).
+
+## 2026-06-21 — Service-page FAQs answered + FAQPage schema live
+- Owner supplied all 40 FAQ answers via the pre-launch sheet; reviewed, tightened, and wired in.
+- 7 generated services: answers live in `_content.json` as `faqAnswers` (parallel to `faqQuestions`);
+  `gen_service.py` renders them and emits per-page `FAQPage` JSON-LD. website-design (template): hand-edited.
+- Decisions: website-cost FAQ KEEPS the $15K–$50K range, framed as competitor/market context (not our price) —
+  the one sanctioned exception to the no-pricing rule, owner-approved. Second-GBP answer reframed to the
+  Google-compliant "only with a real location" path (avoids listing-suspension risk).
+- 5 technical answers authored by Claude (owner-flagged): local SEO vs map pack, GBP vs local SEO,
+  Google Ads vs LSA, avoiding wasted ad spend, boosting vs real campaign.
+- `FAQPage` schema is now satisfied for service pages (was gated on real answers). Still pending elsewhere.
