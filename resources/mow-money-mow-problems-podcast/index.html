@@ -323,6 +323,26 @@
     .pod-ep:first-child .pod-ep-badge::after { content:' \00B7 Latest'; color:var(--lime); }
 
     @media (max-width:640px){ .pod-host { flex-direction:column; text-align:center; } .pod-host-bio { margin-left:auto; margin-right:auto; } }
+
+    /* ===== Animated Twilight hero background ===== */
+    .pod-hero { background: radial-gradient(125% 120% at 50% -12%, #2c1860 0%, #150c2c 50%, #08060f 100%); padding: 74px 0 84px; }
+    .pod-hero-title { text-shadow: 0 2px 34px rgba(0,0,0,0.45); }
+    /* slow rotating conic glow */
+    .pod-hero::before { inset: -65%; z-index: 0; background: conic-gradient(from 90deg at 50% 50%, transparent 0deg, rgba(104,55,239,0.13) 55deg, transparent 130deg, transparent 232deg, rgba(139,92,246,0.10) 296deg, transparent 360deg); animation: podSpin 42s linear infinite; will-change: transform; }
+    /* keep the dot texture, lift it above the glow */
+    .pod-hero::after { z-index: 1; opacity: 0.4; }
+    .pod-hero-inner { z-index: 2; }
+    /* drifting purple aurora blobs */
+    .pod-hero-fx { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+    .pfx { position:absolute; border-radius:50%; filter: blur(56px); opacity:0.62; mix-blend-mode:screen; will-change: transform; }
+    .pfx1 { width:48vw; height:48vw; max-width:560px; max-height:560px; left:-6%; top:-22%; background: radial-gradient(circle, #6837EF 0%, transparent 68%); animation: pfxA 17s ease-in-out infinite alternate; }
+    .pfx2 { width:40vw; height:40vw; max-width:480px; max-height:480px; right:-4%; top:-8%; background: radial-gradient(circle, #8b5cf6 0%, transparent 68%); animation: pfxB 21s ease-in-out infinite alternate; }
+    .pfx3 { width:44vw; height:44vw; max-width:520px; max-height:520px; left:28%; bottom:-36%; background: radial-gradient(circle, #4f1fd0 0%, transparent 68%); animation: pfxC 24s ease-in-out infinite alternate; }
+    @keyframes podSpin { to { transform: rotate(360deg); } }
+    @keyframes pfxA { from { transform: translate(0,0) scale(1); } to { transform: translate(16%,20%) scale(1.22); } }
+    @keyframes pfxB { from { transform: translate(0,0) scale(1.06); } to { transform: translate(-14%,12%) scale(0.9); } }
+    @keyframes pfxC { from { transform: translate(0,0) scale(1); } to { transform: translate(12%,-16%) scale(1.18); } }
+    @media (prefers-reduced-motion: reduce) { .pfx, .pod-hero::before { animation: none; } }
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"PodcastSeries","name":"Mow Money, Mow Problems","description":"A weekly podcast for lawn and landscape business owners. Host Matt Foreman talks with green-industry owners about growing, running, and surviving the business.","url":"https://lawnandlandmarketing.com/resources/mow-money-mow-problems-podcast/","image":"https://lawnandlandmarketing.com/assets/images/og-share.jpg","webFeed":"https://www.youtube.com/feeds/videos.xml?channel_id=UCDquVUlNKHjfFSA8C239qIw","sameAs":["https://www.youtube.com/@MowMoneyMowProblemsPodcast"],"author":{"@id":"https://lawnandlandmarketing.com/#matt-foreman"},"publisher":{"@id":"https://lawnandlandmarketing.com/#organization"}}</script>
 </head>
@@ -563,6 +583,7 @@
   <!-- HERO BANNER -->
   <main class="pod-canvas" id="main">
   <section class="pod-hero">
+    <div class="pod-hero-fx" aria-hidden="true"><span class="pfx pfx1"></span><span class="pfx pfx2"></span><span class="pfx pfx3"></span></div>
     <div class="pod-hero-inner">
       <nav class="crumbs"><a href="/">Home</a><span>/</span><a href="/resources/blog/">Resources</a><span>/</span><span>Podcast</span></nav>
       <div class="pod-hero-eyebrow"><svg viewBox="0 0 24 24"><rect x="9" y="4" width="6" height="10" rx="3"/><path d="M6 11c0 3.3 2.7 6 6 6s6-2.7 6-6"/><path d="M12 17v3"/><path d="M9 20h6"/></svg>A green-industry podcast, new episode every week</div>
