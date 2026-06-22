@@ -717,3 +717,13 @@
   stamp the byline link + end block + BlogPosting schema into every post. Author CSS in article.css (v=3);
   em-dash-free. OWNER TO CONFIRM (general copy is live now, do not block): named award(s)+year, named
   conferences, Matt's PERSONAL LinkedIn (sameAs currently uses the L&L company LinkedIn as a stand-in).
+
+- Blog framework follow-up (2026-06-22, from the EEAT auditor review): added gen_blog_schema.py, a
+  reusable + idempotent generator that injects FAQPage JSON-LD into each blog post from its visible
+  .article-faq Q&A (run after writing/importing posts). Added FAQPage to the live article (4 Q&A, text
+  matches the visible FAQ). Set sample-post to robots noindex,follow (template/filler; the related-article
+  + author-archive links point to it as placeholders until real posts exist -- resolve those at import).
+  Verified all three EEAT schema connections resolve: author-page Person #matt-foreman; article BlogPosting
+  author by @id == that Person (not a string); FAQPage matches the visible FAQ. Call-duration: the site is
+  uniformly 20-minute (no 30-min exists anywhere); the filler article CTA's "15 minutes" gets rewritten with
+  the real content. SKIPPED per owner: the article's generic body copy (intentional filler until the import).
