@@ -1,0 +1,32 @@
+name: Refresh podcast episodes
+on:
+  schedule:
+    - cron: '0 11 * * *'   # daily at 11:00 UTC
+  workflow_dispatch:        # allow manual runs from the Actions tab
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pull the latest 6 episodes from the channel RSS
+        run: python3 gen_podcast_episodes.py
+      - name: Restamp header/footer
+        run: python3 build.py
+      - name: Commit and push if the episode set changed
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "lawn-land-bot"
+            git config user.email "web@lawnandlandmarketing.com"
+            git add -A
+            git commit -m "Auto: refresh latest podcast episodes from YouTube"
+            git push
+          else
+            echo "Episodes already current; nothing to push."
+          fi
