@@ -486,12 +486,17 @@
    + INDEX LISTING. Added for the live blog build.
    =================================================== */
 .article-aside {
-  position: sticky;
-  top: 96px;
   display: flex;
   flex-direction: column;
   gap: 22px;
   min-width: 0;
+  align-self: stretch;   /* span the full article height so the sticky Related card has room to travel */
+}
+/* Only the short Related-articles card sticks (the long form scrolls normally so it's
+   fully readable); it pins once the form has scrolled past the top of the viewport. */
+.aside-card--sticky {
+  position: sticky;
+  top: 96px;
 }
 .aside-card {
   background: rgba(255,255,255,0.03);
@@ -577,7 +582,7 @@
 .blog-card-date { font-family:var(--font-l); font-size:12px; color:rgba(255,255,255,0.4); margin-top:auto; padding-top:4px; }
 
 @media (max-width: 900px) { .blog-grid { grid-template-columns:1fr 1fr; } }
-@media (max-width: 1024px) { .article-aside { position:static; } }
+@media (max-width: 1024px) { .aside-card--sticky { position:static; } }
 @media (max-width: 600px) { .blog-grid { grid-template-columns:1fr; } }
 
 
