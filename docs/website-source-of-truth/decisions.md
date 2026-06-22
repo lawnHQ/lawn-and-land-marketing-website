@@ -664,3 +664,19 @@
   insert for the rest). Absolute URL is staging (`new.lawnlab.dev`); flips to production at launch
   alongside the canonicals/og:url. Same graphic on every page (one brand card). Remaining launch SEO
   task: `robots.txt` + the staging->production domain flip.
+
+## 2026-06-21 — Heading-overflow collision fix (widow-guard) + multi-device walkthrough
+- BUG (reported on the gbp-management FAQ): the widow-guard (main.js) glued the last two words of
+  every heading with a non-breaking space; for "GBP Management, answered." that made "Management,
+  answered." one unbreakable ~401px unit, wider than the 300px FAQ heading column, so it overflowed
+  and collided with the FAQ cards (and stranded "GBP" alone on line 1).
+- FIX (systemic, all headings): the widow-guard now REVERTS the glue whenever it makes a heading
+  wider than its box (scrollWidth > clientWidth) -> wraps naturally instead of overflowing. Re-runs
+  debounced on resize, so the no-overflow guarantee holds at any window width, not just load width.
+- FAQ heading column widened 300px -> 350px (gap 64 -> 56) so medium service names fit the intended
+  2-line break ("GBP Management," / "answered."). 7/8 names wrap 1-2 clean lines; Reputation
+  Management (longest, 411px) takes 3; none overflow.
+- WALKTHROUGH: overflow detector run across the major layouts (homepage, service + hub, industry,
+  program, about, contact, case study, client-results, experiences) at mobile 375 / tablet 768 /
+  desktop 1440. Zero collisions or horizontal overflow found anywhere besides the now-fixed FAQ.
+- Versions: main.js v54->55, service-page.css v3->4 (bumped sitewide).
