@@ -85,6 +85,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/ai-for-landscaping-business",
+      "destination": "/resources/blog/ai-for-landscaping-business/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-for-landscaping-business/",
+      "destination": "/resources/blog/ai-for-landscaping-business/",
+      "permanent": true
+    },
+    {
       "source": "/blog/the-ultimate-guide-to-online-landscape-marketing",
       "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
       "permanent": true
