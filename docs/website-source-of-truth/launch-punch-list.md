@@ -25,8 +25,21 @@ Add to this as items come up; check them off as they're done. Last updated: 2026
 - [ ] Decision: put the Facebook pixel **site-wide** (retargeting any visitor) or keep it only on `/grow`?
 
 ## Blog
-- [ ] Audit of the 81 existing posts (in progress) → migrate the keepers, cut the AI-rush/thin/duplicate ones.
-- [ ] (Koga's track) blog migration mechanics; 3 EEAT owner inputs still pending.
+- [x] Audit of the 81 posts → done (`blog-audit.md`): 19 keepers, 62 cuts.
+- [x] **Migrate the 19 keepers to `/resources/blog/` (2026-06-23)** — original publish dates preserved, one
+  canonical article template (`article.css`), BlogPosting + FAQPage schema, Matt Foreman byline. Reused +
+  standardized 6 of Koga's; built 13 fresh from the legacy WordPress posts. Index rebuilt (21 cards, 5 filters).
+  Process recorded in `blog-migration-spec.md`.
+- [ ] **Close Koga's `koga/blog-migration-optimization` PR — it's superseded.** It carries 12 cut-list filler
+  posts + only 6 keepers; do NOT merge it or the filler comes back.
+- [ ] **Blog redirects** (coordinate with Koga's redirect map). Old posts live at `/blog/<slug>/`, new at
+  `/resources/blog/<slug>/`. Need: `/blog/<slug>/` → `/resources/blog/<slug>/` for the 19 migrated; and
+  `/blog/<slug>/` → nearest keeper (or `/resources/blog/`) for the 62 cuts. None are in `vercel.json` yet.
+- [ ] **Real images for the 18 new articles** (image pass) — hero + card thumbnails are `.img-ph` placeholders
+  for now (#17 already has its real image). Schema `image` URLs point to planned `/assets/images/blog/*` files.
+- [ ] **3 broken posts still LIVE on WordPress** (not migrated): #16 leaked AI instructions, #24 + #72 copy-paste
+  errors. Unpublish on the old site now (credibility).
+- [ ] 3 EEAT owner inputs still pending (for the author/byline system).
 
 ## Redirects / launch cutover
 - [ ] Flip canonicals + `og:url`: `new.lawnlab.dev` → `lawnandlandmarketing.com` (mass find/replace;
