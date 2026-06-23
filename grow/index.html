@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Your Custom Green-Industry Growth Plan | Lawn &amp; Land Marketing</title>
-  <meta name="description" content="Book a free 15-20 minute call and get a clear, custom roadmap to grow your lawn, landscaping, or outdoor living business. No sales pitch, just clarity.">
+  <meta name="description" content="Book a free, no-pitch call and get a clear, custom roadmap to grow your green industry business. Real owners, real numbers.">
   <meta name="robots" content="noindex, follow">
   <meta property="og:title" content="Your Exclusive Green Industry Growth Partner">
-  <meta property="og:description" content="Get more lawn &amp; landscaping leads, grow faster, and stress less. Book a free custom growth-plan call.">
+  <meta property="og:description" content="Get more leads, grow faster, and stress less. Book a free custom growth-plan call. No sales pitch, just clarity.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lawnandlandmarketing.com/grow/">
   <meta property="og:image" content="https://new.lawnlab.dev/assets/images/og-share.jpg?v=2">
@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="/assets/css/styles.css?v=142">
 
   <style>
-  /* ===== /grow funnel — scoped layout only; all colors/fonts come from styles.css tokens ===== */
+  /* ===== /grow funnel — scoped layout only; colors/fonts come from styles.css tokens ===== */
   html{scroll-behavior:smooth}
   .scroll-anchor{scroll-margin-top:84px}
 
@@ -43,8 +43,8 @@
   .grow-head .phone{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-l);font-weight:600;font-size:15px;color:var(--white)}
   .grow-head .phone svg{width:17px;height:17px;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-  /* hero — dark canvas, single Limeade glow, italic display headline, Limeade accent */
-  .grow-hero{position:relative;text-align:center;padding:84px 0 90px;overflow:hidden}
+  /* hero */
+  .grow-hero{position:relative;text-align:center;padding:80px 0 78px;overflow:hidden}
   .grow-hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(720px 420px at 50% -10%, rgba(172,231,29,0.16), transparent 62%);pointer-events:none}
   .grow-hero .container{position:relative;z-index:1;max-width:900px}
   .grow-hero .eyebrow-label{display:inline-flex;align-items:center;gap:9px}
@@ -52,26 +52,52 @@
   .grow-hero h1{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(40px,6.4vw,72px);line-height:1.02;letter-spacing:-0.02em;color:var(--white)}
   .grow-hero .sub{color:var(--body);font-size:clamp(17px,2.1vw,20px);max-width:660px;margin:22px auto 32px}
   .grow-cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .grow-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;margin-top:40px;font-family:var(--font-l);font-size:13.5px;color:var(--muted)}
+  .grow-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;margin-top:38px;font-family:var(--font-l);font-size:13.5px;color:var(--muted)}
   .grow-trust span{display:inline-flex;align-items:center;gap:8px}
   .grow-trust b{color:var(--white);font-weight:700}
   .grow-trust svg{width:16px;height:16px;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
   /* section rhythm on dark */
-  .grow-sec{padding:78px 0}
+  .grow-sec{padding:74px 0}
   .grow-sec--alt{background:var(--black-mid)}
   .grow-sec--deep{background:var(--black-deep)}
+  .grow-sec--tight{padding:56px 0}
+
+  /* proof */
+  .proof-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:860px;margin:0 auto 26px}
+  .proof-stat{background:var(--card-bg);border:1px solid var(--card-bd);border-radius:var(--radius);padding:30px 28px;text-align:center}
+  .proof-stat-big{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(30px,4.2vw,44px);color:var(--white);line-height:1.04}
+  .proof-stat-big .arrow{color:var(--lime);margin:0 .1em;font-style:normal}
+  .proof-stat-label{color:var(--body);font-size:15px;margin-top:10px}
+  .proof-stat-who{font-family:var(--font-l);font-size:13px;color:var(--lime);margin-top:16px;font-weight:600}
+  .vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:980px;margin:34px auto 0}
+  .grow-vidcard{margin:0}
+  .grow-vid{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;border:1px solid var(--card-bd);background:#000 center/cover no-repeat;cursor:pointer;padding:0;display:block;width:100%}
+  .grow-vid::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(7,16,10,0.45))}
+  .grow-vid .play{position:absolute;inset:0;margin:auto;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--lime),#8fd416);display:flex;align-items:center;justify-content:center;z-index:1;transition:transform .15s var(--ease)}
+  .grow-vid:hover .play{transform:scale(1.09)}
+  .grow-vid .play svg{width:21px;height:21px;margin-left:3px;fill:#0a1a00}
+  .grow-vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:2}
+  .grow-vidcard figcaption{font-family:var(--font-l);font-size:13px;color:var(--muted);margin-top:11px;text-align:center}
+  .grow-vidcard figcaption b{color:var(--white);font-weight:700;font-style:normal}
 
   /* booking */
-  .grow-book .section-header{margin-bottom:34px}
-  .no-pitch{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:7px 16px;border-radius:999px;border:1px solid rgba(172,231,29,0.28);background:rgba(172,231,29,0.06);font-family:var(--font-l);font-weight:700;font-size:13px;letter-spacing:.02em;color:var(--lime)}
+  .grow-book .section-header{margin-bottom:30px}
+  .no-pitch{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:7px 16px;border-radius:999px;border:1px solid rgba(172,231,29,0.28);background:rgba(172,231,29,0.06);font-family:var(--font-l);font-weight:700;font-size:13px;color:var(--lime)}
   .no-pitch svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
   .cal-frame{max-width:940px;margin:0 auto;background:var(--white);border:1px solid var(--card-bd);border-radius:var(--radius);box-shadow:0 30px 70px rgba(0,0,0,0.4);padding:10px;overflow:hidden}
   .cal-frame iframe{width:100%;min-height:720px;border:0;border-radius:10px;display:block}
+  .cal-fallback{text-align:center;color:var(--muted);font-size:14.5px;margin:20px auto 0;max-width:560px}
+  .cal-fallback a{color:var(--lime);font-weight:600;white-space:nowrap}
 
-  /* glass cards (steps + services) — the brand's card surface on dark */
-  .grow-grid{display:grid;gap:18px}
-  .grow-grid--4{grid-template-columns:repeat(4,1fr)}
+  /* objection FAQ */
+  .grow-faq{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:900px;margin:0 auto}
+  .faq-item{background:var(--card-bg);border:1px solid var(--card-bd);border-radius:var(--radius);padding:24px 26px}
+  .faq-item h3{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:18px;color:var(--white);margin-bottom:9px}
+  .faq-item p{color:var(--muted);font-size:14.5px;margin:0}
+
+  /* how it works — glass cards */
+  .grow-grid{display:grid;gap:18px;grid-template-columns:repeat(4,1fr)}
   .grow-card{position:relative;background:var(--card-bg);border:1px solid var(--card-bd);border-radius:var(--radius);padding:26px 22px;transition:transform .15s var(--ease),border-color .15s var(--ease)}
   .grow-card:hover{transform:translateY(-3px);border-color:rgba(172,231,29,0.35)}
   .grow-card .ic{width:46px;height:46px;border-radius:11px;background:rgba(93,202,73,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
@@ -80,19 +106,14 @@
   .grow-card p{color:var(--muted);font-size:15px;margin:0}
   .grow-card .step-n{position:absolute;top:18px;right:20px;font-family:var(--font-h);font-style:italic;font-weight:800;font-size:15px;color:rgba(172,231,29,0.6)}
 
-  /* owner experience videos */
-  .vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:0 auto}
-  .grow-vid{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;border:1px solid var(--card-bd);background:#000 center/cover no-repeat;cursor:pointer;padding:0;display:block;width:100%}
-  .grow-vid::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(7,16,10,0.5))}
-  .grow-vid .play{position:absolute;inset:0;margin:auto;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--lime),#8fd416);display:flex;align-items:center;justify-content:center;z-index:1;transition:transform .15s var(--ease)}
-  .grow-vid:hover .play{transform:scale(1.09)}
-  .grow-vid .play svg{width:22px;height:22px;margin-left:3px;fill:#0a1a00}
-  .grow-vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:2}
+  /* services — de-emphasized compact chips */
+  .svc-compact{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:920px;margin:0 auto}
+  .svc-chip{display:flex;align-items:center;gap:10px;background:var(--card-bg);border:1px solid var(--card-bd);border-radius:10px;padding:13px 16px}
+  .svc-chip svg{width:18px;height:18px;stroke:var(--green);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+  .svc-chip span{font-family:var(--font-l);font-size:13.5px;color:var(--body);font-weight:600}
 
-  .grow-close{max-width:720px;margin:42px auto 0;text-align:center;color:var(--body);font-size:18px}
-
-  /* final CTA — dark spotlight, one Twilight moment via the .hl marker */
-  .grow-final{position:relative;text-align:center;padding:86px 0;overflow:hidden;background:var(--black-deep)}
+  /* final CTA */
+  .grow-final{position:relative;text-align:center;padding:84px 0;overflow:hidden;background:var(--black-deep)}
   .grow-final::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(680px 360px at 50% 120%, rgba(172,231,29,0.12), transparent 60%);pointer-events:none}
   .grow-final .container{position:relative;z-index:1;max-width:720px}
   .grow-final h2{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(30px,4.6vw,48px);line-height:1.05;color:var(--white)}
@@ -107,8 +128,16 @@
   .grow-foot a{color:rgba(255,255,255,0.7)}
   .grow-foot a:hover{color:var(--lime)}
 
-  @media(max-width:900px){.grow-grid--4{grid-template-columns:repeat(2,1fr)}.vid-grid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:560px){.grow-sec,.grow-hero,.grow-final{padding-top:54px;padding-bottom:54px}.vid-grid{grid-template-columns:1fr}.grow-head .phone span{display:none}}
+  @media(max-width:900px){.grow-grid{grid-template-columns:repeat(2,1fr)}.vid-grid{grid-template-columns:repeat(3,1fr)}.svc-compact{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){
+    .grow-sec,.grow-hero,.grow-final{padding-top:52px;padding-bottom:52px}
+    .proof-stats{grid-template-columns:1fr}
+    .vid-grid{grid-template-columns:1fr}
+    .grow-grid{grid-template-columns:1fr}
+    .grow-faq{grid-template-columns:1fr}
+    .svc-compact{grid-template-columns:1fr}
+    .grow-head .phone span{display:none}
+  }
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
@@ -139,26 +168,77 @@
     </div>
   </section>
 
-  <!-- booking -->
-  <section class="grow-sec grow-sec--alt grow-book scroll-anchor" id="book">
+  <!-- PROOF (directly under the hero — cold traffic needs evidence first) -->
+  <section class="grow-sec grow-sec--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow-label">Real Owners · Real Numbers</span>
+        <h2>Proof, Not <span class="gradient-text">Promises</span></h2>
+        <p>Green industry owners who were right where you are, and what changed once the system was running.</p>
+      </div>
+      <div class="proof-stats">
+        <div class="proof-stat">
+          <div class="proof-stat-big">135 <span class="arrow">→</span> 536</div>
+          <div class="proof-stat-label">calls a month (+297%), and revenue from $4.4M to $11.2M, in about 5 months.</div>
+          <div class="proof-stat-who">Nate Moses · Precision Landscape Management</div>
+        </div>
+        <div class="proof-stat">
+          <div class="proof-stat-big">$700K <span class="arrow">→</span> $1.4M</div>
+          <div class="proof-stat-label">in a single year, grown organically: 4x the calls and +378% visibility.</div>
+          <div class="proof-stat-who">Zach Franz · Rock Solid Landscape</div>
+        </div>
+      </div>
+      <div class="vid-grid">
+        <figure class="grow-vidcard">
+          <button class="grow-vid" data-vid="ajusL5iAs0Q" style="background-image:url('https://i.ytimg.com/vi/ajusL5iAs0Q/hqdefault.jpg')" aria-label="Play Nate Moses testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+          <figcaption><b>Nate Moses</b> · Precision Landscape Management</figcaption>
+        </figure>
+        <figure class="grow-vidcard">
+          <button class="grow-vid" data-vid="-q2a1Z2zby8" style="background-image:url('https://i.ytimg.com/vi/-q2a1Z2zby8/hqdefault.jpg')" aria-label="Play Phillip testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+          <figcaption><b>Phillip</b> · P&amp;C Solutions</figcaption>
+        </figure>
+        <figure class="grow-vidcard">
+          <button class="grow-vid" data-vid="19ukvbf3-HU" style="background-image:url('https://i.ytimg.com/vi/19ukvbf3-HU/hqdefault.jpg')" aria-label="Play Pete testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+          <figcaption><b>Pete</b> · Logan's Landscaping</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING (the offer/CTA) -->
+  <section class="grow-sec grow-book scroll-anchor" id="book">
     <div class="container">
       <div class="section-header">
         <span class="eyebrow-label">Book Your Free Call</span>
         <h2>A Custom Growth Plan for Owners Serious About Growth</h2>
-        <p>In 15-20 minutes, we'll learn about your business, your goals, and what's holding you back, then give you a clear roadmap to grow.</p>
+        <p>In about 20 minutes, we'll learn about your business, your goals, and what's holding you back, then give you a clear roadmap to grow.</p>
         <span class="no-pitch"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>No sales pitch. Just clarity.</span>
       </div>
       <div class="cal-frame">
         <iframe src="https://api.leadconnectorhq.com/widget/booking/u7agGU9Xwo0kjAsLlKif" scrolling="no" id="u7agGU9Xwo0kjAsLlKif_grow" title="Book your free growth-plan call"></iframe>
       </div>
+      <p class="cal-fallback">Trouble booking? Call or text <a href="tel:+17274967098">(727) 496-7098</a> and we'll get you scheduled.</p>
     </div>
   </section>
 
-  <!-- how it works -->
+  <!-- OBJECTION HANDLING (near the CTA) -->
+  <section class="grow-sec grow-sec--alt">
+    <div class="container">
+      <div class="section-header"><span class="eyebrow-label">Before You Book</span><h2>The Honest Answers</h2></div>
+      <div class="grow-faq">
+        <div class="faq-item"><h3>Is this really not a sales pitch?</h3><p>Correct. The call is a plan, not a pitch. We learn your goals and hand you a clear roadmap, whether or not we ever work together.</p></div>
+        <div class="faq-item"><h3>Am I locked into anything?</h3><p>No. Nothing is signed and no contract is discussed on this call. It's a no-obligation strategy conversation.</p></div>
+        <div class="faq-item"><h3>Is this going to be expensive?</h3><p>We'll talk about what actually fits your business on the call, no pressure. You leave with a plan either way.</p></div>
+        <div class="faq-item"><h3>Will this work for a business my size?</h3><p>We work with everyone from owner-operators to seven-figure, multi-crew companies. The plan is built around where you are right now.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (friction reducer / reassurance) -->
   <section class="grow-sec">
     <div class="container">
       <div class="section-header"><span class="eyebrow-label">Simple From The Start</span><h2>How This Works</h2></div>
-      <div class="grow-grid grow-grid--4">
+      <div class="grow-grid">
         <div class="grow-card"><span class="step-n">01</span>
           <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
           <h3>Book a Call</h3><p>Choose a time that works for you and enter your name, email, and cell phone.</p>
@@ -179,42 +259,19 @@
     </div>
   </section>
 
-  <!-- owner experiences -->
-  <section class="grow-sec grow-sec--deep">
+  <!-- SERVICES (de-emphasized — compact, below proof + process) -->
+  <section class="grow-sec grow-sec--alt grow-sec--tight">
     <div class="container">
-      <div class="section-header">
-        <span class="eyebrow-label">Owner Experiences</span>
-        <h2>Real Results From Owners Just Like You</h2>
-        <p>Hear from lawn care &amp; landscaping business owners who trust us as their digital marketing team.</p>
-      </div>
-      <div class="vid-grid">
-        <button class="grow-vid" data-vid="-q2a1Z2zby8" style="background-image:url('https://i.ytimg.com/vi/-q2a1Z2zby8/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="grow-vid" data-vid="19ukvbf3-HU" style="background-image:url('https://i.ytimg.com/vi/19ukvbf3-HU/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="grow-vid" data-vid="5LGPhGWPJBk" style="background-image:url('https://i.ytimg.com/vi/5LGPhGWPJBk/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="grow-vid" data-vid="ajusL5iAs0Q" style="background-image:url('https://i.ytimg.com/vi/ajusL5iAs0Q/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="grow-vid" data-vid="rDBc4t-_x88" style="background-image:url('https://i.ytimg.com/vi/rDBc4t-_x88/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="grow-vid" data-vid="t9oEJyupwUw" style="background-image:url('https://i.ytimg.com/vi/t9oEJyupwUw/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- services -->
-  <section class="grow-sec">
-    <div class="container">
-      <div class="section-header">
-        <span class="eyebrow-label">One Complete System</span>
-        <h2>How We Help You Dominate Your Service Area Online</h2>
-        <p>It's not about a single channel. You need your entire digital marketing profile working together, and we handle all of it.</p>
-      </div>
-      <div class="grow-grid grow-grid--4">
-        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Website Design</h3><p>Custom sites built to convert visitors into high-quality leads.</p></div>
-        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h3>Local &amp; AI SEO</h3><p>Get found by local customers searching on Google, AI, Bing, and more.</p></div>
-        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Google Ads</h3><p>Target ready-to-buy customers through PPC and Google Guaranteed.</p></div>
-        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div><h3>Meta Ads</h3><p>Reach local homeowners scrolling Facebook and Instagram.</p></div>
-        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></div><h3>Automations</h3><p>Save time with follow-ups, reminders, and lead-nurturing workflows.</p></div>
-        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg></div><h3>Review Management</h3><p>Earn more 5-star reviews and build trust across your area.</p></div>
-        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div><h3>Text Messages</h3><p>Engage leads and customers quickly over SMS.</p></div>
-        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div><h3>Email Marketing</h3><p>Reactivate old leads and keep current customers coming back.</p></div>
+      <div class="section-header"><span class="eyebrow-label">One Complete System</span><h2>Everything Works Together</h2><p>It's not one channel. Your whole digital marketing profile runs as one machine, and we handle all of it.</p></div>
+      <div class="svc-compact">
+        <div class="svc-chip"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span>Website Design</span></div>
+        <div class="svc-chip"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><span>Local &amp; AI SEO</span></div>
+        <div class="svc-chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><span>Google Ads</span></div>
+        <div class="svc-chip"><svg viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg><span>Meta Ads</span></div>
+        <div class="svc-chip"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg><span>Automations</span></div>
+        <div class="svc-chip"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg><span>Review Management</span></div>
+        <div class="svc-chip"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg><span>Text Messaging</span></div>
+        <div class="svc-chip"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>Email Marketing</span></div>
       </div>
     </div>
   </section>
@@ -224,11 +281,11 @@
     <div class="container">
       <span class="eyebrow-label">Ready To Grow?</span>
       <h2>Let's map out your <span class="hl">growth plan</span></h2>
-      <p>Get a clear, custom roadmap for your lawn, landscaping, or outdoor living business. No pressure, no pitch, just a plan.</p>
+      <p>Get a clear, custom roadmap for your green industry business. No pressure, no pitch, just a plan.</p>
       <div class="grow-cta-row">
         <a class="btn btn--lime btn--lg" href="#book">Book My Free Call <span>→</span></a>
       </div>
-      <p class="mission">We're on a mission to triple the size of 200 lawn care &amp; landscaping companies.</p>
+      <p class="mission">We're on a mission to triple the size of 200 green industry companies.</p>
     </div>
   </section>
 
