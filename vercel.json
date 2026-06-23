@@ -75,6 +75,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses",
+      "destination": "/resources/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/",
+      "destination": "/resources/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/",
+      "permanent": true
+    },
+    {
       "source": "/blog/the-ultimate-guide-to-online-landscape-marketing",
       "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
       "permanent": true
