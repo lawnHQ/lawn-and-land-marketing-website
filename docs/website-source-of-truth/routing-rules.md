@@ -35,9 +35,44 @@ These are legacy or non-canonical and should be removed from internal linking or
 - `/resources/guides/` has been removed from internal structure and the page file was deleted.
 - 404 page has been cleaned so it no longer promotes the retired service/contact/guides routes.
 
-## Launch redirects (301)
-- **`/precision-case-study/` → `/case-studies/precision/`** — the old WordPress case study is indexed and has history; preserve it with a 301 at launch. (Set alongside the canonical flip from `new.lawnlab.dev` to `lawnandlandmarketing.com`.)
-- **`/rock-solid-case-study/` → `/case-studies/rock-solid/`** — same: the old indexed WordPress case study gets a 301 to the new URL at launch.
+## Launch redirects (301) — old WordPress URLs
+Implemented in `vercel.json` (`redirects`, `permanent: true` = 308, SEO-equivalent to 301). Each is
+registered both with and without a trailing slash so either form resolves. They take effect when the new
+site takes over `lawnandlandmarketing.com` at launch (set alongside the canonical flip from `new.lawnlab.dev`).
+Audited 2026-06-23 against `https://lawnandlandmarketing.com/page-sitemap.xml` (29 pages) plus the `/grow` funnel.
+
+**Same URL, already rebuilt (no redirect needed):** `/`, `/about/`, `/contact/`, `/programs/`, `/privacy-policy/`, `/terms/`.
+
+**Rebuilt at a new URL (301):**
+- `/solutions/` -> `/marketing-services/`
+- `/solutions/websites/` -> `/marketing-services/website-design/`
+- `/solutions/local-seo/` -> `/marketing-services/local-seo/`
+- `/solutions/reputation-management/` -> `/marketing-services/reputation-management/`
+- `/solutions/paid-ads/` -> `/marketing-services/google-ads/` (Meta is its own page: `/marketing-services/meta-ads/`)
+- `/solutions/lead-nurturing/` -> `/marketing-services/automation/`
+- `/precision-case-study/` -> `/case-studies/precision/`
+- `/rock-solid-case-study/` -> `/case-studies/rock-solid/`
+- `/reviews/` -> `/resources/experiences-reviews/`
+- `/blog/` -> `/resources/blog/` (individual posts handled by the blog-migration redirect map)
+- `/our-team/` -> `/about/#team`
+- `/is-marketing-right-for-us/` -> `/about/`
+- `/matt-foreman/` -> `/author/matt-foreman/`
+- `/schedule/` -> `/get-started/book-strategy-call/`
+- `/podcast-sign-up/` -> `/resources/mow-money-mow-problems-podcast/`
+- `/be-a-guest/` -> `/resources/mow-money-mow-problems-podcast/`
+- `/submission-received/` -> `/confirmation/`
+
+**Preserved funnels (rebuilt at the SAME URL, not redirected):**
+- `/grow/` — the Facebook ad funnel. Rebuilt 2026-06-23 (`grow/index.html`, excluded from `build.py` via SKIP_DIRS). Self-contained funnel chrome (no main nav). Carries the legacy Meta Pixel `235509009483991`, Google Ads tag `AW-18165400861`, GHL booking calendar `u7agGU9Xwo0kjAsLlKif`, and `noindex` — so Facebook ads/redirects are untouched.
+- `/checklist/` — GBP-checklist lead magnet (an INDEXED SEO page). REBUILD PENDING: GHL form `OhY6Qt2Y4QWBBQlExOxg` delivers the checklist; includes the Precision case-study proof block; pixel `235509009483991`.
+
+**Sunset funnels (301 to nearest live equivalent so old ad/email links don't 404):**
+- `/free-tools/` -> `/downloads/free-tools-for-green-industry.pdf` (the re-hosted PDF)
+- `/level-up-webinar/` -> `/`
+- `/2025-plan/` -> `/resources/blog/`
+- `/free-book-old/` -> `/`
+
+**Dropped (no redirect, allowed to 404):** `/notapage/` (legacy test page).
 
 ## Remaining Link QA To Handle Later
 - Decide whether any retired routes should eventually receive redirects at the hosting layer.
