@@ -84,6 +84,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/social-media-strategies-for-landscapers",
+      "destination": "/resources/blog/social-media-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/social-media-strategies-for-landscapers/",
+      "destination": "/resources/blog/social-media-strategies-for-landscapers/",
+      "permanent": true
+    },
+    {
       "source": "/blog/4-essential-lawn-care-tips-for-guest-bloggers",
       "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
       "permanent": true
