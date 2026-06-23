@@ -1,5 +1,9 @@
 {
   "buildCommand": "python3 build.py || true",
   "outputDirectory": ".",
-  "framework": null
+  "framework": null,
+  "redirects": [
+    { "source": "/redirect-manager", "destination": "https://menu.lawnandlandmarketing.com/", "permanent": false },
+    { "source": "/redirect-manager/:path*", "destination": "https://menu.lawnandlandmarketing.com/", "permanent": false }
+  ]
 }

@@ -190,6 +190,19 @@ Product-minded, not a deep engineer — explain **outcomes**, not git/Vercel/CLI
 (handle those quietly). He reviews visible changes on the **live URL** (hard-refresh after a push;
 deploys take ~1–2 min). In-tool screenshots don't render well for him.
 
+## Redirect manager (`redirect-manager/`)
+The team's self-serve tool for branded short links / pretty links — every `lawnandlandmarketing.com/<slug>`
+redirect (replaces WordPress Pretty Links). Version-controlled in this repo but a **separate app with its
+own deploy**, NOT part of the website:
+- **Live:** https://menu.lawnandlandmarketing.com (Google Workspace sign-in). Vercel project
+  `menu-redirect-manager`; backend = a Supabase Edge Function + `redirects` table on **Project Operations**.
+  Every change writes to an **append-only audit log** (who / what / when — can't be edited or deleted).
+- **Isolated from the site build:** `build.py` skips `redirect-manager/`; `vercel.json` redirects
+  `/redirect-manager` → the live tool. Editing the website never touches it, and vice versa. Full details:
+  `redirect-manager/README.md`.
+- **Pending (at launch):** the redirect *serving* layer — `lawnandlandmarketing.com/<slug>` must 301 via a
+  Supabase lookup once the site is live (today the live links still run through WordPress).
+
 ## Related assets
 - **Brand kit** — separate repo `LawnAndLandMarketing/brandkit` → https://brandkit.lawnlab.dev
   (Next.js; guide content in `public/brandkit-*.html|css`; AI-readable brief at `/brand`). The
