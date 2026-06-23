@@ -64,7 +64,7 @@ Audited 2026-06-23 against `https://lawnandlandmarketing.com/page-sitemap.xml` (
 
 **Preserved funnels (rebuilt at the SAME URL, not redirected):**
 - `/grow/` — the Facebook ad funnel. Rebuilt 2026-06-23 (`grow/index.html`, excluded from `build.py` via SKIP_DIRS). Self-contained funnel chrome (no main nav). Carries the legacy Meta Pixel `235509009483991`, Google Ads tag `AW-18165400861`, GHL booking calendar `u7agGU9Xwo0kjAsLlKif`, and `noindex` — so Facebook ads/redirects are untouched.
-- `/checklist/` — GBP-checklist lead magnet (an INDEXED SEO page). REBUILD PENDING: GHL form `OhY6Qt2Y4QWBBQlExOxg` delivers the checklist; includes the Precision case-study proof block; pixel `235509009483991`.
+- `/checklist/` — GBP-checklist lead magnet (INDEXED SEO page). REBUILT 2026-06-23: modern on-brand dark page (`checklist/index.html`, self-contained, excluded from `build.py`). Two-column hero (value bullets + a NATIVE lead-capture form: First/Last/Email/Phone, the same fields as the old GHL form `OhY6Qt2Y4QWBBQlExOxg`). On submit it captures the lead (localStorage stub) and delivers the PDF; **TODO before launch: wire the capture to GHL** (inbound webhook or API) so leads are actually saved. Precision proof (+297% calls in five months) links to the case study. The `checklist-download` redirect still serves the PDF directly. No FB pixel yet (pending the site-wide pixel decision).
 
 **Sunset funnels (301 to nearest live equivalent so old ad/email links don't 404):**
 - `/free-tools/` -> `/downloads/free-tools-for-green-industry.pdf` (the re-hosted PDF)
