@@ -30,8 +30,8 @@ Add to this as items come up; check them off as they're done. Last updated: 2026
   canonical article template (`article.css`), BlogPosting + FAQPage schema, Matt Foreman byline. Reused +
   standardized 6 of Koga's; built 13 fresh from the legacy WordPress posts. Index rebuilt (21 cards, 5 filters).
   Process recorded in `blog-migration-spec.md`.
-- [ ] **Close Koga's `koga/blog-migration-optimization` PR — it's superseded.** It carries 12 cut-list filler
-  posts + only 6 keepers; do NOT merge it or the filler comes back.
+- [x] **Closed Koga's `koga/blog-migration-optimization` PR (#1) — superseded** (2026-06-23). It carried 12
+  cut-list filler posts + only 6 keepers; closed (not merged) so the filler can't come back. Branch left intact for reference.
 - [ ] **Blog redirects** (coordinate with Koga's redirect map). Old posts live at `/blog/<slug>/`, new at
   `/resources/blog/<slug>/`. Need: `/blog/<slug>/` → `/resources/blog/<slug>/` for the 19 migrated; and
   `/blog/<slug>/` → nearest keeper (or `/resources/blog/`) for the 62 cuts. None are in `vercel.json` yet.
