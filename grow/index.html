@@ -70,7 +70,7 @@
   .proof-stat-big .arrow{color:var(--lime);margin:0 .1em;font-style:normal}
   .proof-stat-label{color:var(--body);font-size:15px;margin-top:10px}
   .proof-stat-who{font-family:var(--font-l);font-size:13px;color:var(--lime);margin-top:16px;font-weight:600}
-  .vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:980px;margin:34px auto 0}
+  .vid-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:760px;margin:36px auto 0}
   .grow-vidcard{margin:0}
   .grow-vid{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;border:1px solid var(--card-bd);background:#000 center/cover no-repeat;cursor:pointer;padding:0;display:block;width:100%}
   .grow-vid::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(7,16,10,0.45))}
@@ -78,8 +78,10 @@
   .grow-vid:hover .play{transform:scale(1.09)}
   .grow-vid .play svg{width:21px;height:21px;margin-left:3px;fill:#0a1a00}
   .grow-vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:2}
-  .grow-vidcard figcaption{font-family:var(--font-l);font-size:13px;color:var(--muted);margin-top:11px;text-align:center}
-  .grow-vidcard figcaption b{color:var(--white);font-weight:700;font-style:normal}
+  .grow-vidcard figcaption{margin-top:13px;text-align:center}
+  .grow-vidcard .vq{display:block;font-family:var(--font-b);font-style:italic;font-size:14.5px;color:var(--body);line-height:1.45}
+  .grow-vidcard .vw{display:block;font-family:var(--font-l);font-size:12.5px;color:var(--muted);margin-top:8px}
+  .grow-vidcard .vw b{color:var(--white);font-weight:700}
 
   /* booking */
   .grow-book .section-header{margin-bottom:30px}
@@ -179,27 +181,23 @@
       <div class="proof-stats">
         <div class="proof-stat">
           <div class="proof-stat-big">135 <span class="arrow">→</span> 536</div>
-          <div class="proof-stat-label">calls a month (+297%), and revenue from $4.4M to $11.2M, in about 5 months.</div>
+          <div class="proof-stat-label">monthly calls (+297%) in five months. Revenue then grew from $4.4M to $11.2M over the next two years.</div>
           <div class="proof-stat-who">Nate Moses · Precision Landscape Management</div>
         </div>
         <div class="proof-stat">
           <div class="proof-stat-big">$700K <span class="arrow">→</span> $1.4M</div>
-          <div class="proof-stat-label">in a single year, grown organically: 4x the calls and +378% visibility.</div>
+          <div class="proof-stat-label">annual revenue in their first full year, grown organically, with 4x the calls and +378% visibility.</div>
           <div class="proof-stat-who">Zach Franz · Rock Solid Landscape</div>
         </div>
       </div>
       <div class="vid-grid">
         <figure class="grow-vidcard">
-          <button class="grow-vid" data-vid="ajusL5iAs0Q" style="background-image:url('https://i.ytimg.com/vi/ajusL5iAs0Q/hqdefault.jpg')" aria-label="Play Nate Moses testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-          <figcaption><b>Nate Moses</b> · Precision Landscape Management</figcaption>
-        </figure>
-        <figure class="grow-vidcard">
           <button class="grow-vid" data-vid="-q2a1Z2zby8" style="background-image:url('https://i.ytimg.com/vi/-q2a1Z2zby8/hqdefault.jpg')" aria-label="Play Phillip testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-          <figcaption><b>Phillip</b> · P&amp;C Solutions</figcaption>
+          <figcaption><span class="vq">"So good, it's hard for me to keep up. It paid for itself fast."</span><span class="vw"><b>Phillip</b> · P&amp;C Solutions</span></figcaption>
         </figure>
         <figure class="grow-vidcard">
           <button class="grow-vid" data-vid="19ukvbf3-HU" style="background-image:url('https://i.ytimg.com/vi/19ukvbf3-HU/hqdefault.jpg')" aria-label="Play Pete testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-          <figcaption><b>Pete</b> · Logan's Landscaping</figcaption>
+          <figcaption><span class="vq">"The value has been tenfold, not just in new jobs, but in our confidence."</span><span class="vw"><b>Pete</b> · Logan's Landscaping</span></figcaption>
         </figure>
       </div>
     </div>
