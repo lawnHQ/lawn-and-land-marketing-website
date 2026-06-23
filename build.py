@@ -19,7 +19,7 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-SKIP_DIRS = {'.git', 'node_modules', 'docs', '.github', 'redirect-manager', 'grow'}
+SKIP_DIRS = {'.git', 'node_modules', 'docs', '.github', 'redirect-manager', 'grow', 'checklist'}
 
 # (partial file, regex that matches that block inside a page)
 PARTIALS = [
