@@ -2,6 +2,7 @@
   "buildCommand": "python3 build.py || true",
   "outputDirectory": ".",
   "framework": null,
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
       "source": "/blog/why-landscaping-seo-gets-traffic-not-qualified-leads",
@@ -333,7 +334,225 @@
       "destination": "/resources/blog/lawn-landscaping-local-seo/",
       "permanent": true
     },
-    { "source": "/redirect-manager", "destination": "https://menu.lawnandlandmarketing.com/", "permanent": false },
-    { "source": "/redirect-manager/:path*", "destination": "https://menu.lawnandlandmarketing.com/", "permanent": false }
+    {
+      "source": "/redirect-manager",
+      "destination": "https://menu.lawnandlandmarketing.com/",
+      "permanent": false
+    },
+    {
+      "source": "/redirect-manager/:path*",
+      "destination": "https://menu.lawnandlandmarketing.com/",
+      "permanent": false
+    },
+    {
+      "source": "/solutions",
+      "destination": "/marketing-services/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/",
+      "destination": "/marketing-services/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/websites",
+      "destination": "/marketing-services/website-design/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/websites/",
+      "destination": "/marketing-services/website-design/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/local-seo",
+      "destination": "/marketing-services/local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/local-seo/",
+      "destination": "/marketing-services/local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/reputation-management",
+      "destination": "/marketing-services/reputation-management/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/reputation-management/",
+      "destination": "/marketing-services/reputation-management/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/paid-ads",
+      "destination": "/marketing-services/google-ads/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/paid-ads/",
+      "destination": "/marketing-services/google-ads/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/lead-nurturing",
+      "destination": "/marketing-services/automation/",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/lead-nurturing/",
+      "destination": "/marketing-services/automation/",
+      "permanent": true
+    },
+    {
+      "source": "/precision-case-study",
+      "destination": "/case-studies/precision/",
+      "permanent": true
+    },
+    {
+      "source": "/precision-case-study/",
+      "destination": "/case-studies/precision/",
+      "permanent": true
+    },
+    {
+      "source": "/rock-solid-case-study",
+      "destination": "/case-studies/rock-solid/",
+      "permanent": true
+    },
+    {
+      "source": "/rock-solid-case-study/",
+      "destination": "/case-studies/rock-solid/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews",
+      "destination": "/resources/experiences-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/",
+      "destination": "/resources/experiences-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/our-team",
+      "destination": "/about/#team",
+      "permanent": true
+    },
+    {
+      "source": "/our-team/",
+      "destination": "/about/#team",
+      "permanent": true
+    },
+    {
+      "source": "/is-marketing-right-for-us",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/is-marketing-right-for-us/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/matt-foreman",
+      "destination": "/author/matt-foreman/",
+      "permanent": true
+    },
+    {
+      "source": "/matt-foreman/",
+      "destination": "/author/matt-foreman/",
+      "permanent": true
+    },
+    {
+      "source": "/schedule",
+      "destination": "/get-started/book-strategy-call/",
+      "permanent": true
+    },
+    {
+      "source": "/schedule/",
+      "destination": "/get-started/book-strategy-call/",
+      "permanent": true
+    },
+    {
+      "source": "/podcast-sign-up",
+      "destination": "/resources/mow-money-mow-problems-podcast/",
+      "permanent": true
+    },
+    {
+      "source": "/podcast-sign-up/",
+      "destination": "/resources/mow-money-mow-problems-podcast/",
+      "permanent": true
+    },
+    {
+      "source": "/be-a-guest",
+      "destination": "/resources/mow-money-mow-problems-podcast/",
+      "permanent": true
+    },
+    {
+      "source": "/be-a-guest/",
+      "destination": "/resources/mow-money-mow-problems-podcast/",
+      "permanent": true
+    },
+    {
+      "source": "/submission-received",
+      "destination": "/confirmation/",
+      "permanent": true
+    },
+    {
+      "source": "/submission-received/",
+      "destination": "/confirmation/",
+      "permanent": true
+    },
+    {
+      "source": "/free-tools",
+      "destination": "/downloads/free-tools-for-green-industry.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/free-tools/",
+      "destination": "/downloads/free-tools-for-green-industry.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/level-up-webinar",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/level-up-webinar/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/2025-plan",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/2025-plan/",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/free-book-old",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/free-book-old/",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }
