@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Link Manager · Lawn &amp; Land Marketing</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,600;0,800;1,800&family=Mulish:wght@400;500;600;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://accounts.google.com/gsi/client" async></script>
+<style>
+:root{
+  --bg:#07100a; --panel:#0c1a0f; --line:rgba(255,255,255,0.08); --line2:rgba(255,255,255,0.05);
+  --lime:#ACE71D; --green:#5DCA49; --white:#fff; --body:rgba(255,255,255,0.82); --muted:rgba(255,255,255,0.5);
+  --twilight:#6837EF; --radius:13px; --h:'Rethink Sans'; --b:'Mulish'; --l:'Inter';
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--body);font-family:var(--b),sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--lime)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--h),sans-serif;font-style:italic;font-weight:800;color:var(--white);margin:0}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:10px;padding:10px 16px;font-family:var(--l);font-size:14px;font-weight:700;cursor:pointer;transition:transform .12s,filter .12s}
+.btn:hover{filter:brightness(1.06)} .btn:active{transform:translateY(1px)}
+.btn--lime{background:linear-gradient(135deg,var(--lime),#8fd416);color:#0a1a00}
+.btn--ghost{background:transparent;border:1px solid var(--line);color:var(--body)}
+.btn--ghost:hover{border-color:rgba(172,231,29,0.5);color:var(--white)}
+.btn--sm{padding:6px 11px;font-size:12.5px}
+.btn--danger{background:rgba(255,90,90,0.12);color:#ff8b8b;border:1px solid rgba(255,90,90,0.25)}
+
+/* sign-in screen */
+#login{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
+#login .card{max-width:420px;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:44px 36px}
+#login .mark{font-family:var(--h);font-style:italic;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
+#login h1{font-size:30px;margin:10px 0 8px}
+#login p{color:var(--muted);margin:0 0 26px;font-size:14.5px}
+#gbtn{display:flex;justify-content:center}
+#loginNote{margin-top:18px;font-size:12.5px;color:var(--muted)}
+#loginErr{margin-top:16px;color:#ff8b8b;font-size:13px;display:none}
+
+/* app */
+#app{display:none}
+header{position:sticky;top:0;z-index:10;background:rgba(7,16,10,0.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 0}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand .mk{font-family:var(--h);font-style:italic;font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
+.brand h1{font-size:21px}
+.who{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--muted)}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:26px 0 16px}
+.search{flex:1;min-width:220px;max-width:420px;position:relative}
+.search input{width:100%;padding:11px 14px 11px 38px;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--white);font-family:var(--b);font-size:14px}
+.search input:focus{outline:0;border-color:rgba(172,231,29,0.5)}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:var(--muted);fill:none;stroke-width:2}
+.count{font-family:var(--l);font-size:12.5px;color:var(--muted)}
+
+table{width:100%;border-collapse:collapse;margin-bottom:60px}
+th{font-family:var(--l);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:0 14px 12px;border-bottom:1px solid var(--line)}
+td{padding:14px;border-bottom:1px solid var(--line2);vertical-align:middle}
+tr:hover td{background:rgba(255,255,255,0.015)}
+.slug{font-family:var(--l);font-weight:600;color:var(--white);font-size:14px;display:flex;align-items:center;gap:8px}
+.slug .dom{color:var(--muted);font-weight:500}
+.copy{border:0;background:transparent;cursor:pointer;color:var(--muted);padding:3px;border-radius:5px;display:inline-flex}
+.copy:hover{color:var(--lime);background:rgba(172,231,29,0.08)}
+.copy svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+.dest{color:var(--body);font-size:13.5px;word-break:break-all;max-width:380px}
+.dest a{text-decoration:none;border-bottom:1px solid rgba(172,231,29,0.25)}
+.cat{display:inline-block;font-family:var(--l);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);background:rgba(255,255,255,0.05);border-radius:20px;padding:3px 10px}
+.clicks{font-family:var(--l);font-size:13px;color:var(--muted);text-align:right}
+.actions{display:flex;gap:6px;justify-content:flex-end}
+.iconbtn{border:1px solid var(--line);background:transparent;border-radius:8px;width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--muted)}
+.iconbtn:hover{border-color:rgba(172,231,29,0.5);color:var(--white)}
+.iconbtn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2}
+.iconbtn.del:hover{border-color:rgba(255,90,90,0.5);color:#ff8b8b}
+/* toggle */
+.toggle{position:relative;width:38px;height:22px;border-radius:20px;background:rgba(255,255,255,0.14);border:0;cursor:pointer;transition:background .15s;flex-shrink:0}
+.toggle::after{content:'';position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;transition:transform .15s}
+.toggle.on{background:var(--green)} .toggle.on::after{transform:translateX(16px)}
+tr.off td{opacity:.5}
+tr.off .toggle{opacity:1}
+
+.empty{text-align:center;color:var(--muted);padding:60px 20px;font-size:14px}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:50;display:none;align-items:flex-start;justify-content:center;padding:60px 20px;overflow:auto}
+.modal.open{display:flex}
+.modal-ov{position:fixed;inset:0;background:rgba(4,8,5,0.78);backdrop-filter:blur(4px)}
+.modal-card{position:relative;width:min(520px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px}
+.modal-card h2{font-size:22px;margin-bottom:4px}
+.modal-card .sub{color:var(--muted);font-size:13px;margin-bottom:20px}
+.field{margin-bottom:15px}
+.field label{display:block;font-family:var(--l);font-size:12px;font-weight:700;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em}
+.field input,.field textarea,.field select{width:100%;padding:11px 13px;background:rgba(255,255,255,0.04);border:1px solid var(--line);border-radius:10px;color:var(--white);font-family:var(--b);font-size:14px}
+.field input:focus,.field textarea:focus,.field select:focus{outline:0;border-color:var(--lime)}
+.field .pre{display:flex;align-items:stretch}
+.field .pre span{display:flex;align-items:center;padding:0 12px;background:rgba(255,255,255,0.03);border:1px solid var(--line);border-right:0;border-radius:10px 0 0 10px;color:var(--muted);font-family:var(--l);font-size:13px;white-space:nowrap}
+.field .pre input{border-radius:0 10px 10px 0}
+.field textarea{resize:vertical;min-height:62px}
+.modal-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:22px}
+.modal-err{color:#ff8b8b;font-size:13px;min-height:18px}
+.spinner{display:inline-block;width:15px;height:15px;border:2px solid rgba(10,26,0,0.3);border-top-color:#0a1a00;border-radius:50%;animation:spin .6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel);border:1px solid rgba(172,231,29,0.35);color:var(--white);padding:12px 20px;border-radius:12px;font-size:13.5px;opacity:0;transition:all .25s;z-index:60;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:760px){
+  td.h,th.h{display:none}
+  .dest{max-width:none}
+}
+
+/* tabs */
+.tabs{display:flex;gap:18px;margin:24px 0 4px;border-bottom:1px solid var(--line)}
+.tab{background:transparent;border:0;border-bottom:2px solid transparent;color:var(--muted);font-family:var(--l);font-size:14px;font-weight:600;padding:10px 2px;margin-bottom:-1px;cursor:pointer}
+.tab:hover{color:var(--white)}
+.tab.is-active{color:var(--white);border-bottom-color:var(--lime)}
+
+/* activity log */
+.log-note{font-size:12.5px;color:var(--muted);margin:18px 0 8px;display:flex;align-items:center;gap:7px}
+.log-note svg{flex-shrink:0;stroke:var(--green)}
+.log-list{display:flex;flex-direction:column;margin:6px 0 60px}
+.log-item{display:flex;gap:18px;padding:14px 4px;border-bottom:1px solid var(--line2)}
+.log-when{flex-shrink:0;width:78px;font-family:var(--l);font-size:12.5px;color:var(--muted);padding-top:2px}
+.log-body{flex:1;min-width:0}
+.log-head{font-size:14px;margin-bottom:3px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.log-action{display:inline-block;font-family:var(--l);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;border-radius:5px}
+.log-action.create{background:rgba(93,202,73,0.16);color:#7ee06a}
+.log-action.update{background:rgba(172,231,29,0.14);color:var(--lime)}
+.log-action.delete{background:rgba(255,90,90,0.14);color:#ff8b8b}
+.log-slug{font-family:var(--l);font-weight:600;color:var(--white)}
+.log-by{color:var(--muted);font-size:13px}
+.log-detail{font-size:13px;color:var(--body);word-break:break-word}
+.log-detail i{color:var(--muted);font-style:normal}
+.log-detail b{color:var(--white);font-weight:700}
+</style>
+</head>
+<body>
+
+<!-- ===== SIGN IN ===== -->
+<div id="login">
+  <div class="card">
+    <div class="mark">Lawn &amp; Land Marketing</div>
+    <h1>Link Manager</h1>
+    <p>Create and manage your branded short links. Sign in with your <b style="color:var(--white)">@lawnandlandmarketing.com</b> Google account.</p>
+    <div id="g_id_onload"
+         data-client_id="719731442715-5f1tdlaqgnfmpc1o72l2endva1iia4s2.apps.googleusercontent.com"
+         data-callback="onSignIn" data-auto_select="false" data-hd="lawnandlandmarketing.com" data-itp_support="true"></div>
+    <div id="gbtn"><div class="g_id_signin" data-type="standard" data-theme="filled_black" data-size="large" data-text="signin_with" data-shape="pill"></div></div>
+    <div id="loginErr"></div>
+    <div id="loginNote">Restricted to your team. Links go live on lawnandlandmarketing.com.</div>
+  </div>
+</div>
+
+<!-- ===== APP ===== -->
+<div id="app">
+  <header><div class="wrap hrow">
+    <div class="brand"><span class="mk">Lawn &amp; Land</span><h1>Link Manager</h1></div>
+    <div class="who"><span id="userEmail"></span><button class="btn btn--ghost btn--sm" onclick="signOut()">Sign out</button></div>
+  </div></header>
+
+  <div class="wrap">
+    <div class="tabs">
+      <button class="tab is-active" id="tab-links" onclick="switchView('links')">Links</button>
+      <button class="tab" id="tab-activity" onclick="switchView('activity')">Activity log</button>
+    </div>
+    <div id="linksView">
+    <div class="toolbar">
+      <div class="search">
+        <svg viewBox="0 0 24 24" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="search" type="search" placeholder="Search links, destinations, categories…" oninput="render()" autocomplete="off">
+      </div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <span class="count" id="count"></span>
+        <button class="btn btn--lime" onclick="openModal()">+ New link</button>
+      </div>
+    </div>
+      <div id="tableWrap"><div class="empty">Loading…</div></div>
+    </div><!-- /#linksView -->
+    <div id="activityView" style="display:none">
+      <p class="log-note">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Every add, edit, and delete is recorded here permanently. Entries cannot be changed or deleted by anyone.
+      </p>
+      <div id="logWrap"><div class="empty">Loading…</div></div>
+    </div><!-- /#activityView -->
+  </div><!-- /.wrap -->
+</div><!-- /#app -->
+
+<!-- ===== ADD / EDIT MODAL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-ov" onclick="closeModal()"></div>
+  <div class="modal-card">
+    <h2 id="modalTitle">New link</h2>
+    <div class="sub" id="modalSub">Point a branded short link at any destination.</div>
+    <div class="field">
+      <label>Short link</label>
+      <div class="pre"><span>lawnandlandmarketing.com/</span><input id="f_slug" placeholder="update-billing" autocomplete="off"></div>
+    </div>
+    <div class="field">
+      <label>Destination URL</label>
+      <input id="f_dest" placeholder="https://…" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Category (optional)</label>
+      <input id="f_cat" list="cats" placeholder="e.g. Forms, Downloads, Webinars" autocomplete="off">
+      <datalist id="cats"></datalist>
+    </div>
+    <div class="field">
+      <label>Notes (optional)</label>
+      <textarea id="f_notes" placeholder="What this link is for…"></textarea>
+    </div>
+    <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:14px"><input type="checkbox" id="f_active" checked style="width:auto"> Active (the link redirects)</label>
+    <div class="modal-actions">
+      <span class="modal-err" id="modalErr"></span>
+      <div style="display:flex;gap:10px">
+        <button class="btn btn--ghost" onclick="closeModal()">Cancel</button>
+        <button class="btn btn--lime" id="saveBtn" onclick="save()">Save link</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const FN = "https://ztzqnpajurlxuorrfiwd.supabase.co/functions/v1/redirects";
+const SITE = "lawnandlandmarketing.com";
+let idToken = null, rows = [], editingId = null;
+
+window.onSignIn = (resp) => {
+  idToken = resp.credential;
+  const claims = JSON.parse(atob(resp.credential.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')));
+  document.getElementById('userEmail').textContent = claims.email || '';
+  document.getElementById('login').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  load();
+};
+function signOut(msg){
+  idToken = null; rows = [];
+  if (window.google?.accounts?.id) google.accounts.id.disableAutoSelect();
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('login').style.display = 'flex';
+  const e = document.getElementById('loginErr');
+  if (msg){ e.textContent = msg; e.style.display = 'block'; } else { e.style.display = 'none'; }
+}
+async function api(method, body, qs){
+  const r = await fetch(FN + (qs||''), {
+    method, headers:{ "Authorization":"Bearer "+idToken, "content-type":"application/json" },
+    body: body ? JSON.stringify(body) : undefined
+  });
+  if (r.status === 401){ signOut("Your session expired — please sign in again."); throw new Error("unauthorized"); }
+  const data = await r.json().catch(()=>({}));
+  if (!r.ok) throw new Error(data.error || ("Error "+r.status));
+  return data;
+}
+async function load(){
+  try { const d = await api("GET"); rows = d.redirects || []; fillCats(); render(); }
+  catch(e){ if(e.message!=="unauthorized") document.getElementById('tableWrap').innerHTML = '<div class="empty">'+esc(e.message)+'</div>'; }
+}
+function fillCats(){
+  const cats = [...new Set(rows.map(r=>r.category).filter(Boolean))].sort();
+  document.getElementById('cats').innerHTML = cats.map(c=>'<option value="'+esc(c)+'">').join('');
+}
+function render(){
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const list = rows.filter(r => !q || (r.slug+' '+r.destination+' '+(r.category||'')+' '+(r.notes||'')).toLowerCase().includes(q));
+  document.getElementById('count').textContent = list.length + (list.length===1?' link':' links') + (rows.some(r=>!r.active)?'  ·  '+rows.filter(r=>r.active).length+' active':'');
+  if (!list.length){ document.getElementById('tableWrap').innerHTML = '<div class="empty">'+(rows.length?'No matches.':'No links yet — create your first one.')+'</div>'; return; }
+  let h = '<table><thead><tr><th>Short link</th><th>Destination</th><th class="h">Category</th><th class="h" style="text-align:right">Clicks</th><th style="width:54px">Active</th><th style="width:90px"></th></tr></thead><tbody>';
+  for (const r of list){
+    const full = SITE+'/'+r.slug;
+    h += '<tr class="'+(r.active?'':'off')+'">'
+      + '<td><div class="slug"><span><span class="dom">'+SITE+'/</span>'+esc(r.slug)+'</span>'
+        + '<button class="copy" title="Copy link" onclick="copy(\''+esc(full)+'\')"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div></td>'
+      + '<td class="dest"><a href="'+esc(r.destination)+'" target="_blank" rel="noopener">'+esc(r.destination)+'</a></td>'
+      + '<td class="h">'+(r.category?'<span class="cat">'+esc(r.category)+'</span>':'')+'</td>'
+      + '<td class="h clicks">'+(r.clicks||0)+'</td>'
+      + '<td><button class="toggle '+(r.active?'on':'')+'" title="'+(r.active?'Active':'Off')+'" onclick="toggle(\''+r.id+'\','+(!r.active)+')"></button></td>'
+      + '<td><div class="actions">'
+        + '<button class="iconbtn" title="Edit" onclick="openModal(\''+r.id+'\')"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4Z"/></svg></button>'
+        + '<button class="iconbtn del" title="Delete" onclick="del(\''+r.id+'\',\''+esc(r.slug)+'\')"><svg viewBox="0 0 24 24"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>'
+      + '</div></td></tr>';
+  }
+  document.getElementById('tableWrap').innerHTML = h + '</tbody></table>';
+}
+async function toggle(id, active){
+  try { const d = await api("PATCH", {id, active}); const i = rows.findIndex(r=>r.id===id); if(i>=0) rows[i]=d.redirect; render(); }
+  catch(e){ if(e.message!=="unauthorized") toast(e.message, true); }
+}
+async function del(id, slug){
+  if (!confirm('Delete the link /'+slug+'? This cannot be undone.')) return;
+  try { await api("DELETE", null, "?id="+encodeURIComponent(id)); rows = rows.filter(r=>r.id!==id); render(); toast('Link deleted'); }
+  catch(e){ if(e.message!=="unauthorized") toast(e.message, true); }
+}
+function openModal(id){
+  editingId = id || null;
+  const r = id ? rows.find(x=>x.id===id) : null;
+  document.getElementById('modalTitle').textContent = r ? 'Edit link' : 'New link';
+  document.getElementById('f_slug').value = r ? r.slug : '';
+  document.getElementById('f_dest').value = r ? r.destination : '';
+  document.getElementById('f_cat').value = r ? (r.category||'') : '';
+  document.getElementById('f_notes').value = r ? (r.notes||'') : '';
+  document.getElementById('f_active').checked = r ? r.active : true;
+  document.getElementById('modalErr').textContent = '';
+  document.getElementById('modal').classList.add('open');
+  document.getElementById('f_slug').focus();
+}
+function closeModal(){ document.getElementById('modal').classList.remove('open'); }
+async function save(){
+  const slug = document.getElementById('f_slug').value.trim().replace(/^\/+|\/+$/g,'');
+  const dest = document.getElementById('f_dest').value.trim();
+  const err = document.getElementById('modalErr');
+  if (!slug || !dest){ err.textContent = 'Short link and destination are both required.'; return; }
+  const payload = { slug, destination: dest, category: document.getElementById('f_cat').value.trim()||null, notes: document.getElementById('f_notes').value.trim()||null, active: document.getElementById('f_active').checked };
+  const btn = document.getElementById('saveBtn'); btn.innerHTML = '<span class="spinner"></span>'; btn.disabled = true; err.textContent='';
+  try {
+    if (editingId){ payload.id = editingId; const d = await api("PATCH", payload); const i = rows.findIndex(r=>r.id===editingId); if(i>=0) rows[i]=d.redirect; }
+    else { const d = await api("POST", payload); rows.push(d.redirect); }
+    fillCats(); render(); closeModal(); toast(editingId?'Link updated':'Link created');
+  } catch(e){ if(e.message!=="unauthorized") err.textContent = e.message; }
+  finally { btn.innerHTML = 'Save link'; btn.disabled = false; }
+}
+function copy(t){ navigator.clipboard.writeText('https://'+t).then(()=>toast('Copied '+t)); }
+let tt; function toast(msg, bad){ const el=document.getElementById('toast'); el.textContent=msg; el.style.borderColor = bad?'rgba(255,90,90,0.4)':'rgba(172,231,29,0.35)'; el.classList.add('show'); clearTimeout(tt); tt=setTimeout(()=>el.classList.remove('show'),2200); }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+/* ===== activity log ===== */
+let currentView = 'links';
+function switchView(v){
+  currentView = v;
+  document.getElementById('tab-links').classList.toggle('is-active', v==='links');
+  document.getElementById('tab-activity').classList.toggle('is-active', v==='activity');
+  document.getElementById('linksView').style.display = v==='links' ? 'block' : 'none';
+  document.getElementById('activityView').style.display = v==='activity' ? 'block' : 'none';
+  if (v==='activity') loadLog();
+}
+async function loadLog(){
+  const w = document.getElementById('logWrap');
+  w.innerHTML = '<div class="empty">Loading…</div>';
+  try { const d = await api("GET", null, "?view=log"); renderLog(d.log || []); }
+  catch(e){ if(e.message!=="unauthorized") w.innerHTML = '<div class="empty">'+esc(e.message)+'</div>'; }
+}
+function renderLog(items){
+  const w = document.getElementById('logWrap');
+  if (!items.length){ w.innerHTML = '<div class="empty">No changes recorded yet. Every add, edit, and delete will show up here.</div>'; return; }
+  let h = '<div class="log-list">';
+  for (const it of items){
+    h += '<div class="log-item">'
+      + '<div class="log-when" title="'+esc(new Date(it.at).toLocaleString())+'">'+timeAgo(it.at)+'</div>'
+      + '<div class="log-body">'
+        + '<div class="log-head"><span class="log-action '+esc(it.action)+'">'+esc(it.action)+'</span> <span class="log-slug">/'+esc(it.slug)+'</span> <span class="log-by">'+esc(it.actor)+'</span></div>'
+        + '<div class="log-detail">'+describeChange(it)+'</div>'
+      + '</div></div>';
+  }
+  w.innerHTML = h + '</div>';
+}
+function describeChange(it){
+  const c = it.changes || {};
+  if (it.action === 'create') return 'Created, pointing to ' + fmtVal(c.destination);
+  if (it.action === 'delete') return 'Deleted (was pointing to ' + fmtVal(c.destination) + ')';
+  const parts = [];
+  for (const k in c){
+    const v = c[k] || {};
+    if (k === 'active') parts.push(v.to ? 'Turned <b>on</b>' : 'Turned <b>off</b>');
+    else if (k === 'slug') parts.push('Renamed to <b>/'+esc(v.to)+'</b>');
+    else parts.push('Changed '+esc(k)+': '+fmtVal(v.from)+' → '+fmtVal(v.to));
+  }
+  return parts.join(' · ') || 'Updated';
+}
+function fmtVal(v){ if(v===null||v===undefined||v==='') return '<i>(empty)</i>'; if(v===true) return 'on'; if(v===false) return 'off'; return esc(String(v)); }
+function timeAgo(ts){
+  const s = (Date.now() - new Date(ts).getTime())/1000;
+  if (s < 60) return 'just now';
+  if (s < 3600) return Math.floor(s/60)+'m ago';
+  if (s < 86400) return Math.floor(s/3600)+'h ago';
+  if (s < 604800) return Math.floor(s/86400)+'d ago';
+  return new Date(ts).toLocaleDateString();
+}
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+</script>
+</body>
+</html>

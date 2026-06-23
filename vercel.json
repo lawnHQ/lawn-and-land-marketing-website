@@ -332,6 +332,8 @@
       "source": "/blog/the-importance-of-seo-for-your-lawn-care-and-landscape-business/",
       "destination": "/resources/blog/lawn-landscaping-local-seo/",
       "permanent": true
-    }
+    },
+    { "source": "/redirect-manager", "destination": "https://menu.lawnandlandmarketing.com/", "permanent": false },
+    { "source": "/redirect-manager/:path*", "destination": "https://menu.lawnandlandmarketing.com/", "permanent": false }
   ]
 }

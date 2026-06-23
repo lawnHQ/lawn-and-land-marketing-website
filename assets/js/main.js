@@ -184,6 +184,17 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
+// ─ INDUSTRY FAQ — exclusive <details> accordion (one open at a time) ─
+document.querySelectorAll('.ind-faq').forEach(group => {
+  const items = group.querySelectorAll(':scope > details');
+  items.forEach(d => {
+    d.addEventListener('toggle', () => {
+      if (!d.open) return;
+      items.forEach(other => { if (other !== d) other.open = false; });
+    });
+  });
+});
+
 // Testimonial video click-to-play
 document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
   wrap.addEventListener('click', () => {
