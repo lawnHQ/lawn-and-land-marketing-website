@@ -1,7 +1,7 @@
 # Lawn & Land Marketing — Website
 
 Orientation for a fresh session. Read this first, then `docs/website-source-of-truth/`.
-Last updated: 2026-06-21. The site is content-complete and in pre-launch review.
+Last updated: 2026-06-23. The site is content-complete and in pre-launch review.
 
 ## What this is
 The future public website for **Lawn & Land Marketing** — a digital-marketing agency working
@@ -15,8 +15,9 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   production. Takes ~1–2 min. (Vercel also auto-creates auth-protected previews per branch.)
 - **Branches:** all progress lives on `main`; the working branch `site-foundation` is kept
   in sync with it — push to **both** (`origin site-foundation` then `origin site-foundation:main`).
-- **Cache-bust versions in use:** `styles.css?v=141`, `main.js?v=55`, `service-page.css?v=4`,
-  `industry.css?v=2` (shared `.ind-*` framework on `/industries/*`). `styles.css` carries the global
+- **Cache-bust versions in use:** `styles.css?v=142`, `main.js?v=56`, `service-page.css?v=5`,
+  `industry.css?v=2` (shared `.ind-*` framework on `/industries/*`). The `/industries/*` FAQ accordion is
+  **exclusive** (opening one `<details>` closes its siblings) via a `.ind-faq > details` handler in `main.js`. `styles.css` carries the global
   `text-wrap: balance` (headings) / `text-wrap: pretty` (body) line-break hints; the **actual
   no-lone-word guarantee** is a widow-guard in `main.js` that glues the last two words of every
   heading (each `<br>` segment) with a non-breaking space, at any viewport width. `balance` only
@@ -160,6 +161,14 @@ What remains is launch prep + owner inputs:
 - **No invented facts.** Anything unverifiable is a clearly-marked placeholder. Conviction stats
   must be REAL + sourced (`statSource` in `_content.json`). FAQ answers stay `[NEEDS YOUR INPUT]`
   until the owner supplies them; `FAQPage` schema is added only once answers are real.
+- **Service scope — owner's #1 accuracy rule (2026-06-23).** Copy claims ONLY L&L's 8 real services
+  (Website Design, Local SEO, Google Ads, Meta Ads, GBP Management, Your AI Partner / AI search,
+  Reputation Management, CRM & Automation = lead capture + speed-to-lead follow-up). NEVER imply L&L does
+  the client's sales, renewals, rebooking, deposits, waitlists, social-media management, or email list —
+  those are the client's; L&L's role is the marketing around them. Industry-page FAQs answer questions a
+  contractor asks their MARKETING agency, never customer-to-contractor questions (job pricing, "when do I
+  clear my land", permits). Audit the WHOLE page (meta description, OG/Twitter, JSON-LD, service cards,
+  modules), not just the visible FAQ. Full record: `docs/website-source-of-truth/decisions.md` (2026-06-23).
 - **Keyword variants:** lead with the page's primary term, weave 2–3 natural variants. No stuffing.
 - **City/county names** always carry a 2-letter state code ("Tampa, FL"), Title Case.
 - **The two program avatars are DIFFERENT — don't conflate them:**

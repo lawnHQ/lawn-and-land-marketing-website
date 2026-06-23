@@ -1,6 +1,6 @@
 # Build Status
 
-Last updated: 2026-06-21.
+Last updated: 2026-06-23.
 
 ## Overall read
 The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**, **both
@@ -10,6 +10,13 @@ program pages** (Growth + the flagship Authority), the **Programs hub**, and **a
 header/footer + service-page generator), the **2026-06-15 nav-submenu overhaul** (see `navigation.md`),
 route hygiene, and the brand system are all in place. Nothing is launched publicly — staging is
 new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlandmarketing.com.
+
+**2026-06-23 update:** the industry-page FAQs were corrected for POV (questions a contractor asks their
+marketing agency, not the contractor's own voice) and **service-scope accuracy** (no claiming L&L runs the
+client's sales / renewals / ops); `holiday-lighting` was fully revisited and repositioned around the
+off-season gap-filler angle (Meta-ads-led); the two `/programs/*` "Why us" images are now real; and the
+`/industries/*` FAQ accordion is now exclusive (one open at a time). Full record + the still-OPEN accuracy
+sweep of remaining page bodies (lawn-care + outdoor-living): `decisions.md` (2026-06-23).
 
 ## What is DONE (developed)
 - **Homepage** (`/`) — strongest page. Reordered for conversion: hero → stats → Industries grid →
@@ -98,7 +105,8 @@ new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlan
 Every planned page is built. Landed 2026-06-21: FAQ answers + `FAQPage` schema (all 8), conviction
 stats verified (Google Ads now L&L's own 8-12% conversion rate), `og:image` share graphic sitewide,
 About team headshots, and Precision + Rock Solid sign-offs. What remains:
-- **Real images** for the remaining labeled placeholders (homepage CTA, program, industry, service screenshots).
+- **Real images** for the remaining labeled placeholders (homepage CTA, the remaining industry placeholders,
+  service screenshots). DONE 2026-06-23: the Growth + Authority "Why us" images (`growth-why.jpg`, `authority-why.jpg`).
 - **Launch cutover:** `robots.txt` + the staging→production canonical / `og:url` / `og:image` flip.
 
 ## Owner inputs — status
@@ -117,4 +125,6 @@ About team headshots, and Precision + Rock Solid sign-offs. What remains:
 Live ≠ finished. A finished page has: a clear strategic purpose, a strong H1/promise, enough body
 to persuade and rank, proof/trust where appropriate, clear CTA paths to the strategy call, correct
 canonical internal links, the right schema — and **no invented facts** (placeholders for anything
-unverified). **No pricing**, ever.
+unverified). **No pricing**, ever. **Stay inside L&L's real service scope** — never claim L&L does the
+client's sales / renewals / rebooking / deposits / waitlists / social / email (owner's #1 accuracy rule,
+2026-06-23; see `decisions.md`).

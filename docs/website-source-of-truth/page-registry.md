@@ -1,6 +1,12 @@
 # Page Registry
 
-Last updated: 2026-06-21. This table is the authoritative page-by-page inventory + status.
+Last updated: 2026-06-23. This table is the authoritative page-by-page inventory + status.
+
+> **2026-06-23 changes (see `decisions.md` for the full record):** all `/industries/*` FAQs rewritten for
+> POV + service-scope accuracy; `/industries/holiday-lighting/` fully revisited + repositioned (off-season
+> gap-filler, Meta-ads-led); `/programs/growth/` + `/programs/authority/` "Why us" image placeholders now hold
+> real images (`growth-why.jpg`, `authority-why.jpg`); the `/industries/*` FAQ accordion is now exclusive (one
+> open at a time). OPEN: accuracy sweep of remaining page bodies (lawn-care + outdoor-living).
 
 Status key
 - **developed** — real body content and strategic substance; intentionally built

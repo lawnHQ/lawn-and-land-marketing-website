@@ -727,3 +727,59 @@
   author by @id == that Person (not a string); FAQPage matches the visible FAQ. Call-duration: the site is
   uniformly 20-minute (no 30-min exists anywhere); the filler article CTA's "15 minutes" gets rewritten with
   the real content. SKIPPED per owner: the article's generic body copy (intentional filler until the import).
+
+## 2026-06-23 — Industry FAQ accuracy pass · program images · exclusive accordion · service-scope guardrail
+- **Exclusive FAQ accordion (industry pages):** `/industries/*` FAQs use native `<details>`, which open
+  independently (all could be open at once). Added a handler in `main.js` that closes sibling `<details>`
+  when one opens (one open at a time), scoped to `.ind-faq > details`; JS-off degrades to native independent
+  toggles. Bumped `main.js?v=56` sitewide. Verified live.
+- **Program "Why us" images landed** (first real images dropped into placeholders): `/programs/growth/`
+  (`assets/images/growth-why.jpg`, a real sod/hardscape job site) and `/programs/authority/`
+  (`assets/images/authority-why.jpg`, a podcast/video-call still). Both optimized to 1200x900 (~250KB) with
+  EXIF/GPS stripped (source phone photos carried GPS). Process: pull from owner's Drive -> resize/compress
+  (Pillow) -> strip metadata -> swap the `.why-ph` placeholder contents for `<img style="...object-fit:cover">`.
+- **Industry FAQ rewrite — POV correction + service-scope accuracy (owner review).** Two systemic problems
+  found: (a) some questions were written in the CONTRACTOR's voice (pricing a job, "when should I clear my
+  land", permits/burning) instead of as questions a contractor asks their MARKETING agency; (b) copy
+  hallucinated services L&L does NOT offer (running renewals, rebooking, reactivating customers, deposits,
+  waitlists/overflow, takedown, social-media management, running the client's email list). Fixed per page,
+  visible copy + FAQPage JSON-LD kept in lockstep, em-dash-free:
+  - **landscaping:** new-website (you WILL get a new site, no Frankenstein builds), spring-timing (winter =
+    pre-positioning, dropped the unrealistic "selling installs in Dec/Jan"), slow-season (realistic, then the
+    competitors-coast + SEO-lead-time opportunity).
+  - **outdoor-living:** lead-gen reframed to owning your leads via Google + AI search (dropped Houzz); spring
+    now embraces paid (high intent = lowest CPA / highest ROI) + always-on + not set-and-forget; portfolio
+    answer lists real channels (website, GBP, press releases, paid ads — NO social mgmt). Also fixed the
+    comparison-table row that claimed we build Houzz/Instagram.
+  - **lawn-care:** spring-rush split by channel (SEO a season ahead since it is slow to compound; paid ads
+    ~1-2 weeks pre-season to build momentum + let learning settle; hold ads through peak); retention answer
+    no longer implies L&L runs the client's renewals (renewal/prepay systems are theirs; our job is the
+    marketing around them).
+  - **lawn-maintenance:** spring-rush aligned to the channel-split strategy; REMOVED the question "What
+    happens to the leads after they come in?"; commercial/HOA reframed as an honest hybrid (relationships are
+    theirs to build, the research experience — site / branding / reputation / reviews — is ours).
+  - **land-clearing + excavation:** FULL FAQ rewrites (all 7 questions each) from the marketing-agency POV;
+    every contractor-voice question killed.
+  - **holiday-lighting:** FULL PAGE revisit. The "we do the client's sales/ops" hallucination ran through the
+    meta tags, schema description, intro lede, comparison table, the season module, BOTH service cards
+    (CRM + AI), the 5-step, the proof + testimonial intros, the Growth program card, and the FAQ — all
+    reworked to what L&L actually does (demand-gen Meta ads, web/SEO/GBP presence, lead capture +
+    speed-to-lead, reputation/reviews, permanent-lighting marketing). Repositioned the whole page around the
+    OFF-SEASON gap-filler thesis for lawn/landscape companies (esp. northern winters): "if you're not
+    offering holiday lighting yet, you should, and here's how we market it." New FAQ leads with that + a
+    dedicated Meta ads question (Meta is the emphasized channel — best ROI for this trade).
+- **NEW GUARDRAIL — owner's #1 accuracy rule (now in repo + agent memory):** website copy may claim ONLY
+  L&L's 8 real services (Website Design, Local SEO, Google Ads, Meta Ads, GBP Management, Your AI Partner /
+  AI search, Reputation Management, CRM & Automation = lead capture + speed-to-lead follow-up). NEVER imply
+  L&L does the client's sales, renewals, rebooking, deposits, waitlists, social-media management, or email
+  list. Frame relationships + renewals as the client's; L&L's role is the marketing around them. Industry-page
+  FAQs answer questions a contractor asks their marketing agency, never customer-to-contractor questions.
+  When auditing, scan the WHOLE page (meta description, OG/Twitter tags, JSON-LD, service cards, modules),
+  not just the visible FAQ — the overreach hides everywhere.
+- **OPEN — accuracy sweep (next session):** the same service-scope overreach still lives in BODY copy on
+  other pages. Confirmed still-to-fix: **lawn-care** (comparison rows "Sells prepay and renewals" +
+  "Protects retention... renewals", the seasonal "Sell prepay & renewals" module, 5-step "automated
+  follow-up and renewals... all run for you", CRM card "renewal reminders") and **outdoor-living** (the
+  "Knows your season" comparison row + the "How long until I see results?" FAQ still lean on the OLD
+  "don't advertise in spring" stance, now contradicting the new spring-positive Q2). Sweep the remaining
+  industry + program/service pages for the same pattern.

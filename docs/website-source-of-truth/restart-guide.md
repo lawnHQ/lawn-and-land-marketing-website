@@ -1,6 +1,6 @@
 # Restart Guide
 
-Use this when coming back to the Lawn & Land website after time away. Updated 2026-06-21.
+Use this when coming back to the Lawn & Land website after time away. Updated 2026-06-23.
 
 ## One-paragraph truth
 **The site is content-complete and in pre-launch review.** Built: the **homepage**; all **8
@@ -15,6 +15,12 @@ generator (`gen_service.py` reading `_content.json`); everything else is hand-bu
 studies + roster). What's left is **launch prep + owner inputs** (see `build-status.md`), not new pages.
 Nothing is launched publicly — staging is new.lawnlab.dev (also lawnland-site.vercel.app); the eventual
 home is lawnandlandmarketing.com.
+
+**Latest pass (2026-06-23):** the industry-page FAQs were corrected for POV (questions a contractor asks
+their marketing agency, not the contractor's own voice) and **service-scope accuracy** (no claiming L&L does
+the client's sales/renewals/ops); `holiday-lighting` was fully repositioned around the off-season gap-filler
+angle for lawn/landscape companies; and the two `/programs/*` "Why us" images are now real. See `decisions.md`
+(2026-06-23). An **accuracy sweep of the remaining page bodies is still open** (lawn-care + outdoor-living).
 
 ## Fastest restart path — read in order
 1. `CLAUDE.md` (repo root) — the master orientation file
@@ -33,7 +39,7 @@ home is lawnandlandmarketing.com.
 - **A program / industry / other page:** hand-edit its `index.html` (these are not generated).
   Reuse the existing `svc-*` / `simple-hero` / `svc-cta` classes for consistency.
 - **CSS / template changes:** edit `assets/css/styles.css` or `service-page.css`, then **bump the
-  `?v=` query sitewide** so browsers fetch fresh (current: `styles.css?v=141`, `main.js?v=54`, `service-page.css?v=3`, `industry.css?v=2`).
+  `?v=` query sitewide** so browsers fetch fresh (current: `styles.css?v=142`, `main.js?v=56`, `service-page.css?v=5`, `industry.css?v=2`). The industry-page FAQ accordion (exclusive open/close) lives in `main.js`, scoped to `.ind-faq > details`.
 - **Deploy:** commit + push `main` (also keep `site-foundation` in sync). GitHub Actions → Vercel,
   ~1–2 min. Verify on the live URL with a hard refresh.
 
@@ -48,6 +54,9 @@ Retired / keep OUT of internal linking: `/services/`, `/pricing/`, `/resources/g
 `/podcast/`, `/tools/marketing-audit/`, and older orphan/article URLs.
 
 ## The next best moves (launch prep, not new pages)
+0. **In progress (2026-06-23) — accuracy sweep:** finish removing "we do the client's sales/ops" overreach
+   from page BODIES (the 8 industry FAQs + holiday-lighting are done; **lawn-care + outdoor-living body copy
+   still pending** — comparison rows, season modules, 5-step, service cards). Details in `decisions.md`.
 1. Land the **service-page owner inputs** (FAQ answers → `FAQPage` schema; verify conviction stats; real images).
 2. Drop **real images** into the labeled placeholders sitewide.
 3. Get **client sign-offs** on the case studies; add **more case studies** to the framework as approved.
@@ -56,6 +65,11 @@ Retired / keep OUT of internal linking: `/services/`, `/pricing/`, `/resources/g
 ## Guardrails
 - **No pricing** anywhere — every CTA → the free strategy call.
 - **No invented facts** — placeholders for anything unverifiable; conviction stats real + sourced.
+- **Service scope (owner's #1 accuracy rule):** copy claims ONLY L&L's 8 real services (Website, Local SEO,
+  Google Ads, Meta Ads, GBP, Your AI Partner, Reputation, CRM & Automation). NEVER imply L&L does the
+  client's sales, renewals, rebooking, deposits, waitlists, social-media management, or email list. Frame
+  relationships/renewals as the client's; L&L's role is the marketing around them. Audit the WHOLE page
+  (meta, schema, service cards, modules), not just the FAQ. See `decisions.md` (2026-06-23).
 - **Brand:** Lucide icons only (no emoji); Twilight `#6837EF` never blends with green; the `.hl`
   marker is one impact phrase per surface.
 - **Don't deploy to lawnandlandmarketing.com** — not launching yet.
