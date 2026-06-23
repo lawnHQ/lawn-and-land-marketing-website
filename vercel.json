@@ -54,6 +54,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/your-2025-digital-marketing-plan",
+      "destination": "/resources/blog/your-2025-digital-marketing-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/your-2025-digital-marketing-plan/",
+      "destination": "/resources/blog/your-2025-digital-marketing-plan/",
+      "permanent": true
+    },
+    {
       "source": "/blog/4-essential-lawn-care-tips-for-guest-bloggers",
       "destination": "/resources/blog/lawn-care-blogging-and-guest-posting/",
       "permanent": true
