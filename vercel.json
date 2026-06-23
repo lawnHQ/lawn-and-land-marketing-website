@@ -55,6 +55,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/seo-for-lawn-care-services",
+      "destination": "/resources/blog/seo-for-lawn-care-services/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/seo-for-lawn-care-services/",
+      "destination": "/resources/blog/seo-for-lawn-care-services/",
+      "permanent": true
+    },
+    {
       "source": "/blog/the-ultimate-guide-to-online-landscape-marketing",
       "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
       "permanent": true
