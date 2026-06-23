@@ -105,8 +105,10 @@ sweep of remaining page bodies (lawn-care + outdoor-living): `decisions.md` (202
 Every planned page is built. Landed 2026-06-21: FAQ answers + `FAQPage` schema (all 8), conviction
 stats verified (Google Ads now L&L's own 8-12% conversion rate), `og:image` share graphic sitewide,
 About team headshots, and Precision + Rock Solid sign-offs. What remains:
-- **Real images** for the remaining labeled placeholders (homepage CTA, the remaining industry placeholders,
-  service screenshots). DONE 2026-06-23: the Growth + Authority "Why us" images (`growth-why.jpg`, `authority-why.jpg`).
+- **Real images** for the remaining labeled placeholders (homepage CTA, service-page screenshots). DONE
+  2026-06-23: the Growth + Authority "Why us" images (`growth-why.jpg`, `authority-why.jpg`) **and all 8
+  `/industries/*` intro images** (`assets/images/<industry>-intro.jpg`, owner-provided, 1400x788 / ~240-350KB,
+  EXIF stripped, shown in the template 4:3 `.ind-ph` box via object-fit:cover).
 - **Launch cutover:** `robots.txt` + the staging→production canonical / `og:url` / `og:image` flip.
 
 ## Owner inputs — status

@@ -783,3 +783,10 @@
   "Knows your season" comparison row + the "How long until I see results?" FAQ still lean on the OLD
   "don't advertise in spring" stance, now contradicting the new spring-positive Q2). Sweep the remaining
   industry + program/service pages for the same pattern.
+- **Images (2026-06-23, later):** all 8 `/industries/*` intro placeholders (`.ind-ph`) now hold real
+  owner-provided photos (`assets/images/<industry>-intro.jpg`): landscaping, lawn-care, lawn-maintenance,
+  outdoor-living, land-clearing, excavation, septic-installation, holiday-lighting. Each PNG -> 1400x788
+  JPEG (~240-350KB), EXIF/GPS stripped, shown in the template 4:3 box via object-fit:cover (center-cropped
+  on desktop, full 16:9 on mobile). Source: the owner's shared Drive folder, one file named per page. (Plus
+  the two `/programs/*` "Why us" images earlier the same day.) Remaining placeholders: homepage CTA +
+  service-page screenshots.
