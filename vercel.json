@@ -65,6 +65,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/custom-web-design-guide-for-landscaping-professionals",
+      "destination": "/resources/blog/custom-web-design-guide-for-landscaping-professionals/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/custom-web-design-guide-for-landscaping-professionals/",
+      "destination": "/resources/blog/custom-web-design-guide-for-landscaping-professionals/",
+      "permanent": true
+    },
+    {
       "source": "/blog/the-ultimate-guide-to-online-landscape-marketing",
       "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
       "permanent": true
