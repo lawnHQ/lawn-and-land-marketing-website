@@ -28,280 +28,231 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18165400861"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18165400861');</script>
 
+  <!-- Brand foundation: dark theme, tokens, fonts, .btn/.hl/.gradient-text/.eyebrow-label/.container -->
+  <link rel="stylesheet" href="/assets/css/styles.css?v=142">
+
   <style>
-  /* ===== /grow funnel — self-contained, brand-matched ===== */
-  :root{
-    --lime:#ACE71D; --gator:#5DCA49; --twilight:#6837EF; --ink:#07100A; --ink-2:#0c1812;
-    --paper:#ffffff; --paper-2:#f4f8ef; --text:#16241a; --text-soft:#46564b;
-    --white:#fff; --muted:rgba(255,255,255,0.66); --line:rgba(255,255,255,0.12);
-    --font-h:'Rethink Sans',sans-serif; --font-b:'Mulish',sans-serif; --font-l:'Inter',sans-serif;
-  }
-  *{box-sizing:border-box}
+  /* ===== /grow funnel — scoped layout only; all colors/fonts come from styles.css tokens ===== */
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--paper);color:var(--text);font-family:var(--font-b);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-  img{max-width:100%;display:block}
-  h1,h2,h3{font-family:var(--font-h);font-weight:800;font-style:italic;line-height:1.07;margin:0;letter-spacing:-.01em}
-  p{margin:0 0 1em}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-  .eyebrow{font-family:var(--font-l);font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
-  .center{text-align:center}
+  .scroll-anchor{scroll-margin-top:84px}
 
-  /* highlight marker (Twilight skewed swipe, white text, weight inherits) */
-  .hl{position:relative;color:#fff;font-weight:inherit;white-space:nowrap;z-index:0}
-  .hl::after{content:"";position:absolute;left:-.09em;right:-.09em;top:.16em;bottom:.05em;background:var(--twilight);transform:skewX(-11deg);z-index:-1;border-radius:2px}
+  /* slim funnel header (no main nav — focused conversion path) */
+  .grow-head{position:sticky;top:0;z-index:40;background:rgba(7,16,10,0.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.07)}
+  .grow-head-row{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .grow-head img{height:30px;width:auto}
+  .grow-head .phone{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-l);font-weight:600;font-size:15px;color:var(--white)}
+  .grow-head .phone svg{width:17px;height:17px;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-  /* buttons */
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--font-l);font-weight:700;font-size:16px;text-decoration:none;border:0;border-radius:13px;padding:16px 30px;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,filter .12s ease}
-  .btn--lime{background:linear-gradient(135deg,var(--lime),#8fd416);color:#0a1a00;box-shadow:0 10px 26px rgba(172,231,29,0.32)}
-  .btn--lime:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(172,231,29,0.42)}
-  .btn--lg{padding:19px 38px;font-size:17.5px}
-  .btn svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  /* hero — dark canvas, single Limeade glow, italic display headline, Limeade accent */
+  .grow-hero{position:relative;text-align:center;padding:84px 0 90px;overflow:hidden}
+  .grow-hero::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(720px 420px at 50% -10%, rgba(172,231,29,0.16), transparent 62%);pointer-events:none}
+  .grow-hero .container{position:relative;z-index:1;max-width:900px}
+  .grow-hero .eyebrow-label{display:inline-flex;align-items:center;gap:9px}
+  .grow-hero .eyebrow-label::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime)}
+  .grow-hero h1{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(40px,6.4vw,72px);line-height:1.02;letter-spacing:-0.02em;color:var(--white)}
+  .grow-hero .sub{color:var(--body);font-size:clamp(17px,2.1vw,20px);max-width:660px;margin:22px auto 32px}
+  .grow-cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .grow-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;margin-top:40px;font-family:var(--font-l);font-size:13.5px;color:var(--muted)}
+  .grow-trust span{display:inline-flex;align-items:center;gap:8px}
+  .grow-trust b{color:var(--white);font-weight:700}
+  .grow-trust svg{width:16px;height:16px;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-  /* slim header */
-  .ghead{position:sticky;top:0;z-index:30;background:rgba(7,16,10,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  .ghead-row{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .ghead img{height:30px}
-  .ghead .phone{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-family:var(--font-l);font-weight:600;font-size:15px}
-  .ghead .phone svg{width:17px;height:17px;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-  .ghead .phone span{opacity:.92}
-
-  /* hero */
-  .hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;padding:78px 0 88px}
-  .hero::before{content:"";position:absolute;inset:0;background:
-     radial-gradient(900px 460px at 18% -8%, rgba(93,202,73,0.20), transparent 60%),
-     radial-gradient(760px 420px at 92% 6%, rgba(104,55,239,0.16), transparent 62%);}
-  .hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1.6px);background-size:24px 24px;opacity:.5}
-  .hero .wrap{position:relative;z-index:1;max-width:920px;text-align:center}
-  .hero .eyebrow{color:var(--lime);margin-bottom:18px}
-  .hero h1{font-size:clamp(38px,6vw,68px)}
-  .hero .sub{font-size:clamp(17px,2.2vw,21px);color:rgba(255,255,255,0.82);max-width:680px;margin:22px auto 32px}
-  .trust{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;margin-top:34px;font-family:var(--font-l);font-size:13.5px;color:rgba(255,255,255,0.62)}
-  .trust b{color:#fff;font-weight:700}
-  .trust span{display:inline-flex;align-items:center;gap:8px}
-  .trust svg{width:16px;height:16px;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-
-  /* section scaffolding */
-  section{padding:74px 0}
-  .sec-head{max-width:760px;margin:0 auto 46px;text-align:center}
-  .sec-head h2{font-size:clamp(28px,4vw,42px)}
-  .sec-head p{color:var(--text-soft);font-size:18px;margin-top:14px}
-  .scroll-anchor{scroll-margin-top:80px}
+  /* section rhythm on dark */
+  .grow-sec{padding:78px 0}
+  .grow-sec--alt{background:var(--black-mid)}
+  .grow-sec--deep{background:var(--black-deep)}
 
   /* booking */
-  .book{background:var(--paper-2)}
-  .book .sec-head p{max-width:620px;margin-left:auto;margin-right:auto}
-  .no-pitch{display:inline-flex;align-items:center;gap:9px;background:rgba(104,55,239,0.10);color:var(--twilight);font-family:var(--font-l);font-weight:700;font-size:13.5px;padding:7px 15px;border-radius:30px;margin-top:18px}
-  .no-pitch svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-  .cal-card{max-width:920px;margin:0 auto;background:#fff;border:1px solid #e4ece0;border-radius:20px;box-shadow:0 24px 60px rgba(7,16,10,0.08);padding:14px;overflow:hidden}
-  .cal-card iframe{width:100%;min-height:720px;border:0;border-radius:12px;display:block}
+  .grow-book .section-header{margin-bottom:34px}
+  .no-pitch{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:7px 16px;border-radius:999px;border:1px solid rgba(172,231,29,0.28);background:rgba(172,231,29,0.06);font-family:var(--font-l);font-weight:700;font-size:13px;letter-spacing:.02em;color:var(--lime)}
+  .no-pitch svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .cal-frame{max-width:940px;margin:0 auto;background:var(--white);border:1px solid var(--card-bd);border-radius:var(--radius);box-shadow:0 30px 70px rgba(0,0,0,0.4);padding:10px;overflow:hidden}
+  .cal-frame iframe{width:100%;min-height:720px;border:0;border-radius:10px;display:block}
 
-  /* how it works */
-  .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-  .step{position:relative;background:#fff;border:1px solid #e9efe4;border-radius:18px;padding:30px 24px}
-  .step .n{position:absolute;top:-14px;left:24px;width:30px;height:30px;border-radius:9px;background:var(--ink);color:var(--lime);font-family:var(--font-h);font-style:italic;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center}
-  .step .ic{width:46px;height:46px;border-radius:12px;background:rgba(93,202,73,0.12);display:flex;align-items:center;justify-content:center;margin:6px 0 16px}
-  .step .ic svg{width:24px;height:24px;stroke:var(--gator);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
-  .step h3{font-size:20px;margin-bottom:8px}
-  .step p{color:var(--text-soft);font-size:15.5px;margin:0}
+  /* glass cards (steps + services) — the brand's card surface on dark */
+  .grow-grid{display:grid;gap:18px}
+  .grow-grid--4{grid-template-columns:repeat(4,1fr)}
+  .grow-card{position:relative;background:var(--card-bg);border:1px solid var(--card-bd);border-radius:var(--radius);padding:26px 22px;transition:transform .15s var(--ease),border-color .15s var(--ease)}
+  .grow-card:hover{transform:translateY(-3px);border-color:rgba(172,231,29,0.35)}
+  .grow-card .ic{width:46px;height:46px;border-radius:11px;background:rgba(93,202,73,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .grow-card .ic svg{width:23px;height:23px;stroke:var(--green);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+  .grow-card h3{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:19px;color:var(--white);margin-bottom:8px}
+  .grow-card p{color:var(--muted);font-size:15px;margin:0}
+  .grow-card .step-n{position:absolute;top:18px;right:20px;font-family:var(--font-h);font-style:italic;font-weight:800;font-size:15px;color:rgba(172,231,29,0.6)}
 
-  /* videos */
-  .videos{background:var(--ink);color:#fff}
-  .videos .sec-head h2{color:#fff}
-  .videos .sec-head p{color:rgba(255,255,255,0.72)}
-  .vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px;margin:0 auto}
-  .vid{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);background:#000 center/cover no-repeat;cursor:pointer;padding:0}
-  .vid::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,16,10,0.05),rgba(7,16,10,0.45))}
-  .vid .play{position:absolute;inset:0;margin:auto;width:62px;height:62px;border-radius:50%;background:rgba(172,231,29,0.95);display:flex;align-items:center;justify-content:center;transition:transform .15s ease,background .15s ease}
-  .vid:hover .play{transform:scale(1.08)}
-  .vid .play svg{width:24px;height:24px;margin-left:3px;fill:#0a1a00}
-  .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  /* owner experience videos */
+  .vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:0 auto}
+  .grow-vid{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;border:1px solid var(--card-bd);background:#000 center/cover no-repeat;cursor:pointer;padding:0;display:block;width:100%}
+  .grow-vid::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(7,16,10,0.5))}
+  .grow-vid .play{position:absolute;inset:0;margin:auto;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--lime),#8fd416);display:flex;align-items:center;justify-content:center;z-index:1;transition:transform .15s var(--ease)}
+  .grow-vid:hover .play{transform:scale(1.09)}
+  .grow-vid .play svg{width:22px;height:22px;margin-left:3px;fill:#0a1a00}
+  .grow-vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:2}
 
-  /* services */
-  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-  .svc{background:#fff;border:1px solid #e9efe4;border-radius:16px;padding:24px 22px;transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease}
-  .svc:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(7,16,10,0.07);border-color:rgba(93,202,73,0.4)}
-  .svc .ic{width:42px;height:42px;border-radius:11px;background:rgba(93,202,73,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:15px}
-  .svc .ic svg{width:22px;height:22px;stroke:var(--gator);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
-  .svc h3{font-size:18px;margin-bottom:7px}
-  .svc p{color:var(--text-soft);font-size:14.5px;margin:0}
-  .svc-close{max-width:760px;margin:44px auto 0;text-align:center;font-size:19px;color:var(--text);font-weight:600}
+  .grow-close{max-width:720px;margin:42px auto 0;text-align:center;color:var(--body);font-size:18px}
 
-  /* final CTA — Twilight band */
-  .cta{position:relative;background:var(--twilight);color:#fff;text-align:center;overflow:hidden}
-  .cta::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1.6px);background-size:24px 24px;opacity:.6}
-  .cta .wrap{position:relative;z-index:1;max-width:740px}
-  .cta h2{font-size:clamp(30px,4.4vw,46px)}
-  .cta p{color:rgba(255,255,255,0.85);font-size:18px;margin:18px auto 30px}
-  .cta .mission{margin-top:30px;font-family:var(--font-l);font-size:14px;color:rgba(255,255,255,0.7)}
+  /* final CTA — dark spotlight, one Twilight moment via the .hl marker */
+  .grow-final{position:relative;text-align:center;padding:86px 0;overflow:hidden;background:var(--black-deep)}
+  .grow-final::before{content:'';position:absolute;inset:0;z-index:0;background:radial-gradient(680px 360px at 50% 120%, rgba(172,231,29,0.12), transparent 60%);pointer-events:none}
+  .grow-final .container{position:relative;z-index:1;max-width:720px}
+  .grow-final h2{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(30px,4.6vw,48px);line-height:1.05;color:var(--white)}
+  .grow-final p{color:var(--body);font-size:18px;margin:18px auto 30px}
+  .grow-final .mission{margin-top:28px;font-family:var(--font-l);font-size:13.5px;color:var(--muted)}
 
-  /* footer */
-  .gfoot{background:var(--ink);color:rgba(255,255,255,0.6);padding:36px 0;font-size:14px}
-  .gfoot-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
-  .gfoot img{height:26px;opacity:.92}
-  .gfoot a{color:rgba(255,255,255,0.75);text-decoration:none}
-  .gfoot a:hover{color:var(--lime)}
-  .gfoot .links{display:flex;gap:20px;font-family:var(--font-l)}
+  /* slim footer */
+  .grow-foot{background:var(--black-deep);border-top:1px solid rgba(255,255,255,0.06);padding:32px 0;font-family:var(--font-l);font-size:13.5px;color:var(--muted)}
+  .grow-foot-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+  .grow-foot img{height:26px;opacity:.9}
+  .grow-foot .links{display:flex;gap:20px;flex-wrap:wrap}
+  .grow-foot a{color:rgba(255,255,255,0.7)}
+  .grow-foot a:hover{color:var(--lime)}
 
-  @media(max-width:900px){
-    .steps-grid{grid-template-columns:repeat(2,1fr)}
-    .svc-grid{grid-template-columns:repeat(2,1fr)}
-    .vid-grid{grid-template-columns:repeat(2,1fr)}
-  }
-  @media(max-width:560px){
-    section{padding:54px 0}
-    .vid-grid{grid-template-columns:1fr}
-    .ghead .phone span{display:none}
-  }
-  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover,.svc:hover{transform:none}}
+  @media(max-width:900px){.grow-grid--4{grid-template-columns:repeat(2,1fr)}.vid-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.grow-sec,.grow-hero,.grow-final{padding-top:54px;padding-bottom:54px}.vid-grid{grid-template-columns:1fr}.grow-head .phone span{display:none}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
 
-  <!-- slim header -->
-  <header class="ghead">
-    <div class="wrap ghead-row">
-      <a href="/"><img src="/assets/logos/logo-horizontal.svg" alt="Lawn &amp; Land Marketing"></a>
+  <!-- slim funnel header -->
+  <header class="grow-head">
+    <div class="container grow-head-row">
+      <a href="/" aria-label="Lawn &amp; Land Marketing"><img src="/assets/logos/logo-horizontal.svg" alt="Lawn &amp; Land Marketing"></a>
       <a class="phone" href="tel:+17274967098"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><span>(727) 496-7098</span></a>
     </div>
   </header>
 
   <!-- hero -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow">Lawn &amp; Landscape Marketing Agency</div>
-      <h1>Your Exclusive Green Industry <span class="hl">Growth Partner</span></h1>
+  <section class="grow-hero">
+    <div class="container">
+      <span class="eyebrow-label">Lawn &amp; Landscape Marketing Agency</span>
+      <h1>Your Exclusive Green Industry <span class="gradient-text">Growth Partner</span></h1>
       <p class="sub">Stop guessing and finally get the consistent, high-quality leads that fuel real growth, with a growth partner who understands your industry and a proven system.</p>
-      <a class="btn btn--lime btn--lg" href="#book">Let's Get Growing
-        <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-      </a>
-      <div class="trust">
+      <div class="grow-cta-row">
+        <a class="btn btn--lime btn--lg" href="#book">Let's Get Growing <span>→</span></a>
+      </div>
+      <div class="grow-trust">
+        <span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><b>100+</b>&nbsp;green industry companies</span>
+        <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><b>97%+</b>&nbsp;client retention</span>
         <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Built only for the green industry</span>
-        <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>50+ lawn &amp; landscaping companies</span>
-        <span><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>A proven, all-in-one system</span>
       </div>
     </div>
   </section>
 
   <!-- booking -->
-  <section class="book scroll-anchor" id="book">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>Custom Growth Plan for Owners Serious About Growth</h2>
+  <section class="grow-sec grow-sec--alt grow-book scroll-anchor" id="book">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow-label">Book Your Free Call</span>
+        <h2>A Custom Growth Plan for Owners Serious About Growth</h2>
         <p>In 15-20 minutes, we'll learn about your business, your goals, and what's holding you back, then give you a clear roadmap to grow.</p>
-        <div class="no-pitch"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>No sales pitch. Just clarity.</div>
+        <span class="no-pitch"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>No sales pitch. Just clarity.</span>
       </div>
-      <div class="cal-card">
+      <div class="cal-frame">
         <iframe src="https://api.leadconnectorhq.com/widget/booking/u7agGU9Xwo0kjAsLlKif" scrolling="no" id="u7agGU9Xwo0kjAsLlKif_grow" title="Book your free growth-plan call"></iframe>
       </div>
     </div>
   </section>
 
   <!-- how it works -->
-  <section>
-    <div class="wrap">
-      <div class="sec-head"><h2>How This Works</h2></div>
-      <div class="steps-grid">
-        <div class="step">
-          <div class="n">1</div>
+  <section class="grow-sec">
+    <div class="container">
+      <div class="section-header"><span class="eyebrow-label">Simple From The Start</span><h2>How This Works</h2></div>
+      <div class="grow-grid grow-grid--4">
+        <div class="grow-card"><span class="step-n">01</span>
           <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-          <h3>Book a Call</h3>
-          <p>Choose a time that works for you and enter your name, email, and cell phone.</p>
+          <h3>Book a Call</h3><p>Choose a time that works for you and enter your name, email, and cell phone.</p>
         </div>
-        <div class="step">
-          <div class="n">2</div>
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 2h6a2 2 0 0 1 2 2v0H7v0a2 2 0 0 1 2-2Z"/><path d="M7 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/><path d="m9 14 2 2 4-4"/></svg></div>
-          <h3>Get Prepared</h3>
-          <p>We'll send helpful info and reminders so you know exactly what to expect before the call.</p>
+        <div class="grow-card"><span class="step-n">02</span>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 2h6a2 2 0 0 1 2 2H7a2 2 0 0 1 2-2Z"/><path d="M7 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/><path d="m9 14 2 2 4-4"/></svg></div>
+          <h3>Get Prepared</h3><p>We'll send helpful info and reminders so you know exactly what to expect before the call.</p>
         </div>
-        <div class="step">
-          <div class="n">3</div>
+        <div class="grow-card"><span class="step-n">03</span>
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div>
-          <h3>Talk It Out</h3>
-          <p>We'll learn about your business, goals, and challenges to see if there's a strong fit.</p>
+          <h3>Talk It Out</h3><p>We'll learn about your business, goals, and challenges to see if there's a strong fit.</p>
         </div>
-        <div class="step">
-          <div class="n">4</div>
+        <div class="grow-card"><span class="step-n">04</span>
           <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
-          <h3>Next Steps</h3>
-          <p>If it clicks, we'll schedule a deep dive to map out your full growth plan.</p>
+          <h3>Next Steps</h3><p>If it clicks, we'll schedule a deep dive to map out your full growth plan.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- owner experiences -->
-  <section class="videos">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>Owner Experiences</h2>
-        <p>Real testimonials from lawn care &amp; landscaping business owners just like you who trust us as their digital marketing team.</p>
+  <section class="grow-sec grow-sec--deep">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow-label">Owner Experiences</span>
+        <h2>Real Results From Owners Just Like You</h2>
+        <p>Hear from lawn care &amp; landscaping business owners who trust us as their digital marketing team.</p>
       </div>
       <div class="vid-grid">
-        <button class="vid" data-vid="-q2a1Z2zby8" style="background-image:url('https://i.ytimg.com/vi/-q2a1Z2zby8/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="vid" data-vid="19ukvbf3-HU" style="background-image:url('https://i.ytimg.com/vi/19ukvbf3-HU/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="vid" data-vid="5LGPhGWPJBk" style="background-image:url('https://i.ytimg.com/vi/5LGPhGWPJBk/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="vid" data-vid="ajusL5iAs0Q" style="background-image:url('https://i.ytimg.com/vi/ajusL5iAs0Q/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="vid" data-vid="rDBc4t-_x88" style="background-image:url('https://i.ytimg.com/vi/rDBc4t-_x88/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <button class="vid" data-vid="t9oEJyupwUw" style="background-image:url('https://i.ytimg.com/vi/t9oEJyupwUw/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <button class="grow-vid" data-vid="-q2a1Z2zby8" style="background-image:url('https://i.ytimg.com/vi/-q2a1Z2zby8/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <button class="grow-vid" data-vid="19ukvbf3-HU" style="background-image:url('https://i.ytimg.com/vi/19ukvbf3-HU/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <button class="grow-vid" data-vid="5LGPhGWPJBk" style="background-image:url('https://i.ytimg.com/vi/5LGPhGWPJBk/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <button class="grow-vid" data-vid="ajusL5iAs0Q" style="background-image:url('https://i.ytimg.com/vi/ajusL5iAs0Q/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <button class="grow-vid" data-vid="rDBc4t-_x88" style="background-image:url('https://i.ytimg.com/vi/rDBc4t-_x88/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
+        <button class="grow-vid" data-vid="t9oEJyupwUw" style="background-image:url('https://i.ytimg.com/vi/t9oEJyupwUw/hqdefault.jpg')" aria-label="Play owner testimonial"><span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>
       </div>
     </div>
   </section>
 
   <!-- services -->
-  <section>
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>We Help Lawn &amp; Landscaping Companies Dominate Their Service Areas Online. Here's How:</h2>
+  <section class="grow-sec">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow-label">One Complete System</span>
+        <h2>How We Help You Dominate Your Service Area Online</h2>
+        <p>It's not about a single channel. You need your entire digital marketing profile working together, and we handle all of it.</p>
       </div>
-      <div class="svc-grid">
-        <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Website Design</h3><p>Custom sites built to convert visitors into high-quality lawn &amp; landscaping leads.</p></div>
-        <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h3>Local &amp; AI SEO</h3><p>Boost your visibility to local customers searching on Google, AI, Bing, and more.</p></div>
-        <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Google Ads</h3><p>Target ready-to-buy customers through PPC and Google Guaranteed.</p></div>
-        <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div><h3>Meta Ads</h3><p>Reach local homeowners scrolling their Facebook and Instagram feeds.</p></div>
-        <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></div><h3>Automations</h3><p>Save time with follow-ups, reminders, and lead-nurturing workflows.</p></div>
-        <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg></div><h3>Review Management</h3><p>Earn more 5-star reviews and build trust across your local area.</p></div>
-        <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div><h3>Text Messages</h3><p>Engage quickly by communicating with your leads and customers via SMS.</p></div>
-        <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div><h3>Email Marketing</h3><p>Reactivate old leads and keep current customers coming back.</p></div>
+      <div class="grow-grid grow-grid--4">
+        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Website Design</h3><p>Custom sites built to convert visitors into high-quality leads.</p></div>
+        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h3>Local &amp; AI SEO</h3><p>Get found by local customers searching on Google, AI, Bing, and more.</p></div>
+        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Google Ads</h3><p>Target ready-to-buy customers through PPC and Google Guaranteed.</p></div>
+        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div><h3>Meta Ads</h3><p>Reach local homeowners scrolling Facebook and Instagram.</p></div>
+        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></div><h3>Automations</h3><p>Save time with follow-ups, reminders, and lead-nurturing workflows.</p></div>
+        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg></div><h3>Review Management</h3><p>Earn more 5-star reviews and build trust across your area.</p></div>
+        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div><h3>Text Messages</h3><p>Engage leads and customers quickly over SMS.</p></div>
+        <div class="grow-card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div><h3>Email Marketing</h3><p>Reactivate old leads and keep current customers coming back.</p></div>
       </div>
-      <p class="svc-close">If you want to become the best-known lawn or landscaping company in your area, it's not about working a single channel. You need your entire digital marketing profile working together. We handle all of it.</p>
     </div>
   </section>
 
-  <!-- final CTA -->
-  <section class="cta">
-    <div class="wrap">
-      <h2>Ready to Grow? Book Your Call Today</h2>
+  <!-- final CTA — one Twilight moment via the .hl marker -->
+  <section class="grow-final">
+    <div class="container">
+      <span class="eyebrow-label">Ready To Grow?</span>
+      <h2>Let's map out your <span class="hl">growth plan</span></h2>
       <p>Get a clear, custom roadmap for your lawn, landscaping, or outdoor living business. No pressure, no pitch, just a plan.</p>
-      <a class="btn btn--lime btn--lg" href="#book">Book My Free Call
-        <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-      </a>
+      <div class="grow-cta-row">
+        <a class="btn btn--lime btn--lg" href="#book">Book My Free Call <span>→</span></a>
+      </div>
       <p class="mission">We're on a mission to triple the size of 200 lawn care &amp; landscaping companies.</p>
     </div>
   </section>
 
-  <!-- footer -->
-  <footer class="gfoot">
-    <div class="wrap gfoot-row">
+  <!-- slim footer -->
+  <footer class="grow-foot">
+    <div class="container grow-foot-row">
       <img src="/assets/logos/logo-horizontal.svg" alt="Lawn &amp; Land Marketing">
       <div class="links">
         <a href="tel:+17274967098">(727) 496-7098</a>
         <a href="mailto:hello@lawnandlandmarketing.com">hello@lawnandlandmarketing.com</a>
         <a href="/privacy-policy/">Privacy Policy</a>
       </div>
-      <div>&copy; Lawn &amp; Land Marketing. All rights reserved.</div>
+      <div>&copy; 2026 Lawn &amp; Land Marketing</div>
     </div>
   </footer>
 
   <script>
-    // YouTube facade: load the player only when an owner clicks a thumbnail
-    document.querySelectorAll('.vid').forEach(function(v){
+    document.querySelectorAll('.grow-vid').forEach(function(v){
       v.addEventListener('click', function(){
         var id = v.getAttribute('data-vid');
         v.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0" title="Owner testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
       }, { once:true });
     });
   </script>
-  <!-- GoHighLevel booking widget resizer -->
   <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
 </body>
 </html>
