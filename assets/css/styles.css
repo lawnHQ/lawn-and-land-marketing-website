@@ -225,10 +225,17 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
 }
 .nav-link:hover, .nav-item:hover > .nav-link { color: var(--white); }
 .nav-cta {
+  display: inline-flex; align-items: center; gap: 7px;
   background: var(--lime); color: #0a1a00 !important;
   font-weight: 700; font-size: 14px;
   padding: 9px 20px; border-radius: 6px;
   margin-left: 10px; transition: all 0.2s;
+}
+.nav-cta__icon { display: inline-flex; }
+.nav-cta__icon svg {
+  width: 16px; height: 16px; display: block;
+  fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
 }
 .nav-cta:hover { background: #bdf020; box-shadow: 0 0 24px rgba(172,231,29,0.35); }
 
