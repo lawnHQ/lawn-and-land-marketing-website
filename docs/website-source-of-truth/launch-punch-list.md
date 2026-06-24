@@ -32,9 +32,9 @@ Add to this as items come up; check them off as they're done. Last updated: 2026
   Process recorded in `blog-migration-spec.md`.
 - [x] **Closed Koga's `koga/blog-migration-optimization` PR (#1) — superseded** (2026-06-23). It carried 12
   cut-list filler posts + only 6 keepers; closed (not merged) so the filler can't come back. Branch left intact for reference.
-- [ ] **Blog redirects** (coordinate with Koga's redirect map). Old posts live at `/blog/<slug>/`, new at
-  `/resources/blog/<slug>/`. Need: `/blog/<slug>/` → `/resources/blog/<slug>/` for the 19 migrated; and
-  `/blog/<slug>/` → nearest keeper (or `/resources/blog/`) for the 62 cuts. None are in `vercel.json` yet.
+- [x] **Blog redirects wired in `vercel.json`** (2026-06-23): catch-all `/blog/:slug` → `/resources/blog/:slug/`
+  for the 19 keepers; the 62 cut posts topic-mapped to the nearest keeper (podcast recaps → `/client-results/`).
+  170 redirects total, both slash variants. They fire at launch on the production domain.
 - [ ] **Real images for the 18 new articles** (image pass) — hero + card thumbnails are `.img-ph` placeholders
   for now (#17 already has its real image). Schema `image` URLs point to planned `/assets/images/blog/*` files.
 - [ ] **3 broken posts still LIVE on WordPress** (not migrated): #16 leaked AI instructions, #24 + #72 copy-paste
@@ -45,7 +45,7 @@ Add to this as items come up; check them off as they're done. Last updated: 2026
 - [ ] Flip canonicals + `og:url`: `new.lawnlab.dev` → `lawnandlandmarketing.com` (mass find/replace;
   do at cutover, after images land, to avoid colliding with the image session).
 - [ ] Add `robots.txt` (allow indexing on production).
-- [ ] Refresh `sitemap.xml` — add `/checklist`, keep `/grow` out (noindex), real launch routes only.
+- [x] Refreshed `sitemap.xml` (2026-06-23) — added `/checklist` + the 19 blog posts (53 URLs; `/grow` already excluded).
 - [ ] DNS switch (owner) — point `lawnandlandmarketing.com` at the new Vercel site.
 - [ ] Post-cutover pass: confirm every old URL + every structural redirect resolves.
 
