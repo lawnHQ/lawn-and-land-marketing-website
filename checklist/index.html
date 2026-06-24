@@ -209,6 +209,12 @@
         // before this goes live so submissions are saved and the checklist is emailed.
         // For now the visitor still gets the PDF immediately below.
         try { window.localStorage.setItem('chkLead', JSON.stringify(lead)); } catch(_e){}
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'checklist_submit', {
+            page_location: window.location.href,
+            page_path: window.location.pathname
+          });
+        }
         document.getElementById('chkSuccessTitle').textContent = 'Thanks, ' + (lead.firstName || 'there') + '!';
         form.style.display = 'none';
         success.classList.add('show');

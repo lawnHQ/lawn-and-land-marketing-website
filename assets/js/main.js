@@ -1,4 +1,4 @@
-// Lawn & Land Marketing v38 — Mega Menu + Premium Footer
+// Lawn & Land Marketing v39 — Mega Menu + Premium Footer + GA4 intent tracking
 
 // ─ REDUCED MOTION ─
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -275,4 +275,36 @@ document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
   run();
   let rt;
   window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(run, 150); });
+})();
+
+// ─ GA4 INTENT TRACKING ─
+(function intentTracking() {
+  function cleanText(value) {
+    return (value || '').replace(/\s+/g, ' ').trim().slice(0, 120);
+  }
+  function sendEvent(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', name, Object.assign({
+      page_location: window.location.href,
+      page_path: window.location.pathname
+    }, params || {}));
+  }
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href') || '';
+    const text = cleanText(link.textContent || link.getAttribute('aria-label'));
+
+    if (href.indexOf('tel:') === 0) {
+      sendEvent('phone_click', { link_text: text, link_url: href });
+      return;
+    }
+    if (href.indexOf('mailto:') === 0) {
+      sendEvent('email_click', { link_text: text, link_url: href });
+      return;
+    }
+    if (href.indexOf('/get-started/book-strategy-call/') === 0 || /book|strategy|get started/i.test(text)) {
+      sendEvent('strategy_call_click', { link_text: text, link_url: href });
+    }
+  });
 })();
