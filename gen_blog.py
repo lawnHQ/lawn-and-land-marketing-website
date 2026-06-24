@@ -60,7 +60,7 @@ def card(p):
             '        <div class="blog-card-img"><img src="%s" alt="%s" loading="lazy" width="400" height="225"></div>\n'
             '        <div class="blog-card-body">\n'
             '          <span class="blog-card-cat">%s</span>\n'
-            '          <h3 class="blog-card-title">%s</h3>\n'
+            '          <h2 class="blog-card-title">%s</h2>\n'
             '          <p class="blog-card-excerpt">%s</p>\n'
             '          <div class="blog-card-meta">\n'
             '            <span class="blog-card-author"><img class="blog-card-avatar" src="/assets/images/matt-author.jpg" alt="" loading="lazy">Matt Foreman</span>\n'
@@ -75,7 +75,7 @@ def fcard(f):
             '        <div class="blog-card-img"><img src="%s" alt="%s" loading="lazy" width="400" height="225"></div>\n'
             '        <div class="blog-card-body">\n'
             '          <span class="blog-card-cat">%s</span>\n'
-            '          <h3 class="blog-card-title">%s</h3>\n'
+            '          <h2 class="blog-card-title">%s</h2>\n'
             '          <p class="blog-card-excerpt">%s</p>\n'
             '          <div class="blog-card-meta"><span class="blog-card-cta">%s &rarr;</span></div>\n'
             '        </div>\n'
@@ -232,7 +232,7 @@ def main():
         cards_html = "\n".join(
             ('      <a href="/resources/blog/%s/" class="blog-card">\n'
              '        <img class="blog-card-img" src="%s" alt="%s" loading="lazy" width="400" height="225">\n'
-             '        <div class="blog-card-body"><span class="blog-card-cat">%s</span><h3 class="blog-card-title">%s</h3><div class="blog-card-date">%s</div></div>\n'
+             '        <div class="blog-card-body"><span class="blog-card-cat">%s</span><h2 class="blog-card-title">%s</h2><div class="blog-card-date">%s</div></div>\n'
              '      </a>') % (p["slug"], p["image"], H(p["imageAlt"]), H(p["badge"]), H(p["title"]), H(p["dateDisplay"]))
             for p in sorted(POSTS, key=lambda p: p["datePublished"], reverse=True)[:3])
         sec = ('<section class="author-articles">\n'
