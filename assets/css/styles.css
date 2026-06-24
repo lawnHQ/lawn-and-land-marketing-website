@@ -1811,11 +1811,11 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
   flex-wrap: wrap; gap: 12px;
   padding: 24px 0;
   font-family: var(--font-l); font-size: 13px;
-  color: rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.55);
 }
-.fv2-specialty { color: rgba(255,255,255,0.25); }
+.fv2-specialty { color: rgba(255,255,255,0.55); }
 .fv2-legal-links { display: flex; gap: 20px; }
-.fv2-legal-links a { color: rgba(255,255,255,0.2); text-decoration: none; transition: color 0.2s; }
+.fv2-legal-links a { color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
 .fv2-legal-links a:hover { color: var(--white); }
 
 /* ── Responsive ── */
