@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Lawn & Land Marketing — sitemap. Rebuilt 2026-06-15, kept current through 2026-06-21 (case studies + client-results added).
+  Lawn & Land Marketing — sitemap. Rebuilt 2026-06-15, kept current through 2026-06-23 (blog migration: 19 posts + /checklist added).
   LAUNCH ARTIFACT: uses the production domain (lawnandlandmarketing.com). The site is not
   launched yet (staging: new.lawnlab.dev). Before submitting to Search Console at launch,
   confirm shell pages (about, contact, industries/*, resources/*) are content-complete, or
@@ -14,6 +14,7 @@
   <url><loc>https://lawnandlandmarketing.com/client-results/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-21</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/get-started/book-strategy-call/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/checklist/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
 
   <!-- Programs -->
   <url><loc>https://lawnandlandmarketing.com/programs/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
@@ -43,7 +44,27 @@
   <url><loc>https://lawnandlandmarketing.com/industries/holiday-lighting/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
 
   <!-- Resources -->
-  <url><loc>https://lawnandlandmarketing.com/resources/blog/</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-06-15</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
+  <!-- Blog posts (19 migrated 2026-06-23) -->
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/pat-condon-3c-land-agricultural-services-specialized-growth/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/dustin-walker-landscape-st-louis-acquisition-led-growth/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/why-your-landscaping-digital-marketing-isnt-working-3-critical-issues-killing-your-results/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/why-500-leads-in-10-days-digital-marketing-promises-are-destroying-landscaping-businesses/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/marketing-tool-that-outperforms/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/three-moves-that-separate-professional-landscapers/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/your-2025-digital-marketing-plan/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/managing-lawn-service-reviews-online-reputation-tips/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/elevate-your-lawn-care-leads-through-ppc-strategies/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/6-key-mobile-responsive-design-tips-for-landscapers/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/5-best-social-networks-for-landscapers-success/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/7-easy-steps-to-dominate-local-seo-for-your-landscaping-business/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/nate-precision-landscape-management-scalable-growth/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/landscaper-marketing-101-how-to-attract-more-clients-and-grow-your-business/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/lawn-landscaping-local-seo/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://lawnandlandmarketing.com/resources/blog/the-ultimate-guide-to-online-landscape-marketing/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/experiences-reviews/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/mow-money-mow-problems-podcast/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-15</lastmod></url>
 
