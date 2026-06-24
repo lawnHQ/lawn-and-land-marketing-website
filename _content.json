@@ -469,7 +469,9 @@
         "AI-powered messaging that replies to new leads in seconds",
         "Tools chosen and configured around how your business actually runs"
       ],
-      "imageHint": "Screenshot or mockup of an AI phone-answering call or AI text conversation handling a homeowner's request for a landscaping quote"
+      "imageHint": "Screenshot or mockup of an AI phone-answering call or AI text conversation handling a homeowner's request for a landscaping quote",
+      "image": "ai-partner.jpg",
+      "imageAlt": "ChatGPT recommending a local landscaping company in an AI search result"
     },
     "includes": {
       "featuredKicker": "What 'partner' really means",
