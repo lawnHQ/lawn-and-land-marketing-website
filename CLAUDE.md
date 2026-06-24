@@ -209,8 +209,10 @@ own deploy**, NOT part of the website:
 - **Isolated from the site build:** `build.py` skips `redirect-manager/`; `vercel.json` redirects
   `/redirect-manager` → the live tool. Editing the website never touches it, and vice versa. Full details:
   `redirect-manager/README.md`.
-- **Pending (at launch):** the redirect *serving* layer — `lawnandlandmarketing.com/<slug>` must 301 via a
-  Supabase lookup once the site is live (today the live links still run through WordPress).
+- **Serving layer (DONE 2026-06-24):** `lawnandlandmarketing.com/<slug>` 302s to the destination via a Vercel
+  edge function (`api/redirect.js`) that looks up the slug in the `redirects` table in real time, plus a
+  catch-all rewrite in `vercel.json` (filesystem-first, so real pages + existing redirects win; unknown slugs
+  fall to the site 404). Self-serve: dashboard edits go live within ~30s. `/api/redirect.js` source is blocked.
 
 ## Related assets
 - **Brand kit** — separate repo `LawnAndLandMarketing/brandkit` → https://brandkit.lawnlab.dev

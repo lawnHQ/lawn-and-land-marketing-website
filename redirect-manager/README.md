@@ -50,11 +50,14 @@ or delete an entry (only a direct DB superuser could, which is inherent to ownin
 ## Status / open items
 1. **DNS — DONE.** `menu.lawnandlandmarketing.com` is live on Vercel (Namecheap A record → 76.76.21.21,
    auto-SSL); Google sign-in verified end-to-end (Workspace-only; personal Gmail rejected).
-2. **Redirect serving on the MAIN domain — PENDING (at launch).** The short links
-   (`lawnandlandmarketing.com/<slug>`) must 301 from the live site. At launch (new static site on Vercel),
-   add an edge middleware/function that looks up the slug in Supabase (or Vercel Edge Config synced from it)
-   and 301s — real-time so the team's edits take effect immediately. (Today the redirects still serve via
-   WordPress.)
+2. **Redirect serving on the MAIN domain — DONE (2026-06-24).** `lawnandlandmarketing.com/<slug>` 302s to
+   the destination via a Vercel **edge function** (`api/redirect.js` in the website repo) that looks up the
+   slug in this `redirects` table in real time (anon key + an RLS policy: anon may SELECT only `active=true`
+   rows). A **catch-all rewrite** in the site `vercel.json` (`/:slug` and `/:slug/`) routes only unmatched
+   single-segment paths to it — rewrites are filesystem-first, so real pages and the existing redirects always
+   win; unknown slugs fall through to the site 404. Self-serve preserved: dashboard edits take effect within
+   ~30s (CDN `s-maxage=30`). Inactive links (`active=false`) and missing slugs return the custom 404. The
+   function source `/api/redirect.js` is blocked from direct access. (WordPress no longer serves these.)
 3. **Content gaps — DONE.** The 3 PDFs are re-hosted in the site repo at `/downloads/` (on `main`) and the
    redirect destinations point to `lawnandlandmarketing.com/downloads/*.pdf`. `schedule-session` +
    `schedule-strategy` → `/get-started/book-strategy-call/`. `qr-mailer` deleted.
