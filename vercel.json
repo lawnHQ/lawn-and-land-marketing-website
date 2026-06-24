@@ -854,5 +854,9 @@
       "destination": "/resources/blog/:slug/",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    { "source": "/:slug", "destination": "/api/redirect?slug=:slug" },
+    { "source": "/:slug/", "destination": "/api/redirect?slug=:slug" }
   ]
 }
