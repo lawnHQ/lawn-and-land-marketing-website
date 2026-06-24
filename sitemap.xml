@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Lawn & Land Marketing — sitemap. Rebuilt 2026-06-15, kept current through 2026-06-23 (blog migration: 19 posts + /checklist added).
-  LAUNCH ARTIFACT: uses the production domain (lawnandlandmarketing.com). The site is not
-  launched yet (staging: lawnandlandmarketing.com). Before submitting to Search Console at launch,
-  confirm shell pages (about, contact, industries/*, resources/*) are content-complete, or
-  prune any that aren't. Keep this in sync with docs/website-source-of-truth/sitemap.md.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Core -->
+  
   <url><loc>https://lawnandlandmarketing.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/about/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/client-results/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-21</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/get-started/book-strategy-call/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/checklist/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
-
-  <!-- Programs -->
+  
   <url><loc>https://lawnandlandmarketing.com/programs/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/programs/growth/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/programs/authority/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
-
-  <!-- Marketing Services -->
+  
   <url><loc>https://lawnandlandmarketing.com/marketing-services/</loc><changefreq>monthly</changefreq><priority>0.85</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/marketing-services/website-design/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/marketing-services/local-seo/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
@@ -31,8 +21,7 @@
   <url><loc>https://lawnandlandmarketing.com/marketing-services/your-ai-partner/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/marketing-services/reputation-management/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/marketing-services/automation/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
-
-  <!-- Industries (canonical 8 + hub) -->
+  
   <url><loc>https://lawnandlandmarketing.com/industries/</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/industries/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/industries/lawn-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
@@ -42,11 +31,9 @@
   <url><loc>https://lawnandlandmarketing.com/industries/excavation/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/industries/septic-installation/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/industries/holiday-lighting/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-15</lastmod></url>
-
-  <!-- Resources -->
+  
   <url><loc>https://lawnandlandmarketing.com/resources/blog/</loc><changefreq>weekly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/author/matt-foreman/</loc><changefreq>monthly</changefreq><priority>0.4</priority><lastmod>2026-06-24</lastmod></url>
-  <!-- Blog posts (19 migrated 2026-06-23) -->
   <url><loc>https://lawnandlandmarketing.com/resources/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/blog/pat-condon-3c-land-agricultural-services-specialized-growth/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
@@ -66,20 +53,16 @@
   <url><loc>https://lawnandlandmarketing.com/resources/blog/landscaper-marketing-101-how-to-attract-more-clients-and-grow-your-business/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/blog/lawn-landscaping-local-seo/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/blog/the-ultimate-guide-to-online-landscape-marketing/</loc><changefreq>monthly</changefreq><priority>0.6</priority><lastmod>2026-06-23</lastmod></url>
-  <!-- Blog category hubs -->
   <url><loc>https://lawnandlandmarketing.com/resources/blog/category/growth-stories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/blog/category/seo/</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/blog/category/ads-social/</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/blog/category/strategy/</loc><changefreq>weekly</changefreq><priority>0.5</priority><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/experiences-reviews/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-15</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/resources/mow-money-mow-problems-podcast/</loc><changefreq>monthly</changefreq><priority>0.5</priority><lastmod>2026-06-15</lastmod></url>
-
-  <!-- Case Studies -->
+  
   <url><loc>https://lawnandlandmarketing.com/case-studies/precision/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-21</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/case-studies/rock-solid/</loc><changefreq>monthly</changefreq><priority>0.7</priority><lastmod>2026-06-21</lastmod></url>
-
-  <!-- Legal -->
+  
   <url><loc>https://lawnandlandmarketing.com/terms/</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-06-19</lastmod></url>
   <url><loc>https://lawnandlandmarketing.com/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-06-19</lastmod></url>
-
 </urlset>
