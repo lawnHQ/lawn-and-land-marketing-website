@@ -1,0 +1,7 @@
+# Lawn & Land Marketing
+User-agent: *
+Allow: /
+Disallow: /grow/
+Disallow: /confirmation/
+
+Sitemap: https://lawnandlandmarketing.com/sitemap.xml

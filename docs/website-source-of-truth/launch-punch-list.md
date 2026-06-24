@@ -17,8 +17,8 @@ Add to this as items come up; check them off as they're done. Last updated: 2026
     GHL's default form styling.
 
 ## Images (parallel session in progress)
-- [ ] Real photos for the labeled placeholders (service, program, industry, case-study pages).
-- [ ] **Precision case study image is labeled "Precision Turf Care"** (wrong company name) — fix. *(from the page-review sheet)*
+- [ ] Real photos for remaining `svc-ph` placeholders: **marketing-services hub + 8 industry pages + 2 program pages**. (Homepage panels + 8 service-detail first images DONE 2026-06-24.)
+- [x] **Fixed "Precision Turf Care" -> "Precision Landscape Management"** in the proof-image alt (homepage + authority page) (2026-06-24).
 
 ## `/grow` (Facebook funnel) — built + auditor-approved
 - [ ] Ad → page message-match + trade-specific variants (needs the live Facebook ads to audit against).
@@ -44,7 +44,7 @@ Add to this as items come up; check them off as they're done. Last updated: 2026
 ## Redirects / launch cutover
 - [ ] Flip canonicals + `og:url`: `new.lawnlab.dev` → `lawnandlandmarketing.com` (mass find/replace;
   do at cutover, after images land, to avoid colliding with the image session).
-- [ ] Add `robots.txt` (allow indexing on production).
+- [x] Added `robots.txt` (2026-06-24): allow-all, disallow `/grow/` + `/confirmation/`, points to sitemap. It is allow-all, so **password-protect staging (Vercel) until launch** so staging is not indexed.
 - [x] Refreshed `sitemap.xml` (2026-06-23) — added `/checklist` + the 19 blog posts (53 URLs; `/grow` already excluded).
 - [ ] DNS switch (owner) — point `lawnandlandmarketing.com` at the new Vercel site.
 - [ ] Post-cutover pass: confirm every old URL + every structural redirect resolves.
