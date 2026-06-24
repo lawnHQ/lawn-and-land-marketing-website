@@ -3,5 +3,6 @@ User-agent: *
 Allow: /
 Disallow: /grow/
 Disallow: /confirmation/
+Disallow: /strategy-booked/
 
 Sitemap: https://lawnandlandmarketing.com/sitemap.xml

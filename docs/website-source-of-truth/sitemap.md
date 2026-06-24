@@ -1,6 +1,6 @@
 # Approved Website Sitemap
 
-Last updated: 2026-06-21. This is the **approved route list**. For per-page build status
+Last updated: 2026-06-24. This is the **approved route list**. For per-page build status
 (developed / shell), see `page-registry.md`. For the generated XML, see repo-root `sitemap.xml`.
 The Industries section below is the **canonical 8 (locked)**. Ancillary utility pages like legal
 pages can exist outside this list.
@@ -12,6 +12,7 @@ pages can exist outside this list.
 - `/contact/` — Contact
 - `/get-started/book-strategy-call/` — Get Started / Book Strategy Call
 - `/confirmation/` — post-form thank-you page (**noindex** — intentionally omitted from `sitemap.xml`; search engines shouldn't index a thank-you page, but it's tracked here + in GitHub)
+- `/strategy-booked/` — post-booking thank-you page (**noindex** — intentionally omitted from public `sitemap.xml`; included here as the internal sitemap/source-of-truth route for the GHL completed-booking redirect + GA4 `booking_confirmation_view`)
 
 ## Programs
 - `/programs/` — Programs hub

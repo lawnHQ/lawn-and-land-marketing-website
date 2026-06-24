@@ -94,7 +94,7 @@ and is **no longer retired**.)
 ├── build.py                        # Stamps header/footer into every page
 ├── gen_service.py  _content.json   # Generates the 8 marketing-services pages
 ├── sitemap.xml                     # Real route sitemap (production domain; launch artifact)
-├── about/  contact/  confirmation/ programs/   # all developed
+├── about/  contact/  confirmation/ strategy-booked/ programs/ # all developed
 ├── get-started/book-strategy-call/ # the booking CTA destination (minimal-chrome, build.py-exempt)
 ├── marketing-services/             # 8 detail pages (generated) + hub (hand-built)
 ├── industries/                     # hub + the canonical 8 (all developed)
@@ -102,7 +102,7 @@ and is **no longer retired**.)
 ├── client-results/                 # the tiered roster (under About)
 ├── resources/                      # blog/ experiences-reviews/ mow-money-mow-problems-podcast/ (silo, no hub)
 ├── terms/  privacy-policy/         # legal
-├── assets/css/{styles.css, service-page.css, industry.css}   js/main.js   images/  logos/
+├── assets/css/{styles.css, service-page.css, industry.css}   js/main.js   images/  videos/  logos/
 ├── docs/website-source-of-truth/   # the durable docs
 └── .github/workflows/deploy.yml    # push main → Vercel production
 ```
