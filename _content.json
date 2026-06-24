@@ -25,7 +25,10 @@
         "Dedicated service pages and city pages for the markets you cover",
         "On-page and technical SEO so Google can crawl, read, and trust your site"
       ],
-      "imageHint": "Screenshot of a Google search results page showing the client's landscaping company ranking in the local map pack plus the #1 organic result for a 'city + landscaper' query"
+      "imageHint": "Screenshot of a Google search results page showing the client's landscaping company ranking in the local map pack plus the #1 organic result for a 'city + landscaper' query",
+      "image": "local-seo-results.jpg",
+      "imageAlt": "Local 'landscapers near me' search results on a phone with a landscaping company ranking at the top",
+      "imageAspect": "4 / 3"
     },
     "includes": {
       "featuredKicker": "The difference",
@@ -136,7 +139,10 @@
         "Service-area geo-targeting so spend stays inside the towns you cover",
         "Ad copy and landing-page alignment that match the homeowner's search"
       ],
-      "imageHint": "Screenshot of a Google search results page for a high-intent query like 'lawn care near me' with the client's ad sitting at the top of the page."
+      "imageHint": "Screenshot of a Google search results page for a high-intent query like 'lawn care near me' with the client's ad sitting at the top of the page.",
+      "image": "google-ads-dashboard.jpg",
+      "imageAlt": "A Google Ads dashboard showing lead conversions and cost per lead for a lawn and landscape campaign",
+      "imageAspect": "4 / 3"
     },
     "includes": {
       "featuredKicker": "Why owners switch to us",
@@ -247,7 +253,10 @@
         "Scroll-stopping static ad creative that looks like a real landscaping company",
         "Lead forms that capture name, address, and job details without leaving the feed"
       ],
-      "imageHint": "Screenshot of a Facebook/Instagram ad creative mockup for a landscaping company shown in the feed, with the lead form open alongside it"
+      "imageHint": "Screenshot of a Facebook/Instagram ad creative mockup for a landscaping company shown in the feed, with the lead form open alongside it",
+      "image": "meta-ads-instagram.jpg",
+      "imageAlt": "A sponsored Instagram ad placing a landscaping company in front of local homeowners in their feed",
+      "imageAspect": "4 / 3"
     },
     "includes": {
       "featuredKicker": "The difference",
@@ -358,7 +367,10 @@
         "Regular Google posts and fresh, geotagged job photos",
         "Owner responses on every review and proactive Q&A management"
       ],
-      "imageHint": "Screenshot of an optimized Google Business Profile for a landscaping company showing categories, services, photos, and a recent Google post"
+      "imageHint": "Screenshot of an optimized Google Business Profile for a landscaping company showing categories, services, photos, and a recent Google post",
+      "image": "gbp-profile.jpg",
+      "imageAlt": "An optimized Google Business Profile for a lawn care company on a phone with strong reviews",
+      "imageAspect": "4 / 3"
     },
     "includes": {
       "featuredKicker": "The real problem",
@@ -470,8 +482,9 @@
         "Tools chosen and configured around how your business actually runs"
       ],
       "imageHint": "Screenshot or mockup of an AI phone-answering call or AI text conversation handling a homeowner's request for a landscaping quote",
-      "image": "ai-call-answering.jpg",
-      "imageAlt": "An AI receptionist answering a phone call while new landscaping leads are captured in a CRM inbox for the team to follow up"
+      "image": "ai-partner-agents.jpg",
+      "imageAlt": "An AI voice-agent dashboard tracking calls answered and follow-up actions for a landscaping business",
+      "imageAspect": "4 / 3"
     },
     "includes": {
       "featuredKicker": "What 'partner' really means",
@@ -582,7 +595,10 @@
         "Unhappy feedback intercepted and routed to you before it posts publicly",
         "Professional, on-brand responses to every review across platforms"
       ],
-      "imageHint": "Screenshot of an automated review-request text message on a phone next to a Google Business Profile showing a rising 5-star rating."
+      "imageHint": "Screenshot of an automated review-request text message on a phone next to a Google Business Profile showing a rising 5-star rating.",
+      "image": "reputation-reviews.jpg",
+      "imageAlt": "A phone showing a stream of five-star Google reviews for a lawn care company",
+      "imageAspect": "4 / 3"
     },
     "includes": {
       "featuredKicker": "The core problem",
@@ -693,7 +709,10 @@
         "Missed-call text-back so no call goes unanswered",
         "Multi-step nurture sequences that follow up for you"
       ],
-      "imageHint": "Screenshot of a CRM pipeline view with automated text/email sequences firing on a new lead card"
+      "imageHint": "Screenshot of a CRM pipeline view with automated text/email sequences firing on a new lead card",
+      "image": "crm-automations.jpg",
+      "imageAlt": "A CRM inbox showing automated lead conversations and follow-up for a landscaping company",
+      "imageAspect": "4 / 3"
     },
     "includes": {
       "featuredKicker": "The leak you can't see",

@@ -155,9 +155,12 @@ def build_main(c):
         rev = ' is-reversed' if reversed_ else ''
         lis = ''.join(f'<li>{esc(x)}</li>' for x in sc['checklist'])
         if sc.get('image'):
+            asp = sc.get('imageAspect', '16/10')
+            _aw, _ah = (asp.replace(' ', '').split('/') + ['10'])[:2]
+            _h = round(1400 * float(_ah) / float(_aw))
             media = (f'<img class="svc-showcase-img" src="/assets/images/showcase/{sc["image"]}" '
-                     f'alt="{esc(sc["imageAlt"])}" loading="lazy" width="1400" height="788" '
-                     'style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:16px;display:block;">')
+                     f'alt="{esc(sc["imageAlt"])}" loading="lazy" width="1400" height="{_h}" '
+                     f'style="width:100%;height:auto;aspect-ratio:{asp};object-fit:cover;border-radius:16px;display:block;">')
         else:
             media = (f'<div class="svc-ph svc-ph--wide">\n'
                      '            <div class="svc-ph-inner">\n'
