@@ -322,7 +322,7 @@ def main():
             'seven feature h3': page.count('include-card"><span class="include-icon"') == 7,
             'featured not h3': 'feat-headline' in page,
             'breadcrumb slug': '/marketing-services/local-seo/' not in build_main(stub).split('Pairs well')[0].split('<section class="svc-cta"')[0] or True,
-            'canonical slug': 'canonical" href="https://new.lawnlab.dev/marketing-services/local-seo/"' in page,
+            'canonical slug': 'canonical" href="https://lawnandlandmarketing.com/marketing-services/local-seo/"' in page,
             'service schema name': '"@type":"Service","name":"Local SEO"' in page,
             'no tilde left': '~' not in build_main(stub),
             'no raw emoji icon': True,

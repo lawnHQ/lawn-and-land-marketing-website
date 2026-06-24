@@ -16,7 +16,7 @@ import json, os, re
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PROD = "https://lawnandlandmarketing.com"   # schema uses production domain
-STAGE = "https://new.lawnlab.dev"           # canonicals point to staging until launch flip
+STAGE = "https://lawnandlandmarketing.com"           # canonicals point to staging until launch flip
 
 def read(p):
     with open(os.path.join(ROOT, p), encoding="utf-8") as f: return f.read()
