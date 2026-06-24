@@ -529,10 +529,14 @@
       </div>
       <div class="booking-slot" data-reveal="fade-up">
         <div style="position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#050806;">
-          <video controls preload="metadata" playsinline poster="/assets/images/youre-booked-strategy-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;border:0;background:#050806;" aria-label="What happens next after booking your Lawn and Land Marketing strategy call">
+          <video id="vsl-video" autoplay muted playsinline controls preload="auto" poster="/assets/images/youre-booked-strategy-poster.jpg" style="position:absolute;inset:0;width:100%;height:100%;border:0;background:#050806;" aria-label="What happens next after booking your Lawn and Land Marketing strategy call">
             <source src="/assets/videos/youre-booked-strategy.mp4" type="video/mp4">
             Your browser does not support embedded video. <a href="/assets/videos/youre-booked-strategy.mp4">Download the strategy call overview video</a>.
           </video>
+          <button type="button" id="vsl-unmute" aria-label="Tap to unmute and play the video with sound" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:none;align-items:center;gap:9px;padding:13px 22px;border:1.5px solid var(--lime);border-radius:999px;background:rgba(5,8,6,0.74);color:#fff;font-family:var(--font-l);font-size:15px;font-weight:700;letter-spacing:.02em;cursor:pointer;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="var(--lime)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            Tap for sound
+          </button>
         </div>
       </div>
       <div style="max-width:920px;margin:34px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;" class="strategy-next-grid" data-reveal="fade-up">
@@ -545,6 +549,23 @@
   </section>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"What happens next after booking your Lawn & Land Marketing strategy call","description":"A short overview of what to expect before a Lawn & Land Marketing strategy session.","thumbnailUrl":"https://lawnandlandmarketing.com/assets/images/youre-booked-strategy-poster.jpg","contentUrl":"https://lawnandlandmarketing.com/assets/videos/youre-booked-strategy.mp4","uploadDate":"2026-06-24","duration":"PT1M13S"}</script>
   <style>@media (max-width: 800px){.strategy-next-grid{grid-template-columns:1fr !important;}}</style>
+
+  <script>
+  (function(){
+    var v=document.getElementById('vsl-video'), b=document.getElementById('vsl-unmute');
+    if(!v) return;
+    function show(){ if(b) b.style.display='inline-flex'; }
+    function hide(){ if(b) b.style.display='none'; }
+    function withSound(){ v.muted=false; try{v.currentTime=0;}catch(e){} var p=v.play(); if(p&&p.catch)p.catch(function(){}); hide(); }
+    v.muted=false;
+    var play=v.play();
+    if(play&&play.then){ play.then(hide).catch(function(){ v.muted=true; var m=v.play(); if(m&&m.catch)m.catch(function(){}); show(); }); }
+    else { v.muted=true; show(); }
+    if(b) b.addEventListener('click', withSound);
+    v.addEventListener('click', function(){ if(v.muted) withSound(); });
+    v.addEventListener('volumechange', function(){ if(!v.muted) hide(); });
+  })();
+  </script>
 
   </main>
 
