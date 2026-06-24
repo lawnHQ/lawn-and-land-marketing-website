@@ -17,7 +17,7 @@ Add to this as items come up; check them off as they're done. Last updated: 2026
     GHL's default form styling.
 
 ## Images (parallel session in progress)
-- [ ] Real photos for remaining `svc-ph` placeholders: **marketing-services hub + 8 industry pages + 2 program pages**. (Homepage panels + 8 service-detail first images DONE 2026-06-24.)
+- [x] **All `svc-ph` 'Image placeholder' boxes filled (2026-06-24):** homepage panels, the 8 service-detail first images, and the 4 marketing-services hub featured cards. Industry/program pages have empty styled image areas (`ind-ph`/`why-ph`), not labeled placeholders; optional to fill later.
 - [x] **Fixed "Precision Turf Care" -> "Precision Landscape Management"** in the proof-image alt (homepage + authority page) (2026-06-24).
 
 ## `/grow` (Facebook funnel) — built + auditor-approved
