@@ -584,6 +584,18 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
   .marquee-inner:hover { animation-play-state: running; }
   .marquee-inner:hover .marquee-logo { opacity: 0.5; }
 }
+/* 3C Land's logo is a dense filled badge that can't reduce to a clean white silhouette
+   like the others; show it full-colour on a light chip so it stays legible on the dark band. */
+.marquee-logo.marquee-logo--chip {
+  filter: none;
+  opacity: 1;
+  height: 30px;
+  padding: 4px 9px;
+  background: #fff;
+  border-radius: 6px;
+  box-sizing: content-box;
+}
+.marquee-inner:hover .marquee-logo.marquee-logo--chip { opacity: 1; }
 .proof-nalp-logo { height: 18px; width: auto; opacity: 0.65; filter: brightness(0) invert(1); vertical-align: middle; }
 
 /* ─ SERVICES TABS ─ */
