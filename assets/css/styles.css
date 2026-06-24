@@ -1092,7 +1092,7 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
 .footer-cols { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; }
 .footer-col h4 { font-family: var(--font-l); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--lime); margin-bottom: 16px; }
 .footer-col li + li { margin-top: 9px; }
-.footer-col a { font-size: 14px; color: rgba(255,255,255,0.4); transition: color 0.2s; }
+.footer-col a { font-size: 14px; color: rgba(255,255,255,0.55); transition: color 0.2s; }
 .footer-col a:hover { color: var(--white); }
 .footer-bottom { padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 13px; color: rgba(255,255,255,0.2); }
 .footer-legal { display: flex; gap: 20px; }
@@ -1799,7 +1799,7 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
 }
 .fv2-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .fv2-col a {
-  font-size: 14px; color: rgba(255,255,255,0.4);
+  font-size: 14px; color: rgba(255,255,255,0.55);
   text-decoration: none; transition: color 0.2s;
   display: block;
 }
