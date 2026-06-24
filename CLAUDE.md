@@ -15,8 +15,8 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   production. Takes ~1–2 min. (Vercel also auto-creates auth-protected previews per branch.)
 - **Branches:** all progress lives on `main`; the working branch `site-foundation` is kept
   in sync with it — push to **both** (`origin site-foundation` then `origin site-foundation:main`).
-- **Cache-bust versions in use:** `styles.css?v=142`, `main.js?v=56`, `service-page.css?v=5`,
-  `industry.css?v=2` (shared `.ind-*` framework on `/industries/*`). The `/industries/*` FAQ accordion is
+- **Cache-bust versions in use:** `styles.css?v=151`, `main.js?v=56`, `service-page.css?v=5`,
+  `industry.css?v=3` (shared `.ind-*` framework on `/industries/*`). The `/industries/*` FAQ accordion is
   **exclusive** (opening one `<details>` closes its siblings) via a `.ind-faq > details` handler in `main.js`. `styles.css` carries the global
   `text-wrap: balance` (headings) / `text-wrap: pretty` (body) line-break hints; the **actual
   no-lone-word guarantee** is a widow-guard in `main.js` that glues the last two words of every
