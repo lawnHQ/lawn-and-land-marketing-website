@@ -154,6 +154,18 @@ def build_main(c):
     def showcase(sc, reversed_=False):
         rev = ' is-reversed' if reversed_ else ''
         lis = ''.join(f'<li>{esc(x)}</li>' for x in sc['checklist'])
+        if sc.get('image'):
+            media = (f'<img class="svc-showcase-img" src="/assets/images/showcase/{sc["image"]}" '
+                     f'alt="{esc(sc["imageAlt"])}" loading="lazy" width="1400" height="788" '
+                     'style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:16px;display:block;">')
+        else:
+            media = (f'<div class="svc-ph svc-ph--wide">\n'
+                     '            <div class="svc-ph-inner">\n'
+                     f'              <span class="svc-ph-icon">{PLACEHOLDER_ICON}</span>\n'
+                     '              <span class="svc-ph-label">Image placeholder</span>\n'
+                     f'              <span class="svc-ph-hint">{esc(sc["imageHint"])}</span>\n'
+                     '            </div>\n'
+                     '          </div>')
         return f'''  <!-- SHOWCASE -->
   <section class="svc-showcase">
     <div class="container">
@@ -165,13 +177,7 @@ def build_main(c):
           <ul class="svc-showcase-list">{lis}</ul>
         </div>
         <div class="svc-showcase-media">
-          <div class="svc-ph svc-ph--wide">
-            <div class="svc-ph-inner">
-              <span class="svc-ph-icon">{PLACEHOLDER_ICON}</span>
-              <span class="svc-ph-label">Image placeholder</span>
-              <span class="svc-ph-hint">{esc(sc['imageHint'])}</span>
-            </div>
-          </div>
+          {media}
         </div>
       </div>
     </div>

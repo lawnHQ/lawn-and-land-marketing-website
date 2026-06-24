@@ -79,7 +79,9 @@
         "Content that answers what local homeowners ask before they hire a landscaper",
         "Pages built to convert searchers into calls and quote requests"
       ],
-      "imageHint": "Screenshot of a rank-tracking dashboard showing keyword positions climbing over time, alongside a Google Business Profile listing with strong reviews"
+      "imageHint": "Screenshot of a rank-tracking dashboard showing keyword positions climbing over time, alongside a Google Business Profile listing with strong reviews",
+      "image": "lawn-care-service.jpg",
+      "imageAlt": "A healthy, well-manicured green lawn maintained by a professional lawn care company"
     },
     "faqQuestions": [
       "How long does it take for a landscaping company to start ranking in local search?",
@@ -188,7 +190,9 @@
         "Conversion tracking on calls and form fills, not just clicks",
         "Ongoing budget shifts toward the campaigns producing real leads"
       ],
-      "imageHint": "Screenshot of a clean conversions report showing calls and form submissions attributed to specific ad campaigns over time."
+      "imageHint": "Screenshot of a clean conversions report showing calls and form submissions attributed to specific ad campaigns over time.",
+      "image": "hardscape-patio.jpg",
+      "imageAlt": "A custom paver patio and hardscape installation in a backyard outdoor living space"
     },
     "faqQuestions": [
       "How much should a landscaping company budget for Google Ads each month?",
@@ -297,7 +301,9 @@
         "Retargeting that brings back website and ad visitors who didn't convert",
         "Reporting tied to leads and bookings so you see what the spend returns"
       ],
-      "imageHint": "Screenshot of a Meta Ads reporting dashboard showing leads and cost-per-lead trends for a landscaping campaign"
+      "imageHint": "Screenshot of a Meta Ads reporting dashboard showing leads and cost-per-lead trends for a landscaping campaign",
+      "image": "outdoor-lighting-design.jpg",
+      "imageAlt": "Outdoor landscape lighting illuminating a home's garden and walkway at dusk"
     },
     "faqQuestions": [
       "Do Facebook and Instagram ads actually work for lawn care and landscaping companies?",
@@ -406,7 +412,9 @@
         "Plain-English monthly reporting on visibility and review growth",
         "Calls and direction requests flowing from Maps, not just clicks"
       ],
-      "imageHint": "Geo-grid heatmap screenshot showing map-pack ranking improvements across a lawn care company's service-area towns"
+      "imageHint": "Geo-grid heatmap screenshot showing map-pack ranking improvements across a lawn care company's service-area towns",
+      "image": "lawn-maintenance-service.jpg",
+      "imageAlt": "A lawn maintenance crew mowing and maintaining a residential property"
     },
     "faqQuestions": [
       "How long does it take to start ranking in the Google Maps map pack for lawn care searches?",
@@ -515,7 +523,9 @@
         "Faster lead response and coverage, even after hours",
         "A business that looks modern and keeps pace with how people search"
       ],
-      "imageHint": "Image of a landscaping owner working on a job site while AI tools handle calls and messages in the background, or a simple 'missed lead' vs 'AI answered' comparison"
+      "imageHint": "Image of a landscaping owner working on a job site while AI tools handle calls and messages in the background, or a simple 'missed lead' vs 'AI answered' comparison",
+      "image": "excavation-project.jpg",
+      "imageAlt": "An excavation project with heavy equipment grading and preparing a site"
     },
     "faqQuestions": [
       "What does an AI partner actually do for a landscaping business?",
@@ -624,7 +634,9 @@
         "Stronger ratings lift trust on your website, ads, and Google profile",
         "A consistent review flow keeps you ahead of competitors with more stars"
       ],
-      "imageHint": "Split-screen image of a landscaping company's website testimonial section beside a Google Maps listing topping local results with a high star rating."
+      "imageHint": "Split-screen image of a landscaping company's website testimonial section beside a Google Maps listing topping local results with a high star rating.",
+      "image": "land-clearing-project.jpg",
+      "imageAlt": "A land clearing project removing brush and trees to prepare a property"
     },
     "faqQuestions": [
       "How do you get more Google reviews for my landscaping business without being pushy?",
@@ -733,7 +745,9 @@
         "Win the homeowner by being the first to respond",
         "Reactivate old leads and fill gaps in your schedule"
       ],
-      "imageHint": "Screenshot of a reporting dashboard showing leads responded to, reminders sent, and reviews requested"
+      "imageHint": "Screenshot of a reporting dashboard showing leads responded to, reminders sent, and reviews requested",
+      "image": "lawn-fertilization-service.jpg",
+      "imageAlt": "A lawn care technician applying a fertilization treatment to a lush green lawn"
     },
     "faqQuestions": [
       "What is marketing automation and how does it work for a landscaping business?",
