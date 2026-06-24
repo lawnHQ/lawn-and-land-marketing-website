@@ -223,6 +223,26 @@ def main():
         if h2 != h:
             write(path, h2); stamped += 1
 
+    # ---- author page: list ALL of Matt's articles (every post is attributed to him) ----
+    auth_path = "author/matt-foreman/index.html"
+    if os.path.exists(os.path.join(ROOT, auth_path)):
+        ah = read(auth_path)
+        cards_html = "\n".join(
+            ('      <a href="/resources/blog/%s/" class="blog-card">\n'
+             '        <img class="blog-card-img" src="%s" alt="%s" loading="lazy" width="400" height="225">\n'
+             '        <div class="blog-card-body"><span class="blog-card-cat">%s</span><h3 class="blog-card-title">%s</h3><div class="blog-card-date">%s</div></div>\n'
+             '      </a>') % (p["slug"], p["image"], H(p["imageAlt"]), H(p["badge"]), H(p["title"]), H(p["dateDisplay"]))
+            for p in POSTS)
+        sec = ('<section class="author-articles">\n'
+               '    <div class="author-articles-head">\n'
+               '      <h2>Articles by Matt Foreman</h2>\n'
+               '      <a href="/resources/blog/">View all on the blog &rarr;</a>\n'
+               '    </div>\n'
+               '    <div class="blog-grid">\n' + cards_html + '\n    </div>\n  </section>')
+        ah = re.sub(r'<section class="author-articles">.*?</section>', lambda m: sec, ah, count=1, flags=re.S)
+        write(auth_path, ah)
+        print("author page: %d articles listed" % len(POSTS))
+
     print("index pages: %d | category pages: %d | articles stamped: %d" % (pages, cat_pages, stamped))
 
 if __name__ == "__main__":
