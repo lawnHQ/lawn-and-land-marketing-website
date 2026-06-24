@@ -218,6 +218,8 @@ def main():
             '<figure class="article-hero-img"><img src="%s" alt="%s" loading="eager" width="1200" height="630" style="width:100%%;height:420px;object-fit:cover;display:block;"></figure>'
             % (p["image"], H(p["imageAlt"])))
         h2 = HERO_FIG_RE.sub(lambda m: media, h, count=1)
+        # repoint any social/SEO image URL (og:image, twitter:image, schema) at the real card image
+        h2 = re.sub(r'/assets/images/blog/[a-z0-9-]+\.jpg', lambda m: p["image"], h2)
         if p["video"] and ".article-hero-img.blog-video{" not in h2:
             h2 = inject(h2, VID_CSS)
         if h2 != h:
