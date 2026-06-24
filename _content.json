@@ -462,16 +462,16 @@
     },
     "showcaseA": {
       "eyebrow": "What we set up",
-      "headline": "Practical AI that ~answers, replies, and books~ for you",
-      "paragraph": "Being your AI partner isn't theory. It's tools that do real work. We set your lawn care or landscaping business up with AI that answers the phone when you can't, replies to leads instantly, and handles the back-and-forth so every homeowner gets a fast response, day or night.",
+      "headline": "Practical AI that ~answers, replies, and never misses a lead~",
+      "paragraph": "Being your AI partner isn't theory. It's tools that do real work. We set your lawn care or landscaping business up with AI that answers the phone when you can't, replies to leads instantly, and makes sure every new lead reaches your team fast, day or night.",
       "checklist": [
         "AI phone answering that picks up when you're out on a job",
         "AI-powered messaging that replies to new leads in seconds",
         "Tools chosen and configured around how your business actually runs"
       ],
       "imageHint": "Screenshot or mockup of an AI phone-answering call or AI text conversation handling a homeowner's request for a landscaping quote",
-      "image": "ai-partner.jpg",
-      "imageAlt": "ChatGPT recommending a local landscaping company in an AI search result"
+      "image": "ai-call-answering.jpg",
+      "imageAlt": "An AI receptionist answering a phone call while new landscaping leads are captured in a CRM inbox for the team to follow up"
     },
     "includes": {
       "featuredKicker": "What 'partner' really means",
@@ -676,7 +676,7 @@
     "schemaDescription": "CRM and marketing automation for lawn care and landscaping companies: one pipeline with instant lead response, follow-up sequences, missed-call text-back, appointment reminders, review requests, and full contact and pipeline management.",
     "heroEyebrow": "CRM & Automation",
     "h1": "Every lead captured, tracked, and followed up, automatically",
-    "heroSubhead": "A CRM and automation system for landscapers and lawn care companies that organizes every lead in one place, answers each one in seconds, and keeps following up until they book. No more leads slipping through the cracks while you're out on a job.",
+    "heroSubhead": "A CRM and automation system for landscapers and lawn care companies that organizes every lead in one place, answers each one in seconds, and keeps every lead warm until you can take over. No more leads slipping through the cracks while you're out on a job.",
     "conviction": {
       "stat": "5",
       "statUnit": "min",
@@ -687,7 +687,7 @@
     "showcaseA": {
       "eyebrow": "What we build",
       "headline": "A CRM that ~never sleeps on a lead~",
-      "paragraph": "Every form fill, call, and message gets an instant, personal response, then a steady sequence of texts and emails until the homeowner books or opts out. We wire it all into one pipeline so nothing falls through, whether you're on a mower or off the clock.",
+      "paragraph": "Every form fill, call, and message gets an instant, personal response, then a steady sequence of texts and emails until the homeowner replies or opts out. We wire it all into one pipeline so nothing falls through, whether you're on a mower or off the clock.",
       "checklist": [
         "Instant text and email reply the moment a lead comes in",
         "Missed-call text-back so no call goes unanswered",
@@ -714,7 +714,7 @@
         {
           "icon": "message-circle",
           "title": "Follow-Up Sequences",
-          "body": "Scheduled SMS and email touches that nudge leads to book."
+          "body": "Scheduled SMS and email touches that keep new leads warm until you reach them."
         },
         {
           "icon": "calendar",
