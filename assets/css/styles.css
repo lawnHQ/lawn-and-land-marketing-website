@@ -622,8 +622,9 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
 .svc-tab:last-child { border-bottom: none; }
 .svc-tab:hover { background: rgba(255,255,255,0.025); }
 .svc-tab.active { background: rgba(172,231,29,0.05); border-left-color: var(--lime); }
-.svc-tab-num { font-family: var(--font-l); font-size: 11px; font-weight: 600; color: var(--muted); min-width: 20px; }
-.svc-tab.active .svc-tab-num { color: var(--lime); }
+.svc-tab-icon { display: inline-flex; align-items: center; justify-content: center; min-width: 20px; color: var(--muted); flex-shrink: 0; }
+.svc-tab-icon svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.svc-tab.active .svc-tab-icon { color: var(--lime); }
 .svc-tab-name { font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.55); }
 .svc-tab.active .svc-tab-name { color: var(--white); }
 

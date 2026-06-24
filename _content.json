@@ -673,7 +673,7 @@
     "title": "CRM & Marketing Automation for Landscapers | Lawn & Land Marketing",
     "metaDescription": "CRM and marketing automation for landscapers: capture every lead, answer in seconds, and follow up automatically with text-back, reminders, and review requests.",
     "schemaServiceType": "CRM & Marketing Automation",
-    "schemaDescription": "CRM and marketing automation for lawn care and landscaping companies: one pipeline with instant lead response, follow-up sequences, missed-call text-back, appointment reminders, review requests, and full contact and pipeline management.",
+    "schemaDescription": "CRM and marketing automation for lawn care and landscaping companies: one pipeline with instant lead response, follow-up sequences, missed-call text-back, review requests, and full contact and pipeline management.",
     "heroEyebrow": "CRM & Automation",
     "h1": "Every lead captured, tracked, and followed up, automatically",
     "heroSubhead": "A CRM and automation system for landscapers and lawn care companies that organizes every lead in one place, answers each one in seconds, and keeps every lead warm until you can take over. No more leads slipping through the cracks while you're out on a job.",
@@ -717,9 +717,9 @@
           "body": "Scheduled SMS and email touches that keep new leads warm until you reach them."
         },
         {
-          "icon": "calendar",
-          "title": "Appointment Reminders",
-          "body": "Automated reminders help cut no-shows on scheduled estimates."
+          "icon": "sliders",
+          "title": "Custom Automations",
+          "body": "Tailored automations built around your business messaging."
         },
         {
           "icon": "star",
