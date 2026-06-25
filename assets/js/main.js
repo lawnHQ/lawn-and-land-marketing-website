@@ -70,7 +70,7 @@ if (cycleEl) {
   // Set initial transition
   cycleEl.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
 
-  if (!reduceMotion) setInterval(() => {
+  if (!reduceMotion && window.matchMedia('(min-width: 769px)').matches) setInterval(() => {
     // Slide out current word upward
     cycleEl.style.opacity = '0';
     cycleEl.style.transform = 'translateY(-18px)';
