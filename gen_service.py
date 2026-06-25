@@ -72,6 +72,13 @@ SERVICE_MAP = {
   'landscaping-seo': ('Landscaping SEO', 'search'),
   'lawn-maintenance-seo': ('Lawn Maintenance SEO', 'search'),
   'outdoor-living-seo': ('Outdoor Living SEO', 'search'),
+  'holiday-lighting-seo': ('Holiday Lighting SEO', 'search'),
+  'land-clearing-seo': ('Land Clearing SEO', 'search'),
+  'excavation-seo': ('Excavation SEO', 'search'),
+  'septic-installation-seo': ('Septic Installation SEO', 'search'),
+  'lawn-care-google-ads': ('Lawn Care Google Ads', 'badge-check'),
+  'landscaping-google-ads': ('Landscaping Google Ads', 'badge-check'),
+  'outdoor-living-google-ads': ('Outdoor Living Google Ads', 'badge-check'),
 }
 
 # Use the proven dark hero photo across all service pages (matches the locked

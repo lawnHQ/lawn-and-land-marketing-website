@@ -1156,7 +1156,7 @@
     "conviction": {
       "stat": "88",
       "statUnit": "%",
-      "lead": "88% of consumers trust online reviews and what they find searching as much as a personal recommendation.",
+      "lead": "88% of consumers trust online reviews as much as a personal recommendation.",
       "sub": "On a project this size, homeowners vet you long before they call, so showing up and looking credible in search is half the sale.",
       "statSource": "BrightLocal"
     },
@@ -1257,6 +1257,818 @@
       "It's central. For high-ticket work, your portfolio is your strongest sales tool, so we build pages around your best projects and make sure they're structured for search. Strong visuals plus the right on-page work help you rank and help a homeowner trust you with a large investment.",
       "It depends on your market and competition, and high-ticket searches can take time. SEO is the slowest part of your marketing, but the most durable. Expect a general range of 6 to 12 months before organic search is a steady source of qualified consultations, with smaller wins along the way.",
       "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: consultation requests and phone calls tracked through a dedicated number on your site, so you see actual project leads, not just traffic."
+    ]
+  },
+  {
+    "slug": "holiday-lighting-seo",
+    "serviceName": "Holiday Lighting SEO",
+    "title": "SEO for Holiday Lighting Companies | Lawn & Land Marketing",
+    "metaDescription": "SEO for holiday and Christmas lighting companies. Rank before the booking window opens so you fill the install season instead of chasing leftover jobs.",
+    "schemaServiceType": "Holiday Lighting SEO",
+    "schemaDescription": "Search engine optimization built for holiday and Christmas lighting companies, covering seasonal keyword and service-area targeting, install and takedown service pages, on-page and technical SEO, and Google Business Profile alignment timed to the fall-to-winter booking window.",
+    "heroEyebrow": "Holiday Lighting SEO",
+    "h1": "Be the Holiday Lighting Company That ~Books the Season Solid~",
+    "heroSubhead": "Holiday lighting is a business won in a few short weeks. When homeowners start searching in the fall, the company ranking first books the calendar before the rush. Holiday lighting SEO gets you found as the season opens so you fill your install schedule instead of chasing leftover jobs in December.",
+    "conviction": {
+      "stat": "76",
+      "statUnit": "%",
+      "lead": "76% of people who search for something nearby on their phone visit a related business within a day.",
+      "sub": "In a season this short, the homeowner who finds you first is the one who books, so being on top when searches start is everything.",
+      "statSource": "Google"
+    },
+    "showcaseA": {
+      "eyebrow": "What we build",
+      "headline": "SEO timed to ~the way the season actually sells~",
+      "paragraph": "Holiday lighting demand isn't spread across the year, it spikes hard in the fall and is gone by the new year. We build your pages and local signals to be ranking when those searches begin, target the install and takedown terms homeowners use, and keep your service area tight so you book the neighborhoods you can actually run. Paid social usually drives the early demand, and SEO captures the homeowners who are already searching for it.",
+      "checklist": [
+        "Seasonal keyword targeting for install, takedown, and Christmas light searches",
+        "Service-area pages for the neighborhoods you want to book",
+        "On-page and technical SEO so you're ranking before the rush, not after"
+      ],
+      "imageHint": "Local Google results showing a holiday lighting company ranked at the top during the fall season",
+      "image": "local-seo-results.webp",
+      "imageAlt": "A holiday lighting company ranking at the top of local Google search results",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "The season is won ~before the first light goes up~",
+      "featuredBody": "Most homeowners book holiday lighting weeks before they want it installed, which means your ranking has to be in place when they start looking, not when you remember to think about marketing. Miss that window and the season is booked by someone else. We keep the pages, listings, and signals ready so you catch the demand the moment it starts.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Seasonal Keyword Targeting",
+          "body": "We target the install, takedown, and Christmas light searches homeowners actually use."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Service-Area Pages",
+          "body": "Pages for the neighborhoods you want to book, so you can run a tight, profitable route."
+        },
+        {
+          "icon": "file-text",
+          "title": "Install & Takedown Pages",
+          "body": "Focused pages for the services you offer, written to match how people search for them."
+        },
+        {
+          "icon": "sliders",
+          "title": "On-Page SEO",
+          "body": "Titles, headings, and content optimized so Google understands every page clearly."
+        },
+        {
+          "icon": "zap",
+          "title": "Technical SEO",
+          "body": "Clean structure and fast loads that help search engines crawl and trust your site."
+        },
+        {
+          "icon": "link",
+          "title": "Local Citations",
+          "body": "Consistent name, address, and phone across the directories Google checks."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Rank Tracking",
+          "body": "Ongoing reporting so you know you're visible before the season starts, not after."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "A full calendar now, and ~an easier season next year~",
+      "paragraph": "Ranking early in the season fills your install calendar while there's still time to book it. It also makes you easy to find again: the homeowner who hired you last year searches your name or your service next fall, and a strong site plus an aligned Google Business Profile make sure they land back on you. You handle the rebooking, we make sure you're the company they can find and reach.",
+      "checklist": [
+        "Pages built to convert seasonal searchers into booked installs",
+        "A Google Business Profile aligned with your site so returning customers find you",
+        "Visibility in place before the booking window, not after it closes"
+      ],
+      "imageHint": "A Google Business Profile for a holiday lighting company",
+      "image": "gbp-profile.webp",
+      "imageAlt": "A Google Business Profile for a local holiday lighting company"
+    },
+    "faqQuestions": [
+      "How is holiday lighting SEO different from regular year-round SEO?",
+      "When does holiday lighting SEO need to be running to catch the season?",
+      "Can SEO help me rebook last year's customers?",
+      "Should I be using paid ads too, or just SEO?",
+      "How do you prove the SEO is actually bringing in bookings?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your calendar ~booked before the season starts~",
+      "paragraph": "Book a free strategy call and we'll look at where your holiday lighting company shows up today, how early you need to be ranking to catch the booking window, and what it would take to own the season's searches in your service area.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "local-seo",
+      "meta-ads",
+      "website-design",
+      "gbp-management"
+    ],
+    "industrySlug": "holiday-lighting",
+    "industryName": "Holiday Lighting",
+    "faqAnswers": [
+      "Timing is everything. A year-round trade can rank steadily over months, but holiday lighting sells in a tight fall-to-winter window, so the work is about being visible the moment demand spikes and capturing it before the calendar fills. We build the foundation off-season so you're ranking when the searches start, not scrambling once they do.",
+      "Earlier than most owners expect. Homeowners begin booking weeks before they want lights up, and rankings take time to establish, so the groundwork should be in place well before the fall. The earlier your pages and local signals are working, the more of the season's searches you catch while there's still calendar to fill.",
+      "We make it easy for them to find you again, which is the part SEO controls: a strong site and an aligned Google Business Profile mean last year's customer who searches your name or your service lands right back on you. The actual rebooking, outreach, and scheduling is yours to run, often through your CRM, and we make sure the marketing around it points returning customers your way.",
+      "For holiday lighting, usually both, with paid social often leading. The demand is seasonal and visual, so paid social is typically the strongest channel for creating demand, while SEO captures the homeowners already searching and makes you easy to find. We can talk through the right mix for your market on a strategy call.",
+      "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual booking requests, not just traffic."
+    ]
+  },
+  {
+    "slug": "land-clearing-seo",
+    "serviceName": "Land Clearing SEO",
+    "title": "SEO for Land Clearing Companies | Lawn & Land Marketing",
+    "metaDescription": "SEO for land clearing companies. Rank for the acreage, forestry mulching, and lot-clearing searches landowners use across the radius you'll mobilize to.",
+    "schemaServiceType": "Land Clearing SEO",
+    "schemaDescription": "Search engine optimization built for land clearing companies, covering keyword and service-area targeting for forestry mulching, lot clearing, brush removal, and defensible space, dedicated service pages, on-page and technical SEO, and rank tracking focused on the radius the company will mobilize to.",
+    "heroEyebrow": "Land Clearing SEO",
+    "h1": "Be the Land Clearing Company Landowners ~Call for the Big Job~",
+    "heroSubhead": "Land clearing jobs are large, specific, and worth real money, and the landowner with acreage to clear starts on Google. Land clearing SEO gets you ranking for the forestry mulching, lot clearing, and acreage searches across the radius you'll actually mobilize to, so the serious jobs come to you.",
+    "conviction": {
+      "stat": "46",
+      "statUnit": "%",
+      "lead": "Nearly half of all Google searches are local, like a landowner looking for clearing help nearby.",
+      "sub": "Land clearing jobs are too big and too location-specific to leave to chance, so if you don't rank in your radius, you don't get the call.",
+      "statSource": "Google"
+    },
+    "showcaseA": {
+      "eyebrow": "What we build",
+      "headline": "SEO built around ~the jobs and the radius you actually run~",
+      "paragraph": "Land clearing isn't one search, it's forestry mulching, lot clearing, brush removal, and defensible space, and the landowner uses different words for each. We map the clearing work you want to the radius you'll mobilize to, then build the pages and local signals Google needs to rank you for those jobs. No markets too far to service, no work you don't do, just pages built to bring in the acreage worth driving to.",
+      "checklist": [
+        "Keyword targeting for forestry mulching, lot clearing, brush removal, and defensible space",
+        "Service-area pages built around the radius you'll actually mobilize to",
+        "On-page and technical SEO so Google can crawl, read, and trust your site"
+      ],
+      "imageHint": "A wooded lot being cleared by a forestry mulcher, before-and-after style",
+      "image": "land-clearing-project.webp",
+      "imageAlt": "A wooded lot being cleared by a forestry mulching machine",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "Acreage jobs go to the company that ~shows up and looks capable~",
+      "featuredBody": "A landowner clearing acreage isn't booking the first number they see, they're checking who can actually handle the size of the job. Ranking for those searches is the first step, but it only pays off when your site backs it up with proof you can do the work. We handle the rankings and the credibility signals so the serious jobs end up in your inbox.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Clearing Keyword Targeting",
+          "body": "We target forestry mulching, lot clearing, brush removal, and defensible space the way landowners search them."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Mobilization-Radius Pages",
+          "body": "Service-area pages built around how far you'll travel, so you rank where the jobs are worth it."
+        },
+        {
+          "icon": "file-text",
+          "title": "Service Pages",
+          "body": "A focused page for each type of clearing you do, matched to how people search for it."
+        },
+        {
+          "icon": "sliders",
+          "title": "On-Page SEO",
+          "body": "Titles, headings, and content optimized so Google understands every page clearly."
+        },
+        {
+          "icon": "zap",
+          "title": "Technical SEO",
+          "body": "Clean structure and fast loads that help search engines crawl and trust your site."
+        },
+        {
+          "icon": "link",
+          "title": "Local Citations",
+          "body": "Consistent name, address, and phone across the directories Google checks."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Rank Tracking",
+          "body": "Ongoing reporting that shows where you rank across your mobilization radius."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "One ranking can be worth ~a multi-acre job~",
+      "paragraph": "Land clearing is high-value work, so a single ranking can pay for itself many times over. We build every page to move a landowner toward calling or requesting a quote, and align it with your Google Business Profile so your listing and site reinforce each other. Whether the demand is land development, agricultural clearing, or defensible space and fire mitigation, the goal is fewer, bigger, better-fit jobs.",
+      "checklist": [
+        "Pages built to convert landowners into calls and quote requests",
+        "Content that answers what owners ask before booking a clearing job",
+        "Google Business Profile aligned with your site so both work together"
+      ],
+      "imageHint": "Local Google search results showing a land clearing company ranked at the top",
+      "image": "local-seo-results.webp",
+      "imageAlt": "A land clearing company ranking at the top of local Google search results"
+    },
+    "faqQuestions": [
+      "How is land clearing SEO different from excavation SEO?",
+      "How far out should land clearing SEO target?",
+      "What clearing services should I be ranking for?",
+      "Do I need a new website, or can you optimize my current one?",
+      "How do you prove the SEO is actually generating jobs?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your land clearing company ~ranking across your radius~",
+      "paragraph": "Book a free strategy call and we'll look at where your land clearing company ranks today, how far your radius really reaches, and what it would take to own the clearing searches that turn into acreage worth mobilizing for.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "local-seo",
+      "website-design",
+      "gbp-management",
+      "google-ads"
+    ],
+    "industrySlug": "land-clearing",
+    "industryName": "Land Clearing",
+    "faqAnswers": [
+      "They use similar equipment but they're different jobs, different searches, and different buyers. Land clearing is about removing trees, brush, and vegetation to open up land, so it targets forestry mulching, lot clearing, and defensible space. Excavation is about moving earth: grading, trenching, drainage, and sitework. A landowner searching to clear ten wooded acres and a builder searching for sitework are not the same prospect, so we build the two pages around their own terms instead of blurring them into generic heavy-equipment copy.",
+      "As far as the job is worth the drive. Land clearing is mobilization-sensitive, so we build your service-area pages around the radius you'll actually travel for, which is usually wider than a homeowner-services business. That way you rank for the acreage worth driving to without wasting effort on markets you'd never service.",
+      "Whatever you actually want more of: forestry mulching, lot and land clearing, brush and undergrowth removal, defensible space and fire mitigation, or site prep. We target the specific services you do best and the ones with the best margins in your area, rather than chasing every clearing term whether it fits your equipment or not.",
+      "For SEO to really work it needs the right foundation, which is why we build new. We don't patch existing sites, because the problems are usually buried in the code where they quietly hold rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change.",
+      "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual clearing leads, not just traffic."
+    ]
+  },
+  {
+    "slug": "excavation-seo",
+    "serviceName": "Excavation SEO",
+    "title": "SEO for Excavation Companies | Lawn & Land Marketing",
+    "metaDescription": "SEO for excavation companies. Rank for the sitework, grading, trenching, and drainage searches that bring in serious residential and commercial digs.",
+    "schemaServiceType": "Excavation SEO",
+    "schemaDescription": "Search engine optimization built for excavation companies, covering keyword and service-area targeting for sitework, grading, trenching, and drainage across residential and commercial work, dedicated service pages, on-page and technical SEO, and rank tracking focused on serious-project lead flow.",
+    "heroEyebrow": "Excavation SEO",
+    "h1": "Be the Excavation Company ~Trusted to Break Ground~",
+    "heroSubhead": "Excavation is high-stakes work, and the contractor or homeowner who needs sitework, grading, or drainage starts with a search. Excavation SEO gets you ranking for the dig jobs that matter, across both residential and commercial work, so the projects with real scope and real budgets find you first.",
+    "conviction": {
+      "stat": "88",
+      "statUnit": "%",
+      "lead": "88% of consumers trust online reviews as much as a personal recommendation.",
+      "sub": "Nobody lets a stranger dig on their property on a whim, so before they call they check that you're findable, reviewed, and clearly capable.",
+      "statSource": "BrightLocal"
+    },
+    "showcaseA": {
+      "eyebrow": "What we build",
+      "headline": "SEO built for ~sitework, not generic dirt work~",
+      "paragraph": "Excavation covers a lot of ground: grading, trenching, drainage, foundation digs, and full sitework, split across residential and commercial buyers who search very differently. We map the work you want to the right audiences, then build the pages and local signals Google needs to rank you for them. The goal is to bring in the digs that match your equipment and your margins, not whatever loosely mentions excavation.",
+      "checklist": [
+        "Keyword targeting for sitework, grading, trenching, and drainage",
+        "Pages that separate residential and commercial work the way buyers search for it",
+        "On-page and technical SEO so Google can crawl, read, and trust your site"
+      ],
+      "imageHint": "An excavator performing sitework on a residential or commercial project",
+      "image": "excavation-project.webp",
+      "imageAlt": "An excavator performing sitework on a construction project",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "The dig goes to the company that ~looks like it won't cut corners~",
+      "featuredBody": "Excavation buyers have one real fear: scope creep, damage, and a job that goes sideways. So before they call, they look for a company that's findable, clearly capable, and backed by real reviews. Ranking gets you in front of them, but the trust signals are what win the bid. We build both so the serious sitework lands with you.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Excavation Keyword Targeting",
+          "body": "We target sitework, grading, trenching, and drainage the way real buyers search for them."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Service-Area Pages",
+          "body": "Dedicated pages for the areas you serve, so each market can rank on its own."
+        },
+        {
+          "icon": "file-text",
+          "title": "Residential & Commercial Pages",
+          "body": "Separate pages for the two buyers, because they search and decide very differently."
+        },
+        {
+          "icon": "sliders",
+          "title": "On-Page SEO",
+          "body": "Titles, headings, and content optimized so Google understands every page clearly."
+        },
+        {
+          "icon": "zap",
+          "title": "Technical SEO",
+          "body": "Clean structure and fast loads that help search engines crawl and trust your site."
+        },
+        {
+          "icon": "shield-check",
+          "title": "Trust & Citations",
+          "body": "Consistent listings and review signals that reassure a buyer handing you a serious dig."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Rank Tracking",
+          "body": "Ongoing reporting that shows where you rank for the work you most want to win."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "One commercial job can ~pay for the year~",
+      "paragraph": "Excavation projects range from a residential drainage fix to a full commercial sitework contract, so ranking for the right searches isn't about volume, it's about being found by the buyers with real scope. We build every page to move a serious buyer toward a quote, and make your scope and credibility obvious so they trust you to break ground. The result is fewer, bigger, better-qualified bids.",
+      "checklist": [
+        "Pages built to convert serious buyers into quote requests",
+        "Clear scope and trust signals that answer what buyers worry about",
+        "Google Business Profile aligned with your site so both work together"
+      ],
+      "imageHint": "Local Google search results showing an excavation company ranked at the top",
+      "image": "local-seo-results.webp",
+      "imageAlt": "An excavation company ranking at the top of local Google search results"
+    },
+    "faqQuestions": [
+      "How is excavation SEO different from land clearing SEO?",
+      "Should I target residential or commercial excavation work?",
+      "What excavation services should I be ranking for?",
+      "Do I need a new website, or can you optimize my current one?",
+      "How do you prove the SEO is actually generating bids?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your excavation company ~found for the jobs worth bidding~",
+      "paragraph": "Book a free strategy call and we'll look at where your excavation company ranks today, which work and which buyers are worth chasing in your market, and what it would take to own the sitework searches that turn into serious bids.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "local-seo",
+      "website-design",
+      "gbp-management",
+      "google-ads"
+    ],
+    "industrySlug": "excavation",
+    "industryName": "Excavation",
+    "faqAnswers": [
+      "Excavation is about moving earth: grading, trenching, drainage, foundation digs, and sitework. Land clearing is about removing trees, brush, and vegetation to open up land. They often share equipment, but the searches and the buyers are different, a builder pricing sitework is not the landowner clearing wooded acreage. We build each page around its own work and audience instead of merging them into generic heavy-equipment copy.",
+      "Usually both, but they need to be handled separately. Residential buyers search for specific fixes like drainage or a foundation dig, while commercial buyers search around sitework, bids, and scope. They use different language and make decisions differently, so we build distinct pages for each rather than one page trying to speak to both at once.",
+      "The work that fits your equipment and your margins: sitework, grading and excavation, trenching and utilities, drainage solutions, and foundation or footing digs. We focus on the services you actually want more of and the ones worth the most in your market, rather than chasing every excavation-adjacent term.",
+      "For SEO to really work it needs the right foundation, which is why we build new. We don't patch existing sites, because the problems are usually buried in the code where they quietly hold rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change.",
+      "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual bid requests, not just traffic."
+    ]
+  },
+  {
+    "slug": "septic-installation-seo",
+    "serviceName": "Septic Installation SEO",
+    "title": "SEO for Septic Installation Companies | Lawn & Land Marketing",
+    "metaDescription": "SEO for septic installation companies. Rank for new-system, replacement, and septic install searches, not the low-value pumping and emergency calls.",
+    "schemaServiceType": "Septic Installation SEO",
+    "schemaDescription": "Search engine optimization built for septic installation companies, covering keyword and service-area targeting for new installs, system replacements, and new construction, dedicated service pages, on-page and technical SEO, and rank tracking focused on high-value install work rather than pumping or emergency service.",
+    "heroEyebrow": "Septic Installation SEO",
+    "h1": "Be the Septic Installer Homeowners ~Find for the Real Work~",
+    "heroSubhead": "Septic installation is specialized, permitted, high-value work, and the homeowner with a failed system or a new build starts on Google. Septic installation SEO gets you ranking for installs and replacements, the jobs you actually want, instead of the pumping and emergency calls you don't.",
+    "conviction": {
+      "stat": "76",
+      "statUnit": "%",
+      "lead": "76% of people who search for something nearby on their phone visit a related business within a day.",
+      "sub": "A failed or newly required septic system can't wait, so the installer who ranks when that search happens is the one who gets the project.",
+      "statSource": "Google"
+    },
+    "showcaseA": {
+      "eyebrow": "What we build",
+      "headline": "SEO aimed at ~the installs, not the pump-outs~",
+      "paragraph": "Septic searches are a mix, and most of the volume is low-value pumping and emergency calls you don't want. We target the install and replacement intent instead: new systems, system replacements, and new construction, then build the pages and local signals Google needs to rank you for them. The point is to fill your pipeline with permitted, high-value installs, not a phone full of pump-out requests.",
+      "checklist": [
+        "Keyword targeting for new installs, replacements, and new construction",
+        "Service-area pages for the counties and towns you're permitted to work in",
+        "On-page and technical SEO so Google can crawl, read, and trust your site"
+      ],
+      "imageHint": "Local Google results showing a septic installation company ranked at the top",
+      "image": "local-seo-results.webp",
+      "imageAlt": "A septic installation company ranking at the top of local Google search results",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "Rank for the installs, ~not the low-value pump-outs~",
+      "featuredBody": "If you rank for everything septic, your phone fills with pumping and emergency calls that aren't the work you want. We deliberately target the install and replacement searches and steer away from the low-value terms, so the leads that come in are the permitted, high-ticket jobs your business is actually built around.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Install Keyword Targeting",
+          "body": "We target new install, replacement, and new-construction searches, not pumping or emergency terms."
+        },
+        {
+          "icon": "filter",
+          "title": "Wrong-Lead Filtering",
+          "body": "We steer your pages away from the low-value pump-out and emergency searches you don't want."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Service-Area Pages",
+          "body": "Pages for the counties and towns you're permitted to install in, so each can rank on its own."
+        },
+        {
+          "icon": "file-text",
+          "title": "Service Pages",
+          "body": "Focused pages for new installs, replacements, and drainfield or new-construction work."
+        },
+        {
+          "icon": "sliders",
+          "title": "On-Page SEO",
+          "body": "Titles, headings, and content optimized so Google understands every page clearly."
+        },
+        {
+          "icon": "zap",
+          "title": "Technical SEO",
+          "body": "Clean structure and fast loads that help search engines crawl and trust your site."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Rank Tracking",
+          "body": "Ongoing reporting that shows where you rank for the install work you want."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "One install is worth ~a whole lot of pump-outs~",
+      "paragraph": "A single septic installation is worth far more than a stack of pumping calls, so the value of SEO here is in the quality of the lead, not just the count. We build every page to move a homeowner or builder toward a real install quote, and align it with your Google Business Profile so your listing and site reinforce each other. The result is a pipeline of the permitted, high-value work you actually want.",
+      "checklist": [
+        "Pages built to convert install and replacement searchers into quote requests",
+        "Content that answers what homeowners and builders ask before an install",
+        "Google Business Profile aligned with your site so both work together"
+      ],
+      "imageHint": "A Google Business Profile for a septic installation company",
+      "image": "gbp-profile.webp",
+      "imageAlt": "A Google Business Profile for a local septic installation company"
+    },
+    "faqQuestions": [
+      "Why target septic installation instead of pumping or emergency service?",
+      "Can you actually keep me out of the low-value pumping leads?",
+      "What septic searches should I be ranking for?",
+      "Do I need a new website, or can you optimize my current one?",
+      "How do you prove the SEO is generating real install jobs?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your septic company ~found for the installs~",
+      "paragraph": "Book a free strategy call and we'll look at where your septic installation company ranks today, how to point your visibility at install work instead of pump-outs, and what it would take to own the install searches across the areas you're permitted to serve.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "local-seo",
+      "website-design",
+      "gbp-management",
+      "google-ads"
+    ],
+    "industrySlug": "septic-installation",
+    "industryName": "Septic Installation",
+    "faqAnswers": [
+      "Because installs are the work worth marketing for. New systems, replacements, and new construction are high-value, permitted jobs, while pumping and emergency calls are low-value and a different kind of customer. The site has deliberately chosen to target installers, so we build your SEO around install intent. If you ever wanted the pumping or emergency audience, that would be a separate page with its own approach.",
+      "We can't block a search, but we can shape what you rank for. By targeting install and replacement language in your pages and content, and not optimizing for pumping or emergency terms, we point your visibility at the high-value work, so the bulk of what comes through fits the jobs you want.",
+      "The high-value install work: new septic system installation, system replacements, drainfield and leach field work, and new-construction septic. We focus on the searches that turn into permitted install projects, rather than the pumping, cleaning, and emergency terms that bring in low-value calls.",
+      "For SEO to really work it needs the right foundation, which is why we build new. We don't patch existing sites, because the problems are usually buried in the code where they quietly hold rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change.",
+      "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual install requests, not just traffic."
+    ]
+  },
+  {
+    "slug": "lawn-care-google-ads",
+    "serviceName": "Lawn Care Google Ads",
+    "title": "Google Ads for Lawn Care Companies | Lawn & Land Marketing",
+    "metaDescription": "Google Ads and Local Service Ads for lawn care companies. Turn fertilization and lawn-care-near-me searches into program signups without wasting budget.",
+    "schemaServiceType": "Lawn Care Google Ads Management",
+    "schemaDescription": "Google Ads and Local Service Ads management built for lawn care companies, covering search campaign setup, Local Service Ads and Google Guaranteed, negative-keyword and wasted-spend control, landing-page alignment, conversion tracking, and budget pacing focused on recurring-program signups.",
+    "heroEyebrow": "Lawn Care Google Ads",
+    "h1": "Get Lawn Care Customers ~Calling This Week~",
+    "heroSubhead": "SEO compounds over months. Google Ads put your lawn care company at the top today. We run search and Local Service Ads that turn high-intent fertilization, weed control, and lawn-care-near-me searches into booked program customers, while keeping budget off the clicks that never convert.",
+    "conviction": {
+      "stat": "8-12",
+      "statUnit": "%",
+      "lead": "Our clients' Google Ads campaigns typically convert at 8-12%, versus a 3-6% industry average.",
+      "sub": "For a recurring lawn care program, one signup pays back season after season, so a tightly run campaign compounds fast.",
+      "statSource": "Lawn & Land client averages"
+    },
+    "showcaseA": {
+      "eyebrow": "What we run",
+      "headline": "Campaigns aimed at ~program signups, not just clicks~",
+      "paragraph": "A click is not a customer, so we build campaigns around the searches that turn into recurring lawn care programs: fertilization, weed control, and lawn-care-near-me intent. We structure search and Local Service Ads to capture ready-to-buy homeowners, add the negative keywords that cut wasted spend, and track which campaigns actually produce signed customers. Speed is the point: paid search brings leads in days, not months.",
+      "checklist": [
+        "Search and Local Service Ads built around program-buyer intent",
+        "Negative keywords and tight targeting to cut wasted spend",
+        "Conversion tracking so you see signups, not just clicks"
+      ],
+      "imageHint": "A Google Ads dashboard showing campaign performance for a lawn care company",
+      "image": "google-ads-dashboard.webp",
+      "imageAlt": "A Google Ads dashboard showing lawn care campaign performance",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "Paid search buys the top spot today, ~if you don't waste it~",
+      "featuredBody": "The difference between Google Ads that print money and ads that burn cash is targeting, negative keywords, and tracking. Plenty of lawn care companies have been burned by an agency that set up a campaign and let it run loose. We run it tight, so every dollar chases program signups instead of tire-kickers and wrong-area clicks.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "target",
+          "title": "Search Campaign Setup",
+          "body": "Campaigns structured around the lawn care searches that turn into recurring customers."
+        },
+        {
+          "icon": "badge-check",
+          "title": "Local Service Ads",
+          "body": "Google Guaranteed and Local Service Ads setup so you show up at the very top, pay per lead."
+        },
+        {
+          "icon": "filter",
+          "title": "Wasted-Spend Control",
+          "body": "Negative keywords and targeting that keep budget off clicks that never convert."
+        },
+        {
+          "icon": "monitor",
+          "title": "Landing-Page Alignment",
+          "body": "Ad clicks land on pages built to convert, not a generic homepage."
+        },
+        {
+          "icon": "check-circle",
+          "title": "Conversion Tracking",
+          "body": "Calls and form fills tracked so you see real signups, not just traffic."
+        },
+        {
+          "icon": "sliders",
+          "title": "Budget Pacing",
+          "body": "Spend managed and adjusted so your budget works hardest in your busy windows."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Reporting",
+          "body": "Clear reporting that ties spend to leads and cost per booked customer."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "Leads this week, ~on top of what SEO builds~",
+      "paragraph": "Paid search and SEO do different jobs: ads buy you the top spot immediately while your rankings build, and SEO gives you durable, lower-cost leads over time. Run together, they cover both speed and staying power. For lawn care, that means filling routes now with paid leads while your organic presence compounds, and a recurring program customer keeps paying back long after the click.",
+      "checklist": [
+        "Fast lead flow from day one, while SEO builds underneath it",
+        "Speed-to-lead follow-up so paid leads don't go cold",
+        "Spend pointed at recurring-program customers, not one-off jobs"
+      ],
+      "imageHint": "A healthy striped green lawn maintained by a professional lawn care crew",
+      "image": "lawn-care-service.webp",
+      "imageAlt": "A healthy, well-manicured green lawn maintained by a professional lawn care company"
+    },
+    "faqQuestions": [
+      "How is Google Ads for lawn care different from lawn care SEO?",
+      "How do you keep me from wasting ad budget?",
+      "What are Local Service Ads and Google Guaranteed?",
+      "How fast do Google Ads start bringing in lawn care leads?",
+      "How do you prove the ad spend is actually profitable?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your phone ~ringing this week~",
+      "paragraph": "Book a free strategy call and we'll look at what you're spending today, where the wasted budget is going, and what a tightly run Google Ads and Local Service Ads program could bring in for your lawn care company.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "google-ads",
+      "local-seo",
+      "website-design",
+      "automation"
+    ],
+    "industrySlug": "lawn-care",
+    "industryName": "Lawn Care",
+    "faqAnswers": [
+      "They solve the same problem on different timelines. Google Ads put you at the top today and you pay per click or per lead, so leads start coming in within days, which is ideal when you need to fill routes now. Lawn care SEO is the slow, compounding play that earns durable rankings and lower-cost leads over months. Most lawn care companies do best running both: ads for speed, SEO for staying power.",
+      "Three things mainly: tight intent targeting so you bid on program searches and not random clicks, an ongoing negative-keyword list that blocks the searches that waste money, and conversion tracking so we can see which keywords actually produce booked customers and cut the ones that don't. Many owners who were burned before were burned by the absence of exactly this.",
+      "Local Service Ads are the pay-per-lead ads that sit at the very top of Google, above the regular ads, with the Google Guaranteed badge. You pay for a lead, not a click, and the badge builds trust. They're often a strong fit for lawn care, and we set them up and manage them alongside your search campaigns.",
+      "Fast, usually within days of going live, which is the main reason to run ads alongside SEO. The first weeks are about gathering data and tightening targeting, and from there we optimize toward a steady, predictable cost per booked customer.",
+      "We track every call and form submission as a conversion, tie it back to the campaign and keyword that produced it, and report on cost per lead and cost per booked customer. That way you're judging the spend on signed lawn care customers, not clicks or impressions."
+    ]
+  },
+  {
+    "slug": "landscaping-google-ads",
+    "serviceName": "Landscaping Google Ads",
+    "title": "Google Ads for Landscaping Companies | Lawn & Land Marketing",
+    "metaDescription": "Google Ads and Local Service Ads for landscaping companies. Put your best jobs in front of ready-to-hire searchers and control where the budget goes.",
+    "schemaServiceType": "Landscaping Google Ads Management",
+    "schemaDescription": "Google Ads and Local Service Ads management built for landscaping companies, covering search campaign setup, service and service-area targeting, negative-keyword and budget control, landing-page alignment, conversion tracking, and reporting focused on steering spend toward the jobs the company wants.",
+    "heroEyebrow": "Landscaping Google Ads",
+    "h1": "Put Your Landscaping Company ~at the Top Today~",
+    "heroSubhead": "When a homeowner searches for a landscaper, Google Ads put you above the results immediately. We run search and Local Service Ads that focus your budget on the jobs you actually want, in the towns you want them, so you're not paying for clicks from the wrong work or the wrong area.",
+    "conviction": {
+      "stat": "8-12",
+      "statUnit": "%",
+      "lead": "Our clients' Google Ads campaigns typically convert at 8-12%, versus a 3-6% industry average.",
+      "sub": "Landscaping jobs vary widely in value, so steering budget toward the right work is what makes paid search pay.",
+      "statSource": "Lawn & Land client averages"
+    },
+    "showcaseA": {
+      "eyebrow": "What we run",
+      "headline": "Budget pointed at ~the jobs and areas you want~",
+      "paragraph": "Landscaping is a wide mix of work at very different price points, so an untuned campaign burns money fast. We structure search and Local Service Ads around the services you want more of, target the areas worth working in, and add the negative keywords that filter out DIY and bargain searches. Every part of the campaign is built to put spend where the good jobs are, and to prove which clicks turn into estimates.",
+      "checklist": [
+        "Campaigns structured by the services you actually want more of",
+        "Service-area targeting so you pay for the right towns, not the whole metro",
+        "Negative keywords that filter out DIY and bargain-hunting clicks"
+      ],
+      "imageHint": "A Google Ads dashboard showing campaign performance for a landscaping company",
+      "image": "google-ads-dashboard.webp",
+      "imageAlt": "A Google Ads dashboard showing landscaping campaign performance",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "The budget goes ~where the good jobs are~",
+      "featuredBody": "Landscaping covers everything from a quick cleanup to a full install, and a loose campaign spends the same on all of it. We structure the account so your money chases the work and the areas you actually want, filter out the searches that waste it, and track which clicks become estimates. That's the difference between paid search that pays and paid search that just spends.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "target",
+          "title": "Search Campaign Setup",
+          "body": "Campaigns built around the landscaping services you want more of, not a catch-all."
+        },
+        {
+          "icon": "badge-check",
+          "title": "Local Service Ads",
+          "body": "Google Guaranteed and Local Service Ads setup so you show up at the very top, pay per lead."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Service-Area Targeting",
+          "body": "Spend focused on the towns worth working in, not the whole metro."
+        },
+        {
+          "icon": "filter",
+          "title": "Wasted-Spend Control",
+          "body": "Negative keywords that filter out DIY, bargain, and wrong-job searches."
+        },
+        {
+          "icon": "monitor",
+          "title": "Landing-Page Alignment",
+          "body": "Ad clicks land on pages built to convert, not a generic homepage."
+        },
+        {
+          "icon": "check-circle",
+          "title": "Conversion Tracking",
+          "body": "Calls and form fills tracked so you see real estimate requests, not just traffic."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Reporting",
+          "body": "Clear reporting that ties spend to estimates and cost per booked job."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "Qualified estimates now, ~while SEO builds underneath~",
+      "paragraph": "Paid search and SEO do different jobs: ads put you at the top immediately and let you control exactly which work and which areas you pay for, while SEO builds durable, lower-cost visibility over time. Together they give you fast estimate flow now and staying power later. For landscaping, that means you can chase the high-value jobs with ads today while your organic presence compounds.",
+      "checklist": [
+        "Fast estimate flow from day one, while SEO builds underneath it",
+        "Control over exactly which jobs and areas you pay to reach",
+        "Spend pointed at the work worth winning, not whatever clicks"
+      ],
+      "imageHint": "A professionally landscaped yard with fresh plantings and clean bed edges",
+      "image": "landscaping-project.webp",
+      "imageAlt": "A professionally landscaped front yard with fresh plantings and clean bed edges"
+    },
+    "faqQuestions": [
+      "How is Google Ads for landscaping different from landscaping SEO?",
+      "Can you keep me from paying for the wrong jobs?",
+      "What are Local Service Ads and Google Guaranteed?",
+      "How fast do Google Ads start bringing in landscaping leads?",
+      "How do you prove the ad spend is paying off?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your best jobs ~in front of ready buyers~",
+      "paragraph": "Book a free strategy call and we'll look at what you're spending today, where the budget is leaking, and what a tightly run Google Ads and Local Service Ads program could bring in for the landscaping work you actually want.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "google-ads",
+      "local-seo",
+      "website-design",
+      "gbp-management"
+    ],
+    "industrySlug": "landscaping",
+    "industryName": "Landscaping",
+    "faqAnswers": [
+      "They work on different timelines and give you different control. Google Ads put you at the top today, you pay per click or per lead, and you decide exactly which services and areas to spend on, so estimates start coming in within days. Landscaping SEO is the compounding play that earns durable rankings and lower-cost leads over months. Most landscaping companies run both: ads for immediate, controllable lead flow and SEO for long-term staying power.",
+      "Yes, that's a core part of the work. Landscaping attracts a lot of low-value and DIY searches, so we use intent targeting and an ongoing negative-keyword list to keep your budget off the wrong jobs, plus service-area targeting so you're not paying for clicks from towns you don't want to work in. Conversion tracking then shows which clicks actually became estimates so we can keep tuning.",
+      "Local Service Ads are pay-per-lead ads that sit at the very top of Google with the Google Guaranteed badge. You pay for a lead instead of a click, and the badge builds trust before the homeowner even calls. We set them up and manage them alongside your search campaigns where they fit your services.",
+      "Quickly, usually within days of launch, which is the main reason to run ads alongside SEO. The early weeks gather data and tighten targeting, then we optimize toward a steady, predictable cost per booked job.",
+      "We track every call and form submission as a conversion, tie it back to the campaign and keyword that drove it, and report on cost per lead and cost per booked job. You judge the spend on real estimates and signed work, not clicks."
+    ]
+  },
+  {
+    "slug": "outdoor-living-google-ads",
+    "serviceName": "Outdoor Living Google Ads",
+    "title": "Google Ads for Outdoor Living Companies | Lawn & Land",
+    "metaDescription": "Google Ads for outdoor living and hardscape companies. Put your portfolio in front of high-ticket project searchers and qualify out the bargain-hunters.",
+    "schemaServiceType": "Outdoor Living Google Ads Management",
+    "schemaDescription": "Google Ads management built for outdoor living and hardscape design-build companies, covering high-intent search campaign setup, negative-keyword qualification, portfolio-led landing pages, conversion tracking, budget pacing, and reporting focused on qualified high-ticket consultation requests.",
+    "heroEyebrow": "Outdoor Living Google Ads",
+    "h1": "Get High-Ticket Outdoor Living Projects ~in the Pipeline~",
+    "heroSubhead": "A paver patio or outdoor kitchen is a big-budget decision, and Google Ads put you in front of the homeowners actively pricing one. We run search campaigns built to attract serious, high-ticket project searches and qualify out the bargain-hunters, so your consultations are with people ready to invest.",
+    "conviction": {
+      "stat": "8-12",
+      "statUnit": "%",
+      "lead": "Our clients' Google Ads campaigns typically convert at 8-12%, versus a 3-6% industry average.",
+      "sub": "When one project is worth tens of thousands, even a few qualified consultations a month can fill your build calendar.",
+      "statSource": "Lawn & Land client averages"
+    },
+    "showcaseA": {
+      "eyebrow": "What we run",
+      "headline": "Ads built to ~qualify in the serious buyers~",
+      "paragraph": "High-ticket outdoor living work doesn't need volume, it needs the right few buyers. We build search campaigns around high-intent project searches like paver patios, outdoor kitchens, and full backyard builds, then use negative keywords to filter out the DIY and bargain crowd. Clicks land on portfolio-led pages that prove you can deliver, and every consultation request is tracked so you spend on the projects worth winning.",
+      "checklist": [
+        "Search campaigns targeting high-intent, high-ticket project searches",
+        "Negative keywords that filter out DIY and bargain-hunting clicks",
+        "Portfolio-led landing pages built to turn researchers into consultations"
+      ],
+      "imageHint": "A Google Ads dashboard showing campaign performance for an outdoor living company",
+      "image": "google-ads-dashboard.webp",
+      "imageAlt": "A Google Ads dashboard showing outdoor living campaign performance",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "Pay for the projects worth winning, ~not the price-shoppers~",
+      "featuredBody": "On high-ticket work, the wrong lead is expensive twice: once for the click and again for the time you waste quoting it. So paid search here is all about qualification. We target serious project intent, filter out the bargain searches, and send clicks to pages that show your best work, so the consultations you pay for are with homeowners ready to build.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "target",
+          "title": "Search Campaign Setup",
+          "body": "Campaigns built around high-intent project searches, not low-value browsing."
+        },
+        {
+          "icon": "filter",
+          "title": "Buyer Qualification",
+          "body": "Negative keywords and targeting that filter out DIY and bargain-hunting searches."
+        },
+        {
+          "icon": "eye",
+          "title": "Portfolio-Led Landing Pages",
+          "body": "Ad clicks land on pages where your best projects do the selling."
+        },
+        {
+          "icon": "check-circle",
+          "title": "Conversion Tracking",
+          "body": "Consultation requests tracked so you see real project leads, not just clicks."
+        },
+        {
+          "icon": "sliders",
+          "title": "Budget Pacing",
+          "body": "Spend managed so your budget concentrates on the searches most likely to build."
+        },
+        {
+          "icon": "badge-check",
+          "title": "High-Intent Targeting",
+          "body": "Bidding focused on the searches that signal a real, ready-to-invest project."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Reporting",
+          "body": "Clear reporting that ties spend to consultations and cost per booked project."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "Fewer, better consultations, ~worth real money~",
+      "paragraph": "When a single build is worth tens of thousands, the goal isn't a flood of leads, it's a handful of qualified consultations with homeowners ready to commit. Paid search gets you in front of them the moment they start pricing a project, while SEO and your portfolio build the long-term trust. Run together, they keep your build calendar full of the high-ticket work that makes the year.",
+      "checklist": [
+        "Consultations with buyers actively pricing a project, not browsing",
+        "Spend concentrated on high-ticket intent, not cheap clicks",
+        "Paid speed now, with SEO and portfolio building trust over time"
+      ],
+      "imageHint": "A finished paver patio with an outdoor kitchen and seating area",
+      "image": "hardscape-patio.webp",
+      "imageAlt": "A finished paver patio with an outdoor kitchen and built-in seating"
+    },
+    "faqQuestions": [
+      "How is Google Ads for outdoor living different from outdoor living SEO?",
+      "Can Google Ads really work for high-ticket design-build projects?",
+      "How do you filter out the bargain-hunters and DIY searches?",
+      "How fast do Google Ads start producing consultations?",
+      "How do you prove the ad spend turns into real projects?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get qualified projects ~into your pipeline~",
+      "paragraph": "Book a free strategy call and we'll look at what you're spending today, how to point it at serious high-ticket project searches, and what a qualified Google Ads program could bring into your outdoor living build calendar.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "google-ads",
+      "local-seo",
+      "website-design",
+      "meta-ads"
+    ],
+    "industrySlug": "outdoor-living",
+    "industryName": "Outdoor Living",
+    "faqAnswers": [
+      "They work on different timelines. Google Ads put you in front of homeowners actively pricing a project today, with tight control over which searches you pay for, so qualified consultations can start within days. Outdoor living SEO is the compounding play that builds durable rankings and lets your portfolio earn trust over months. For high-ticket work, ads bring speed and qualification while SEO and your portfolio build the long-term authority, so most companies run both.",
+      "Yes, as long as it's run for qualification instead of volume. High-ticket buyers are searching, the trick is making sure you pay for the serious ones and not the price-shoppers. We target high-intent project searches, filter out bargain and DIY terms, and send clicks to portfolio-led pages, so even a small number of consultations can be worth a lot.",
+      "Mostly through negative keywords and intent targeting. We build and maintain a list of the bargain, cheap, and DIY terms to exclude, and focus bidding on the searches that signal a real project and budget. Then conversion tracking shows which clicks actually became consultations, so we keep tightening toward the serious buyers.",
+      "Quickly, usually within days, which is the main reason to run ads alongside SEO. The early weeks gather data and tighten qualification, then we optimize toward a steady, predictable cost per booked consultation.",
+      "We track every consultation request as a conversion, tie it back to the campaign and keyword that produced it, and report on cost per consultation and cost per booked project. On high-ticket work, even a few signed builds make the spend easy to judge."
     ]
   }
 ]
