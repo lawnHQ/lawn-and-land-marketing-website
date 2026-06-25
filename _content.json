@@ -796,5 +796,119 @@
       "It depends on what you're running. Our automations are built into the CRM we set up for managing your leads, but we can often adapt the process to work with the CRM and systems you already use. We'll find the right fit on your strategy call.",
       "When you miss a call, the caller instantly gets a friendly text from your business. That keeps them from dialing your competitor next, opens a text conversation while they're still interested, and buys you time to call back without losing the job."
     ]
+  },
+  {
+    "slug": "lawn-care-seo",
+    "serviceName": "Lawn Care SEO",
+    "title": "SEO for Lawn Care Companies | Lawn & Land Marketing",
+    "metaDescription": "SEO built only for lawn care companies. Rank for the fertilization, weed control, and \"lawn care near me\" searches that fill recurring routes. Book a free strategy call.",
+    "schemaServiceType": "Lawn Care SEO",
+    "schemaDescription": "Search engine optimization built exclusively for lawn care companies, covering keyword and service-area targeting for lawn programs (fertilization, weed control, mowing, aeration), dedicated service and city pages, on-page and technical SEO, Google Business Profile alignment, and rank tracking focused on recurring-revenue lead flow.",
+    "heroEyebrow": "Lawn Care SEO",
+    "h1": "Be the Lawn Care Company Homeowners ~Find First~",
+    "heroSubhead": "When a homeowner searches \"lawn care near me\" or \"fertilization service\" in your town, the company at the top of Google wins the recurring contract. Lawn care SEO gets your business ranking for the searches that fill your routes, season after season.",
+    "conviction": {
+      "stat": "46",
+      "statUnit": "%",
+      "lead": "Nearly half of all Google searches are local, like a homeowner looking for lawn care nearby.",
+      "sub": "If your company isn't ranking for those lawn care searches, the recurring-program customers behind them are signing with whoever is.",
+      "statSource": "Google"
+    },
+    "showcaseA": {
+      "eyebrow": "What we build",
+      "headline": "SEO built around ~the lawn programs you want to sell~",
+      "paragraph": "Lawn care isn't one service, it's a season of them, and each one is its own search. We map your fertilization, weed control, mowing, aeration, and pest programs to the towns you actually cover, then build the pages and signals Google needs to rank you for each. No generic landscaping fluff, no markets you can't service, just dedicated pages built to pull in recurring customers.",
+      "checklist": [
+        "Keyword targeting for every lawn program you offer, from fertilization to aeration",
+        "Dedicated service and city pages for the routes you want to fill",
+        "On-page and technical SEO so Google can crawl, read, and trust your site"
+      ],
+      "imageHint": "Phone showing a 'lawn care near me' Google result with the client's lawn care company ranking in the map pack and the #1 organic spot",
+      "image": "local-seo-results.webp",
+      "imageAlt": "Lawn care search results on a phone with a lawn care company ranking at the top of Google",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "Stop losing recurring contracts to the company ~ranking above you~",
+      "featuredBody": "You do the better work, but the homeowner searching today is calling whoever sits at the top of Google. Ranking for lawn care searches isn't a one-time trick, it's the steady, behind-the-scenes work of pages, listings, and signals all pointing the same direction. We handle that so you can stay on the mowers and out on the route.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Lawn Keyword Targeting",
+          "body": "We find the exact searches homeowners use to hire fertilization, weed control, and mowing help."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Service-Area Pages",
+          "body": "Dedicated city pages for the routes you want to fill, so each market can rank on its own."
+        },
+        {
+          "icon": "file-text",
+          "title": "Program Pages",
+          "body": "A focused page for every lawn program you sell, written to match what homeowners search."
+        },
+        {
+          "icon": "sliders",
+          "title": "On-Page SEO",
+          "body": "Titles, headings, and content optimized so Google understands every page clearly."
+        },
+        {
+          "icon": "zap",
+          "title": "Technical SEO",
+          "body": "Clean structure and fast loads that help search engines crawl and trust your site."
+        },
+        {
+          "icon": "link",
+          "title": "Local Citations",
+          "body": "Consistent name, address, and phone across the directories Google checks."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Rank Tracking",
+          "body": "Ongoing reporting that shows where you rank and how your visibility is trending."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "Rankings that turn into ~routes that fill themselves~",
+      "paragraph": "Lawn care is a recurring-revenue business, so a single ranking can pay you back for years. We build every page to point a homeowner toward calling or requesting a quote, and we align it with your Google Business Profile so your listing and site reinforce each other. The goal isn't vanity rankings, it's a steady stream of program customers who renew season after season.",
+      "checklist": [
+        "Pages built to convert searchers into calls and quote requests",
+        "Content that answers what homeowners ask before signing a lawn contract",
+        "Google Business Profile aligned with your site so both work together"
+      ],
+      "imageHint": "A healthy striped green lawn maintained by a professional lawn care crew",
+      "image": "lawn-care-service.webp",
+      "imageAlt": "A healthy, well-manicured green lawn maintained by a professional lawn care company"
+    },
+    "faqQuestions": [
+      "How long does lawn care SEO take to start bringing in customers?",
+      "Is lawn care SEO different from regular local SEO?",
+      "Can you rank my lawn care company in every town on my routes?",
+      "Do I need a new website, or can you optimize the one I have?",
+      "How do you prove lawn care SEO is actually generating leads?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your lawn care company ~ranking where the routes are~",
+      "paragraph": "Book a free strategy call and we'll look at where your lawn care company shows up today, where the gaps are, and what it would take to own the lawn care searches across your service area.",
+      "note": "Free strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "local-seo",
+      "google-ads",
+      "gbp-management",
+      "website-design"
+    ],
+    "faqAnswers": [
+      "It depends on your market: population, competition, keyword difficulty, and the momentum you already have. SEO is the slowest part of your marketing, but over time it becomes the most effective and the hardest for competitors to take from you. As a general range, expect 6 to 12 months before organic search is a real, steady source of lawn care leads, with smaller wins along the way.",
+      "Same foundation, sharper focus. Lawn care SEO is local SEO built specifically around lawn programs, the seasonal way homeowners search for them, and the recurring-revenue math that makes a lawn care customer worth far more than a single job. We target fertilization, weed control, mowing, and aeration searches the way a lawn care owner would, not the way a generalist agency would.",
+      "Yes. We target every town on your routes, building out your site and local presence so you show up across your whole service footprint, not just the city your shop sits in, which keeps your trucks dense and efficient.",
+      "For SEO to really work it needs the right foundation, which is why we build new. We don't patch existing sites, because the problems are usually buried in the code where they quietly hold rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change.",
+      "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual lawn care leads, not just traffic."
+    ]
   }
 ]

@@ -74,7 +74,7 @@ SERVICE_MAP = {
 # website-design exemplar) for consistent text contrast + on-brand look. The
 # per-service 0X-*.jpg files are light UI screenshots, better as showcase
 # content than hero backgrounds.
-HERO_IMG = {s: 'programs-hero.jpg' for s in (
+HERO_IMG = {s: 'programs-hero.webp' for s in (
   'website-design', 'local-seo', 'gbp-management', 'google-ads',
   'meta-ads', 'your-ai-partner', 'reputation-management', 'automation')}
 
@@ -114,7 +114,7 @@ def svg(key):
 def build_main(c):
     slug = c['slug']
     name = c['serviceName']
-    img = HERO_IMG.get(slug, 'programs-hero.jpg')
+    img = HERO_IMG.get(slug, 'programs-hero.webp')
 
     crumbs = (f'<div class="crumbs"><a href="/">Home</a><span>/</span>'
               f'<a href="/marketing-services/">Marketing Services</a><span>/</span>'
