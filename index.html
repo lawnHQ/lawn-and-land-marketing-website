@@ -4,13 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google tag (GA4: Lawn & Land Marketing) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFEP2769DS"></script>
+  <!-- Google tag (GA4: Lawn & Land Marketing) — loaded after first paint to protect mobile LCP/TBT -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HFEP2769DS');
+    function loadGa4(){
+      if (window.__llGa4Loaded) return;
+      window.__llGa4Loaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-HFEP2769DS';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-HFEP2769DS');
+    }
+    window.addEventListener('load', function(){
+      if ('requestIdleCallback' in window) requestIdleCallback(loadGa4, { timeout: 1800 });
+      else setTimeout(loadGa4, 1200);
+    }, { once: true });
   </script>
   <title>Landscaping Marketing Agency | Lawn & Land Marketing</title>
   <meta name="description" content="The only digital marketing agency built exclusively for lawn care &amp; landscaping companies: websites, SEO, Google Ads &amp; Meta Ads. Book a free strategy call.">
@@ -451,8 +462,8 @@
             <!-- Custom thumbnail facade, click to play -->
             <div class="video-facade" id="videoFacade">
               <img
-                src="/assets/images/hero-video-poster-640.webp"
-                srcset="/assets/images/hero-video-poster-480.webp 480w, /assets/images/hero-video-poster-640.webp 640w, /assets/images/hero-video-poster-768.webp 768w, /assets/images/hero-video-poster-960.webp 960w, /assets/images/hero-video-poster.webp 1280w"
+                src="/assets/images/hero-video-poster-480.webp"
+                srcset="/assets/images/hero-video-poster-480.webp 480w"
                 sizes="(max-width: 768px) 88vw, 50vw"
                 alt="Watch: Welcome to Lawn & Land Marketing"
                 class="video-poster"
@@ -609,7 +620,7 @@
         <div class="services-panel-wrap">
           <div class="svc-panel active" data-panel="websites">
             <div class="svc-panel-img">
-              <img src="/assets/images/01-website-design-512.webp" srcset="/assets/images/01-website-design-384.webp 384w, /assets/images/01-website-design-512.webp 512w, /assets/images/01-website-design-768.webp 768w, /assets/images/01-website-design.webp 1200w" sizes="(max-width: 768px) 88vw, 374px" alt="Landscaping website design showcase, Lawn & Land Marketing" loading="lazy" decoding="async" width="512" height="512">
+              <img src="/assets/images/01-website-design-384.webp" srcset="/assets/images/01-website-design-384.webp 384w, /assets/images/01-website-design-512.webp 512w" sizes="374px" alt="Landscaping website design showcase, Lawn & Land Marketing" loading="lazy" decoding="async" width="512" height="512">
             </div>
             <div class="svc-panel-content">
               <h3>Websites That Convert Visitors Into Booked Jobs</h3>
