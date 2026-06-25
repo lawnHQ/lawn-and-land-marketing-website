@@ -206,11 +206,11 @@ def build_main(c):
   <section class="svc-includes">
     <div class="container">
       <span class="svc-eyebrow">What's included</span>
-      <h2>{esc(name)}, <em>fully handled</em>.</h2>
-      <p class="section-sub">No guesswork, no surprises: the standard pieces that make this work for a lawn care or landscaping company, built and managed for you.</p>
+      <h2>{esc(name)}, <em>fully handled.</em></h2>
+      <p class="section-sub">No guesswork, no surprises: the standard pieces that make this work, built and managed for you.</p>
       <div class="includes-grid">
-        {feat}
         {cards}
+        {feat}
       </div>
     </div>
   </section>'''
@@ -225,7 +225,7 @@ def build_main(c):
       <div class="svc-faq-inner">
         <div class="svc-faq-head">
           <span class="svc-eyebrow">FAQ</span>
-          <h2>{esc(name)}, <em>answered</em>.</h2>
+          <h2>{esc(name)}, <em>answered.</em></h2>
           <p>The questions we hear most from owners before they get started.</p>
           <a href="/contact/" class="btn btn--ghost-lime btn--sm">Still have questions? &rarr;</a>
         </div>
