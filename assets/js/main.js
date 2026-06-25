@@ -70,7 +70,7 @@ if (cycleEl) {
   // Set initial transition
   cycleEl.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
 
-  if (!reduceMotion) setInterval(() => {
+  const rotateHeroWord = () => {
     // Slide out current word upward
     cycleEl.style.opacity = '0';
     cycleEl.style.transform = 'translateY(-18px)';
@@ -88,7 +88,11 @@ if (cycleEl) {
       cycleEl.style.opacity = '1';
       cycleEl.style.transform = 'translateY(0)';
     }, 420);
-  }, 3400);
+  };
+
+  if (!reduceMotion) {
+    window.setTimeout(() => setInterval(rotateHeroWord, 3400), 8000);
+  }
 }
 
 // ─ VIDEO FACADE ─
