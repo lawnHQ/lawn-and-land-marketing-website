@@ -2,24 +2,24 @@
   {
     "slug": "local-seo",
     "serviceName": "Local SEO",
-    "title": "Local SEO for Lawn Care & Landscaping | Lawn & Land Marketing",
-    "metaDescription": "Local SEO built for lawn care and landscaping companies. Rank in Google's map pack and organic results so nearby homeowners find and book you first.",
+    "title": "Local SEO for Green-Industry Companies | Lawn & Land Marketing",
+    "metaDescription": "Local SEO built for green-industry companies. Rank in Google's map pack and organic results so nearby customers find and book your services first.",
     "schemaServiceType": "Local SEO",
-    "schemaDescription": "Local search engine optimization built exclusively for lawn care and landscaping companies, covering service-area targeting, dedicated service and city pages, on-page and technical SEO, local citations, Google Business Profile alignment, and rank tracking.",
+    "schemaDescription": "Local search engine optimization built for green-industry and outdoor-service companies, covering service-area targeting, dedicated service and city pages, on-page and technical SEO, local citations, Google Business Profile alignment, and rank tracking.",
     "heroEyebrow": "Local SEO",
-    "h1": "Get Found First When Homeowners Search for a Landscaper Near Them",
-    "heroSubhead": "When someone searches \"landscaper near me\" or \"lawn care in your town,\" you want to be the name they see. Local SEO puts your lawn care and landscaping company at the top of Google's map pack and organic results in the areas you actually serve.",
+    "h1": "Get Found First When Customers Search for Your Services ~Near Them~",
+    "heroSubhead": "When someone searches for the work you do \"near me,\" you want to be the name they see. Local SEO puts your green-industry company at the top of Google's map pack and organic results in the areas you actually serve.",
     "conviction": {
       "stat": "98",
       "statUnit": "%",
-      "lead": "Almost every homeowner reads online reviews before choosing a local business.",
-      "sub": "If your lawn care or landscaping company isn't ranking for local searches, homeowners never reach the listing and reviews that would have won the job.",
+      "lead": "Almost every customer reads online reviews before choosing a local company.",
+      "sub": "If your company isn't ranking for local searches, customers never reach the listing and reviews that would have won the job.",
       "statSource": "BrightLocal"
     },
     "showcaseA": {
       "eyebrow": "What we build",
-      "headline": "A search presence built around ~the towns you actually serve~",
-      "paragraph": "We map every service you offer to every city you cover, then build the pages and signals Google needs to rank you. No spray-and-pray keywords, no markets you can't reach. Just dedicated service and city pages, clean on-page optimization, and a technical foundation that makes your landscaping company the obvious local answer.",
+      "headline": "A search presence built around ~the areas you actually serve~",
+      "paragraph": "We map every service you offer to every city you cover, then build the pages and signals Google needs to rank you. No spray-and-pray keywords, no markets you can't reach. Just dedicated service and city pages, clean on-page optimization, and a technical foundation that makes your company the obvious local answer.",
       "checklist": [
         "Keyword and service-area targeting matched to the work you want more of",
         "Dedicated service pages and city pages for the markets you cover",
@@ -27,19 +27,19 @@
       ],
       "imageHint": "Screenshot of a Google search results page showing the client's landscaping company ranking in the local map pack plus the #1 organic result for a 'city + landscaper' query",
       "image": "local-seo-results.webp",
-      "imageAlt": "Local 'landscapers near me' search results on a phone with a landscaping company ranking at the top",
+      "imageAlt": "Local 'near me' search results on a phone with a green-industry company ranking at the top",
       "imageAspect": "4 / 3"
     },
     "includes": {
       "featuredKicker": "The difference",
-      "featuredHeadline": "Stop being ~invisible~ in the towns where the jobs are",
-      "featuredBody": "You do great work, but the calls are going to the companies sitting at the top of Google. Ranking for local searches isn't luck or a one-time trick. It's the steady, behind-the-scenes work of pages, listings, and signals all pointing the same direction. We handle that part so you can stay on the truck and out on the job.",
+      "featuredHeadline": "Stop being ~invisible~ in the markets where the jobs are",
+      "featuredBody": "You do great work, but the calls are going to the companies sitting at the top of Google. Ranking for local searches isn't luck or a one-time trick. It's the steady, behind-the-scenes work of pages, listings, and signals all pointing the same direction. We handle that part so you can stay out on the job.",
       "featuredTag": "Done-for-you",
       "cards": [
         {
           "icon": "search",
           "title": "Keyword Targeting",
-          "body": "We find the searches homeowners actually use to hire lawn care and landscaping help."
+          "body": "We find the exact searches customers use to find and hire local companies like yours."
         },
         {
           "icon": "map-pin",
@@ -75,42 +75,42 @@
     },
     "showcaseB": {
       "eyebrow": "How it pays off",
-      "headline": "Rankings that turn into ~booked estimates~, not just traffic",
-      "paragraph": "Showing up is only half of it. We align your pages with your Google Business Profile so the listing homeowners click matches the site they land on, and every page is built to point a visitor toward calling or requesting a quote. The goal isn't vanity rankings. It's a steady stream of local lawn care and landscaping leads that actually fill your schedule.",
+      "headline": "Rankings that turn into ~booked jobs~, not just traffic",
+      "paragraph": "Showing up is only half of it. We align your pages with your Google Business Profile so the listing customers click matches the site they land on, and every page is built to point a visitor toward calling or requesting a quote. The goal isn't vanity rankings. It's a steady stream of local leads that actually fill your schedule.",
       "checklist": [
         "Google Business Profile aligned with your site so your listing and pages reinforce each other",
-        "Content that answers what local homeowners ask before they hire a landscaper",
+        "Content that answers what local customers ask before they hire",
         "Pages built to convert searchers into calls and quote requests"
       ],
       "imageHint": "Screenshot of a rank-tracking dashboard showing keyword positions climbing over time, alongside a Google Business Profile listing with strong reviews",
       "image": "lawn-care-service.webp",
-      "imageAlt": "A healthy, well-manicured green lawn maintained by a professional lawn care company"
+      "imageAlt": "A well-maintained property cared for by a professional green-industry company"
     },
     "faqQuestions": [
-      "How long does it take for a landscaping company to start ranking in local search?",
-      "What's the difference between local SEO and the Google map pack for lawn care businesses?",
-      "Can you help my landscaping company rank in more than one city or town?",
+      "How long does it take to start ranking in local search?",
+      "What's the difference between local SEO and the Google map pack?",
+      "Can you help my company rank in more than one city or town?",
       "Do I need a new website for local SEO, or can you optimize the one I have?",
       "How do you measure whether local SEO is actually bringing in more leads?"
     ],
     "cta": {
       "eyebrow": "Ready to get found",
       "headline": "Let's get your company ~ranking where the jobs are~",
-      "paragraph": "Book a free strategy call and we'll look at where your lawn care or landscaping company shows up today, where the gaps are, and what it would take to own the searches in your service area.",
+      "paragraph": "Book a free strategy call and we'll look at where your company shows up today, where the gaps are, and what it would take to own the searches in your service area.",
       "note": "Free strategy call. No pressure, no obligation."
     },
     "relatedSlugs": [
+      "lawn-care-seo",
       "gbp-management",
       "website-design",
-      "google-ads",
-      "reputation-management"
+      "google-ads"
     ],
     "faqAnswers": [
       "It depends on your market: population, competition, keyword difficulty, and the momentum you already have all play a part. SEO is the slowest part of your digital marketing, but over time it becomes the most effective, and the hardest for competitors to take from you. As a general range, expect 6 to 12 months before organic search is making a real, steady impact.",
-      "They're related but separate. Local SEO is the broader work of getting your website to rank in the regular (organic) search results for your services and service areas. The map pack is the block of three businesses with the little map that shows near the top of local searches, and it's driven mainly by your Google Business Profile, your reviews, and proximity. You want both: the map pack for fast, high-intent visibility, and organic SEO for the staying power underneath it. We work them together.",
+      "They're related but separate. Local SEO is the broader work of getting your website to rank in the regular (organic) results for your services and service areas. The map pack is the block of three businesses with the little map near the top of local searches, driven mainly by your Google Business Profile, your reviews, and proximity. You want both, and we work them together.",
       "Absolutely. We target every area you actually serve, building out your site and local presence so you show up across your whole service footprint, not just the town your office sits in.",
-      "For local SEO to really work, it needs the right foundation, which is why we build new. We don't optimize or rebuild existing sites, because too often the problems are buried in the code where they quietly hold your rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change, so your SEO stands on solid ground from day one.",
-      "We track the top of the funnel with tools like Google Search Console and Google Analytics to watch impressions, clicks, and rankings climb. Then we tie it to real results: form submissions, and phone calls tracked through a dedicated number on your site, so you see actual leads, not just traffic."
+      "For local SEO to really work, it needs the right foundation, which is why we build new. We don't optimize or rebuild existing sites, because too often the problems are buried in the code where they quietly hold your rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change.",
+      "We track impressions, clicks, and rankings in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual leads, not just traffic."
     ]
   },
   {

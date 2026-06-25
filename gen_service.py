@@ -68,6 +68,7 @@ SERVICE_MAP = {
   'your-ai-partner': ('Your AI Partner', 'bot'),
   'reputation-management': ('Reputation Management', 'star'),
   'automation': ('CRM & Automation', 'refresh-ccw'),
+  'lawn-care-seo': ('Lawn Care SEO', 'search'),
 }
 
 # Use the proven dark hero photo across all service pages (matches the locked
@@ -129,7 +130,7 @@ def build_main(c):
         <h1>{esc(c['h1'])}</h1>
         <p>{esc(c['heroSubhead'])}</p>
         <div class="hero-actions">
-          <a href="/get-started/book-strategy-call/" class="btn btn--lime">{CAL_ICON} Schedule Strategy Call</a>
+          <a href="/get-started/book-strategy-call/" class="btn btn--lime">{CAL_ICON} Book a Free Strategy Call</a>
           <a href="/contact/" class="btn btn--ghost">{MSG_ICON} Contact Us</a>
         </div>
       </div>

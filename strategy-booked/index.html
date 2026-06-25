@@ -554,6 +554,7 @@
   (function(){
     var v=document.getElementById('vsl-video'), b=document.getElementById('vsl-unmute');
     if(!v) return;
+    if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){ try{ v.pause(); v.removeAttribute('autoplay'); v.currentTime=0; }catch(e){} return; }
     function show(){ if(b) b.style.display='inline-flex'; }
     function hide(){ if(b) b.style.display='none'; }
     function withSound(){ v.muted=false; try{v.currentTime=0;}catch(e){} var p=v.play(); if(p&&p.catch)p.catch(function(){}); hide(); }
