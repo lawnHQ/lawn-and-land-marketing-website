@@ -291,8 +291,7 @@ def build_page(template, c):
     schema = {
         "@context": "https://schema.org", "@type": "Service",
         "name": name, "serviceType": c['schemaServiceType'],
-        "provider": {"@type": "Organization", "name": "Lawn & Land Marketing",
-                     "url": "https://lawnandlandmarketing.com"},
+        "provider": {"@id": "https://lawnandlandmarketing.com/#organization"},
         "areaServed": "United States", "description": c['schemaDescription'],
     }
     schema_tag = '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False, separators=(',', ':')) + '</script>'
