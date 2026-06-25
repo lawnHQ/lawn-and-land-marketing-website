@@ -1,67 +1,1254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Homepage Performance Lab | Lawn & Land Marketing</title>
-  <meta name="description" content="A performance-lab recreation of the Lawn & Land Marketing homepage built to test the path to perfect PageSpeed scores without changing production.">
-  <link rel="canonical" href="https://lawnandlandmarketing.com/performance-lab/homepage-100/">
-  <meta name="theme-color" content="#191919">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ace71d'/%3E%3Cpath d='M10 23V8h4v11h8v4z' fill='%23191919'/%3E%3C/svg%3E">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google tag (GA4: Lawn & Land Marketing) — loaded after first paint to protect mobile LCP/TBT -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    function loadGa4(){
+      if (window.__llGa4Loaded) return;
+      window.__llGa4Loaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-HFEP2769DS';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-HFEP2769DS');
+    }
+    window.addEventListener('load', function(){
+      if ('requestIdleCallback' in window) requestIdleCallback(loadGa4, { timeout: 1800 });
+      else setTimeout(loadGa4, 1200);
+    }, { once: true });
+  </script>
+  <title>Homepage Performance Lab Copy | Lawn & Land Marketing</title>
+  <meta name="description" content="The only digital marketing agency built exclusively for lawn care &amp; landscaping companies: websites, SEO, Google Ads &amp; Meta Ads. Book a free strategy call.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lawnandlandmarketing.com/">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Landscaping Marketing Agency | Lawn & Land Marketing">
+  <meta property="og:description" content="The only digital marketing agency built exclusively for lawn care &amp; landscaping companies: websites, SEO, Google Ads &amp; Meta Ads. Book a free strategy call.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lawnandlandmarketing.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://lawnandlandmarketing.com/assets/images/og-share.jpg?v=2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lawn &amp; Land Marketing: digital marketing built for the green industry.">
+  <meta name="twitter:image" content="https://lawnandlandmarketing.com/assets/images/og-share.jpg?v=2">
+  <meta name="twitter:title" content="Landscaping Marketing Agency | Lawn & Land Marketing">
+  <meta name="twitter:description" content="The only digital marketing agency built exclusively for lawn care &amp; landscaping companies: websites, SEO, Google Ads &amp; Meta Ads. Book a free strategy call.">
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/logo-badge.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://lawnandlandmarketing.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,600;1,700;1,800&family=Mulish:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MarketingAgency","@id":"https://lawnandlandmarketing.com/#organization","name":"Lawn & Land Marketing","description":"Digital marketing agency specializing exclusively in lawn care and landscaping companies.","url":"https://lawnandlandmarketing.com/","logo":"https://lawnandlandmarketing.com/assets/logos/logo-horizontal.svg","slogan":"Digital marketing built for the green industry.","areaServed":"United States","telephone":"+1-727-496-7098","address":{"@type":"PostalAddress","addressLocality":"St. Petersburg","addressRegion":"FL","addressCountry":"US"},"sameAs":["https://www.facebook.com/lawnandlandmarketing","https://www.instagram.com/lawnandlandmarketing","https://www.linkedin.com/company/lawn-and-land-marketing","https://www.youtube.com/@lawnandlandmarketing"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://lawnandlandmarketing.com/#website","url":"https://lawnandlandmarketing.com/","name":"Lawn & Land Marketing","publisher":{"@id":"https://lawnandlandmarketing.com/#organization"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do your programs work?","acceptedAnswer":{"@type":"Answer","text":"We offer two paths: the Growth Program for companies ready to tighten their foundation and create steady momentum, and the Authority Program for established companies ready to dominate more of their market. Both include everything: website, SEO, ads, automation, and an account manager who keeps the machine moving. The right fit depends on your goals, not your budget."}},{"@type":"Question","name":"Can you just build our website, or just run ads?","acceptedAnswer":{"@type":"Answer","text":"No, and we're upfront about it because we believe single-channel marketing doesn't deliver real growth. A great website with no traffic is wasted. Great ads with no follow-up system lose leads. Everything works together. If you want a one-off project, we're not the right fit. If you want to dominate your market, let's talk."}},{"@type":"Question","name":"Do you guarantee results?","acceptedAnswer":{"@type":"Answer","text":"We don't guarantee specific numbers, no one legally can, and any agency that does is lying to you. But results aren't optional. We install proven systems built for the green industry, and our Roadmap to Results shows exactly what to expect. If you follow the plan, growth is inevitable."}},{"@type":"Question","name":"How long before I see results?","acceptedAnswer":{"@type":"Answer","text":"Most clients see momentum in 60–90 days. Ads and GBP generate leads in the first 1–3 months. The real growth curve hits at 4–6 months, when your full digital ecosystem starts compounding. After 12 months is when year-over-year comparisons show the full picture."}},{"@type":"Question","name":"Is there a long-term contract?","acceptedAnswer":{"@type":"Answer","text":"Yes, a 12-month agreement that protects the investment we make building your website from scratch. If you leave before 12 months, the site reverts to its original state. After 12 months, your site is 100% yours, no matter what. Honestly, the contract rarely comes up: our 97%+ retention rate means once owners see the machine working, they stay far longer. And there's zero risk in just having the conversation, the strategy call is free, with no pitch and no obligation."}},{"@type":"Question","name":"How involved do I need to be?","acceptedAnswer":{"@type":"Answer","text":"You stay in the driver's seat but we do the heavy lifting. We need you at key milestones (branding, approvals, quarterly calls), but the machine runs without you. Most owners spend 1–2 hours per month on marketing. You've got a business to run. Marketing is our job."}}]}</script>
+
+  <link rel="stylesheet" href="/assets/css/styles.css?v=153">
   <style>
-    :root{color-scheme:dark;--bg:#191919;--panel:#202020;--panel2:#242424;--text:#f7f7f2;--muted:#c8c8bd;--lime:#ace71d;--green:#5dca49;--line:rgba(255,255,255,.12);--max:1160px;--r:24px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:block}.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;z-index:99;background:#fff;color:#111;padding:10px 14px;border-radius:8px}.bar{background:linear-gradient(90deg,var(--lime),var(--green));color:#111;text-align:center;font-weight:800;font-size:.86rem;padding:10px 14px}.nav{position:sticky;top:0;z-index:10;background:rgba(25,25,25,.96);border-bottom:1px solid var(--line)}.navin{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:16px 20px}.brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:.02em}.mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--lime),var(--green));display:grid;place-items:center;color:#111;font-weight:950}.links{display:flex;gap:22px;align-items:center;font-size:.86rem;font-weight:800;color:#ddd}.hamb{display:none;border:1px solid var(--line);border-radius:10px;padding:8px 10px}.container{max-width:var(--max);margin:auto;padding:0 20px}.hero{padding:78px 0 42px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center}.eyebrow{display:inline-block;color:var(--lime);font-weight:900;letter-spacing:.13em;font-size:.78rem;margin-bottom:18px}.h1{font-size:clamp(3.3rem,8vw,6.7rem);line-height:.88;letter-spacing:-.07em;margin:0 0 22px;font-weight:950}.h1 span{color:var(--lime)}.sub{max-width:650px;color:var(--muted);font-size:clamp(1.08rem,2vw,1.28rem);margin:0 0 28px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 20px;border-radius:999px;font-weight:900;border:1px solid transparent}.primary{background:var(--lime);color:#111}.secondary{border-color:var(--line);background:#222;color:#fff}.trust{display:flex;gap:10px;flex-wrap:wrap;color:#dcdcd2;font-weight:800;font-size:.88rem}.trust b{color:#fff}.mock-video{aspect-ratio:16/9;border-radius:var(--r);background:radial-gradient(circle at 30% 20%,rgba(172,231,29,.24),transparent 34%),linear-gradient(135deg,#292929,#111);border:1px solid var(--line);box-shadow:0 24px 72px rgba(0,0,0,.42);display:grid;place-items:center;text-align:center;padding:26px}.play{width:68px;height:68px;border-radius:50%;background:var(--lime);color:#111;display:grid;place-items:center;font-size:30px;font-weight:950;margin:0 auto 14px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin:30px 0 70px}.stat{background:#1d1d1d;padding:28px;text-align:center}.stat strong{display:block;color:var(--lime);font-size:clamp(2rem,4vw,3rem);line-height:1}.stat span{font-weight:900;font-size:.78rem;color:#d7d7cd;letter-spacing:.09em}.section{padding:62px 0}.head{max-width:780px;margin:0 auto 32px;text-align:center}.kicker{color:var(--lime);font-weight:950;font-size:.78rem;letter-spacing:.13em}.h2{font-size:clamp(2.25rem,5vw,4.6rem);line-height:.95;letter-spacing:-.055em;margin:10px 0 14px;font-weight:950}.lead{color:var(--muted);font-size:1.08rem}.industry-grid,.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.tile,.card{background:linear-gradient(180deg,var(--panel),#1c1c1c);border:1px solid var(--line);border-radius:20px;padding:20px;min-height:112px}.tile{display:flex;align-items:end;font-weight:950}.card h3{font-size:1.35rem;line-height:1.05;margin:0 0 10px}.card p{color:var(--muted);margin:0}.service{display:grid;grid-template-columns:.9fr 1.1fr;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--panel)}.service-art{aspect-ratio:1;background:radial-gradient(circle at 35% 25%,rgba(172,231,29,.28),transparent 28%),linear-gradient(135deg,#303030,#121212);display:grid;place-items:center}.screen{width:72%;aspect-ratio:4/3;border:1px solid rgba(255,255,255,.22);border-radius:16px;background:#111;padding:12px}.screen div{height:12px;border-radius:999px;background:var(--lime);margin:10px}.service-copy{padding:34px}.results{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.result{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r)}.metric{font-size:2.55rem;line-height:1;color:var(--lime);font-weight:950}.programs{display:grid;grid-template-columns:1fr 1fr;gap:18px}.program{background:linear-gradient(180deg,#242424,#1b1b1b);border:1px solid var(--line);border-radius:var(--r);padding:30px}.program ul{padding-left:20px;color:var(--muted)}.cta{margin:64px 0 30px;padding:44px;border-radius:30px;background:linear-gradient(135deg,var(--lime),var(--green));color:#111;text-align:center}.cta h2{font-size:clamp(2rem,5vw,4rem);line-height:.95;margin:0 0 12px}.cta p{max-width:680px;margin:0 auto 22px;font-weight:700}.cta .btn{background:#111;color:#fff}.footer{border-top:1px solid var(--line);padding:36px 0;color:#aaa}.footer .container{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}@media(max-width:820px){.links{display:none}.hamb{display:block}.hero{padding:52px 0 32px}.hero-grid,.service,.programs{grid-template-columns:1fr}.mock-video{margin-top:10px}.stats,.results{grid-template-columns:1fr}.industry-grid,.cards{grid-template-columns:1fr 1fr}.stat{padding:22px}.service-copy{padding:24px}}@media(max-width:520px){.h1{font-size:3.35rem}.industry-grid,.cards{grid-template-columns:1fr}.actions{display:grid}.btn{width:100%}.trust{font-size:.82rem}.section{padding:44px 0}.bar{font-size:.78rem}}
+    .mega-icon {
+      width: 22px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+    }
+
+    .mega-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: rgba(172,231,29,0.88);
+      fill: none;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .mega-grid.mega-grid--wide {
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.15fr) 240px;
+      gap: 10px;
+      min-width: 860px;
+    }
+
+    .mega-featured-card--compact h4 { max-width: 14ch; }
+
+    .nav-cta.nav-cta--primary {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      overflow: hidden;
+      padding: 9px 24px;
+      border: 1px solid rgba(172,231,29,0.24);
+      background: linear-gradient(135deg, #ace71d 0%, #d5ff67 100%);
+      box-shadow: 0 18px 40px rgba(172,231,29,0.22);
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 16px;
+    }
+
+    .nav-cta.nav-cta--primary::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 10%, rgba(255,255,255,0.4) 35%, transparent 60%);
+      transform: translateX(-150%);
+      animation: navCtaShimmer 4.8s ease-in-out infinite;
+    }
+
+    .nav-cta__label,
+    .nav-cta__icon {
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-cta__icon {
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-cta__icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: #0a1a00;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .nav-cta.nav-cta--primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 22px 46px rgba(172,231,29,0.28);
+    }
+
+    .nav-cta.nav-cta--primary:hover .nav-cta__icon {
+      transform: translateX(2px);
+    }
+
+    @keyframes navCtaShimmer {
+      0%, 72%, 100% { transform: translateX(-150%); }
+      82% { transform: translateX(150%); }
+    }
+
+    @media (max-width: 1080px) {
+      .mega-grid.mega-grid--wide {
+        grid-template-columns: 1fr 1fr;
+        min-width: 680px;
+      }
+
+      .mega-grid.mega-grid--wide .mega-col--featured {
+        grid-column: 1 / -1;
+      }
+
+      .mega-featured-card--compact h4 { max-width: none; }
+    }
+
+    @media (max-width: 768px) {
+      .mega-grid.mega-grid--wide {
+        grid-template-columns: 1fr;
+        min-width: 100%;
+      }
+
+      .nav-cta.nav-cta--primary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Homepage Performance Lab","url":"https://lawnandlandmarketing.com/performance-lab/homepage-100/","isPartOf":{"@type":"WebSite","name":"Lawn & Land Marketing","url":"https://lawnandlandmarketing.com/"}}</script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to main content</a>
-  <div class="bar">Free strategy call available. Book now to discuss your growth.</div>
-  <header class="nav" aria-label="Main navigation">
-    <div class="navin">
-      <a class="brand" href="/"><span class="mark" aria-hidden="true">L</span><span>Lawn &amp; Land</span></a>
-      <nav class="links" aria-label="Primary">
-        <a href="/about/">About</a><a href="/programs/">Programs</a><a href="/marketing-services/">Marketing Services</a><a href="/industries/">Industries</a><a href="/resources/blog/">Resources</a><a class="btn primary" href="/get-started/book-strategy-call/">Get Started</a>
-      </nav>
-      <span class="hamb" aria-hidden="true">☰</span>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    <a href="/get-started/book-strategy-call/" class="announcement-inner announcement-inner--link">
+      <span class="announcement-text"><svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:7px;"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>Free strategy call available. Book now to discuss your growth &nbsp;→</span>
+    </a>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/assets/logos/logo-horizontal.svg" alt="Lawn & Land Marketing" width="190" height="49">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a href="/" class="nav-link">Home</a>
+
+        <div class="nav-item nav-mega">
+          <button class="nav-link" type="button" aria-haspopup="true">About <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
+          <div class="mega-panel mega-panel--narrow">
+            <div class="mega-grid mega-grid--single">
+              <div class="mega-col">
+                <div class="mega-col-label">Who We Are</div>
+                <a href="/about/" class="mega-item mega-item--active">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 19c1.8-3.2 4.2-4.8 7-4.8s5.2 1.6 7 4.8"></path></svg></span>
+                  <span class="mega-item-text"><strong>About</strong><em>Our story, mission, and why this industry matters to us.</em></span>
+                </a>
+                <a href="/client-results/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"></line><line x1="6" y1="20" x2="6" y2="13"></line><line x1="12" y1="20" x2="12" y2="8"></line><line x1="18" y1="20" x2="18" y2="4"></line></svg></span>
+                  <span class="mega-item-text"><strong>Client Results</strong><em>The companies we've grown, their numbers, and full case studies.</em></span>
+                </a>
+                <a href="/resources/experiences-reviews/" class="mega-item mega-item--twilight">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.5 6.7 20l1-5.8L3.5 10l5.9-.9L12 4l2.6 5.1 5.9.9-4.2 4.2 1 5.8Z"></path></svg></span>
+                  <span class="mega-item-text"><strong>Experiences &amp; Testimonials</strong><em>See and hear what it's really like to work with us.</em></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item nav-mega">
+          <a href="/programs/" class="nav-link" aria-haspopup="true">Programs <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></a>
+          <div class="mega-panel">
+            <div class="mega-grid mega-grid--programs">
+              <a href="/programs/growth/" class="mega-item mega-item--growth">
+                <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"></path><path d="M10 20c5.5-2.5.8-6.4 3-10"></path><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"></path><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"></path></svg></span>
+                <span class="mega-item-text">
+                  <div class="mega-item-header">
+                    <span class="mega-target-pill mega-target-pill--growth">For 6-Figure Companies</span>
+                    <strong>Growth</strong>
+                  </div>
+                  <em>Traffic, lead flow, and demand generation for the next stage.</em>
+                </span>
+              </a>
+              <a href="/programs/authority/" class="mega-item mega-item--authority">
+                <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></span>
+                <span class="mega-item-text">
+                  <div class="mega-item-header">
+                    <span class="mega-target-pill mega-target-pill--authority">For 7-Figure Companies</span>
+                    <strong>Authority</strong>
+                  </div>
+                  <em>Build the category-leading brand in your market.</em>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item nav-mega">
+          <a href="/marketing-services/" class="nav-link" aria-haspopup="true">Marketing Services <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></a>
+          <div class="mega-panel">
+            <div class="mega-grid mega-grid--wide">
+              <div class="mega-col">
+                <div class="mega-col-label">Acquire Demand</div>
+                <a href="/marketing-services/website-design/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"></path><path d="M10 19v-3.96 3.15"></path><path d="M7 19h5"></path><rect width="6" height="10" x="16" y="12" rx="2"></rect></svg></span>
+                  <span class="mega-item-text"><strong>Website Design</strong><em>Turn the first click into the next booked estimate.</em></span>
+                </a>
+                <a href="/marketing-services/local-seo/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></span>
+                  <span class="mega-item-text"><strong>Local SEO</strong><em>Own the organic search results in the markets that matter.</em></span>
+                </a>
+                <a href="/marketing-services/gbp-management/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+                  <span class="mega-item-text"><strong>GBP Management</strong><em>Win more map-pack calls without guessing what Google wants.</em></span>
+                </a>
+                <a href="/marketing-services/google-ads/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+                  <span class="mega-item-text"><strong>Google Ads</strong><em>Capture intent from homeowners ready to hire now.</em></span>
+                </a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-label">Convert & Retain</div>
+                <a href="/marketing-services/meta-ads/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 13a3 3 0 1 0-6 0"></path><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><circle cx="12" cy="8" r="2"></circle></svg></span>
+                  <span class="mega-item-text"><strong>Meta Ads</strong><em>Stay in front of local homeowners before they search.</em></span>
+                </a>
+                <a href="/marketing-services/your-ai-partner/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><path d="M8 16h.01M16 16h.01"></path></svg></span>
+                  <span class="mega-item-text"><strong>Your AI Partner</strong><em>Operational leverage, smarter follow-up, and faster execution.</em></span>
+                </a>
+                <a href="/marketing-services/reputation-management/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 14.8 8.7 21 9.6l-4.5 4.4 1.1 6.1L12 17.2 6.4 20.1l1.1-6.1L3 9.6l6.2-.9Z"></path></svg></span>
+                  <span class="mega-item-text"><strong>Reputation Management</strong><em>Turn happy clients into proof that compounds.</em></span>
+                </a>
+                <a href="/marketing-services/automation/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path><path d="M16 16h5v5"></path></svg></span>
+                  <span class="mega-item-text"><strong>CRM &amp; Automation</strong><em>Capture every lead in one CRM and follow up automatically.</em></span>
+                </a>
+              </div>
+              <div class="mega-col mega-col--featured">
+                <div class="mega-featured-card">
+                  <span class="mega-featured-label">Built As One Machine</span>
+                  <div class="mega-fc-title">Most Companies Don’t Need Another Vendor.</div>
+                  <p>You need one connected system (website, SEO, ads, reviews, and follow-up) built to work together and run by a single team that owns the result.</p>
+                  <a href="/get-started/book-strategy-call/" class="mega-featured-btn">See What We’d Build →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item nav-mega">
+          <a href="/industries/" class="nav-link" aria-haspopup="true">Industries <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></a>
+          <div class="mega-panel">
+            <div class="mega-grid mega-grid--wide">
+              <div class="mega-col">
+                <div class="mega-col-label">Lawn &amp; Landscape</div>
+                <a href="/industries/landscaping/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"/><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-4"/><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"/><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"/></svg></span>
+                  <span class="mega-item-text"><strong>Landscaping</strong><em>Win higher-ticket design and install work with stronger proof.</em></span>
+                </a>
+                <a href="/industries/outdoor-living/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 9h18M3 15h18"/><path d="M9 3v6M15 3v6"/><path d="M12 9v6"/><path d="M9 15v6M15 15v6"/></svg></span>
+                  <span class="mega-item-text"><strong>Outdoor Living</strong><em>Showcase premium installs and justify premium pricing.</em></span>
+                </a>
+                <a href="/industries/lawn-care/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8Z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2Z"/></svg></span>
+                  <span class="mega-item-text"><strong>Lawn Care</strong><em>Recurring route density, retention, and seasonal demand.</em></span>
+                </a>
+                <a href="/industries/lawn-maintenance/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
+                  <span class="mega-item-text"><strong>Lawn Maintenance</strong><em>Lock in contracts, upsells, and year-round route value.</em></span>
+                </a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-label">Land &amp; Specialty</div>
+                <a href="/industries/land-clearing/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 12-8.5 8.5a2.12 2.12 0 1 1-3-3L11 9"/><path d="M15 13 9 7l4-4 6 6h3a8 8 0 0 1-7 7z"/></svg></span>
+                  <span class="mega-item-text"><strong>Land Clearing</strong><em>Capture project-based demand with local authority and speed.</em></span>
+                </a>
+                <a href="/industries/excavation/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22v-5l5-5 5 5-5 5z"/><path d="M9.5 14.5 16 8"/><path d="m17 2 5 5-.5.5a3.53 3.53 0 0 1-5 0 3.53 3.53 0 0 1 0-5L17 2"/></svg></span>
+                  <span class="mega-item-text"><strong>Excavation</strong><em>Project-based search demand with local trust as the wedge.</em></span>
+                </a>
+                <a href="/industries/septic-installation/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/></svg></span>
+                  <span class="mega-item-text"><strong>Septic Installation</strong><em>High-ticket installs and drainfield work, won on trust and proof.</em></span>
+                </a>
+                <a href="/industries/holiday-lighting/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/><path d="M5 3v4M19 17v4M3 5h4M17 19h4"/></svg></span>
+                  <span class="mega-item-text"><strong>Holiday Lighting</strong><em>Book a full season fast with urgency-driven local marketing.</em></span>
+                </a>
+              </div>
+              <div class="mega-col mega-col--featured">
+                <div class="mega-featured-card">
+                  <span class="mega-featured-label">Industry Focus</span>
+                  <div class="mega-fc-title">We Only Work In The Green Industry.</div>
+                  <p>That means faster messaging, smarter strategy, and fewer expensive learning curves on your dime.</p>
+                  <a href="/about/" class="mega-featured-btn">Why Specialization Wins →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item nav-mega">
+          <button class="nav-link" type="button" aria-haspopup="true">Resources <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
+          <div class="mega-panel">
+            <div class="mega-grid mega-grid--wide">
+              <div class="mega-col">
+                <div class="mega-col-label">Mow Money, Mow Problems</div>
+                <a href="/resources/mow-money-mow-problems-podcast/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="4" width="6" height="10" rx="3"></rect><path d="M6 11c0 3.3 2.7 6 6 6s6-2.7 6-6"></path><path d="M12 17v3"></path><path d="M9 20h6"></path></svg></span>
+                  <span class="mega-item-text"><strong>The Podcast</strong><em>Field-tested growth, ops &amp; marketing. Apply to guest.</em></span>
+                </a>
+                <a href="https://www.youtube.com/@MowMoneyMowProblemsPodcast" target="_blank" rel="noopener" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></span>
+                  <span class="mega-item-text"><strong>YouTube Channel</strong><em>Watch full episodes, clips, and how-tos.</em></span>
+                </a>
+                <a href="https://www.amazon.com/Mow-Money-Problems-Marketing-Landscape/dp/B0DRZ2XZXL" target="_blank" rel="noopener" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg></span>
+                  <span class="mega-item-text"><strong>The Book</strong><em>Our marketing playbook for lawn &amp; landscape companies.</em></span>
+                </a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-label">Learn &amp; Connect</div>
+                <a href="/resources/blog/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6.5h10"></path><path d="M7 11.5h10"></path><path d="M7 16.5h6"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg></span>
+                  <span class="mega-item-text"><strong>Green Industry Insights</strong><em>Sharp, practical growth advice on our blog.</em></span>
+                </a>
+                <a href="https://www.facebook.com/groups/serviceareaexperts" target="_blank" rel="noopener" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+                  <span class="mega-item-text"><strong>Private Facebook Group</strong><em>Service Area Experts: training, insight &amp; community.</em></span>
+                </a>
+                <a href="/contact/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5 12 13l8-5.5"></path><rect x="4" y="6" width="16" height="12" rx="2"></rect></svg></span>
+                  <span class="mega-item-text"><strong>Contact Us</strong><em>Start the conversation or ask your next question.</em></span>
+                </a>
+              </div>
+              <div class="mega-col mega-col--featured">
+                <a href="/resources/experiences-reviews/" class="mega-featured-card mega-featured-card--twilight">
+                  <div class="mega-fc-stars" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+                  <span class="mega-featured-label">Client Experiences</span>
+                  <div class="mega-fc-title">See what it's like to work with us.</div>
+                  <p>Real owners, real numbers: the testimonial videos and screenshots behind our results.</p>
+                  <span class="mega-featured-btn">See client experiences →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/get-started/book-strategy-call/" class="nav-cta nav-cta--primary magnetic">
+          <span class="nav-cta__label">Get Started</span>
+          <span class="nav-cta__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span>
+        </a>
+      </div>
     </div>
-  </header>
+  </nav>
+
   <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">LANDSCAPING MARKETING AGENCY</span>
-          <h1 class="h1">Digital Marketing<br>Built For<br><span>Landscaping &amp; Lawn Care Companies.</span></h1>
-          <p class="sub">We build the complete marketing engine, website, SEO, Google Ads, Meta Ads, and automation, so green industry businesses stop guessing and start dominating.</p>
-          <div class="actions"><a class="btn primary" href="/get-started/book-strategy-call/">Book Free Strategy Call</a><a class="btn secondary" href="/programs/">Explore Our Programs</a></div>
-          <div class="trust"><b>NALP Member</b><span>·</span><b>Google Partner</b><span>·</span><b>Industry Specialists</b></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>Landscaping Marketing Agency</span>
         </div>
-        <div class="mock-video" aria-label="Welcome video placeholder">
-          <div><div class="play">▶</div><strong>Watch: Welcome to Lawn &amp; Land Marketing</strong><p class="lead">A lightweight lab-safe video facade.</p></div>
+        <h1 class="hero-h1">
+          Digital Marketing<br>
+          <span class="hero-h1-gradient">Built For</span><br>
+          <span class="hero-cycle-wrap" aria-hidden="true"><span class="hero-cycle" id="heroCycle">Landscaping Companies.</span></span>
+          <span class="sr-only"> Landscaping &amp; Lawn Care Companies.</span>
+        </h1>
+        <p class="hero-sub">We build the complete marketing engine (website, SEO, Google Ads, Meta Ads, and automation) so green industry businesses stop guessing and start dominating.</p>
+        <div class="hero-actions">
+          <a href="/get-started/book-strategy-call/" class="btn btn--lime magnetic">Book Free Strategy Call</a>
+          <a href="/programs/" class="btn btn--ghost">Explore Our Programs <span>→</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-item">
+            <img src="/assets/logos/nalp-white-160.webp" srcset="/assets/logos/nalp-white-160.webp 160w, /assets/logos/nalp-white-240.webp 240w" sizes="66px" alt="NALP Member" class="proof-nalp-logo" width="160" height="44" decoding="async">
+          </div>
+          <span class="proof-sep">·</span>
+          <div class="proof-item">
+            <!-- Google G -->
+            <svg width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Google Partner
+          </div>
+          <span class="proof-sep">·</span>
+          <div class="proof-item">
+            <!-- Shield/badge icon -->
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L4 5v6c0 5.25 3.5 10.15 8 11.35C16.5 21.15 20 16.25 20 11V5l-8-3z" fill="rgba(172,231,29,0.15)" stroke="#ACE71D" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M9 12l2 2 4-4" stroke="#ACE71D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Industry Specialists
+          </div>
         </div>
       </div>
-      <div class="container stats" aria-label="Company proof points">
-        <div class="stat"><strong>97%+</strong><span>Client retention rate</span></div>
-        <div class="stat"><strong>100+</strong><span>Green industry companies served</span></div>
-        <div class="stat"><strong>12–16x</strong><span>Growth systems built to compound</span></div>
+
+      <!-- Right: Hero image + floating cards -->
+      <div class="hero-right" data-reveal="fade-left">
+        <div class="hero-img-wrap">
+          <div class="hero-video-wrap">
+            <!-- Custom thumbnail facade, click to play -->
+            <div class="video-facade" id="videoFacade">
+              <img
+                src="/assets/images/hero-video-poster-480.webp"
+                srcset="/assets/images/hero-video-poster-480.webp 480w"
+                sizes="(max-width: 768px) 88vw, 50vw"
+                alt="Watch: Welcome to Lawn & Land Marketing"
+                class="video-poster"
+                width="1280"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="video-facade-overlay"></div>
+              <button class="play-btn" aria-label="Play video">
+                <div class="play-btn-ring"></div>
+                <div class="play-btn-circle">
+                  <svg class="play-btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 4.5L20 12L6 19.5V4.5Z" fill="#0a1a00"/>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <iframe
+              id="heroIframe"
+              data-src="https://www.youtube.com/embed/At9XBN8fMCg?rel=0&modestbranding=1&color=white&enablejsapi=1&playsinline=1"
+              title="Welcome to Lawn & Land Marketing"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!-- Floating metric cards -->
+          <div class="float-card float-card--br" data-reveal="fade-up" data-delay="200">
+            <div class="float-card-num" data-count="97" data-suffix="%+">0</div>
+            <div class="float-card-label">Client Retention</div>
+          </div>
+        </div>
       </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="head"><span class="kicker">MARKETING EXPERTS FOR THE GREEN INDUSTRY</span><h2 class="h2">Industries We Serve</h2><p class="lead">We grow one kind of business: green industry companies. Pick your trade and we tailor the whole system to how your customers actually find and hire you.</p></div>
-        <div class="industry-grid"><a class="tile" href="/industries/landscaping/">Landscaping</a><a class="tile" href="/industries/outdoor-living/">Outdoor Living</a><a class="tile" href="/industries/lawn-care/">Lawn Care</a><a class="tile" href="/industries/lawn-maintenance/">Lawn Maintenance</a><a class="tile" href="/industries/land-clearing/">Land Clearing</a><a class="tile" href="/industries/excavation/">Excavation</a><a class="tile" href="/industries/septic-installation/">Septic Installation</a><a class="tile" href="/industries/holiday-lighting/">Holiday Lighting</a></div>
+    </div>
+
+    <!-- Ambient Glows (Chime-inspired) -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-glow-3"></div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar" data-reveal="fade-up">
+    <div class="stats-bar-inner">
+      <div class="stat">
+        <div class="stat-num"><span data-count="97" data-suffix="%+">97%+</span></div>
+        <div class="stat-label">Client Retention Rate</div>
       </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="head"><span class="kicker">WHAT WE DO</span><h2 class="h2">Everything Your Business Needs To Dominate Online</h2><p class="lead">Every service works together as one machine, because that is the only way it actually works.</p></div>
-        <div class="service"><div class="service-art" aria-hidden="true"><div class="screen"><div></div><div></div><div></div><div></div></div></div><div class="service-copy"><h3 class="h2" style="font-size:2.6rem">Websites That Convert Visitors Into Booked Jobs</h3><p class="lead">Your website is your 24/7 salesperson. We build custom, green industry-optimized sites engineered to rank on Google and turn traffic into phone calls.</p><p><a class="btn primary" href="/marketing-services/website-design/">Explore Website Design</a></p></div></div>
+      <div class="stat-div" aria-hidden="true"></div>
+      <div class="stat">
+        <div class="stat-num"><span data-count="100" data-suffix="+">100+</span></div>
+        <div class="stat-label">Green Industry Companies Served</div>
       </div>
-    </section>
-    <section class="section"><div class="container"><div class="head"><span class="kicker">REAL NUMBERS, REAL COMPANIES</span><h2 class="h2">Proof, Not Promises</h2><p class="lead">Real green industry companies, growing right now.</p></div><div class="results"><article class="result"><h3>Rock Solid Landscape</h3><p class="metric">$700K → $1.4M</p><p>Annual revenue, first year with us.</p></article><article class="result"><h3>Precision Landscape Management</h3><p class="metric">200 → 600/mo</p><p>Calls in the same month, one year later.</p></article><article class="result"><h3>From The Ground Up</h3><p class="metric">$1.8M → $3.2M</p><p>Annual revenue, after two years.</p></article></div></div></section>
-    <section class="section"><div class="container"><div class="head"><span class="kicker">PROGRAMS</span><h2 class="h2">Two Paths to Growth. Built for Different Stages.</h2><p class="lead">The right program depends on where you are now and how aggressively you want to grow.</p></div><div class="programs"><article class="program"><span class="kicker">FOR 6-FIGURE COMPANIES</span><h3>Growth Program</h3><p>For companies under $1M building the foundation that gets them to 7 figures.</p><ul><li>Website foundation</li><li>Local SEO and GBP</li><li>Lead follow-up system</li></ul><a class="btn secondary" href="/programs/growth/">Explore Growth</a></article><article class="program"><span class="kicker">FOR 7-FIGURE COMPANIES</span><h3>Authority Program</h3><p>For companies over $1M ready to dominate their market and scale toward 8 figures.</p><ul><li>Market expansion</li><li>Paid search and social</li><li>Compounding authority</li></ul><a class="btn secondary" href="/programs/authority/">Explore Authority</a></article></div></div></section>
-    <section class="container"><div class="cta"><h2>Ready to see what the whole machine could do?</h2><p>Book a free 20-minute strategy call. No pitch, no pressure, just clarity on what it takes to dominate your market.</p><a class="btn" href="/get-started/book-strategy-call/">Book a Free Strategy Call</a></div></section>
+      <div class="stat-div" aria-hidden="true"></div>
+      <div class="stat">
+        <div class="stat-num"><span>12–16x</span></div>
+        <div class="stat-label">Avg Revenue<br>Returned Per<br>$1 Invested</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES WE SERVE -->
+  <section class="industries-section" id="industries-served">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="eyebrow-label">Marketing Experts For The Green Industry</span>
+        <h2>Industries We Serve</h2>
+        <p>We grow one kind of business: green industry companies. Pick your trade and we tailor the whole system to how your customers actually find and hire you.</p>
+      </div>
+      <div class="industries-grid" data-reveal="fade-up">
+        <a href="/industries/landscaping/" class="industry-card">
+          <span class="industry-icon"><svg viewBox="0 0 24 24"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"/><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-4"/><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"/><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"/></svg></span>
+          <span class="industry-name">Landscaping</span>
+        </a>
+        <a href="/industries/outdoor-living/" class="industry-card">
+          <span class="industry-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 9h18M3 15h18"/><path d="M9 3v6M15 3v6"/><path d="M12 9v6"/><path d="M9 15v6M15 15v6"/></svg></span>
+          <span class="industry-name">Outdoor Living</span>
+        </a>
+        <a href="/industries/lawn-care/" class="industry-card">
+          <span class="industry-icon"><svg viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8Z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2Z"/></svg></span>
+          <span class="industry-name">Lawn Care</span>
+        </a>
+        <a href="/industries/lawn-maintenance/" class="industry-card">
+          <span class="industry-icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
+          <span class="industry-name">Lawn Maintenance</span>
+        </a>
+        <a href="/industries/land-clearing/" class="industry-card">
+          <span class="industry-icon"><svg viewBox="0 0 24 24"><path d="m14 12-8.5 8.5a2.12 2.12 0 1 1-3-3L11 9"/><path d="M15 13 9 7l4-4 6 6h3a8 8 0 0 1-7 7z"/></svg></span>
+          <span class="industry-name">Land Clearing</span>
+        </a>
+        <a href="/industries/excavation/" class="industry-card">
+          <span class="industry-icon"><svg viewBox="0 0 24 24"><path d="M2 22v-5l5-5 5 5-5 5z"/><path d="M9.5 14.5 16 8"/><path d="m17 2 5 5-.5.5a3.53 3.53 0 0 1-5 0 3.53 3.53 0 0 1 0-5L17 2"/></svg></span>
+          <span class="industry-name">Excavation</span>
+        </a>
+        <a href="/industries/septic-installation/" class="industry-card">
+          <span class="industry-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/></svg></span>
+          <span class="industry-name">Septic Installation</span>
+        </a>
+        <a href="/industries/holiday-lighting/" class="industry-card">
+          <span class="industry-icon"><svg viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/><path d="M5 3v4M19 17v4M3 5h4M17 19h4"/></svg></span>
+          <span class="industry-name">Holiday Lighting</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES: Interactive Tabs -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="eyebrow-label">What We Do</span>
+        <h2>Everything Your Business Needs<br>To Dominate Online</h2>
+        <p>We don't pick and choose. Every service works together as one machine, because that's the only way it actually works.</p>
+      </div>
+      <div class="services-tabs">
+        <!-- Tab list -->
+        <div class="services-tablist" role="tablist">
+          <button class="svc-tab active" data-tab="websites" role="tab">
+            <span class="svc-tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"></path><path d="M10 19v-3.96 3.15"></path><path d="M7 19h5"></path><rect width="6" height="10" x="16" y="12" rx="2"></rect></svg></span>
+            <span class="svc-tab-name">Website Design</span>
+          </button>
+          <button class="svc-tab" data-tab="local" role="tab">
+            <span class="svc-tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></span>
+            <span class="svc-tab-name">Local SEO</span>
+          </button>
+          <button class="svc-tab" data-tab="gbp" role="tab">
+            <span class="svc-tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+            <span class="svc-tab-name">GBP Management</span>
+          </button>
+          <button class="svc-tab" data-tab="google" role="tab">
+            <span class="svc-tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+            <span class="svc-tab-name">Google Ads</span>
+          </button>
+          <button class="svc-tab" data-tab="meta" role="tab">
+            <span class="svc-tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 13a3 3 0 1 0-6 0"></path><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path><circle cx="12" cy="8" r="2"></circle></svg></span>
+            <span class="svc-tab-name">Meta Ads</span>
+          </button>
+          <button class="svc-tab" data-tab="ai" role="tab">
+            <span class="svc-tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><path d="M8 16h.01M16 16h.01"></path></svg></span>
+            <span class="svc-tab-name">Your AI Partner</span>
+          </button>
+          <button class="svc-tab" data-tab="rep" role="tab">
+            <span class="svc-tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 14.8 8.7 21 9.6l-4.5 4.4 1.1 6.1L12 17.2 6.4 20.1l1.1-6.1L3 9.6l6.2-.9Z"></path></svg></span>
+            <span class="svc-tab-name">Reputation</span>
+          </button>
+          <button class="svc-tab" data-tab="auto" role="tab">
+            <span class="svc-tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"></path><path d="M16 16h5v5"></path></svg></span>
+            <span class="svc-tab-name">CRM &amp; Automation</span>
+          </button>
+        </div>
+
+        <!-- Tab panels -->
+        <div class="services-panel-wrap">
+          <div class="svc-panel active" data-panel="websites">
+            <div class="svc-panel-img">
+              <img src="/assets/images/01-website-design-384.webp" srcset="/assets/images/01-website-design-384.webp 384w, /assets/images/01-website-design-512.webp 512w" sizes="374px" alt="Landscaping website design showcase, Lawn & Land Marketing" loading="lazy" decoding="async" width="512" height="512">
+            </div>
+            <div class="svc-panel-content">
+              <h3>Websites That Convert Visitors Into Booked Jobs</h3>
+              <p>Your website is your 24/7 salesperson. We build custom, green industry-optimized sites engineered to rank on Google and turn traffic into phone calls.</p>
+              <ul class="svc-features">
+                <li>Built around your services, market, and growth goals</li>
+                <li>SEO architecture baked in from day one</li>
+                <li>Mobile-first, sub-1-second load speeds</li>
+                <li>Integrated lead capture and CRM connection</li>
+              </ul>
+              <a href="/marketing-services/website-design/" class="btn btn--outline-lime">Explore Website Design →</a>
+            </div>
+          </div>
+
+          <div class="svc-panel" data-panel="gbp">
+            <div class="svc-panel-img">
+              <img src="/assets/images/03-gbp-management.webp" alt="Google Business Profile management, Google Maps 3-pack for landscaping companies" loading="lazy">
+            </div>
+            <div class="svc-panel-content">
+              <h3>Own the Google Map Pack in Your Service Area</h3>
+              <p>Your Google Business Profile is the most powerful free tool in local marketing, and most landscaping companies aren't using it right. We optimize and manage it so you dominate the map results.</p>
+              <ul class="svc-features">
+                <li>Full GBP optimization: categories, services, photos</li>
+                <li>Weekly posts to signal activity to Google</li>
+                <li>Review generation and response management</li>
+                <li>Google Verified (LSA badge) management included</li>
+              </ul>
+              <a href="/marketing-services/gbp-management/" class="btn btn--outline-lime">Explore GBP Management →</a>
+            </div>
+          </div>
+
+          <div class="svc-panel" data-panel="local">
+            <div class="svc-panel-img">
+              <img src="/assets/images/02-local-seo.webp" alt="Local SEO keyword rankings dashboard for landscaping companies" loading="lazy">
+            </div>
+            <div class="svc-panel-content">
+              <h3>Rank Above Your Competition For Searches That Matter</h3>
+              <p>When homeowners search "landscaping company [your city]", you need to be on page one. We build the keyword authority, technical foundation, and local content strategy that gets you there and keeps you there.</p>
+              <ul class="svc-features">
+                <li>Keyword research targeting your exact services + cities</li>
+                <li>Monthly SEO content written by green industry experts</li>
+                <li>Technical SEO: site speed, schema markup, site health</li>
+                <li>Citation building and local authority development</li>
+              </ul>
+              <a href="/marketing-services/local-seo/" class="btn btn--outline-lime">Explore Local SEO →</a>
+            </div>
+          </div>
+
+          <div class="svc-panel" data-panel="google">
+            <div class="svc-panel-img">
+              <img src="/assets/images/04-google-ads.webp" alt="Google Ads campaign dashboard for landscaping companies" loading="lazy">
+            </div>
+            <div class="svc-panel-content">
+              <h3>PPC That Targets Homeowners Ready to Hire Today</h3>
+              <p>We run Google Ads campaigns engineered for the green industry, targeting the right searches at the right time, in your service area only.</p>
+              <ul class="svc-features">
+                <li>Search campaigns targeting high-intent keywords</li>
+                <li>Google Guaranteed (LSA) management</li>
+                <li>Landing pages built for conversion</li>
+                <li>Monthly optimization and transparent reporting</li>
+              </ul>
+              <a href="/marketing-services/google-ads/" class="btn btn--outline-lime">Explore Google Ads →</a>
+            </div>
+          </div>
+
+          <div class="svc-panel" data-panel="meta">
+            <div class="svc-panel-img">
+              <img src="/assets/images/05-meta-ads.webp" alt="Meta Ads, Facebook and Instagram advertising for landscaping companies" loading="lazy">
+            </div>
+            <div class="svc-panel-content">
+              <h3>Build the Brand Homeowners Recognize Before They're Ready to Buy</h3>
+              <p>Facebook and Instagram put your landscaping company in front of homeowners in your exact service area, building brand recognition and reputation so when they're ready to hire, you're already the name they know.</p>
+              <ul class="svc-features">
+                <li>Hyper-local audience targeting by neighborhood and zip code</li>
+                <li>Brand awareness campaigns that build recognition over time</li>
+                <li>Lead generation ads for homeowners actively ready to hire</li>
+                <li>Creative strategy built specifically for the green industry</li>
+              </ul>
+              <a href="/marketing-services/meta-ads/" class="btn btn--outline-lime">Explore Meta Ads →</a>
+            </div>
+          </div>
+
+          <div class="svc-panel" data-panel="ai">
+            <div class="svc-panel-img">
+              <img src="/assets/images/showcase/ai-call-answering.webp" alt="An AI receptionist answering a phone call while new landscaping leads are captured in a CRM inbox for the team to follow up" loading="lazy">
+            </div>
+            <div class="svc-panel-content">
+              <h3>Future-Proof Your Company for the AI Era</h3>
+              <p>AI is changing how homeowners find you and how fast you have to answer. We make sure ChatGPT, Google AI, and Claude recommend your company, and we put practical AI to work for your business: answering calls, replying to new leads in seconds, and keeping your follow-up running day and night.</p>
+              <ul class="svc-features">
+                <li>Get recommended by AI search across ChatGPT, Google AI, and Claude</li>
+                <li>AI phone answering and instant lead replies, so you never miss a call or message</li>
+                <li>AI woven into your follow-up and campaigns, working around the clock</li>
+                <li>A partner who keeps you ahead as AI keeps changing</li>
+              </ul>
+              <a href="/marketing-services/your-ai-partner/" class="btn btn--outline-lime">Explore AI Partner →</a>
+            </div>
+          </div>
+
+          <div class="svc-panel" data-panel="rep">
+            <div class="svc-panel-img">
+              <img src="/assets/images/07-reputation.webp" alt="Reputation management, 5-star Google reviews for landscaping companies" loading="lazy">
+            </div>
+            <div class="svc-panel-content">
+              <h3>More 5-Star Reviews. Fewer Headaches.</h3>
+              <p>Your reputation is your #1 sales tool. We automate the review generation process so you consistently get more 5-star reviews without lifting a finger.</p>
+              <ul class="svc-features">
+                <li>Automated post-service review request texts</li>
+                <li>Google and Facebook review monitoring</li>
+                <li>Negative review response strategy</li>
+                <li>Reputation reporting in your dashboard</li>
+              </ul>
+              <a href="/marketing-services/reputation-management/" class="btn btn--outline-lime">Explore Reputation →</a>
+            </div>
+          </div>
+
+          <div class="svc-panel" data-panel="auto">
+            <div class="svc-panel-img">
+              <img src="/assets/images/08-automation.webp" alt="Marketing automation, CRM and lead follow-up for landscaping companies" loading="lazy">
+            </div>
+            <div class="svc-panel-content">
+              <h3>Your Marketing Machine Runs While You're On The Job</h3>
+              <p>Follow-ups, reminders, re-engagement sequences, all automated. Your CRM works for you 24/7 so no lead falls through the cracks.</p>
+              <ul class="svc-features">
+                <li>Lead follow-up sequences (text + email)</li>
+                <li>Custom automations built around your business messaging</li>
+                <li>Re-engagement campaigns for cold leads</li>
+                <li>Seasonal promotion triggers</li>
+              </ul>
+              <a href="/marketing-services/automation/" class="btn btn--outline-lime">Explore CRM &amp; Automation →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+
+
+  <!-- MINI CASE STUDIES: quick proof row -->
+  <section class="proof-cases" data-reveal="fade-up">
+    <div class="container">
+      <div class="section-header proof-cases-head">
+        <span class="eyebrow-label">Real Numbers, Real Companies</span>
+        <h2>Proof, Not Promises</h2>
+        <p>Real green industry companies, growing right now. Same crews, same services, same markets. The one thing they changed? <span class="hl">They started working with us.</span></p>
+      </div>
+      <div class="proof-cases-grid">
+        <div class="proof-case">
+          <div class="proof-case-photo"><img src="/assets/images/proof-rock-solid.webp" alt="Rock Solid Landscape truck hauling a tractor" loading="lazy" decoding="async" width="820" height="615"></div>
+          <div class="proof-case-body">
+            <div class="proof-case-head">
+              <div class="proof-case-name">Rock Solid Landscape</div>
+              <div class="proof-case-loc">Ohio</div>
+            </div>
+            <div class="proof-case-metric"><span class="pc-from">$700K</span><span class="pc-arrow" aria-hidden="true">→</span><span class="pc-to">$1.4M</span></div>
+            <div class="proof-case-label">Annual revenue, first year with us</div>
+          </div>
+        </div>
+        <div class="proof-case">
+          <div class="proof-case-photo"><img src="/assets/images/proof-precision.webp" alt="Precision Landscape Management service truck and technician" loading="lazy" decoding="async" width="820" height="615"></div>
+          <div class="proof-case-body">
+            <div class="proof-case-head">
+              <div class="proof-case-name">Precision Landscape Management</div>
+              <div class="proof-case-loc">South Carolina</div>
+            </div>
+            <div class="proof-case-metric"><span class="pc-from">200</span><span class="pc-arrow" aria-hidden="true">→</span><span class="pc-to">600<span class="pc-unit">/mo</span></span></div>
+            <div class="proof-case-label">Calls in the same month, one year later</div>
+          </div>
+        </div>
+        <div class="proof-case">
+          <div class="proof-case-photo"><img src="/assets/images/proof-from-the-ground-up.webp" alt="From The Ground Up Landscaping crew planting palm trees" loading="lazy" decoding="async" width="820" height="615"></div>
+          <div class="proof-case-body">
+            <div class="proof-case-head">
+              <div class="proof-case-name">From The Ground Up Landscaping</div>
+              <div class="proof-case-loc">Florida</div>
+            </div>
+            <div class="proof-case-metric"><span class="pc-from">$1.8M</span><span class="pc-arrow" aria-hidden="true">→</span><span class="pc-to">$3.2M</span></div>
+            <div class="proof-case-label">Annual revenue, after two years</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs-section" id="programs">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="eyebrow-label">Programs</span>
+        <h2>Two Paths to Growth.<br>Built for Different Stages.</h2>
+        <p>Every landscaping company needs the same thing, more qualified leads and a system that turns them into booked jobs. The right program depends on where you are now and how aggressively you want to grow.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card" data-reveal="fade-up" data-delay="0">
+          <div class="program-badge">For 6-Figure Companies</div>
+          <div class="program-name">Growth Program</div>
+          <div class="program-tagline">For companies under $1M, building the digital foundation that gets them to 7 figures.</div>
+          <div class="program-price-wrap">
+            <div class="program-price" style="font-size:1.15rem;line-height:1.5;font-weight:700;">A strong foundation before we pour fuel on the fire.</div>
+            <div class="price-annual" style="opacity:1;">Most owners rush straight to ads, but ads only amplify what's already there. We build your digital marketing foundation first: a website that converts, local search and reviews that earn trust, and follow-up that captures every lead. Get it strong and consistent, and everything you scale next compounds.</div>
+          </div>
+          <ul class="program-list">
+            <li><span class="check">✓</span> Custom-built website</li>
+            <li><span class="check">✓</span> Google Business Profile & Maps</li>
+            <li><span class="check">✓</span> Google Guaranteed (LSAs)</li>
+            <li><span class="check">✓</span> CRM, texting & automation</li>
+            <li><span class="check">✓</span> Review generation</li>
+            <li><span class="check">✓</span> Monthly SEO content & reporting</li>
+          </ul>
+          <a href="/programs/growth/" class="btn btn--primary btn--full magnetic">Explore the Growth Program</a>
+        </div>
+        <div class="program-card program-card--featured" data-reveal="fade-up" data-delay="150">
+          <div class="program-glow"></div>
+          <div class="program-badge program-badge--featured">For 7-Figure Companies</div>
+          <div class="program-name">Authority Program</div>
+          <div class="program-tagline">For companies over $1M ready to dominate their market and scale toward 8 figures.</div>
+          <div class="program-price-wrap">
+            <div class="program-price" style="font-size:1.15rem;line-height:1.5;font-weight:700;">Best for companies pushing for category leadership.</div>
+            <div class="price-annual" style="opacity:1;">Expand your footprint, deepen brand authority, and build the kind of marketing infrastructure that compounds over time.</div>
+          </div>
+          <ul class="program-list">
+            <li><span class="check">✓</span> Everything in Growth</li>
+            <li><span class="check">✓</span> Google PPC campaigns</li>
+            <li><span class="check">✓</span> Facebook & Instagram ads</li>
+            <li><span class="check">✓</span> Local citation building</li>
+            <li><span class="check">✓</span> On-demand strategy calls</li>
+            <li><span class="check check--lime">✓</span> <strong>Full market dominance stack</strong></li>
+          </ul>
+          <a href="/programs/authority/" class="btn btn--lime btn--full magnetic">Explore the Authority Program</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY L&L: Asymmetric -->
+  <section class="why-section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-img" data-reveal="fade-right">
+          <img class="why-img-photo" src="/assets/images/why-ll-headshot.webp" alt="Matt Foreman, founder of Lawn &amp; Land Marketing" loading="lazy">
+          <div class="why-img-shade"></div>
+          <div class="why-img-badge" data-reveal="fade-up" data-delay="300">
+            <div class="why-badge-num">100%</div>
+            <div class="why-badge-label">Green Industry<br>Focused</div>
+          </div>
+        </div>
+        <div class="why-content" data-reveal="fade-left">
+          <span class="eyebrow-label">The L&L Difference</span>
+          <h2>Why Landscaping Companies<br>Stay With Us Year After Year</h2>
+          <p class="why-intro">97%+ retention isn't luck. It's what happens when you stop treating clients like accounts and start treating them like partners.</p>
+          <div class="why-pillars">
+            <div class="why-pillar">
+              <div class="pillar-marker">01</div>
+              <div class="pillar-body">
+                <h3>Green Industry Is All We Do</h3>
+                <p>We don't serve dentists, gyms, or restaurants. Every strategy, template, and lesson we've learned came from working exclusively in the green industry. You get expertise no generalist agency can replicate.</p>
+              </div>
+            </div>
+            <div class="why-pillar">
+              <div class="pillar-marker">02</div>
+              <div class="pillar-body">
+                <h3>Clear on Value, Not Price</h3>
+                <p>We don't hide behind "call for pricing." We're confident in what we deliver, and we'd rather talk through fit than compete on a spreadsheet. Every program is built around outcomes, not line-items.</p>
+              </div>
+            </div>
+            <div class="why-pillar">
+              <div class="pillar-marker">03</div>
+              <div class="pillar-body">
+                <h3>Partner, Not Vendor</h3>
+                <p>Honest advice. Proactive communication. A team that genuinely cares whether your phones are ringing. That's why 97% of our clients are still with us after year one.</p>
+              </div>
+            </div>
+          </div>
+          <a href="/contact/" class="pillar-link why-cta">Let's talk about your goals →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-label">Trusted By Green Industry Leaders Nationwide</div>
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/FTGU.webp" alt="From The Ground Up">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Rock-Solid-OH.webp" alt="Rock Solid Landscape OH">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Going-Yard.webp" alt="Going Yard Lawn">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Beautiful-Exteriors-1.webp" alt="Beautiful Exteriors">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/ALF.webp" alt="ALF Landscape">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Bills-Lawn.webp" alt="Bills Lawn Maintenance">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Brothers-Outdoor.webp" alt="Brothers Outdoor">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Countryside.webp" alt="Countryside Lawn Care">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Goodin-Lawn-Care.webp" alt="Goodin Lawn Care">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Green-Dream.webp" alt="Green Dream Lawns">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Hill.webp" alt="Hill Landscaping">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/In-Bloom.webp" alt="In Bloom">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Logans.webp" alt="Logans Landscaping">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Olson.webp" alt="Olson Outdoors">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Rock-Solid-NV.webp" alt="Rock Solid Nevada">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/ST-Louis.webp" alt="Landscape St Louis">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Secret-Gardens.webp" alt="Secret Gardens">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/BA.webp" alt="BA Landscaping">
+        <img class="marquee-logo marquee-logo--chip" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/3C.webp" alt="3C Land &amp; Agricultural Services">
+        <!-- Duplicate for seamless loop -->
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/FTGU.webp" alt="From The Ground Up">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Rock-Solid-OH.webp" alt="Rock Solid Landscape OH">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Going-Yard.webp" alt="Going Yard Lawn">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Beautiful-Exteriors-1.webp" alt="Beautiful Exteriors">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/ALF.webp" alt="ALF Landscape">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Bills-Lawn.webp" alt="Bills Lawn Maintenance">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Brothers-Outdoor.webp" alt="Brothers Outdoor">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Countryside.webp" alt="Countryside Lawn Care">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Goodin-Lawn-Care.webp" alt="Goodin Lawn Care">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Green-Dream.webp" alt="Green Dream Lawns">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Hill.webp" alt="Hill Landscaping">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/In-Bloom.webp" alt="In Bloom">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Logans.webp" alt="Logans Landscaping">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Olson.webp" alt="Olson Outdoors">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Rock-Solid-NV.webp" alt="Rock Solid Nevada">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/ST-Louis.webp" alt="Landscape St Louis">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/Secret-Gardens.webp" alt="Secret Gardens">
+        <img class="marquee-logo" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/BA.webp" alt="BA Landscaping">
+        <img class="marquee-logo marquee-logo--chip" loading="lazy" decoding="async" width="99" height="38" src="/assets/logos/clients/3C.webp" alt="3C Land &amp; Agricultural Services">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- TESTIMONIALS -->
+  <section class="testi-section">
+    <div class="container">
+      <div class="section-header" data-reveal="fade-up">
+        <span class="eyebrow-label">Real Client Results</span>
+        <h2>Don't Take Our Word For It</h2>
+        <p>Hear directly from landscaping and lawn care business owners across the country.</p>
+      </div>
+      <div class="testi-grid">
+
+        <!-- 01 Logan's Landscaping -->
+        <div class="testi-card" data-reveal="fade-up" data-delay="0">
+          <div class="testi-video-wrap" data-videoid="19ukvbf3-HU">
+            <img class="testi-thumb" src="/assets/images/testimonial-01.webp" alt="Logan's Landscaping testimonial" loading="lazy">
+            <button class="testi-play" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+          <div class="testi-card-body">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Every dollar we put in, we're recouping more than three times the investment. He's improved our impact in the area 100-fold."</p>
+          <div class="testi-info">
+            <div class="testi-name">Peter Logan</div>
+            <div class="testi-company">Logan's Landscaping · Pennsylvania</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- 02 P&C Solutions -->
+        <div class="testi-card" data-reveal="fade-up" data-delay="100">
+          <div class="testi-video-wrap" data-videoid="-q2a1Z2zby8">
+            <img class="testi-thumb" src="/assets/images/testimonial-02.webp" alt="P&C Solutions testimonial" loading="lazy">
+            <button class="testi-play" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+          <div class="testi-card-body">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"It's been so good that it's hard for me to keep up. Every time I text Matt he responds. He holds you accountable in ways no other digital company does."</p>
+          <div class="testi-info">
+            <div class="testi-name">Phillip Sirmon</div>
+            <div class="testi-company">P&C Solutions · Alabama</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- 03 Rock Solid Landscape -->
+        <div class="testi-card testi-card--featured" data-reveal="fade-up" data-delay="200">
+          <div class="testi-video-wrap" data-videoid="t9oEJyupwUw">
+            <img class="testi-thumb" src="/assets/images/testimonial-03.webp" alt="Rock Solid Landscape testimonial" loading="lazy">
+            <button class="testi-play" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+          <div class="testi-card-body">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Rock Solid grew from about $700K to $1.4M in its first full year with Lawn & Land."</p>
+          <div class="testi-info">
+            <div class="testi-name">Zach Franz</div>
+            <div class="testi-company">Rock Solid Landscape · Ohio</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- 04 Brothers Outdoor Services -->
+        <div class="testi-card" data-reveal="fade-up" data-delay="0">
+          <div class="testi-video-wrap" data-videoid="5LGPhGWPJBk">
+            <img class="testi-thumb" src="/assets/images/testimonial-04.webp" alt="Brothers Outdoor Services testimonial" loading="lazy">
+            <button class="testi-play" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+          <div class="testi-card-body">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"We bring in 3 to 10 leads almost every day. For every 10 that come in, we're closing 6 to 8 of them."</p>
+          <div class="testi-info">
+            <div class="testi-name">Rick McCarty</div>
+            <div class="testi-company">Brothers Outdoor Services · Connecticut</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- 05 VASH Landscaping -->
+        <div class="testi-card" data-reveal="fade-up" data-delay="100">
+          <div class="testi-video-wrap" data-videoid="rDBc4t-_x88">
+            <img class="testi-thumb" src="/assets/images/testimonial-05.webp" alt="VASH Landscaping testimonial" loading="lazy">
+            <button class="testi-play" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+          <div class="testi-card-body">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"You've done exactly what you said you were going to do. You didn't blow smoke. Everything's here, it's legit, it's moving."</p>
+          <div class="testi-info">
+            <div class="testi-name">Prentiss Holt</div>
+            <div class="testi-company">VASH Landscaping · Tennessee</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- 06 Precision Landscape -->
+        <div class="testi-card" data-reveal="fade-up" data-delay="200">
+          <div class="testi-video-wrap" data-videoid="ajusL5iAs0Q">
+            <img class="testi-thumb" src="/assets/images/testimonial-06.webp" alt="Precision Landscape testimonial" loading="lazy">
+            <button class="testi-play" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+          </div>
+          <div class="testi-card-body">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The phone doesn't stop ringing. It required us to bring in an additional hire. Working with Lawn & Land has exceeded my expectations."</p>
+          <div class="testi-info">
+            <div class="testi-name">Nate Moses</div>
+            <div class="testi-company">Precision Landscape Management · South Carolina</div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:44px;"><a href="/resources/experiences-reviews/" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-l);font-weight:700;font-size:15px;color:var(--lime);text-decoration:none;">See all our client testimonials <span aria-hidden="true">&rarr;</span></a></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-left" data-reveal="fade-right">
+          <span class="eyebrow-label">Questions</span>
+          <h2>Let's Be Honest. You Have Questions.</h2>
+          <p>We answer the questions your competitors are scared to put on their website. No fluff. No pitch.</p>
+          <a href="/contact/" class="btn btn--outline-lime" style="margin-top:28px;display:inline-flex;">Still Have Questions? →</a>
+        </div>
+        <div class="faq-list" data-reveal="fade-left">
+          <div class="faq-item open">
+            <button class="faq-q" aria-expanded="true">How do your programs work? <svg class="faq-arr" viewBox="0 0 16 10"><path d="M1 1l7 7 7-7" stroke="#ACE71D" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
+            <div class="faq-a"><p>We offer two paths: the <strong>Growth Program</strong> for companies ready to tighten their foundation and create steady momentum, and the <strong>Authority Program</strong> for established companies ready to dominate more of their market. Both include everything: website, SEO, ads, automation, and an account manager who keeps the machine moving. The right fit depends on your goals, not your budget.</p><a href="/contact/" class="faq-link">Let's find your fit →</a></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Can you just build our website, or just run ads? <svg class="faq-arr" viewBox="0 0 16 10"><path d="M1 1l7 7 7-7" stroke="#ACE71D" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
+            <div class="faq-a" hidden><p>No, and we're upfront about it because we believe single-channel marketing doesn't deliver real growth. A great website with no traffic is wasted. Great ads with no follow-up system lose leads. Everything works together. If you want a one-off project, we're not the right fit. If you want to dominate your market, let's talk.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Do you guarantee results? <svg class="faq-arr" viewBox="0 0 16 10"><path d="M1 1l7 7 7-7" stroke="#ACE71D" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
+            <div class="faq-a" hidden><p>We don't guarantee specific numbers, no one legally can, and any agency that does is lying to you. But results aren't optional. We install proven systems built for the green industry, and our <em>Roadmap to Results</em> shows exactly what to expect. If you follow the plan, growth is inevitable.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How long before I see results? <svg class="faq-arr" viewBox="0 0 16 10"><path d="M1 1l7 7 7-7" stroke="#ACE71D" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
+            <div class="faq-a" hidden><p>Most clients see momentum in <strong>60–90 days</strong>. Ads and GBP generate leads in the first 1–3 months. The real growth curve hits at 4–6 months, when your full digital ecosystem starts compounding. After 12 months is when year-over-year comparisons show the full picture.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Is there a long-term contract? <svg class="faq-arr" viewBox="0 0 16 10"><path d="M1 1l7 7 7-7" stroke="#ACE71D" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
+            <div class="faq-a" hidden><p>Yes, a 12-month agreement that protects the investment we make building your website from scratch. If you leave before 12 months, the site reverts to its original state. After 12 months, your site is 100% yours, no matter what. Honestly, the contract rarely comes up: our <strong>97%+ retention rate</strong> means once owners see the machine working, they stay far longer. And there's zero risk in just having the conversation, the strategy call is free, with no pitch and no obligation.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How involved do I need to be? <svg class="faq-arr" viewBox="0 0 16 10"><path d="M1 1l7 7 7-7" stroke="#ACE71D" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></button>
+            <div class="faq-a" hidden><p>You stay in the driver's seat but we do the heavy lifting. We need you at key milestones (branding, approvals, quarterly calls), but the machine runs without you. Most owners spend <strong>1–2 hours per month</strong> on marketing. You've got a business to run. Marketing is our job.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg-img">
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container cta-content" data-reveal="fade-up">
+      <span class="eyebrow-label">Ready to Grow?</span>
+      <h2 class="cta-h2">Let's Build Your<br><span class="gradient-text">Marketing Machine.</span></h2>
+      <p class="cta-sub">Book a free strategy call. We'll talk about your business, your market, and exactly what it would take to dominate. No pitch. No pressure. Just clarity.</p>
+      <div class="cta-actions">
+        <a href="/get-started/book-strategy-call/" class="btn btn--lime btn--lg magnetic">Book Your Free Strategy Call</a>
+        <a href="/contact/" class="btn btn--ghost-white">Get In Touch →</a>
+      </div>
+    </div>
+  </section>
+
   </main>
-  <footer class="footer"><div class="container"><p>© Lawn &amp; Land Marketing</p><p><a href="/privacy-policy/">Privacy</a> · <a href="/terms/">Terms</a></p></div></footer>
+
+<!-- FOOTER v2: Premium 3-Row -->
+  <footer class="footer-v2">
+    <div class="fv2-glow"></div>
+    <div class="fv2-inner">
+
+      <!-- Row 1: Brand + CTA -->
+      <div class="fv2-brand-row">
+        <div class="fv2-brand-left">
+          <a href="/" class="fv2-logo-link">
+            <img src="/assets/logos/logo-horizontal.svg" alt="Lawn &amp; Land Marketing" width="180" height="46" loading="lazy">
+          </a>
+          <p class="fv2-tagline">Digital marketing built exclusively for the green industry. Websites, SEO, ads, and automation, all working as one complete system designed to help your business grow.</p>
+          <a href="tel:+17274967098" class="fv2-phone" aria-label="Call or text Lawn and Land Marketing at (727) 496-7098">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (727) 496-7098
+          </a>
+          <div class="fv2-social">
+            <a href="https://www.facebook.com/lawnandlandmarketing" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/lawnandlandmarketing" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/lawn-and-land-marketing" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@lawnandlandmarketing" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="fv2-cta-card">
+          <div class="fv2-cta-card-inner">
+            <div class="fv2-cta-label">Ready to grow?</div>
+            <p class="fv2-cta-desc">Book a free 20-minute strategy call. No pitch, no pressure, just clarity on what it takes to dominate your market.</p>
+            <a href="/get-started/book-strategy-call/" class="btn btn--lime fv2-cta-btn">Book a Free Strategy Call</a>
+            <span class="fv2-cta-note">Free strategy call &middot; No contracts discussed &middot; 100% no-pressure</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Link columns -->
+      <div class="fv2-cols-row">
+        <!-- Marketing Services -->
+        <div class="fv2-col">
+          <div class="fv2-col-head">Marketing Services</div>
+          <ul>
+            <li><a href="/marketing-services/website-design/">Website Design</a></li>
+            <li><a href="/marketing-services/local-seo/">Local SEO</a></li>
+            <li><a href="/marketing-services/gbp-management/">GBP Management</a></li>
+            <li><a href="/marketing-services/google-ads/">Google Ads</a></li>
+            <li><a href="/marketing-services/meta-ads/">Meta Ads</a></li>
+            <li><a href="/marketing-services/your-ai-partner/">Your AI Partner</a></li>
+            <li><a href="/marketing-services/reputation-management/">Reputation Management</a></li>
+            <li><a href="/marketing-services/automation/">CRM &amp; Automation</a></li>
+          </ul>
+        </div>
+        <!-- Industries -->
+        <div class="fv2-col">
+          <div class="fv2-col-head">Industries</div>
+          <ul>
+            <li><a href="/industries/landscaping/">Landscaping</a></li>
+            <li><a href="/industries/outdoor-living/">Outdoor Living</a></li>
+            <li><a href="/industries/lawn-care/">Lawn Care</a></li>
+            <li><a href="/industries/lawn-maintenance/">Lawn Maintenance</a></li>
+            <li><a href="/industries/land-clearing/">Land Clearing</a></li>
+            <li><a href="/industries/excavation/">Excavation</a></li>
+            <li><a href="/industries/septic-installation/">Septic Installation</a></li>
+            <li><a href="/industries/holiday-lighting/">Holiday Lighting</a></li>
+          </ul>
+        </div>
+        <!-- Company -->
+        <div class="fv2-col">
+          <div class="fv2-col-head">Company</div>
+          <ul>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/programs/">Programs</a></li>
+            <li><a href="/programs/growth/">Growth Program</a></li>
+            <li><a href="/programs/authority/">Authority Program</a></li>
+            <li><a href="/resources/experiences-reviews/">Experiences &amp; Reviews</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div class="fv2-col">
+          <div class="fv2-col-head">Resources</div>
+          <ul>
+            <li><a href="/resources/blog/">Blog</a></li>
+            <li><a href="https://www.facebook.com/groups/serviceareaexperts" target="_blank" rel="noopener">Private Facebook Group</a></li>
+            <li><a href="/resources/mow-money-mow-problems-podcast/">Mow Money Podcast</a></li>
+            <li><a href="/get-started/book-strategy-call/">Book a Strategy Call</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Row 3: Trust bar -->
+      <div class="fv2-trust-row">
+        <span class="fv2-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Trusted by 100+ green industry companies
+        </span>
+        <span class="fv2-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          97%+ client retention rate
+        </span>
+        <span class="fv2-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Green industry specialists since 2022
+        </span>
+      </div>
+
+      <!-- Row 4: Legal bar -->
+      <div class="fv2-legal-row">
+        <span>&copy; 2026 Lawn &amp; Land Marketing. All rights reserved.</span>
+        <span class="fv2-specialty">Green industry marketing specialists &nbsp;&middot;&nbsp; St. Petersburg, FL</span>
+        <div class="fv2-legal-links">
+          <a href="/terms/">Terms of Use</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="mailto:hello@lawnandlandmarketing.com">hello@lawnandlandmarketing.com</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js?v=59"></script>
 </body>
 </html>
