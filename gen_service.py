@@ -280,9 +280,9 @@ def build_page(template, c):
                   lambda m: m.group(1) + title + m.group(2), html, count=1)
     html = re.sub(r'(<meta property="og:description" content=").*?(">)',
                   lambda m: m.group(1) + desc + m.group(2), html, count=1)
-    html = re.sub(r'(<link rel="canonical" href="https://new\.lawnlab\.dev/marketing-services/).*?(/">)',
+    html = re.sub(r'(<link rel="canonical" href="https://lawnandlandmarketing\.com/marketing-services/).*?(/">)',
                   lambda m: m.group(1) + slug + m.group(2), html, count=1)
-    html = re.sub(r'(<meta property="og:url" content="https://new\.lawnlab\.dev/marketing-services/).*?(/">)',
+    html = re.sub(r'(<meta property="og:url" content="https://lawnandlandmarketing\.com/marketing-services/).*?(/">)',
                   lambda m: m.group(1) + slug + m.group(2), html, count=1)
     html = re.sub(r'(<meta name="twitter:title" content=").*?(">)',
                   lambda m: m.group(1) + title + m.group(2), html, count=1)
