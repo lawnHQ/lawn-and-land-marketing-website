@@ -272,7 +272,17 @@ document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
     if (h.scrollWidth > h.clientWidth + 1) h.innerHTML = orig.get(h);
   }
   function run() { [].forEach.call(document.querySelectorAll('h1,h2,h3,h4'), process); }
-  run();
+  function scheduleRun() {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(run, { timeout: 1200 });
+    } else {
+      window.setTimeout(run, 300);
+    }
+  }
+
+  if (document.readyState === 'complete') scheduleRun();
+  else window.addEventListener('load', scheduleRun, { once: true });
+
   let rt;
   window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(run, 150); });
 })();
