@@ -5,6 +5,17 @@
   "framework": null,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "lawnland-site.vercel.app"
+        }
+      ],
+      "destination": "https://lawnandlandmarketing.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/api/redirect.js",
       "destination": "/",
       "permanent": false
