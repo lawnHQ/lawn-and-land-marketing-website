@@ -910,5 +910,353 @@
       "For SEO to really work it needs the right foundation, which is why we build new. We don't patch existing sites, because the problems are usually buried in the code where they quietly hold rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change.",
       "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual lawn care leads, not just traffic."
     ]
+  },
+  {
+    "slug": "landscaping-seo",
+    "serviceName": "Landscaping SEO",
+    "title": "SEO for Landscaping Companies | Lawn & Land Marketing",
+    "metaDescription": "SEO built for landscaping companies. Rank for the design, install, and \"landscaper near me\" searches homeowners use to hire across your service area.",
+    "schemaServiceType": "Landscaping SEO",
+    "schemaDescription": "Search engine optimization built for landscaping companies, covering keyword and service-area targeting across design, installation, and maintenance work, dedicated service and city pages, on-page and technical SEO, Google Business Profile alignment, and rank tracking focused on local estimate flow.",
+    "heroEyebrow": "Landscaping SEO",
+    "h1": "Be the Landscaping Company Homeowners ~Hire First~",
+    "heroSubhead": "When someone in your area searches for a landscaper, the company at the top of Google gets the call, the estimate, and usually the job. Landscaping SEO gets your business ranking for the design, install, and maintenance searches that fill your schedule across every town you serve.",
+    "conviction": {
+      "stat": "98",
+      "statUnit": "%",
+      "lead": "98% of people turn to the internet to find a local business, including homeowners looking for a landscaper.",
+      "sub": "If your company isn't ranking when they search, you're handing those projects to whichever landscaper Google decides to show instead.",
+      "statSource": "BrightLocal"
+    },
+    "showcaseA": {
+      "eyebrow": "What we build",
+      "headline": "SEO built around ~the full range of work you take on~",
+      "paragraph": "Landscaping isn't one service, it's design, installs, plantings, cleanups, and ongoing maintenance, and homeowners search for each one differently. We map the work you actually want more of to the towns you cover, then build the pages and local signals Google needs to rank you for them. No markets you can't service, no services you don't sell, just pages built to bring in the right projects.",
+      "checklist": [
+        "Keyword targeting for the services you want more of, from design and installs to cleanups",
+        "Dedicated service and city pages for every town in your service area",
+        "On-page and technical SEO so Google can crawl, read, and trust your site"
+      ],
+      "imageHint": "Phone showing a 'landscaper near me' Google result with the client ranking in the map pack and top organic spot",
+      "image": "landscaping-project.webp",
+      "imageAlt": "A professionally landscaped front yard with fresh plantings and clean bed edges",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "Win the project before your competitor ~gets the call~",
+      "featuredBody": "Most homeowners hiring a landscaper start with a search and reach out to one of the first companies they see. If you aren't ranking, you never get invited to bid. Landscaping SEO is the steady, behind-the-scenes work of pages, listings, and signals that put you in front of those homeowners first, so the estimate is yours to win.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Service Keyword Targeting",
+          "body": "We find the exact searches homeowners use to hire design, installs, plantings, and cleanups."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Service-Area Pages",
+          "body": "Dedicated city pages for every town you cover, so each market can rank on its own."
+        },
+        {
+          "icon": "file-text",
+          "title": "Service Pages",
+          "body": "A focused page for each offering you want more of, written to match how people search for it."
+        },
+        {
+          "icon": "sliders",
+          "title": "On-Page SEO",
+          "body": "Titles, headings, and content optimized so Google understands every page clearly."
+        },
+        {
+          "icon": "zap",
+          "title": "Technical SEO",
+          "body": "Clean structure and fast loads that help search engines crawl and trust your site."
+        },
+        {
+          "icon": "link",
+          "title": "Local Citations",
+          "body": "Consistent name, address, and phone across the directories Google checks."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Rank Tracking",
+          "body": "Ongoing reporting that shows where you rank and how your visibility is trending."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "Rankings that turn into ~booked estimates~",
+      "paragraph": "A landscaping customer can be worth a single cleanup or a multi-phase project plus years of repeat work, so ranking for the right searches compounds quickly. We build every page to move a homeowner toward calling or requesting an estimate, and align it with your Google Business Profile so your listing and site reinforce each other. The goal isn't traffic for its own sake, it's a steady stream of qualified estimate requests.",
+      "checklist": [
+        "Pages built to convert searchers into calls and estimate requests",
+        "Content that answers what homeowners ask before hiring a landscaper",
+        "Google Business Profile aligned with your site so both work together"
+      ],
+      "imageHint": "Local Google search results showing a landscaping company ranked at the top",
+      "image": "local-seo-results.webp",
+      "imageAlt": "A landscaping company ranking at the top of local Google search results"
+    },
+    "faqQuestions": [
+      "How is landscaping SEO different from lawn care SEO?",
+      "How long before landscaping SEO starts bringing in projects?",
+      "Can you rank my landscaping company in every town I serve?",
+      "Do I need a new website, or can you optimize the one I have?",
+      "How do you prove the SEO is actually generating estimates?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your landscaping company ~showing up first~",
+      "paragraph": "Book a free strategy call and we'll look at where your landscaping company ranks today, where the gaps are, and what it would take to own the searches that matter across your service area.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "local-seo",
+      "website-design",
+      "gbp-management",
+      "google-ads"
+    ],
+    "industrySlug": "landscaping",
+    "industryName": "Landscaping",
+    "faqAnswers": [
+      "They share the same foundation but target different work. Lawn care SEO is built around recurring treatment programs like fertilization and weed control, where one customer renews season after season. Landscaping SEO targets the broader mix you take on, design, installs, plantings, and cleanups, where a single search can turn into a large project plus repeat work. We optimize for the way homeowners actually search for landscaping, not the way a generalist agency would.",
+      "It depends on your market: population, competition, keyword difficulty, and the momentum you already have. SEO is the slowest part of your marketing, but over time it becomes the most effective and the hardest for competitors to take from you. As a general range, expect 6 to 12 months before organic search is a steady source of landscaping estimates, with smaller wins along the way.",
+      "Yes. We build out your site and local presence for every town in your service area, not just the city your shop sits in, so you show up across your whole footprint instead of leaving nearby markets to competitors.",
+      "For SEO to really work it needs the right foundation, which is why we build new. We don't patch existing sites, because the problems are usually buried in the code where they quietly hold rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change.",
+      "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual estimate requests, not just traffic."
+    ]
+  },
+  {
+    "slug": "lawn-maintenance-seo",
+    "serviceName": "Lawn Maintenance SEO",
+    "title": "SEO for Lawn Maintenance Companies | Lawn & Land Marketing",
+    "metaDescription": "SEO for lawn maintenance and mowing companies. Rank for the \"lawn mowing near me\" searches that fill tight, profitable routes across the towns you serve.",
+    "schemaServiceType": "Lawn Maintenance SEO",
+    "schemaDescription": "Search engine optimization built for lawn maintenance and mowing companies, covering keyword and service-area targeting for weekly mowing and property upkeep, dedicated service and city pages, on-page and technical SEO, Google Business Profile alignment, and rank tracking focused on dense, efficient routes.",
+    "heroEyebrow": "Lawn Maintenance SEO",
+    "h1": "Be the Lawn Maintenance Company That ~Owns the Route~",
+    "heroSubhead": "When a homeowner searches \"lawn mowing near me\" or \"lawn service\" in your town, the company at the top of Google wins the stop. Lawn maintenance SEO gets your business ranking for the searches that pack your routes tight, where every new yard on a street you already run is close to pure profit.",
+    "conviction": {
+      "stat": "76",
+      "statUnit": "%",
+      "lead": "76% of people who search for something nearby on their phone visit a related business within a day.",
+      "sub": "A homeowner searching for mowing wants it handled now, so the company ranking first is the one filling the route this week.",
+      "statSource": "Google"
+    },
+    "showcaseA": {
+      "eyebrow": "What we build",
+      "headline": "SEO built to ~tighten your routes, not just your traffic~",
+      "paragraph": "Lawn maintenance is a route business, and the math only works when your stops are close together. We target mowing and upkeep searches town by town, then build the pages and local signals Google needs to rank you in the exact areas you already drive. The goal is simple: more yards on the streets you're already on, so your crews spend the day cutting grass, not driving between jobs.",
+      "checklist": [
+        "Keyword targeting for mowing and upkeep searches, town by town",
+        "Service-area pages for the neighborhoods you want to run dense",
+        "On-page and technical SEO so Google can crawl, read, and trust your site"
+      ],
+      "imageHint": "Phone showing a 'lawn mowing near me' result with the client ranking in the map pack",
+      "image": "lawn-maintenance-service.webp",
+      "imageAlt": "A lawn maintenance crew mowing a residential lawn with a commercial mower",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "Density is the whole game, and ~ranking is how you build it~",
+      "featuredBody": "A new customer two streets over from your Tuesday route costs you almost nothing to service and adds straight to the bottom line. A customer across town can wipe out the profit in windshield time. Ranking for the right searches in the right neighborhoods is how you stack stops where you already are, so your routes get denser and your crews get more efficient every season.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Mowing Keyword Targeting",
+          "body": "We target how homeowners search for mowing and weekly lawn service, not generic landscaping terms."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Service-Area Pages",
+          "body": "Dedicated pages for the towns and neighborhoods you want to run dense, so each can rank on its own."
+        },
+        {
+          "icon": "file-text",
+          "title": "Service Pages",
+          "body": "Clear pages for mowing, trimming, edging, and seasonal cleanups that match what people search."
+        },
+        {
+          "icon": "sliders",
+          "title": "On-Page SEO",
+          "body": "Titles, headings, and content optimized so Google understands every page clearly."
+        },
+        {
+          "icon": "zap",
+          "title": "Technical SEO",
+          "body": "Clean structure and fast loads that help search engines crawl and trust your site."
+        },
+        {
+          "icon": "link",
+          "title": "Local Citations",
+          "body": "Consistent name, address, and phone across the directories Google checks."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Rank Tracking",
+          "body": "Ongoing reporting that shows where you rank, neighborhood by neighborhood."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "Rankings that turn into ~stops on a street you already run~",
+      "paragraph": "Mowing is a volume-and-efficiency business, so the value of SEO isn't just more leads, it's the right leads in the right places. We build every page to convert a searching homeowner into a call or a quote request, and align it with your Google Business Profile so you show up when someone nearby needs service. The result is routes that get tighter over time, not a map full of scattered one-off jobs.",
+      "checklist": [
+        "Pages built to convert nearby searchers into calls and quote requests",
+        "Local presence focused on the areas you already service",
+        "Google Business Profile aligned with your site so both work together"
+      ],
+      "imageHint": "Local Google search results showing a lawn maintenance company ranked at the top",
+      "image": "local-seo-results.webp",
+      "imageAlt": "A lawn maintenance company ranking at the top of local Google search results"
+    },
+    "faqQuestions": [
+      "How is lawn maintenance SEO different from lawn care SEO?",
+      "Can SEO actually help me fill tighter routes?",
+      "How long before lawn maintenance SEO starts working?",
+      "Do I need a new website, or can you optimize my current one?",
+      "How do you prove the SEO is bringing in real jobs?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your crews ~mowing more and driving less~",
+      "paragraph": "Book a free strategy call and we'll look at where your company ranks today across your routes, where the gaps are, and what it would take to own the mowing searches in the neighborhoods you want to run dense.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "local-seo",
+      "gbp-management",
+      "website-design",
+      "google-ads"
+    ],
+    "industrySlug": "lawn-maintenance",
+    "industryName": "Lawn Maintenance",
+    "faqAnswers": [
+      "Lawn care is about the lawn's health, recurring treatment programs like fertilization and weed control where the spine is renewals and lifetime value. Lawn maintenance is about the property's upkeep, mowing and weekly service where the spine is route density and crew efficiency. Lawn maintenance SEO is built around that reality: we focus on filling your routes in the areas you already run, not on selling treatment programs.",
+      "Yes, that's the entire point. We don't just chase volume, we target the neighborhoods you already service so new customers land on or near your existing routes. More stops per street means less windshield time and more revenue per crew hour, which is where lawn maintenance actually makes money.",
+      "It depends on your market: population, competition, and the momentum you already have. SEO is the slowest part of your marketing, but over time it becomes the most durable. Expect a general range of 6 to 12 months before organic search is a steady source of mowing jobs, with smaller wins along the way.",
+      "For SEO to really work it needs the right foundation, which is why we build new. We don't patch existing sites, because the problems are usually buried in the code where they quietly hold rankings back. Our from-scratch builds are made to rank and to keep adapting as search and AI change.",
+      "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: form submissions and phone calls tracked through a dedicated number on your site, so you see actual mowing jobs, not just traffic."
+    ]
+  },
+  {
+    "slug": "outdoor-living-seo",
+    "serviceName": "Outdoor Living SEO",
+    "title": "SEO for Outdoor Living & Hardscape Companies | Lawn & Land",
+    "metaDescription": "SEO for outdoor living, hardscape, and design-build companies. Rank for the high-ticket patio, outdoor kitchen, and design searches worth winning.",
+    "schemaServiceType": "Outdoor Living SEO",
+    "schemaDescription": "Search engine optimization built for outdoor living, hardscape, and design-build companies, covering keyword and service-area targeting for high-ticket projects like patios, outdoor kitchens, and fire features, portfolio-led service pages, on-page and technical SEO, Google Business Profile alignment, and rank tracking focused on qualified consultation requests.",
+    "heroEyebrow": "Outdoor Living SEO",
+    "h1": "Be the Outdoor Living Company Homeowners ~Trust With the Big Project~",
+    "heroSubhead": "A paver patio, outdoor kitchen, or full backyard build is a major decision, and homeowners research it for weeks before they ever call. Outdoor living SEO puts your portfolio in front of those buyers for the high-ticket searches that matter, so the projects worth winning come to you.",
+    "conviction": {
+      "stat": "88",
+      "statUnit": "%",
+      "lead": "88% of consumers trust online reviews and what they find searching as much as a personal recommendation.",
+      "sub": "On a project this size, homeowners vet you long before they call, so showing up and looking credible in search is half the sale.",
+      "statSource": "BrightLocal"
+    },
+    "showcaseA": {
+      "eyebrow": "What we build",
+      "headline": "SEO that puts ~your best work in front of serious buyers~",
+      "paragraph": "Outdoor living is a high-ticket, considered purchase, and the homeowner doing the research wants proof you can deliver. We target the project searches that signal real intent, patios, outdoor kitchens, retaining walls, fire features, full design-builds, and build portfolio-led pages that show the quality of your work. The aim isn't cheap clicks, it's qualified consultation requests from people ready to invest.",
+      "checklist": [
+        "Keyword targeting for high-ticket project searches, not low-intent browsing",
+        "Portfolio-led service pages built around your strongest project types",
+        "On-page and technical SEO so Google can crawl, read, and trust your site"
+      ],
+      "imageHint": "A finished paver patio with an outdoor kitchen and seating area at dusk",
+      "image": "hardscape-patio.webp",
+      "imageAlt": "A finished paver patio with an outdoor kitchen and built-in seating",
+      "imageAspect": "4 / 3"
+    },
+    "includes": {
+      "featuredKicker": "The difference",
+      "featuredHeadline": "The big project goes to the company that ~looks the most capable~",
+      "featuredBody": "When someone is about to spend tens of thousands of dollars on their backyard, they don't call the cheapest option, they call the one that looks the most capable and the most trustworthy. That decision happens across weeks of searching, scrolling portfolios, and reading reviews. Outdoor living SEO is how you show up at every step of that research looking like the obvious choice.",
+      "featuredTag": "Done-for-you",
+      "cards": [
+        {
+          "icon": "search",
+          "title": "Project Keyword Targeting",
+          "body": "We target high-intent searches like paver patios and outdoor kitchens, not low-value browsing terms."
+        },
+        {
+          "icon": "eye",
+          "title": "Portfolio-Led Pages",
+          "body": "Service pages built around your strongest projects, so your best work does the selling."
+        },
+        {
+          "icon": "map-pin",
+          "title": "Service-Area Pages",
+          "body": "Pages for the higher-end areas you want to build in, so each market can rank on its own."
+        },
+        {
+          "icon": "sliders",
+          "title": "On-Page SEO",
+          "body": "Titles, headings, and content optimized so Google understands every page clearly."
+        },
+        {
+          "icon": "zap",
+          "title": "Technical SEO",
+          "body": "Clean structure and fast loads that help search engines crawl and trust your site."
+        },
+        {
+          "icon": "shield-check",
+          "title": "Trust & Citations",
+          "body": "Consistent listings and review signals that reassure a homeowner spending real money."
+        },
+        {
+          "icon": "bar-chart",
+          "title": "Rank Tracking",
+          "body": "Ongoing reporting that shows where you rank for the projects you most want to win."
+        }
+      ]
+    },
+    "showcaseB": {
+      "eyebrow": "How it pays off",
+      "headline": "One ranking can be worth ~an entire build~",
+      "paragraph": "When a single project is worth tens of thousands of dollars, ranking for the right search isn't about volume, it's about being found by the few homeowners ready to commit. We build every page to move a serious buyer toward a design consultation, and align it with your Google Business Profile so your listing, reviews, and portfolio all reinforce each other. The goal is fewer, better leads that actually turn into builds.",
+      "checklist": [
+        "Pages built to turn researchers into design-consultation requests",
+        "Content that answers what homeowners weigh before committing to a build",
+        "Google Business Profile aligned with your site so both work together"
+      ],
+      "imageHint": "An outdoor living space with designed landscape lighting at dusk",
+      "image": "outdoor-lighting-design.webp",
+      "imageAlt": "A designed outdoor living space with landscape lighting at dusk"
+    },
+    "faqQuestions": [
+      "How is outdoor living SEO different from landscaping SEO?",
+      "Can SEO really work for high-ticket design-build projects?",
+      "How important is my portfolio for ranking and winning projects?",
+      "How long before outdoor living SEO starts producing consultations?",
+      "How do you prove the SEO is generating real project leads?"
+    ],
+    "cta": {
+      "eyebrow": "Ready to get found",
+      "headline": "Let's get your best projects ~in front of the right buyers~",
+      "paragraph": "Book a free strategy call and we'll look at where your company shows up today for high-ticket project searches, where the gaps are, and what it would take to own the outdoor living searches across the areas you want to build in.",
+      "note": "Free 20-minute strategy call. No pressure, no obligation."
+    },
+    "relatedSlugs": [
+      "local-seo",
+      "website-design",
+      "gbp-management",
+      "meta-ads"
+    ],
+    "industrySlug": "outdoor-living",
+    "industryName": "Outdoor Living",
+    "faqAnswers": [
+      "Landscaping SEO targets a broad mix of work, design, installs, plantings, and cleanups, across a wide range of budgets. Outdoor living SEO is narrower and built for high-ticket design-build and hardscape projects, where the sale is longer, the buyer researches harder, and your portfolio does most of the convincing. We optimize for serious project searches and lead with proof, not for low-intent browsing.",
+      "Yes, and arguably it matters more here than anywhere. Homeowners planning a major backyard project research for weeks and compare several companies before reaching out. Ranking well for those project searches, with a portfolio that proves you can deliver, is how you get into that short list of companies they actually call.",
+      "It's central. For high-ticket work, your portfolio is your strongest sales tool, so we build pages around your best projects and make sure they're structured for search. Strong visuals plus the right on-page work help you rank and help a homeowner trust you with a large investment.",
+      "It depends on your market and competition, and high-ticket searches can take time. SEO is the slowest part of your marketing, but the most durable. Expect a general range of 6 to 12 months before organic search is a steady source of qualified consultations, with smaller wins along the way.",
+      "We watch impressions, clicks, and rankings climb in Google Search Console and Analytics, then tie it to real results: consultation requests and phone calls tracked through a dedicated number on your site, so you see actual project leads, not just traffic."
+    ]
   }
 ]

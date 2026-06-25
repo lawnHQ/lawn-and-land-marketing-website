@@ -69,6 +69,9 @@ SERVICE_MAP = {
   'reputation-management': ('Reputation Management', 'star'),
   'automation': ('CRM & Automation', 'refresh-ccw'),
   'lawn-care-seo': ('Lawn Care SEO', 'search'),
+  'landscaping-seo': ('Landscaping SEO', 'search'),
+  'lawn-maintenance-seo': ('Lawn Maintenance SEO', 'search'),
+  'outdoor-living-seo': ('Outdoor Living SEO', 'search'),
 }
 
 # Use the proven dark hero photo across all service pages (matches the locked
@@ -121,6 +124,14 @@ def build_main(c):
               f'<a href="/marketing-services/">Marketing Services</a><span>/</span>'
               f'<span>{esc(name)}</span></div>')
 
+    # Combo pages (which declare an industrySlug) link back to their industry page
+    # as the hero's secondary CTA; core service pages keep the Contact CTA.
+    if c.get('industrySlug'):
+        secondary = (f'<a href="/industries/{c["industrySlug"]}/" class="btn btn--ghost">'
+                     f'Explore {esc(c["industryName"])} Marketing &rarr;</a>')
+    else:
+        secondary = f'<a href="/contact/" class="btn btn--ghost">{MSG_ICON} Contact Us</a>'
+
     hero = f'''  <!-- HERO BANNER -->
   <section class="simple-hero" style="--hero-image: url('/assets/images/{img}');">
     <div class="hero-inner">
@@ -131,7 +142,7 @@ def build_main(c):
         <p>{esc(c['heroSubhead'])}</p>
         <div class="hero-actions">
           <a href="/get-started/book-strategy-call/" class="btn btn--lime">{CAL_ICON} Book a Free Strategy Call</a>
-          <a href="/contact/" class="btn btn--ghost">{MSG_ICON} Contact Us</a>
+          {secondary}
         </div>
       </div>
     </div>
