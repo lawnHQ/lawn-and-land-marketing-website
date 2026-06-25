@@ -633,8 +633,8 @@
 
 ## 2026-06-21 (update) — Rock Solid revenue figure resolved to $1.4M
 - **Owner confirmed Rock Solid hit $1.4M in their first full year** (from about $700K, a clean 2x). Standardized the figure across the whole site: the Rock Solid case study (At a Glance, stat band, return line, secondary stat, the revenue bar chart now an exact 2x, conclusion, meta/OG/Article schema), the Client Results roster Tier 1 card, the 11 proof cards that previously said "$1.3M" (homepage, 8 industry pages, experiences hub, Authority program), and the landscaping/lawn-care FAQ answers (also bumped "tripled" to "more than tripled" calls to match the ~4x). Reframed "crossed seven figures" to "doubled, to $1.4M" / "first full year" where it described revenue.
-- **Kept (consistent with $1.4M, not contradictory):** Zach's VideoObject keeps its real YouTube title ("...from $700K to Over $1M...") and his verbatim quote "north of a million" ($1.4M satisfies both). Program-tier copy ("companies over/under $1M") is unrelated and untouched.
-- Resolves the standing "$1M+ vs $1.3M" flag. No before/after GBP review count for Rock Solid (owner has no historical number; the current 49 stays as the single point).
+- **Kept (consistent with $1.4M, not contradictory):** Zach's VideoObject keeps its real YouTube title ("...from $700K to Over $1M..."). Nearby written captions/stat copy use $1.4M so the spoken rounding does not read as a competing figure. Program-tier copy ("companies over/under $1M") is unrelated and untouched.
+- Resolves the standing legacy revenue-figure mismatch flag. No before/after GBP review count for Rock Solid (owner has no historical number; the current 49 stays as the single point).
 
 ## 2026-06-21 — Service-page FAQs answered + FAQPage schema live
 - Owner supplied all 40 FAQ answers via the pre-launch sheet; reviewed, tightened, and wired in.
@@ -725,8 +725,7 @@
   + author-archive links point to it as placeholders until real posts exist -- resolve those at import).
   Verified all three EEAT schema connections resolve: author-page Person #matt-foreman; article BlogPosting
   author by @id == that Person (not a string); FAQPage matches the visible FAQ. Call-duration: the site is
-  uniformly 20-minute (no 30-min exists anywhere); the filler article CTA's "15 minutes" gets rewritten with
-  the real content. SKIPPED per owner: the article's generic body copy (intentional filler until the import).
+  uniformly 20-minute (no 30-min exists anywhere); the filler article CTA was rewritten to a 20-minute strategy call. SKIPPED per owner: the article's generic body copy (intentional filler until the import).
 
 ## 2026-06-23 — Industry FAQ accuracy pass · program images · exclusive accordion · service-scope guardrail
 - **Exclusive FAQ accordion (industry pages):** `/industries/*` FAQs use native `<details>`, which open

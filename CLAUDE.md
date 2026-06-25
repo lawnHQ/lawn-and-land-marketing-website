@@ -104,7 +104,7 @@ hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** 
   CSS (`.cs-*`); no `industry.css`. Owner actions before indexing: Nate's sign-off (ROI is owner-set at 23x; revenue $4.4M to $11.2M owner-provided).
 - **Rock Solid Landscape case study** (`/case-studies/rock-solid/`) — **built** 2026-06-21 into the
   framework (cloned from Precision). Wauseon, OH; owner Zach Franz; an **organic/SEO-led** story (no
-  paid ads). Crossed seven figures ($700K→$1M+) in a year; 4x calls, +378% impressions, +466% clicks.
+  paid ads). Crossed seven figures ($700K→$1.4M) in a year; 4x calls, +378% impressions, +466% clicks.
   New reusable **month-by-month table** (`.cs-table`); real #1-ranking / ChatGPT / GBP screenshots under
   `assets/images/rock-solid/`. **AI-search claim reframed** (kept the real ChatGPT-top-pick screenshot,
   dropped "we dominate AI search" + the causation overclaim, added a point-in-time caveat). Fixed the

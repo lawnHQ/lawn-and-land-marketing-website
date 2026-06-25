@@ -73,5 +73,5 @@ skimmer, with the **full long-form breakdown** preserved below for the deep read
 
 ## Library status
 - **Precision** (`/case-studies/precision/`) — reference build, paid-led (PPC + LSA). 23x ROI (~$150K/yr spend, marketing-attributed); $4.4M→$11.2M revenue trajectory.
-- **Rock Solid** (`/case-studies/rock-solid/`) — built 2026-06-21, organic/SEO-led (no ads). $700K→$1M+ revenue (owner's on-record figure; reconcile vs. the "$1.3M" proof cards). Introduced the `.cs-table` element + the point-in-time AI-search treatment. No ROI multiple (none available).
+- **Rock Solid** (`/case-studies/rock-solid/`) — built 2026-06-21, organic/SEO-led (no ads). $700K→$1.4M revenue (owner-confirmed final figure). Introduced the `.cs-table` element + the point-in-time AI-search treatment. No ROI multiple (none available).
 - **From The Ground Up** ($1.8M→$3.2M, referenced sitewide) — build into the framework once the figure + approval are confirmed.

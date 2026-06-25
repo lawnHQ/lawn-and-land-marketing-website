@@ -47,7 +47,7 @@ Write `resources/blog/<SLUG>/index.html`. SLUG = OLD_SLUG, unchanged (keeps the 
    - Body: faithful migration, in `<section>` blocks with `<h2>`/`<h3>`/`<p>`/`<ul>`/`<blockquote>`.
      Cut AI-filler fluff; keep the real substance, real tools, real numbers (only if in the source).
    - Keep `.article-cta-block` (tailor its `<h3>` + `<p>` to the topic; button → `/get-started/book-strategy-call/`;
-     do NOT say "15 minutes" — say "a quick call" or "about 20 minutes").
+     use only "20-minute strategy call" when referring to the booking CTA. Do not use older duration variants).
    - FAQ `<section>` + `.article-faq` must match the FAQPage schema (or remove both).
    - `.author-block` UNCHANGED.
 4. **Sidebar (`.article-aside`)** UNCHANGED.
