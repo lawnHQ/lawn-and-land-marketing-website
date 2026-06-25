@@ -152,8 +152,9 @@
               </div>
               <div class="ff-field"><label for="ff-email">Email</label><input id="ff-email" name="email" type="email" placeholder="you@email.com" required autocomplete="email"></div>
               <div class="ff-field"><label for="ff-phone">Cell phone</label><input id="ff-phone" name="phone" type="tel" placeholder="(727) 496-7098" required autocomplete="tel"></div>
-              <button type="submit" class="btn btn--lime btn--lg">Send Me the Checklist</button>
+              <button type="submit" class="btn btn--lime btn--lg" id="chkSubmit">Send Me the Checklist</button>
               <p class="ff-fine"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>No spam. Unsubscribe anytime.</p>
+              <p class="ff-fine" id="chkError" role="alert" style="display:none;color:#ffb4b4;">Something went wrong. Please try again or email hello@lawnandlandmarketing.com.</p>
             </form>
             <div class="ff-success" id="chkSuccess">
               <div class="tick"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
@@ -193,32 +194,53 @@
 
   <script>
     (function(){
+      var WEBHOOK = "https://services.leadconnectorhq.com/hooks/x5MOOAaH49HyBUXG1NNt/webhook-trigger/27a05846-69c9-426a-b1a4-663f1fb7f0fc";
       var form = document.getElementById('chkForm');
-      var card = document.getElementById('chkCard');
       var success = document.getElementById('chkSuccess');
+      var error = document.getElementById('chkError');
+      var submit = document.getElementById('chkSubmit');
+      if (!form) return;
       form.addEventListener('submit', function(e){
         e.preventDefault();
         if (!form.checkValidity()) { form.reportValidity(); return; }
+        var firstName = form.firstName.value.trim();
+        var lastName = form.lastName.value.trim();
         var lead = {
-          firstName: form.firstName.value.trim(),
-          lastName:  form.lastName.value.trim(),
-          email:     form.email.value.trim(),
-          phone:     form.phone.value.trim()
+          firstName: firstName,
+          lastName:  lastName,
+          first_name: firstName,
+          last_name: lastName,
+          name: (firstName + ' ' + lastName).trim(),
+          email: form.email.value.trim(),
+          phone: form.phone.value.trim(),
+          source: 'Website checklist download',
+          page_url: window.location.href,
+          submitted_at: new Date().toISOString(),
+          lead_magnet: 'GBP Optimization Checklist'
         };
-        // TODO: wire lead capture to GoHighLevel (form post / inbound webhook / API)
-        // before this goes live so submissions are saved and the checklist is emailed.
-        // For now the visitor still gets the PDF immediately below.
         try { window.localStorage.setItem('chkLead', JSON.stringify(lead)); } catch(_e){}
-        if (typeof window.gtag === 'function') {
-          window.gtag('event', 'checklist_submit', {
-            page_location: window.location.href,
-            page_path: window.location.pathname
-          });
-        }
-        document.getElementById('chkSuccessTitle').textContent = 'Thanks, ' + (lead.firstName || 'there') + '!';
-        form.style.display = 'none';
-        success.classList.add('show');
-        document.getElementById('chkDownload').focus();
+        if (error) error.style.display = 'none';
+        if (submit) { submit.disabled = true; submit.textContent = 'Sending...'; }
+        fetch(WEBHOOK, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(lead)
+        }).then(function(res){
+          if (!res.ok) throw new Error('Webhook returned ' + res.status);
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'checklist_submit', {
+              page_location: window.location.href,
+              page_path: window.location.pathname
+            });
+          }
+          document.getElementById('chkSuccessTitle').textContent = 'Thanks, ' + (lead.firstName || 'there') + '!';
+          form.style.display = 'none';
+          success.classList.add('show');
+          document.getElementById('chkDownload').focus();
+        }).catch(function(){
+          if (error) error.style.display = 'block';
+          if (submit) { submit.disabled = false; submit.textContent = 'Send Me the Checklist'; }
+        });
       });
     })();
   </script>
