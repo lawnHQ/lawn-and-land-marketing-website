@@ -187,8 +187,7 @@ with no CSS change — it's a copy + card-label decision. The `.hl` headline mus
   `/industries/*` pages. Page-specific one-offs can still go in that page's small `<style>`.
 - Industry pages are **not generated** — hand-edit the page `index.html`. Reuse `simple-hero`,
   `.container`, `.svc-cta`, `.proof-cases`.
-- After any header/footer edit, run `python3 build.py`. Schema uses the production domain; the page
-  canonical stays staging (`new.lawnlab.dev`) until launch.
+- After any header/footer edit, run `python3 build.py`. Schema, canonical URLs, and Open Graph URLs use the production domain.
 
 ## Build checklist (per industry page)
 - [ ] Hero: keyword eyebrow + ONE keyword H1 + full-white subhead + dual CTA + trust strip

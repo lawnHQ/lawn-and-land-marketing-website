@@ -1,5 +1,7 @@
 # SEO & Launch Checklist
 
+> Status update 2026-06-26: production cutover is complete. This file is now a historical launch/audit checklist plus maintenance reference. Canonicals, Open Graph URLs, `robots.txt`, and `sitemap.xml` are production-domain aligned. New production-operating baseline lives in `current-state-2026-06-26.md`.
+
 ## Homepage launch audit (2026-06-14) — verified findings + status
 Five-lens audit (CRO, technical SEO, on-page, performance, a11y), each finding adversarially
 re-checked. Verified scores: CRO 7, Tech SEO 7, On-page 7, Performance 5, Accessibility 4.

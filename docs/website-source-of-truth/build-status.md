@@ -1,22 +1,21 @@
 # Build Status
 
-Last updated: 2026-06-23.
+Last updated: 2026-06-26.
 
 ## Overall read
-The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**, **both
+The **production site is live and actively maintained** on `https://lawnandlandmarketing.com` via the canonical Vercel project `lawnland-site`. The **homepage**, the **full set of 8 `/marketing-services/*` detail pages + the services hub**, **both
 program pages** (Growth + the flagship Authority), the **Programs hub**, and **all 8 industry pages**
 (`landscaping` — the locked template — plus `lawn-care`, `lawn-maintenance`, `outdoor-living`,
-`holiday-lighting`, `land-clearing`, `excavation`, and `septic-installation`) are developed. So are **About** (+ `#team`), **Contact** (live GHL form), **Confirmation**, **Get Started / booking**, the **Terms + Privacy** legal pages, the **3 Resources content pages** (blog, experiences-reviews, podcast - silo only, no hub), the **2 case studies** (Precision, Rock Solid), and the **Client Results** roster. The site is **content-complete and in pre-launch review.** Build tooling (universal
-header/footer + service-page generator), the **2026-06-15 nav-submenu overhaul** (see `navigation.md`),
-route hygiene, and the brand system are all in place. Nothing is launched publicly — staging is
-new.lawnlab.dev (also lawnland-site.vercel.app); the eventual home is lawnandlandmarketing.com.
+`holiday-lighting`, `land-clearing`, `excavation`, and `septic-installation`) are developed. So are **About** (+ `#team`), **Contact** (live GHL form), **Confirmation**, **Get Started / booking**, **Strategy Booked**, **Thanks for Preparing**, the **Terms + Privacy** legal pages, the **3 Resources content pages** (blog, experiences-reviews, podcast - silo only, no hub), the **2 case studies** (Precision, Rock Solid), and the **Client Results** roster. The service × industry combo-page layer is live and contextually linked from industry pages. Build tooling (universal
+header/footer + service-page generator), route hygiene, brand system, production canonicals, sitemap, and robots are all in place.
+
+**2026-06-26 update:** production operating state is documented in `current-state-2026-06-26.md`. Audit reconciliation and rollback lessons are preserved in `docs/audit-rollback-handoff-2026-06-25.md`. The combo-page directive is preserved in `docs/directives/combo-pages-agent-directive.md`. The `/thanks-for-preparing/` page is live, and the universal footer now uses the centered `Grown In St. Petersburg, FL` palm badge on desktop and mobile. Current stylesheet cache-bust is `styles.css?v=156`.
 
 **2026-06-23 update:** the industry-page FAQs were corrected for POV (questions a contractor asks their
 marketing agency, not the contractor's own voice) and **service-scope accuracy** (no claiming L&L runs the
 client's sales / renewals / ops); `holiday-lighting` was fully revisited and repositioned around the
 off-season gap-filler angle (Meta-ads-led); the two `/programs/*` "Why us" images are now real; and the
-`/industries/*` FAQ accordion is now exclusive (one open at a time). Full record + the still-OPEN accuracy
-sweep of remaining page bodies (lawn-care + outdoor-living): `decisions.md` (2026-06-23).
+`/industries/*` FAQ accordion is now exclusive (one open at a time). Full record: `decisions.md` (2026-06-23).
 
 ## What is DONE (developed)
 - **Homepage** (`/`) — strongest page. Reordered for conversion: hero → stats → Industries grid →
@@ -101,27 +100,23 @@ sweep of remaining page bodies (lawn-care + outdoor-living): `decisions.md` (202
 - **Client Results roster** (`/client-results/`, under About) — Tier 1 featured case studies + Tier 2
   lighter client cards; hub-and-spoke interlinked with the case studies + experiences hub.
 
-## What is NOT done (launch prep + owner inputs, not new builds)
-Every planned page is built. Landed 2026-06-21: FAQ answers + `FAQPage` schema (all 8), conviction
-stats verified (Google Ads now L&L's own 8-12% conversion rate), `og:image` share graphic sitewide,
-About team headshots, and Precision + Rock Solid sign-offs. What remains:
-- **Real images** for the remaining labeled placeholders (homepage CTA, service-page screenshots). DONE
-  2026-06-23: the Growth + Authority "Why us" images (`growth-why.jpg`, `authority-why.jpg`) **and all 8
-  `/industries/*` intro images** (`assets/images/<industry>-intro.jpg`, owner-provided, 1400x788 / ~240-350KB,
-  EXIF stripped, shown in the template 4:3 `.ind-ph` box via object-fit:cover).
-- **Launch cutover:** `robots.txt` + the staging→production canonical / `og:url` / `og:image` flip.
+## What is still open
+Every planned core page is built and the production cutover is complete. Remaining work is ongoing improvement, not launch blocking:
+- Replace any remaining labeled placeholder/proof images as real assets are approved.
+- Add more case studies only after approval/sign-off.
+- Keep combo pages, sitemap, and contextual internal links current as the SEO program expands.
+- Keep homepage performance experiments preview-only until visual/interaction QA clears.
 
 ## Owner inputs — status
 1. **FAQ answers** — DONE 2026-06-21: all 40 wired in; `FAQPage` schema live on all 8.
 2. **Conviction stats** — DONE 2026-06-21: 6 confirmed; Google Ads swapped to L&L's own 8-12% conversion rate.
-3. **Images** — STILL PENDING: replace the labeled placeholders (each says exactly what to drop in).
+3. **Images/proof assets** — ONGOING: replace placeholders or add case-study assets only as real, approved assets arrive.
 
 ## Highest-priority work next
-1. Drop **real images** into the labeled placeholders sitewide (the last owner input outstanding).
-2. Launch cutover: add `robots.txt` and flip canonicals / `og` from staging to production.
-3. Get **client sign-offs** on the case studies; add **more case studies** to the framework as approved.
-4. **Launch cutover** to lawnandlandmarketing.com (later) — `seo-launch-checklist.md` (canonical flip,
-   `og:image`, `robots.txt`).
+1. Keep repo docs/current-state logs updated in the same commit as structural or sitewide changes.
+2. Run preview-only homepage performance work if/when Matt asks to revisit LCP.
+3. Continue SEO growth work through contextual combo pages, proof assets, and case-study expansion.
+4. Verify production directly on `https://lawnandlandmarketing.com`, not a duplicate Vercel alias.
 
 ## Success criteria for a "finished" page
 Live ≠ finished. A finished page has: a clear strategic purpose, a strong H1/promise, enough body

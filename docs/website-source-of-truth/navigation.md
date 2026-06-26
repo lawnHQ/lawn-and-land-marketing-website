@@ -96,10 +96,15 @@ data verbatim from the Lucide source so it renders correctly.
 ## Footer (`_footer.html`, `.footer-v2`)
 Single-source, stamped by `build.py`. Rows: (1) brand + **click-to-call phone (727-496-7098, NAP)** + social + a "Ready to grow?" CTA card;
 (2) four link columns — **Marketing Services** (8), **Industries** (the canonical 8), **Company**,
-**Resources**; (3) a trust bar (100+ companies · 97%+ retention · since 2022); (4) a legal bar
-(© Lawn & Land Marketing · St. Petersburg, FL · Terms of Use → `/terms/` · Privacy Policy →
-`/privacy-policy/` · hello@lawnandlandmarketing.com). Tagline: "Green
-industry specialists since 2022."
+**Resources**; (3) a trust bar (100+ companies · 97%+ retention · since 2022); (4) a legal bar.
+
+Current legal bar:
+- Desktop: copyright left, palm badge centered, Terms/Privacy right.
+- Mobile: Terms/Privacy first, copyright second, palm badge at the very bottom center.
+- Palm badge text: `Grown In St. Petersburg, FL`.
+- Palm icon: Landscaping palm SVG, lime/neon green.
+
+Tagline: "Green industry specialists since 2022."
 
 ## Per-page exception: the booking page
 `/get-started/book-strategy-call/` intentionally runs **stripped minimal chrome** (logo-only header + slim footer) for conversion — fewer exits at the bottom of the funnel (2026-06-20 build brief). It uses **non-`.announcement-bar` / non-`.footer-v2`** markup, so `build.py` skips it by design (regex no-match) and `--check` stays green. **Edit that page's header/footer by hand** — the partials do NOT stamp it. This is the only page exempt from the universal chrome.

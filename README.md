@@ -4,13 +4,10 @@ The future public website for **Lawn & Land Marketing**, a digital-marketing age
 **exclusively with green-industry / lawn care & landscaping companies**. Static, multi-page,
 hand-built HTML/CSS/JS (no framework).
 
-- **Live staging:** https://new.lawnlab.dev (also the Vercel project domain
-  https://lawnland-site.vercel.app — same deploy). Both reflect `main`.
-- **Production (not launched yet):** lawnandlandmarketing.com
-- **Deploy:** push to `main` → GitHub Actions (`.github/workflows/deploy.yml`) → Vercel production
-  (~1–2 min). Auth-protected Vercel previews are auto-created per branch.
-- **Branches:** all progress lives on `main`; the working branch is `site-foundation`, kept in sync —
-  push to **both** (`origin site-foundation` then `origin site-foundation:main`).
+- **Production:** https://lawnandlandmarketing.com
+- **Canonical Vercel project for the custom domain:** `lawnland-site`.
+- **Deploy:** push to `main` → GitHub Actions / Vercel production (~1–2 min). Auth-protected Vercel previews are auto-created per branch.
+- **Branches:** `main` is the production branch. Older `site-foundation` history may still exist, but do not assume it is current unless intentionally synced for a specific workflow.
 
 > **Read `CLAUDE.md` (repo root) first** — it's the full, current orientation for any session.
 > The deep source-of-truth docs live in `docs/website-source-of-truth/` (start with `restart-guide.md`,
@@ -41,29 +38,23 @@ classes — `svc-*`, `simple-hero`, `svc-cta` — plus `industry.css` for `/indu
 Specs: `service-page-template.md`, `industry-page-template.md`, `case-study-template.md`.
 
 ## Current state at a glance
-**The site is content-complete and in pre-launch review.** Developed:
-- **Homepage** (`/`) — the benchmark page.
-- **Marketing Services:** the hub + all **8 detail pages** (generated).
+**The site is live in production and actively maintained.** Developed:
+- **Homepage** (`/`) — the benchmark page, with future homepage performance work treated as preview-only.
+- **Marketing Services:** the hub + all **8 detail pages** (generated), plus the service × industry combo-page layer.
 - **Programs:** the hub + **Growth** and the flagship **Authority**.
 - **Industries:** the hub + all **canonical 8** (landscaping, lawn-care, lawn-maintenance,
   outdoor-living, land-clearing, excavation, septic-installation, holiday-lighting).
-- **About** (+ `#team`), **Contact** (live GHL form), **Confirmation**, **Get Started / Book a Call**.
+- **About** (+ `#team`), **Contact** (live GHL form), **Confirmation**, **Get Started / Book a Call**,
+  **Strategy Booked**, and **Thanks for Preparing**.
 - **Legal:** Terms of Use, Privacy Policy.
 - **Resources** (content pages under the `/resources/` SEO silo — there is no hub page):
   Blog, Experiences & Reviews, Mow Money Podcast.
-- **Case Studies** (`/case-studies/`): **Precision** and **Rock Solid** (built on the locked
-  `case-study-template.md`).
+- **Case Studies** (`/case-studies/`): **Precision** and **Rock Solid**.
 - **Client Results** roster (`/client-results/`) — tiered case-studies + client roster, under About.
 
-**Landed (2026-06-21):** real FAQ answers + `FAQPage` schema on all 8 service pages, verified
-conviction stats (Google Ads now L&L's own 8-12% conversion rate), the `og:image` share graphic
-sitewide, About team headshots, and Precision + Rock Solid case-study sign-offs.
+**Recent operating baseline (2026-06-26):** audit reconciliation is logged, risky homepage LCP overrides were rolled back, the combo-page program is live, `/thanks-for-preparing/` is live, the universal footer was refined, and the current stylesheet cache-bust is `styles.css?v=156`.
 
-**Launch prep still pending (see `seo-launch-checklist.md`):** real images for the labeled
-placeholders, `robots.txt`, and the staging→production canonical/`og` flip. More case studies (e.g.
-From The Ground Up) slot into the framework as they're approved.
-
-See `docs/website-source-of-truth/page-registry.md` for the full per-page status table.
+See `docs/website-source-of-truth/current-state-2026-06-26.md` and `docs/website-source-of-truth/page-registry.md` for the current operating state.
 
 ## Canonical routes (truth)
 `/` · `/about/` (+ `#team`) · `/client-results/` · `/contact/` · `/get-started/book-strategy-call/` ·
@@ -109,7 +100,7 @@ and is **no longer retired**.)
 
 ## Working rules
 - This repo is the website source of truth; every change goes through git.
-- Push `main` to deploy; keep `site-foundation` in sync (push both). Don't deploy via Vercel CLI as
-  the normal workflow, and **don't deploy to the production domain** — not launching yet.
+- Push `main` to deploy production. Use preview branches/deployments for risky homepage, nav, font, tracking, or performance work.
 - Don't reintroduce retired routes. Keep `docs/website-source-of-truth/` current in the same
   workstream as any structural change.
+- If CSS changes, bump the relevant `?v=` cache-bust sitewide before pushing.

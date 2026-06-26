@@ -1,21 +1,18 @@
 # Lawn & Land Marketing — Website
 
 Orientation for a fresh session. Read this first, then `docs/website-source-of-truth/`.
-Last updated: 2026-06-23. The site is content-complete and in pre-launch review.
+Last updated: 2026-06-26. The site is live in production and actively maintained.
 
 ## What this is
-The future public website for **Lawn & Land Marketing** — a digital-marketing agency working
+The production public website for **Lawn & Land Marketing** — a digital-marketing agency working
 **exclusively with green-industry / lawn care & landscaping companies**. Static, multi-page,
-hand-built HTML/CSS/JS (no framework). Final home: **lawnandlandmarketing.com** —
-**NOT launched yet**; we build and review on staging.
+hand-built HTML/CSS/JS (no framework). Canonical home: **lawnandlandmarketing.com**.
 
-- **Live staging:** https://new.lawnlab.dev — and the Vercel project domain
-  https://lawnland-site.vercel.app (same deploy). Both always reflect `main`.
-- **Deploy:** push to `main` → GitHub Actions (`.github/workflows/deploy.yml`) → Vercel
-  production. Takes ~1–2 min. (Vercel also auto-creates auth-protected previews per branch.)
-- **Branches:** all progress lives on `main`; the working branch `site-foundation` is kept
-  in sync with it — push to **both** (`origin site-foundation` then `origin site-foundation:main`).
-- **Cache-bust versions in use:** `styles.css?v=151`, `main.js?v=56`, `service-page.css?v=5`,
+- **Production:** https://lawnandlandmarketing.com.
+- **Canonical Vercel project for the custom domain:** `lawnland-site`.
+- **Deploy:** push to `main` → GitHub Actions / Vercel production. Takes ~1–2 min. Vercel also auto-creates auth-protected previews per branch.
+- **Branches:** `main` is the production branch. Older `site-foundation` history may still exist, but do not assume it is current unless intentionally synced for a specific workflow.
+- **Cache-bust versions in use:** `styles.css?v=156`, `main.js?v=59` on the primary pages, `service-page.css?v=5`,
   `industry.css?v=3` (shared `.ind-*` framework on `/industries/*`). The `/industries/*` FAQ accordion is
   **exclusive** (opening one `<details>` closes its siblings) via a `.ind-faq > details` handler in `main.js`. `styles.css` carries the global
   `text-wrap: balance` (headings) / `text-wrap: pretty` (body) line-break hints; the **actual
@@ -126,9 +123,7 @@ What remains is launch prep + owner inputs:
   Remaining: real images for the labeled placeholders. (Conviction stats verified 2026-06-21:
   6 confirmed accurate; Google Ads swapped to L&L's own 8-12% conversion rate vs ~3-6% industry.)
 - **Real images** for the remaining labeled placeholders on program / industry / case-study pages.
-- **Launch cutover** (`seo-launch-checklist.md`): flip canonicals + `og:url` staging→production,
-  add `robots.txt`, keep `sitemap.xml` current (og:image share graphic added 2026-06-21; its absolute
-  URL flips staging->production at launch with the canonicals).
+- **Production cutover is complete:** canonicals, `og:url`, sitemap, and robots are on the production domain. Keep future SEO changes verified against `https://lawnandlandmarketing.com`.
 - **Owner sign-offs (RECEIVED 2026-06-21):** Precision + Rock Solid both approved their names,
   numbers, video, and screenshots (cleared for launch indexing). GHL calendar confirmed at 20 minutes;
   Precision LSA figures ($250/wk, 9 leads) confirmed correct.
@@ -184,15 +179,10 @@ What remains is launch prep + owner inputs:
 - Schema: `Service` on service pages + Growth; `BreadcrumbList` where there's a visible breadcrumb;
   `FAQPage` only when the answers are real. Homepage carries `MarketingAgency`/Organization +
   `WebSite` + `FAQPage`.
-- **Schema uses the production domain** (`lawnandlandmarketing.com`) even though page **canonicals
-  still point to staging** (`new.lawnlab.dev`). The canonical flip is a single launch-time find/replace.
+- **Schema/canonical convention:** schema, canonicals, Open Graph URLs, sitemap, and robots are production-domain aligned. Verify public SEO state against `https://lawnandlandmarketing.com`.
 
-## Launch checklist (later — `docs/website-source-of-truth/seo-launch-checklist.md`)
-Flip all `new.lawnlab.dev` → `lawnandlandmarketing.com` (canonicals + `og:url`); add `og:image`
-share graphics; keep the real **`sitemap.xml`** current (rebuilt 2026-06-15 to the real routes —
-no killed routes); add `robots.txt`; verify the service-page conviction stats; land real FAQ
-answers + `FAQPage` schema; drop real images into placeholders. **Don't deploy to the production
-domain until launch.**
+## Production SEO maintenance
+Canonicals, Open Graph URLs, `sitemap.xml`, and `robots.txt` are production-domain aligned. Future work should keep the sitemap current and verify live source on `https://lawnandlandmarketing.com` after structural route changes.
 
 ## Working with the owner (Matt)
 Product-minded, not a deep engineer — explain **outcomes**, not git/Vercel/CLI/deploy mechanics

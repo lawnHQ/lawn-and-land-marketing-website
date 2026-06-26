@@ -37,9 +37,8 @@ These are legacy or non-canonical and should be removed from internal linking or
 
 ## Launch redirects (301) — old WordPress URLs
 Implemented in `vercel.json` (`redirects`, `permanent: true` = 308, SEO-equivalent to 301). Each is
-registered both with and without a trailing slash so either form resolves. They take effect when the new
-site takes over `lawnandlandmarketing.com` at launch (set alongside the canonical flip from `new.lawnlab.dev`).
-Audited 2026-06-23 against `https://lawnandlandmarketing.com/page-sitemap.xml` (29 pages) plus the `/grow` funnel.
+registered both with and without a trailing slash so either form resolves. They are active on the production
+domain `lawnandlandmarketing.com` after cutover. Audited 2026-06-23 against `https://lawnandlandmarketing.com/page-sitemap.xml` (29 pages) plus the `/grow` funnel.
 
 **Same URL, already rebuilt (no redirect needed):** `/`, `/about/`, `/contact/`, `/programs/`, `/privacy-policy/`, `/terms/`.
 

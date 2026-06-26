@@ -1,11 +1,19 @@
 # Launch Punch List
 
-Running list of everything still outstanding for the `lawnandlandmarketing.com` launch.
-Add to this as items come up; check them off as they're done. Last updated: 2026-06-23.
+Running list of everything still outstanding for the production site.
+Add to this as items come up; check them off as they're done. Last updated: 2026-06-26.
 
 > Note: a parallel Claude session is populating real images + pushing to this repo. Keep
 > lanes clear (funnel/redirect/infra vs images), and pull/rebase before pushing.
 > Owner also keeps a Google Sheet (owner-inputs tracker); mirror items there via paste-blocks.
+
+## Production maintenance status (updated 2026-06-26)
+- [x] Production domain live on `lawnandlandmarketing.com`.
+- [x] Canonicals + `og:url` production-domain aligned.
+- [x] `robots.txt` exists and points to the sitemap.
+- [x] `sitemap.xml` exists on the production domain.
+- [ ] Keep structural redirects and old URL coverage verified after major route changes.
+- [ ] Keep form/tracking items below handled as separate operational tasks, not launch blockers.
 
 ## Forms / integrations
 - [ ] **`/checklist` — wire the lead form to GHL.** The native form (First / Last / Email / Phone)
@@ -41,13 +49,12 @@ Add to this as items come up; check them off as they're done. Last updated: 2026
   errors. Unpublish on the old site now (credibility).
 - [ ] 3 EEAT owner inputs still pending (for the author/byline system).
 
-## Redirects / launch cutover
-- [ ] Flip canonicals + `og:url`: `new.lawnlab.dev` → `lawnandlandmarketing.com` (mass find/replace;
-  do at cutover, after images land, to avoid colliding with the image session).
-- [x] Added `robots.txt` (2026-06-24): allow-all, disallow `/grow/` + `/confirmation/`, points to sitemap. It is allow-all, so **password-protect staging (Vercel) until launch** so staging is not indexed.
+## Redirects / production cutover
+- [x] Canonicals + `og:url` flipped to `lawnandlandmarketing.com`.
+- [x] Added `robots.txt` (2026-06-24): allow-all, disallow `/grow/` + `/confirmation/`, points to sitemap.
 - [x] Refreshed `sitemap.xml` (2026-06-23) — added `/checklist` + the 19 blog posts (53 URLs; `/grow` already excluded).
-- [ ] DNS switch (owner) — point `lawnandlandmarketing.com` at the new Vercel site.
-- [ ] Post-cutover pass: confirm every old URL + every structural redirect resolves.
+- [x] Production domain live on the new Vercel site.
+- [ ] Ongoing: confirm every old URL + every structural redirect resolves after future route changes.
 
 ## Redirect manager
 - [ ] Rotate the Google client secret (shared in chat earlier; unused by the ID-token design, but rotate to be safe).

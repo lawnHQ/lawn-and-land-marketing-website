@@ -789,3 +789,12 @@
   on desktop, full 16:9 on mobile). Source: the owner's shared Drive folder, one file named per page. (Plus
   the two `/programs/*` "Why us" images earlier the same day.) Remaining placeholders: homepage CTA +
   service-page screenshots.
+## 2026-06-26 — Production operations baseline, audit rollback, combo pages, and footer badge
+- **Production state:** the canonical public site is `https://lawnandlandmarketing.com` on Vercel project `lawnland-site`. Future verification should hit the custom domain directly, not stale/duplicate Vercel aliases.
+- **Audit reconciliation:** safe audit fixes stayed live, but risky homepage performance overrides were rolled back after confirmed brand-font and nav-hover regressions. Homepage LCP/performance work is now preview-only unless Matt explicitly approves production after visual/interaction QA.
+- **Homepage performance guardrail:** do not trade Rethink Sans, dropdown behavior, mobile menu behavior, hero fidelity, or CTA behavior for Lighthouse numbers. Critical CSS/font-path changes must prove both LCP and CLS and pass desktop nav hover + mobile menu + computed-font checks.
+- **Combo-page program:** service × industry pages should be contextually linked from relevant industry service cards, not stuffed into the main nav/footer. Preserve parent service/industry links, sitemap entries, unique business spine, no cannibalization, and no em dashes.
+- **Thanks for Preparing:** `/thanks-for-preparing/` is live as the post-booking prep video page. Keep it focused on pre-call education and use recovered/source-verified video assets when editing.
+- **Universal footer:** the legal/footer badge text is `Grown In St. Petersburg, FL` with the Landscaping palm SVG. Desktop legal row is copyright left, badge centered, Terms/Privacy right. Mobile legal row shows Terms/Privacy, then copyright, then the palm badge centered at the very bottom.
+- **Cache-bust discipline:** current stylesheet cache-bust is `styles.css?v=156`. Any future CSS change should bump the relevant `?v=` query sitewide before deploy.
+- **Docs baseline:** newest operating reference is `docs/website-source-of-truth/current-state-2026-06-26.md`; audit rollback handoff is `docs/audit-rollback-handoff-2026-06-25.md`; combo-page directive is `docs/directives/combo-pages-agent-directive.md`.
