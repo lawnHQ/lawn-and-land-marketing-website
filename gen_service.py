@@ -12,6 +12,8 @@ with") are generated here, so they are correct by construction.
 Usage:
   python3 gen_service.py            # generate all pages from _content.json
   python3 gen_service.py --selftest # render a stub page to /tmp and sanity-check
+
+Caveat: Do not run full generation after combo cleanup unless intentionally rebuilding all service pages. For combo maintenance, target/edit only the intended slugs.
 """
 import re, json, os, sys
 
@@ -142,7 +144,7 @@ def build_main(c):
     hero = f'''  <!-- HERO BANNER -->
   <section class="simple-hero" style="--hero-image: url('/assets/images/{img}');">
     <div class="hero-inner">
-      <div class="hero-copy" data-reveal="fade-up">
+      <div class="hero-copy">
         {crumbs}
         <div class="hero-kicker">{esc(c['heroEyebrow'])}</div>
         <h1>{esc(c['h1'])}</h1>
