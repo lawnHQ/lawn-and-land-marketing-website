@@ -1820,7 +1820,25 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
   font-family: var(--font-l); font-size: 13px;
   color: rgba(255,255,255,0.55);
 }
-.fv2-specialty { color: rgba(255,255,255,0.55); text-align: center; }
+.fv2-specialty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.68);
+  text-align: center;
+  justify-self: center;
+}
+.fv2-specialty svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+  fill: none;
+  stroke: var(--lime);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .fv2-legal-links { display: flex; justify-content: flex-end; gap: 20px; }
 .fv2-legal-links a { color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
 .fv2-legal-links a:hover { color: var(--white); }
