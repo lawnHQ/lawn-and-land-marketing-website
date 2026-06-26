@@ -1862,9 +1862,16 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
     grid-row: 2;
     text-align: center;
   }
-  .fv2-specialty { display: none; }
+  .fv2-specialty {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    display: inline-flex;
+    justify-self: center;
+    margin-top: 2px;
+  }
   .fv2-legal-links {
     grid-column: 1 / -1;
+    grid-row: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
