@@ -1856,6 +1856,7 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 12px 16px;
+    padding-bottom: 32px;
   }
   .fv2-legal-row > span:first-child {
     grid-column: 1 / -1;
