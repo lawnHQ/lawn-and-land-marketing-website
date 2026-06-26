@@ -1812,14 +1812,16 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
 
 /* ── Row 3: Legal bar ── */
 .fv2-legal-row {
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 12px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
   padding: 24px 0;
   font-family: var(--font-l); font-size: 13px;
   color: rgba(255,255,255,0.55);
 }
-.fv2-specialty { color: rgba(255,255,255,0.55); }
-.fv2-legal-links { display: flex; gap: 20px; }
+.fv2-specialty { color: rgba(255,255,255,0.55); text-align: center; }
+.fv2-legal-links { display: flex; justify-content: flex-end; gap: 20px; }
 .fv2-legal-links a { color: rgba(255,255,255,0.55); text-decoration: none; transition: color 0.2s; }
 .fv2-legal-links a:hover { color: var(--white); }
 
@@ -1832,8 +1834,26 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
 @media (max-width: 768px) {
   .fv2-brand-row { padding: 40px 0 36px; }
   .fv2-cols-row { grid-template-columns: 1fr 1fr; gap: 28px 20px; padding: 36px 0; }
-  .fv2-legal-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .fv2-legal-row {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 12px 16px;
+  }
+  .fv2-legal-row > span:first-child {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    text-align: center;
+  }
   .fv2-specialty { display: none; }
+  .fv2-legal-links {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 16px;
+  }
+  .fv2-legal-links a:first-child { text-align: left; }
+  .fv2-legal-links a:last-child { text-align: right; }
 }
 @media (max-width: 480px) {
   .fv2-cols-row { grid-template-columns: 1fr 1fr; }
@@ -2308,9 +2328,7 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
   justify-content: center;
   gap: 40px;
   padding: 24px 0;
-  border-top: 1px solid rgba(255,255,255,0.08);
   border-bottom: 1px solid rgba(255,255,255,0.08);
-  margin-top: 8px;
 }
 .fv2-trust-item {
   display: flex;
