@@ -561,12 +561,12 @@
     },
     {
       "source": "/blog/4-essential-digital-marketing-strategies-for-landscapers",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/industries/landscaping/",
       "permanent": true
     },
     {
       "source": "/blog/4-essential-digital-marketing-strategies-for-landscapers/",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/industries/landscaping/",
       "permanent": true
     },
     {
@@ -581,22 +581,22 @@
     },
     {
       "source": "/blog/7-proven-strategies-to-generate-lawn-care-leads-like-a-pro-in-2024",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/industries/lawn-care/",
       "permanent": true
     },
     {
       "source": "/blog/7-proven-strategies-to-generate-lawn-care-leads-like-a-pro-in-2024/",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/industries/lawn-care/",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-landscaping-business",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/marketing-services/your-ai-partner/",
       "permanent": true
     },
     {
       "source": "/blog/ai-for-landscaping-business/",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/marketing-services/your-ai-partner/",
       "permanent": true
     },
     {
@@ -691,12 +691,12 @@
     },
     {
       "source": "/blog/creative-email-newsletter-strategies-for-landscapers",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/marketing-services/automation/",
       "permanent": true
     },
     {
       "source": "/blog/creative-email-newsletter-strategies-for-landscapers/",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/marketing-services/automation/",
       "permanent": true
     },
     {
@@ -1031,12 +1031,12 @@
     },
     {
       "source": "/blog/what-works-for-gardeners-email-newsletters",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/marketing-services/automation/",
       "permanent": true
     },
     {
       "source": "/blog/what-works-for-gardeners-email-newsletters/",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/marketing-services/automation/",
       "permanent": true
     },
     {
@@ -1131,12 +1131,12 @@
     },
     {
       "source": "/blog/why-your-landscape-business-isnt-growing",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/industries/landscaping/",
       "permanent": true
     },
     {
       "source": "/blog/why-your-landscape-business-isnt-growing/",
-      "destination": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+      "destination": "/industries/landscaping/",
       "permanent": true
     },
     {
@@ -1147,6 +1147,16 @@
     {
       "source": "/blog/:slug/",
       "destination": "/resources/blog/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/landscaping-website/page/2",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/landscaping-website/page/2/",
+      "destination": "/resources/blog/category/strategy/",
       "permanent": true
     }
   ],
