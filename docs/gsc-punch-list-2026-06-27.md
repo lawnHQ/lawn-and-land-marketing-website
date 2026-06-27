@@ -1,6 +1,6 @@
 # Lawn & Land GSC Punch List — 2026-06-27
 
-Generated: 2026-06-27T10:44:27.463843
+Generated: 2026-06-27T10:53:12.233951
 Property: `https://lawnandlandmarketing.com/`
 Data window: `2026-05-28` to `2026-06-24`
 
@@ -9,14 +9,10 @@ Overview: **93 clicks**, **40,108 impressions**, **0.23% CTR**, **24.7 avg posit
 
 ## Fix Now
 
-- Legacy path still gets visibility but is live 404: /blog/category/advice/ clicks=0, impressions=1981. Decide restore vs redirect.
-- Legacy path still gets visibility but is live 404: /blog/category/featured/ clicks=0, impressions=69. Decide restore vs redirect.
-- Legacy path still gets visibility but is live 404: /blog/category/guides/ clicks=0, impressions=3594. Decide restore vs redirect.
-- Legacy path still gets visibility but is live 404: /blog/category/lawn-care-marketing/ clicks=0, impressions=332. Decide restore vs redirect.
+- None.
 
 ## Watch
 
-- /grow/ not PASS in URL Inspection: verdict=NEUTRAL, coverage=URL is unknown to Google, fetch=PAGE_FETCH_STATE_UNSPECIFIED.
 - Legacy path still gets GSC visibility but redirects live: /blog/what-works-for-gardeners-email-newsletters/ → /resources/blog/the-ultimate-guide-to-online-landscape-marketing/ clicks=5, impressions=455.
 - Legacy path still gets GSC visibility but redirects live: /our-team/ → /about/ clicks=4, impressions=927.
 - Legacy path still gets GSC visibility but redirects live: /blog/5-best-social-networks-for-landscapers-success/ → /resources/blog/5-best-social-networks-for-landscapers-success/ clicks=2, impressions=82.
@@ -34,6 +30,13 @@ Overview: **93 clicks**, **40,108 impressions**, **0.23% CTR**, **24.7 avg posit
 - Legacy path still gets GSC visibility but redirects live: /blog/ai-for-landscaping-business/ → /resources/blog/the-ultimate-guide-to-online-landscape-marketing/ clicks=0, impressions=5.
 - Legacy path still gets GSC visibility but redirects live: /blog/alex-barth-troys-tropics-premium-outdoor-living-growth/ → /client-results/ clicks=0, impressions=2.
 - Legacy path still gets GSC visibility but redirects live: /blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/ → /resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/ clicks=0, impressions=1.
+- Legacy path still gets GSC visibility but redirects live: /blog/category/advice/ → /resources/blog/category/strategy/ clicks=0, impressions=1981.
+- Legacy path still gets GSC visibility but redirects live: /blog/category/advice/page/2/ → /resources/blog/category/strategy/ clicks=0, impressions=7.
+- Legacy path still gets GSC visibility but redirects live: /blog/category/advice/page/3/ → /resources/blog/category/strategy/ clicks=0, impressions=1.
+- Legacy path still gets GSC visibility but redirects live: /blog/category/featured/ → /resources/blog/ clicks=0, impressions=69.
+- Legacy path still gets GSC visibility but redirects live: /blog/category/guides/ → /resources/blog/category/seo/ clicks=0, impressions=3594.
+- Legacy path still gets GSC visibility but redirects live: /blog/category/lawn-care-marketing/ → /resources/blog/category/seo/ clicks=0, impressions=332.
+- Legacy path still gets GSC visibility but redirects live: /blog/category/lawn-care-marketing/page/2/ → /resources/blog/category/seo/ clicks=0, impressions=4.
 - CTR opportunity page: / impressions=18525, CTR=0.4%, avg position=22.4.
 - CTR opportunity page: /blog/what-works-for-gardeners-email-newsletters/ impressions=455, CTR=1.1%, avg position=12.7.
 - CTR opportunity page: /our-team/ impressions=927, CTR=0.4%, avg position=66.0.
@@ -59,14 +62,12 @@ Overview: **93 clicks**, **40,108 impressions**, **0.23% CTR**, **24.7 avg posit
 
 - GSC access is good: siteFullUser on https://lawnandlandmarketing.com/.
 - Resubmitted current sitemap.xml successfully in GSC.
-- Sitemap is clean in GSC: https://lawnandlandmarketing.com/sitemap.xml, submitted=2026-06-27T14:44:27.845Z, downloaded=2026-06-27T13:34:00.371Z.
+- Sitemap is clean in GSC: https://lawnandlandmarketing.com/sitemap.xml, submitted=2026-06-27T14:53:12.754Z, downloaded=2026-06-27T14:44:28.350Z.
+- /grow/ is unknown to Google, live source is `noindex, follow`, and it is not in the sitemap, so this is expected for a direct-access funnel page.
 - /ga-tos/ is unknown to Google and live source is noindex, so no action needed unless it later appears indexed.
 - /apply/ is unknown to Google and live source is noindex, so no action needed unless it later appears indexed.
 - /podcast-confirmation/ is unknown to Google and live source is noindex, so no action needed unless it later appears indexed.
-- Low-volume legacy path handled live with status 404: /blog/category/advice/page/2/ impressions=7.
-- Low-volume legacy path handled live with status 404: /blog/category/advice/page/3/ impressions=1.
 - Low-volume legacy path handled live with status 404: /blog/category/landscaping-website/page/2/ impressions=1.
-- Low-volume legacy path handled live with status 404: /blog/category/lawn-care-marketing/page/2/ impressions=4.
 
 ## URL Inspection Snapshot
 | URL | Verdict | Coverage | Indexing | Fetch | Last crawl |
@@ -106,14 +107,14 @@ Overview: **93 clicks**, **40,108 impressions**, **0.23% CTR**, **24.7 avg posit
 | `/blog/ai-for-landscaping-business/` | 0 | 5 | 308 | `https://lawnandlandmarketing.com/resources/blog/the-ultimate-guide-to-online-landscape-marketing/` |
 | `/blog/alex-barth-troys-tropics-premium-outdoor-living-growth/` | 0 | 2 | 308 | `https://lawnandlandmarketing.com/client-results/` |
 | `/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/` | 0 | 1 | 308 | `https://lawnandlandmarketing.com/resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/` |
-| `/blog/category/advice/` | 0 | 1981 | 404 | `` |
-| `/blog/category/advice/page/2/` | 0 | 7 | 404 | `` |
-| `/blog/category/advice/page/3/` | 0 | 1 | 404 | `` |
-| `/blog/category/featured/` | 0 | 69 | 404 | `` |
-| `/blog/category/guides/` | 0 | 3594 | 404 | `` |
+| `/blog/category/advice/` | 0 | 1981 | 308 | `https://lawnandlandmarketing.com/resources/blog/category/strategy/` |
+| `/blog/category/advice/page/2/` | 0 | 7 | 308 | `https://lawnandlandmarketing.com/resources/blog/category/strategy/` |
+| `/blog/category/advice/page/3/` | 0 | 1 | 308 | `https://lawnandlandmarketing.com/resources/blog/category/strategy/` |
+| `/blog/category/featured/` | 0 | 69 | 308 | `https://lawnandlandmarketing.com/resources/blog/` |
+| `/blog/category/guides/` | 0 | 3594 | 308 | `https://lawnandlandmarketing.com/resources/blog/category/seo/` |
 | `/blog/category/landscaping-website/page/2/` | 0 | 1 | 404 | `` |
-| `/blog/category/lawn-care-marketing/` | 0 | 332 | 404 | `` |
-| `/blog/category/lawn-care-marketing/page/2/` | 0 | 4 | 404 | `` |
+| `/blog/category/lawn-care-marketing/` | 0 | 332 | 308 | `https://lawnandlandmarketing.com/resources/blog/category/seo/` |
+| `/blog/category/lawn-care-marketing/page/2/` | 0 | 4 | 308 | `https://lawnandlandmarketing.com/resources/blog/category/seo/` |
 
 ## Top Pages by Impressions
 | Page | Clicks | Impr. | CTR | Pos. |
