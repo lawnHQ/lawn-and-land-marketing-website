@@ -250,6 +250,166 @@
       "permanent": true
     },
     {
+      "source": "/blog/category/advice/page/2",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/advice/page/2/",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/advice/page/3",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/advice/page/3/",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/advice/page/4",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/advice/page/4/",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/advice/page/5",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/advice/page/5/",
+      "destination": "/resources/blog/category/strategy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/featured/page/2",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/featured/page/2/",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/featured/page/3",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/featured/page/3/",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/featured/page/4",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/featured/page/4/",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/featured/page/5",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/featured/page/5/",
+      "destination": "/resources/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/guides/page/2",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/guides/page/2/",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/guides/page/3",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/guides/page/3/",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/guides/page/4",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/guides/page/4/",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/guides/page/5",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/guides/page/5/",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/lawn-care-marketing/page/2",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/lawn-care-marketing/page/2/",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/lawn-care-marketing/page/3",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/lawn-care-marketing/page/3/",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/lawn-care-marketing/page/4",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/lawn-care-marketing/page/4/",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/lawn-care-marketing/page/5",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/category/lawn-care-marketing/page/5/",
+      "destination": "/resources/blog/category/seo/",
+      "permanent": true
+    },
+    {
       "source": "/our-team",
       "destination": "/about/#team",
       "permanent": true
