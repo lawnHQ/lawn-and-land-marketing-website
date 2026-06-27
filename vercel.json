@@ -20,6 +20,76 @@
       "permanent": false
     },
     {
+      "source": "/reputation-management",
+      "destination": "/marketing-services/reputation-management/",
+      "permanent": true
+    },
+    {
+      "source": "/reputation-management/",
+      "destination": "/marketing-services/reputation-management/",
+      "permanent": true
+    },
+    {
+      "source": "/paid-ads",
+      "destination": "/marketing-services/google-ads/",
+      "permanent": true
+    },
+    {
+      "source": "/paid-ads/",
+      "destination": "/marketing-services/google-ads/",
+      "permanent": true
+    },
+    {
+      "source": "/lead-nurturing",
+      "destination": "/marketing-services/automation/",
+      "permanent": true
+    },
+    {
+      "source": "/lead-nurturing/",
+      "destination": "/marketing-services/automation/",
+      "permanent": true
+    },
+    {
+      "source": "/local-seo",
+      "destination": "/marketing-services/local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/local-seo/",
+      "destination": "/marketing-services/local-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/websites",
+      "destination": "/marketing-services/website-design/",
+      "permanent": true
+    },
+    {
+      "source": "/websites/",
+      "destination": "/marketing-services/website-design/",
+      "permanent": true
+    },
+    {
+      "source": "/growth-engine-blueprint",
+      "destination": "/grow/",
+      "permanent": true
+    },
+    {
+      "source": "/growth-engine-blueprint/",
+      "destination": "/grow/",
+      "permanent": true
+    },
+    {
+      "source": "/4-pillars-schedule",
+      "destination": "/grow/",
+      "permanent": true
+    },
+    {
+      "source": "/4-pillars-schedule/",
+      "destination": "/grow/",
+      "permanent": true
+    },
+    {
       "source": "/solutions",
       "destination": "/marketing-services/",
       "permanent": true
