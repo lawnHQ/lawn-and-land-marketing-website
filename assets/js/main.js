@@ -40,11 +40,13 @@ function animateCount(el) {
   const prefix = el.dataset.prefix || '';
   const suffix = el.dataset.suffix || '';
   const duration = 1800;
+  const visibleNumber = parseFloat((el.textContent || '').replace(/[^0-9.]/g, ''));
+  const from = Number.isFinite(visibleNumber) && visibleNumber > 0 ? visibleNumber : 0;
   const start = performance.now();
   const update = (now) => {
     const progress = Math.min((now - start) / duration, 1);
     const ease = 1 - Math.pow(1 - progress, 3);
-    const raw = ease * target;
+    const raw = from + ((target - from) * ease);
     const current = decimals ? raw.toFixed(decimals) : Math.round(raw);
     el.textContent = prefix + current + suffix;
     if (progress < 1) requestAnimationFrame(update);
