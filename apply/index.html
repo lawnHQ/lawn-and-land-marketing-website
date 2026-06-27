@@ -57,7 +57,9 @@
     .legacy-actions { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:26px; }
 
     .cal-frame { max-width:940px; margin:28px auto 0; background:var(--white); border:1px solid var(--card-bd); border-radius:22px; box-shadow:0 30px 70px rgba(0,0,0,0.4); padding:10px; overflow:hidden; }
+    .legacy-hero .cal-frame { margin:0; width:100%; }
     .cal-frame iframe { width:100%; min-height:720px; border:0; border-radius:10px; display:block; }
+    .legacy-hero .cal-frame iframe { min-height:650px; }
     .cal-fallback { text-align:center; color:var(--muted); font-size:14.5px; margin:20px auto 0; max-width:560px; }
     .cal-fallback a { color:var(--lime); font-weight:600; white-space:nowrap; }
     @media(max-width:860px){ .legacy-grid{grid-template-columns:1fr;} .legacy-hero{padding:70px 0 56px;} }
@@ -304,21 +306,11 @@
           <p>Answer a few quick fit questions below. If it looks like a fit, you’ll be able to choose a time on our calendar.</p>
           <img class="legacy-graphic" src="/assets/images/legacy/legacy-apply-strategy-call.png" alt="Apply for your strategy call" width="500" height="120">
         </div>
-        <div class="legacy-video" aria-label="Marketing for Landscapers and Lawn Care Pros video">
-          <iframe src="https://www.youtube-nocookie.com/embed/DyoyYl1n7wI?rel=0" title="Marketing for Landscapers & Lawn Care Pros | Book More Jobs & Dominate Your Local Market" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
-    <section class="legacy-section">
-      <div class="container">
-        <div class="legacy-card legacy-center">
-          <span class="legacy-eyebrow">Application</span>
-          <h2 style="color:var(--white);font-family:var(--font-h);font-style:italic;font-size:clamp(28px,4vw,44px);line-height:1.05;margin:0 auto 12px;max-width:760px;">Choose a time for your Green Industry Growth Strategy Call</h2>
-          <p style="max-width:620px;margin:0 auto;color:rgba(255,255,255,.76);font-size:17px;line-height:1.65;">Use the same calendar flow from the Growth page to schedule the call directly.</p>
+        <div>
           <div class="cal-frame">
             <iframe id="u7agGU9Xwo0kjAsLlKif_apply" scrolling="no" src="https://api.leadconnectorhq.com/widget/booking/u7agGU9Xwo0kjAsLlKif" title="Book your free growth-plan call"></iframe>
           </div>
-          <p class="cal-fallback">Trouble booking? Call or text <a href="tel:+17274967098">(727) 496-7098</a> and we'll get you scheduled.</p>
+          <p class="cal-fallback">Trouble booking? Call or text <a href="tel:+172****7098">(727) 496-7098</a> and we'll get you scheduled.</p>
         </div>
       </div>
     </section>
