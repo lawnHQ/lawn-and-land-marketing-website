@@ -55,6 +55,11 @@
     .legacy-center { text-align:center; }
     .legacy-center h1 { margin-left:auto; margin-right:auto; }
     .legacy-actions { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:26px; }
+
+    .cal-frame { max-width:940px; margin:28px auto 0; background:var(--white); border:1px solid var(--card-bd); border-radius:22px; box-shadow:0 30px 70px rgba(0,0,0,0.4); padding:10px; overflow:hidden; }
+    .cal-frame iframe { width:100%; min-height:720px; border:0; border-radius:10px; display:block; }
+    .cal-fallback { text-align:center; color:var(--muted); font-size:14.5px; margin:20px auto 0; max-width:560px; }
+    .cal-fallback a { color:var(--lime); font-weight:600; white-space:nowrap; }
     @media(max-width:860px){ .legacy-grid{grid-template-columns:1fr;} .legacy-hero{padding:70px 0 56px;} }
   </style>
 </head>
@@ -308,9 +313,12 @@
       <div class="container">
         <div class="legacy-card legacy-center">
           <span class="legacy-eyebrow">Application</span>
-          <h2 style="color:var(--white);font-family:var(--font-h);font-style:italic;font-size:clamp(28px,4vw,44px);line-height:1.05;margin:0 auto 12px;max-width:760px;">Ready to see if Lawn & Land is the right growth partner?</h2>
-          <p style="max-width:620px;margin:0 auto;color:rgba(255,255,255,.76);font-size:17px;line-height:1.65;">The previous application page routed qualified visitors from the Walkup growth page into this strategy-call step. Use the button below to book the current strategy call flow.</p>
-          <div class="legacy-actions"><a class="btn btn--lime btn--lg" href="/get-started/book-strategy-call/">Choose a Time</a></div>
+          <h2 style="color:var(--white);font-family:var(--font-h);font-style:italic;font-size:clamp(28px,4vw,44px);line-height:1.05;margin:0 auto 12px;max-width:760px;">Choose a time for your Green Industry Growth Strategy Call</h2>
+          <p style="max-width:620px;margin:0 auto;color:rgba(255,255,255,.76);font-size:17px;line-height:1.65;">Use the same calendar flow from the Growth page to schedule the call directly.</p>
+          <div class="cal-frame">
+            <iframe id="u7agGU9Xwo0kjAsLlKif_apply" scrolling="no" src="https://api.leadconnectorhq.com/widget/booking/u7agGU9Xwo0kjAsLlKif" title="Book your free growth-plan call"></iframe>
+          </div>
+          <p class="cal-fallback">Trouble booking? Call or text <a href="tel:+17274967098">(727) 496-7098</a> and we'll get you scheduled.</p>
         </div>
       </div>
     </section>
@@ -439,5 +447,6 @@
   </footer>
 
   <script src="/assets/js/main.js?v=59"></script>
+  <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
 </body>
 </html>
