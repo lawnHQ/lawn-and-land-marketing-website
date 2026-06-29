@@ -4,24 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google tag (GA4: Lawn & Land Marketing) — loaded after first paint to protect mobile LCP/TBT -->
+  <!-- Google tag + Meta Pixel (Lawn & Land Marketing) — loaded after first paint to protect mobile LCP/TBT -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    function loadGa4(){
-      if (window.__llGa4Loaded) return;
-      window.__llGa4Loaded = true;
+    function loadMarketingTags(){
+      if (window.__llMarketingTagsLoaded) return;
+      window.__llMarketingTagsLoaded = true;
       var s = document.createElement('script');
       s.async = true;
       s.src = 'https://www.googletagmanager.com/gtag/js?id=G-HFEP2769DS';
       document.head.appendChild(s);
       gtag('js', new Date());
       gtag('config', 'G-HFEP2769DS');
+      gtag('config', 'AW-18165400861');
+      !function(f,b,e,v,n,t,sc){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;sc=b.getElementsByTagName(e)[0];sc.parentNode.insertBefore(t,sc)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init','235509009483991');fbq('track','PageView');
     }
     window.addEventListener('load', function(){
-      setTimeout(loadGa4, 8000);
+      setTimeout(loadMarketingTags, 8000);
     }, { once: true });
   </script>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=235509009483991&amp;ev=PageView&amp;noscript=1"/></noscript>
   <title>Lawn Care &amp; Landscaping Marketing Agency | Lawn &amp; Land</title>
   <meta name="description" content="Marketing built exclusively for lawn care, landscaping, and green industry companies. Websites, SEO, ads, and automation that turn attention into booked work.">
   <meta name="robots" content="index, follow">
