@@ -1,7 +1,6 @@
 # Lawn & Land Marketing
 User-agent: *
 Allow: /
-Disallow: /grow/
 Disallow: /confirmation/
 Disallow: /strategy-booked/
 
