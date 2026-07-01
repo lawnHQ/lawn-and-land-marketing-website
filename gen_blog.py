@@ -30,11 +30,11 @@ data = json.load(open(os.path.join(ROOT, "_blog.json"), encoding="utf-8"))
 PPP = data["postsPerPage"]; POSTS = data["posts"]; FEAT = data["featured"]; CATS = data["categories"]
 
 FILTERS = """    <div class="blog-filters">
-      <button class="blog-filter is-active" data-cat="all">All</button>
-      <button class="blog-filter" data-cat="growth-stories">Client Stories</button>
-      <button class="blog-filter" data-cat="seo">SEO</button>
-      <button class="blog-filter" data-cat="ads-social">Ads &amp; Social</button>
-      <button class="blog-filter" data-cat="strategy">Strategy</button>
+      <a class="blog-filter is-active" data-cat="all" href="/resources/blog/">All</a>
+      <a class="blog-filter" data-cat="growth-stories" href="/resources/blog/category/growth-stories/">Client Stories</a>
+      <a class="blog-filter" data-cat="seo" href="/resources/blog/category/seo/">SEO</a>
+      <a class="blog-filter" data-cat="ads-social" href="/resources/blog/category/ads-social/">Ads &amp; Social</a>
+      <a class="blog-filter" data-cat="strategy" href="/resources/blog/category/strategy/">Strategy</a>
     </div>"""
 
 PAGINATION_CSS = """

@@ -556,6 +556,7 @@
 .blog-index { max-width: var(--max); margin: 0 auto; padding: clamp(48px,7vw,84px) 24px; }
 .blog-filters { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:44px; }
 .blog-filter {
+  display:inline-block; text-decoration:none;
   padding:9px 18px; border-radius:999px;
   border:1px solid rgba(255,255,255,0.14); background:transparent;
   font-family:var(--font-l); font-size:13px; font-weight:600;

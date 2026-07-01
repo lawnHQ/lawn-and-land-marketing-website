@@ -1,7 +1,5 @@
 # Lawn & Land Marketing
 User-agent: *
 Allow: /
-Disallow: /confirmation/
-Disallow: /strategy-booked/
 
 Sitemap: https://lawnandlandmarketing.com/sitemap.xml
