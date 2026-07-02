@@ -63,7 +63,7 @@ def card(p):
             '          <h2 class="blog-card-title">%s</h2>\n'
             '          <p class="blog-card-excerpt">%s</p>\n'
             '          <div class="blog-card-meta">\n'
-            '            <span class="blog-card-author"><img class="blog-card-avatar" src="/assets/images/matt-author.jpg" alt="" loading="lazy">Matt Foreman</span>\n'
+            '            <span class="blog-card-author"><img class="blog-card-avatar" src="/assets/images/matt-author.webp" alt="Matt Foreman, founder of Lawn & Land Marketing" loading="lazy">Matt Foreman</span>\n'
             '            <span class="blog-card-date">%s</span>\n'
             '          </div>\n'
             '        </div>\n'
@@ -104,17 +104,25 @@ def put_section(htmltext, sec): return SEC_RE.sub(lambda m: sec, htmltext, count
 def inject(htmltext, css): return htmltext.replace("  </style>", css + "  </style>", 1)
 
 def set_meta(htmltext, title, desc, canon):
+    # Attribute-order-proof: match the whole tag by its name=/property= key wherever the
+    # attributes sit (a site-wide reformat once reordered them and silently broke the
+    # positional patterns), and rebuild the tag in canonical form.
     t, d = H(title), H(desc)
-    rep = [(r'<title>.*?</title>', '<title>%s</title>' % t),
-           (r'(<meta name="description" content=")[^"]*', r'\g<1>'+d),
-           (r'(<meta property="og:description" content=")[^"]*', r'\g<1>'+d),
-           (r'(<meta name="twitter:description" content=")[^"]*', r'\g<1>'+d),
-           (r'(<meta property="og:title" content=")[^"]*', r'\g<1>'+t),
-           (r'(<meta name="twitter:title" content=")[^"]*', r'\g<1>'+t),
-           (r'(<link rel="canonical" href=")[^"]*', r'\g<1>'+canon),
-           (r'(<meta property="og:url" content=")[^"]*', r'\g<1>'+canon)]
-    for pat, sub in rep:
-        htmltext = re.sub(pat, sub, htmltext, count=1, flags=re.S)
+    htmltext = re.sub(r'<title>.*?</title>', '<title>%s</title>' % t, htmltext, count=1, flags=re.S)
+    def meta_named(html, name, val):
+        return re.sub(r'<meta\b[^>]*\bname="%s"[^>]*/?>' % re.escape(name),
+                      '<meta name="%s" content="%s">' % (name, val), html, count=1)
+    def meta_prop(html, prop, val):
+        return re.sub(r'<meta\b[^>]*\bproperty="%s"[^>]*/?>' % re.escape(prop),
+                      '<meta property="%s" content="%s">' % (prop, val), html, count=1)
+    htmltext = meta_named(htmltext, "description", d)
+    htmltext = meta_named(htmltext, "twitter:title", t)
+    htmltext = meta_named(htmltext, "twitter:description", d)
+    htmltext = meta_prop(htmltext, "og:title", t)
+    htmltext = meta_prop(htmltext, "og:description", d)
+    htmltext = meta_prop(htmltext, "og:url", canon)
+    htmltext = re.sub(r'<link\b[^>]*\brel="canonical"[^>]*/?>',
+                      '<link rel="canonical" href="%s">' % canon, htmltext, count=1)
     return htmltext
 
 LD_RE = re.compile(r'<script type="application/ld\+json">\{"@context"[^\n]*?"@type":"(?:Blog|CollectionPage)".*?</script>', re.S)
@@ -232,7 +240,7 @@ def main():
         cards_html = "\n".join(
             ('      <a href="/resources/blog/%s/" class="blog-card">\n'
              '        <img class="blog-card-img" src="%s" alt="%s" loading="lazy" width="400" height="225">\n'
-             '        <div class="blog-card-body"><span class="blog-card-cat">%s</span><h2 class="blog-card-title">%s</h2><div class="blog-card-date">%s</div></div>\n'
+             '        <div class="blog-card-body"><span class="blog-card-cat">%s</span><h3 class="blog-card-title">%s</h3><div class="blog-card-date">%s</div></div>\n'
              '      </a>') % (p["slug"], p["image"], H(p["imageAlt"]), H(p["badge"]), H(p["title"]), H(p["dateDisplay"]))
             for p in sorted(POSTS, key=lambda p: p["datePublished"], reverse=True)[:3])
         sec = ('<section class="author-articles">\n'
