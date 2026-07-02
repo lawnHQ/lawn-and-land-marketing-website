@@ -291,7 +291,8 @@
     .pod-guest-points { display:flex; flex-wrap:wrap; justify-content:center; gap:12px 26px; margin:22px auto 30px; max-width:820px; }
     .pod-guest-points span { font-family:var(--font-b); font-size:14px; color:rgba(255,255,255,0.84); display:inline-flex; align-items:center; gap:8px; }
     .pod-guest-points svg { width:17px; height:17px; stroke:var(--lime); fill:none; }
-    @media (max-width:860px){ .pod-ep-grid{ grid-template-columns:1fr; } .pod-points{ grid-template-columns:1fr; } .pod-follow{ flex-direction:column; align-items:flex-start; } }
+    @media (max-width:860px){ .pod-ep-grid{ grid-template-columns:1fr; }
+    .pod-all-link{grid-column:1/-1;display:flex;justify-content:center;margin-top:6px;} .pod-points{ grid-template-columns:1fr; } .pod-follow{ flex-direction:column; align-items:flex-start; } }
 
     /* Be-a-guest pop-up calendar */
     .guest-modal { position:fixed; inset:0; z-index:3000; display:none; }
@@ -725,6 +726,7 @@
             <div class="pod-ep-co">Botanical Solutions</div>
           </div>
         </a>
+        <div class="pod-all-link"><a class="btn btn--ghost-lime btn--sm" href="/resources/blog/category/podcast/">All episodes &rarr;</a></div>
         <!-- EPISODES:END -->
       </div>
       <div class="pod-follow">

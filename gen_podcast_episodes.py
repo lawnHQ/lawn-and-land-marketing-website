@@ -31,6 +31,18 @@ def fetch(url):
         return r.read().decode('utf-8')
 
 
+def onsite_map():
+    """video id -> on-site episode post URL (from _blog.json); YouTube stays the fallback."""
+    try:
+        d = json.load(open(os.path.join(ROOT, '_blog.json'), encoding='utf-8'))
+        return {p['video']: '/resources/blog/%s/' % p['slug'] for p in d['posts'] if p.get('video')}
+    except Exception:
+        return {}
+
+ONSITE = onsite_map()
+ARCHIVE = '/resources/blog/category/podcast/'
+
+
 def latest(xml, n=N):
     out = []
     for e in re.findall(r'<entry>(.*?)</entry>', xml, re.S):
@@ -54,8 +66,10 @@ def latest(xml, n=N):
 
 def card(vid, num, guest, company, date):
     g, c = esc(guest), esc(company)
+    href = ONSITE.get(vid, f'https://www.youtube.com/watch?v={vid}')
+    attrs = '' if vid in ONSITE else ' target="_blank" rel="noopener"'
     return (
-        f'        <a class="pod-ep" href="https://www.youtube.com/watch?v={vid}" target="_blank" rel="noopener">\n'
+        f'        <a class="pod-ep" href="{href}"{attrs}>\n'
         f'          <div class="pod-video">\n'
         f'            <img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="Episode {num}: {g}, {c}" loading="lazy">\n'
         f'            <span class="pod-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>\n'
@@ -85,7 +99,8 @@ def schema(eps):
                 + (f" of {company}" if company else "") + " about growing a green-industry business.")
         epnum = int(num) if num.isdigit() else num
         nodes.append({"@type": "PodcastEpisode", "@id": BASE + f"#episode-{num}", "name": nm,
-                      "episodeNumber": epnum, "datePublished": date, "description": desc, "url": watch,
+                      "episodeNumber": epnum, "datePublished": date, "description": desc,
+                      "url": (DOMAIN + ONSITE[vid]) if vid in ONSITE else watch,
                       "partOfSeries": {"@id": sid}, "associatedMedia": {"@id": BASE + f"#video-{num}"}})
         nodes.append({"@type": "VideoObject", "@id": BASE + f"#video-{num}", "name": nm, "description": desc,
                       "thumbnailUrl": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg", "uploadDate": date,
@@ -101,7 +116,7 @@ def main():
     s = open(PAGE, encoding='utf-8').read()
     cards = '\n'.join(card(*e) for e in eps)
     s2 = re.sub(r'<!-- EPISODES:START -->.*?<!-- EPISODES:END -->',
-                lambda m: '<!-- EPISODES:START -->\n' + cards + '\n        <!-- EPISODES:END -->',
+                lambda m: '<!-- EPISODES:START -->\n' + cards + '\n        <div class="pod-all-link"><a class="btn btn--ghost-lime btn--sm" href="' + ARCHIVE + '">All episodes &rarr;</a></div>\n        <!-- EPISODES:END -->',
                 s, count=1, flags=re.S)
     ld = '<script type="application/ld+json">' + json.dumps(schema(eps), ensure_ascii=False, separators=(',', ':')) + '</script>'
     s2 = re.sub(r'<!-- PODCAST_SCHEMA:START -->.*?<!-- PODCAST_SCHEMA:END -->',
