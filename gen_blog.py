@@ -35,6 +35,7 @@ FILTERS = """    <div class="blog-filters">
       <a class="blog-filter" data-cat="seo" href="/resources/blog/category/seo/">SEO</a>
       <a class="blog-filter" data-cat="ads-social" href="/resources/blog/category/ads-social/">Ads &amp; Social</a>
       <a class="blog-filter" data-cat="strategy" href="/resources/blog/category/strategy/">Strategy</a>
+      <a class="blog-filter" data-cat="podcast" href="/resources/blog/category/podcast/">Podcast</a>
     </div>"""
 
 PAGINATION_CSS = """
@@ -56,6 +57,7 @@ VID_CSS = """
 """
 
 def card(p):
+    dcat = p["cat"] + (" podcast" if p.get("video") else "")   # episodes live in their topic cat AND the podcast archive
     return ('      <a href="/resources/blog/%s/" class="blog-card" data-cat="%s">\n'
             '        <div class="blog-card-img"><img src="%s" alt="%s" loading="lazy" width="400" height="225"></div>\n'
             '        <div class="blog-card-body">\n'
@@ -67,7 +69,7 @@ def card(p):
             '            <span class="blog-card-date">%s</span>\n'
             '          </div>\n'
             '        </div>\n'
-            '      </a>') % (p["slug"], p["cat"], p["image"], H(p["imageAlt"]), H(p["badge"]),
+            '      </a>') % (p["slug"], dcat, p["image"], H(p["imageAlt"]), H(p["badge"]),
                             H(p["title"]), H(p["excerpt"]), H(p["dateDisplay"]))
 
 def fcard(f):
@@ -198,7 +200,11 @@ def main():
 
     # ---- category hub pages ----
     for cat in CATS:
-        cp = [p for p in POSTS if p["cat"] == cat["slug"]]
+        # the podcast archive is derived: every post with an episode video belongs to it
+        if cat["slug"] == "podcast":
+            cp = [p for p in POSTS if p.get("video")]
+        else:
+            cp = [p for p in POSTS if p["cat"] == cat["slug"]]
         ctot = max(1, (len(cp) + PPP - 1) // PPP)
         for i in range(ctot):
             pg = i + 1
