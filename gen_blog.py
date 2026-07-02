@@ -171,6 +171,68 @@ def video_figure(p):
           'f.addEventListener("click",go);f.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});})();</script>')
     return fig + js
 
+
+TRANSCRIPT_CSS = """
+    .article-transcript{margin:38px 0 8px;}
+    .article-transcript h2{margin-bottom:14px;}
+    .transcript-box{border:1px solid var(--card-bd);background:var(--card-bg);border-radius:14px;padding:0;}
+    .transcript-box summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:18px 22px;font-family:var(--font-l);font-size:14px;font-weight:600;color:rgba(255,255,255,0.82);}
+    .transcript-box summary::-webkit-details-marker{display:none;}
+    .transcript-box summary::after{content:"+";margin-left:auto;font-size:20px;color:var(--lime);transition:transform .2s;}
+    .transcript-box[open] summary::after{transform:rotate(45deg);}
+    .transcript-box summary:hover{color:var(--lime);}
+    .transcript-text{padding:2px 22px 20px;}
+    .transcript-text p{color:rgba(255,255,255,0.62);font-size:15.5px;line-height:1.75;margin:0 0 14px;}
+    .transcript-note{color:rgba(255,255,255,0.38);font-size:12.5px;font-family:var(--font-l);margin:10px 0 0;}
+"""
+
+def transcript_block(p):
+    path = os.path.join(ROOT, "_transcripts", p["video"] + ".txt")
+    if not os.path.exists(path): return None
+    raw = open(path, encoding="utf-8").read().strip()
+    if not raw: return None
+    paras = "".join("<p>%s</p>" % H(x.strip()) for x in raw.split("\n\n") if x.strip())
+    return ('<section class="article-transcript">\n'
+            '  <h2>Episode transcript</h2>\n'
+            '  <details class="transcript-box"><summary>Read the full transcript</summary>\n'
+            '    <div class="transcript-text">' + paras + '</div>\n'
+            '  </details>\n'
+            '  <p class="transcript-note">Transcript is auto-generated from the episode audio and lightly formatted, so wording may vary slightly.</p>\n'
+            '</section>')
+
+def episode_schema(p):
+    url = "%s/resources/blog/%s/" % (PROD, p["slug"])
+    vid_obj = {"@context":"https://schema.org","@type":"VideoObject","@id":url+"#episode-video",
+               "name":p["title"],"description":p["excerpt"],"thumbnailUrl":PROD+p["image"],
+               "uploadDate":p["datePublished"],
+               "embedUrl":"https://www.youtube-nocookie.com/embed/%s" % p["video"],
+               "contentUrl":"https://www.youtube.com/watch?v=%s" % p["video"],
+               "publisher":{"@id":"%s/#organization" % PROD}}
+    ep_obj = {"@context":"https://schema.org","@type":"PodcastEpisode","@id":url+"#episode",
+              "name":p["title"],"url":url,"datePublished":p["datePublished"],
+              "partOfSeries":{"@id":"%s/resources/mow-money-mow-problems-podcast/#podcast" % PROD,
+                              "@type":"PodcastSeries","name":"Mow Money, Mow Problems",
+                              "url":"%s/resources/mow-money-mow-problems-podcast/" % PROD},
+              "associatedMedia":{"@id":url+"#episode-video"}}
+    return ('<script type="application/ld+json">%s</script>\n<script type="application/ld+json">%s</script>'
+            % (json.dumps(vid_obj, ensure_ascii=False), json.dumps(ep_obj, ensure_ascii=False)))
+
+TR_RE = re.compile(r"<!-- TRANSCRIPT:START -->.*?<!-- TRANSCRIPT:END -->", re.S)
+EPS_RE = re.compile(r"<!-- EPISODE_SCHEMA:START -->.*?<!-- EPISODE_SCHEMA:END -->", re.S)
+
+def stamp_episode_extras(h, p):
+    """Stamp transcript (before the author block) + episode schema (head) into an episode article."""
+    tb = transcript_block(p)
+    if tb:
+        block = "<!-- TRANSCRIPT:START -->\n" + tb + "\n<!-- TRANSCRIPT:END -->"
+        if TR_RE.search(h): h = TR_RE.sub(lambda m: block, h, count=1)
+        else: h = h.replace('<div class="author-block">', block + '\n        <div class="author-block">', 1)
+        if ".transcript-box{" not in h: h = inject(h, TRANSCRIPT_CSS)
+    sc = "<!-- EPISODE_SCHEMA:START -->\n" + episode_schema(p) + "\n<!-- EPISODE_SCHEMA:END -->"
+    if EPS_RE.search(h): h = EPS_RE.sub(lambda m: sc, h, count=1)
+    else: h = h.replace("</head>", sc + "\n</head>", 1)
+    return h
+
 HERO_FIG_RE = re.compile(r'<figure class="article-hero-img">.*?</figure>', re.S)
 
 def main():
@@ -236,6 +298,8 @@ def main():
         h2 = re.sub(r'/assets/images/blog/[a-z0-9-]+\.jpg', lambda m: p["image"], h2)
         if p["video"] and ".article-hero-img.blog-video{" not in h2:
             h2 = inject(h2, VID_CSS)
+        if p["video"]:
+            h2 = stamp_episode_extras(h2, p)
         if h2 != h:
             write(path, h2); stamped += 1
 
