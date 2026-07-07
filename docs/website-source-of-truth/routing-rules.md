@@ -55,7 +55,7 @@ domain `lawnandlandmarketing.com` after cutover. Audited 2026-06-23 against `htt
 - `/blog/` -> `/resources/blog/` (individual posts handled by the blog-migration redirect map)
 - `/our-team/` -> `/about/#team`
 - `/is-marketing-right-for-us/` -> `/about/`
-- `/matt-foreman/` -> `/author/matt-foreman/`
+- `/author/matt-foreman/` -> `/matt-foreman/` (INVERTED 2026-07-07: the entity hub is now the canonical page; the old author-archive URL 301s to it. The previous alias in the other direction was removed from `vercel.json`.)
 - `/schedule/` -> `/get-started/book-strategy-call/`
 - `/podcast-sign-up/` -> `/resources/mow-money-mow-problems-podcast/`
 - `/be-a-guest/` -> `/resources/mow-money-mow-problems-podcast/`

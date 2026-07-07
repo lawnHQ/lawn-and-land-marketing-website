@@ -8,6 +8,7 @@ pages can exist outside this list.
 ## Core
 - `/` — Home
 - `/about/` — About
+- `/matt-foreman/` — Matt Foreman entity hub (canonical personal page; replaced `/author/matt-foreman/`, 301'd)
 - `/client-results/` — Client Results (tiered roster + featured case studies; nested under About; added 2026-06-21)
 - `/contact/` — Contact
 - `/get-started/book-strategy-call/` — Get Started / Book Strategy Call

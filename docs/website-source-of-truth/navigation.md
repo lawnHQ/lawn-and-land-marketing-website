@@ -115,3 +115,5 @@ Tagline: "Green industry specialists since 2022."
    (`find . -name "*.html" -not -path "./.git/*" -print0 | xargs -0 sed -i '' -E 's/styles\.css\?v=NN/styles.css?v=NN+1/g'`).
 3. `python3 build.py` to re-stamp; `python3 build.py --check` to confirm all pages are in sync.
 4. Commit + push both branches; verify on the live URL with a hard refresh.
+
+**Update 2026-07-07:** the About dropdown ("Who We Are" column) gained a second item, **Meet Matt Foreman** → `/matt-foreman/` (book-open Lucide icon), between About and Client Results. The footer Company column gained **Meet Matt Foreman** directly under About Us.

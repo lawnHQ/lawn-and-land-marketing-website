@@ -21,6 +21,16 @@
       "permanent": false
     },
     {
+      "source": "/author/matt-foreman",
+      "destination": "/matt-foreman/",
+      "permanent": true
+    },
+    {
+      "source": "/author/matt-foreman/",
+      "destination": "/matt-foreman/",
+      "permanent": true
+    },
+    {
       "source": "/api/redirect.js",
       "destination": "/",
       "permanent": false
@@ -443,16 +453,6 @@
     {
       "source": "/is-marketing-right-for-us/",
       "destination": "/about/",
-      "permanent": true
-    },
-    {
-      "source": "/matt-foreman",
-      "destination": "/author/matt-foreman/",
-      "permanent": true
-    },
-    {
-      "source": "/matt-foreman/",
-      "destination": "/author/matt-foreman/",
       "permanent": true
     },
     {

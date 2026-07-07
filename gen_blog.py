@@ -304,7 +304,7 @@ def main():
             write(path, h2); stamped += 1
 
     # ---- author page: list ALL of Matt's articles (every post is attributed to him) ----
-    auth_path = "author/matt-foreman/index.html"
+    auth_path = "matt-foreman/index.html"
     if os.path.exists(os.path.join(ROOT, auth_path)):
         ah = read(auth_path)
         cards_html = "\n".join(
@@ -312,7 +312,7 @@ def main():
              '        <img class="blog-card-img" src="%s" alt="%s" loading="lazy" width="400" height="225">\n'
              '        <div class="blog-card-body"><span class="blog-card-cat">%s</span><h3 class="blog-card-title">%s</h3><div class="blog-card-date">%s</div></div>\n'
              '      </a>') % (p["slug"], p["image"], H(p["imageAlt"]), H(p["badge"]), H(p["title"]), H(p["dateDisplay"]))
-            for p in sorted(POSTS, key=lambda p: p["datePublished"], reverse=True)[:3])
+            for p in sorted(POSTS, key=lambda p: p["datePublished"], reverse=True))
         sec = ('<section class="author-articles">\n'
                '    <div class="author-articles-head">\n'
                '      <h2>Articles by Matt Foreman</h2>\n'
@@ -321,7 +321,7 @@ def main():
                '    <div class="blog-grid">\n' + cards_html + '\n    </div>\n  </section>')
         ah = re.sub(r'<section class="author-articles">.*?</section>', lambda m: sec, ah, count=1, flags=re.S)
         write(auth_path, ah)
-        print("author page: latest %d articles listed" % min(3, len(POSTS)))
+        print("entity hub (/matt-foreman/): all %d articles listed" % len(POSTS))
 
     print("index pages: %d | category pages: %d | articles stamped: %d" % (pages, cat_pages, stamped))
 

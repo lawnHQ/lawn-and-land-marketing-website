@@ -323,6 +323,82 @@
     @media (max-width: 980px) { .hub-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 560px) { .hub-grid { grid-template-columns: 1fr; } }
   
+
+  /* ── Custom "Mow Money, Mow Problems" wordmark hero ── */
+  .mm-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 46px 0 88px;
+    text-align: center;
+    background: #07100a;
+  }
+  .mm-hero-stripes {
+    position: absolute;
+    inset: -12% -25%;
+    background: repeating-linear-gradient(
+      112deg,
+      rgba(172,231,29,0.05) 0 110px,
+      rgba(255,255,255,0.014) 110px 220px
+    );
+    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 55%, transparent 92%);
+    mask-image: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 55%, transparent 92%);
+    pointer-events: none;
+  }
+  .mm-hero-glow {
+    position: absolute;
+    top: -260px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 980px;
+    height: 640px;
+    background: radial-gradient(closest-side, rgba(172,231,29,0.13), transparent 70%);
+    pointer-events: none;
+  }
+  .mm-hero .crumbs { justify-content: flex-start; }
+  .mm-hero-copy { position: relative; z-index: 1; padding-top: 34px; }
+  .mm-h1 { display: flex; flex-direction: column; align-items: center; margin: 22px 0 20px; }
+  .mm-word {
+    font-family: var(--font-h);
+    font-size: clamp(38px, 9.2vw, 122px);
+    line-height: 0.98;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -0.03em;
+    color: var(--white);
+  }
+  .mm-tm {
+    font-size: 0.26em;
+    font-style: normal;
+    vertical-align: top;
+    position: relative;
+    top: 0.42em;
+    margin-left: 0.05em;
+    color: rgba(255,255,255,0.85);
+  }
+  .mm-system {
+    margin-top: 22px;
+    font-family: var(--font-l);
+    font-size: clamp(14px, 1.8vw, 19px);
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.42em;
+    text-indent: 0.42em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.62);
+  }
+  .mm-sub {
+    max-width: 62ch;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: rgba(255,255,255,0.85);
+  }
+  .mm-actions { justify-content: center; }
+  @media (max-width: 720px) {
+    .mm-hero { padding: 40px 0 60px; }
+    .mm-system { letter-spacing: 0.3em; text-indent: 0.3em; }
+    .mm-sub { font-size: 17px; }
+  }
+
   .mm-legal { padding: 34px 0 10px; text-align: center; }
   .mm-legal p { font-size: .85rem; color: rgba(244, 249, 244, .45); margin: 0; }
   </style>
@@ -354,6 +430,10 @@
                 <a href="/about/" class="mega-item mega-item--active">
                   <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 19c1.8-3.2 4.2-4.8 7-4.8s5.2 1.6 7 4.8"></path></svg></span>
                   <span class="mega-item-text"><strong>About</strong><em>Our story, mission, and why this industry matters to us.</em></span>
+                </a>
+                <a href="/matt-foreman/" class="mega-item">
+                  <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></span>
+                  <span class="mega-item-text"><strong>Meet Matt Foreman</strong><em>The founder: author, podcast host, and green industry marketing expert.</em></span>
                 </a>
                 <a href="/client-results/" class="mega-item">
                   <span class="mega-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="20" x2="21" y2="20"></line><line x1="6" y1="20" x2="6" y2="13"></line><line x1="12" y1="20" x2="12" y2="8"></line><line x1="18" y1="20" x2="18" y2="4"></line></svg></span>
@@ -559,15 +639,21 @@
     </div>
   </nav>
 <main>
-<!-- HERO BANNER -->
-<section class="simple-hero" style="--hero-image: url('/assets/images/programs-hero.webp');">
+<!-- HERO BANNER (custom Mow Money, Mow Problems wordmark hero) -->
+<section class="mm-hero">
+<div class="mm-hero-stripes" aria-hidden="true"></div>
+<div class="mm-hero-glow" aria-hidden="true"></div>
 <div class="hero-inner">
-<div class="hero-copy" data-reveal="fade-up">
 <div class="crumbs"><a href="/">Home</a><span>/</span><a href="/marketing-services/">Marketing Services</a><span>/</span><span>Mow Money, Mow Problems</span></div>
+<div class="mm-hero-copy" data-reveal="fade-up">
 <div class="hero-kicker">Digital Marketing Built For The Green Industry</div>
-<h1>The Mow Money, Mow Problems&trade; Marketing System</h1>
-<p>Our complete digital marketing service for lawn care, landscaping, and land care companies: website, SEO, ads, reputation, and automation, built and run as one machine.</p>
-<div class="hero-actions">
+<h1 class="mm-h1">
+<span class="mm-word">Mow Money,</span>
+<span class="mm-word">Mow <span class="hl">Problems</span><span class="mm-tm">&trade;</span></span>
+<span class="mm-system">Marketing System</span>
+</h1>
+<p class="mm-sub">Our complete digital marketing service for lawn care, landscaping, and land care companies: website, SEO, ads, reputation, and automation, built and run as one machine.</p>
+<div class="hero-actions mm-actions">
 <a class="btn btn--lime" href="/get-started/book-strategy-call/">
 <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16">
 <rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect>
@@ -788,6 +874,7 @@
           <div class="fv2-col-head">Company</div>
           <ul>
             <li><a href="/about/">About Us</a></li>
+            <li><a href="/matt-foreman/">Meet Matt Foreman</a></li>
             <li><a href="/programs/">Programs</a></li>
             <li><a href="/programs/growth/">Growth Program</a></li>
             <li><a href="/programs/authority/">Authority Program</a></li>
