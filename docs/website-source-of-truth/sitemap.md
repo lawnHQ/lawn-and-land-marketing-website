@@ -29,6 +29,7 @@ pages can exist outside this list.
 - `/marketing-services/your-ai-partner/` — Your AI Partner
 - `/marketing-services/reputation-management/` — Reputation Management
 - `/marketing-services/automation/` — Automation
+- `/marketing-services/mow-money-mow-problems/` — Mow Money, Mow Problems System (branded system page + USPTO specimen, hand-built 2026-07-07)
 
 ## Industries
 - `/industries/` — Industries hub

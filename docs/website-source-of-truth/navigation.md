@@ -95,7 +95,7 @@ data verbatim from the Lucide source so it renders correctly.
 
 ## Footer (`_footer.html`, `.footer-v2`)
 Single-source, stamped by `build.py`. Rows: (1) brand + **click-to-call phone (727-496-7098, NAP)** + social + a "Ready to grow?" CTA card;
-(2) four link columns — **Marketing Services** (8), **Industries** (the canonical 8), **Company**,
+(2) four link columns — **Marketing Services** (9: "Mow Money, Mow Problems System" first, then the 8 services), **Industries** (the canonical 8), **Company**,
 **Resources**; (3) a trust bar (100+ companies · 97%+ retention · since 2022); (4) a legal bar.
 
 Current legal bar:
