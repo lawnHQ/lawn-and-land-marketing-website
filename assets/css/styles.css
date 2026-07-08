@@ -37,7 +37,10 @@
 
 /* ─ RESET ─ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+/* Global `scroll-behavior: smooth` removed: on <html> it made new pages open scrolled
+   to the previous page's position (most visible when clicking a footer link). Smooth
+   scrolling for same-page anchors is handled in main.js (anchorScroll). */
+html { -webkit-font-smoothing: antialiased; }
 body {
   background: var(--black);
   color: var(--body);

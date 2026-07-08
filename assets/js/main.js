@@ -320,3 +320,29 @@ document.querySelectorAll('.testi-video-wrap').forEach(wrap => {
     }
   });
 })();
+
+// ─ IN-PAGE ANCHOR SMOOTH SCROLL ─
+// Replaces the global `scroll-behavior: smooth` on <html>, which made a newly loaded
+// page open scrolled to the previous page's position (obvious when clicking a footer
+// link). Cross-page links now use the browser's instant scroll-to-top; only same-page
+// anchor clicks scroll smoothly, honoring each target's scroll-margin.
+(function anchorScroll() {
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const a = e.target.closest && e.target.closest('a[href*="#"]');
+    if (!a || a.target === '_blank') return;
+    let url;
+    try { url = new URL(a.href, location.href); } catch (_) { return; }
+    if (url.pathname !== location.pathname || url.search !== location.search) return; // other page: let it navigate
+    const id = decodeURIComponent(url.hash.slice(1));
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    e.preventDefault();
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    if (history.replaceState) history.replaceState(null, '', url.hash);
+    if (target.tabIndex < 0) target.setAttribute('tabindex', '-1'); // keep skip-link / a11y focus
+    target.focus({ preventScroll: true });
+  });
+})();
