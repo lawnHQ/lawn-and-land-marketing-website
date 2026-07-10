@@ -205,7 +205,7 @@ own deploy**, NOT part of the website:
   fall to the site 404). Self-serve: dashboard edits go live within ~30s. `/api/redirect.js` source is blocked.
 
 ## Related assets
-- **Brand kit** — separate repo `LawnAndLandMarketing/brandkit` → https://brandkit.lawnlab.dev
+- **Brand kit** — separate repo `lawnHQ/brandkit` → https://brandkit.lawnlab.dev
   (Next.js; guide content in `public/brandkit-*.html|css`; AI-readable brief at `/brand`). The
   `.hl` Twilight emphasis marker is documented there in §09 Typography.
 
