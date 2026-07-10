@@ -1,7 +1,7 @@
 # Directive: Build the Next 10 Service + Industry Combination Pages
 
 Owner: Lawn & Land Marketing  
-Repo: `LawnAndLandMarketing/lawn-and-land-marketing-website`  
+Repo: `lawnHQ/lawn-and-land-marketing-website`  
 Primary production domain: `https://lawnandlandmarketing.com`  
 Canonical production Vercel project: `lawnland-site`  
 Date: 2026-06-25
