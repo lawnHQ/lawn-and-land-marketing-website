@@ -1,8 +1,8 @@
 # Lawn & Land main site Vercel domain snapshot
 
 Date: 2026-06-25 15:02:17 EDT
-Repo: LawnAndLandMarketing/lawn-and-land-marketing-website
-Local path: /Users/kingkai/Projects/LawnAndLandMarketing/lawn-and-land-marketing-website
+Repo: lawnHQ/lawn-and-land-marketing-website
+Local path: /Users/kingkai/Projects/lawnHQ/lawn-and-land-marketing-website
 Commit: 58cf1138d88db7dc6a8bd3a78f0912a8a21b6fa1
 Working tree status at snapshot:
 ```
