@@ -1,7 +1,7 @@
 # Current State Log — 2026-06-26
 
 Owner: Lawn & Land Marketing  
-Repo: `LawnAndLandMarketing/lawn-and-land-marketing-website`  
+Repo: `lawnHQ/lawn-and-land-marketing-website`  
 Canonical production domain: `https://lawnandlandmarketing.com`  
 Canonical Vercel project: `lawnland-site`
 
