@@ -2,7 +2,7 @@
 
 Date: 2026-06-25 13:17 EDT
 Prepared by: Mercury
-Repo: `LawnAndLandMarketing/lawn-and-land-marketing-website`
+Repo: `lawnHQ/lawn-and-land-marketing-website`
 Production domain: `https://lawnandlandmarketing.com`
 
 ## Short version
