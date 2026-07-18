@@ -331,15 +331,18 @@ if __name__ == "__main__":
 
 # ---- homepage: stamp the newest three posts between the HOME-BLOG markers ----
 def hb_card(p, i):
+    # Designed thumbnails (podcast episodes) carry edge-to-edge text/faces: never
+    # crop them (contain on a faint panel). Photographic images fill the box (cover).
+    media_cls = " hb-media--contain" if p.get("video") else ""
     return ('        <a href="/resources/blog/%s/" class="hb-card" data-reveal="fade-up" data-delay="%d">\n'
-            '          <img src="%s" alt="%s" loading="lazy" width="600" height="338">\n'
+            '          <div class="hb-media%s"><img src="%s" alt="%s" loading="lazy" width="600" height="338"></div>\n'
             '          <div class="hb-card-body">\n'
             '            <span class="hb-cat">%s</span>\n'
             '            <h3 class="hb-title">%s</h3>\n'
             '            <p class="hb-excerpt">%s</p>\n'
             '            <div class="hb-meta">%s &middot; %s</div>\n'
             '          </div>\n'
-            '        </a>') % (p["slug"], i*100, p["image"], H(p["imageAlt"]), H(p["badge"]),
+            '        </a>') % (p["slug"], i*100, media_cls, p["image"], H(p["imageAlt"]), H(p["badge"]),
                               H(p["title"]), H(p["excerpt"]), H(p["dateDisplay"]), H(p["readTime"]))
 
 _home = read("index.html")

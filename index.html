@@ -1192,7 +1192,7 @@
       .home-blog .hb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
       .home-blog .hb-card{display:flex;flex-direction:column;background:var(--card-bg);border:1px solid var(--card-bd);border-radius:18px;overflow:hidden;transition:transform .25s ease,border-color .25s ease}
       .home-blog .hb-card:hover{transform:translateY(-4px);border-color:rgba(172,231,29,.35)}
-      .home-blog .hb-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+      .home-blog .hb-media{aspect-ratio:16/9;background:rgba(255,255,255,.03);overflow:hidden;display:flex;align-items:center;justify-content:center}.home-blog .hb-media img{width:100%;height:100%;object-fit:cover;display:block}.home-blog .hb-media--contain img{object-fit:contain}
       .home-blog .hb-card-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:9px}
       .home-blog .hb-cat{font-family:var(--font-l);font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lime)}
       .home-blog .hb-title{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:19px;line-height:1.25;color:#fff;margin:0}
@@ -1205,15 +1205,15 @@
       <div class="hb-head" data-reveal="fade-up">
         <div>
           <span class="eyebrow-label">From the Blog</span>
-          <h2 class="hb-h2">The Latest <span class="gradient-text">Playbooks.</span></h2>
-          <p class="hb-sub">Real strategies from the campaigns we run for green-industry companies every day.</p>
+          <h2 class="hb-h2">The Latest from <span class="gradient-text">Lawn &amp; Land.</span></h2>
+          <p class="hb-sub">Strategy guides, podcast episodes, client stories, and industry news. The newest from our team, all in one place.</p>
         </div>
         <a class="hb-all" href="/resources/blog/">View all articles &rarr;</a>
       </div>
       <div class="hb-grid">
 <!-- HOME-BLOG:START -->
         <a href="/resources/blog/land-clearing-marketing/" class="hb-card" data-reveal="fade-up" data-delay="0">
-          <img src="/assets/images/blog/land-clearing-marketing-hero.webp" alt="Aerial view of land clearing equipment working a wooded lot" loading="lazy" width="600" height="338">
+          <div class="hb-media"><img src="/assets/images/blog/land-clearing-marketing-hero.webp" alt="Aerial view of land clearing equipment working a wooded lot" loading="lazy" width="600" height="338"></div>
           <div class="hb-card-body">
             <span class="hb-cat">Strategy</span>
             <h3 class="hb-title">Land clearing marketing: the complete guide</h3>
@@ -1222,7 +1222,7 @@
           </div>
         </a>
         <a href="/resources/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/" class="hb-card" data-reveal="fade-up" data-delay="100">
-          <img src="/assets/images/blog/qualified-landscaping-leads.webp" alt="Why landscaping SEO gets traffic but not qualified leads" loading="lazy" width="600" height="338">
+          <div class="hb-media"><img src="/assets/images/blog/qualified-landscaping-leads.webp" alt="Why landscaping SEO gets traffic but not qualified leads" loading="lazy" width="600" height="338"></div>
           <div class="hb-card-body">
             <span class="hb-cat">SEO</span>
             <h3 class="hb-title">Why landscaping SEO gets traffic but not qualified leads</h3>
@@ -1231,7 +1231,7 @@
           </div>
         </a>
         <a href="/resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/" class="hb-card" data-reveal="fade-up" data-delay="200">
-          <img src="/assets/images/blog/podcast-bob-2G28dlU82KE.webp" alt="Bob Diamond of Outdoor Makeover &amp; Living Spaces on the Mow Money, Mow Problems podcast" loading="lazy" width="600" height="338">
+          <div class="hb-media hb-media--contain"><img src="/assets/images/blog/podcast-bob-2G28dlU82KE.webp" alt="Bob Diamond of Outdoor Makeover &amp; Living Spaces on the Mow Money, Mow Problems podcast" loading="lazy" width="600" height="338"></div>
           <div class="hb-card-body">
             <span class="hb-cat">Client Story</span>
             <h3 class="hb-title">What Bob Diamond's design-build story teaches landscapers</h3>
