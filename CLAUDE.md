@@ -10,7 +10,7 @@ hand-built HTML/CSS/JS (no framework). Canonical home: **lawnandlandmarketing.co
 
 - **Production:** https://lawnandlandmarketing.com.
 - **Canonical Vercel project for the custom domain:** `lawnland-site`.
-- **Deploy:** push to `main` → GitHub Actions / Vercel production. Takes ~1–2 min. Vercel also auto-creates auth-protected previews per branch.
+- **Deploy:** push to `main` → production project **`lawnland-site`** via BOTH the Vercel git integration and the Actions workflow. ~1–2 min. **Full infra map, tokens, the article-publish checklist, and the verify-on-domain rule: [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) — read it before touching deploys.** Never point tooling at `new-lawnlab-deploy` (old staging).
 - **Branches:** `main` is the production branch. Older `site-foundation` history may still exist, but do not assume it is current unless intentionally synced for a specific workflow.
 - **Cache-bust versions in use:** `styles.css?v=156`, `main.js?v=59` on the primary pages, `service-page.css?v=5`,
   `industry.css?v=3` (shared `.ind-*` framework on `/industries/*`). The `/industries/*` FAQ accordion is
