@@ -49,9 +49,10 @@ The 2026-07-18 cornerstone shipped with the sitemap forgotten. Never again:
 4. Schema on the page: BlogPosting (incl. `wordCount`, `articleSection`, `keywords`) + FAQPage + **BreadcrumbList** (not in the old template — copy from the land-clearing guide).
 5. `og:image` / `twitter:image` + **correct** `og:image:width/height` and hero `<img>` width/height. Gotcha: `gen_blog.py` re-stamps article heroes with default `1200x630` attrs — re-fix after any gen run.
 6. Internal links FROM the relevant service/industry pages TO the article (the cluster matters).
-7. Images: WebP only (`cwebp -q 82`), real dimensions, lazy-load below the fold.
-8. `python3 gen_blog.py && python3 build.py && python3 build.py --check && python3 scripts/check_links.py` — all green before commit.
-9. Push → **verify on the live domain** (iron rule above) → owner submits the URL in Search Console (URL Inspection → Request Indexing).
+7. **External links to third parties (competitors especially): `rel="noopener nofollow"`** — never pass equity to sites competing on our terms. Internal links stay followed.
+8. Images: WebP only (`cwebp -q 82`), real dimensions, lazy-load below the fold.
+9. `python3 gen_blog.py && python3 build.py && python3 build.py --check && python3 scripts/check_links.py` — all green before commit.
+10. Push → **verify on the live domain** (iron rule above) → owner submits the URL in Search Console (URL Inspection → Request Indexing).
 
 ## Related systems
 

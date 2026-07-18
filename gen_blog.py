@@ -290,9 +290,15 @@ def main():
         path = "resources/blog/%s/index.html" % p["slug"]
         if not os.path.exists(os.path.join(ROOT, path)): continue
         h = read(path)
-        media = video_figure(p) if p["video"] else (
-            '<figure class="article-hero-img"><img src="%s" alt="%s" loading="eager" width="1200" height="630" style="width:100%%;height:420px;object-fit:cover;display:block;"></figure>'
-            % (p["image"], H(p["imageAlt"])))
+        if p["video"]:
+            media = video_figure(p)
+        elif p.get("heroFull"):
+            # Designed covers (text/logo to the edges): show the FULL image, never crop.
+            media = ('<figure class="article-hero-img"><img src="%s" alt="%s" loading="eager" width="%d" height="%d" style="width:100%%;height:auto;display:block;"></figure>'
+                     % (p["image"], H(p["imageAlt"]), p.get("imageW", 1600), p.get("imageH", 900)))
+        else:
+            media = ('<figure class="article-hero-img"><img src="%s" alt="%s" loading="eager" width="1200" height="630" style="width:100%%;height:420px;object-fit:cover;display:block;"></figure>'
+                     % (p["image"], H(p["imageAlt"])))
         h2 = HERO_FIG_RE.sub(lambda m: media, h, count=1)
         # repoint any social/SEO image URL (og:image, twitter:image, schema) at the real card image
         h2 = re.sub(r'/assets/images/blog/[a-z0-9-]+\.jpg', lambda m: p["image"], h2)
