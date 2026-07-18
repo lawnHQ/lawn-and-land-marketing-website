@@ -1179,6 +1179,71 @@
   </section>
 
   <!-- CTA -->
+
+  <!-- LATEST FROM THE BLOG — cards are auto-stamped by gen_blog.py between the HOME-BLOG markers; edit the shell freely, never the cards by hand -->
+  <section class="home-blog" id="latest-articles">
+    <style>
+      .home-blog{padding:96px 0;background:transparent}
+      .home-blog .hb-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+      .home-blog .hb-h2{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:clamp(30px,4vw,44px);line-height:1.1;color:#fff;margin:12px 0 10px}
+      .home-blog .hb-sub{font-family:var(--font-b);font-size:16.5px;color:var(--body);max-width:520px;margin:0}
+      .home-blog .hb-all{font-family:var(--font-l);font-size:14px;font-weight:600;color:var(--lime);white-space:nowrap;padding-bottom:4px}
+      .home-blog .hb-all:hover{text-decoration:underline}
+      .home-blog .hb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+      .home-blog .hb-card{display:flex;flex-direction:column;background:var(--card-bg);border:1px solid var(--card-bd);border-radius:18px;overflow:hidden;transition:transform .25s ease,border-color .25s ease}
+      .home-blog .hb-card:hover{transform:translateY(-4px);border-color:rgba(172,231,29,.35)}
+      .home-blog .hb-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+      .home-blog .hb-card-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:9px}
+      .home-blog .hb-cat{font-family:var(--font-l);font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lime)}
+      .home-blog .hb-title{font-family:var(--font-h);font-style:italic;font-weight:800;font-size:19px;line-height:1.25;color:#fff;margin:0}
+      .home-blog .hb-card:hover .hb-title{color:var(--lime)}
+      .home-blog .hb-excerpt{font-family:var(--font-b);font-size:14px;line-height:1.55;color:var(--body);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+      .home-blog .hb-meta{font-family:var(--font-l);font-size:12px;color:var(--muted);margin-top:auto;padding-top:6px}
+      @media(max-width:900px){.home-blog{padding:70px 0}.home-blog .hb-grid{grid-template-columns:1fr}}
+    </style>
+    <div class="container">
+      <div class="hb-head" data-reveal="fade-up">
+        <div>
+          <span class="eyebrow-label">From the Blog</span>
+          <h2 class="hb-h2">The Latest <span class="gradient-text">Playbooks.</span></h2>
+          <p class="hb-sub">Real strategies from the campaigns we run for green-industry companies every day.</p>
+        </div>
+        <a class="hb-all" href="/resources/blog/">View all articles &rarr;</a>
+      </div>
+      <div class="hb-grid">
+<!-- HOME-BLOG:START -->
+        <a href="/resources/blog/land-clearing-marketing/" class="hb-card" data-reveal="fade-up" data-delay="0">
+          <img src="/assets/images/blog/land-clearing-marketing-hero.webp" alt="Aerial view of land clearing equipment working a wooded lot" loading="lazy" width="600" height="338">
+          <div class="hb-card-body">
+            <span class="hb-cat">Strategy</span>
+            <h3 class="hb-title">Land clearing marketing: the complete guide</h3>
+            <p class="hb-excerpt">How clearing and forestry mulching companies get found, win trust, and book high-ticket work: the full playbook, from search to AI, pay-per-lead to proof.</p>
+            <div class="hb-meta">July 18, 2026 &middot; 12 min read</div>
+          </div>
+        </a>
+        <a href="/resources/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/" class="hb-card" data-reveal="fade-up" data-delay="100">
+          <img src="/assets/images/blog/qualified-landscaping-leads.webp" alt="Why landscaping SEO gets traffic but not qualified leads" loading="lazy" width="600" height="338">
+          <div class="hb-card-body">
+            <span class="hb-cat">SEO</span>
+            <h3 class="hb-title">Why landscaping SEO gets traffic but not qualified leads</h3>
+            <p class="hb-excerpt">Rankings feel good, but the wrong ones just fill your inbox with tire-kickers. How to rank for real intent.</p>
+            <div class="hb-meta">June 7, 2026 &middot; 8 min read</div>
+          </div>
+        </a>
+        <a href="/resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/" class="hb-card" data-reveal="fade-up" data-delay="200">
+          <img src="/assets/images/blog/podcast-bob-2G28dlU82KE.webp" alt="Bob Diamond of Outdoor Makeover &amp; Living Spaces on the Mow Money, Mow Problems podcast" loading="lazy" width="600" height="338">
+          <div class="hb-card-body">
+            <span class="hb-cat">Client Story</span>
+            <h3 class="hb-title">What Bob Diamond's design-build story teaches landscapers</h3>
+            <p class="hb-excerpt">On the Mow Money podcast, Bob Diamond of Outdoor Makeover &amp; Living Spaces on marketing a design-build company: brand promise, proof, and follow-up.</p>
+            <div class="hb-meta">May 7, 2026 &middot; 7 min read</div>
+          </div>
+        </a>
+<!-- HOME-BLOG:END -->
+      </div>
+    </div>
+  </section>
+
   <section class="cta-section">
     <div class="cta-bg-img">
       <div class="cta-overlay"></div>
