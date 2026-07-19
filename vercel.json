@@ -9,6 +9,28 @@
       "has": [
         {
           "type": "host",
+          "value": "mowmoneymowproblemspodcast.com"
+        }
+      ],
+      "destination": "https://lawnandlandmarketing.com/podcast/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.mowmoneymowproblemspodcast.com"
+        }
+      ],
+      "destination": "https://lawnandlandmarketing.com/podcast/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
           "value": "new.lawnlab.dev"
         }
       ],
