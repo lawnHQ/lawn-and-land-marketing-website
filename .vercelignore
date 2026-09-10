@@ -1,0 +1,16 @@
+# Keep internal files out of the deployed site (they were publicly served before 2026-09-10).
+# build.py, _header.html, _footer.html and the HTML pages stay in — the Vercel build needs them.
+docs/
+scripts/
+_transcripts/
+.github/
+__pycache__/
+CLAUDE.md
+README.md
+PAGE_TEMPLATE.html
+gen_blog.py
+gen_blog_schema.py
+gen_podcast_episodes.py
+gen_service.py
+_blog.json
+_content.json

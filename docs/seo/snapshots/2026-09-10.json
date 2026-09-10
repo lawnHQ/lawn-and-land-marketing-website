@@ -1,0 +1,943 @@
+{
+ "date": "2026-09-10",
+ "site": "https://lawnandlandmarketing.com",
+ "dataforseo": {
+  "overview": {
+   "pos_1": 1,
+   "pos_2_3": 1,
+   "pos_4_10": 7,
+   "pos_11_20": 9,
+   "pos_21_30": 10,
+   "pos_31_40": 7,
+   "pos_41_50": 8,
+   "pos_51_60": 6,
+   "pos_61_70": 2,
+   "pos_71_80": 4,
+   "pos_81_90": 2,
+   "pos_91_100": 0,
+   "etv": 64.18000053800642,
+   "count": 57,
+   "estimated_paid_traffic_cost": 1171.3624608460814,
+   "is_new": 39,
+   "is_up": 5,
+   "is_down": 10,
+   "is_lost": 42,
+   "clickstream_etv": null,
+   "clickstream_gender_distribution": null,
+   "clickstream_age_distribution": null
+  },
+  "ranked": [
+   {
+    "keyword": "lawn and land marketing",
+    "volume": 30,
+    "position": 1,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawn marketing",
+    "volume": 170,
+    "position": 2,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawn care business marketing",
+    "volume": 110,
+    "position": 5,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawn care marketing agency",
+    "volume": 90,
+    "position": 7,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawncare marketing",
+    "volume": 170,
+    "position": 8,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawn care marketing company",
+    "volume": 30,
+    "position": 8,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawn care marketing",
+    "volume": 170,
+    "position": 9,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawn care ppc",
+    "volume": 40,
+    "position": 9,
+    "url": "/resources/blog/elevate-your-lawn-care-leads-through-ppc-strategies/",
+    "intent": "navigational"
+   },
+   {
+    "keyword": "local seo for landscaping companies",
+    "volume": 30,
+    "position": 10,
+    "url": "/resources/blog/category/seo/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscape marketing agency",
+    "volume": 260,
+    "position": 14,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "rise land clearing growth",
+    "volume": 40,
+    "position": 14,
+    "url": "/industries/land-clearing/",
+    "intent": "transactional"
+   },
+   {
+    "keyword": "land marketing",
+    "volume": 110,
+    "position": 15,
+    "url": "/blog/category/featured/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscape marketing company",
+    "volume": 140,
+    "position": 16,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscaping ppc",
+    "volume": 50,
+    "position": 16,
+    "url": "/blog/elevate-your-lawn-care-leads-through-ppc-strategies/",
+    "intent": "navigational"
+   },
+   {
+    "keyword": "lawnline marketing reviews",
+    "volume": 30,
+    "position": 16,
+    "url": "/resources/experiences-reviews/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "landscaping digital marketing",
+    "volume": 170,
+    "position": 17,
+    "url": "/resources/blog/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscaping marketing company",
+    "volume": 140,
+    "position": 17,
+    "url": "/",
+    "intent": "navigational"
+   },
+   {
+    "keyword": "land clearing growth",
+    "volume": 30,
+    "position": 18,
+    "url": "/industries/land-clearing/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "landscape marketing companies",
+    "volume": 140,
+    "position": 21,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "digital marketing for landscaping",
+    "volume": 90,
+    "position": 21,
+    "url": "/resources/blog/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "insight landscaping",
+    "volume": 40,
+    "position": 22,
+    "url": "/resources/blog/",
+    "intent": "navigational"
+   },
+   {
+    "keyword": "digital marketing for landscapers",
+    "volume": 90,
+    "position": 23,
+    "url": "/resources/blog/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscape marketing",
+    "volume": 390,
+    "position": 24,
+    "url": "/resources/blog/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscape company marketing",
+    "volume": 140,
+    "position": 25,
+    "url": "/resources/blog/landscaping-marketing-company/",
+    "intent": "navigational"
+   },
+   {
+    "keyword": "landscaping social media",
+    "volume": 70,
+    "position": 25,
+    "url": "/resources/blog/5-best-social-networks-for-landscapers-success/",
+    "intent": "navigational"
+   },
+   {
+    "keyword": "landscape digital marketing",
+    "volume": 170,
+    "position": 26,
+    "url": "/resources/blog/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "marketing strategy for landscaping business",
+    "volume": 70,
+    "position": 27,
+    "url": "/resources/blog/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscaping marketing services",
+    "volume": 90,
+    "position": 28,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "marketing for landscaping companies",
+    "volume": 140,
+    "position": 31,
+    "url": "/blog/category/advice/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscapers seo",
+    "volume": 480,
+    "position": 32,
+    "url": "/blog/lawn-landscaping-local-seo/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscaping newsletter",
+    "volume": 170,
+    "position": 34,
+    "url": "/blog/what-works-for-gardeners-email-newsletters/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "seo for landscaping companies",
+    "volume": 170,
+    "position": 34,
+    "url": "/blog/the-importance-of-seo-for-your-lawn-care-and-landscape-business/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "marketing strategies for landscaping business",
+    "volume": 70,
+    "position": 34,
+    "url": "/resources/blog/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "lawnline marketing",
+    "volume": 170,
+    "position": 35,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "land advertising",
+    "volume": 110,
+    "position": 35,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscape marketing pros",
+    "volume": 40,
+    "position": 42,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "google ads for landscapers",
+    "volume": 90,
+    "position": 43,
+    "url": "/marketing-services/google-ads/",
+    "intent": "navigational"
+   },
+   {
+    "keyword": "keywords for landscaping",
+    "volume": 40,
+    "position": 44,
+    "url": "/resources/blog/category/seo/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "mulch advertising",
+    "volume": 40,
+    "position": 44,
+    "url": "/marketing-services/automation/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "social media marketing for landscapers and lawn care providers",
+    "volume": 10,
+    "position": 44,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "google ads for landscaping",
+    "volume": 90,
+    "position": 46,
+    "url": "/marketing-services/google-ads/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "l&p marketing",
+    "volume": 50,
+    "position": 48,
+    "url": "/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "lawncare blog",
+    "volume": 30,
+    "position": 49,
+    "url": "/blog/4-essential-lawn-care-tips-for-guest-bloggers/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "landscape design marketing",
+    "volume": 40,
+    "position": 52,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawn care crm",
+    "volume": 140,
+    "position": 53,
+    "url": "/blog/top-online-crms-for-lawn-care-businesses-reviewed/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "lawn care promotions",
+    "volume": 30,
+    "position": 54,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "ground marketing",
+    "volume": 30,
+    "position": 56,
+    "url": "/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "how to market a landscaping company",
+    "volume": 70,
+    "position": 58,
+    "url": "/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "marketing for lawn care business",
+    "volume": 110,
+    "position": 60,
+    "url": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "gardening marketing",
+    "volume": 30,
+    "position": 61,
+    "url": "/marketing-services/automation/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscape social media",
+    "volume": 70,
+    "position": 70,
+    "url": "/resources/blog/5-best-social-networks-for-landscapers-success/",
+    "intent": "navigational"
+   },
+   {
+    "keyword": "lawn care newsletter",
+    "volume": 110,
+    "position": 76,
+    "url": "/marketing-services/automation/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "digital marketing for landscaping companies",
+    "volume": 30,
+    "position": 78,
+    "url": "/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+    "intent": "commercial"
+   },
+   {
+    "keyword": "landscaping newsletters",
+    "volume": 30,
+    "position": 78,
+    "url": "/marketing-services/automation/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "landscape communication",
+    "volume": 50,
+    "position": 79,
+    "url": "/marketing-services/automation/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "landscape newsletters",
+    "volume": 30,
+    "position": 81,
+    "url": "/marketing-services/automation/",
+    "intent": "informational"
+   },
+   {
+    "keyword": "landscape newsletter",
+    "volume": 30,
+    "position": 86,
+    "url": "/marketing-services/automation/",
+    "intent": "informational"
+   }
+  ],
+  "backlinks": {
+   "rank": 264,
+   "backlinks": 845,
+   "referring_domains": 68,
+   "referring_main_domains": 64,
+   "referring_domains_nofollow": 14,
+   "backlinks_spam_score": 5
+  },
+  "referring_domains": [
+   {
+    "domain": "dlmpropertygroup.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-09-10"
+   },
+   {
+    "domain": "mediaboooster.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-09-03"
+   },
+   {
+    "domain": "junknationremoval.com",
+    "rank": 0,
+    "backlinks": 69,
+    "first_seen": "2026-09-02"
+   },
+   {
+    "domain": "fashionclothingnews.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-09-01"
+   },
+   {
+    "domain": "uncledspizza.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-28"
+   },
+   {
+    "domain": "quotesblom.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-28"
+   },
+   {
+    "domain": "theforbestimes.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-21"
+   },
+   {
+    "domain": "betwinnermirror.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-20"
+   },
+   {
+    "domain": "betulcrime.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-17"
+   },
+   {
+    "domain": "bollingerlandscapingllc.com",
+    "rank": 133,
+    "backlinks": 29,
+    "first_seen": "2026-08-15"
+   },
+   {
+    "domain": "topmarketingagencies.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-15"
+   },
+   {
+    "domain": "drjack.world",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-11"
+   },
+   {
+    "domain": "thestacc.com",
+    "rank": 0,
+    "backlinks": 5,
+    "first_seen": "2026-08-11"
+   },
+   {
+    "domain": "homesforsaleoldgreenwichct.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-08"
+   },
+   {
+    "domain": "bye.fyi",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-07"
+   },
+   {
+    "domain": "ggmap.us.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-08-01"
+   },
+   {
+    "domain": "robuta.com",
+    "rank": 0,
+    "backlinks": 2,
+    "first_seen": "2026-07-25"
+   },
+   {
+    "domain": "lc-lm.com",
+    "rank": 157,
+    "backlinks": 82,
+    "first_seen": "2026-07-22"
+   },
+   {
+    "domain": "coldlytics.com",
+    "rank": 128,
+    "backlinks": 5,
+    "first_seen": "2026-07-21"
+   },
+   {
+    "domain": "plumeriamarketing.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-07-08"
+   },
+   {
+    "domain": "m98ufa.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-07-07"
+   },
+   {
+    "domain": "urls-shortener.eu",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-06-24"
+   },
+   {
+    "domain": "jake.eu",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-06-19"
+   },
+   {
+    "domain": "ready.pro",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-06-18"
+   },
+   {
+    "domain": "independentlawnservice.com",
+    "rank": 223,
+    "backlinks": 127,
+    "first_seen": "2026-06-18"
+   },
+   {
+    "domain": "vling.net",
+    "rank": 16,
+    "backlinks": 2,
+    "first_seen": "2026-06-01"
+   },
+   {
+    "domain": "businessnewstipsau.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-05-15"
+   },
+   {
+    "domain": "read.org.in",
+    "rank": 0,
+    "backlinks": 2,
+    "first_seen": "2026-05-07"
+   },
+   {
+    "domain": "uame.edu.mx",
+    "rank": 0,
+    "backlinks": 2,
+    "first_seen": "2026-04-20"
+   },
+   {
+    "domain": "alljobs.info",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-04-10"
+   },
+   {
+    "domain": "sergechel.info",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-03-25"
+   },
+   {
+    "domain": "ycm.info",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-03-21"
+   },
+   {
+    "domain": "anchorurl.cloud",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-03-08"
+   },
+   {
+    "domain": "getwebsiteworth.com",
+    "rank": 0,
+    "backlinks": 3,
+    "first_seen": "2026-02-26"
+   },
+   {
+    "domain": "musweb.org",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-02-13"
+   },
+   {
+    "domain": "booksreadr.org",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-01-31"
+   },
+   {
+    "domain": "screenshots.wiki",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-01-29"
+   },
+   {
+    "domain": "way2check.cv",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-01-24"
+   },
+   {
+    "domain": "imagetou.com",
+    "rank": 63,
+    "backlinks": 10,
+    "first_seen": "2026-01-20"
+   },
+   {
+    "domain": "buzzshrink.website",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-01-17"
+   },
+   {
+    "domain": "simplewebdirectory.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2026-01-17"
+   },
+   {
+    "domain": "websiterace.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-12-29"
+   },
+   {
+    "domain": "wheretobuybest.link",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-12-27"
+   },
+   {
+    "domain": "postgradoune.edu.pe",
+    "rank": 0,
+    "backlinks": 2,
+    "first_seen": "2025-12-26"
+   },
+   {
+    "domain": "brdg.app",
+    "rank": 51,
+    "backlinks": 1,
+    "first_seen": "2025-12-09"
+   },
+   {
+    "domain": "globalecommerce.org",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-12-07"
+   },
+   {
+    "domain": "quero.party",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-11-22"
+   },
+   {
+    "domain": "allaroundtampa.com",
+    "rank": 202,
+    "backlinks": 254,
+    "first_seen": "2025-10-23"
+   },
+   {
+    "domain": "directory8.org",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-10-16"
+   },
+   {
+    "domain": "springgreenfranchise.com",
+    "rank": 7,
+    "backlinks": 2,
+    "first_seen": "2025-09-30"
+   },
+   {
+    "domain": "jedgar.co",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-09-29"
+   },
+   {
+    "domain": "cvh.gov.np",
+    "rank": 0,
+    "backlinks": 2,
+    "first_seen": "2025-09-15"
+   },
+   {
+    "domain": "scissortailokc.com",
+    "rank": 208,
+    "backlinks": 82,
+    "first_seen": "2025-09-13"
+   },
+   {
+    "domain": "itxoft.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-09-06"
+   },
+   {
+    "domain": "australianwebdirectory.pro",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-08-08"
+   },
+   {
+    "domain": "innovaton.cl",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-07-10"
+   },
+   {
+    "domain": "jmelomedia.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-07-09"
+   },
+   {
+    "domain": "australianwebdirectory.shop",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-06-02"
+   },
+   {
+    "domain": "techbullion.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-06-01"
+   },
+   {
+    "domain": "onecooldir.com",
+    "rank": 58,
+    "backlinks": 118,
+    "first_seen": "2025-05-30"
+   },
+   {
+    "domain": "strategicvisibility.net",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2025-05-23"
+   },
+   {
+    "domain": "bestdirectory4you.com",
+    "rank": 0,
+    "backlinks": 2,
+    "first_seen": "2025-02-16"
+   },
+   {
+    "domain": "businessnewstips.com",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2024-12-26"
+   },
+   {
+    "domain": "piratedirectory.org",
+    "rank": 0,
+    "backlinks": 1,
+    "first_seen": "2024-07-14"
+   }
+  ]
+ },
+ "crawl": {
+  "sitemap_urls": 101,
+  "issues": {
+   "non_200": [],
+   "canonical_mismatch": [],
+   "noindex_in_sitemap": [],
+   "h1_not_one": [],
+   "missing_ga4": [],
+   "desc_over_160": [
+    "https://lawnandlandmarketing.com/about/",
+    "https://lawnandlandmarketing.com/marketing-services/website-design/",
+    "https://lawnandlandmarketing.com/marketing-services/local-seo/",
+    "https://lawnandlandmarketing.com/industries/landscaping/",
+    "https://lawnandlandmarketing.com/matt-foreman/",
+    "https://lawnandlandmarketing.com/resources/blog/best-green-industry-marketing-agencies/",
+    "https://lawnandlandmarketing.com/resources/blog/land-clearing-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/",
+    "https://lawnandlandmarketing.com/resources/blog/6-key-mobile-responsive-design-tips-for-landscapers/",
+    "https://lawnandlandmarketing.com/resources/blog/7-easy-steps-to-dominate-local-seo-for-your-landscaping-business/",
+    "https://lawnandlandmarketing.com/resources/blog/nate-precision-landscape-management-scalable-growth/",
+    "https://lawnandlandmarketing.com/resources/mow-money-mow-problems-podcast/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-land-clearing-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/landscaping-marketing-company/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-hardscaping-companies/"
+   ],
+   "title_over_65": [
+    "https://lawnandlandmarketing.com/resources/blog/page/2/",
+    "https://lawnandlandmarketing.com/matt-foreman/",
+    "https://lawnandlandmarketing.com/resources/blog/best-green-industry-marketing-agencies/",
+    "https://lawnandlandmarketing.com/resources/blog/land-clearing-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/why-landscaping-seo-gets-traffic-not-qualified-leads/",
+    "https://lawnandlandmarketing.com/resources/blog/bob-diamond-outdoor-makeover-living-spaces-design-build-growth/",
+    "https://lawnandlandmarketing.com/resources/blog/pat-condon-3c-land-agricultural-services-specialized-growth/",
+    "https://lawnandlandmarketing.com/resources/blog/dustin-walker-landscape-st-louis-acquisition-led-growth/",
+    "https://lawnandlandmarketing.com/resources/blog/the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses/",
+    "https://lawnandlandmarketing.com/resources/blog/why-your-landscaping-digital-marketing-isnt-working-3-critical-issues-killing-your-results/",
+    "https://lawnandlandmarketing.com/resources/blog/why-500-leads-in-10-days-digital-marketing-promises-are-destroying-landscaping-businesses/",
+    "https://lawnandlandmarketing.com/resources/blog/marketing-tool-that-outperforms/",
+    "https://lawnandlandmarketing.com/resources/blog/three-moves-that-separate-professional-landscapers/",
+    "https://lawnandlandmarketing.com/resources/blog/your-2025-digital-marketing-plan/",
+    "https://lawnandlandmarketing.com/resources/blog/managing-lawn-service-reviews-online-reputation-tips/",
+    "https://lawnandlandmarketing.com/resources/blog/elevate-your-lawn-care-leads-through-ppc-strategies/",
+    "https://lawnandlandmarketing.com/resources/blog/6-key-mobile-responsive-design-tips-for-landscapers/",
+    "https://lawnandlandmarketing.com/resources/blog/7-easy-steps-to-dominate-local-seo-for-your-landscaping-business/",
+    "https://lawnandlandmarketing.com/resources/blog/nate-precision-landscape-management-scalable-growth/",
+    "https://lawnandlandmarketing.com/resources/blog/landscaper-marketing-101-how-to-attract-more-clients-and-grow-your-business/",
+    "https://lawnandlandmarketing.com/resources/blog/lawn-landscaping-local-seo/",
+    "https://lawnandlandmarketing.com/resources/blog/the-ultimate-guide-to-online-landscape-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/holiday-lighting-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/christmas-light-installation-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-holiday-lighting-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/ai-marketing-for-lawn-care/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-excavation-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-land-clearing-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-septic-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-landscaping-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/septic-company-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/excavation-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/choosing-a-landscaping-marketing-agency/",
+    "https://lawnandlandmarketing.com/resources/blog/what-a-lawn-care-marketing-agency-does/",
+    "https://lawnandlandmarketing.com/resources/blog/ai-search-optimization-for-landscapers/",
+    "https://lawnandlandmarketing.com/resources/blog/landscaper-website-design/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-outdoor-living-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/landscaping-marketing-company/",
+    "https://lawnandlandmarketing.com/resources/blog/google-ads-for-landscapers/",
+    "https://lawnandlandmarketing.com/resources/blog/landscaping-reputation-management/",
+    "https://lawnandlandmarketing.com/resources/blog/lawn-care-seo-recurring-revenue/",
+    "https://lawnandlandmarketing.com/resources/blog/google-ads-for-lawn-care-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-lawn-care-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/seo-for-hardscaping-companies/",
+    "https://lawnandlandmarketing.com/resources/blog/green-industry-marketing-agency/",
+    "https://lawnandlandmarketing.com/resources/blog/fall-lawn-care-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/aeration-and-overseeding-marketing/",
+    "https://lawnandlandmarketing.com/resources/blog/marketing-for-landscapers/"
+   ]
+  }
+ },
+ "pagespeed": {
+  "https://lawnandlandmarketing.com/": {
+   "perf": 96,
+   "seo": 100,
+   "a11y": 100,
+   "lcp": "2.7\u00a0s",
+   "cls": "0.003",
+   "tbt": "0\u00a0ms",
+   "crux": null
+  },
+  "https://lawnandlandmarketing.com/marketing-services/local-seo/": {
+   "perf": 71,
+   "seo": 100,
+   "a11y": 100,
+   "lcp": "5.1\u00a0s",
+   "cls": "0",
+   "tbt": "240\u00a0ms",
+   "crux": null
+  },
+  "https://lawnandlandmarketing.com/industries/landscaping/": {
+   "perf": 43,
+   "seo": 100,
+   "a11y": 100,
+   "lcp": "8.4\u00a0s",
+   "cls": "0",
+   "tbt": "1,300\u00a0ms",
+   "crux": null
+  },
+  "https://lawnandlandmarketing.com/resources/blog/seo-for-landscaping-companies/": {
+   "perf": 53,
+   "seo": 100,
+   "a11y": 96,
+   "lcp": "8.7\u00a0s",
+   "cls": "0",
+   "tbt": "440\u00a0ms",
+   "crux": null
+  }
+ },
+ "google": {
+  "_skipped": "no token: run scripts/seo/google_auth.py via doppler -p vault first"
+ }
+}
