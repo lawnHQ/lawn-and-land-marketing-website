@@ -168,4 +168,11 @@ Skip tree service marketing (210): not a served vertical.
 
 ## 6. Log
 - 2026-09-10 — Baseline established (this file, snapshot `2026-09-10.json`), tooling added
-  (`scripts/seo/google_auth.py`, `scripts/seo/snapshot.py`). No site changes made yet.
+  (`scripts/seo/google_auth.py`, `scripts/seo/snapshot.py`).
+- 2026-09-10 — Found `docs/`, `scripts/`, `CLAUDE.md`, `README.md`, `_content.json`, `_blog.json`
+  and the generator scripts publicly served on the production domain (HTTP 200). Added
+  `.vercelignore` so they are no longer uploaded; `build.py` + `_header.html` / `_footer.html`
+  stay in because the Vercel build needs them. Live-verified after deploy.
+  **Open:** the GitHub repo `lawnHQ/lawn-and-land-marketing-website` is PUBLIC, so everything in
+  it (including this file) is still readable on GitHub. Flipping it private is a one-click
+  GitHub setting for Matt; the Vercel GitHub App and the Actions deploy keep working.
