@@ -218,12 +218,10 @@ PR and does not publish. Run history: https://claude.ai/code/routines
 
 ## 7. GBP edits for Matt (brand-visible, needs his hand)
 Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing agency".
-1. Add secondary categories: **Internet marketing service**, **Advertising agency**.
-2. Business description (750 chars max): lead with "landscaping marketing agency" and name the
-   trades: landscaping, outdoor living, land clearing, excavation, lawn care. Mention websites,
-   local SEO, Google Ads, reputation management, CRM and automation; 100+ green-industry
-   companies; NALP member; Google Partner. No pricing.
-3. Services: add the 8 real services as GBP services with one-line descriptions.
+1. Add secondary categories: **Internet marketing service** (`categories/gcid:internet_marketing_service`) and **Marketing consultant** (`categories/gcid:marketing_consultant`). ("Advertising agency" does not exist in the GBP taxonomy; only "Direct mail advertising" does. Checked 2026-09-16.)
+2. Business description: draft ready at `docs/seo/gbp/description.txt` (735 chars, under the 750 limit).
+3. Services: draft ready at `docs/seo/gbp/services.json` (8 services, each under 300 chars).
+   Apply with (after Matt's yes): `doppler run -p mac-claude -c prd -- gbp set-description accounts/101131441201055923730/locations/17130850836280261172 --file docs/seo/gbp/description.txt --confirm`, then `gbp set-categories ... --additional categories/gcid:internet_marketing_service categories/gcid:marketing_consultant --confirm`, then `gbp set-services ... --file docs/seo/gbp/services.json --confirm`. Each prints the payload and verifies by reading the listing back.
 4. Weekly GBP post: reuse the newest blog post each week.
 5. Keep the review stream going (the July batch is doing work). Ask happy clients for reviews
    that mention "landscaping" and the trade in the text.
