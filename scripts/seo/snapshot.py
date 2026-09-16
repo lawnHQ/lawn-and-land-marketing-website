@@ -11,7 +11,7 @@ Sources (all read-only):
   - PageSpeed Insights: mobile scores for the 3 template types  (free)
   - Live crawl of sitemap.xml: status/title/canonical/robots    (free)
   - Google Search Console + GA4 (only once ~/.secrets/google-seo.env exists,
-    created by scripts/seo/google_auth.py)
+    created by `google-consent seo`)
 
 Run:
     doppler run -p mac-claude -c prd -- python3 scripts/seo/snapshot.py
@@ -187,12 +187,20 @@ def google_token():
     for line in open(envf):
         if line.startswith("GOOGLE_SEO_REFRESH_TOKEN="):
             rt = line.strip().split("=", 1)[1]
-    raw = os.environ.get("GOOGLE_OAUTH_CLIENT_JSON")
-    if not (rt and raw):
+    if not rt:
         return None
-    c = json.loads(raw); c = c.get("installed") or c.get("web") or c
+    # Fleet client (project 489025929507, INTERNAL consent screen, non-expiring tokens):
+    # GBP_CLIENT_ID / GBP_CLIENT_SECRET are in mac-claude/prd. The old vesta-hermes client
+    # (GOOGLE_OAUTH_CLIENT_JSON) is External+Testing and its tokens die after 7 days.
+    cid, csec = os.environ.get("GBP_CLIENT_ID"), os.environ.get("GBP_CLIENT_SECRET")
+    if not (cid and csec):
+        raw = os.environ.get("GOOGLE_OAUTH_CLIENT_JSON")
+        if not raw:
+            return None
+        c = json.loads(raw); c = c.get("installed") or c.get("web") or c
+        cid, csec = c["client_id"], c["client_secret"]
     tok = http("https://oauth2.googleapis.com/token", urllib.parse.urlencode({
-        "client_id": c["client_id"], "client_secret": c["client_secret"],
+        "client_id": cid, "client_secret": csec,
         "refresh_token": rt, "grant_type": "refresh_token"}).encode())
     return tok.get("access_token")
 
