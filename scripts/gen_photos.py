@@ -124,6 +124,8 @@ def main():
     ap.add_argument("--limit", type=int)
     ap.add_argument("--slug")
     ap.add_argument("--all", action="store_true", help="also replace existing photos")
+    ap.add_argument("--prompt", help="custom scene for --slug (house STYLE is appended); use it so every post looks unique")
+    ap.add_argument("--variant", help="camera/light direction for --slug, e.g. 'overhead drone shot at golden hour'")
     args = ap.parse_args()
 
     blog_path = os.path.join(ROOT, "_blog.json")
@@ -153,7 +155,10 @@ def main():
         if os.path.exists(os.path.join(ROOT, photo_path.lstrip("/"))) and not (args.all or args.slug):
             p["image"] = photo_path
             continue
-        prompt = scene_prompt(p["title"], p.get("cat"), p["slug"])
+        if args.slug and args.prompt:
+            prompt = args.prompt.strip() + (", " + args.variant.strip() if args.variant else "") + STYLE
+        else:
+            prompt = scene_prompt(p["title"], p.get("cat"), p["slug"])
         print(f"  generating: {p['slug']}", file=sys.stderr)
         raw = generate(key, prompt)
         os.makedirs(OUT_DIR, exist_ok=True)

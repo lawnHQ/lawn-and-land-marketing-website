@@ -194,6 +194,28 @@ Skip tree service marketing (210): not a served vertical.
   `/industries/landscaping/`), and GSC CTR on the head terms.
 - **Open for Matt (not doable by the agent):** GBP edits (see §7), repo → private, GSC↔GA4 link.
 
+- 2026-09-16 (later) — Matt approved deferring the marketing tags and a weekly snapshot, and asked for
+  a standing automation that checks in and publishes. Shipped: deferred GA4/Google Ads/Meta Pixel
+  loader on 112 pages + template (commit `0cc0b3d`, live-verified: no tag scripts at 1 s, both
+  loaded by 5 s, events queued through the stubs; the two conversion thank-you pages stay eager).
+  Added `docs/seo/ARTICLE-PLAYBOOK.md` (the publishing standard) and `docs/seo/CONTENT-QUEUE.md`
+  (20 priority-ordered topics, radar terms excluded), `--prompt/--variant` on `gen_photos.py`,
+  and two cloud routines: **Monday 7am ET weekly review** (snapshot + safe fixes + report in
+  `docs/seo/reports/`) and **Tuesday/Thursday 6am ET article** (one article per run, PR with a
+  24-hour veto window, merged by the next run). The routines read their credentials from the
+  cloud environment variables Matt sets (see §8). `gbp` CLI gained gated write commands
+  (`set-description`, `set-categories`, `set-services`, `create-post`); drafts for the L&L
+  listing are in `docs/seo/gbp/` awaiting Matt's yes.
+
+## 8. Automation (cloud routines) — what they need
+Environment variables on the claude.ai/code "Default" environment (Matt sets these once, values
+come from Doppler `vault/prd` / `mac-claude/prd`): `DATAFORSEO_LOGIN`, `DATAFORSEO_PASSWORD`,
+`PAGESPEED_API_KEY`, `GBP_CLIENT_ID`, `GBP_CLIENT_SECRET`, `GOOGLE_SEO_REFRESH_TOKEN` (the value
+in `~/.secrets/google-seo.env` on Matt's Mac), `OPENAI_API_KEY` (gpt-image-2). Optional:
+`CI_SUPABASE_URL` + `CI_SUPABASE_KEY` for the radar ledger. Without the Google/DataForSEO ones the
+Monday review still crawls and fixes; without `OPENAI_API_KEY` the article routine opens a draft
+PR and does not publish. Run history: https://claude.ai/code/routines
+
 ## 7. GBP edits for Matt (brand-visible, needs his hand)
 Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing agency".
 1. Add secondary categories: **Internet marketing service**, **Advertising agency**.
