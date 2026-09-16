@@ -192,7 +192,7 @@ Skip tree service marketing (210): not a served vertical.
   (should move from the category page to `/marketing-services/landscaping-seo/`), landscape
   marketing / marketing for landscapers (should move from `/resources/blog/` to
   `/industries/landscaping/`), and GSC CTR on the head terms.
-- **Open for Matt (not doable by the agent):** GBP edits (see §7), repo → private, GSC↔GA4 link.
+- 2026-09-16 — **GBP applied with Matt's yes** via the new gated `gbp` write commands, each read back and verified: description replaced (742 chars, leads with "landscaping marketing agency", names the priority trades and the 8 services), secondary categories added (Internet marketing service, Marketing consultant; "Advertising agency" does not exist in the taxonomy), 8 services added with descriptions. Still open for Matt: repo → private, GSC↔GA4 link, cloud environment variables (§8).
 
 - 2026-09-16 (later) — Matt approved deferring the marketing tags and a weekly snapshot, and asked for
   a standing automation that checks in and publishes. Shipped: deferred GA4/Google Ads/Meta Pixel
@@ -219,7 +219,7 @@ PR and does not publish. Run history: https://claude.ai/code/routines
 ## 7. GBP edits for Matt (brand-visible, needs his hand)
 Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing agency".
 1. Add secondary categories: **Internet marketing service** (`categories/gcid:internet_marketing_service`) and **Marketing consultant** (`categories/gcid:marketing_consultant`). ("Advertising agency" does not exist in the GBP taxonomy; only "Direct mail advertising" does. Checked 2026-09-16.)
-2. Business description: draft ready at `docs/seo/gbp/description.txt` (735 chars, under the 750 limit).
+2. Business description: applied 2026-09-16 from `docs/seo/gbp/description.txt` (742 chars).
 3. Services: draft ready at `docs/seo/gbp/services.json` (8 services, each under 300 chars).
    Apply with (after Matt's yes): `doppler run -p mac-claude -c prd -- gbp set-description accounts/101131441201055923730/locations/17130850836280261172 --file docs/seo/gbp/description.txt --confirm`, then `gbp set-categories ... --additional categories/gcid:internet_marketing_service categories/gcid:marketing_consultant --confirm`, then `gbp set-services ... --file docs/seo/gbp/services.json --confirm`. Each prints the payload and verifies by reading the listing back.
 4. Weekly GBP post: reuse the newest blog post each week.
