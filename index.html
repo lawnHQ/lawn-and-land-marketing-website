@@ -4,28 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google tag + Meta Pixel (Lawn & Land Marketing) — loaded after first paint to protect mobile LCP/TBT -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    function loadMarketingTags(){
-      if (window.__llMarketingTagsLoaded) return;
-      window.__llMarketingTagsLoaded = true;
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-HFEP2769DS';
-      document.head.appendChild(s);
-      gtag('js', new Date());
-      gtag('config', 'G-HFEP2769DS');
-      gtag('config', 'AW-18165400861');
-      !function(f,b,e,v,n,t,sc){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;sc=b.getElementsByTagName(e)[0];sc.parentNode.insertBefore(t,sc)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init','235509009483991');fbq('track','PageView');
-    }
-    window.addEventListener('load', function(){
-      setTimeout(loadMarketingTags, 8000);
-    }, { once: true });
-  </script>
-  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=235509009483991&amp;ev=PageView&amp;noscript=1"/></noscript>
+  <!-- Google tag (GA4 + Google Ads) + Meta Pixel (Lawn & Land Marketing) — stubs run now, scripts load on first interaction or 3s after load to protect mobile LCP/TBT -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}(window);
+  gtag('js', new Date());
+  gtag('config', 'G-HFEP2769DS');
+  gtag('config', 'AW-18165400861');
+  fbq('init','235509009483991');fbq('track','PageView');
+  function loadMarketingTags(){
+    if (window.__llMarketingTagsLoaded) return;
+    window.__llMarketingTagsLoaded = true;
+    var g = document.createElement('script'); g.async = true; g.src = 'https://www.googletagmanager.com/gtag/js?id=G-HFEP2769DS'; document.head.appendChild(g);
+    var p = document.createElement('script'); p.async = true; p.src = 'https://connect.facebook.net/en_US/fbevents.js'; document.head.appendChild(p);
+  }
+  ['scroll','click','touchstart','keydown','pointerdown'].forEach(function(ev){ window.addEventListener(ev, loadMarketingTags, { once: true, passive: true }); });
+  window.addEventListener('load', function(){ setTimeout(loadMarketingTags, 3000); }, { once: true });
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=235509009483991&amp;ev=PageView&amp;noscript=1"/></noscript>
   <title>Landscaping &amp; Lawn Care Marketing Agency | Lawn &amp; Land</title>
   <meta name="description" content="Marketing for landscapers, outdoor living contractors, and land clearing companies. Websites, SEO, Google Ads, and automation that book better jobs.">
   <meta name="robots" content="index, follow">

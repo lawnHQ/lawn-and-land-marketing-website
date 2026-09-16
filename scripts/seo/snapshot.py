@@ -180,13 +180,13 @@ def crawl_block():
 
 # ------------------------------------------------------------- Google (GSC/GA4)
 def google_token():
+    # Token source: env var (cloud routines / CI) or ~/.secrets/google-seo.env (Matt's Mac).
+    rt = os.environ.get("GOOGLE_SEO_REFRESH_TOKEN")
     envf = os.path.expanduser("~/.secrets/google-seo.env")
-    if not os.path.exists(envf):
-        return None
-    rt = None
-    for line in open(envf):
-        if line.startswith("GOOGLE_SEO_REFRESH_TOKEN="):
-            rt = line.strip().split("=", 1)[1]
+    if not rt and os.path.exists(envf):
+        for line in open(envf):
+            if line.startswith("GOOGLE_SEO_REFRESH_TOKEN="):
+                rt = line.strip().split("=", 1)[1]
     if not rt:
         return None
     # Fleet client (project 489025929507, INTERNAL consent screen, non-expiring tokens):
@@ -208,7 +208,7 @@ def google_token():
 def google_block(days=28):
     at = google_token()
     if not at:
-        return {"_skipped": "no token: run scripts/seo/google_auth.py via doppler -p vault first"}
+        return {"_skipped": "no token: set GOOGLE_SEO_REFRESH_TOKEN or run `google-consent seo` on Matt's Mac"}
     h = {"Authorization": "Bearer " + at, "Content-Type": "application/json"}
     end = dt.date.today() - dt.timedelta(days=2)
     start = end - dt.timedelta(days=days - 1)
