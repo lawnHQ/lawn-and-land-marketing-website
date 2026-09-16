@@ -176,3 +176,32 @@ Skip tree service marketing (210): not a served vertical.
   **Open:** the GitHub repo `lawnHQ/lawn-and-land-marketing-website` is PUBLIC, so everything in
   it (including this file) is still readable on GitHub. Flipping it private is a one-click
   GitHub setting for Matt; the Vercel GitHub App and the Actions deploy keep working.
+- 2026-09-16 — **Client priority set by Matt:** 1 Landscapers, 2 Outdoor Living, 3 Land Clearing;
+  then Excavation, Lawn Care, Lawn Maintenance, Septic; Holiday Lighting stays as a page for
+  existing clients but gets no dedicated push. Matt gave a standing go for on-site changes with a
+  high-confidence positive impact.
+- 2026-09-16 — Shipped (commit `4343a6c`): hub "Built for your trade" grid + sitewide footer links
+  to the vertical SEO/Ads pages (priority order); 41 blog posts got a contextual service link in
+  the CTA block; SEO category page retitled as a library and its intro links the four priority
+  vertical SEO pages; blog index title de-optimized; `seoTitle` (≤60) on all 47 posts stamped by
+  `gen_blog.py` (H1s untouched); 18 long meta descriptions trimmed; homepage title leads with
+  Landscaping and the description names the three priority trades; `_content.json` synced to the
+  live service titles/descriptions (six had drifted); hero preload on 48 pages + hero recompressed
+  289→223 KB + 17 blog photos ≤150 KB; blog hero `fetchpriority=high`.
+  **Measure on 2026-09-30:** Radar positions for landscaping SEO / seo for landscaping companies
+  (should move from the category page to `/marketing-services/landscaping-seo/`), landscape
+  marketing / marketing for landscapers (should move from `/resources/blog/` to
+  `/industries/landscaping/`), and GSC CTR on the head terms.
+- **Open for Matt (not doable by the agent):** GBP edits (see §7), repo → private, GSC↔GA4 link.
+
+## 7. GBP edits for Matt (brand-visible, needs his hand)
+Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing agency".
+1. Add secondary categories: **Internet marketing service**, **Advertising agency**.
+2. Business description (750 chars max): lead with "landscaping marketing agency" and name the
+   trades: landscaping, outdoor living, land clearing, excavation, lawn care. Mention websites,
+   local SEO, Google Ads, reputation management, CRM and automation; 100+ green-industry
+   companies; NALP member; Google Partner. No pricing.
+3. Services: add the 8 real services as GBP services with one-line descriptions.
+4. Weekly GBP post: reuse the newest blog post each week.
+5. Keep the review stream going (the July batch is doing work). Ask happy clients for reviews
+   that mention "landscaping" and the trade in the text.
