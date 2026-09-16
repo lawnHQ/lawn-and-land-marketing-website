@@ -143,6 +143,14 @@ def set_meta(htmltext, title, desc, canon):
                       '<link rel="canonical" href="%s">' % canon, htmltext, count=1)
     return htmltext
 
+def set_title(htmltext, title):
+    """Stamp the SERP title (<title>, og:title, twitter:title) without touching the H1."""
+    t = H(title)
+    htmltext = re.sub(r'<title>.*?</title>', '<title>%s</title>' % t, htmltext, count=1, flags=re.S)
+    htmltext = re.sub(r'<meta\b[^>]*\bname="twitter:title"[^>]*/?>', '<meta name="twitter:title" content="%s">' % t, htmltext, count=1)
+    htmltext = re.sub(r'<meta\b[^>]*\bproperty="og:title"[^>]*/?>', '<meta property="og:title" content="%s">' % t, htmltext, count=1)
+    return htmltext
+
 LD_RE = re.compile(r'<script type="application/ld\+json">\{"@context"[^\n]*?"@type":"(?:Blog|CollectionPage)".*?</script>', re.S)
 def set_schema(htmltext, obj):
     s = '<script type="application/ld+json">%s</script>' % json.dumps(obj, ensure_ascii=False)
@@ -265,11 +273,11 @@ def main():
         sec = section("\n".join(cards), pagination(pg, total, "/resources/blog/"), FILTERS)
         h = put_section(base, sec)
         if pg == 1:
-            title = "Blog: Landscaping Marketing Insights | Lawn & Land Marketing"
+            title = "Green Industry Marketing Blog: SEO, Ads & Growth | Lawn & Land"
             desc = "Sharp takes and practical growth advice for green industry owners. SEO, ads, websites, automation, from the team that does it daily."
             canon = "%s/resources/blog/" % STAGE
         else:
-            title = "Blog: Landscaping Marketing Insights (Page %d) | Lawn & Land Marketing" % pg
+            title = "Green Industry Marketing Blog (Page %d) | Lawn & Land" % pg
             desc = "More green-industry marketing insight from Lawn & Land Marketing. Page %d of the blog." % pg
             canon = "%s/resources/blog/page/%d/" % (STAGE, pg)
         h = set_meta(h, title, desc, canon)
@@ -295,7 +303,7 @@ def main():
             sec = section("\n".join(card(p) for p in pp), pagination(pg, ctot, base_url), back, intro)
             h = put_section(base, sec)
             h = set_cat_hero(h, cat)
-            title = "%s | Lawn & Land Marketing" % cat["title"] + ("" if pg == 1 else " (Page %d)" % pg)
+            title = "%s | Lawn & Land" % cat["title"] + ("" if pg == 1 else " (Page %d)" % pg)
             canon = (STAGE + base_url) if pg == 1 else "%s%spage/%d/" % (STAGE, base_url, pg)
             h = set_meta(h, title, cat["metaDesc"], canon)
             h = set_schema(h, cat_schema(cat))
@@ -312,10 +320,10 @@ def main():
             media = video_figure(p)
         elif p.get("heroFull"):
             # Designed covers (text/logo to the edges): show the FULL image, never crop.
-            media = ('<figure class="article-hero-img"><img src="%s" alt="%s" loading="eager" width="%d" height="%d" style="width:100%%;height:auto;display:block;"></figure>'
+            media = ('<figure class="article-hero-img"><img src="%s" alt="%s" loading="eager" fetchpriority="high" decoding="async" width="%d" height="%d" style="width:100%%;height:auto;display:block;"></figure>'
                      % (p["image"], H(p["imageAlt"]), p.get("imageW", 1600), p.get("imageH", 900)))
         else:
-            media = ('<figure class="article-hero-img"><img src="%s" alt="%s" loading="eager" width="1200" height="630" style="width:100%%;height:420px;object-fit:cover;display:block;"></figure>'
+            media = ('<figure class="article-hero-img"><img src="%s" alt="%s" loading="eager" fetchpriority="high" decoding="async" width="1200" height="630" style="width:100%%;height:420px;object-fit:cover;display:block;"></figure>'
                      % (p["image"], H(p["imageAlt"])))
         h2 = HERO_FIG_RE.sub(lambda m: media, h, count=1)
         # repoint any social/SEO image URL (og:image, twitter:image, schema) at the real card image
@@ -324,6 +332,8 @@ def main():
             h2 = inject(h2, VID_CSS)
         if p["video"]:
             h2 = stamp_episode_extras(h2, p)
+        if p.get("seoTitle"):
+            h2 = set_title(h2, p["seoTitle"])
         if h2 != h:
             write(path, h2); stamped += 1
 

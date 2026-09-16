@@ -11,10 +11,10 @@
     {
       "slug": "seo",
       "label": "SEO",
-      "title": "Landscaping SEO & Local Search",
-      "metaDesc": "Local SEO and Google Business Profile strategy for lawn care and landscaping companies that want to rank for the work they actually want.",
+      "title": "SEO Guides for Landscaping & Lawn Care Companies",
+      "metaDesc": "Practical SEO and Google Business Profile guides for landscaping, outdoor living, land clearing, and lawn care companies that want better jobs from search.",
       "intro": "Local SEO and Google Business Profile strategy for lawn care and landscaping companies that want to rank for the jobs they actually want, in the towns they actually serve.",
-      "introHtml": "Practical guidance on <a href=\"/marketing-services/local-seo/\">local SEO for green-industry companies</a>, including focused playbooks for <a href=\"/marketing-services/lawn-care-seo/\">lawn care SEO</a> and <a href=\"/marketing-services/landscaping-seo/\">landscaping SEO</a>."
+      "introHtml": "Practical guidance on <a href=\"/marketing-services/local-seo/\">local SEO for green-industry companies</a>, with focused playbooks for <a href=\"/marketing-services/landscaping-seo/\">landscaping SEO</a>, <a href=\"/marketing-services/outdoor-living-seo/\">outdoor living SEO</a>, <a href=\"/marketing-services/land-clearing-seo/\">land clearing SEO</a>, and <a href=\"/marketing-services/lawn-care-seo/\">lawn care SEO</a>."
     },
     {
       "slug": "ads-social",
@@ -72,7 +72,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/marketing-for-landscapers.webp",
       "imageAlt": "Marketing for Landscapers: The System That Books Better Projects Year-Round",
-      "video": null
+      "video": null,
+      "seoTitle": "Marketing for Landscapers: Book Better Projects Year-Round"
     },
     {
       "slug": "aeration-and-overseeding-marketing",
@@ -85,7 +86,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/aeration-and-overseeding-marketing.webp",
       "imageAlt": "Aeration and Overseeding Marketing: How to Book the Fall Rush Early",
-      "video": null
+      "video": null,
+      "seoTitle": "Aeration and Overseeding Marketing: Book the Fall Rush Early"
     },
     {
       "slug": "fall-lawn-care-marketing",
@@ -98,7 +100,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/fall-lawn-care-marketing.webp",
       "imageAlt": "Fall Lawn Care Marketing: How to Re-Sign Your Base Before Winter",
-      "video": null
+      "video": null,
+      "seoTitle": "Fall Lawn Care Marketing: Re-Sign Your Base Before Winter"
     },
     {
       "slug": "green-industry-marketing-agency",
@@ -111,7 +114,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/green-industry-marketing-agency.webp",
       "imageAlt": "What a Green Industry Marketing Agency Actually Does (and Why Specialization Wins)",
-      "video": null
+      "video": null,
+      "seoTitle": "What a Green Industry Marketing Agency Actually Does"
     },
     {
       "slug": "seo-for-hardscaping-companies",
@@ -124,7 +128,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/seo-for-hardscaping-companies.webp",
       "imageAlt": "SEO for Hardscaping Companies: How to Win the High-Ticket Search",
-      "video": null
+      "video": null,
+      "seoTitle": "SEO for Hardscaping Companies: Win the High-Ticket Search"
     },
     {
       "slug": "seo-for-lawn-care-companies",
@@ -137,7 +142,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/seo-for-lawn-care-companies.webp",
       "imageAlt": "SEO for Lawn Care Companies: How to Rank for Recurring Revenue",
-      "video": null
+      "video": null,
+      "seoTitle": "SEO for Lawn Care Companies: Rank for Recurring Revenue"
     },
     {
       "slug": "google-ads-for-lawn-care-companies",
@@ -150,7 +156,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/google-ads-for-lawn-care-companies.webp",
       "imageAlt": "Google Ads for Lawn Care Companies: How to Turn Clicks Into Booked Programs",
-      "video": null
+      "video": null,
+      "seoTitle": "Google Ads for Lawn Care Companies: Book More Programs"
     },
     {
       "slug": "lawn-care-seo-recurring-revenue",
@@ -163,7 +170,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/lawn-care-seo-recurring-revenue.webp",
       "imageAlt": "Lawn Care SEO: How Treatment Companies Grow Recurring Revenue From Search",
-      "video": null
+      "video": null,
+      "seoTitle": "Lawn Care SEO: Grow Recurring Revenue From Search"
     },
     {
       "slug": "landscaping-reputation-management",
@@ -176,7 +184,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/landscaping-reputation-management.webp",
       "imageAlt": "Landscaping Reputation Management: Turn Great Work Into Booked Jobs",
-      "video": null
+      "video": null,
+      "seoTitle": "Landscaping Reputation Management: Reviews Into Booked Jobs"
     },
     {
       "slug": "google-ads-for-landscapers",
@@ -189,7 +198,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/google-ads-for-landscapers.webp",
       "imageAlt": "Google Ads for Landscapers: How to Turn Clicks Into Booked Installs",
-      "video": null
+      "video": null,
+      "seoTitle": "Google Ads for Landscapers: Clicks Into Booked Installs"
     },
     {
       "slug": "landscaping-marketing-company",
@@ -202,7 +212,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/landscaping-marketing-company.webp",
       "imageAlt": "What a Landscaping Marketing Company Should Actually Do for Your Business",
-      "video": null
+      "video": null,
+      "seoTitle": "What a Landscaping Marketing Company Should Do for You"
     },
     {
       "slug": "seo-for-outdoor-living-companies",
@@ -215,7 +226,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/seo-for-outdoor-living-companies.webp",
       "imageAlt": "SEO for Outdoor Living Companies: How to Fill the Build Calendar",
-      "video": null
+      "video": null,
+      "seoTitle": "SEO for Outdoor Living Companies: Fill the Build Calendar"
     },
     {
       "slug": "land-clearing-marketing",
@@ -228,7 +240,8 @@
       "readTime": "12 min read",
       "image": "/assets/images/blog/land-clearing-marketing-hero.webp",
       "imageAlt": "Aerial view of land clearing equipment working a wooded lot",
-      "video": null
+      "video": null,
+      "seoTitle": "Land Clearing Marketing: The Complete Guide | Lawn & Land"
     },
     {
       "slug": "landscaper-website-design",
@@ -241,7 +254,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/landscaper-website-design.webp",
       "imageAlt": "Landscaper Website Design That Books Bigger Jobs",
-      "video": null
+      "video": null,
+      "seoTitle": "Landscaper Website Design That Books Bigger Jobs"
     },
     {
       "slug": "ai-search-optimization-for-landscapers",
@@ -254,7 +268,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/ai-search-optimization-for-landscapers.webp",
       "imageAlt": "AI Search Optimization for Landscapers: How to Get Recommended by ChatGPT",
-      "video": null
+      "video": null,
+      "seoTitle": "AI Search Optimization for Landscapers: Get Recommended"
     },
     {
       "slug": "what-a-lawn-care-marketing-agency-does",
@@ -267,7 +282,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/what-a-lawn-care-marketing-agency-does.webp",
       "imageAlt": "What a Lawn Care Marketing Agency Actually Does for Recurring Revenue",
-      "video": null
+      "video": null,
+      "seoTitle": "What a Lawn Care Marketing Agency Actually Does"
     },
     {
       "slug": "best-green-industry-marketing-agencies",
@@ -283,7 +299,8 @@
       "video": null,
       "heroFull": true,
       "imageW": 1600,
-      "imageH": 900
+      "imageH": 900,
+      "seoTitle": "The 7 Best Green Industry Marketing Agencies in 2026"
     },
     {
       "slug": "choosing-a-landscaping-marketing-agency",
@@ -296,7 +313,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/choosing-a-landscaping-marketing-agency.webp",
       "imageAlt": "How to Choose a Landscaping Marketing Agency That Books Bigger Jobs",
-      "video": null
+      "video": null,
+      "seoTitle": "How to Choose a Landscaping Marketing Agency | Lawn & Land"
     },
     {
       "slug": "excavation-marketing",
@@ -309,7 +327,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/excavation-marketing.webp",
       "imageAlt": "Excavation Marketing: How to Keep the Iron Working Year-Round",
-      "video": null
+      "video": null,
+      "seoTitle": "Excavation Marketing: Keep the Iron Working Year-Round"
     },
     {
       "slug": "septic-company-marketing",
@@ -322,7 +341,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/septic-company-marketing.webp",
       "imageAlt": "Septic Company Marketing: How Installers Win More High-Ticket Jobs",
-      "video": null
+      "video": null,
+      "seoTitle": "Septic Company Marketing: Win More High-Ticket Installs"
     },
     {
       "slug": "seo-for-landscaping-companies",
@@ -335,7 +355,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/seo-for-landscaping-companies.webp",
       "imageAlt": "SEO for Landscaping Companies: How to Rank and Book Better Projects",
-      "video": null
+      "video": null,
+      "seoTitle": "SEO for Landscaping Companies: Book Better Projects"
     },
     {
       "slug": "seo-for-septic-companies",
@@ -348,7 +369,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/seo-for-septic-companies.webp",
       "imageAlt": "SEO for Septic Companies: How Installers Win High-Ticket Jobs on Search",
-      "video": null
+      "video": null,
+      "seoTitle": "SEO for Septic Companies: Win High-Ticket Jobs on Search"
     },
     {
       "slug": "seo-for-land-clearing-companies",
@@ -361,7 +383,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/seo-for-land-clearing-companies.webp",
       "imageAlt": "SEO for Land Clearing Companies: How to Fill a Lumpy Pipeline",
-      "video": null
+      "video": null,
+      "seoTitle": "SEO for Land Clearing Companies: Fill a Lumpy Pipeline"
     },
     {
       "slug": "seo-for-excavation-companies",
@@ -374,7 +397,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/seo-for-excavation-companies.webp",
       "imageAlt": "SEO for Excavation Companies: How to Keep the Iron Working",
-      "video": null
+      "video": null,
+      "seoTitle": "SEO for Excavation Companies: Keep the Iron Working"
     },
     {
       "slug": "ai-marketing-for-lawn-care",
@@ -387,7 +411,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/ai-marketing-for-lawn-care.webp",
       "imageAlt": "AI Marketing for Lawn Care: A Practical Playbook for Owners",
-      "video": null
+      "video": null,
+      "seoTitle": "AI Marketing for Lawn Care: A Practical Playbook"
     },
     {
       "slug": "seo-for-holiday-lighting-companies",
@@ -400,7 +425,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/seo-for-holiday-lighting-companies.webp",
       "imageAlt": "SEO for Holiday Lighting Companies: Rank Before the Rush",
-      "video": null
+      "video": null,
+      "seoTitle": "SEO for Holiday Lighting Companies: Rank Before the Rush"
     },
     {
       "slug": "christmas-light-installation-marketing",
@@ -413,7 +439,8 @@
       "readTime": "4 min read",
       "image": "/assets/images/blog/photos/christmas-light-installation-marketing.webp",
       "imageAlt": "Christmas Light Installation Marketing: How to Book the Season Before the Rush",
-      "video": null
+      "video": null,
+      "seoTitle": "Christmas Light Installation Marketing: Book Early"
     },
     {
       "slug": "holiday-lighting-marketing",
@@ -426,7 +453,8 @@
       "readTime": "5 min read",
       "image": "/assets/images/blog/photos/holiday-lighting-marketing.webp",
       "imageAlt": "Holiday Lighting Marketing: How to Book the Season Before the Rush",
-      "video": null
+      "video": null,
+      "seoTitle": "Holiday Lighting Marketing: Book the Season Before the Rush"
     },
     {
       "slug": "why-landscaping-seo-gets-traffic-not-qualified-leads",
@@ -439,7 +467,8 @@
       "readTime": "8 min read",
       "image": "/assets/images/blog/qualified-landscaping-leads.webp",
       "imageAlt": "Why landscaping SEO gets traffic but not qualified leads",
-      "video": null
+      "video": null,
+      "seoTitle": "Why Landscaping SEO Gets Traffic but Not Qualified Leads"
     },
     {
       "slug": "bob-diamond-outdoor-makeover-living-spaces-design-build-growth",
@@ -452,7 +481,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/blog/podcast-bob-2G28dlU82KE.webp",
       "imageAlt": "Bob Diamond of Outdoor Makeover & Living Spaces on the Mow Money, Mow Problems podcast",
-      "video": "2G28dlU82KE"
+      "video": "2G28dlU82KE",
+      "seoTitle": "What Bob Diamond's Design-Build Story Teaches Landscapers"
     },
     {
       "slug": "pat-condon-3c-land-agricultural-services-specialized-growth",
@@ -465,7 +495,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/blog/podcast-pat-32w-knUTD4Q.webp",
       "imageAlt": "Pat Condon of 3C Land & Agricultural Services on the Mow Money, Mow Problems podcast",
-      "video": "32w-knUTD4Q"
+      "video": "32w-knUTD4Q",
+      "seoTitle": "What Pat Condon's 3C Land Story Teaches About Growth"
     },
     {
       "slug": "dustin-walker-landscape-st-louis-acquisition-led-growth",
@@ -478,7 +509,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/blog/podcast-dustin-taYUZR7DcUI.webp",
       "imageAlt": "Dustin Walker of Landscape St. Louis on the Mow Money, Mow Problems podcast",
-      "video": "taYUZR7DcUI"
+      "video": "taYUZR7DcUI",
+      "seoTitle": "What Dustin Walker's Acquisition-Led Growth Teaches"
     },
     {
       "slug": "the-5-hour-weekly-marketing-blueprint-that-transforms-landscaping-businesses",
@@ -491,7 +523,8 @@
       "readTime": "12 min read",
       "image": "/assets/images/08-automation.webp",
       "imageAlt": "A weekly marketing routine for landscaping businesses",
-      "video": null
+      "video": null,
+      "seoTitle": "The 5-Hour Weekly Marketing Blueprint for Landscapers"
     },
     {
       "slug": "why-your-landscaping-digital-marketing-isnt-working-3-critical-issues-killing-your-results",
@@ -504,7 +537,8 @@
       "readTime": "9 min read",
       "image": "/assets/images/authority-why.webp",
       "imageAlt": "Why a landscaping company's digital marketing underperforms",
-      "video": null
+      "video": null,
+      "seoTitle": "Why Your Landscaping Digital Marketing Isn't Working"
     },
     {
       "slug": "why-500-leads-in-10-days-digital-marketing-promises-are-destroying-landscaping-businesses",
@@ -517,7 +551,8 @@
       "readTime": "8 min read",
       "image": "/assets/images/excavation-intro.webp",
       "imageAlt": "Why unrealistic lead-generation promises hurt landscaping businesses",
-      "video": null
+      "video": null,
+      "seoTitle": "Why \"500 Leads in 10 Days\" Promises Destroy Landscapers"
     },
     {
       "slug": "marketing-tool-that-outperforms",
@@ -530,7 +565,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/outdoor-living-intro.webp",
       "imageAlt": "Filming landscaping work on a smartphone for social video",
-      "video": null
+      "video": null,
+      "seoTitle": "The Simple Video Tool That Outperforms Big Campaigns"
     },
     {
       "slug": "three-moves-that-separate-professional-landscapers",
@@ -543,7 +579,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/lawn-maintenance-intro.webp",
       "imageAlt": "What separates a professional landscaping company from the competition",
-      "video": null
+      "video": null,
+      "seoTitle": "Three Moves That Separate Pros From the Guy With a Truck"
     },
     {
       "slug": "your-2025-digital-marketing-plan",
@@ -556,7 +593,8 @@
       "readTime": "14 min read",
       "image": "/assets/images/growth-why.webp",
       "imageAlt": "A digital marketing plan for green industry companies",
-      "video": null
+      "video": null,
+      "seoTitle": "2026 Digital Marketing Plan for Green Industry Companies"
     },
     {
       "slug": "managing-lawn-service-reviews-online-reputation-tips",
@@ -569,7 +607,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/07-reputation.webp",
       "imageAlt": "Managing online reviews for a lawn care business",
-      "video": null
+      "video": null,
+      "seoTitle": "Managing Lawn Service Reviews: Online Reputation Tips"
     },
     {
       "slug": "elevate-your-lawn-care-leads-through-ppc-strategies",
@@ -582,7 +621,8 @@
       "readTime": "12 min read",
       "image": "/assets/images/04-google-ads.webp",
       "imageAlt": "PPC and Google Ads for lawn care leads",
-      "video": null
+      "video": null,
+      "seoTitle": "PPC for Lawn Care Leads: What to Fix Before You Spend"
     },
     {
       "slug": "6-key-mobile-responsive-design-tips-for-landscapers",
@@ -595,7 +635,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/01-website-design.webp",
       "imageAlt": "Mobile-responsive website design for landscapers",
-      "video": null
+      "video": null,
+      "seoTitle": "6 Mobile-Responsive Design Tips for Landscapers"
     },
     {
       "slug": "5-best-social-networks-for-landscapers-success",
@@ -608,7 +649,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/05-meta-ads.webp",
       "imageAlt": "The best social networks for landscaping companies",
-      "video": null
+      "video": null,
+      "seoTitle": "5 Best Social Networks for Landscapers | Lawn & Land"
     },
     {
       "slug": "7-easy-steps-to-dominate-local-seo-for-your-landscaping-business",
@@ -621,7 +663,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/03-gbp-management.webp",
       "imageAlt": "Steps to dominate local SEO for a landscaping business",
-      "video": null
+      "video": null,
+      "seoTitle": "7 Easy Steps to Dominate Local SEO for Landscaping"
     },
     {
       "slug": "nate-precision-landscape-management-scalable-growth",
@@ -634,7 +677,8 @@
       "readTime": "7 min read",
       "image": "/assets/images/blog/podcast-nate-NE3SI-b4j4A.webp",
       "imageAlt": "Nate of Precision Landscape Management on the Mow Money, Mow Problems podcast",
-      "video": "NE3SI-b4j4A"
+      "video": "NE3SI-b4j4A",
+      "seoTitle": "What Precision Landscape Management Teaches About Growth"
     },
     {
       "slug": "landscaper-marketing-101-how-to-attract-more-clients-and-grow-your-business",
@@ -647,7 +691,8 @@
       "readTime": "9 min read",
       "image": "/assets/images/lawn-care-intro.webp",
       "imageAlt": "A beginner's guide to landscaper marketing",
-      "video": null
+      "video": null,
+      "seoTitle": "Landscaper Marketing 101: How to Attract More Clients"
     },
     {
       "slug": "lawn-landscaping-local-seo",
@@ -660,7 +705,8 @@
       "readTime": "12 min read",
       "image": "/assets/images/02-local-seo.webp",
       "imageAlt": "Local SEO for lawn care and landscaping companies",
-      "video": null
+      "video": null,
+      "seoTitle": "Local SEO for Lawn Care and Landscaping Companies"
     },
     {
       "slug": "the-ultimate-guide-to-online-landscape-marketing",
@@ -673,7 +719,8 @@
       "readTime": "14 min read",
       "image": "/assets/images/landscaping-intro.webp",
       "imageAlt": "A practical online landscape marketing growth system",
-      "video": null
+      "video": null,
+      "seoTitle": "Online Landscape Marketing: A Practical Growth System"
     }
   ]
 }
