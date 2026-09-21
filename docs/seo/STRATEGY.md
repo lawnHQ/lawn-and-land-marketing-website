@@ -225,3 +225,18 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
 4. Weekly GBP post: reuse the newest blog post each week.
 5. Keep the review stream going (the July batch is doing work). Ask happy clients for reviews
    that mention "landscaping" and the trade in the text.
+- 2026-09-20 — **Article #1 published by hand after the routine was blocked.** The Thursday
+  routine wrote a good draft but could not ship: the Claude GitHub App has no write access to the
+  lawnHQ org (403 on push and PR), no `OPENAI_API_KEY` in the cloud environment, and the container
+  is ephemeral so the draft was lost. Rewrote it locally with fresh research and shipped
+  `/resources/blog/hardscape-design-software/` (target "hardscape design software", 6,600/mo,
+  outdoor living). **Fact correction the draft had wrong:** Unilock Uvision is NOT free, it is
+  $579.95 ($279.95 upgrade). Every price in the article was read off the vendor's own page on
+  2026-09-20. Claims about Belgard and Techo-Bloc design programs and about SketchUp's free-tier
+  commercial terms were DROPPED because the pages could not be reached to verify. Gotcha for the
+  template: the read-time span is `article-read-time`, not `article-read`.
+  **Blocked until Matt acts (all three):** (1) install the Claude GitHub App on the lawnHQ org so
+  routines can open PRs, (2) add the §8 environment variables to the claude.ai Default environment,
+  (3) re-run `google-consent seo` because the token is revoked again (see the revoke gotcha below).
+  **Revoke gotcha:** revoking one refresh token revokes the whole grant for that user and client, so
+  the freshly minted token died with the leaked one on 2026-09-16.

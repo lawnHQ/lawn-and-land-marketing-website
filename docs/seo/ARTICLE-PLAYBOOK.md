@@ -58,7 +58,8 @@ publisher `@id` `#organization`. Every URL absolute on `https://lawnandlandmarke
 
 Body, in order:
 1. `article-hero`: badge (category label), H1 (the human title, may be longer than seoTitle),
-   author block (Matt Foreman), date, read time, `<figure class="article-hero-img">`
+   author block (Matt Foreman), date (`<span class="article-date">`), read time
+   (`<span class="article-read-time">`, easy to miss when copying the template), `<figure class="article-hero-img">`
    (gen_blog stamps the image; leave the placeholder figure in place).
 2. `article-lead`: 2 short paragraphs. State the problem and the point of view.
 3. `Key takeaways` section: 4 bullets, each a complete, specific claim.

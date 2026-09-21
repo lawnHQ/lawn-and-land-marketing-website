@@ -11,7 +11,7 @@ and URL. If research shows the top row is already well covered on the site, mark
 
 | # | Status | Target keyword (volume) | Secondary terms | Vertical | Angle that beats the SERP | Link targets |
 |---|---|---|---|---|---|---|
-| 1 | open | hardscape design software (6,600) | free hardscape design software (3,600), 3d hardscape design software (590) | Outdoor living | Honest comparison for contractors who sell $30K+ projects: which tools close sales (photo-realistic renders, client presentation), pricing tiers, learning curve. Sourced from vendor docs. | /industries/outdoor-living/, /marketing-services/outdoor-living-seo/, /resources/blog/seo-for-hardscaping-companies/ |
+| 1 | done 2026-09-20 → /resources/blog/hardscape-design-software/ | hardscape design software (6,600) | free hardscape design software (3,600), 3d hardscape design software (590) | Outdoor living | Honest comparison for contractors who sell $30K+ projects: which tools close sales (photo-realistic renders, client presentation), pricing tiers, learning curve. Sourced from vendor docs. | /industries/outdoor-living/, /marketing-services/outdoor-living-seo/, /resources/blog/seo-for-hardscaping-companies/ |
 | 2 | open | how to start a landscaping business (1,600) | starting a landscaping business (590), what do you need to start a landscaping business (110), cost to start (170) | Landscapers | The operator's version: licensing by state (link boards), insurance, first-year numbers, the first 10 customers, and the mistakes owners on the podcast said they made. | /industries/landscaping/, /marketing-services/website-design/, /marketing-services/local-seo/ |
 | 3 | open | landscaping business plan (1,900) | business plan for landscaping company, landscaping business plan template (90) | Landscapers | A plan built around seasonality and route density, with a filled-in example and a section on the marketing line item most plans skip. | /industries/landscaping/, /programs/growth/ |
 | 4 | open | landscaping business insurance (1,300) | general liability insurance for landscaping business (390), landscaping business insurance cost (90) | Landscapers | What each policy actually covers on a job site, typical cost ranges with sources, and how proof of insurance affects winning commercial and HOA work. Informational; link to insurers' own docs. | /industries/landscaping/ |
@@ -33,7 +33,7 @@ and URL. If research shows the top row is already well covered on the site, mark
 | 20 | open | landscaping business logo (880) | logo for landscaping business | Landscapers | Branding guide: what a logo has to do on a truck, a yard sign, and a Google listing; common mistakes; when to hire a designer. Informational only (we do not sell logos). | /marketing-services/website-design/ |
 
 ## Done
-(none yet)
+- 2026-09-20 — hardscape design software → https://lawnandlandmarketing.com/resources/blog/hardscape-design-software/
 
 ## Do not write (Competitor Radar tracks these; it publishes for them itself)
 green industry marketing agency · landscaper marketing · landscaping marketing agency ·
