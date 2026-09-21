@@ -325,3 +325,18 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   both workflows now read it first, the weekly report opens with a "Who we are targeting" recap,
   and the review runs a credential-free **radar health check** (zero radar merges in 7 days is
   reported as a possible outage).
+- 2026-09-20/21 — **Full instrumentation live.** Matt re-ran `google-consent seo`; the token
+  verified against Search Console and GA4, and all 8 repo secrets are installed, so both workflows
+  are now at full strength with nothing outstanding. First complete snapshot (`2026-09-20`):
+  GSC 28d **116 clicks / 34,878 impressions / 0.33% CTR / pos 21.4** (prior 28d: 103 / 33,024), so
+  clicks +13% and average position improved about one place since the 2026-09-16 pass. DataForSEO
+  ranked keywords 60 → 69, referring domains 70 → 77. **Mobile performance is fixed**: the service,
+  industry, and blog templates went from LCP 8-9 s to 3.6, 4.4 and 3.9 s and all now score 75+,
+  with the homepage at 99. Crawl is clean, zero issues.
+  **AI Overview baseline across all 22 watch terms: an AI Overview appears on 20 of them and we are
+  cited on ZERO.** Who Google's AI does cite: Reddit 6x, YouTube 4x, then a spread of SEO-tool blogs
+  and two tracked competitors (Landscape Leadership 3x, Evergrow 1x). Six of our biggest terms,
+  including "lawn care marketing" and "landscape marketing agency", show an AI Overview with **no
+  named sources at all**, which is an open door rather than a closed one.
+  Watch-term CTR remains the standing problem: every single watch term shows 0 clicks, including
+  "lawn care marketing" at 6,417 impressions and position 10.9.
