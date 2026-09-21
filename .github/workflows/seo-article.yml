@@ -1,0 +1,181 @@
+name: SEO article
+
+# Tuesday and Thursday 10:00 UTC (6:00am ET). Writes ONE article from the top open row
+# of docs/seo/CONTENT-QUEUE.md to the standard in docs/seo/ARTICLE-PLAYBOOK.md, generates
+# a unique gpt-image-2 hero, and opens a pull request.
+#
+# The PR is the veto: close it to reject the article. Any seo/ PR still open after 24
+# hours is merged by the Monday review or by the next run of this workflow.
+#
+# Lives here rather than in a claude.ai cloud routine because that sandbox blocks
+# outbound HTTPS to the research sources and to lawnandlandmarketing.com itself
+# (verified 2026-09-21).
+#
+# Kill switch: set the repository variable SEO_AGENTS_ENABLED to anything other than
+# "true" and every scheduled run exits immediately.
+
+on:
+  schedule:
+    - cron: '0 10 * * 2,4'
+  workflow_dispatch:
+    inputs:
+      topic_row:
+        description: 'Queue row number to write (blank = top open row)'
+        type: string
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: seo-article
+  cancel-in-progress: false
+
+jobs:
+  article:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Kill switch
+        id: gate
+        env:
+          ENABLED: ${{ vars.SEO_AGENTS_ENABLED }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if [ "$ENABLED" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "SEO_AGENTS_ENABLED is not 'true' — skipping this scheduled run."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with:
+          python-version: '3.12'
+
+      - name: Install the image toolchain
+        if: steps.gate.outputs.run == 'true'
+        run: pip install --quiet pillow
+
+      - name: Identify the committer
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "lawn-land-bot"
+          git config user.email "web@lawnandlandmarketing.com"
+
+      - name: Write and open the article PR
+        if: steps.gate.outputs.run == 'true'
+        uses: anthropics/claude-code-action@v1
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOPIC_ROW: ${{ inputs.topic_row }}
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: |
+            --max-turns 90
+            --model claude-opus-5
+            --allowedTools Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch
+          prompt: |
+            You are the SEO content lead for lawnandlandmarketing.com (Lawn & Land Marketing,
+            a marketing agency working only with green-industry companies; owner priority:
+            landscapers, then outdoor living contractors, then land clearing companies, then
+            excavation, lawn care, lawn maintenance, septic). You are running inside GitHub
+            Actions in a full checkout of the site repo. Publish ONE genuinely useful article
+            for green-industry business owners, as a pull request. Work end to end.
+
+            MANDATORY READING FIRST, in this order: docs/seo/ARTICLE-PLAYBOOK.md (the standard,
+            every rule is binding), docs/seo/CONTENT-QUEUE.md (what to write), CLAUDE.md (brand
+            and build rules), section 5 of docs/seo/STRATEGY.md (guardrails).
+
+            STEPS:
+            0. Housekeeping. `gh` is authenticated via GH_TOKEN. For every open, NON-DRAFT PR
+               whose head branch starts with `seo/`, whose title does not start with `DRAFT`,
+               and that was opened more than 24 hours ago, merge it with
+               `gh pr merge <n> --squash --delete-branch` (still open means nobody vetoed;
+               closed is a veto, leave it; never merge a draft).
+            1. Pick the topic. If the environment variable TOPIC_ROW is set and not empty, use
+               that row number of docs/seo/CONTENT-QUEUE.md. Otherwise take the top row whose
+               status is `open`. Verify it is not already covered: grep _blog.json titles and
+               resources/blog/ for the target keyword and its close variants. If it is covered,
+               mark that row `skip (covered by /resources/blog/<slug>/)` and take the next one.
+            2. Research per playbook section 3. Pull the live SERP for the target keyword with
+               DataForSEO (`POST /v3/serp/google/organic/live/advanced`, basic auth from
+               DATAFORSEO_LOGIN and DATAFORSEO_PASSWORD) if those are set, otherwise WebSearch.
+               Read the top 2 to 3 results with WebFetch, note the People Also Ask questions,
+               write down the three things the top results miss, and collect 2 to 4 primary
+               sources with URLs before writing a word.
+               VERIFY EVERY FACT YOURSELF. Read prices and terms off the vendor's own page and
+               say the date you read them. If a page cannot be reached, DROP the claim rather
+               than repeating it from a roundup or from memory. A previous run nearly shipped
+               "this manufacturer tool is free" for a tool that costs $579.95.
+            3. Write the article by copying resources/blog/lawn-care-seo-recurring-revenue/index.html
+               to resources/blog/<slug>/index.html and replacing every post-specific field:
+               title tag, description, canonical, og and twitter tags, the BlogPosting JSON-LD
+               (headline, description, datePublished, dateModified, image, url,
+               mainEntityOfPage), the article-hero badge and H1, the date
+               (`<span class="article-date">`) and read time (`<span class="article-read-time">`,
+               easy to miss), the article-lead, the Key takeaways, the 5 to 7 question-headed
+               sections, the CTA block heading and copy and the `article-cta-link` target, the
+               FAQ items (exact `faq-item` markup), and the two Related reading links in the
+               aside. Keep the author block, the form, and everything else. 1,800 to 2,500
+               words. Tables are plain `<table><thead>…<tbody>…</table>`; gen_blog.py wraps and
+               article.css styles them, so never hand-roll table CSS. Follow every rule in
+               playbook sections 1 and 2, then read it back once as the owner it is written for
+               and cut anything that sounds like a robot.
+            4. Featured image:
+               `python3 scripts/gen_photos.py --slug <slug> --prompt "<a scene written for THIS
+               article, photoreal, no text, no logos, no readable faces>" --variant "<a camera
+               and light choice that differs from the last five posts>"`. Needs OPENAI_API_KEY
+               (gpt-image-2). If the key is missing or generation fails, do NOT publish: open
+               the PR as a draft (`gh pr create --draft`) titled `DRAFT (no image): <title>` and
+               explain in the body. Confirm assets/images/blog/photos/<slug>.webp exists and is
+               under 150 KB, recompressing with pillow if not.
+            5. Add the _blog.json entry at the TOP of the posts array: slug, title, seoTitle
+               (60 chars or fewer), excerpt (160 or fewer), datePublished (today), dateDisplay
+               ("Month D, YYYY"), badge, cat, readTime, image, imageAlt (a plain description of
+               the scene), video: null.
+            6. Run `python3 gen_blog.py && python3 gen_blog_schema.py && python3 build.py && python3 build.py --check`.
+               Add one `<url>` line for the new post to sitemap.xml (it is hand-kept). Then run
+               `python3 scripts/check_links.py && python3 scripts/check_structured_data.py && python3 scripts/check_blog_images.py && python3 scripts/check_seo_migration_fixes.py`
+               and fix anything that fails.
+            7. Add a natural in-body link to the new post from one or two older posts on the
+               same topic (edit their body copy, not their CTA block).
+            8. Update the queue row in docs/seo/CONTENT-QUEUE.md to `pr` with today's date.
+            9. Create branch `seo/<slug>`, commit everything with message `seo: <title>`, push,
+               and open a PR titled `seo: <title>` with `gh pr create`. The PR body must list:
+               target keyword and volume, the three gaps you filled, the primary sources used
+               with the date you read them, the internal links added, and the image prompt,
+               ending with the line: `Auto-merges on the next scheduled run if still open after
+               24 hours. Closing this PR is the veto.`
+
+            HARD RULES: never invent facts, numbers, clients, or quotes; only Lawn & Land's
+            eight real services may be described as things we do; no pricing for our own
+            services; no em dashes; every city or county carries a 2-letter state; no geo pages,
+            no "near me" pages, no snow removal, no holiday-lighting articles; one article per
+            run; never edit money pages or navigation; never merge a draft PR; never push
+            directly to main from this workflow. Finish with a summary that stands alone: topic
+            and target keyword, word count, sources used, image status, PR URL, checks run, and
+            anything that blocked you.
+
+      - name: Report what landed
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          echo "### SEO article run" >> "$GITHUB_STEP_SUMMARY"
+          gh pr list --state open --search "head:seo/" \
+            --json number,title,isDraft,url \
+            --jq '.[] | "- #\(.number) \(.title)\(if .isDraft then " (DRAFT)" else "" end) \(.url)"' \
+            >> "$GITHUB_STEP_SUMMARY" || echo "no open seo/ PRs" >> "$GITHUB_STEP_SUMMARY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

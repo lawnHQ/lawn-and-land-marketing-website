@@ -207,14 +207,39 @@ Skip tree service marketing (210): not a served vertical.
   (`set-description`, `set-categories`, `set-services`, `create-post`); drafts for the L&L
   listing are in `docs/seo/gbp/` awaiting Matt's yes.
 
-## 8. Automation (cloud routines) — what they need
-Environment variables on the claude.ai/code "Default" environment (Matt sets these once, values
-come from Doppler `vault/prd` / `mac-claude/prd`): `DATAFORSEO_LOGIN`, `DATAFORSEO_PASSWORD`,
-`PAGESPEED_API_KEY`, `GBP_CLIENT_ID`, `GBP_CLIENT_SECRET`, `GOOGLE_SEO_REFRESH_TOKEN` (the value
-in `~/.secrets/google-seo.env` on Matt's Mac), `OPENAI_API_KEY` (gpt-image-2). Optional:
-`CI_SUPABASE_URL` + `CI_SUPABASE_KEY` for the radar ledger. Without the Google/DataForSEO ones the
-Monday review still crawls and fixes; without `OPENAI_API_KEY` the article routine opens a draft
-PR and does not publish. Run history: https://claude.ai/code/routines
+## 8. Automation — GitHub Actions (moved here 2026-09-21, Matt approved)
+Both routines now live in this repo, the same pattern the Competitor Radar already runs
+successfully against it. The claude.ai cloud routines were abandoned because their sandbox
+blocks outbound HTTPS to lawnandlandmarketing.com and api.dataforseo.com, so the snapshot
+could not run there at all.
+
+| Workflow | Schedule | What it does |
+|---|---|---|
+| `.github/workflows/seo-weekly-review.yml` | Mon 11:00 UTC (7am ET) | Snapshot, week-over-week diff, mechanical fixes, merge any `seo/` PR older than 24 h, write `docs/seo/reports/<date>.md`, push to main |
+| `.github/workflows/seo-article.yml` | Tue + Thu 10:00 UTC (6am ET) | One article from the top open queue row, gpt-image-2 hero, opens a PR. The PR is the veto |
+
+**Kill switch:** repository variable `SEO_AGENTS_ENABLED`. Anything other than `true` and every
+scheduled run exits at the first step. Manual `workflow_dispatch` runs ignore it.
+
+**Guards:** `--max-turns` (60 review / 90 article), job `timeout-minutes` (45 / 60), and a
+`concurrency` group per workflow so runs cannot overlap.
+
+**Secrets** (Settings > Secrets and variables > Actions). Install with
+`doppler run -p vault -c prd -- python3 scripts/seo/install_actions_secrets.py`
+(`--dry-run` first; it encrypts locally and never prints a value; it needs a classic PAT with
+`repo` scope, the fine-grained lawnHQ token lacks the Secrets permission):
+
+- Installed 2026-09-21: `DATAFORSEO_LOGIN`, `DATAFORSEO_PASSWORD`, `PAGESPEED_API_KEY`,
+  `GBP_CLIENT_ID`, `GBP_CLIENT_SECRET`, `OPENAI_API_KEY`.
+- **Still needed:** `ANTHROPIC_API_KEY` (pass `--anthropic-key`; give these workflows their OWN
+  key so spend is attributable and separately revocable, per the 2026-09 key-burn incident) and
+  `GOOGLE_SEO_REFRESH_TOKEN` (re-run `doppler run -p mac-claude -c prd -- google-consent seo`
+  first; the installer refuses to install a revoked token).
+- Without `ANTHROPIC_API_KEY` both workflows fail at the Claude step. Without
+  `GOOGLE_SEO_REFRESH_TOKEN` the review still runs but reports no Search Console or GA4 numbers.
+
+**Note:** these keys now exist in a second system besides Doppler. lawnHQ has one member, so
+exposure is low, but prefer scoped keys here over shared ones.
 
 ## 7. GBP edits for Matt (brand-visible, needs his hand)
 Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing agency".
