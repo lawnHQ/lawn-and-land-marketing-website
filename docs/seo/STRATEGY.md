@@ -363,3 +363,13 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   peak; sprinkler winterization Oct = **37.9x** August, the sharpest ramp in the set; patio
   installation and hardscape contractor both **peak in September**, which matters because outdoor
   living is priority trade #2.
+- 2026-09-21 — **Reddit target list built** (`docs/seo/REDDIT-TARGETS.md`): 11 threads that already
+  rank page one or are already cited in the AI Overview for a term we care about, pulled from live
+  SERPs, tiered so Matt can work top-down in 30-minute sittings. Account check: **u/MarketingForeman
+  is 11 months old with 60 contributions and 27 karma**, so it is established enough to post
+  anywhere, and his existing r/sweatystartup comment is the house model (specific, discloses the
+  agency once, sells nothing). The constraint was never how he comments, it is which threads. Note:
+  Reddit 403s scripted access and the Browser pane blocks reddit.com, so **locked/archived status
+  cannot be verified from here** — the doc tells him to check and skip.
+  Measurement is already wired: the weekly snapshot records AI Overview citations per term, so
+  "our citations go from zero" is the success test. Expect 6 to 8 weeks of lag.
