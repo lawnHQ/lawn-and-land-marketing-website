@@ -100,6 +100,10 @@ jobs:
             Actions in a full checkout of the site repo. Publish ONE genuinely useful article
             for green-industry business owners, as a pull request. Work end to end.
 
+            READ docs/seo/CHARTER.md FIRST, always. It states who we target, the trade
+            priority order that decides every tie, what winning looks like, and which system
+            owns what. Nothing you do should contradict it.
+
             MANDATORY READING FIRST, in this order: docs/seo/ARTICLE-PLAYBOOK.md (the standard,
             every rule is binding), docs/seo/CONTENT-QUEUE.md (what to write), CLAUDE.md (brand
             and build rules), section 5 of docs/seo/STRATEGY.md (guardrails).

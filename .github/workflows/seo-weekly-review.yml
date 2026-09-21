@@ -96,6 +96,10 @@ jobs:
             companies). You are running inside GitHub Actions in a full checkout of the site
             repo. This is the Monday weekly review. Work end to end.
 
+            READ docs/seo/CHARTER.md FIRST, always. It states who we target, the trade
+            priority order that decides every tie, what winning looks like, and which system
+            owns what. Nothing you do should contradict it.
+
             FIRST read, in this order: CLAUDE.md (brand and build rules), docs/seo/STRATEGY.md
             (baseline, diagnosis, guardrails in section 5, the log in section 6), and the two
             newest files in docs/seo/snapshots/.
@@ -125,9 +129,20 @@ jobs:
                `gh pr merge <n> --squash --delete-branch`. A still-open PR means nobody vetoed
                it; a closed PR is a veto, leave it; never merge a draft. Mark anything you
                merged as `done` in docs/seo/CONTENT-QUEUE.md with its date and URL.
+            4b. **Competitor Radar health check.** The radar (lawnHQ/competitor-intel) owns
+               publishing, and it silently failed for six weeks in Sept 2026 because nobody watched
+               it. Using `gh`, count merges to main whose message starts with `radar ` in the last 7
+               and 30 days, and list any open `radar/` branches older than 3 days. If there were
+               ZERO radar merges in 7 days, say so loudly under "What needs Matt" as a possible
+               outage, and name the last radar commit date. This check needs no credentials.
             5. Write docs/seo/reports/<YYYY-MM-DD>.md: a plain-English review under 400 words
-               with three headings: What moved, What I fixed, What needs Matt. No em dashes.
-               Lead with the numbers versus last week. Append one dated line summarizing the
+               with four headings: Who we are targeting, What moved, What I fixed, What needs
+               Matt. No em dashes. "Who we are targeting" is a 3 to 4 line recap drawn from
+               docs/seo/CHARTER.md sections 2 and 3: the buyer, the trade priority order, and what
+               winning looks like. It exists so Matt re-reads the strategy every week without
+               opening another file, and so the next agent is oriented. Then lead the rest with the
+               numbers versus last week, and include the AI Overview citation line from the
+               snapshot, since AI answers are a top priority. Append one dated line summarizing the
                week to the log in section 6 of docs/seo/STRATEGY.md.
             6. If the environment variable DRY_RUN is "true", stop here and do not commit.
                Otherwise commit everything with the message

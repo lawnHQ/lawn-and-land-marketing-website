@@ -135,6 +135,40 @@ def psi_block():
     return out
 
 
+# ------------------------------------------------------- AI Overview visibility
+def ai_visibility_block(terms=None):
+    """Are we cited in Google's AI Overview for the terms that matter?
+
+    Matt's stated top priority alongside links (2026-09-21): be the answer when a
+    green-industry owner asks an AI assistant who to hire. This measures the Google
+    half of that directly, and it is the half we can track. ~$0.0035 per term.
+    """
+    terms = terms or WATCH_TERMS
+    out = {"checked": [], "ai_overview_present": [], "we_are_cited": [], "cited_domains": {}}
+    for kw in terms:
+        r = dfs("/v3/serp/google/organic/live/advanced",
+                [{"keyword": kw, "location_code": 2840, "language_code": "en",
+                  "device": "desktop", "depth": 20}])
+        try:
+            res = r["tasks"][0]["result"][0]
+        except Exception:  # noqa: BLE001
+            continue
+        out["checked"].append(kw)
+        for item in res.get("items") or []:
+            if item.get("type") != "ai_overview":
+                continue
+            out["ai_overview_present"].append(kw)
+            refs = sorted({(ref.get("domain") or "") for ref in (item.get("references") or []) if ref.get("domain")})
+            out["cited_domains"][kw] = refs
+            if any("lawnandlandmarketing.com" in d for d in refs):
+                out["we_are_cited"].append(kw)
+            break
+    n = len(out["checked"]) or 1
+    out["summary"] = (f"AI Overview on {len(out['ai_overview_present'])}/{n} watch terms; "
+                      f"we are cited on {len(out['we_are_cited'])}")
+    return out
+
+
 # ---------------------------------------------------------------------- Crawl
 def crawl_block():
     xml = urllib.request.urlopen(urllib.request.Request(SITE + "/sitemap.xml", headers={"User-Agent": "Mozilla/5.0"})).read().decode()
@@ -261,6 +295,7 @@ def google_block(days=28):
 def main():
     snap = {"date": TODAY, "site": SITE}
     print("DataForSEO..."); snap["dataforseo"] = dataforseo_block()
+    print("AI visibility..."); snap["ai_visibility"] = ai_visibility_block()
     print("Crawl..."); snap["crawl"] = crawl_block()
     print("PageSpeed..."); snap["pagespeed"] = psi_block()
     print("Google..."); snap["google"] = google_block()
@@ -295,6 +330,18 @@ def main():
         ch = g.get("ga4_channels")
         if isinstance(ch, list):
             lines.append("- GA4 channels: " + "; ".join(f"{c['channel']}[{c['range']}] {c['sessions']} sess / {c['key_events']} key events" for c in ch))
+    av = snap.get("ai_visibility") or {}
+    if av.get("summary"):
+        lines.append(f"- **AI Overview:** {av['summary']}" +
+                     (" — cited on: " + ", ".join(av["we_are_cited"]) if av.get("we_are_cited")
+                      else " — we are cited on NONE"))
+        if prev:
+            pav = (prev.get("ai_visibility") or {}).get("we_are_cited") or []
+            gained = sorted(set(av.get("we_are_cited") or []) - set(pav))
+            lost = sorted(set(pav) - set(av.get("we_are_cited") or []))
+            if gained or lost:
+                lines.append("  - citations gained: " + (", ".join(gained) or "none") +
+                             " | lost: " + (", ".join(lost) or "none"))
     lines.append("- PageSpeed mobile: " + "; ".join(f"{u.replace(SITE, '') or '/'} perf {v.get('perf')} LCP {v.get('lcp')}" for u, v in snap["pagespeed"].items() if isinstance(v, dict) and "perf" in v))
     iss = snap["crawl"]["issues"]
     lines.append(f"- Crawl: {snap['crawl']['sitemap_urls']} sitemap URLs; issues: " + ", ".join(f"{k}={len(v)}" for k, v in iss.items() if v) or "none")

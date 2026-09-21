@@ -296,3 +296,32 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   block parses clean. Flagged 2 older posts (`best-green-industry-marketing-agencies`,
   `land-clearing-marketing`) with no in-article CTA block at all, needs new copy not a mechanical
   fix. Seconds the GitHub Actions recommendation above. Report: `docs/seo/reports/2026-09-21.md`.
+- 2026-09-21 (later) — **Matt's direction, and three findings that changed the plan.**
+  Direction: (a) cold email to magazine editors is dead, find another way to earn links;
+  (b) **deprioritize the local pack** (we sell nationwide); (c) **AI answers are a top priority**
+  (Google AI Overviews, ChatGPT, Claude); (d) clean up the Competitor Radar and run it properly;
+  (e) he wants a **weekly reminder of the strategy and the target buyer**, for himself and for any
+  agent picking this up.
+  **Finding 1 — the radar had been deadlocked for six weeks.** Its footprint guard did not
+  allowlist the two files `gen_blog.py` regenerates on every run (`index.html`,
+  `matt-foreman/index.html`), so 18 of its last 25 actions died on its own guard. Ledger over the
+  window: 70 failed vs 48 merged; last successful open-lane publish 2026-08-07. Fixed in
+  `competitor-intel` commit `2546729`, verified both directions. **Still broken:** every P1/P5
+  defense play dies on "slug already exists; refusing to overwrite" because the defense path only
+  knows how to create a new post, not improve an existing one. Rank defense has never really run.
+  **Finding 2 — the client-footer link opportunity does not exist; it is already spent.** Audited
+  all 57 client sites: **51 already link back**, 14 of them nofollow. With ~70 referring domains
+  total, client sites are roughly three quarters of the entire link profile. The problem is not
+  volume, it is **monoculture**: one link type, from sites we built, with near-identical brand
+  anchors. Only 2 active clients lack a link (Land Care Garden Center, Premier Lawn Care) and 4
+  were unreachable at audit time (Complete Lawn Service 308, Greenz Outdoor, Land Care Landscape
+  Management, Outdoor FX 503). Fixing those 6 is worth doing and changes nothing structural.
+  **Finding 3 — AI Overview baseline, now tracked.** `snapshot.py` gained `ai_visibility_block()`:
+  for every watch term it records whether an AI Overview appears and whether we are among its
+  cited domains (~$0.0035/term). First read: AI Overview on 3 of 4 sampled terms, **we are cited
+  on zero**, and Landscape Leadership IS cited on "seo for landscaping companies". The weekly
+  report now carries this line and the week-over-week gained/lost citations.
+  Also shipped: `docs/seo/CHARTER.md` (the orientation doc, read first by Matt and every agent),
+  both workflows now read it first, the weekly report opens with a "Who we are targeting" recap,
+  and the review runs a credential-free **radar health check** (zero radar merges in 7 days is
+  reported as a possible outage).
