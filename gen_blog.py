@@ -257,6 +257,18 @@ def stamp_episode_extras(h, p):
     else: h = h.replace("</head>", sc + "\n</head>", 1)
     return h
 
+TABLE_RE = re.compile(r'(?<!<div class="article-table-wrap">)<table\b.*?</table>', re.S)
+
+def wrap_tables(htmltext):
+    """Bare <table> markup has no styling of its own; article.css styles the wrapper.
+    Idempotent: a table already inside .article-table-wrap is left alone."""
+    def rep(m):
+        start = htmltext.rfind('<div class="article-table-wrap">', 0, m.start())
+        if start != -1 and htmltext.find('</div>', start) > m.start():
+            return m.group(0)
+        return '<div class="article-table-wrap">' + m.group(0) + '</div>'
+    return TABLE_RE.sub(rep, htmltext)
+
 HERO_FIG_RE = re.compile(r'<figure class="article-hero-img">.*?</figure>', re.S)
 
 def main():
@@ -334,6 +346,7 @@ def main():
             h2 = stamp_episode_extras(h2, p)
         if p.get("seoTitle"):
             h2 = set_title(h2, p["seoTitle"])
+        h2 = wrap_tables(h2)
         if h2 != h:
             write(path, h2); stamped += 1
 

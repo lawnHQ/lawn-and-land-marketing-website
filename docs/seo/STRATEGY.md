@@ -240,3 +240,9 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   (3) re-run `google-consent seo` because the token is revoked again (see the revoke gotcha below).
   **Revoke gotcha:** revoking one refresh token revokes the whole grant for that user and client, so
   the freshly minted token died with the leaked one on 2026-09-16.
+- 2026-09-20 (later) — **Sitewide table styling fixed.** Matt flagged the price table on the new
+  article as unreadable. Root cause: no `table`/`th`/`td` rule existed in any stylesheet, so the
+  bare `<table>` markup in **21 of 48 posts** had been rendering unstyled since launch. Added
+  article-table styles to `article.css` (v7 → v8 sitewide), and `gen_blog.py` now wraps every
+  article table in `.article-table-wrap` so it scrolls inside its own frame on mobile instead of
+  breaking the page. Verified desktop and at 375px: table scrolls, body does not.

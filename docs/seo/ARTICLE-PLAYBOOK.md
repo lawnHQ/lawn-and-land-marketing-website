@@ -65,6 +65,8 @@ Body, in order:
 3. `Key takeaways` section: 4 bullets, each a complete, specific claim.
 4. 5 to 7 `<section>` blocks, each `<h2>` a question, answer-first opener, 150 to 350 words,
    at least one list or table where it helps scanning. One section holds the worked example.
+   Tables are plain `<table><thead>…<tbody>…</table>`; `gen_blog.py` wraps them in
+   `.article-table-wrap` and `article.css` styles them, so never hand-roll table CSS.
 5. `article-cta-block` with the contextual line
    `<p class="article-cta-link">Want this done for you? See our <a href="...">… service</a>.</p>`
    pointing at the matching vertical service page or industry page.

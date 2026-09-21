@@ -629,3 +629,72 @@
 .author-articles-head h2 { font-family: var(--font-h); font-style: italic; font-weight: 800; font-size: clamp(24px,3.4vw,34px); color: var(--white); margin: 0; }
 .author-articles-head a { font-family: var(--font-l); font-size: 14px; font-weight: 600; color: var(--lime); text-decoration: none; }
 @media (max-width: 700px){ .author-hero-inner { flex-direction: column; text-align: center; align-items: center; gap: 22px; } .author-links { justify-content: center; } }
+/* ---------- Article tables (added 2026-09-20) --------------------------------
+   21 posts shipped bare <table> markup with no styling anywhere in the site, so
+   they rendered as unreadable runs of text. gen_blog.py wraps every article
+   table in .article-table-wrap; the bare selector keeps older markup covered. */
+.article-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 26px 0;
+  border: 1px solid rgba(255,255,255,0.11);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.015);
+}
+.article-content table,
+.article-table-wrap table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-family: var(--font-b);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+.article-content .article-table-wrap table { margin: 0; }
+.article-content table:not(.article-table-wrap table) { margin: 26px 0; }
+.article-content table th,
+.article-table-wrap th {
+  text-align: left;
+  vertical-align: bottom;
+  font-family: var(--font-l);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  padding: 15px 18px;
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255,255,255,0.13);
+  white-space: nowrap;
+}
+.article-content table td,
+.article-table-wrap td {
+  padding: 15px 18px;
+  vertical-align: top;
+  color: rgba(255,255,255,0.80);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  font-variant-numeric: tabular-nums;
+}
+.article-content table tbody tr:nth-child(even) td,
+.article-table-wrap tbody tr:nth-child(even) td { background: rgba(255,255,255,0.018); }
+.article-content table tbody tr:last-child td,
+.article-table-wrap tbody tr:last-child td { border-bottom: none; }
+.article-content table td:first-child,
+.article-table-wrap td:first-child {
+  color: var(--white);
+  font-weight: 600;
+  min-width: 150px;
+}
+.article-content table td a,
+.article-table-wrap td a { color: var(--lime); text-decoration: none; border-bottom: 1px solid rgba(172,231,29,0.35); }
+.article-content table td a:hover,
+.article-table-wrap td a:hover { border-bottom-color: var(--lime); }
+@media (max-width: 700px) {
+  .article-content table,
+  .article-table-wrap table { font-size: 14px; min-width: 480px; }
+  .article-content table th, .article-table-wrap th,
+  .article-content table td, .article-table-wrap td { padding: 12px 14px; }
+  .article-content table td:first-child,
+  .article-table-wrap td:first-child { min-width: 126px; }
+}
