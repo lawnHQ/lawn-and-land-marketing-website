@@ -82,6 +82,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TOPIC_ROW: ${{ inputs.topic_row }}
         with:
+          # Prefer the Claude subscription token (no per-token billing; it draws on
+          # Matt's Claude plan). Mint with `claude setup-token` on a machine signed in
+          # to the subscription. ANTHROPIC_API_KEY is the pay-per-token fallback and is
+          # only used if the OAuth secret is absent.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           claude_args: |
             --max-turns 90

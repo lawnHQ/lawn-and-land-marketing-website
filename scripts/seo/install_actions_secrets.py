@@ -94,7 +94,8 @@ def google_token_is_live(token):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="check everything, write nothing")
-    ap.add_argument("--anthropic-key", help="sk-ant-... dedicated to these workflows")
+    ap.add_argument("--anthropic-key", help="sk-ant-... pay-per-token fallback")
+    ap.add_argument("--oauth-token", help="sk-ant-oat01-... from `claude setup-token` (preferred: uses the subscription)")
     args = ap.parse_args()
 
     # Fine-grained tokens usually lack the "Secrets" permission even when they are admin,
@@ -123,10 +124,18 @@ def main():
         if not v:
             missing.append(f"{name} (not in the Doppler environment)")
 
+    # Preferred: the Claude subscription token (no per-token billing). Mint a fresh one with
+    # `claude setup-token` and pass --oauth-token, or let it come from Doppler if stored there.
+    oauth = args.oauth_token or os.environ.get("CLAUDE_CODE_OAUTH_TOKEN")
+    if oauth:
+        planned["CLAUDE_CODE_OAUTH_TOKEN"] = oauth
+    else:
+        missing.append("CLAUDE_CODE_OAUTH_TOKEN (run `claude setup-token`, then pass --oauth-token)")
+
     if args.anthropic_key:
         planned["ANTHROPIC_API_KEY"] = args.anthropic_key
-    else:
-        missing.append("ANTHROPIC_API_KEY (pass --anthropic-key; use a key dedicated to these workflows)")
+    elif not oauth:
+        missing.append("ANTHROPIC_API_KEY (pay-per-token fallback; only needed if there is no subscription token)")
 
     if os.path.exists(GOOGLE_ENV_FILE):
         gt = None

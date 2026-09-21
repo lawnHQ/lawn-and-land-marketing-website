@@ -229,14 +229,21 @@ scheduled run exits at the first step. Manual `workflow_dispatch` runs ignore it
 (`--dry-run` first; it encrypts locally and never prints a value; it needs a classic PAT with
 `repo` scope, the fine-grained lawnHQ token lacks the Secrets permission):
 
-- Installed 2026-09-21: `DATAFORSEO_LOGIN`, `DATAFORSEO_PASSWORD`, `PAGESPEED_API_KEY`,
-  `GBP_CLIENT_ID`, `GBP_CLIENT_SECRET`, `OPENAI_API_KEY`.
-- **Still needed:** `ANTHROPIC_API_KEY` (pass `--anthropic-key`; give these workflows their OWN
-  key so spend is attributable and separately revocable, per the 2026-09 key-burn incident) and
-  `GOOGLE_SEO_REFRESH_TOKEN` (re-run `doppler run -p mac-claude -c prd -- google-consent seo`
-  first; the installer refuses to install a revoked token).
-- Without `ANTHROPIC_API_KEY` both workflows fail at the Claude step. Without
-  `GOOGLE_SEO_REFRESH_TOKEN` the review still runs but reports no Search Console or GA4 numbers.
+- Installed 2026-09-21: `CLAUDE_CODE_OAUTH_TOKEN`, `DATAFORSEO_LOGIN`, `DATAFORSEO_PASSWORD`,
+  `PAGESPEED_API_KEY`, `GBP_CLIENT_ID`, `GBP_CLIENT_SECRET`, `OPENAI_API_KEY`.
+- **Model auth runs on Matt's Claude subscription, not pay-per-token.** `claude_code_oauth_token`
+  is a first-class input on `claude-code-action` ("alternative to anthropic_api_key"); the vault's
+  `CLAUDE_CODE_OAUTH_TOKEN` was verified live 2026-09-21 (Bearer + `anthropic-beta:
+  oauth-2025-04-20` returned 200). So the model cost of both workflows is **$0 of new API spend**;
+  the runs draw on the subscription's usage allowance instead, which is shared with Matt's own
+  Claude Code sessions. Mint a fresh token any time with `claude setup-token`. `ANTHROPIC_API_KEY`
+  remains wired as a pay-per-token fallback and is only consulted if the OAuth secret is absent.
+- **Still needed:** `GOOGLE_SEO_REFRESH_TOKEN` (re-run
+  `doppler run -p mac-claude -c prd -- google-consent seo` first; the installer refuses a revoked
+  token). Without it the review runs but reports no Search Console or GA4 numbers.
+- **Why not local cron on the Mac?** [[feedback_ops_reliability_and_alerts]] is explicit that
+  nothing operational may depend on a Mac. It sleeps, it travels, and a missed Monday is silent.
+  Actions runs on GitHub's schedule whether the Mac is on or not.
 
 **Note:** these keys now exist in a second system besides Doppler. lawnHQ has one member, so
 exposure is low, but prefer scoped keys here over shared ones.
