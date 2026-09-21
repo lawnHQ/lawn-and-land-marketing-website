@@ -111,3 +111,134 @@ The weekly snapshot already records, per term, whether Google shows an AI Overvi
 cites. If this works, the Reddit domain count stays high and **our own citations go from zero**.
 Give it 6 to 8 weeks before judging. Reddit threads take time to re-crawl, and AI Overview
 sourcing lags the index.
+
+---
+
+# Draft comments
+
+I cannot read Reddit from this machine (it blocks scripted access, the browser pane blocks the
+domain, Chrome was not connected), so I have not seen what each person actually wrote. **Every
+draft below is the body only.** You write the first line yourself, reacting to their actual post.
+That first line is what separates a real comment from a bot, so it is the one part I should not
+write blind.
+
+Voice is matched to your r/sweatystartup comment, but tightened to about 110 words. Each one makes
+a single point instead of five.
+
+---
+
+### 1. "How the hell do I get more customers?" — r/landscaping
+
+> [One line reacting to their situation.]
+>
+> For context, our agency works only with lawn care and landscaping companies, so this is what I
+> look at all day.
+>
+> If you only do one thing: get reviews on your Google Business Profile. Not a website, not ads.
+> Ask every customer by name and text them the direct link the same day, while they are still
+> happy about the work. Ten reviews clustered in the neighborhoods you already serve will beat
+> anything else you could do with that time, because "near me" rankings are mostly reviews plus
+> proximity.
+>
+> Running ads before that is paying to send people to a business that looks unproven.
+
+---
+
+### 2. "How to grow a landscaping business" — r/smallbusiness
+
+> [One line reacting to their stage or revenue if they mentioned it.]
+>
+> The thing that trips most people up is running the wrong playbook for their size.
+>
+> Under about $500K the problem is almost always that nobody can find you. Google profile,
+> reviews, answer the phone fast. That is genuinely it.
+>
+> Around $1M the problem changes. You have leads and you are losing them to slow follow-up and no
+> system. That is when a CRM starts earning its keep.
+>
+> Past that it is margin and mix, not volume. More work at the same margin just makes you tired.
+>
+> We work only with green industry companies, so I see this pattern constantly.
+
+---
+
+### 3. "Landscaping business software" — r/landscaping
+
+> Jobber, Aspire, LMN and Service Autopilot all do the core job well: scheduling, invoicing, crew
+> tracking. Pick on company size. Jobber if you are small and want simple, Aspire if you are big
+> enough to have a real ops person, LMN if estimating is the part that hurts.
+>
+> Worth saying though: none of them bring you work. They run the business you already have. People
+> buy software expecting a lead problem to get solved, then wonder why the calendar is still light
+> in March.
+>
+> Our agency only works with this industry, so I watch that particular disappointment a lot.
+
+---
+
+### 4. "What are your best ways to get more customers/leads" — r/landscaping
+
+*(Deliberately a different angle from #1 so you are not repeating yourself across two threads in
+the same subreddit.)*
+
+> Cheapest thing that actually works: a yard sign on every lawn you finish, and knock on the two
+> neighbors while you are already standing there.
+>
+> Sounds too simple, but the reason it works is that the finished lawn is the ad. Nobody believes
+> a flyer. Everybody believes the yard two doors down.
+>
+> It also tightens your route, which is where the money actually is. Three lawns on one street
+> beats three lawns across town at the same price.
+>
+> We only work with green industry companies, and for small operators the neighbor stuff still
+> consistently beats paid.
+
+---
+
+### 5. "Software for designing and rendering hardscapes?" — r/landscaping
+
+**Take this one yourself.** Every figure is verified off the vendor's own pricing page last week.
+Do not link our article unless somebody asks for a source.
+
+> Depends which job you need it for, and most comparisons skip that.
+>
+> If you are selling the project, you want 3D the homeowner can react to. VizTerra is $97 per user
+> per month, Vip3D is $197 if you do high end work. Both Structure Studios.
+>
+> If you need dimensioned plans and material quantities for the build, that is a different tool.
+> DynaSCAPE Design is $1,599 a year, Windows only.
+>
+> Realtime Landscaping Architect is $599 one time and does a bit of both, which is where I would
+> start if you are not sure yet.
+>
+> Unilock's Uvision is $579.95, not free, despite how it usually gets described.
+>
+> Prices are off their own sites as of last week.
+
+---
+
+### 6. "Need some help pricing my jobs" — r/LandscapingTips
+
+*(You are on the marketing side here, not operations. Saying so is what makes the rest credible.)*
+
+> I am on the marketing side rather than operations, so take this for what it is worth.
+>
+> The pattern I see across a lot of companies: the ones who struggle price off what the guy down
+> the road charges. The ones who do not price off their own numbers, hourly cost with overhead and
+> profit built in, then check the market as a sanity test instead of a starting point.
+>
+> The other thing is being willing to lose bids. If you are winning almost everything, you are too
+> cheap. Winning about half is usually the healthier sign.
+
+---
+
+## Rules for adapting these
+
+- **Write the first line yourself, every time.** React to something specific they said. If you
+  cannot find anything specific to react to, that thread is not worth your comment.
+- **If someone already said your point, do not repeat it.** Add the part they left out, or skip
+  the thread.
+- **Disclose once, never twice.** One clause is the right dose.
+- **No links unless asked.** If asked, link the article, not the homepage.
+- **Cut rather than add.** If a draft grows past about 150 words while you are editing, the extra
+  is usually throat-clearing.
