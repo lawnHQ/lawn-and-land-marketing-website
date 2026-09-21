@@ -246,3 +246,12 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   article-table styles to `article.css` (v7 → v8 sitewide), and `gen_blog.py` now wraps every
   article table in `.article-table-wrap` so it scrolls inside its own frame on mobile instead of
   breaking the page. Verified desktop and at 375px: table scrolls, body does not.
+- 2026-09-21 — **Runtime finding: the cloud routines cannot do this job as built.** A live test run
+  printed all seven environment variables as MISSING, and the sandbox's egress proxy blocks
+  outbound HTTPS to `lawnandlandmarketing.com`, `api.dataforseo.com`, and third-party vendor sites,
+  so `snapshot.py` cannot even crawl our own sitemap there and the article routine could not read
+  its research sources. Setting the environment variables alone will NOT fix that.
+  **Recommendation: port both routines to GitHub Actions in this repo.** That is the pattern the
+  Competitor Radar already runs against this same repo (cron → python → PR with a veto window):
+  no egress restrictions, repo-level secrets (this repo already uses `secrets.VERCEL_TOKEN`), and
+  push rights that do not depend on a GitHub App installation.
