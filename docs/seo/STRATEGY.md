@@ -340,3 +340,26 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   named sources at all**, which is an open door rather than a closed one.
   Watch-term CTR remains the standing problem: every single watch term shows 0 clicks, including
   "lawn care marketing" at 6,417 impressions and position 10.9.
+- 2026-09-21 — **Matt's strategic answers, and a fact-check that caught three bad numbers before
+  they shipped.** Answers: publish **aggregate data only, no client names**; **Matt personally owns
+  Reddit/community, ~30 min a week**; **both time and budget** are available for human-required
+  work. Two facts that reframe the AI gap: Google's AI cites **Reddit 6x and YouTube 4x** across
+  our 20 AI-Overview terms, and L&L has **zero Reddit presence** and a YouTube channel with **59
+  subscribers / 26 videos**. The citation gap is largely an absence-from-the-cited-places problem.
+  **Fact-check finding (important).** The radar's 2026-08 "Green Industry Demand Calendar" draft
+  and its .docx manuscript, prepared for Turf Magazine under Matt's byline, contain three claims
+  that do NOT survive re-verification against fresh DataForSEO monthly data:
+  (1) "overseeding peaks in September, nearly tripling" — it peaks in **August**, and Sep is only
+  1.8x July; (2) "leaf removal reaches roughly 27 times its June level" — actual **16.8x**;
+  (3) "mowing peaks March through May then declines continuously" — there is a **July spike equal
+  to April** (60,500 both). The holiday-lighting "quintupling July to September" claim DID verify
+  at exactly 5.0x. **Gmail confirms the demand-calendar pitch was never sent** (the only pitch that
+  went to Turf was a different March 2026 article, never opened), so nothing wrong went out.
+  The lesson: the fact-gate verifies against a source document, and here the source document was
+  itself an unverified internal claim. Seasonality claims now have a single permitted source:
+  `docs/seo/data/demand-monthly-2026-09-21.json` (46 terms, multi-year monthly means, pulled
+  2026-09-21) with a README that forbids restating the old draft's figures.
+  Genuinely strong verified findings now available: aeration Sep = 3.3x July and ties the spring
+  peak; sprinkler winterization Oct = **37.9x** August, the sharpest ramp in the set; patio
+  installation and hardscape contractor both **peak in September**, which matters because outdoor
+  living is priority trade #2.
