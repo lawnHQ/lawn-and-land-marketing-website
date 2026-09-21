@@ -255,3 +255,12 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   Competitor Radar already runs against this same repo (cron → python → PR with a veto window):
   no egress restrictions, repo-level secrets (this repo already uses `secrets.VERCEL_TOKEN`), and
   push rights that do not depend on a GitHub App installation.
+- 2026-09-21 (later) — **Monday weekly review confirms the same block, shipped local fixes anyway.**
+  Independently hit the same wall: all six snapshot env vars missing, egress denied to
+  lawnandlandmarketing.com and api.dataforseo.com (403), PageSpeed on its shared daily quota (429).
+  No snapshot, no comparison, no open `seo/` PRs to merge. Fixed what needed no network instead:
+  added the missing `article-cta-link` line to 5 posts, trimmed 4 meta descriptions over 158 chars
+  (meta/OG/Twitter/JSON-LD), verified all 48 seoTitles, the `_blog.json`↔sitemap sync, and every FAQ
+  block parses clean. Flagged 2 older posts (`best-green-industry-marketing-agencies`,
+  `land-clearing-marketing`) with no in-article CTA block at all, needs new copy not a mechanical
+  fix. Seconds the GitHub Actions recommendation above. Report: `docs/seo/reports/2026-09-21.md`.
