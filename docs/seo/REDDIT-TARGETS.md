@@ -16,6 +16,40 @@ easy.
 
 ---
 
+## UPDATE 2026-09-22: the old threads are archived, use these live ones
+
+Matt confirmed the Tier 1 threads below are archived (Reddit locks comments after about six
+months). They still matter because Google's AI quotes them, but nobody can add to them. These live
+threads were found through Google results dated 2026-06-24 to 2026-09-22 and ask the same questions:
+
+| Thread | Use |
+|---|---|
+| r/googleads "Do ads actually work for home service companies?" (a landscaper, about $10K in Google Ads over 6 months) https://www.reddit.com/r/googleads/comments/1wj2yyv/do_ads_actually_work_for_home_service_companies/ | New draft, below |
+| r/smallbusiness "Advertisement issues." (co-owner of a landscaping company, plateaued year after year) https://www.reddit.com/r/smallbusiness/comments/1wgf6fb/advertisement_issues/ | Draft "How to grow a landscaping business" |
+| r/landscaping "Advertisement Tips and Tricks" https://www.reddit.com/r/landscaping/comments/1wgfbul/advertisement_tips_and_tricks/ | Draft "How the hell do I get more customers?" (reviews angle; yard signs are already covered there) |
+| r/landscaping "A young man at my church has been trying to start his own..." (door to door, turned away) https://www.reddit.com/r/landscaping/comments/1ufxr4z/a_young_man_at_my_church_has_been_trying_to_start/ | Draft "What are your best ways to get more customers/leads" (yard signs, neighbors) |
+| r/lawncare "New lawncare business, how do I figure out pricing" https://www.reddit.com/r/lawncare/comments/1ugne2k/new_lawncare_business_how_do_i_figure_out_pricing/ | Draft "Need some help pricing my jobs" |
+
+Still unanswered: the hardscape software draft. Search r/landscaping and r/hardscaping for a recent
+"design software" question from a contractor, not a homeowner.
+
+### New draft: r/googleads "Do ads actually work for home service companies?"
+
+> $10K over six months is enough data to answer this, so the answer is in your account, not in
+> whether ads "work." Three things I would check before deciding:
+>
+> 1. **How many of those calls got answered.** A lot of home service ad spend dies at a voicemail.
+> 2. **The search terms report.** If you see "landscaping jobs," DIY questions, or towns you do not
+>    serve, that is where the money went.
+> 3. **What counted as a conversion.** Calls over a minute, or just button clicks? Agencies report
+>    the second one a lot.
+>
+> Local Services Ads (the Google Guaranteed part) work differently: you pay per lead instead of per
+> click. Compare cost per booked job across the two, not cost per click.
+>
+> For context, our agency only works with green industry companies and Google Ads is one of the
+> things we run, so weigh my bias accordingly.
+
 ## Tier 1 — do these first (AI-cited AND page one)
 
 These three are the highest-leverage comments you can leave, because Google's AI is literally
