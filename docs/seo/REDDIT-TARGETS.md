@@ -197,7 +197,7 @@ the same subreddit.)*
 
 ### 5. "Software for designing and rendering hardscapes?" — r/landscaping
 
-**Take this one yourself.** Every figure is verified off the vendor's own pricing page last week.
+**Take this one yourself.** Every figure was verified off the vendor's own pricing page on 2026-09-21.
 Do not link our article unless somebody asks for a source.
 
 > Depends which job you need it for, and most comparisons skip that.
@@ -213,7 +213,7 @@ Do not link our article unless somebody asks for a source.
 >
 > Unilock's Uvision is $579.95, not free, despite how it usually gets described.
 >
-> Prices are off their own sites as of last week.
+> Prices are off their own sites as of this month.
 
 ---
 
