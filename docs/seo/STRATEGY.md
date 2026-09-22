@@ -373,3 +373,13 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   cannot be verified from here** — the doc tells him to check and skip.
   Measurement is already wired: the weekly snapshot records AI Overview citations per term, so
   "our citations go from zero" is the success test. Expect 6 to 8 weeks of lag.
+- 2026-09-22 — **Weekly review: quiet week, mechanical sweep clean.** GSC roughly flat (115 clicks
+  vs 116, impressions -2%, position improved 21.4 to 20.9). No watch term moved 5+ positions either
+  direction. AI Overview coverage grew to 21/22 watch terms; we remain cited on zero. Referring
+  domains 77 to 80, but the three new ones are link-farm spam, not real link-building. Full
+  mechanical-fix sweep (seoTitles, meta lengths, CTA links, sitemap sync, broken links, FAQ schema)
+  came back clean, no changes needed. Two posts (land-clearing-marketing,
+  best-green-industry-marketing-agencies) still lack a CTA block entirely, carried over again as a
+  copy task, not mechanical. No open seo/ PRs to merge. Radar health check: not an outage, 4 merges
+  in 7 days / 14 in 30, last commit yesterday; flagged 52 stale radar/ branches as a minor cleanup
+  item. Report: `docs/seo/reports/2026-09-22.md`.
