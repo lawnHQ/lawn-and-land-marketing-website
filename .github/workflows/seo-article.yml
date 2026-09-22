@@ -27,6 +27,9 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  # claude-code-action exchanges an OIDC token for its GitHub credentials. Without
+  # this line it dies in the first 15 seconds (both first runs, 2026-09-21/22).
+  id-token: write
 
 concurrency:
   group: seo-article
@@ -82,6 +85,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TOPIC_ROW: ${{ inputs.topic_row }}
         with:
+          # Sonnet, never Opus: this draws on the SAME 5-hour Claude window as Matt's own
+          # Claude Code sessions. Opus agents on that window locked him out for 4 hours on
+          # 2026-09-22 (memory: feedback_never_pin_agents_to_claude_subscription).
           # Prefer the Claude subscription token (no per-token billing; it draws on
           # Matt's Claude plan). Mint with `claude setup-token` on a machine signed in
           # to the subscription. ANTHROPIC_API_KEY is the pay-per-token fallback and is
@@ -90,7 +96,7 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           claude_args: |
             --max-turns 90
-            --model claude-opus-5
+            --model claude-sonnet-5
             --allowedTools Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch
           prompt: |
             You are the SEO content lead for lawnandlandmarketing.com (Lawn & Land Marketing,
