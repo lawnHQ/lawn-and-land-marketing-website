@@ -69,6 +69,22 @@ jobs:
           git config user.name "lawn-land-bot"
           git config user.email "web@lawnandlandmarketing.com"
 
+      - name: Pull this week's data
+        # Runs here, not inside the agent: it takes several minutes, and the agent kept
+        # backgrounding it and "waiting for a notification", which in a headless run means
+        # quitting. Three runs on 2026-09-22 ended that way with nothing written.
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        timeout-minutes: 20
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          GBP_CLIENT_ID: ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GOOGLE_SEO_REFRESH_TOKEN: ${{ secrets.GOOGLE_SEO_REFRESH_TOKEN }}
+        run: python3 scripts/seo/snapshot.py 2>&1 | tee /tmp/snapshot.log
+
       - name: Run the weekly review
         if: steps.gate.outputs.run == 'true'
         uses: anthropics/claude-code-action@v1
@@ -92,12 +108,18 @@ jobs:
             --max-turns 60
             --model claude-sonnet-5
             --allowedTools Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch
+            --disallowedTools Monitor
           prompt: |
             You are the standing SEO strategist for lawnandlandmarketing.com (Lawn & Land
             Marketing, a marketing agency working only with green-industry companies; owner
             priority: landscapers, then outdoor living contractors, then land clearing
             companies). You are running inside GitHub Actions in a full checkout of the site
             repo. This is the Monday weekly review. Work end to end.
+
+            THIS IS A NON-INTERACTIVE RUN. Nobody will answer you and no notification will
+            ever arrive. If you end your turn, the job ends and unfinished work is lost. Never
+            run a command in the background, never use Monitor, never "pause and wait": run
+            every command in the foreground and keep going until the task is done.
 
             READ docs/seo/CHARTER.md FIRST, always. It states who we target, the trade
             priority order that decides every tie, what winning looks like, and which system
@@ -108,10 +130,11 @@ jobs:
             newest files in docs/seo/snapshots/.
 
             THEN:
-            1. Run `python3 scripts/seo/snapshot.py`. It reads DATAFORSEO_LOGIN,
-               DATAFORSEO_PASSWORD, PAGESPEED_API_KEY, GBP_CLIENT_ID, GBP_CLIENT_SECRET and
-               GOOGLE_SEO_REFRESH_TOKEN from the environment. If any are missing or a source
-               errors, say exactly which in the report and continue with what does run.
+            1. The workflow ALREADY ran `python3 scripts/seo/snapshot.py` before you started;
+               do NOT run it again. Today's file is the newest in docs/seo/snapshots/ and its
+               console output is in /tmp/snapshot.log. If today's file is missing, or the log
+               shows a source that errored or a missing credential, say exactly which in the
+               report and continue with what exists.
             2. Compare this snapshot with the previous one: Search Console clicks,
                impressions, CTR and position (28 days vs the prior 28), each watch term's
                position, ranked-keyword count, referring domains, PageSpeed, crawl issues.

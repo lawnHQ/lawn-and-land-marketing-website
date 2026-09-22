@@ -84,6 +84,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TOPIC_ROW: ${{ inputs.topic_row }}
+          BASH_DEFAULT_TIMEOUT_MS: '600000'
+          BASH_MAX_TIMEOUT_MS: '1200000'
         with:
           # Sonnet, never Opus: this draws on the SAME 5-hour Claude window as Matt's own
           # Claude Code sessions. Opus agents on that window locked him out for 4 hours on
@@ -98,6 +100,7 @@ jobs:
             --max-turns 90
             --model claude-sonnet-5
             --allowedTools Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch
+            --disallowedTools Monitor
           prompt: |
             You are the SEO content lead for lawnandlandmarketing.com (Lawn & Land Marketing,
             a marketing agency working only with green-industry companies; owner priority:
@@ -105,6 +108,11 @@ jobs:
             excavation, lawn care, lawn maintenance, septic). You are running inside GitHub
             Actions in a full checkout of the site repo. Publish ONE genuinely useful article
             for green-industry business owners, as a pull request. Work end to end.
+
+            THIS IS A NON-INTERACTIVE RUN. Nobody will answer you and no notification will
+            ever arrive. If you end your turn, the job ends and unfinished work is lost. Never
+            run a command in the background, never use Monitor, never "pause and wait": run
+            every command in the foreground and keep going until the task is done.
 
             READ docs/seo/CHARTER.md FIRST, always. It states who we target, the trade
             priority order that decides every tie, what winning looks like, and which system
