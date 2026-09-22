@@ -164,7 +164,8 @@ jobs:
         # (The 2026-09-22 rerun: success, 44 turns, 1 permission denial, zero commits.)
         if: always() && steps.gate.outputs.run == 'true'
         run: |
-          python3 - <<'EOF' >> "$GITHUB_STEP_SUMMARY" || true
+          echo "Files changed by the agent:"; git status --short; ls -t docs/seo/snapshots | head -2
+          python3 - <<'EOF' | tee -a "$GITHUB_STEP_SUMMARY" || true
           import json, os
           p = "/home/runner/work/_temp/claude-execution-output.json"
           if not os.path.exists(p):
@@ -177,6 +178,11 @@ jobs:
               print(f"- BLOCKED: `{d.get('tool_name')}` {json.dumps(d.get('tool_input'))[:300]}")
           print()
           print(r.get("result") or "(no final text)")
+          print("\n#### Last things the agent said")
+          texts = [b.get("text") for m in msgs if m.get("type") == "assistant"
+                   for b in (m.get("message", {}).get("content") or []) if b.get("type") == "text"]
+          for t in texts[-4:]:
+              print("---\n" + (t or "")[:1500])
           EOF
 
       - name: Commit and push anything left behind
