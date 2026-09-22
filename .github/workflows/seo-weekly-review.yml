@@ -158,13 +158,38 @@ jobs:
             summary that stands alone: the headline numbers versus last week, every fix you
             shipped, and the open items for Matt.
 
-      - name: Commit anything left uncommitted
+      - name: Show what the agent reported
+        # The action's own log hides the conversation. Print the final summary and any
+        # blocked tool calls to the run page so a "green but did nothing" run is visible.
+        # (The 2026-09-22 rerun: success, 44 turns, 1 permission denial, zero commits.)
+        if: always() && steps.gate.outputs.run == 'true'
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_STEP_SUMMARY" || true
+          import json, os
+          p = "/home/runner/work/_temp/claude-execution-output.json"
+          if not os.path.exists(p):
+              print("No execution output file."); raise SystemExit
+          msgs = json.load(open(p))
+          res = [m for m in msgs if m.get("type") == "result"]
+          r = res[-1] if res else {}
+          print(f"### Agent result: {r.get('subtype')} in {r.get('num_turns')} turns")
+          for d in r.get("permission_denials") or []:
+              print(f"- BLOCKED: `{d.get('tool_name')}` {json.dumps(d.get('tool_input'))[:300]}")
+          print()
+          print(r.get("result") or "(no final text)")
+          EOF
+
+      - name: Commit and push anything left behind
         if: steps.gate.outputs.run == 'true' && inputs.dry_run != true
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git add -A
             git commit -m "seo: weekly review leftovers $(date -u +%Y-%m-%d)"
+          fi
+          git fetch -q origin main
+          ahead=$(git rev-list --count origin/main..HEAD)
+          echo "Local commits not yet on main: $ahead"
+          git log --oneline origin/main..HEAD
+          if [ "$ahead" -gt 0 ]; then
             git pull --rebase origin main && git push origin HEAD:main
-          else
-            echo "Working tree clean."
           fi
