@@ -193,7 +193,7 @@
         '<div class="hr-stat"><b>' + (s.avgRank != null ? s.avgRank : '&ndash;') + '</b><span>Average rank where you show up</span></div>' +
         (d.previous ? (function (p) {
           var diff = Math.round((s.top3Share - p.top3Share) * 10) / 10;
-          return '<div class="hr-stat hr-stat--lead"><b>' + (diff > 0 ? '+' : '') + diff + ' pts</b><span>Top 3 share since your last scan on ' + esc(shortDate(p.date)) +
+          return '<div class="hr-stat hr-stat--lead"><b>' + (diff === 0 ? 'No change' : (diff > 0 ? '+' : '') + diff + ' pts') + '</b><span>Top 3 share since your last scan on ' + esc(shortDate(p.date)) +
             ' (' + p.top3Share + '%' + (p.keyword !== d.keyword ? ', for &ldquo;' + esc(p.keyword) + '&rdquo;' : '') + ')</span></div>';
         })(d.previous) : '') +
         '<div class="hr-next">Your next free scan unlocks <b>' + esc(longDate(d.nextScanAt)) + '</b>. Come back then to see what changed.</div>';
