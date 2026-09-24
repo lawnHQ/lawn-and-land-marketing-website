@@ -818,7 +818,7 @@
   its old redirect to the matching replacement.
 
 
-## 2026-09-24 — Free Google Maps heatmap tool (lead magnet) — STAGED, not launched
+## 2026-09-24 — Free Google Maps heatmap tool (lead magnet) — LIVE 2026-09-24 (team demo launch, Matt's go)
 - **Routes:** `/tools/google-maps-heatmap/` (indexable tool page, in sitemap) + `/tools/google-maps-heatmap/results/?t=<token>` (noindex, not in sitemap).
   Hand-built via a generator from `contact/index.html` chrome; page CSS/JS in `assets/css/heatmap.css` + `assets/js/heatmap.js`;
   MapLibre GL 5.24.0 self-hosted in `assets/vendor/maplibre-5.24.0/` (BSD-3) with free OpenFreeMap `dark` tiles (no Google Maps key, no per-view billing).
@@ -829,3 +829,4 @@
 - **Before paid traffic:** Cloudflare Turnstile keys (bot protection), and a GHL workflow on the tag if the team wants SMS/pipeline follow-up.
 - **Update same day (Matt review):** (1) grid → 7×7 at 7.5 mi; (2) **weekly timer**: one new scan per business listing, per email and per phone every 7 days, so the tool cannot be bookmarked as a free rank tracker but owners can come back weekly (awareness). A repeat inside the week shows the saved map + the day the next scan unlocks; a new scan after a week shows the change in top-3 share since the last one. Throwaway email domains refused; Gmail dot/+tag aliases collapse. Copy on both pages says "one free scan per business each week."
 - **Testing gotcha:** preview pages carry the live GA / Google Ads / Meta pixel. One staging test (2026-09-24, Countryside Lawn Care) fired a real `generate_lead` + Meta `Lead`. Stub `window.gtag`/`window.fbq` before submitting test scans.
+- **Launched 2026-09-24 on Matt's go** for a live team demo/feedback round. Team scans from `@lawnandlandmarketing.com` emails are flagged as tests (`internal-test` tag in SAE, no GA/Meta Lead conversion). Turnstile bot protection still pending: required before paid traffic.

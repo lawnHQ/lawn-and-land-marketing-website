@@ -106,7 +106,9 @@
           if (r.body && r.body.field && form.elements[r.body.field]) form.elements[r.body.field].focus();
           return;
         }
-        if (!r.body.reused) {
+        // Team demo scans (our own domain) never count as ad conversions.
+        var internal = /@lawnandlandmarketing\.com\s*$/i.test(data.email || '');
+        if (!r.body.reused && !internal) {
           track('generate_lead', { lead_source: 'google_maps_heatmap' });
           try { if (window.fbq) fbq('track', 'Lead', { content_name: 'Google Maps Heatmap' }); } catch (err) {}
         }
