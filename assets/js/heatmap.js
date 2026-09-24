@@ -110,7 +110,7 @@
           track('generate_lead', { lead_source: 'google_maps_heatmap' });
           try { if (window.fbq) fbq('track', 'Lead', { content_name: 'Google Maps Heatmap' }); } catch (err) {}
         }
-        location.href = RESULTS_PATH + '?t=' + encodeURIComponent(r.body.token) + (API !== 'https://ll-heatmap.vercel.app' && /localhost|127\.0\.0\.1/.test(API) ? '&api=' + encodeURIComponent(API) : '');
+        location.href = RESULTS_PATH + '?t=' + encodeURIComponent(r.body.token) + (r.body.reused ? '&seen=1' : '') + (API !== 'https://ll-heatmap.vercel.app' && /localhost|127\.0\.0\.1/.test(API) ? '&api=' + encodeURIComponent(API) : '');
       }).catch(function () {
         btn.disabled = false; btn.textContent = 'Run my free scan';
         setMsg(msg, 'We could not reach the scan service. Please try again.');
@@ -208,10 +208,10 @@
       function draw() {
         map.addSource('pts', { type: 'geojson', data: { type: 'FeatureCollection', features: features } });
         map.addLayer({ id: 'pts-c', type: 'circle', source: 'pts', paint: {
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 9, 11, 15, 13, 19],
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 12, 10, 17, 12, 22, 14, 26],
           'circle-color': ['get', 'color'], 'circle-opacity': 0.92, 'circle-stroke-width': 2, 'circle-stroke-color': 'rgba(7,16,10,0.85)' } });
         map.addLayer({ id: 'pts-l', type: 'symbol', source: 'pts', layout: {
-          'text-field': ['get', 'label'], 'text-font': ['Noto Sans Bold'], 'text-size': ['interpolate', ['linear'], ['zoom'], 8, 9, 11, 12, 13, 14],
+          'text-field': ['get', 'label'], 'text-font': ['Noto Sans Bold'], 'text-size': ['interpolate', ['linear'], ['zoom'], 8, 11, 10, 13, 12, 15, 14, 17],
           'text-allow-overlap': true }, paint: { 'text-color': '#07100a' } });
         map.on('click', 'pts-c', function (e) {
           var p = e.features[0].properties;
@@ -234,6 +234,14 @@
       if (map.__ready) draw(); else (map.__queue = map.__queue || []).push(draw);
     }
 
+    function notice(d) {
+      if (new URLSearchParams(location.search).get('seen') !== '1') return;
+      var el = $('hrNotice'), when = new Date(d.createdAt).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' });
+      el.innerHTML = '<b>This business was already scanned on ' + esc(when) + '.</b> Free scans are one per company every 90 days, so here is that saved map' +
+        (d.keyword ? ' for &ldquo;' + esc(d.keyword) + '&rdquo;' : '') + '. Want a fresh scan, or every service you sell? <a href="/get-started/book-strategy-call/">Book a free strategy call</a>.';
+      el.hidden = false;
+    }
+
     function head(d) {
       $('hrTitle').textContent = d.business.title;
       var when = new Date(d.completedAt || d.createdAt);
@@ -248,6 +256,7 @@
           if (!r.ok) throw new Error('bad');
           var d = r.body;
           head(d);
+          notice(d);
           if (!map) {
             map = new maplibregl.Map({ container: 'hrMap', style: 'https://tiles.openfreemap.org/styles/dark', center: [d.business.lng, d.business.lat], zoom: 10, attributionControl: { compact: true }, cooperativeGestures: true });
             map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');

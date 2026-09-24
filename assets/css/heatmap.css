@@ -74,6 +74,11 @@
 .hr-head { padding: clamp(24px, 3vw, 40px) 0 18px; }
 .hr-head h1 { font-family: var(--font-h); font-style: italic; font-weight: 800; color: var(--white); font-size: clamp(28px, 3.8vw, 44px); line-height: 1.05; margin: 10px 0 8px; }
 .hr-meta { font-family: var(--font-l); font-size: 14px; color: rgba(255,255,255,0.62); }
+.hr-notice { margin-top: 14px; max-width: 820px; padding: 12px 14px; border-radius: 10px; font-size: 15px; color: rgba(255,255,255,0.86);
+  background: rgba(172,231,29,0.07); border: 1px solid rgba(172,231,29,0.3); }
+.hr-notice b { color: var(--white); }
+.hr-notice a { color: var(--lime); font-weight: 600; }
+.hr-notice[hidden] { display: none; }
 .hr-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(300px, 1fr); gap: 22px; align-items: start; }
 .hr-map-wrap { position: relative; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); background: #0c1a0f; aspect-ratio: 1 / 1; max-height: 78vh; }
 #hrMap { position: absolute; inset: 0; }
