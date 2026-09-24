@@ -114,6 +114,12 @@ hand-built HTML/CSS/JS (no framework). Canonical home: **lawnandlandmarketing.co
   the case studies; the experiences hub + each case study's Explore link to it. `CollectionPage` + `ItemList`
   + `BreadcrumbList`. Inline `.cr-*` CSS.
 
+- **Free Google Maps heatmap tool** (`/tools/google-maps-heatmap/` + `/results/`) — built 2026-09-24 as a lead
+  magnet. Static pages here (`assets/js/heatmap.js`, `assets/css/heatmap.css`, self-hosted MapLibre in
+  `assets/vendor/`); the scan backend is the separate private repo `lawnHQ/ll-heatmap` (its README + AGENTS.md
+  are the rules). Leads land in SAE tagged `magnet-gbp-heatmap`. Team playbook: Olympus
+  `50 Playbooks/Sales & Marketing/Google Maps Heatmap Lead Magnet.md`. Record: `decisions.md` 2026-09-24.
+
 ## Status — what's NOT done (launch prep, not new builds)
 Every planned page is built (homepage, 8 services + hub, 2 programs + hub, 8 industries + hub, about,
 contact, confirmation, booking, legal, the 3 resources content pages, 2 case studies, client-results).

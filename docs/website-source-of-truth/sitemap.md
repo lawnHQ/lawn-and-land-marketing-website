@@ -51,6 +51,10 @@ pages can exist outside this list.
 - ~~`/resources/private-facebook-group/`~~ — **removed 2026-06-21**; never a real page. Nav + footer link to the external FB group (`facebook.com/groups/serviceareaexperts`).
 - `/resources/mow-money-mow-problems-podcast/` — Mow Money, Mow Problems Podcast
 
+## Tools
+- `/tools/google-maps-heatmap/` (free Google Maps heatmap lead magnet; in sitemap.xml)
+- `/tools/google-maps-heatmap/results/?t=<token>` (per-scan results; noindex, NOT in sitemap.xml)
+
 ## Case Studies
 - `/case-studies/precision/` — Precision Landscape Management (migrated 2026-06-21 from the legacy WordPress `/precision-case-study/`). Launch 301: old URL to this one. No index page at `/case-studies/` itself yet; the breadcrumb crumb is a non-link label.
 - `/case-studies/rock-solid/` — Rock Solid Landscape (Wauseon, OH; built 2026-06-21 into the framework from the legacy WordPress `/rock-solid-case-study/`). Launch 301: old URL to this one.
