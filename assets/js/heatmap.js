@@ -20,6 +20,19 @@
     return fetch(API + path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, status: r.status, body: j }; }); });
   }
+  /**
+   * Which ad event a finished submission sends. Meta Advantage+ learns who to
+   * show the ad to from the Lead event, so only lawn / landscape / land
+   * clearing listings (the scan service decides from the Google category)
+   * count as a Lead. Everyone else sends a separate event so the volume is
+   * still visible. Team demos (our own domain) and repeat visits send nothing.
+   */
+  function conversionFor(body, email) {
+    if (!body || body.reused) return null;
+    if (/@lawnandlandmarketing\.com\s*$/i.test(email || '')) return null;
+    return body.greenIndustry === false ? 'other' : 'lead';
+  }
+
   function track(name, params) {
     try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {}
   }
@@ -106,11 +119,13 @@
           if (r.body && r.body.field && form.elements[r.body.field]) form.elements[r.body.field].focus();
           return;
         }
-        // Team demo scans (our own domain) never count as ad conversions.
-        var internal = /@lawnandlandmarketing\.com\s*$/i.test(data.email || '');
-        if (!r.body.reused && !internal) {
-          track('generate_lead', { lead_source: 'google_maps_heatmap' });
-          try { if (window.fbq) fbq('track', 'Lead', { content_name: 'Google Maps Heatmap' }); } catch (err) {}
+        var conv = conversionFor(r.body, data.email);
+        if (conv === 'lead') {
+          track('generate_lead', { lead_source: 'google_maps_heatmap', listing_category: selected.category || '' });
+          try { if (window.fbq) fbq('track', 'Lead', { content_name: 'Google Maps Heatmap', content_category: selected.category || '' }); } catch (err) {}
+        } else if (conv === 'other') {
+          track('heatmap_scan_non_green', { listing_category: selected.category || '' });
+          try { if (window.fbq) fbq('trackCustom', 'HeatmapScanNonGreen', { content_category: selected.category || '' }); } catch (err) {}
         }
         location.href = RESULTS_PATH + '?t=' + encodeURIComponent(r.body.token) + (r.body.reused ? '&seen=1' : '') + (API !== 'https://ll-heatmap.vercel.app' && /localhost|127\.0\.0\.1/.test(API) ? '&api=' + encodeURIComponent(API) : '');
       }).catch(function () {
