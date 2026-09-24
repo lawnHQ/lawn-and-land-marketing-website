@@ -97,6 +97,8 @@
 .hr-stat span { display: block; font-family: var(--font-l); font-size: 12.5px; color: rgba(255,255,255,0.62); margin-top: 6px; line-height: 1.4; }
 .hr-stat--lead { grid-column: 1 / -1; border-color: rgba(172,231,29,0.3); }
 .hr-stat--lead b { color: var(--lime); font-size: 44px; }
+.hr-next { grid-column: 1 / -1; font-family: var(--font-l); font-size: 13.5px; color: rgba(255,255,255,0.72); padding: 10px 12px; border-radius: 10px; border: 1px dashed rgba(172,231,29,0.35); }
+.hr-next b { color: var(--lime); font-weight: 600; }
 .hr-panel { background: #0c1a0f; border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px; margin-top: 12px; }
 .hr-panel h3 { font-family: var(--font-h); font-weight: 700; color: var(--white); font-size: 18px; margin: 0 0 10px; }
 .hr-panel p { color: rgba(255,255,255,0.76); font-size: 15px; margin: 0 0 10px; }

@@ -190,7 +190,13 @@
       $('hrStats').innerHTML =
         '<div class="hr-stat hr-stat--lead"><b>' + s.top3Share + '%</b><span>Top 3 share: in the top 3 at ' + s.top3Points + ' of ' + s.points + ' spots</span></div>' +
         '<div class="hr-stat"><b>' + s.foundShare + '%</b><span>Shows up at all (top 20)</span></div>' +
-        '<div class="hr-stat"><b>' + (s.avgRank != null ? s.avgRank : '&ndash;') + '</b><span>Average rank where you show up</span></div>';
+        '<div class="hr-stat"><b>' + (s.avgRank != null ? s.avgRank : '&ndash;') + '</b><span>Average rank where you show up</span></div>' +
+        (d.previous ? (function (p) {
+          var diff = Math.round((s.top3Share - p.top3Share) * 10) / 10;
+          return '<div class="hr-stat hr-stat--lead"><b>' + (diff > 0 ? '+' : '') + diff + ' pts</b><span>Top 3 share since your last scan on ' + esc(shortDate(p.date)) +
+            ' (' + p.top3Share + '%' + (p.keyword !== d.keyword ? ', for &ldquo;' + esc(p.keyword) + '&rdquo;' : '') + ')</span></div>';
+        })(d.previous) : '') +
+        '<div class="hr-next">Your next free scan unlocks <b>' + esc(longDate(d.nextScanAt)) + '</b>. Come back then to see what changed.</div>';
       $('hrReading').innerHTML = reading(d);
       var comps = d.competitors || [];
       $('hrComp').innerHTML = comps.length ? comps.map(function (c) {
@@ -234,11 +240,14 @@
       if (map.__ready) draw(); else (map.__queue = map.__queue || []).push(draw);
     }
 
+    function longDate(iso) { return new Date(iso).toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' }); }
+    function shortDate(iso) { return new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }); }
+
     function notice(d) {
       if (new URLSearchParams(location.search).get('seen') !== '1') return;
-      var el = $('hrNotice'), when = new Date(d.createdAt).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' });
-      el.innerHTML = '<b>This business was already scanned on ' + esc(when) + '.</b> Free scans are one per company every 90 days, so here is that saved map' +
-        (d.keyword ? ' for &ldquo;' + esc(d.keyword) + '&rdquo;' : '') + '. Want a fresh scan, or every service you sell? <a href="/get-started/book-strategy-call/">Book a free strategy call</a>.';
+      var el = $('hrNotice');
+      el.innerHTML = '<b>This business was already scanned on ' + esc(shortDate(d.createdAt)) + '.</b> Free scans refresh once a week per business, so here is that map' +
+        (d.keyword ? ' for &ldquo;' + esc(d.keyword) + '&rdquo;' : '') + '. <b>Your next fresh scan unlocks ' + esc(longDate(d.nextScanAt)) + '.</b> Want every service you sell scanned now? <a href="/get-started/book-strategy-call/">Book a free strategy call</a>.';
       el.hidden = false;
     }
 
