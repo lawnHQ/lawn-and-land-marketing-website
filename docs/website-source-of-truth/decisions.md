@@ -816,3 +816,14 @@
 - **Deferred intentionally:** do not redirect the old blogging, email-marketing, or CRM article URLs to
   another broad destination. Restore each topic with a useful, current replacement page first, then change
   its old redirect to the matching replacement.
+
+
+## 2026-09-24 — Free Google Maps heatmap tool (lead magnet) — STAGED, not launched
+- **Routes:** `/tools/google-maps-heatmap/` (indexable tool page, in sitemap) + `/tools/google-maps-heatmap/results/?t=<token>` (noindex, not in sitemap).
+  Hand-built via a generator from `contact/index.html` chrome; page CSS/JS in `assets/css/heatmap.css` + `assets/js/heatmap.js`;
+  MapLibre GL 5.24.0 self-hosted in `assets/vendor/maplibre-5.24.0/` (BSD-3) with free OpenFreeMap `dark` tiles (no Google Maps key, no per-view billing).
+- **Backend is a separate app:** private repo `lawnHQ/ll-heatmap`, Vercel project `ll-heatmap` → `https://ll-heatmap.vercel.app` (CORS-allowlisted to this domain + `lawnland-site-*` previews). Its README is the source of truth for how scans, GHL leads and the results email work.
+- **Grid: 11×11 at 12 miles (121 points, ~2.4 mi apart), chosen from a radius study**, not copied from Jared/Elevated Audience's 7×7 at 6 mi (see `ll-heatmap/docs/RADIUS_STUDY.md`): our clients' priority towns sit a median 12 miles out; top-3 visibility usually ends ~2.5 miles from the pin; service-area businesses rank off-center.
+- **Leads** land in L&L's GHL tagged `magnet-gbp-heatmap` with `(HEATMAP)` custom fields + a summary note; results email sends from hello@ through GHL. Same consent checkbox wording as `/contact/`.
+- **CSP (report-only)** gained `worker-src 'self' blob:` and `img-src blob: https://tiles.openfreemap.org` for the map.
+- **Before paid traffic:** Cloudflare Turnstile keys (bot protection), and a GHL workflow on the tag if the team wants SMS/pipeline follow-up.
