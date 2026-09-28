@@ -383,3 +383,16 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   copy task, not mechanical. No open seo/ PRs to merge. Radar health check: not an outage, 4 merges
   in 7 days / 14 in 30, last commit yesterday; flagged 52 stale radar/ branches as a minor cleanup
   item. Report: `docs/seo/reports/2026-09-22.md`.
+- 2026-09-28 — **Weekly review: quiet week, fixed two radar posts' SEO tags.** GSC clicks 115 to
+  110 (-4%), impressions 34,168 to 30,448 (-11%), but CTR improved 0.34% to 0.36% and position
+  20.9 to 19.9. No watch term moved 5+ positions. Referring domains spiked 80 to 143, almost
+  entirely SEO-checker/backlink-spam domains (rank 0, 1 backlink each), not real links; spam
+  score rose 5 to 8. AI Overview coverage 21/22 to 18/22 (likely noise); still cited on zero.
+  Fixed: added `seoTitle` (in `_blog.json`) and trimmed over-160-char meta/OG/Twitter
+  descriptions for the two newest radar posts (`lawn-care-marketing-agency-recurring-revenue`,
+  `forestry-mulching-marketing`), which also fixed a double-HTML-escaping bug in their og:title/
+  twitter:title. Full mechanical sweep otherwise clean; full build/check pipeline passes. No open
+  `seo/` PRs. Radar health check: not an outage, 7 merges in 7 days / 16 in 30, last commit
+  yesterday; stale `radar/` branches grew 52 to 58 (56 older than 3 days). Carried over: two
+  posts still missing CTA blocks; `/tools/google-maps-heatmap/` title still over 65 chars (not a
+  blog post, outside the seoTitle mechanism). Report: `docs/seo/reports/2026-09-28.md`.
