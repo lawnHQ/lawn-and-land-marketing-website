@@ -184,7 +184,7 @@
       } else {
         html += '<p>You are in the top 3 in ' + s.top3Share + '% of the spots we searched. ';
         html += nearShare > farShare + 15
-          ? 'That share is ' + nearShare + '% within ' + Math.round(d.grid.radiusMi / 2) + ' miles of your listing and ' + farShare + '% toward the edges, the classic pattern of a profile that wins close to home and fades with distance.</p>'
+          ? 'That share is ' + nearShare + '% within ' + (Math.round(d.grid.radiusMi * 5) / 10) + ' miles of your listing and ' + farShare + '% toward the edges, the classic pattern of a profile that wins close to home and fades with distance.</p>'
           : 'The weak spots are not just the far edges, which usually means competitors have stronger signals (reviews, categories, local pages) in those parts of town.</p>';
       }
       var mid = (d.grid.size - 1) / 2;
