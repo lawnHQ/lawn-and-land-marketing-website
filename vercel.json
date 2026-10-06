@@ -1206,6 +1206,16 @@
       "source": "/blog/category/landscaping-website/page/2/",
       "destination": "/resources/blog/category/strategy/",
       "permanent": true
+    },
+    {
+      "source": "/resources/blog/landscaping-advertisement-that-books-better-projects/",
+      "destination": "/resources/blog/landscaping-ads-that-book-bigger-projects/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/landscaping-advertisement-that-books-better-projects",
+      "destination": "/resources/blog/landscaping-ads-that-book-bigger-projects/",
+      "permanent": true
     }
   ],
   "rewrites": [
