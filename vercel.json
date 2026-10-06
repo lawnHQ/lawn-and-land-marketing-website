@@ -1216,6 +1216,96 @@
       "source": "/resources/blog/landscaping-advertisement-that-books-better-projects",
       "destination": "/resources/blog/landscaping-ads-that-book-bigger-projects/",
       "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-landscaping-companies/",
+      "destination": "/marketing-services/landscaping-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-landscaping-companies",
+      "destination": "/marketing-services/landscaping-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-lawn-care-companies/",
+      "destination": "/marketing-services/lawn-care-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-lawn-care-companies",
+      "destination": "/marketing-services/lawn-care-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/lawn-care-seo-recurring-revenue/",
+      "destination": "/marketing-services/lawn-care-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/lawn-care-seo-recurring-revenue",
+      "destination": "/marketing-services/lawn-care-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-septic-companies/",
+      "destination": "/marketing-services/septic-installation-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-septic-companies",
+      "destination": "/marketing-services/septic-installation-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-hardscaping-companies/",
+      "destination": "/marketing-services/outdoor-living-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-hardscaping-companies",
+      "destination": "/marketing-services/outdoor-living-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-outdoor-living-companies/",
+      "destination": "/marketing-services/outdoor-living-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-outdoor-living-companies",
+      "destination": "/marketing-services/outdoor-living-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-excavation-companies/",
+      "destination": "/marketing-services/excavation-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-excavation-companies",
+      "destination": "/marketing-services/excavation-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-land-clearing-companies/",
+      "destination": "/marketing-services/land-clearing-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-land-clearing-companies",
+      "destination": "/marketing-services/land-clearing-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-holiday-lighting-companies/",
+      "destination": "/marketing-services/holiday-lighting-seo/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blog/seo-for-holiday-lighting-companies",
+      "destination": "/marketing-services/holiday-lighting-seo/",
+      "permanent": true
     }
   ],
   "rewrites": [

@@ -116,7 +116,7 @@ def dataforseo_block():
 def psi_block():
     key = os.environ.get("PAGESPEED_API_KEY")
     pages = [SITE + "/", SITE + "/marketing-services/local-seo/", SITE + "/industries/landscaping/",
-             SITE + "/resources/blog/seo-for-landscaping-companies/"]
+             SITE + "/resources/blog/hardscape-design-software/"]
     out = {}
     for u in pages:
         q = {"url": u, "strategy": "mobile", "category": ["performance", "seo", "accessibility"]}

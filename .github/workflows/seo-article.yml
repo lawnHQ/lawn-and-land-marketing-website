@@ -143,7 +143,7 @@ jobs:
                say the date you read them. If a page cannot be reached, DROP the claim rather
                than repeating it from a roundup or from memory. A previous run nearly shipped
                "this manufacturer tool is free" for a tool that costs $579.95.
-            3. Write the article by copying resources/blog/lawn-care-seo-recurring-revenue/index.html
+            3. Write the article by copying resources/blog/hardscape-design-software/index.html
                to resources/blog/<slug>/index.html and replacing every post-specific field:
                title tag, description, canonical, og and twitter tags, the BlogPosting JSON-LD
                (headline, description, datePublished, dateModified, image, url,

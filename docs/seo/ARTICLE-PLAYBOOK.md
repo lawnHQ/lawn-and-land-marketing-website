@@ -51,7 +51,7 @@ an owner would ask, in an operator's voice, from Lawn & Land's real experience.
   they miss. Write down the 3 things they miss; those become sections.
 - Collect 2 to 4 primary sources with URLs before writing a word.
 
-## 4. Structure (copy `resources/blog/lawn-care-seo-recurring-revenue/index.html` as the template)
+## 4. Structure (copy `resources/blog/hardscape-design-software/index.html` as the template)
 Head: `<title>` = `seoTitle`; description ≤ 155 chars; canonical; og:/twitter: tags; BlogPosting
 JSON-LD with `datePublished`, `dateModified`, `image`, author `@id` `#matt-foreman`,
 publisher `@id` `#organization`. Every URL absolute on `https://lawnandlandmarketing.com`.
