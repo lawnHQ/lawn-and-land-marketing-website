@@ -144,6 +144,10 @@ p, .ind-lede, .hero-sub, .section-sub, .hero-copy p { text-wrap: pretty; }
 .section-header p { color: var(--body); font-size: 17px; }
 .gradient-text { background: linear-gradient(135deg,var(--lime),var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
+/* ─ SECTION RULE ─ (2026-10-06) Replaces eyebrow labels that only repeated the heading below them.
+   Inline-block so it follows each section's own alignment (centered, left or right). */
+.sec-rule { display: inline-block; width: 32px; height: 3px; border-radius: 2px; background: var(--lime); vertical-align: middle; margin-bottom: 22px; }
+
 /* ─ BUTTONS ─ */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;

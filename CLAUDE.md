@@ -12,7 +12,7 @@ hand-built HTML/CSS/JS (no framework). Canonical home: **lawnandlandmarketing.co
 - **Canonical Vercel project for the custom domain:** `lawnland-site`.
 - **Deploy:** push to `main` → production project **`lawnland-site`** via BOTH the Vercel git integration and the Actions workflow. ~1–2 min. **Full infra map, tokens, the article-publish checklist, and the verify-on-domain rule: [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) — read it before touching deploys.** Never point tooling at `new-lawnlab-deploy` (old staging).
 - **Branches:** `main` is the production branch. Older `site-foundation` history may still exist, but do not assume it is current unless intentionally synced for a specific workflow.
-- **Cache-bust versions in use:** `styles.css?v=156`, `main.js?v=59` on the primary pages, `service-page.css?v=5`,
+- **Cache-bust versions in use:** `styles.css?v=158`, `main.js?v=59` on the primary pages, `service-page.css?v=5`,
   `industry.css?v=3` (shared `.ind-*` framework on `/industries/*`). The `/industries/*` FAQ accordion is
   **exclusive** (opening one `<details>` closes its siblings) via a `.ind-faq > details` handler in `main.js`. `styles.css` carries the global
   `text-wrap: balance` (headings) / `text-wrap: pretty` (body) line-break hints; the **actual
@@ -149,6 +149,10 @@ What remains is launch prep + owner inputs:
   service page got the website-design page's canonical, meta description and OG tags, and lost the later hand-applied
   perf work (font preloads, mobile hero). Until it is repaired, edit the live `/marketing-services/*/index.html`
   surgically AND mirror the change in `_content.json` so the source stays truthful.
+  Also hand-applied 2026-10-06 and NOT in `_content.json`/the generator: eyebrow labels that only repeated the heading
+  became `<span class="sec-rule" aria-hidden="true"></span>` (lime accent line, styles.css), and the hero pill
+  (`hero-kicker`) was removed on service/trade/hub pages because the H1 now names the service. Keep informative
+  labels (case-study service names, location kickers, form/booking labels). No new repeat-the-heading eyebrows.
 - **Program / industry / other pages are HAND-BUILT** (not generated). They reuse the same
   `styles.css` + `service-page.css` (`svc-*`, `simple-hero`, `svc-cta`) classes for consistency.
 - **Styles:** `assets/css/styles.css` (global, nav, `.hl`) + `assets/css/service-page.css` (`svc-*`).
