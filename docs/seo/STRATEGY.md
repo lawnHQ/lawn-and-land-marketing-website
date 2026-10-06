@@ -396,3 +396,17 @@ Listing: "Lawn & Land Marketing", St. Petersburg FL, primary category "Marketing
   yesterday; stale `radar/` branches grew 52 to 58 (56 older than 3 days). Carried over: two
   posts still missing CTA blocks; `/tools/google-maps-heatmap/` title still over 65 chars (not a
   blog post, outside the seoTitle mechanism). Report: `docs/seo/reports/2026-09-28.md`.
+- 2026-10-06 — **Weekly review: a genuinely good week.** GSC clicks 110 to 118 (+7%), impressions
+  30,448 to 25,749 (-15%), but CTR improved 0.36% to 0.46% and position 19.9 to 19.0. Ranked
+  keywords 67 to 69. Watch terms: landscaping seo gained 17.3 to 6.8 and seo for landscapers
+  gained 56 to 46.4; seo for landscaping companies dropped 19.0 to 27.3. No tracked page lost
+  more than 30% of impressions. AI Overview citation line unchanged: 18/22 watch terms, cited on
+  zero. Referring-domain spam accelerated, 143 to 603, spam score 8 to 23, still not real link
+  building. Fixed: added missing `seoTitle` to two radar posts (`landscaping-ads-that-book-
+  bigger-projects`, `marketing-for-land-clearing-companies`), which also fixed a double-HTML-
+  escaping bug in their og:title/twitter:title. Full mechanical sweep and build/check pipeline
+  otherwise clean. No open `seo/` PRs old enough to merge (PR #66 explicitly titled "DRAFT (held
+  for Matt)", left alone). Radar health check: not an outage, 4 merges in 7 days / 19 in 30, last
+  commit 2026-10-04; stale `radar/` branches grew 58 to 63. Carried over: same two posts still
+  missing CTA blocks; heatmap tool title still over 65 chars. Noted one odd prompt-like GSC query
+  string naming a competitor; not actionable, no change made. Report: `docs/seo/reports/2026-10-06.md`.
