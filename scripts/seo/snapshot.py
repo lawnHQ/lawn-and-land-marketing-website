@@ -14,8 +14,8 @@ Sources (all read-only):
     created by `google-consent seo`)
 
 Run:
-    doppler run -p mac-claude -c prd -- python3 scripts/seo/snapshot.py
-mac-claude/prd holds DATAFORSEO_LOGIN/PASSWORD. PAGESPEED_API_KEY is optional
+    doppler run -p vault -c prd -- python3 scripts/seo/snapshot.py
+vault/prd holds DATAFORSEO_LOGIN/PASSWORD. PAGESPEED_API_KEY is optional
 (vault/prd has it; without it PSI still works at a lower quota).
 """
 import base64
@@ -64,7 +64,7 @@ def http(url, data=None, headers=None, method=None, timeout=120):
 def dfs(path, body):
     login, pw = os.environ.get("DATAFORSEO_LOGIN"), os.environ.get("DATAFORSEO_PASSWORD")
     if not (login and pw):
-        return {"_error": "DATAFORSEO_LOGIN/PASSWORD missing (run via doppler -p mac-claude)"}
+        return {"_error": "DATAFORSEO_LOGIN/PASSWORD missing (run via doppler -p vault)"}
     auth = base64.b64encode(f"{login}:{pw}".encode()).decode()
     return http("https://api.dataforseo.com" + path, json.dumps(body).encode(),
                 {"Authorization": "Basic " + auth, "Content-Type": "application/json"})
@@ -224,7 +224,7 @@ def google_token():
     if not rt:
         return None
     # Fleet client (project 489025929507, INTERNAL consent screen, non-expiring tokens):
-    # GBP_CLIENT_ID / GBP_CLIENT_SECRET are in mac-claude/prd. The old vesta-hermes client
+    # GBP_CLIENT_ID / GBP_CLIENT_SECRET are in vault/prd. The old vesta-hermes client
     # (GOOGLE_OAUTH_CLIENT_JSON) is External+Testing and its tokens die after 7 days.
     cid, csec = os.environ.get("GBP_CLIENT_ID"), os.environ.get("GBP_CLIENT_SECRET")
     if not (cid and csec):

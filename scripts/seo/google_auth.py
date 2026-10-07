@@ -97,7 +97,7 @@ def main():
         f.write(f"GOOGLE_SEO_REFRESH_TOKEN={tok['refresh_token']}\n")
     os.chmod(OUT, stat.S_IRUSR | stat.S_IWUSR)
     print(f"Saved refresh token to {OUT} (scopes: {tok.get('scope')}).")
-    print("Next: doppler run -p mac-claude -c prd -- python3 scripts/seo/snapshot.py")
+    print("Next: doppler run -p vault -c prd -- python3 scripts/seo/snapshot.py")
 
 
 if __name__ == "__main__":

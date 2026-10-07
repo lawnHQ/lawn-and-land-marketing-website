@@ -6,7 +6,7 @@ the Lawnline-level bar. One scene per post, derived from its title/topic, with a
 consistent house style: photoreal green-industry scenes, warm natural light,
 ABSOLUTELY NO TEXT in the image (the card's title does the talking below it).
 
-Key sourcing (in order): $OPENAI_API_KEY, then Doppler (project mac-claude/prd,
+Key sourcing (in order): $OPENAI_API_KEY, then Doppler (project vault/prd,
 the machine's granted consumer). If no key is available the script exits 0 and
 the typographic cards remain — the image gate stays satisfied either way.
 
@@ -82,7 +82,7 @@ def get_key():
         return k
     try:
         r = subprocess.run(["doppler", "secrets", "get", "OPENAI_API_KEY", "--plain",
-                            "--project", "mac-claude", "--config", "prd"],
+                            "--project", "vault", "--config", "prd"],
                            capture_output=True, text=True, timeout=15)
         if r.returncode == 0 and r.stdout.strip().startswith("sk-"):
             return r.stdout.strip()
@@ -138,7 +138,7 @@ def main():
 
     key = get_key()
     if not key:
-        print("No OPENAI_API_KEY available (env or Doppler mac-claude/prd) — skipping photo "
+        print("No OPENAI_API_KEY available (env or Doppler vault/prd) — skipping photo "
               "generation; typographic cards remain.")
         return
 

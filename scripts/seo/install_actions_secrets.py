@@ -20,7 +20,7 @@ Two values are deliberately NOT sourced from Doppler:
                             $1,449 in three days once; a dedicated key makes this
                             workflow's spend visible and separately revocable.
   GOOGLE_SEO_REFRESH_TOKEN  Read from ~/.secrets/google-seo.env, which is written by
-                            `doppler run -p mac-claude -c prd -- google-consent seo`.
+                            `doppler run -p vault -c prd -- google-consent seo`.
                             The script refuses to install a token that no longer works.
 
 Needs: GITHUB_LAWNHQ_TOKEN (in vault/prd) with admin rights on the repo, and pynacl.
@@ -148,7 +148,7 @@ def main():
                 planned["GOOGLE_SEO_REFRESH_TOKEN"] = gt
             elif live is False:
                 missing.append("GOOGLE_SEO_REFRESH_TOKEN (the token in ~/.secrets/google-seo.env is "
-                               "revoked; re-run: doppler run -p mac-claude -c prd -- google-consent seo)")
+                               "revoked; re-run: doppler run -p vault -c prd -- google-consent seo)")
             else:
                 planned["GOOGLE_SEO_REFRESH_TOKEN"] = gt
                 print("NOTE: could not verify the Google token; installing it anyway.")
